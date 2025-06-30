@@ -1,0 +1,134 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: watsonx-bi
+    path: watsonx-bi
+    href: /docs/watsonx-bi
+    service-name: watsonx-bi
+    audience: service
+    label: watsonx BI
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - topicgroup:
+          label: Overview
+          topics: 
+          - release-notes-software.md
+          - about.md
+          - relationship_between_services.md 
+          - known_issues.md
+      - topicgroup:
+          label: Setting up watsonx BI 
+          topics: 
+         # - quick_start.md 
+         # - adding_users_cloud.md
+            - install_wxbi.md
+            - configuration_settings.md
+            - roles_permissions.md
+          # - cos.md
+      #- topicgroup:
+          #label: Setting up samples
+          #topics:
+         # - set_samples.md
+         # - go_sales.md
+         # - customer_exp.md    
+      #- choose_llm.md
+      - topicgroup:
+         label: Services and integrations
+         topics: 
+         - wxdata.md
+         # - cognos.md 
+         # - satellite_connector.md  
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+              label: Understanding projects 
+              topics:
+               - projects.md
+               - projects_manage.md
+             # - import_export_project.md  
+      - topicgroup:
+          label: Creating metrics for data analysis 
+          topics:
+          - create_metrics_overview.md
+          - topicgroup:
+              label: Preparing your data 
+              topics:
+               - governance.md
+               - categories.md
+               - business_terms.md
+               - classifications.md
+               - data_classes.md
+               - reference_data.md     
+          - topicgroup:
+              label: Selecting data 
+              topics: 
+              - add_data.md
+            # - upload_file.md
+          - topicgroup:
+              label: Enriching data with metadata
+              topics: 
+              - enrich_data.md
+              - review_enrichment.md
+              - monitor_enrichment_job.md
+          - generate_metrics.md
+          - advanced_mode.md
+          - edit_metrics.md 
+          - adding_visualizations_metrics.md
+          - try.md
+          - publish_metrics.md
+          - pin_key_metrics.md
+          - topicgroup: 
+              label: Using advanced mode to model data
+              topics: 
+              - data_modeling.md
+              - relationships.md
+              - calculations.md
+              - relinking_ref_tables.md
+              - filters.md
+              - hiding_objects.md
+              - object_properties.md
+          - modeling_best_practices.md
+      - topicgroup:
+          label: Using conversations to get insights 
+          topics:
+            - gettingstarted_wxbia.md
+            - asking_questions.md 
+            - change_scope.md
+            - steps_ai.md 
+            - visualizations.md
+          # - feedback.md
+            - explainability.md
+      #- topicgroup:
+          #label: Enhancing security 
+          #topics: 
+          #  - data-security.md
+     # - topicgroup:
+          #label: Observability
+          #topics:
+          #  - at-events.md
+  - navgroup:
+      id: tutorial
+      topics:
+      - interface.md 
+      - create_metrics_keyconcepts.md
+  - navgroup:
+      id: help
+      topics:
+      - browser_support.md
+      - faqs_new.md
+      - get_help.md
+      #- link:
+          #  label: Getting started with IBM Cloud
+           # href: https://www.ibm.com/cloud/get-started
+  - navgroup:
+      id: reference
+      topics: 
+      #- responsibilities.md
+      #- ha-dr.md
+      - glossary.md

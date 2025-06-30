@@ -1,0 +1,28 @@
+---
+copyright:
+  years: 2025
+lastupdated: "2025-06-26"
+
+keywords:
+subcollection: watsonx-bi
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+
+# Securing your data in watsonx BI
+{: #security}
+
+[Cloud]{: tag-blue} 
+
+IBM watsonx BI uses the cloud service platform which lets you connect to your data, govern it, find it, and use it for analysis. The cloud service platform offers data security mechanisms, such as encryption and protects sensitive customer and corporate data, both in transit and at rest. {: #shortdesc}
+
+To use watsonx BI, you need to have a secure [IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage){: external} instance. Cloud Object Storage is configured on IBM Cloud and stores your data assets from projects (including anything that you connect to ) and Metrics catalog. 
+
+The IBM Cloud Identity and [Access Management (IAM)](/docs/cloud-object-storage?topic=cloud-object-storage-iam){: external} service securely authenticates users and controls access to Cloud Object Storage. 
+
+IBM watsonx BI does not support context-based restrictions. Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for resources based on the context of access requests.
+{: note}
+
+For more information, see [Data security](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=cpdaas&audience=wdp&locale=en#configuring-cloud-object-storage){: external}.
