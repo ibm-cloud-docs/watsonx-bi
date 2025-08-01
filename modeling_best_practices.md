@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-23"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Optimizing your data for AI
+# Optimizing data for AI
 {: #best_practices}
 
 IBM watsonx BI is a powerful analytics tool that uses large language models (LLM) to run complex, multi-step BI queries on your data. While watsonx BI has contextual understanding of data and can quickly respond to your questions, the quality of data determines the quality of the LLM’s generated responses. {: #shortdesc}
@@ -24,7 +24,6 @@ The following factors are used by the LLM to understand questions and the contex
 when generating query statements:
 
 - Asset name
-
 - Asset description
 - Column name (Id)
 - Column display name
@@ -39,12 +38,17 @@ Here some things that you can do to prepare your data for use by AI.
 
 Watsonx BI comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
 
-However, if your organization's business terminology is different, consider adding business terms to describe the contents of your data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+If your organization's business terminology is different, consider adding business terms to describe the contents of your data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+
+## Use unique names for data assets
+{: #tip_unique_names}
+
+To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics. 
 
 ## Each Asset and Column needs a display name and description
 {: #tip_display_name}
 
-Review the metadata enrichment results in the metric creation process to ensure each AI generated Asset and Column has a meaningful and accurate Display name and Description. 
+Review the metadata enrichment results in the metric creation process to ensure each Asset and Column has a meaningful and accurate AI-generated Display name and Description. 
 
 You can also access the metadata enrichment from the Project asset tab by selecting the relevant metadata enrichment asset.
 

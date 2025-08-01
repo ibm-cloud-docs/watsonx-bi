@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-07-29"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -22,17 +22,20 @@ IBM watsonx BI users require two types of roles:
 
 - Roles assigned in watsonx BI, which are called Collaborator roles
 
+- Service roles:
 
-- Roles assigned in IBM Software Hub, which are the predefined roles
+  - Roles assigned in IBM Cloud, which are called IAM roles, if you're using watsonx BI as a Service
+
+  - Predefined roles, if you're using watsonx BI on IBM Software Hub
 
 ## Assigning collaborator roles
 {: #collab_roles}
 
 An Administrator can assign collaborator roles from the **Administration > Configurations and settings > Manage BI community** page.  These roles control access to the actions that can be taken in watsonx BI.
 
-- **Reader**: Analytics consumers (or business users) can ask questions about their data and monitor metrics that were assigned to them. Analytics consumers can create metrics but cannot give access to metrics, publish metrics to the **Metrics catalog**, or edit published metrics.
+- **Analytics consumers**: Analytics consumers can ask questions about their data and monitor metrics that were assigned to them. Analytics consumers can create metrics but cannot give access to metrics, publish metrics to the **Metrics catalog**, or edit published metrics.
 
-- **Writer**: Data analysts can create and publish metrics, assign metrics to Analytics consumers, and manage data. Writer role includes permissions for Viewer.
+- **Data analysts**: Data analysts can create and publish metrics, assign metrics to Analytics consumers, and manage data. Writer role includes permissions for Viewer.
 
 - **Administrator**: Administrators can add users and assign roles and other configuration tasks. Administrator role includes permissions for Reader and Writer.
 
@@ -42,15 +45,17 @@ To add members to the community:
 
 2. Click **Add members** and choose if you want to add individual users or groups. 
 
-3. Select the individual users or access groups  and assign the relevant collaborator role. 
+3. Select the individual users or access groups and assign the relevant collaborator role. 
 
-When you assign collaborator roles, the related  service role automatically gets assigned. 
+When you assign collaborator roles, the related service role automatically gets assigned. 
 
-
+The IBM Cloud account owner or Administrator can modify the IAM Service and Platform roles, if required. For more information, see [IBM Cloud IAM roles](/docs/account?topic=account-userroles){: external}.
+{: note}
 
 The following table shows the actions that you can complete depending on your collaborator role.
 
-
+Data analysts can give access to metrics in the **Metrics catalog** to individual users or user groups. To view the details of a user group that can access a metric, Data analysts need to have the **Viewer** IAM Platform role. 
+{: important}
 
 Action |Administrator | Data analyst | Analytics consumer
 |---------------| -----|------|---------|
@@ -65,32 +70,13 @@ Action |Administrator | Data analyst | Analytics consumer
 |Pin metric from chat | ✓ | ✓ | ✓ |
 |**Data and Metrics**|
 |Create projects | ✓ | ✓ | ✓ |
+|[Cloud]{: tag-blue} Import/export projects | ✓ | ✓ | ✓ |
 |Create metrics | ✓ | ✓ | ✓ |
+|[Cloud]{: tag-blue} Upload files | ✓ | ✓ | ✓ |
 |Manage semantic data models | ✓ | ✓ | ✓ |
 |Publish metrics to Metrics catalog | ✓ | ✓ | x |
 |**Metrics catalog**|
 |Access metrics in Metrics catalog | ✓ | ✓ | ✓ |
-|Edit metrics in Metrics catalog | ✓ | ✓ | x |
 |Assign metrics to users | ✓ | ✓ | x |
 |Pin metric to Key metrics from Metrics catalog | ✓ | ✓ | ✓ |
 {: caption="Permissions by role for watsonx BI features" caption-side="bottom"}
-
-
-
-
-
-### Working with access groups
-{: #access_grps}
-
-Access groups expedite role assignments by grouping permissions for large numbers of users. You create a group and assign policies and rules to the group. When you assign a user to an access group, their access rights are determined by the group policies. All members of an access group have the same access permissions, and all members are updated when the group is edited.
-
-Select **Configuration and settings >  Access control > Access groups** to set up access groups for watsonx BI.
-
-You can also indicate the access group when you invite users to the account.
-
-### Assigning roles individually
-{: #assign_individual}
-
-Roles can be assigned to individual users. Select **Configuration and settings >  Access control > Users > Assign access** for each user.
-
-You can also indicate the access policy when you invite users to the account.

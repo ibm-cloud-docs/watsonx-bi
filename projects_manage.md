@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-28"
 
 keywords: add collaborators, projects
 subcollection: watsonx-bi
@@ -45,3 +45,6 @@ To add collaborators to your project:
 4. Choose the role for the collaborators and click **Add**:
 
 5. Select the access level and click **Add**.
+
+When collaborators start using the shared project, they might be prompted to enter their personal credentials to the data source connection when they start a conversation or work with metrics in the semantic data model.
+{: note}

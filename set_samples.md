@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-29"
 
 keywords:
 subcollection: watsonx-bi
@@ -26,13 +26,16 @@ subcollection: watsonx-bi
 
 You can choose one of the following prebuilt samples to familiarize yourself with watsonx BI. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. {: #shortdesc}
 
-- [Go Sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
+Sample data sets are currently only supported in watsonx BI on IBM Cloud. 
+{: note}
+
+- [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
 
 - [Customer experience](/docs/watsonx-bi?topic=watsonx-bi-cust_exp) 
 
 These samples are a great way to explore: 
 
-- watsonx BI's natural language interface through conversations, including types of questions you can ask for each sample data
+- Watsonx BI's natural language interface through conversations, including types of questions you can ask for each sample data
 
 - The structure of a metric definition 
 
@@ -90,6 +93,6 @@ Check the column properties. Each one should have a Name, Description, and an Id
 
 Review these topics for more details about each sample, including examples of questions you can ask against each data set.
 
-- [Go Sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
+- [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
 
 - [Customer experience](/docs/watsonx-bi?topic=watsonx-bi-cust_exp) 

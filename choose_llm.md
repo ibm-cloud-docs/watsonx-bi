@@ -26,6 +26,9 @@ subcollection: watsonx-bi
 
 At the time of setting up watsonx BI, Administrators can choose the large language model (LLM) that will be used in watsonx BI conversations for users in their organization. {: #shortdesc}
 
+This feature is available in watsonx BI as a Service only. 
+{: note}
+
 As an Administrator, you can choose between the following:
 
 - A combination of [Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-3-8b-instruct (Recommended)

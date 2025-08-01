@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2024-04-26"
+lastupdated: "2025-08-01"
 
 keywords: semantic, data model, data modeling
 subcollection: watsonx-bi
@@ -74,3 +74,12 @@ In the Diagram settings box, select the Cardinality check box to show the cardin
 {: #custom_tables}
 
 The Custom tables is the main space for creating, viewing, and managing custom tables in a semantic data model. This tab is displayed by default, even if the semantic data model doesn't contain any custom tables. To start creating a new table, click **Create custom table**. If the semantic data model already contains custom tables, the table names are listed when you click the tab.
+
+## Related links
+{: #related_links_modeling}
+
+- [Relationship joins](/docs/watsonx-bi?topic=watsonx-bi-relationships){: external}
+- [Calculations](/docs/watsonx-bi?topic=watsonx-bi-calculations){: external}
+- [Filters](/docs/watsonx-bi?topic=watsonx-bi-model_filters){: external}
+- [Object properties](/docs/watsonx-bi?topic=watsonx-bi-model_object_prop){: external}
+- [Optimizing your data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}

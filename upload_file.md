@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-01"
 
 keywords: upload file, local file
 
@@ -16,21 +16,19 @@ subcollection: watsonx-bi
 
 You can upload supported file types to a project in watsonx BI and use it as a source of data to ask questions in **Conversations**. {: #shortdesc}
 
-All uploaded files are stored in the Cloud Object Storage bucket that is associated with your project.
+When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. Then, additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created by using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
+
+You can find your uploaded files on **Data and Metrics > Data sources > Uploaded files** tab. They are also listed as data assets on the **Assets** page of your project.
+
+All uploaded files in watsonx BI as a Service are stored in the Cloud Object Storage bucket that is associated with your project.
 {: note}
-
-When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. 
-
-Additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
-
-You can find your uploaded files on the **Data sources > Uploaded files** tab under **Data and Metrics**. They are also listed as data assets on the **Assets** page of your project.
 
 ## Uploading a file
 {: #steps_upload}
 
 1. Click the upload icon in the input box on **Conversations** or go to **Data and metrics > Data sources > Uploaded files**. 
 
-2. On the **Data and Metrics** tab, select the project that you want to upload the files to. 
+2. On **Data and Metrics**, select the project that you want to upload the files to. 
 
 3. Browse for the files on your local drive, and select one or more files to upload. You can also drop files into the drop zone. 
 
@@ -44,31 +42,31 @@ You can find your uploaded files on the **Data sources > Uploaded files** tab un
 
 4. Click the **Review** link to [review the enrichment results](/docs/watsonx-bi?topic=watsonx-bi-review). 
   
-    Metdata enrichment adds business context to your data in the form of business terms, labels, and descriptions. Check to make sure that these are accurate and meaningful.
+    Metadata enrichment adds business context to your data in the form of business terms, labels, and descriptions. Check to make sure that these additions are accurate and meaningful.
 
     Any changes that you make to the enrichment results save automatically.
 
-   If the uploaded file has more than 10,000 rows, click **Review > Columns > Select a column**. Check the **Statistics** section in the **Details** panel to ensure that data sampling has captured the distinct values. If certain columns are lower than expected, click **Edit enrichment** and change **Sample size** to **Percentage**. Enter **10** in the **Percent of the data set** field and enter **10000** in the **Maximum number of rows** field. Click **Enrich all assets** to re-run enrichment.
+   If the uploaded file has more than 10,000 rows, click **Review > Columns > Select a column**. Check the **Statistics** section in the **Details** panel to ensure that data sampling captured the distinct values. If certain columns are fewer than expected, click **Edit enrichment** and change **Sample size** to **Percentage**. Enter **10** in the **Percent of the data set** field and enter **10000** in the **Maximum number of rows** field. Click **Enrich all assets** to re-run enrichment.
    {: important}
 
 5. (Optional) Click **Ask a question** to ask questions about the data in the uploaded file.
 
 When a file successfully uploads to a project, it is listed as a data asset in the project view. 
 
-You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and alos define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
+You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and also define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
 
 ## Managing uploaded files
 {: #manage_file}
 
 **Replacing an uploaded file**
 
-You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM watsonx BI prompts you to specify if you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
+You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM watsonx BI prompts you to specify whether you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
 
 **Deleting an uploaded file**
 
-To delete an uploaded file, click the **Delete** option from the context menu next to the uploaded file name. 
+To delete an uploaded file, click the **Delete** option from the menu next to the uploaded file name. 
 
-Deleting a file removes it from the project permanently. This might impact semantic data models that were created with references to the deleted file.
+Deleting a file removes it from the project permanently. This action might impact semantic data models that were created with references to the deleted file.
 {: important}
 
 ## Supported file types 
@@ -85,7 +83,7 @@ The following delimiter-separated value files are supported:
 
 - Tab separated (TSV)
 
-The first row in the file should include the column names for each column in the data. All rows, including the header, should use the same delimiter: comma or tab.
+The first row in the file needs to include the column names for each column in the data. All rows, including the header, need to use the same delimiter: comma or tab.
 
 Column names in delimiter-separated value files must be unique.
 
@@ -100,7 +98,7 @@ Example of a CSV file:
 
 The supported Microsoft Excel file formats include .xls and .xlsx workbook files. 
 
-The Excel file should have tabular data, consisting of simple columns with headers followed by the data. Column names in the file must be unique.
+The Excel file needs to have tabular data, consisting of simple columns with headers followed by the data. Column names in the file must be unique.
 
 Only the data on the first tab of the Excel file is used for metadata enrichment.
 {: note}
@@ -133,9 +131,9 @@ You can upload an Excel file, which has two or more tabs but the asset preview d
 
 Each column in the uploaded file is scanned to determine whether it represents a character, numeric (integers, decimal, or double), temporal (date, timestamp, or time), or a Boolean data type. The file upload feature supports each of these data types. 
 
-Here are examples of column data formats that are supported:
+Supported column data formats include:
 
-- Date data type
+- Date data types
 
     - YYYY-MM-DD
 
@@ -145,7 +143,7 @@ Here are examples of column data formats that are supported:
     - MM-DD-YYYY
     - MM/DD/YYY
 
-- Timestamp data type 
+- Timestamp data types 
 
     - YYYY-MM-DD HH:mm:ss
 
@@ -156,7 +154,7 @@ Here are examples of column data formats that are supported:
       Fractional seconds (ss in the pattern) can contain up to nine digits.
       {: note}
 
-- Time data type 
+- Time data types 
 
     - HH:mm:ss
 
@@ -186,36 +184,36 @@ Values representing dates and timestamps need to be in the following format:
 
 - Values representing a minute must be between 0-59.
 
-- Time values that only use up to 12 hours can be designated with AM (before noon) and PM (after noon)
+- Time values that use up to 12 hours can be designated with AM (before noon) and PM (after noon)
 
 - Column names must be unique
 
 ## Troubleshooting
 {: #troubleshooting_upload}
 
-You might run into errors during the file upload process. Click the **View details** link under the error message for the file you uploaded for more details. 
+You might run into errors during the file upload process. Click the **View details** link under the error message for the file that you uploaded for more details. 
 
 Some errors can be avoided by revising the file and uploading again. Other errors might require you to contact IBM support for further assistance. 
 
 - FLP_InvalidFileType = FLP-101 Invalid file type
 
-  You can run into this error when an unsupported file was uploaded. Only comma separated (csv), tab seperated (tsv), and Excel (xls or xlsx) files are currently supported.
+  You can run into this error when an unsupported file was uploaded. Only comma separated (csv), tab separated (tsv), and Excel (xls or xlsx) files are supported.
 
 - FLP_UnsupportedDataType = FLP-102 Cannot create table for file ''{0}''. Unsupported type: ''{1}'' for column ''{2}''.Column in the file has a data type that is not supported
 
-  A column in the file has data type that is not a character, numeric, temporal, or boolean data type, remove the column from the file and upload it again.
+  A column in the file has a data type that is not a character, numeric, temporal, or Boolean data type, remove the column from the file and upload it again.
 
 - FLP_ParquetUnsupportedType = FLP-106 Error writing parquet data for file ''{0}''. Unsupported type: ''{1}''.
 
-  A column in the file has data type that is not a character, numeric, temporal, or boolean data type, remove the column from the file and upload it again.
+  A column in the file has data type that is not a character, numeric, temporal, or Boolean data type, remove the column from the file and upload it again.
 
 - FLP_DBUnsupportedTypes = FLP-107 The following data types detected in file ''{0}'' for the given columns are not supported: ''{1}''.
 
-  A column in the file has data type that is not a character, numeric, temporal, or boolean data type, remove the column from the file and upload it again.
+  A column in the file has a data type that is not a character, numeric, temporal, or boolean data type, remove the column from the file and upload it again.
 
 - FLP_DuplicateColumns = FLP-108 Error writing parquet data for file ''{0}''. Duplicate column(s) detected: ''{1}''.
 
-  Duplicate column names in the uploaded file are not supported. Ensure all column names in the file are unique and upload the file again.
+  Duplicate column names in the uploaded file are not supported. Ensure that all column names in the file are unique and upload the file again.
 
 - FLP_ErrorConvertingTimestampTZUTC FLP-127 Invalid format for timestamp with timezone data: ''{0}''.
 
@@ -223,18 +221,18 @@ Some errors can be avoided by revising the file and uploading again. Other error
 
 - Metadata enrichment errors
 
-  You might encounter metadata enrichment errors if there is an issue with the data or if an error occured in an enrichment objective. Examples:
+  You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
   
   - there was an error in profiling data and watsonx BI couldn't retrieve data values to process the metadata enrichment
-  - watsonx BI was unable to retrive data values to write and compute vectors to Cloud Object Storage
-  - watsonx BI was unable to write vectors to Cloud Object Storage
+  - Watsonx BI was unable to retrieve data values to write and compute vectors to Cloud Object Storage
+  - Watsonx BI was unable to write vectors to Cloud Object Storage
 
   If the file encounters metadata enrichment errors during upload:
   
   1. Click the **Review** link to go to the metadata enrichment results.
   
-  2. Click **Enrich all assets** at the top of the page to re-run enrichment. If there errors in data profiling or other enrichment objectives, re-running enrichment might resolve the error. 
+  2. Click **Enrich all assets** at the top of the page to re-run enrichment. If there are errors in data profiling or other enrichment objectives, re-running enrichment might resolve the error. 
 
-  If the errors persist, click the **View metrics** link in the **About this enrichment panel** to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
+  If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
 
   Depending on the errors, you might need to fix the data in the file and try uploading it again. 

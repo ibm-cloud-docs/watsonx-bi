@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-07-14"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -16,8 +16,10 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Release notes for watsonx BI (Software)
+# Release notes for watsonx BI on IBM Software Hub 
 {: #my-service-relnotes}
+
+[Software]{: tag-red} 
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
@@ -27,8 +29,6 @@ Use these release notes to learn about the latest updates to watsonx BI that are
 ## 30 June 2025
 {: #subcollection-jun3025}
 {: release-note}
-
-[Software]{: tag-red} 
 
 ### Introducing watsonx BI on IBM Software Hub 5.2.0
 {: #5.2}

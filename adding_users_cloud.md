@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-24"
 
 keywords: adding users, BI community, members
 subcollection: watsonx-bi
@@ -14,6 +14,8 @@ subcollection: watsonx-bi
 
 # Adding users to the Cloud account 
 {: #add_users_account}
+
+[watsonx BI as a service]{:tag-blue}
 
 As a Cloud account owner or Administrator, you can add the people in your organization who need access to the watsonx BI to the IBM Cloud account and then assign them the appropriate  roles for their tasks. {: #shortdesc}
 

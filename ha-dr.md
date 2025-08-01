@@ -1,11 +1,11 @@
 ---
-
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-01"
 
 keywords: HA for watsonx BI, DR for watsonx BI
-subcollection: content-kit
+subcollection: watsonx-bi
+
 
 ---
 

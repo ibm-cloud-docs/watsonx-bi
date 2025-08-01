@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-24"
 
 keywords:
 subcollection: watsonx-bi
@@ -24,12 +24,11 @@ subcollection: watsonx-bi
 # Providing feedback
 {: #feedback}
 
-[Cloud]{: tag-blue}
 
 After you receive a response to your question, you can provide anonymous feedback on the answer to improve future responses to similar questions.{: #shortdesc}
 
-This feature is not available in watsonx BI on IBM Software Hub.
-{: note}
+The feedback feature is available in watsonx BI as a Service only.
+{: important}
 
 Immediately after the answer, click the thumbs-up icon (**I like this response**) to provide positive feedback, and click the thumbs-down icon (**I dislike this response**) to provide negative feedback.
 

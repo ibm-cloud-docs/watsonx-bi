@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-22"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -13,15 +13,18 @@ content-type: tutorial
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Provisioning and setting up watsonx BI
+# Provisioning watsonx BI 
 {: #getting-started}
 {: toc-content-type="tutorial"}
 
-As an IBM Cloud account owner or Administrator, you sign up for IBM watsonx BI in the IBM Cloud account. {: #shortdesc}
+All users need to sign up for IBM watsonx BI in the IBM Cloud account. {: #shortdesc}
+
+## IBM Cloud account owners
+{: #account_owner}
 
 These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
 
-## Step 1: Provision watsonx BI in your Cloud account
+### Step 1: Provision watsonx BI in your Cloud account
 {: #step1}
 
 You can provision watsonx BI by creating an instance of the service in your IBM Cloud account.
@@ -36,10 +39,10 @@ You can provision watsonx BI by creating an instance of the service in your IBM 
 
 The new service instance appears under **AI/Machine learning** in the **Resource list**. 
 
-## Step 2: Set up watsonx BI
+### Step 2: Set up watsonx BI
 {: #step2}
 
-You need to set up watsonx BI before other users that you invite to your Cloud account can use watsonx BI. 
+As an IBM Cloud account owner, you need to set up watsonx BI before other users that you invite to your Cloud account can use watsonx BI. This step cannot be delegated to an Administrative user. 
 {: requirement}
 
 1. From the **Resource list**, select and launch the watsonx BI instance. 
@@ -54,6 +57,21 @@ You need to set up watsonx BI before other users that you invite to your Cloud a
 
 During the instance setup, watsonx BI enables access delegation for the selected Cloud Object Storage instance. This grants any user of your account the permission to create their own projects and build their metrics.
 {: note}
+
+When you use watsonx BI, make sure that the selected account in the account switcher in the header is the one that has access to watsonx BI. 
+
+## Administrators, Data analysts, and Analytics consumers
+{: #users}
+
+Once the IBM Cloud account owner has set up watsonx BI, all other users that were invited by the account owner to their account to use watsonx BI, can set up the service. 
+
+1. Click the **Join now** link in the invite and log into your IBM Cloud account.
+
+2. Click **Start setup**.
+
+3. (Optional) Choose a [sample](/docs/watsonx-bi?topic=watsonx-bi-using_samples) to load in your watsonx BI instance. 
+
+4. (Optional) Invite members to use your instance of watsonx BI.
 
 When you use watsonx BI, make sure that the selected account in the account switcher in the header is the one that has access to watsonx BI. 
 

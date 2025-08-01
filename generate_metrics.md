@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-27"
+lastupdated: "2025-07-14"
 
 keywords:
 subcollection: watsonx-bi
@@ -18,7 +18,10 @@ subcollection: watsonx-bi
 
 You can generate metrics automatically in the metric creation process. {: #shortdesc}
 
-When you generate metrics, watsonx BI creates metric definitions and automatically exports them to the project for use in **Conversations**. 
+When you generate metrics, watsonx BI creates metric definitions and automatically exports them to the project for use in **Conversations**.
+
+This feature is a Technology Preview feature in watsonx BI on IBM Cloud. 
+{: note}
 
 To generate metrics automatically, follow the steps listed in [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}. 
 

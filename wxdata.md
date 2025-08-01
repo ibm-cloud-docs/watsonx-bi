@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-16"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
  {{site.data.keyword.attribute-definition-list}}
 
 
-# Connecting to watsonx.data
+# IBM watsonx.data
 {: #wxd}
 
 IBM watsonx.data is a governed data lakehouse optimized for data and AI workloads. Integrating IBM watsonx BI with watsonx.data brings the ability for any type of data (structured, semi-structured, and unstructured) to be directly accessible for AI and business intelligence, making it easier for data scientists and data analysts to use the data. {: #shortdesc}

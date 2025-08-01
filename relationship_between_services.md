@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-28"
 
 keywords:
 subcollection: watsonx-bi
@@ -54,12 +54,21 @@ In watsonx BI, to add the data that you want to ask questions about, you first n
 
 You can then  connect to a data source to create metrics. The data is prepared for use in conversations through metadata enrichment, metric creation, and data modeling. 
 
+### Catalogs
+{: #catalogs}
 
+The **Metrics catalog** is a centralized repository of published metrics, their metric definition details, and related visualizations. It provides a single source of truth for published metrics used across the organization.
 
-### Governance
+Data analysts can publish metrics to the **Metrics catalog** and assign them to Analytics consumers.
+
+As an Analytics consumer, you can browse the **Metrics catalog** to view the metrics that are available to you. Click on a metric to view metric details and related visualizations. You can ask a question about a specific metric directly from the **Metrics catalog**.
+
+You can also add metrics to your **Key metrics** panel from the **Metrics catalog** to monitor changes in your data.
+
+### Semantic layer and governance
 {: #governance_feature}
 
-Watsonx BI comes with a pre-built governance framework to help you get started on your data analysis journey. 
+Watsonx BI comes with a predefined governance framework to help you get started on your data analysis journey. This predefined governance framework applies business meaning to your data through governance artifacts. The governance framework along with metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the semantic layer that helps activate information for AI. 
 
 You can customize the existing governance framework in watsonx BI to meet your business context needs by implementing the following governance artifacts.
 

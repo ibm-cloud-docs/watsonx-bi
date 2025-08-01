@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-15"
 
 keywords: adding visualizations, visualizations, metrics
 subcollection: watsonx-bi
@@ -22,7 +22,7 @@ You can add visualizations to your metrics by generating them automatically or b
 ## Generating visualizations for metrics
 {: #generate_viz}
 
-1. From the **Data and metrics** tab, open the semantic model with the metrics for which you want to create visualizations.
+1. From the **Data and Metrics** tab, open the semantic model with the metrics for which you want to create visualizations.
 
 2. On the **Metrics overview** page, click the menu icon next to the metric you want to work with and select **Generate visualizations**.
 
@@ -32,7 +32,7 @@ You can add visualizations to your metrics by generating them automatically or b
 ## Building visualizations for metrics
 {: #build_viz}
 
-1.  From the **Data and metrics** tab, open the semantic model with the metrics for which you want to create visualizations.
+1.  From the **Data and Metrics** tab, open the semantic model with the metrics for which you want to create visualizations.
 
 2. On the **Metrics overview** page, click the menu icon next to the metric you want to work with and select **Build visualizations**.
 

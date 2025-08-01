@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-07-30"
 
 keywords:
 
@@ -34,13 +34,19 @@ FAQs for IBM watsonx BI might include questions about metrics or how to ask ques
 
 If you don't see any metrics when you log in, it is likely because the metrics weren't created for you. Your organization's Data analyst must create metrics and assign them to you before they can be displayed in the **Key metrics** panel. 
 
-Any metrics that you have access to are also available in the **Metrics catalog**. You can add metrics to your **Key metrics** panel from the **Metrics catalog**. For more information, see [Pinning metrics to Key metrics](/docs/watsonx-bi?topic=watsonx-bi-pin_metric){: external}.
+Any metrics that you have access to are also available in the **Metrics catalog**. You can add metrics to your **Key metrics** panel from the **Metrics catalog**. For more information, see [Using the Metrics catalog](/docs/watsonx-bi?topic=watsonx-bi-metrics_catalog){: external}.
 
 ## What questions can watsonx BI answer?
 {: #faq_questions}
 {: faq}
 
 Watsonx BI can answer questions about your business data. For example, you can ask watsonx BI to compare sales across categories this year or give a breakdown of spending for all your marketing channels. For more information, see [Asking questions in natural language](/docs/watsonx-bi?topic=watsonx-bi-ask){: external}. 
+
+## Is my data used to train watsonx BI? 
+{: #faq_train_model}
+{: faq}
+
+  No. IBM watsonx BI uses large language models (LLM) that are hosted in watsonx.ai to answer questions.
 
 ## Can I ask more than one question in one go?
 {: #faq_multiple_questions}

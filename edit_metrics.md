@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2024-04-26"
+lastupdated: "2025-07-30"
 
 keywords: edit metric
 subcollection: watsonx-bi
@@ -26,11 +26,11 @@ subcollection: watsonx-bi
 
 You can edit existing metrics in the **Advanced mode**. You cannot edit measures or add measures to the metric definition of an existing metric. You need to create a new metric to add more measures or change measures. {: #shortdesc}
 
-1. Open your semantic data model from the **Data and Metrics** tab. 
+Open your semantic data model from the **Data and Metrics** tab and then follow these steps:
 
-2. From the **Metrics overview** page, go to **Advanced mode**. 
+1. Click **Advanced mode** on the **Metrics overview** page to go to the semantic data model view.
 
-3. In the semantic data model tree, click the menu icon next to the metric definition that you want to edit and select **Edit metric definition**.
+3. Click the menu icon next to the metric definition that you want to edit and select **Edit metric definition**.
 
 4. Change the metric definition and click **Done**.
 

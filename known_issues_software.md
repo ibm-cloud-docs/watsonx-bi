@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-06-27"
+lastupdated: "2025-07-16"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -13,10 +13,10 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Known issues and limitations 
-{: #known_issues}
+# Known issues in watsonx BI on IBM Software Hub
+{: #known_issues_software}
 
-[Software]{: tag-red} The following issues and limitations apply to watsonx BI on IBM Software Hub 5.2.0. {: shortdesc}
+The following issues and limitations apply to watsonx BI on IBM Software Hub 5.2.0. {: shortdesc}
 
 - **Analytics consumers are unable to create metrics**
   
@@ -76,3 +76,15 @@ subcollection: watsonx-bi
 - **User permission level misalignment**
    
   Users can be assigned editor-level permissions at the Platform level, while retaining read-only access within individual Projects. There is a known issue affecting user permission configurations across Platform and Project levels. This might lead to an unintended misalignment, where users invited to a Project with read-only permissions (Viewer role) can still modify project assets such as database connection details via Platform user interface.
+
+
+## Limitations
+{: #limitations}
+
+- **Importing and exporting project is not currently supported**
+
+At this time, users cannot import or export projects.
+
+- **Samples are not fully supported**
+
+The prebuilt sample data, Go sales and Customer experience, are not fully supported in this release and are not functional.

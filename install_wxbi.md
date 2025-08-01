@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-27"
+lastupdated: "2025-07-14"
 
 keywords:
 subcollection: watsonx-bi
@@ -11,7 +11,7 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Installing and setting up watsonx BI (Software)
+# Installing watsonx BI on IBM Software Hub
 {: #install}
 
 [Software]{: tag-red}An instance administrator can install watsonx BI on IBM® Software Hub Version 5.2 and set up the service. IBM® Software Hub is a cloud-native solution that you can use to install, manage, and monitor IBM solutions on Red Hat® OpenShift® Container Platform.

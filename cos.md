@@ -1,11 +1,11 @@
 ---
-
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-01"
 
 keywords: cloud object storage
-subcollection: content-kit
+subcollection: watsonx-bi
+
 
 ---
 
@@ -22,6 +22,8 @@ The files that are uploaded into IBM Cloud Object Storage are called **objects**
 IBM watsonx BI requires an instance of IBM Cloud Object Storage for creating your first project and storing: 
 
 - Projects
+
+- Sampled data
 
 - Metrics
 
@@ -50,7 +52,7 @@ To provision an instance of IBM Cloud Object Storage:
 
 You can now select this Cloud object storage instance when you provision watsonx BI. 
 
-For more information on the IBM Cloud Object Storage instance, see [IBM Cloud docs: Getting started with Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage){: external}.
+For more information, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage){: external}.
 
 ## Managing Cloud Object Storage 
 {: #manage_cos}

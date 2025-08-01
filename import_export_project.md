@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-08-01"
 
 keywords:
 subcollection: watsonx-bi
@@ -24,7 +24,10 @@ subcollection: watsonx-bi
 # Importing a project
 {: #import_project}
 
-You can create a project that already has assets by importing the project.
+You can create a project that already has assets by importing a project from the **Data and Metrics** page.
+
+You can import or export a project only from **Data and Metrics**. The import and export project options are not available on the **Projects** page in watsonx BI.
+{: note}
 
 ## Prerequisites
 {: #prereq_import}
@@ -38,7 +41,7 @@ Other requirements include:
 
 To export a project, follow these steps:
 
-1. On the **Data and Metrics** tab, click the **Import or Export project** button next to the project switcher. 
+1. On the **Data and Metrics** tab, click the **Export or import project** button next to the project switcher. 
 
 2. Select **Export project**.
 
@@ -52,7 +55,7 @@ An exported project that contains uploaded files cannot be imported.
 ## Steps to import a project
 {: #steps_import}
 
-1. On the **Data and Metrics** tab, click the **Import or Export project** button next to the project switcher.
+1. On the **Data and Metrics** tab, click the **Export or import project** button next to the project switcher.
 
 2. Select **Import project**.
 
@@ -69,3 +72,8 @@ If the project contains metadata enrichment assets and metrics, you can start as
 
 It can take a few minutes for metrics to show up on the **Data and Metrics** page after import. 
 {: note}
+
+## Entering credentials
+{: #credentials}
+
+As you work with the data in the imported project, you might be prompted to enter your personal credentials to the data source connection.

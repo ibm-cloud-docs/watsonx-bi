@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-01"
 
-keywords: cognos analytics, cognos, FM
+keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
 
 
@@ -21,23 +21,38 @@ subcollection: watsonx-bi
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
 
-# Connecting to Cognos Analytics 
+# IBM Cognos Analytics 
 {: #cognos}
 
 IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with IBM watsonx BI, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc}
+
+This feature is available in watsonx BI as a Service only. 
+{: note}
  
 IBM watsonx BI and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
 
 ## Prerequisites
 {: #prereq}
 
-- A working watsonx BI environment.
+- A working watsonx BI environment
 
-- A working Cognos Analytics environment.
+- A working Cognos Analytics environment
 
-- A Framework Manager package (also called FM package) that was created in IBM Cognos Framework Manager. 
+- A Framework Manager package (also called FM package)
 
-- For Cognos Analytics on Premises, you need to create and set up a [Satellite Connector](/docs/watsonx-bi?topic=watsonx-bi-satellite).
+- For Cognos Analytics on Premises, you need to create and set up a [Satellite Connector](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
+
+## Limitations
+{: #limitations_ca}
+
+- Only relational FM packages are supported
+- Dimensionally modelled (DMR) objects are not supported
+- Data modules, dynamic cubes, uploaded files, and OLAP sources (such as SAP) are not supported 
+
+## Supported versions
+{: #supported_version}
+
+IBM Cognos Analytics 11.2.4 and later
 
 ## Connecting to an FM package
 {: #connect_FM}
@@ -86,33 +101,40 @@ Before you start, select the project that you want to work in or create a new pr
 
 A metadata import process starts, which creates a semantic data model based on the metadata in the FM package. 
 
+Each FM package included in the metadata import creates its own semantic model. FM packages that are based on linked and segmented models behave the same as packages created from a single model. 
+{: note}
+
 As the metadata import process runs, you can click the **View metrics** link in the **About this metadata import** panel to see the progress. 
 
 Once the metadata import job is complete, you can work with the data. 
 
-Use the breadcrumbs to navigate to the project. Under the **Asset** tab, you can see the semantic data model that was just created and the metadata import asset.
+At any time, you can go to the project from **Navigation Menu > Projects > View all projects > select your project > Assets** to see the metadata import, semantic data model, and metric definition assets created in this process. 
+{: tip}
 
 ## Next steps
 {: #next_ca_steps}
 
-Once you connect to your FM package in Cognos Analytics, you can ask questions about the imported metadata. 
+1. Click **Home** and go to **Data and Metrics**. 
 
-1. Click the semantic data model asset to open it.
+2. Open the semantic data model for the FM package that you imported.
 
-2. Review the relationships and metric definitions in the view. 
+3. Click **Advanced mode** on the **Metrics overview** page, to review the relationships and metric definitions in the view. 
+
+      IBM watsonx BI automatically generates metric definitions from the Fact table in the FM package. Each metric definition is named after the first measure that is in the collection.
+
+      The determinants that are defined in the model specify the attributes that will be included in the metric definition.  
+
+      For example, a metric definition that is created from a Fact table, which has a grain of month, has attributes of the month determinant and those determinants that are above it. This is important as, without it, including attributes below the Fact grain can produce double counting and results in queries taking a long time. 
+
+4. Choose the metric definition that you want to work with and from its menu, select **Export metric definition**. 
    
-   IBM watsonx BI automatically creates metric definitions from the Fact table in the FM package. Each metric definition is automatically named after the first measure that is in the collection.
-
-3. Choose the metric definition that you want to work with and from its menu, select **Export and enrich metric**. 
-   
-   Exporting and enriching a metric definition creates or updates a metric and makes it available for use in watsonx BI. This process also allows the data in the metric definition to go through metadata enrichment, which is required to ask questions about the data.
-
-4. Use the breadcrumbs to navigate to the project. You can now see a metric definition and metadata enrichment asset in the **Assets** tab.
+   When you export a metric definition, it creates or updates a metric and makes it available for use in watsonx BI. This process also allows the data in the metric definition to go through metadata enrichment, which is required to ask questions about the data.
 
 5. Go to **Navigation Menu > Home > Conversations**. 
 
-6. Select the project that you imported metadata to and enter your question. 
+6. Select the project that you imported metadata to from the list next to the input box and enter your question. 
 
-At any time, you can go to the **Data and Metrics** tab to manage the semantic data model, create more metrics, and add visualizations to the metrics. If you're a **Data analyst**, you can publish metrics and related visualizations to the **Metrics catalog** and assign them to Analytics consumers. 
+You can manage the semantic data model, create more metrics, and add visualizations to the metrics from the **Data and Metrics** tab. If you're a **Data analyst**, you can publish metrics and related visualizations to the **Metrics catalog** and assign them to Analytics consumers. 
+{: tip}
 
 For more information, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics).

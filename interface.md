@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-27"
+lastupdated: "2025-07-22"
 
 keywords: interface
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # About watsonx BI's user interface
 {: #user_interface}
 
-The interface of watsonx BI consists of the following main areas. {: #shortdesc}
+The user interface of watsonx BI consists of the following main areas. {: #shortdesc}
 
 (1) Conversations
 :   This is where you can ask questions about your data to get insights and monitor metrics that matter to you. 
@@ -24,20 +24,29 @@ The interface of watsonx BI consists of the following main areas. {: #shortdesc}
 :   When you login to watsonx BI, you automatically start off on the **Conversations** page. 
 
 (2) Data and Metrics
-:   You can create new projects, create metrics, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
+:   You can create new projects, create metrics, upload files, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
 
 (3) Metrics catalog
 :   The **Metrics catalog** contains a collection of metrics that have been created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
 
 ![Watsonx BI's user interface showing Conversations](wxbi_conversations.png){: caption="Watsonx BI's Conversations page with the open navigation panel showing Data and Metrics and Metrics catalog." caption-side="bottom"}
 
-Configuration and settings 
+(4) Configuration and settings 
 :   You can manage access to your watsonx BI instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. [Cloud]{: tag-blue}
 
-  Samples are currently not available in watsonx BI software.
+  Samples are currently not available in watsonx BI on IBM Software Hub.
   {: note}
 
-Let's take a closer look at each of these.
+(5) Navigation Menu
+:   Use this menu to access the platform features such as your projects, governance artifacts, administrative settings, and more. To come back to the **Conversations** page, click **Home** in the **Navigation Menu**.
+
+(6) Global navigation bar 
+:   The global navigation bar gives you quick access to the product tours, product documentation, notifications, account switcher, and your profile.  
+
+  Product tours are currently not avaialble in watsonx BI on IBM Software Hub.
+  {: note}
+  
+Let's take a closer look at the following main components.
 
 ## Conversations
 {: #converse}
@@ -68,13 +77,13 @@ The **Data and Metrics** tab is the launching point for any task related to your
 
 - Access semantic data models 
 
-
+- Upload files [Cloud]{: tag-blue}
 
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 
 The scope of the metrics is defined in the semantic data model where you can use advanced modeling tools to add more context to your data, create calculations, and define relationships.
 
- 
+You can also upload files on **Data and Metrics** to quickly jump into asking questions about the data in the files. [Cloud]{: tag-blue}
 
 ## Metrics catalog
 {: #metric_catalog}

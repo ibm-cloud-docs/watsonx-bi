@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-21"
 
 keywords: governance, business terms
 subcollection: watsonx-bi
@@ -11,18 +11,21 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Governance framework
+# Defining business logic with the semantic layer and governance
 {: #governance}
 
-IBM watonx BI comes with a predefined governance framework that helps apply business meaning to your data through governance artifacts: {: #shortdesc}
+IBM watonx BI comes with a predefined governance framework that helps apply business meaning to your data through governance artifacts. This framework along with the metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the **semantic layer** that helps activate information for AI. {: #shortdesc}
 
-- Prebuilt business terms, data classes, classifications, and reference data sets
+[Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich) takes place when you upload files or create metrics in a project. During metadata enrichment, watsonx BI uses IBM watsonx.data intelligence's capability to match technical metadata with predefined business concepts. Technical metadata is augmented with more descriptive and meaningful names, drawing from the predefined and your domain-specific business concepts.
+{: note}
+
+Watsonx BI includes:
+
+- Predefined business terms, data classes, classifications, and reference data sets
 
 - Industry-specific Knowledge Accelerator
 
-However, you can also create your own governance framework in watsonx BI to establish your business concepts by implementing governance artifacts in collaborative workspaces called [categories](/docs/watsonx-bi?topic=watsonx-bi-categories). Much like folders, categories organize governance artifacts in a hierarchical structure. 
-
-During [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich), watsonx BI uses IBM watsonx.data intelligence's capability to match technical metadata with predefined business concepts. Technical metadata is augmented with more descriptive and meaningful names, drawing from the predefined and your domain-specific glossary concepts.
+You can build a more robust semantic layer by establishing your own business concepts in watsonx BI by implementing governance artifacts in [categories](/docs/watsonx-bi?topic=watsonx-bi-categories). Much like folders, categories organize governance artifacts in a hierarchical structure. 
 
 You can add the following governance artifacts in watsonx BI: 
 

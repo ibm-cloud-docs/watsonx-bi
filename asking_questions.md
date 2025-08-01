@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-28"
 
 keywords: asking questions
 subcollection: watsonx-bi
@@ -25,13 +25,13 @@ When it is unable to interpret your question correctly or your question is ambig
 
 For example, the following input might return a single number or the total number for each city.
 
-> How many units did we sell in Tokyo and Beijing?
+> How many units were sold in Tokyo and Beijing?
 
 You can clarify your intention by asking: 
   
-> How many units did we sell in Tokyo and Beijing by city?
+> How many units were sold in Tokyo and Beijing by city?
 
-Before you start conversing with watsonx BI, you can provide context for your business data by [adding business terms or glossaries](/docs/watsonx-bi?topic=watsonx-bi-business_terms) to define specific terms like "S&S" and "TAM" and codifying that metadata into the semantic layer and the underlying definition of a metric.
+Before you start conversing with watsonx BI, you can provide context for your business data by [adding business terms or glossaries](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}. Use business terms to define specific terms like "S&S" and "TAM" and codifying that metadata into the semantic layer and the underlying definition of a metric.
 
 ## Types of questions you can ask
 {: #type_questions}
@@ -39,7 +39,7 @@ Before you start conversing with watsonx BI, you can provide context for your bu
 ### Descriptive questions
 {: #descriptive}
 
-Use descriptive questions to explore your data. These are typically the "What" and "Which" questions that summarize and describe your data. For example: 
+Use descriptive questions to explore your data. These questions are typically the "What" and "Which" questions that summarize and describe your data. For example: 
 
 - What are the product lines?
 
@@ -65,12 +65,12 @@ Diagnostic questions can help you determine the reason behind changes in your da
 
 IBM watsonx BI understands most synonymous terms and phrases. For example, depending on your metric, the terms sales, revenue, and profit, might resolve to the same information. 
 
-Synonymous terms also apply to many filters and aggregations. You can ask for "top 3 products", "best products", "products with the most sales", and so on. You can also spell out words or use symbols when applicable. For example, "show me sales greater than $1000", "show me sales > 1k", or "show me sales more than 1,000".
+Synonymous terms also apply to many filters and aggregations. You can ask for "top 3 products", "best products", and "products with the most sales". You can also spell out words or use symbols when applicable. For example, "show sales greater than $1000", "show sales > 1k", or "show sales more than 1,000".
 
 ## Aggregating data
 {: #aggregating}
 
-Applying aggregations can add focus and create more compelling results and visualizations. You can use any aggregations supported by watsonx BI including:
+Applying aggregations can add focus and create more compelling results and visualizations. You can use any aggregations that watsonx BI supports, including:
 
 - total
 
@@ -82,9 +82,9 @@ Applying aggregations can add focus and create more compelling results and visua
 
 - count
 
-- unique / distinct
+- unique or distinct
 
-Watsonx BI infers aggregation using natural language:
+Watsonx BI infers aggregation by using natural language:
 
 - How many products were sold in 2025?
 
@@ -92,18 +92,18 @@ Watsonx BI infers aggregation using natural language:
 
 - How does planned revenue compare to sales revenue in Europe?
 
-A metric might identify a default aggregation value for a column, for example, using AVERAGE for weight. You can override this behavior by specifying the aggregation in the question:
+A metric might identify a default aggregation value for a column, for example, by using AVERAGE for weight. You can override this behavior by specifying the aggregation in the question:
 
 - What is the weight per product? - This input uses the AI model's aggregation of AVERAGE to give the average weight for each product because the question doesn't explicitly identify how to aggregate the data.
 
-- What is the total weight per product? - This input overrides the AI model's aggregation and uses SUM. When asking for highest, lowest, least or most, the AI model might interpret your question as the maximum or minimum value rather than the aggregating all values prior to identifying which total is highest or lowest. You can clarify your intent by including "total" in the question:
+- What is the total weight per product? - This input overrides the AI model's aggregation and uses SUM. When you ask for highest, lowest, least or most, the AI model might interpret your question as the maximum or minimum value rather than aggregating all values before it identifies which total is highest or lowest. You can clarify your intent by including "total" in the question:
 
 - Which product has the highest total revenue?
 
 ## Filtering data
 {: #filtering_data}
 
-You can ask watsonx BI to filter by using words and associated synonyms. You can add filters for specific attributes, geographic items, temporal terms, etc. Here are some examples of how you can use filtering:
+You can ask watsonx BI to filter by using words and associated synonyms. You can add filters for specific attributes, geographic items, temporal terms, and more. Some examples of how you can use filtering:
 
 - Show the top 3 products by revenue in France.
 
@@ -115,12 +115,12 @@ You can ask watsonx BI to filter by using words and associated synonyms. You can
 
 - What are the top 5 states by average inventory, excluding California.
 
-While watsonx BI has a good understanding of common concepts, like country, region and city names, the ability to answer questions depends on your data. For example, if your data includes the product sales per country, asking "How do sales compare in Asia vs the Americas", might not return expected results if the data does not identify which countries are in each region. If such questions are common, consider adjusting your metric to include a region column.
+While watsonx BI has a good understanding of common concepts, like country, region and city names, the ability to answer questions depends on your data. For example, when your data includes the product sales per country, asking "How do sales compare in Asia vs the Americas" might not return expected results if the data does not identify which countries are in each region. If such questions are common, consider adjusting your metric to include a region column.
 
 ## Follow-up questions
 {: #followup}
 
-After asking a question, you can follow-up with additional questions or clarification. Watsonx BI will interpret your question in the context of the previous question asked. For example:
+After you ask a question, you can follow-up with other questions or clarification. Watsonx BI interprets your question in the context of the previous question asked. For example:
 
 1. What is the total revenue for products sold in Canada?
 
@@ -128,4 +128,4 @@ After asking a question, you can follow-up with additional questions or clarific
 
 3. Break down the sales by product brand.
 
-How you word your question determines whether it is a continuation of the previous question or a separate request. If watsonx BI is unable to determine that on its own, starting a new conversation will clear the context.
+How you word your question determines whether it is a continuation of the previous question or a separate request. If watsonx BI is unable to determine that on its own, starting a new conversation clears the context.
