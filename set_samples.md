@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-06"
 
 keywords:
 subcollection: watsonx-bi
@@ -21,12 +21,12 @@ subcollection: watsonx-bi
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
 
-# Installing samples in watsonx BI
+# Installing samples in {{site.data.keyword.wxbia_short}}
 {: #using_samples}
 
-You can choose one of the following prebuilt samples to familiarize yourself with watsonx BI. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. {: #shortdesc}
+You can choose one of the following prebuilt samples to familiarize yourself with {{site.data.keyword.wxbia_short}}. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. {: #shortdesc}
 
-Sample data sets are currently only supported in watsonx BI on IBM Cloud. 
+Sample data sets are currently only supported in {{site.data.keyword.wxbia_short}} as a Service. 
 {: note}
 
 - [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
@@ -35,21 +35,21 @@ Sample data sets are currently only supported in watsonx BI on IBM Cloud.
 
 These samples are a great way to explore: 
 
-- Watsonx BI's natural language interface through conversations, including types of questions you can ask for each sample data
+- {{site.data.keyword.wxbia_short_cap}}'s natural language interface through conversations, including types of questions you can ask for each sample data
 
 - The structure of a metric definition 
 
 - How sample data was modeled and optimized for AI
 
-You'll be prompted to load a sample when you first setup watsonx BI. If you choose not to load sample data at the time of setup, you can load one later: 
+You'll be prompted to load a sample when you first setup {{site.data.keyword.wxbia_short}}. If you choose not to load sample data at the time of setup, you can load one later: 
 
-1. Open the left navigation panel in watsonx BI. 
+1. Open the left navigation panel in {{site.data.keyword.wxbia_short}}. 
 
 2. Go to **Configuration and settings > Sample data**.
 
 3. Select the one you want to use.
 
-During the sample setup, watsonx BI automatically creates a similarly-named project for the sample. 
+During the sample setup, {{site.data.keyword.wxbia_short}} automatically creates a similarly-named project for the sample. 
 
 ## Using sample data 
 {: #using_sample}

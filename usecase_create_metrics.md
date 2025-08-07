@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-07"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -91,7 +91,7 @@ Before you create metrics, review the following resources:
    You can build your own metrics in the semantic data model. To get started, click a measure and select **New > Metric definition**. After you are satisfied with metric, save the semantic data model and export the metric definition. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
 
    Anytime you make a change to the metric definition, for the change to apply to the metric in the project, you must export the metric definiton to the project.
-{: tip}
+   {: tip}
    
 9. Navigate back to the **Metrics overview** page. You can see the metrics that you created and, if applicable, their enrichment status in the **Metrics overview** panel. 
 
@@ -126,7 +126,7 @@ Before you create metrics, review the following resources:
 
 
 ## Step 2: Assigning metrics to users 
-{: assign_metric_data_analyst}
+{: #assign_metric_data_analyst}
 
 1. In the **Metrics catalog**, select the metric that you want to assign.
 

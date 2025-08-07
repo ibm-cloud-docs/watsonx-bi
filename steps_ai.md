@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-06"
 
 keywords:
 subcollection: watsonx-bi
@@ -24,9 +24,9 @@ subcollection: watsonx-bi
 # Steps taken by AI to respond
 {: #steps_ai}
 
-For each response generated in watsonx BI, you can view the steps the AI has taken to understand and answer your question. You can view the progress of these steps in real-time while the AI is working on your query. {: #shortdesc}
+For each response generated in {{site.data.keyword.wxbia_short}}, you can view the steps the AI has taken to understand and answer your question. You can view the progress of these steps in real-time while the AI is working on your query. {: #shortdesc}
 
-This feature not only identfies the data source chosen and query generated to answer your question but also allows you to confirm that the AI understood your query accurately. If you notice that the AI did not understand your query, you can stop the response generation process without waiting for watsonx BI to complete the steps and try rephrasing your question. 
+This feature not only identfies the data source chosen and query generated to answer your question but also allows you to confirm that the AI understood your query accurately. If you notice that the AI did not understand your query, you can stop the response generation process without waiting for {{site.data.keyword.wxbia_short}} to complete the steps and try rephrasing your question. 
 
 During response generation, expand the **Generating response** dropdown to view the progress of the steps and details in each completed step. After a response has been generated, you can expand **Show AI steps** under any response to see a step-by-step explanation.
 
@@ -84,7 +84,7 @@ To change the measures and columns and ask your question again:
 
 2. Select new measures and columns and click **Ask again**.
 
-To avoid getting unexpected results, select measures and columns that align with the topic of your question. Let's say you asked about Revenue for Canada and watsonx BI chose the measure Revenue and column Country to answer your question. If you choose Expenses as a measure and Product color as a column instead, the response might not be aligned with the question you asked. 
+To avoid getting unexpected results, select measures and columns that align with the topic of your question. Let's say you asked about Revenue for Canada and {{site.data.keyword.wxbia_short}} chose the measure Revenue and column Country to answer your question. If you choose Expenses as a measure and Product color as a column instead, the response might not be aligned with the question you asked. 
 {: tip}
 
 ## Step 4: Response generation

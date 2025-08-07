@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-07"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -11,14 +11,14 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.attribute-definition-list}}
 
-# About IBM watsonx BI 
+# About {{site.data.keyword.wxbia_full_notm}}
 {: #about}
 
-IBM watsonx BI is a generative AI-powered business intelligence partner that brings analytics to business users in your organization. {: #shortdesc}
+{{site.data.keyword.wxbia_full}} is a generative AI-powered business intelligence partner that brings analytics to business users in your organization. {: #shortdesc}
 
-Watsonx BI uses natural language to analyze complex data, providing personalized insights and data-aware recommendations that are easy to understand and actionable. 
+{{site.data.keyword.wxbia_short_cap}} uses natural language to analyze complex data, providing personalized insights and data-aware recommendations that are easy to understand and actionable. 
 
-The watsonx BI service makes it easier and faster for Data analysts and Analytics consumers to make data-driven decisions with the following features:
+The {{site.data.keyword.wxbia_short}} service makes it easier and faster for Data analysts and Analytics consumers to make data-driven decisions with the following features:
 
 **Personalized and trusted insights**
 
@@ -39,13 +39,13 @@ Automate data profiling, business term matching, and data modeling.
 ## Availability 
 {: #availability}
 
-IBM watsonx BI is available:
+{{site.data.keyword.wxbia_full_notm}} is available:
 
-- as a service on IBM Cloud 
+
 
 - as software that can be installed from IBM Software Hub
 
-Watsonx BI is available in the Dallas (us-south) regional data center. 
+{{site.data.keyword.wxbia_short_cap}} is available in the Dallas (us-south) regional data center. 
 
 ## Relationship between services
 {: #relationship_services}
@@ -53,7 +53,7 @@ Watsonx BI is available in the Dallas (us-south) regional data center.
 ### Cloud Service Solutions platform
 {: #service_platform}
 
-IBM watsonx BI uses the cloud service platform, which lets you connect to your data, govern it, find it, and use it for analysis.
+{{site.data.keyword.wxbia_full_notm}} uses the cloud service platform, which lets you connect to your data, govern it, find it, and use it for analysis.
 
  The platform provides the following core functionality: 
 
@@ -69,12 +69,12 @@ IBM watsonx BI uses the cloud service platform, which lets you connect to your d
 
 
 
-IBM watsonx BI also uses IBM watsonx.data intelligence, a core service on platform, for metadata import and metadata enrichment. IBM watsonx.data intelligence provides ready-to-use vocabularies that facilitate quick deployment of data governance and analytics frameworks and uses generative AI to augment technical metadata with additional context, labels, and description.
+{{site.data.keyword.wxbia_full_notm}} also uses IBM watsonx.data intelligence, a core service on platform, for metadata import and metadata enrichment. IBM watsonx.data intelligence provides ready-to-use vocabularies that facilitate quick deployment of data governance and analytics frameworks and uses generative AI to augment technical metadata with additional context, labels, and description.
 
-### Features
+### Service platform features
 {: #service_platform_features}
 
-You can access the following platform and IBM watsonx.data intelligence features from the **Navigation Menu** in watsonx BI. 
+You can access the following platform and IBM watsonx.data intelligence features from the **Navigation Menu** in {{site.data.keyword.wxbia_short}}. 
 
 #### Projects
 {: #projects_service}
@@ -85,7 +85,7 @@ Each project has a set of members with roles that provide permissions to perform
 
 Users work with assets, which are the items in the project that contain metadata about data or data analysis.
 
-In watsonx BI, to add the data that you want to ask questions about, you first need to create a project. 
+In {{site.data.keyword.wxbia_short}}, to add the data that you want to ask questions about, you first need to create a project. 
 
 You can then create metrics. Watsonx BI uses metrics and enriched metadata to answer your questions. 
 
@@ -100,12 +100,12 @@ As an Analytics consumer, you can browse the **Metrics catalog** to view the met
 
 You can also add metrics to your **Key metrics** panel from the **Metrics catalog** to monitor changes in your data.
 
-### Semantic layer and governance
+#### Semantic layer and governance
 {: #governance_features}
 
-Watsonx BI comes with a predefined governance framework to help you get started on your data analysis journey. This predefined governance framework applies business meaning to your data through governance artifacts. The governance framework along with metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the semantic layer that helps activate information for AI. 
+{{site.data.keyword.wxbia_short_cap}} comes with a predefined governance framework to help you get started on your data analysis journey. This predefined governance framework applies business meaning to your data through governance artifacts. The governance framework along with metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the semantic layer that helps activate information for AI. 
 
-You can customize the existing governance framework in watsonx BI to meet your business context needs by implementing the following governance artifacts.
+You can customize the existing governance framework in {{site.data.keyword.wxbia_short}} to meet your business context needs by implementing the following governance artifacts.
 
 - **Categories** - Use [categories](/docs/watsonx-bi?topic=watsonx-bi-categories) to organize governance artifacts in a hierarchical structure similar to folders. You can use category roles to define ownership of artifacts, control their authoring, and restrict their visibility.  
 

@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-22"
+lastupdated: "2025-08-07"
 
-keywords: interface
+keywords: interface, using watsonx BI
 subcollection: watsonx-bi
 
 
@@ -13,15 +13,15 @@ subcollection: watsonx-bi
 
 
 
-# About watsonx BI's user interface
+# About {{site.data.keyword.wxbia_short}}'s user interface
 {: #user_interface}
 
-The user interface of watsonx BI consists of the following main areas. {: #shortdesc}
+The user interface of {{site.data.keyword.wxbia_short}} consists of the following main areas. {: #shortdesc}
 
 (1) Conversations
 :   This is where you can ask questions about your data to get insights and monitor metrics that matter to you. 
 
-:   When you login to watsonx BI, you automatically start off on the **Conversations** page. 
+:   When you login to {{site.data.keyword.wxbia_short}}, you automatically start off on the **Conversations** page. 
 
 (2) Data and Metrics
 :   You can create new projects, create metrics, upload files, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
@@ -29,12 +29,12 @@ The user interface of watsonx BI consists of the following main areas. {: #short
 (3) Metrics catalog
 :   The **Metrics catalog** contains a collection of metrics that have been created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
 
-![Watsonx BI's user interface showing Conversations](wxbi_conversations.png){: caption="Watsonx BI's Conversations page with the open navigation panel showing Data and Metrics and Metrics catalog." caption-side="bottom"}
+![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](wxbi_conversations.png){: caption="{{site.data.keyword.wxbia_short_cap}}'s **Conversations** page with the open navigation panel showing **Data and Metrics** and **Metrics catalog**." caption-side="bottom"}
 
 (4) Configuration and settings 
-:   You can manage access to your watsonx BI instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. [Cloud]{: tag-blue}
+:   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 
 
-  Samples are currently not available in watsonx BI on IBM Software Hub.
+  Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.
   {: note}
 
 (5) Navigation Menu
@@ -43,7 +43,7 @@ The user interface of watsonx BI consists of the following main areas. {: #short
 (6) Global navigation bar 
 :   The global navigation bar gives you quick access to the product tours, product documentation, notifications, account switcher, and your profile.  
 
-  Product tours are currently not avaialble in watsonx BI on IBM Software Hub.
+  Product tours are currently not avaialble in {{site.data.keyword.wxbia_short}} on IBM Software Hub.
   {: note}
   
 Let's take a closer look at the following main components.
@@ -51,7 +51,7 @@ Let's take a closer look at the following main components.
 ## Conversations
 {: #converse}
 
-When you log in to watsonx BI, you are on the **Conversations** page. This is where you can ask questions about your data and metrics and track how your key metrics are performing.
+When you log in to {{site.data.keyword.wxbia_short}}, you are on the **Conversations** page. This is where you can ask questions about your data and metrics and track how your key metrics are performing.
 
 The **Conversations** page has the following areas:
 
@@ -77,13 +77,13 @@ The **Data and Metrics** tab is the launching point for any task related to your
 
 - Access semantic data models 
 
-- Upload files [Cloud]{: tag-blue}
+
 
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 
 The scope of the metrics is defined in the semantic data model where you can use advanced modeling tools to add more context to your data, create calculations, and define relationships.
 
-You can also upload files on **Data and Metrics** to quickly jump into asking questions about the data in the files. [Cloud]{: tag-blue}
+
 
 ## Metrics catalog
 {: #metric_catalog}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: semantic, data model, data modeling
 subcollection: watsonx-bi
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Data modeling in watsonx BI
+# Data modeling in {{site.data.keyword.wxbia_short}}
 {: #advanced_mode_model_data}
 
 Use the **Advanced mode** to view and edit semantic data models. You can open a semantic data model from **Data and metrics** and navigate to the **Advanced mode** from the **Metrics overview** page.{: #shortdesc}

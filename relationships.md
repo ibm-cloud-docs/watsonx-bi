@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-08-06"
 
 keywords:
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ subcollection: watsonx-bi
 
 A relationship joins logically related tables that you want to combine in a single query.{: #shortdesc}
 
-IBM watsonx BI automatically detects relationships between tables in a semantic data model by using the auto-join algorithm. 
+{{site.data.keyword.wxbia_full_notm}} automatically detects relationships between tables in a semantic data model by using the auto-join algorithm. 
 
 You can modify or delete relationships, or create new ones so that the semantic data model properly represents the logical structure of your business. Verify that the relationships that you require exist in the semantic data model, the cardinality is set correctly, and referential integrity is enforced.
 
@@ -101,7 +101,7 @@ The following join operators are supported:
 ## Creating a relationship manually
 {: #create_rel_manual}
 
-You might need to create relationships when they are not automatically detected by watsonx BI.
+You might need to create relationships when they are not automatically detected by {{site.data.keyword.wxbia_short}}.
 
 The Relationships diagram is the most convenient place to view all semantic data model relationships, and quickly discover the disconnected tables.
 
@@ -146,7 +146,7 @@ This feature has the following benefits:
 
 - Enhances the overall efficiency and depth of relationship discovery.
 
-Relationships are automatically detected between the assets in a project. Watsonx BI cannot detect relationships that include already modeled tables or columns in the semantic data model as they do not get exported to or enriched in the project.
+Relationships are automatically detected between the assets in a project. {{site.data.keyword.wxbia_short_cap}} cannot detect relationships that include already modeled tables or columns in the semantic data model as they do not get exported to or enriched in the project.
 {: note} 
 
 To generate auto-relationships, follow these steps:

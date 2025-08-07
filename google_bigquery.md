@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: Google BigQuery
 
@@ -121,7 +121,7 @@ Select **Server proxy** to access the Google BigQuery data source through an HTT
 connection.
 
 ## Permissions
-{: #server_proxy_google_big_query}
+{: #permissions_google_big_query}
 
 The connection to Google BigQuery requires the following BigQuery permissions:
 

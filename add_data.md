@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-07"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -50,7 +50,7 @@ You can add a connection or, if you previously connected to a database in the pr
 ## Adding data from an existing connection 
 {: #existing}
 
-1. Click **Create metrics** on the **Data and metrics** tab and enter a name for the new semantic data model. 
+1. Click **Create metrics** on the **Data and Metrics** tab and enter a name for the new semantic data model. 
 
 2. Select **Existing connection** on the **Select data** page. 
 
@@ -70,22 +70,22 @@ The following data sources are supported.
 - [Amazon Redshift](/docs/watsonx-bi?topic=watsonx-bi-amazon_redshift){: external}
 - [Dremio](/docs/watsonx-bi?topic=watsonx-bi-dremio){: external}
 - [Google BigQuery](/docs/watsonx-bi?topic=watsonx-bi-google_big_query){: external}
-- [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}
+
 - [IBM Db2](/docs/watsonx-bi?topic=watsonx-bi-db2){: external}
 - [IBM Informix](/docs/watsonx-bi?topic=watsonx-bi-informix){: external}
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 
 - [IBM watsonx.data](/docs/watsonx-bi?topic=watsonx-bi-wxd){: external} 
 - [MariaDB](/docs/watsonx-bi?topic=watsonx-bi-mariadb){: external} 
-- [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure){: external} 
+- [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure_sql){: external} 
 - [Microsoft SQL Server](/docs/watsonx-bi?topic=watsonx-bi-microsoft_sql){: external} 
 - [MySQL](/docs/watsonx-bi?topic=watsonx-bi-mysql){: external}
 - [Oracle Database](/docs/watsonx-bi?topic=watsonx-bi-oracle){: external} 
 - [PostgreSQL](/docs/watsonx-bi?topic=watsonx-bi-postgresql){: external}
 - [Presto](/docs/watsonx-bi?topic=watsonx-bi-presto){: external} 
 - [Salesforce API](/docs/watsonx-bi?topic=watsonx-bi-salesforce_api){: external} 
-- [SingleStore DB](/docs/watsonx-bi?topic=watsonx-bi-singlestore_db){: external}
-- [Snowflake](/docs/watsonx-bi?topic=watsonx-bi-snoflake){: external} 
-- [Teradata database](/docs/watsonx-bi?topic=watsonx-bi-terradata){: external} 
+- [SingleStore DB](/docs/watsonx-bi?topic=watsonx-bi-singlesourcedb){: external}
+- [Snowflake](/docs/watsonx-bi?topic=watsonx-bi-snowflake){: external} 
+- [Terradata database](/docs/watsonx-bi?topic=watsonx-bi-terradata){: external} 
 
 For more information, see [Connectors](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/conn_types.html?context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=analytics&context=cpdaas&context=analytics&context=analytics&context=analytics&context=analytics&context=analytics&context=analytics&context=cpdaas&context=analytics&context=analytics&context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=analytics&context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=analytics&context=analytics&context=analytics&context=dph&context=analytics&context=cpdaas&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp){: external}.
 

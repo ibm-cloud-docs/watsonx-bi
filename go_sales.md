@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-06"
 
 keywords: sample, questions to ask,
 subcollection: watsonx-bi
@@ -16,9 +16,10 @@ subcollection: watsonx-bi
 # Go sales sample data 
 {: #go_sales}
 
-[Cloud]{: tag-blue}
-
 Go sales is sample data that contains representative sales from 2021 to 2024 for a fictional global retail company. {: #shortdesc}
+
+Sample data is available in {{site.data.keyword.wxbia_short}} as a Service only. 
+{: note}
 
 Go sales includes data on quantity, cost of goods sold, revenue, and other measures. Sales can be viewed by product, retailer, sales organization and employee, and order method. Sales targets (revenue) are identified by employee and product.
 

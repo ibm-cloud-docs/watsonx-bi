@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-06"
 
 keywords: classifications
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ subcollection: watsonx-bi
 
 Classifications describe specific characteristics of the meaning of data. Much like tags or labels, you can create classifications to describe other characteristics of data or other governance items. {: #shortdesc}
 
-In watsonx BI, predefined classifications are available in the [uncategorized category], which describe the sensitivity of the data: 
+In {{site.data.keyword.wxbia_short}}, predefined classifications are available in the [uncategorized category], which describe the sensitivity of the data: 
 
 - Confidential: Confidential data is data that if compromised in some form, is likely to result in significant or long-term harm to the institution or individuals whose data it is.
 

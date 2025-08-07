@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-06"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Using the Metrics catalog
 {: #metrics_catalog}
 
-The **Metrics catalog** is a centralized repository of published metrics, their metric definition details, and related visualizations. It provides a single source of truth for published metrics used across the organization. {: #shortdesc}
+The **Metrics catalog** is a centralized repository of published metrics, their metric definition details, and related visualizations. It provides a single source of truth for published metrics that are used across the organization. {: #shortdesc}
 
 By publishing metrics to the **Metrics catalog**, Data analysts can manage and govern access of metrics without having to share the project in which the metrics were created.
 
@@ -40,14 +40,14 @@ To pin a metric to **Key metrics**:
 
 You can remove a metric that you pinned from **Key metrics**. 
 
-1. In the Metrics catalgo, go to the visualization that you want remove from **Key metrics**.
+1. In the **Metrics catalog**, go to the visualization that you want remove from **Key metrics**.
 
 2.  Click **Unpin from Key metrics**.
 
 ## Assigning metrics to users
 {: #assign}
 
-Data analysts can assign metrics to users. These metrics display under the user's **Key metrics** in **Conversations**.
+Data analysts can assign metrics to users. These metrics are displayed under the user's **Key metrics** in **Conversations**.
 
 1. In the **Metrics catalog**, select the metric you want to assign.
 
@@ -67,4 +67,4 @@ All users can ask questions against a specific metric directly from the **Metric
 
 2. Click **Ask a question**. 
 
-The **Conversations** page opens with a new conversation. You'll notice that the welcome message and the dropdown next to the input box display the name of the metric that you had selected. This means that any question that you now ask about will be scoped to the selected metric. 
+The **Conversations** page opens with a new conversation. You notice that the welcome message and the dropdown next to the input box display the name of the metric that you had selected. This means that any question that you now ask about will be scoped to the selected metric. 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-30"
+lastupdated: "2025-08-06"
 
 keywords: generating visualizations, conversations
 subcollection: watsonx-bi
@@ -15,21 +15,21 @@ subcollection: watsonx-bi
 # Generating visualizations in conversations
 {: #visualizations}
 
-IBM watsonx BI generates a visualization when you ask for one or when it might be better suited to help you quickly see trends and comparisons in your data. {: #shortdesc}
+{{site.data.keyword.wxbia_full_notm}} generates a visualization when you ask for one or when it might be better suited to help you quickly see trends and comparisons in your data. {: #shortdesc}
 
-You can ask watsonx BI to create a visual of your data and use the visualization as a metric. For example, the following inputs can generate a visualization along with related insights:  
+You can ask {{site.data.keyword.wxbia_short}} to create a visual of your data and use the visualization as a metric. For example, the following inputs can generate a visualization along with related insights:  
 
 - Show sales by region 
 
 - Show top 5 products by sales
 
-Watsonx BI generates a visualization that best describes your data in the canvas. However, if other charts are available for your data, the **Change chart** icon in the visualization is enabled. Click **Change chart** to change the visualization to a different chart type.
+{{site.data.keyword.wxbia_short_cap}} generates a visualization that best describes your data in the canvas. However, if other charts are available for your data, the **Change chart** icon in the visualization is enabled. Click **Change chart** to change the visualization to a different chart type.
 
-You can pin a visualization that was generated in response to your question to **Key metrics**. Pinning a generated visualization allows you to monitor changes in that data without having to ask watsonx BI to regenerate the visualization. 
+You can pin a visualization that was generated in response to your question to **Key metrics**. Pinning a generated visualization allows you to monitor changes in that data without having to ask {{site.data.keyword.wxbia_short}} to regenerate the visualization. 
 
 After a visualization is pinned to **Key metrics**, you can click the visualization and use **Ask a question** to get insights.
 
-When you use **Ask a question** to get insights for a pinned visualization, watsonx BI analyzes all of your data to generate a response. The answer might not come from the same project that created the visualization, even if you select that project in the data scope. This is because the original project might not contain the information that is needed to answer your follow-up question.
+When you use **Ask a question** to get insights for a pinned visualization, {{site.data.keyword.wxbia_short}} analyzes all of your data to generate a response. The answer might not come from the same project that created the visualization, even if you select that project in the data scope. This is because the original project might not contain the information that is needed to answer your follow-up question.
 {: important}
 
 ## Customize visualizations by using natural language

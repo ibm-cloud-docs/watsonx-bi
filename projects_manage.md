@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-07-28"
+lastupdated: "2025-08-07"
 
 keywords: add collaborators, projects
 subcollection: watsonx-bi
@@ -30,7 +30,7 @@ These roles provide permissions for projects:
 
 To add collaborators to your project:
 
-1. Go to **Navigation menu > View all projects** and select your project. 
+1. Go to **Navigation Menu > View all projects** and select your project. 
 
 2. From your project, click the **Access Control** page on the **Manage** tab.
 

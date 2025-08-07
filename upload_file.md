@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-07"
 
 keywords: upload file, local file
 
@@ -14,13 +14,13 @@ subcollection: watsonx-bi
 # Uploading a file
 {: #upload}
 
-You can upload supported file types to a project in watsonx BI and use it as a source of data to ask questions in **Conversations**. {: #shortdesc}
+You can upload supported file types to a project in {{site.data.keyword.wxbia_short}} and use it as a source of data to ask questions in **Conversations**. {: #shortdesc}
 
 When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. Then, additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created by using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
 
 You can find your uploaded files on **Data and Metrics > Data sources > Uploaded files** tab. They are also listed as data assets on the **Assets** page of your project.
 
-All uploaded files in watsonx BI as a Service are stored in the Cloud Object Storage bucket that is associated with your project.
+All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored in the Cloud Object Storage bucket that is associated with your project.
 {: note}
 
 ## Uploading a file
@@ -34,7 +34,7 @@ All uploaded files in watsonx BI as a Service are stored in the Cloud Object Sto
 
    Progress messages appear at different stages of the upload:
 
-    - Preparing -  In this stage, watsonx BI prepares the data in the file for metadata enrichment. 
+    - Preparing -  In this stage, {{site.data.keyword.wxbia_short}} prepares the data in the file for metadata enrichment. 
 
     - Enriching - The data in the file then undergoes [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich), which adds business context metadata to your data to prepare it for conversations. 
 
@@ -53,14 +53,14 @@ All uploaded files in watsonx BI as a Service are stored in the Cloud Object Sto
 
 When a file successfully uploads to a project, it is listed as a data asset in the project view. 
 
-You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and also define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
+You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and also define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
 
 ## Managing uploaded files
 {: #manage_file}
 
 **Replacing an uploaded file**
 
-You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM watsonx BI prompts you to specify whether you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
+You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM {{site.data.keyword.wxbia_short}} prompts you to specify whether you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
 
 **Deleting an uploaded file**
 
@@ -72,7 +72,7 @@ Deleting a file removes it from the project permanently. This action might impac
 ## Supported file types 
 {: #supported_file}
 
-The upload file feature in watsonx BI supports the following flat files:
+The upload file feature in {{site.data.keyword.wxbia_short}} supports the following flat files:
 
 ### Delimiter-separated value files
 {: #delimiter}
@@ -223,9 +223,9 @@ Some errors can be avoided by revising the file and uploading again. Other error
 
   You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
   
-  - there was an error in profiling data and watsonx BI couldn't retrieve data values to process the metadata enrichment
-  - Watsonx BI was unable to retrieve data values to write and compute vectors to Cloud Object Storage
-  - Watsonx BI was unable to write vectors to Cloud Object Storage
+  - there was an error in profiling data and {{site.data.keyword.wxbia_short}} couldn't retrieve data values to process the metadata enrichment
+  - {{site.data.keyword.wxbia_short_cap}} was unable to retrieve data values to write and compute vectors to Cloud Object Storage
+  - {{site.data.keyword.wxbia_short_cap}} was unable to write vectors to Cloud Object Storage
 
   If the file encounters metadata enrichment errors during upload:
   

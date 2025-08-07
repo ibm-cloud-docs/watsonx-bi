@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-06"
 
 keywords: cognos analytics, cognos, FM
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Connecting to on-premise resources with Satellite Connector
 {: #satellite}
 
-You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect watsonx BI as a Service to an on-premise resource. A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premise resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. {: shortdesc}
+You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect {{site.data.keyword.wxbia_short}} as a Service to an on-premise resource. A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premise resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. {: shortdesc}
 
 ## Prerequisites
 {: #prereq_satellite}
@@ -91,7 +91,7 @@ After creating a connector, you must set up an agent.
 ### 3. Create a service ID
 {: #step3_serviceID}
 
-1. Navigate to Access (IAM) from your Cloud account or from the Navigation menu in watsonx BI. 
+1. Navigate to Access (IAM) from your Cloud account or from the Navigation menu in {{site.data.keyword.wxbia_short}}. 
 
 2. Under **Service IDs**, click **Create service ID**.
 
@@ -174,7 +174,7 @@ snap install docker.
       |SATELLITE_CONNECTOR_IAM_APIKEY| Y | Your service id API key. For security purposes, the API key is stored in a file named apikey. Set this parameter to the location of the apikey file. For example, SATELLITE_CONNECTOR_IAM_APIKEY=/agent-env-files/apikey|
       |SATELLITE_CONNECTOR_ID | Y | The ID of the Satellite Connector that the agent is bound to. | 
       |SATELLITE_CONNECTOR_TAGS| N | A string that identifies your agent. This string can be any value that you find useful. |
-      |SATELLITE_CONNECTOR_REGION	| Y | Specifies the region for the nearest Satellite Connector datacenter. For watsonx BI, the valid SATELLITE_CONNECTOR_REGION value is: us-south Dallas, TX, USA |
+      |SATELLITE_CONNECTOR_REGION	| Y | Specifies the region for the nearest Satellite Connector datacenter. For {{site.data.keyword.wxbia_short}}, the valid SATELLITE_CONNECTOR_REGION value is: us-south Dallas, TX, USA |
       {: caption="Configuration file parameters"}
 
 
@@ -242,7 +242,7 @@ curl https://c-01.private.us-south.link.satellite.cloud.ibm.com:34115/epm/app-de
 ```
 {: codeblock}
 
-If you're connecting to Cognos Analytics on Premises and the response contains **developer.cognos.com**, this indicates that the request to the private endpoint has reached your watsonx BI account.
+If you're connecting to Cognos Analytics on Premises and the response contains **developer.cognos.com**, this indicates that the request to the private endpoint has reached your {{site.data.keyword.wxbia_short}} account.
  {: tip}
 
 ### 6. Invite users to your project

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-07"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -21,20 +21,20 @@ subcollection: watsonx-bi
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
 
-# IBM Cognos Analytics 
+# IBM Cognos Analytics integration
 {: #cognos}
 
-IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with IBM watsonx BI, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc}
+IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc}
 
-This feature is available in watsonx BI as a Service only. 
+This feature is available in {{site.data.keyword.wxbia_short}} as a Service only. 
 {: note}
  
-IBM watsonx BI and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
+{{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
 
 ## Prerequisites
 {: #prereq}
 
-- A working watsonx BI environment
+- A working {{site.data.keyword.wxbia_short}} environment
 
 - A working Cognos Analytics environment
 
@@ -120,7 +120,7 @@ At any time, you can go to the project from **Navigation Menu > Projects > View 
 
 3. Click **Advanced mode** on the **Metrics overview** page, to review the relationships and metric definitions in the view. 
 
-      IBM watsonx BI automatically generates metric definitions from the Fact table in the FM package. Each metric definition is named after the first measure that is in the collection.
+      {{site.data.keyword.wxbia_full_notm}} automatically generates metric definitions from the Fact table in the FM package. Each metric definition is named after the first measure that is in the collection.
 
       The determinants that are defined in the model specify the attributes that will be included in the metric definition.  
 
@@ -128,7 +128,7 @@ At any time, you can go to the project from **Navigation Menu > Projects > View 
 
 4. Choose the metric definition that you want to work with and from its menu, select **Export metric definition**. 
    
-   When you export a metric definition, it creates or updates a metric and makes it available for use in watsonx BI. This process also allows the data in the metric definition to go through metadata enrichment, which is required to ask questions about the data.
+   When you export a metric definition, it creates or updates a metric and makes it available for use in {{site.data.keyword.wxbia_short}}. This process also allows the data in the metric definition to go through metadata enrichment, which is required to ask questions about the data.
 
 5. Go to **Navigation Menu > Home > Conversations**. 
 

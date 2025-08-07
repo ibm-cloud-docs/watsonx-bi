@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-07"
 
 keywords: review mde, review metadata enrichment, review enrichment
 subcollection: watsonx-bi
@@ -77,7 +77,7 @@ Access an asset's enrichment details by clicking the asset name or by clicking *
 
 - **Source**
 
-  The **Source** section shows the connection and database for the connected asset. 
+  The **Source** section shows the connection and database for the connected asset. For files uploaded from a local system, the **Project** is shown in the **Source** column. 
 
 - **Asset details**
 
@@ -89,7 +89,7 @@ Access an asset's enrichment details by clicking the asset name or by clicking *
 
 - **Enrichment details**
 
-  The enrichment details includes the list of enrichment objectives and the sampling method, which are set by default in watsonx BI. The enrichment details also includes the date when the asset was last enriched and a link to the corresponding job run.
+  The enrichment details includes the list of enrichment objectives and the sampling method, which are set by default in {{site.data.keyword.wxbia_short}}. The enrichment details also includes the date when the asset was last enriched and a link to the corresponding job run.
 
 ### Governance
 {: #governance_enrich}
@@ -218,7 +218,7 @@ You can manage business term, data class, and classification assignments in the 
 
   Review the assigned data class and the suggested data classes. You can click a data class to see some of its properties: its description, its primary and secondary categories, the type of data matching, its parent and dependent data classes, and related classifications and data classes.
 
-  The confidence score for assigning or suggesting a data class must at least equal the set threshold, which is set by default in watsonx BI. The set threshold takes precedence when data classes are assigned. It is not considered for suggestions. In addition to the confidence score, the priority of a data class is taken into account. 
+  The confidence score for assigning or suggesting a data class must at least equal the set threshold, which is set by default in {{site.data.keyword.wxbia_short}}. The set threshold takes precedence when data classes are assigned. It is not considered for suggestions. In addition to the confidence score, the priority of a data class is taken into account. 
 
   A dash (—) indicates that no data class was assigned during analysis.
 

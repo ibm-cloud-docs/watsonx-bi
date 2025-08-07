@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: data security, row-level security
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ subcollection: watsonx-bi
 # Implementing row-level security in semantic data models
 {: #row_level_security}
 
-In IBM watsonx BI, you can implement row-level security in the semantic data model by using a database table that defines which data each user is allowed to see. {: #shortdesc}
+In {{site.data.keyword.wxbia_full_notm}}, you can implement row-level security in the semantic data model by using a database table that defines which data each user is allowed to see. {: #shortdesc}
 
 Let’s say, you need to secure data and dynamically filter it based on the user. You have a table in the database that lists values such as regions and products. The table includes columns product_id and user_email. 
 
@@ -76,4 +76,3 @@ You can also apply a filter with an explicit email in the filter. However, this 
 
 ```
 This filter restricts the "Americas" region to user1@email.com, while all other users see "Asia Pacific". 
-

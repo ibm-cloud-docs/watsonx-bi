@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
 keywords: cloud object storage
 subcollection: watsonx-bi
@@ -19,7 +19,7 @@ IBM Cloud® Object Storage is a highly available, durable, and secure platform f
 
 The files that are uploaded into IBM Cloud Object Storage are called **objects**. They are organized into **buckets** that serve as containers for objects, and which can be configured independently from one another in terms of locations, resiliency, billing rates, security, and object lifecycle. 
 
-IBM watsonx BI requires an instance of IBM Cloud Object Storage for creating your first project and storing: 
+{{site.data.keyword.wxbia_full}} requires an instance of IBM Cloud Object Storage for creating your first project and storing: 
 
 - Projects
 
@@ -50,7 +50,7 @@ To provision an instance of IBM Cloud Object Storage:
 
    The Standard plan includes a Free Tier with 5GB of free monthly usage for 12 months.
 
-You can now select this Cloud object storage instance when you provision watsonx BI. 
+You can now select this Cloud object storage instance when you provision {{site.data.keyword.wxbia_short}}. 
 
 For more information, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage){: external}.
 

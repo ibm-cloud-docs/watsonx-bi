@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-06"
 
 keywords: business terms, glossary, 
 subcollection: watsonx-bi
@@ -14,7 +14,9 @@ subcollection: watsonx-bi
 # Business terms
 {: #business_terms}
 
-You can create business terms that represent your organization's terminology. Business terms are standardized definitions of business concepts so that your data is described in a uniform and easily understood way across your organization. {: #shortdesc}
+You can add business terms, that represent your organization's terminology, to the semantic layer in {{site.data.keyword.wxbia_full}}. {: #shortdesc}
+
+Business terms are standardized definitions of business concepts so that your data is described in a uniform and easily understood way across your organization. 
 
 Business terms can describe the contents of the data, the sensitivity of the data, or other aspects of the data, such as the subject or purpose of the data. You can assign one or more business terms to individual columns in relational data sets, to other governance artifacts, or to data assets.
 
@@ -30,10 +32,10 @@ You can use business terms to:
 
 For example, suppose your company has data that includes personal identification numbers from people in many different countries. The columns that contain personal identification numbers are named with abbreviations of the country-specific terms, for example: "SSN" for US Social Security Numbers, "SIN" for Canadian Social Insurance Numbers, "UID" for Indian Unique Identification Numbers, and so on. You can create a business term named "Personal identification number" and assign it to all of the columns that contain personal identification numbers, to show that the "SSN", "SIN", and "UID" columns contain the same type of information and what that information means. 
 
-## Predefined business terms or glossary in watsonx BI
+## Predefined business terms or glossary in {{site.data.keyword.wxbia_short}} 
 {: #predefined_terms}
 
-IBM watsonx BI comes with predefined business terms in the Knowledge accelerator artifact and the Business Analytics category. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions. 
+{{site.data.keyword.wxbia_full_notm}} comes with predefined business terms in the Knowledge accelerator artifact and the Business Analytics category. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions. 
 
 To view pre-defined business terms, go to the **Navigation Menu** and open **Governance > Business Terms**.
 
@@ -54,7 +56,7 @@ Business terms can be automatically assigned to or suggested for a column during
 
 Assigned and suggested business terms have a confidence score attached to them. Terms are assigned or suggested when the confidence level exceeds the minimum confidence level thresholds for a term to be assigned or suggested. The default setting for assignment threshold is 60% and suggestion threshold is 50%. 
 
-In watsonx BI, business term assignment uses the following methods:
+In {{site.data.keyword.wxbia_short}}, business term assignment uses the following methods:
 
 - Machine learning: A built-in supervised machine learning model is used to assign terms. By default, the built-in model is trained with assets from the project.
 

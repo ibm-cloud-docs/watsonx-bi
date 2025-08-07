@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-07"
 
 keywords: browser, support
 subcollection: watsonx-bi
@@ -14,20 +14,20 @@ subcollection: watsonx-bi
 
 
 # Browser and language support
-{: #browswer}
+{: #browser}
 
-IBM watsonx BI is supported in English only. {: #shortdesc}
+{{site.data.keyword.wxbia_full}} is supported in English only. {: #shortdesc}
 
-For the best experience with the watsonx BI product and documentation, use the supported browsers. Otherwise, you might experience limits to functionality.
+For the best experience with the {{site.data.keyword.wxbia_short}} product and documentation, use the supported browsers. Otherwise, you might experience limits to functionality.
 
 ## Web browsers
 {: #web_browser}
 
-Use the latest versions of the following web browsers with watsonx BI:
+Use the latest versions of the following web browsers with {{site.data.keyword.wxbia_short}}:
 
 - Mozilla Firefox  
 
-- Mozilla Firefox ESR (see Mozilla [Firefox Extended Support Release](https://www.mozilla.org/en-US/firefox/enterprise/){: external} for more details) 
+- Mozilla Firefox ESR (see Mozilla [Firefox Extended Support Release](https://support.mozilla.org/en-US/kb/choosing-firefox-update-channel){: external} for more details) 
 
 - Google Chrome
 
@@ -39,6 +39,6 @@ If you use Firefox on MacOS, your Mac might interpret horizontal scrolling withi
 ## Screen readers 
 {: #screen_reader}
 
-Use the latest version of the following screen reader with watsonx BI:
+Use the latest version of the following screen reader with {{site.data.keyword.wxbia_short}}:
 
 - JAWS

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-08-06"
 
 keywords: categories
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ Categories organize governance artifacts in a hierarchical structure similar to 
 
 Categories can be organized in a hierarchy based on their meaning and relationships to one another. A category can have subcategories, but a subcategory can have only one direct parent category. By default, all users who have permission to access governance artifacts can view categories and their artifacts. 
 
-The following predefined categories are available in watsonx BI:
+The following predefined categories are available in {{site.data.keyword.wxbia_full_notm}}:
 
 - **[uncategorized]** category -  Contains other predefined governance artifacts (predefined data classes and classifications). The [uncategorized] catagory can be only a primary category for governance artifacts and its artifacts are always visible to all users. This category can't have subcategories and can't be renamed or deleted. By default, [uncategorized] has these category collaborators: 
 
@@ -39,7 +39,7 @@ By default, the Locations category has these category collaborators:
    
    - The All users group, with the Viewer role.
 
-You can also find the Knowledge Accelerator under categories in watsonx BI, which include a sample grouping of personal information terms. Knowledge Accelerators offer pre-created, extensive, curated glossaries to improve data classification and other governance operations. 
+You can also find the Knowledge Accelerator under categories in {{site.data.keyword.wxbia_short}}, which include a sample grouping of personal information terms. Knowledge Accelerators offer pre-created, extensive, curated glossaries to improve data classification and other governance operations. 
 
 For more information on categories, see [Categories for governance artifacts](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/categories.html?context=df&audience=wdp){: external} (related topic for IBM watsonx.data intelligence).  
 

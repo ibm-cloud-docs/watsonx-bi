@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-08-06"
 
 keywords:
 subcollection: watsonx-bi
@@ -20,7 +20,7 @@ Reference data sets act as lookup tables that map codes and values. Some referen
 
 Reference data helps you, for example, define a standard set of values for certain fields. It can be useful to create a standard definition of country codes and use this reference data to ensure that country code fields comply. Different designations such as “US”, “USA”, “United States”, and "America" can all be resolved to the same reference data value. As a result you can get much more consistent data.
 
-The predefined reference data sets in watsonx BI provide physical and sovereign locations and can be found in the Locations category:
+The predefined reference data sets in {{site.data.keyword.wxbia_short}} provide physical and sovereign locations and can be found in the Locations category:
 
 - Physical locations: Physical location is the geographical location of the data asset.
 
@@ -61,6 +61,5 @@ You can also import reference data from a CSV file.
 2. Click **Add reference data set > Import from file**. 
 
 3. Upload the file and choose a method for merging imported and existing artifacts. 
-
 
 For more information, see the related IBM watsonx.data intelligence topic, [Reference data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/reference_data_sets.html?context=df&audience=wdp){: external}.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-29"
+lastupdated: "2025-08-07"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -16,22 +16,22 @@ subcollection: watsonx-bi
 # Roles and permissions 
 {: #roles}
 
-Review the roles and permissions that you need for working with watsonx BI.{: #shortdesc}
+Review the roles and permissions that you need for working with {{site.data.keyword.wxbia_short}}.{: #shortdesc}
 
-IBM watsonx BI users require two types of roles:
+{{site.data.keyword.wxbia_short_cap}} users require two types of roles:
 
-- Roles assigned in watsonx BI, which are called Collaborator roles
+- Roles assigned in {{site.data.keyword.wxbia_short}}, which are called Collaborator roles
 
 - Service roles:
 
-  - Roles assigned in IBM Cloud, which are called IAM roles, if you're using watsonx BI as a Service
+  
 
-  - Predefined roles, if you're using watsonx BI on IBM Software Hub
+  - Predefined roles, if you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub
 
 ## Assigning collaborator roles
 {: #collab_roles}
 
-An Administrator can assign collaborator roles from the **Administration > Configurations and settings > Manage BI community** page.  These roles control access to the actions that can be taken in watsonx BI.
+An Administrator can assign collaborator roles from the **Administration > Configurations and settings > Manage BI community** page.  These roles control access to the actions that can be taken in {{site.data.keyword.wxbia_short}}.
 
 - **Analytics consumers**: Analytics consumers can ask questions about their data and monitor metrics that were assigned to them. Analytics consumers can create metrics but cannot give access to metrics, publish metrics to the **Metrics catalog**, or edit published metrics.
 
@@ -41,7 +41,7 @@ An Administrator can assign collaborator roles from the **Administration > Confi
 
 To add members to the community:
 
-1. From the **Navigation menu**, go to **Administration > Configurations and settings > Manage BI community** page.
+1. Open the **Navigation menu** and go to **Administration > Configurations and settings > Manage BI community**.
 
 2. Click **Add members** and choose if you want to add individual users or groups. 
 
@@ -49,17 +49,15 @@ To add members to the community:
 
 When you assign collaborator roles, the related service role automatically gets assigned. 
 
-The IBM Cloud account owner or Administrator can modify the IAM Service and Platform roles, if required. For more information, see [IBM Cloud IAM roles](/docs/account?topic=account-userroles){: external}.
-{: note}
+
 
 The following table shows the actions that you can complete depending on your collaborator role.
 
-Data analysts can give access to metrics in the **Metrics catalog** to individual users or user groups. To view the details of a user group that can access a metric, Data analysts need to have the **Viewer** IAM Platform role. 
-{: important}
+
 
 Action |Administrator | Data analyst | Analytics consumer
 |---------------| -----|------|---------|
-|**watsonx BI setup**|
+|**{{site.data.keyword.wxbia_short}} setup**|
 |[Cloud]{: tag-blue} Change large language model | ✓ | x | x |
 |Add or delete user groups | ✓ | x | x |
 |Assign and modify roles | ✓ | x | x |
@@ -79,4 +77,4 @@ Action |Administrator | Data analyst | Analytics consumer
 |Access metrics in Metrics catalog | ✓ | ✓ | ✓ |
 |Assign metrics to users | ✓ | ✓ | x |
 |Pin metric to Key metrics from Metrics catalog | ✓ | ✓ | ✓ |
-{: caption="Permissions by role for watsonx BI features" caption-side="bottom"}
+{: caption="Permissions by role for {{site.data.keyword.wxbia_short}} features" caption-side="bottom"}

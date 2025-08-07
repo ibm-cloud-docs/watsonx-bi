@@ -23,7 +23,6 @@ toc:
               - release-notes-software.md
               #- release-notes-cloud.md
           - about.md
-          - relationship_between_services.md 
           #- feature_diff.md
           - topicgroup:
               label: Known issues and limitations
@@ -42,6 +41,7 @@ toc:
              #- plans.md
              #- cos.md
              #- iam-access.md
+             #- deprovisioning.md
           - configuration_settings.md
           - roles_permissions.md
           #- choose_llm.md
@@ -114,11 +114,11 @@ toc:
           topics:
             - gettingstarted_wxbia.md
             - asking_questions.md 
-            #- llm_responses.md
+            - llm_responses.md
             - change_scope.md
             - steps_ai.md 
             - visualizations.md
-            - feedback.md
+            #- feedback.md
             - explainability.md
       - metrics_catalog.md      
       #- topicgroup:

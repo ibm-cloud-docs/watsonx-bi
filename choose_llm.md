@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2024-04-26"
+lastupdated: "2025-08-06"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -24,9 +24,9 @@ subcollection: watsonx-bi
 # Choosing the large language model (LLM) 
 {: #choose_llm}
 
-At the time of setting up watsonx BI, Administrators can choose the large language model (LLM) that will be used in watsonx BI conversations for users in their organization. {: #shortdesc}
+At the time of setting up {{site.data.keyword.wxbia_full}}, Administrators can choose the large language model (LLM) that will be used in {{site.data.keyword.wxbia_short}} conversations for users in their organization. {: #shortdesc}
 
-This feature is available in watsonx BI as a Service only. 
+This feature is available in {{site.data.keyword.wxbia_short}} as a Service only. 
 {: note}
 
 As an Administrator, you can choose between the following:
@@ -44,6 +44,6 @@ For complex, multi-step BI queries, choose the Meta Llama 4 and IBM Granite-3-8b
 
 Administrators change the LLM from **Navigation menu > Configuration and settings**. 
 
-When you change the LLM, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the Cloud account that has access to watsonx BI.
+When you change the LLM, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the Cloud account that has access to {{site.data.keyword.wxbia_short}}.
 
 Users in the organization will be notified in the user interface when a change is made. Additionally, users can see the updated LLM name in the AI icon and the query generation step under **Steps taken by AI** when they ask their next question or start a new conversation.

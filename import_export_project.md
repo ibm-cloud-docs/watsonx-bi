@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-06"
 
-keywords:
+keywords: import project,copy project
 subcollection: watsonx-bi
 
 
@@ -26,7 +26,7 @@ subcollection: watsonx-bi
 
 You can create a project that already has assets by importing a project from the **Data and Metrics** page.
 
-You can import or export a project only from **Data and Metrics**. The import and export project options are not available on the **Projects** page in watsonx BI.
+You can import or export a project only from **Data and Metrics**. The import and export project options are not available on the **Projects** page in {{site.data.keyword.wxbia_short}}.
 {: note}
 
 ## Prerequisites

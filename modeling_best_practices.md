@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-07-23"
+  years: 2025
+lastupdated: "2025-08-06"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Optimizing data for AI
 {: #best_practices}
 
-IBM watsonx BI is a powerful analytics tool that uses large language models (LLM) to run complex, multi-step BI queries on your data. While watsonx BI has contextual understanding of data and can quickly respond to your questions, the quality of data determines the quality of the LLM’s generated responses. {: #shortdesc}
+{{site.data.keyword.wxbia_full_notm}} is a powerful analytics tool that uses large language models (LLM) to run complex, multi-step BI queries on your data. While {{site.data.keyword.wxbia_short}} has contextual understanding of data and can quickly respond to your questions, the quality of data determines the quality of the LLM’s generated responses. {: #shortdesc}
 
 To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM. 
 
@@ -80,11 +80,11 @@ To change the column identifiers in a metric definition:
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
-2. Click the **Advanced mode**.
+2. Click **Advanced mode** on the **Metrics overview** page.
 
 3. Under the metric definition, select the column you want to add the identifier to.
 
-4. Open its **Properties** tab and scroll down to the Advanced section.
+4. Open its **Properties** tab and scroll down to the **Advanced** section.
 
 5. Enter the **Identifier** value.
 

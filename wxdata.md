@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-06"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -16,9 +16,9 @@ subcollection: watsonx-bi
 # IBM watsonx.data
 {: #wxd}
 
-IBM watsonx.data is a governed data lakehouse optimized for data and AI workloads. Integrating IBM watsonx BI with watsonx.data brings the ability for any type of data (structured, semi-structured, and unstructured) to be directly accessible for AI and business intelligence, making it easier for data scientists and data analysts to use the data. {: #shortdesc}
+IBM watsonx.data is a governed data lakehouse optimized for data and AI workloads. Integrating {{site.data.keyword.wxbia_full_notm}} with watsonx.data brings the ability for any type of data (structured, semi-structured, and unstructured) to be directly accessible for AI and business intelligence, making it easier for data scientists and data analysts to use the data. {: #shortdesc}
 
-IBM watsonx BI and watsonx.data integration support the following connectors:
+{{site.data.keyword.wxbia_short_cap}} and watsonx.data integration support the following connectors:
 
 - IBM watsonx.data Presto
 
@@ -27,14 +27,14 @@ IBM watsonx BI and watsonx.data integration support the following connectors:
 ## Prerequisites
 {: #prereq_wxd}
 
-- A working watsonx BI environment
+- A working {{site.data.keyword.wxbia_short}} environment
 
 - A working watsonx.data environment
 
-## Connecting to watsonx.data from watsonx BI
+## Connecting to watsonx.data from {{site.data.keyword.wxbia_short}}
 {: #connect_wxd}
 
-You can add a connection from the **Data and Metrics** tab in watsonx BI when you create metrics.
+You can add a connection from the **Data and Metrics** tab in {{site.data.keyword.wxbia_short}} when you create metrics.
 
 1. On the **Data and Metrics** tab, click **Create metrics** and give your semantic data model a name.
 

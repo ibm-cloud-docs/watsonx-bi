@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2025-07-21"
+lastupdated: "2025-08-07"
 
 keywords:
 subcollection: watsonx-bi
@@ -20,7 +20,7 @@ A project is a collaborative workspace where you work with data and other assets
 
 Any data you want to work with and want to ask about, first needs to be added to a project through a connection or by uploading data files. You can see a list of projects you have access to under **Navigation menu > Projects > View all projects**. 
 
-You can choose an existing project to work in or create a new project from the **Data and metrics** tab. 
+You can choose an existing project to work in or create a new project from the **Data and Metrics** tab. 
 
 To create a project:
 
@@ -28,9 +28,9 @@ To create a project:
 
 2. Enter a name for your project. 
 
-The new project is automatically configured for watsonx BI. 
+The new project is automatically configured for {{site.data.keyword.wxbia_short}}. 
 
-You can manage the project from **Navigation menu > Projects > View all projects**. 
+You can manage the project from **Navigation Menu > Projects > View all projects**. 
 
 If your organization has given you access to sample data and you choose to install it, a project for the sample data is automatically created.
 {: note}
