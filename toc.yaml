@@ -45,12 +45,12 @@ toc:
           - configuration_settings.md
           - roles_permissions.md
           #- choose_llm.md
-          #- topicgroup:
-             #label: Samples in watsonx BI as a Service
-              #topics:
-              #- set_samples.md
-              #- go_sales.md
-              #- customer_exp.md    
+          - topicgroup:
+              label: Sample data in watsonx BI as a Service
+              topics:
+              - set_samples.md
+              - go_sales.md
+              - customer_exp.md    
       - topicgroup:
          label: Services and integrations
          topics: 
@@ -118,7 +118,7 @@ toc:
             - change_scope.md
             - steps_ai.md 
             - visualizations.md
-            #- feedback.md
+            - feedback.md
             - explainability.md
       - metrics_catalog.md      
       #- topicgroup:
