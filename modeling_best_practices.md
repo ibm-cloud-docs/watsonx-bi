@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-08"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -163,9 +163,16 @@ For example, if a metric definition contains a “MONTH_NAME” column, the samp
 
 Use column expressions for calculations or transformations that encapsulate complex logic.
 
-You can create column expressions in the semantic data model. Select a column and in the column properties, click the View or edit link in the Expression field. Add the necessary logic for this column to the Expression editor.Here is an example of an expression for the “EXECUTIVE_INDICATOR” column, which is a binary “Y” or “N” value that determined by the corresponding value in the BAND column.
+You can create column expressions in the semantic data model. Select a column and in the column properties, click the **View or edit** link in the **Expression** field. Add the necessary logic for this column to the Expression editor.Here is an example of an expression for the “EXECUTIVE_INDICATOR” column, which is a binary “Y” or “N” value that determined by the corresponding value in the BAND column.
+
+![Creating a column expression ](wxbi_tip_expression.png){: caption="The View or edit link displays in the Expression field" caption-side="bottom"}
 
 Let’s say you have a "Status" column with multiple cell values like "Todo", "In progress", 'Reviewing", "Icebox" and "Done". Your organization defines an open state as a status that is not in “Done” or “Icebox”. You can create a calculation column called “Is_open” and create an expression that returns “Y/N” based on the value from “Status” column, making it easier for the LLM understand the logic.
+
+![Column expression](wxbi_column_expression.png){: caption="A column expression displays in the Expression editor" caption-side="bottom"}
+
+Give your expressions column identifiers that map to how your users will reference the data. For example, the "Is_open" expression we created, is a good name if this is how users refer to open or closed items. However, if users generally refer to items as active or inactive items then "Is_active" would be a better name.
+{: tip}
 
 ### 7. Using column expressions to filter data
 {: #tip_exp_filter}
