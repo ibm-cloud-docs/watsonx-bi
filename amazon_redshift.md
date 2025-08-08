@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: amazon redshift
 
@@ -30,4 +30,4 @@ To create the connection, you need these connection details:
 ## Amazon Redshift setup
 {: #setup_amazon_redshift}
 
-See [Amazon Redshift setup prerequisites](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-prereq.html) for setup information.
+See [Get started with Amazon Redshift Serverless data warehouses](https://docs.aws.amazon.com/redshift/latest/gsg/new-user-serverless.html) for setup information.

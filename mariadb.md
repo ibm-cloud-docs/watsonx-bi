@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: MariaDB
 
@@ -43,5 +43,5 @@ For **Private connectivity**, to connect to a database that is not externalized 
 
 Setup depends on whether you are connecting from a local MariaDB server or a Microsoft Azure Database for MariaDB database service in the cloud.
 
-- MariaDB server: [MariaDB Administration](https://mariadb.com/kb/en/mariadb-administration/)
-- Microsoft Azure Database for MariaDB: [Quickstart: Create an Azure Database for MariaDB server by using the Azure portal](https://docs.microsoft.com/en-us/azure/mariadb/quickstart-create-mariadb-server-database-using-azure-portal)
+- MariaDB server: [Server Management](https://mariadb.com/docs/server/server-management  )
+- Microsoft Azure Database for MariaDB: [Quickstart: Create an Azure Database for MariaDB server by using the Azure portal](https://learn.microsoft.com/en-us/previous-versions/azure/mariadb/quickstart-create-mariadb-server-database-using-azure-portal)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: snowflake
 subcollection: watsonx-bi
@@ -34,7 +34,7 @@ To create the connection, you need the following connection details:
 
   Example: https://<okta_account_name>.okta.com
 
-  Leave this field blank if you want to use the default authentication of Snowflake. For information about federated authentication provided by Okta, see [Native SSO](https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-use.html#native-sso-okta-only).
+  Leave this field blank if you want to use the default authentication of Snowflake. For information about federated authentication provided by Okta, see [Native SSO - Okta only](https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-use#native-sso-okta-only).
 
 ### Credentials
 {: #credentials_snowflake}

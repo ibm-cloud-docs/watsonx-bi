@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-08"
 
 keywords: cognos analytics, cognos, FM
 subcollection: watsonx-bi
@@ -13,10 +13,10 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Connecting to on-premise resources with Satellite Connector
+# Connecting to on-premises resources with Satellite Connector
 {: #satellite}
 
-You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect {{site.data.keyword.wxbia_short}} as a Service to an on-premise resource. A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premise resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. {: shortdesc}
+You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect {{site.data.keyword.wxbia_short}} as a Service to an on-premises resource. A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premises resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. {: shortdesc}
 
 ## Prerequisites
 {: #prereq_satellite}
@@ -33,7 +33,7 @@ You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: externa
 
 - You must be assigned to a user group. The user group name is required to create a Satellite Connector (Resource group field).
 
-- Ensure your environment meets the [mininum requirements](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui#min-requirements){: external} to run the Satellite Connector agent.
+- You need to ensure that your environment meets the [minimum requirements](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui#min-requirements){: external} to run the Satellite Connector agent.
 
 ### 1. Create a Satellite Connector
 {: #_step1_create_satellite_conn} 
@@ -57,14 +57,14 @@ Creating a Satellite Connector is the first step in establishing a connection.
    You might see an error after creating the connector. You can ignore this error and proceed.
    {: note}
 
-Under the list of Connectors, you should see the connector that you just created. You might need to click **Refresh** to update the list of connectors
+Under the list of Connectors, you can see the connector that you created. You might need to click **Refresh** to update the list of connectors
 
 ### 2. Create user endpoint
 {: #step2_user__endpoint}
 
 After creating a connector, you must set up an agent.
 
-1. Click the connector that you just created. 
+1. Click the connector that you created. 
 
 2. Copy the connector ID for use later.
 
@@ -86,7 +86,7 @@ After creating a connector, you must set up an agent.
 
 8. You can now see the newly created endpoint. Click the endpoint to copy the **Endpoint address**. 
 
-   This endpoint address is the cloud endpoint to access Cognos Analytics and will be required later. 
+   This endpoint address is the cloud endpoint to access the on-premises service (such as Cognos Analytics) and is required later. 
 
 ### 3. Create a service ID
 {: #step3_serviceID}
@@ -97,7 +97,7 @@ After creating a connector, you must set up an agent.
 
 3. Enter a name for the service ID. 
 
-4. Under API keys, click **Create** to create API keys for this sevice ID. 
+4. Under API keys, click **Create** to create API keys for this service ID. 
 
 5. Enter the following information and click **Create**.
 
@@ -112,8 +112,7 @@ After creating a connector, you must set up an agent.
 
 Each Satellite Connector needs at least one agent running on the remote location to establish a secure connection to a data source. You can install the agent as a Docker image.
 
-Ensure that your machine has docker installed or
-snap install docker.
+You need to ensure that your machine has docker that is installed or snap install docker.
 
 1. Run the installation command to install ibmcloud CLI. 
 
@@ -138,7 +137,7 @@ snap install docker.
    ```
    {: codeblock}
 
-3. Unzip file openshift-client-linux.tar.gz.
+3. Extract file openshift-client-linux.tar.gz.
 
    ```
    tar zxvf /tmp/openshift-client-linux.tar.gz
@@ -174,7 +173,7 @@ snap install docker.
       |SATELLITE_CONNECTOR_IAM_APIKEY| Y | Your service id API key. For security purposes, the API key is stored in a file named apikey. Set this parameter to the location of the apikey file. For example, SATELLITE_CONNECTOR_IAM_APIKEY=/agent-env-files/apikey|
       |SATELLITE_CONNECTOR_ID | Y | The ID of the Satellite Connector that the agent is bound to. | 
       |SATELLITE_CONNECTOR_TAGS| N | A string that identifies your agent. This string can be any value that you find useful. |
-      |SATELLITE_CONNECTOR_REGION	| Y | Specifies the region for the nearest Satellite Connector datacenter. For {{site.data.keyword.wxbia_short}}, the valid SATELLITE_CONNECTOR_REGION value is: us-south Dallas, TX, USA |
+      |SATELLITE_CONNECTOR_REGION	| Y | Specifies the region for the nearest Satellite Connector data center. For {{site.data.keyword.wxbia_short}}, the valid SATELLITE_CONNECTOR_REGION value is: us-south Dallas, TX, USA |
       {: caption="Configuration file parameters"}
 
 
@@ -209,7 +208,7 @@ snap install docker.
     ```
     {: codeblock}
 
-11. Verify the tunnel gets established to your Connector by looking at the logs of the container.
+11. Verify that the tunnel gets established to your Connector by looking at the logs of the container.
 
       ```
       docker logs CONTAINER-ID
@@ -242,7 +241,7 @@ curl https://c-01.private.us-south.link.satellite.cloud.ibm.com:34115/epm/app-de
 ```
 {: codeblock}
 
-If you're connecting to Cognos Analytics on Premises and the response contains **developer.cognos.com**, this indicates that the request to the private endpoint has reached your {{site.data.keyword.wxbia_short}} account.
+If you're connecting to Cognos Analytics on Premises and the response contains **developer.cognos.com**, it indicates that the request to the private endpoint reached your {{site.data.keyword.wxbia_short}} account.
  {: tip}
 
 ### 6. Invite users to your project

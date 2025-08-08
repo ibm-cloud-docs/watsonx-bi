@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: dremio
 
@@ -45,7 +45,7 @@ To create the connection, you need these connection details:
 ## Dremio setup
 {: #setup_dremio}
 
-Dremio can be set up in various deployments, see [Dremio Cluster Deployment](https://docs.dremio.com/current/get-started/cluster-deployments/). To set up Dremio Cloud, see [Dremio Cloud](https://docs.dremio.com/cloud/).
+Dremio can be set up in various deployments, see [Dremio Cluster Deployment](https://docs.dremio.com/25.x/get-started/cluster-deployments/). To set up Dremio Cloud, see [Dremio Cloud](https://docs.dremio.com/cloud/).
 
 ## Restriction
 {: #restriction_dremio}

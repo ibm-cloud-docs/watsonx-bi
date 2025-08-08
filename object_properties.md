@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-08-08"
 
 keywords:
 subcollection: watsonx-bi
@@ -26,7 +26,10 @@ For example, **Member display list** is available only for semantic data models,
 
 You can view and modify the following properties on the **General** tab of the **Properties** pane.
 
-- **Label**: Specifies the item's name that is displayed in the user interface. This property applies to all items. You can't change the label for members. To change the label for a semantic data model, use the **Save as** option.
+- **Label**: Specifies the item's name that is displayed in the user interface. This property applies to all items. You can't change the label for members. To change the label for a semantic data model, use the **Save as** option. 
+
+Ensure each asset and column has a unique label or a name. Labels are one of the factors that are used by the AI to understand questions and the context of your data when generating query statements. 
+{: tip}
 
 - **Hide from users**: Use this property to hide items, such as tables, columns, packages, or folders, in a semantic data model. The hidden items are grayed out in the modeling interface. 
 
@@ -97,6 +100,9 @@ The following properties are specified in the **Advanced** section on the **Prop
 
 - **Identifier**: This property uniquely identifies objects. It is used, either by itself or in conjunction with parent object identifiers, to generate SQL queries in expressions. The property is created automatically for a semantic data model and all its objects. For tables and columns, the property value is inherited from the data source. The property can be modified for all objects except for folders and the semantic data model itself. To change the semantic data model identifier, save it under a different name.   
 
+Ensure each column has an identifier. Identifiers are one of the factors that are used by the AI to understand questions and the context of your data when generating query statements. 
+{: tip}
+
   When changing this property, ensure that:
     
     - The first character is a letter or an underscore (_).
@@ -126,3 +132,5 @@ The following properties are specified in the **Advanced** section on the **Prop
 - **Source**: This property applies to all objects in the semantic data model. For a table or column, it shows the source name and path.
 
 - **Supports NULL values**: Specifies whether a column supports null values. By default, this property value is inherited from the source. You can change this value.
+
+- **User max suggested questions**: Use this property to specify the number of suggested questions that you want to generate when you export a metric definition. The default value is 10 and the maximum is 100. Suggested questions might  display at various points in a conversation. The questions displayed are based on the assets in the conversation's current scope, and can be asked to generate further insight.
