@@ -58,7 +58,7 @@ toc:
          label: Services and integrations
          topics: 
            - wxdata.md
-           #- cognos.md 
+           - cognos.md 
            - supported_connectors.md
            - satellite_connector.md    
   - navgroup:
