@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-11"
 keywords: conversation, scope
 subcollection: watsonx-bi
 
@@ -33,15 +33,16 @@ You can set the scope of a conversation to:
 
   You can choose from projects that you created or those that you have access to.
 
-
+-  **An uploaded file** - You can choose a file that you've uploaded and which has gone through metadata enrichment. 
 
 - **A metric from the Metrics catalog** 
 
   When you choose to ask a question against a single metric from the **Metrics catalog**, you're automatically taken to **Conversations** with the scope set to the metric you selected.
 
+- **Sample data** - If you installed sample data at the time of setup, you can ask set the scope of the conversation to just the sample data set. You can install sample data at any time from **Configuration and settings**. 
 
-
-
+The upload file and sample data features are available only in {{site.data.keyword.wxbia_short}} as a Service.
+{: important}
 
 When you change the scope and ask your question, a message displays in the conversation canvas to confirm the change in the scope. The selected scope remains until you change it again.
 

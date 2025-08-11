@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -48,15 +48,15 @@ An instance of storage is required to store the following:
 
 - Your conversations
 
-
+If you are using {{site.data.keyword.wxbia_short}} as a Service, you can use an existing instance or provision a new instance of IBM Cloud object storage in IBM Cloud. For more information, see [IBM Cloud Object Storage](/docs/watsonx-bi?topic=watsonx-bi-cos){: external}. 
 
 If you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub, see [Storage considerations](https://www.ibm.com/docs/en/software-hub/latest?topic=planning-storage-considerations).
 
-## Access control
+## Access (IAM) Access control
 {: #access_control}
 
-To manage access to watsonx BI, you must first invite users to {{site.data.keyword.wxbia_short}} using the Access control . Once they accept the invitation, users can be added as members and you can assign them their collaborator roles. For more information, see: 
+To manage access to watsonx BI, you must first invite users to {{site.data.keyword.wxbia_short}} using the Access control or IBM Cloud Manage Access (IAM) tool. Once they accept the invitation, users can be added as members and you can assign them their collaborator roles. For more information, see: 
 
-
+- [Adding users to the Cloud account](/docs/allowlist/watsonx-bi?topic=watsonx-bi-add_users_account){: external}, if you're using watsonx BI as a Service
 
 - [Managing IBM Software Hub users](https://www.ibm.com/docs/en/software-hub/latest?topic=a-managing-users), if you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub

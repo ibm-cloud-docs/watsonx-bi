@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-11"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -82,16 +82,16 @@ Before you create metrics, review the following resources:
 
 8. You are now on the **Metrics overview** page and can create metrics by:
 
-- [Generating them automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} 
+   - [Generating them automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} 
 
-   AI automatically generates metrics based on your enriched data. The generate metrics process automatically creates metric definitions, enriches these definitions and, after you select the ones that you want to use, exports them to the project as metrics for use in conversations. 
+      AI automatically generates metrics based on your enriched data. The generate metrics process automatically creates metric definitions, enriches these definitions and, after you select the ones that you want to use, exports them to the project as metrics for use in conversations. 
 
-- [Building them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external} 
+   - [Building them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external} 
 
-   You can build your own metrics in the semantic data model. To get started, click a measure and select **New > Metric definition**. After you are satisfied with metric, save the semantic data model and export the metric definition. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
+      You can build your own metrics in the semantic data model. To get started, click a measure and select **New > Metric definition**. After you are satisfied with metric, save the semantic data model and export the metric definition. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
 
-   Anytime you make a change to the metric definition, for the change to apply to the metric in the project, you must export the metric definiton to the project.
-   {: tip}
+      Anytime you make a change to the metric definition, for the change to apply to the metric in the project, you must export the metric definiton to the project.
+      {: tip}
    
 9. Navigate back to the **Metrics overview** page. You can see the metrics that you created and, if applicable, their enrichment status in the **Metrics overview** panel. 
 
@@ -108,9 +108,10 @@ Before you create metrics, review the following resources:
    
    You can modify a metric by editing its metric definition in the **Advanced mode**. If you tried a metric in a conversation and didn't get the expected responses, you can edit the metric definition and export it again for use. 
 
-   c. Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model 
+   c. Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model
+
    
-   You can create new or modify existing relationships, calculations, metric definitions, and more. 
+   You can create new or modify existing relationships, calculations, metric definitions, and more. Learn how out to [optimize data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external} in the semantic model . 
 
    d. [Add visualizations to metrics](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics){: external}  
    

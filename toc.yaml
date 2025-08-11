@@ -24,36 +24,36 @@ toc:
               label: What's new 
               topics: 
               - release-notes-software.md
-              #- release-notes-cloud.md
+              - release-notes-cloud.md
           - about.md
-          #- feature_diff.md
+          - feature_diff.md
           - topicgroup:
               label: Known issues and limitations
               topics:
                 - known_issues_software.md
-                #- known_issues_cloud.md
+                - known_issues_cloud.md
       - topicgroup:
           label: Setting up watsonx BI 
           topics: 
           - install_wxbi.md
-          #- topicgroup:
-             #label: Setting up watsonx BI as a Service
-             #topics:
-             #- quick_start.md 
-             #- adding_users_cloud.md
-             #- plans.md
-             #- cos.md
-             #- iam-access.md
-             #- deprovisioning.md
+          - topicgroup:
+              label: Setting up watsonx BI as a Service
+              topics:
+              - quick_start.md 
+              - adding_users_cloud.md
+              - plans.md
+              - cos.md
+              - iam-access.md
+              - deprovisioning.md
           - configuration_settings.md
           - roles_permissions.md
-          #- choose_llm.md
-          #- topicgroup:
-             #- label: Sample data in watsonx BI as a Service
-              #- topics:
-              #- set_samples.md
-              #- go_sales.md
-             # - customer_exp.md    
+          - choose_llm.md
+          - topicgroup:
+              label: Sample data in watsonx BI as a Service
+              topics:
+              - set_samples.md
+              - go_sales.md
+              - customer_exp.md    
       - topicgroup:
          label: Services and integrations
          topics: 
@@ -65,11 +65,11 @@ toc:
       id: howto
       topics:
       - topicgroup:
-              label: Projects - your workspaces
+              label: "Projects - your workspaces"
               topics:
                - projects.md
                - projects_manage.md
-               #- import_export_project.md  
+               - import_export_project.md  
       - topicgroup:
               label: Preparing data for AI
               topics:
@@ -78,8 +78,7 @@ toc:
                - business_terms.md
                - classifications.md
                - data_classes.md
-               - reference_data.md
-      - modeling_best_practices.md           
+               - reference_data.md          
       - topicgroup:
           label: Creating metrics 
           topics:
@@ -88,7 +87,7 @@ toc:
               label: Selecting data 
               topics: 
               - add_data.md
-              #- upload_file.md
+              - upload_file.md
           - topicgroup:
               label: Enriching data with metadata
               topics: 
@@ -121,23 +120,24 @@ toc:
             - change_scope.md
             - steps_ai.md 
             - visualizations.md
-            #- feedback.md
+            - feedback.md
             - explainability.md
       - metrics_catalog.md      
-      #- topicgroup:
-          #label: Enhancing security 
-          #topics: 
-          #- data-security.md
-      #- topicgroup:
-          #label: Observability
-          #topics:
-         # - at-events.md
+      - topicgroup:
+          label: Enhancing security 
+          topics: 
+          - data-security.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - at-events.md
   - navgroup:
       id: tutorial
       topics:
       - interface.md 
       - create_metrics_keyconcepts.md
       - usecase_create_metrics.md
+      - modeling_best_practices.md 
       
   - navgroup:
       id: help
@@ -145,14 +145,14 @@ toc:
       - browser_support.md
       - faqs_new.md
       - get_help.md
-      #- link:
-         #label: Getting started with IBM Cloud
-         #href: https://www.ibm.com/cloud/get-started
+      - link:
+         label: Getting started with IBM Cloud
+         href: https://www.ibm.com/cloud/get-started
   - navgroup:
       id: reference
       topics: 
       - responsibilities.md
-      #- ha-dr.md
+      - ha-dr.md
       - topicgroup:
           label: Supported connectors
           topics:

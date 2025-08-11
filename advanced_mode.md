@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-07-30"
+lastupdated: "2025-08-11"
 
 keywords: build metrics, building, manual, metric definitions
 subcollection: watsonx-bi
@@ -21,9 +21,9 @@ You can build metrics manually by creating metric definitions in the semantic da
 ## Building metrics manually
 {: #build_manual} 
 
-After you start the metric creation process from **Data and Metrics** and [select the data](/docs/watsonx-bi?topic=watsonx-bi-select){: external} that you want to work with, the data undergoes metadata enrichment. Upon completion of enrichment, you can review metadata enrichment results and proceed to building metrics. 
+After you start the metric creation process from **Data and Metrics** and [select the data](/docs/watsonx-bi?topic=watsonx-bi-select){: external} that you want to work with, the data undergoes [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}. Upon completion of enrichment, click **Next** to proceed. 
 
-Then, follow these steps when you get to the **Metrics overview** page.
+Follow these steps when you get to the **Metrics overview** page.
 
 1. On the **Metrics overview** page, click **Build metrics in Advanced mode**. You're now in the semantic data model. 
 
@@ -31,7 +31,7 @@ Then, follow these steps when you get to the **Metrics overview** page.
 
    You can view all of the measures along with their properties and attributes, relationships between tables that were generated during enrichment, and calculations. 
 
-   Ensure that meaningful names, descriptions, and identifiers are assigned to each column. These fields help AI find and retrieve data when answering your questions. 
+   Ensure that meaningful names, descriptions, and identifiers are assigned to each column. These fields help AI find and retrieve data when answering your questions. For more information, see [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}. 
    {: tip}
 
 3. In the semantic data model tree, select one or more measures.

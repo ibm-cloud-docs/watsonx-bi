@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-11"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -165,7 +165,7 @@ Use column expressions for calculations or transformations that encapsulate comp
 
 You can create column expressions in the semantic data model. Select a column and in the column properties, click the **View or edit** link in the **Expression** field. Add the necessary logic for this column to the Expression editor.Here is an example of an expression for the “EXECUTIVE_INDICATOR” column, which is a binary “Y” or “N” value that determined by the corresponding value in the BAND column.
 
-![Creating a column expression ](wxbi_tip_expression.png){: caption="The View or edit link displays in the Expression field" caption-side="bottom"}
+![Creating a column expression](wxbi_tip_expression.png){: caption="The View or edit link displays in the Expression field" caption-side="bottom"}
 
 Let’s say you have a "Status" column with multiple cell values like "Todo", "In progress", 'Reviewing", "Icebox" and "Done". Your organization defines an open state as a status that is not in “Done” or “Icebox”. You can create a calculation column called “Is_open” and create an expression that returns “Y/N” based on the value from “Status” column, making it easier for the LLM understand the logic.
 
