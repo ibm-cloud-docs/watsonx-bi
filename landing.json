@@ -1,14 +1,14 @@
 {
   "version": 2,
   "title": "IBM watsonx BI",
-  "introduction": "Learn how to use {{site.data.keyword.wxbia_short}} to get personalized insights from your business data.",
+  "introduction": "Learn how to use watsonx BI to get personalized insights from your business data.",
   "product_page": "https://www.ibm.com/products/watsonx-bi",
   "console_page": "/catalog/services/watsonx-bi", 
 
   "section_topics": {
     "links": [
       {
-        "title": "About {{site.data.keyword.wxbia_short}}",
+        "title": "About watsonx BI",
         "href": "/docs/watsonx-bi?topic=watsonx-bi-about"
       },
       { 
@@ -16,7 +16,7 @@
         "href": "/docs/watsonx-bi?topic=watsonx-bi-user_interface"
       },
       {
-        "title": "Creating metrics in {{site.data.keyword.wxbia_short}}",
+        "title": "Creating metrics in watsonx BI",
         "href": "/docs/watsonx-bi?topic=watsonx-bi-overview_metrics"
       },
       {
@@ -32,11 +32,11 @@
     "tiles": [
       {
         "date": "14 August 2025",
-        "title": "Introducing {{site.data.keyword.wxbia_short}} as a Service"
+        "title": "Introducing watsonx BI as a Service"
       },
       {
         "date": "30 June 2025",
-        "title": "Introducing {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.0"
+        "title": "Introducing watsonx BI on IBM Software Hub 5.2.0"
       }
     ]
   }

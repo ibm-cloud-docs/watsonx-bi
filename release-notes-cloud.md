@@ -17,7 +17,7 @@ content-type: release-note
 {{site.data.keyword.attribute-definition-list}}
 
 # Release notes for {{site.data.keyword.wxbia_short}} as a Service (on IBM Cloud)
-{: #my-service-relnotes}
+{: #my-service-relnotes_saas}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}

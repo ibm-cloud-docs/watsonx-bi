@@ -26,10 +26,13 @@ Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM 
 
 Use **Manage BI community** to add users or user groups that have been invited to your {{site.data.keyword.wxbia_short}} account. You can also manage users here by removing them or my modifying their roles. 
 
-## Sample data [Cloud]{: tag-blue}
+## Sample data 
 {: #sample_config}
 
 You can explore {{site.data.keyword.wxbia_short}}'s features with a prebuilt sample. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. 
+
+Samle data is available in watsonx BI as a Service only.
+{: note}
 
 ## Storage 
 {: #storage}
@@ -52,7 +55,7 @@ If you are using {{site.data.keyword.wxbia_short}} as a Service, you can use an 
 
 If you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub, see [Storage considerations](https://www.ibm.com/docs/en/software-hub/latest?topic=planning-storage-considerations).
 
-## Access (IAM) Access control
+## Access (IAM) or Access control
 {: #access_control}
 
 To manage access to watsonx BI, you must first invite users to {{site.data.keyword.wxbia_short}} using the Access control or IBM Cloud Manage Access (IAM) tool. Once they accept the invitation, users can be added as members and you can assign them their collaborator roles. For more information, see: 
