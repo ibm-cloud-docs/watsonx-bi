@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: upload file, local file
 
@@ -15,6 +15,9 @@ subcollection: watsonx-bi
 {: #upload}
 
 You can upload supported file types to a project in {{site.data.keyword.wxbia_short}} and use it as a source of data to ask questions in **Conversations**. {: #shortdesc}
+
+Upload file is available in watsonx BI as a Service only.
+{: note}
 
 When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. Then, additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created by using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
 
@@ -54,6 +57,9 @@ All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored 
 When a file successfully uploads to a project, it is listed as a data asset in the project view. 
 
 You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and also define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
+
+Metrics created from a local file (.csv, .xls, .xlsx, or .tsv) cannot be published to the **Metrics catalog**. 
+{: note}
 
 ## Managing uploaded files
 {: #manage_file}

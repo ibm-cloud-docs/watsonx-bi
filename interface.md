@@ -79,6 +79,9 @@ The **Data and Metrics** tab is the launching point for any task related to your
 
 - Upload files 
 
+Upload file is available in watsonx BI as a Service only.
+{: note}
+
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 
 The scope of the metrics is defined in the semantic data model where you can use advanced modeling tools to add more context to your data, create calculations, and define relationships.
