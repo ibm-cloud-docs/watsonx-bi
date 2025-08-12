@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-08-07"
+  years: 2025
+lastupdated: "2025-08-12"
 
 keywords: add collaborators, projects
 subcollection: watsonx-bi
@@ -23,6 +23,16 @@ When you add a collaborator to a project, you specify the actions that the user 
 These roles provide permissions for projects:
 
 - Viewer: View the project
+
+  Viewers cannot perform any of the following actions within that project:
+
+  - Create metrics
+  - Delete metrics
+  - Delete semantic data models
+  - Generate or build visualizations
+  - Publish metrics and visualizations
+  - Edit visualization
+  - Delete visualization
 
 - Editor: Control project assets
 

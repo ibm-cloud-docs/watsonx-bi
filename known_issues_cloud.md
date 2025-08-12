@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-08-12"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -34,19 +34,25 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 
 - **Continous loading state displays in Advanced mode after selecting a metric definition**
 
-  You might encounter this issue if you imported a project, opened a semantic data model from this project from the **Data and Metrics** tab, and selected a metric definition. 
+  You might encounter this issue if you  open a semantic data model from an imported project, and select a metric definitino in the **Advanced mode**. 
 
   Workaround:
 
   You can refresh the page and click the **Grid** tab in the semantic data model before selecting a metric definition.
 
-- **Transferring an IBM Cloud account  that you own requires you to manually add the new owner as an Administrator**
+- **Transferring an IBM Cloud account that you own requires you to manually add the new owner as an Administrator**
 
-When you transfer ownership of an IBM Cloud account after a watsonx BI instance has been set up, you need to add the new account owner as an Administrator to the:
+  When you transfer ownership of an IBM Cloud account after a watsonx BI instance has been set up, the new owner does not become an Administrator of the **Metrics catalog** by default. 
+  
+  Workaround: 
 
--  watsonx BI community on **Configurations and settings > Manage BI community**
+  As the owner of a Cloud account that you are transferring, you need to add the new account owner as an Administrator to the following:
 
+  -  watsonx BI community on **Configurations and settings > Manage BI community**
 
+  - Metrics catalog on the platform. To do this, go to the **Metrics catalog** in watsonx BI and go to the address bar to modify the URL. Replace the "wxbi/metrics-catalogs" in the URL to "data/catalogs" and press Enter. The URL will look like: "dataplatform.cloud.ibm.com/data/catalogs/..."
+  
+    In the **Metrics Catalog**, go to **Access control**. Set the role of the new account owner to **Admin**.
 
 - **The Sources panel for FM package-based semantic data models does not display details**
   
