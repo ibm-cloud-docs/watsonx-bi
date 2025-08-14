@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords:
 subcollection: watsonx-bi
@@ -20,7 +20,8 @@ You can generate metrics automatically in the metric creation process. {: #short
 
 When you generate metrics, {{site.data.keyword.wxbia_full_notm}} creates metric definitions and automatically exports them to the project for use in **Conversations**.
 
-
+This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}} as a Service. 
+{: note}
 
 To generate metrics automatically, follow the steps listed in [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}. 
 

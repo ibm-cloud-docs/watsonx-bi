@@ -31,6 +31,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "14 August 2025",
+        "title": "Introducing watsonx BI as a Service"
+      },
+      {
         "date": "30 June 2025",
         "title": "Introducing watsonx BI on IBM Software Hub 5.2.0"
       }

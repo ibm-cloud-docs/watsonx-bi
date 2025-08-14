@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-11"
 
 keywords: remove, delete, deprovision
 subcollection: watsonx-bi
@@ -17,7 +17,7 @@ subcollection: watsonx-bi
 
 IBM Cloud account owners can deprovision an instance of {{site.data.keyword.wxbia_full_notm}} as a Service from their IBM Cloud account.  {: #shortdesc}
 
-
+As a Cloud account owner, when you deprovision a {{site.data.keyword.wxbia_short}} instance, all of the users that are a part of the Cloud account lose access to the service.
 {: note}
 
 1.	In your IBM Cloud account, go to the **Resource** list.

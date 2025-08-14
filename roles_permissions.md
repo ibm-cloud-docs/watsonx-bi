@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-12"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ Review the roles and permissions that you need for working with {{site.data.keyw
 
 - Service roles:
 
-  
+  - Roles assigned in IBM Cloud, which are called IAM roles, if you're using {{site.data.keyword.wxbia_short}} as a Service 
 
   - Predefined roles, if you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub
 

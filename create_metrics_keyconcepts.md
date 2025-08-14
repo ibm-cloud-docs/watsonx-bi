@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi
@@ -47,7 +47,9 @@ You can now:
 
    This action starts the metric creation flow where you can add the data you want to ask about and prepare the data for use in conversations through metadata enrichment and data modeling in the semantic data model. 
 
+- Upload a data file on the **Data sources** tab
 
+  You can upload a file to quickly get started on asking questions about the data in the file. The data automatically undergoes metadata enrichment during the file upload process, preparing it for use in conversations. 
 
 You can also use projects to set the scope of a conversation. When asking questions in **Conversations**, select the project you want to use from the list next to the input box. {{site.data.keyword.wxbia_full_notm}} uses the enriched metadata and metrics in the selected project to answer your questions.
 

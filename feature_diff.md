@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-11"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -63,5 +63,5 @@ While the core functions in both deployments are effectively the same, the follo
 - Use of sample datasets
 - Upload file 
 - Import and export project
-- Use Framework packages to integrate with Cognos Analytics 
+- Use Framework Manager packages to integrate with Cognos Analytics 
 - Provide feedback for generated responses in conversations

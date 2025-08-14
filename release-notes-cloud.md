@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-11"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -17,7 +17,7 @@ content-type: release-note
 {{site.data.keyword.attribute-definition-list}}
 
 # Release notes for {{site.data.keyword.wxbia_short}} as a Service (on IBM Cloud)
-{: #my-service-relnotes}
+{: #my-service-relnotes_saas}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
@@ -65,4 +65,4 @@ with insights that derive from a single source of truth via a centralized **Metr
 
 - [Using conversations to get insights](/docs/watsonx-bi?topic=watsonx-bi-conv_overview)
 
-- [Creating metrics for data analysis](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics)
+- [An overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics)

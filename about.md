@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -41,7 +41,7 @@ Automate data profiling, business term matching, and data modeling.
 
 {{site.data.keyword.wxbia_full_notm}} is available:
 
-
+- as a service on IBM Cloud 
 
 - as software that can be installed from IBM Software Hub
 
@@ -67,7 +67,11 @@ Automate data profiling, business term matching, and data modeling.
 - Connection credentials that are personal or shared
 - Sample assets and projects
 
+For more information about the service platform and its capabilities, see:
 
+- [Overview of IBM Software Hub](https://www.ibm.com/docs/en/software-hub/5.2.x?topic=overview) 
+
+- [Documentation for Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wxbi&audience=wdp){: external} 
 
 {{site.data.keyword.wxbia_full_notm}} also uses IBM watsonx.data intelligence, a core service on platform, for metadata import and metadata enrichment. IBM watsonx.data intelligence provides ready-to-use vocabularies that facilitate quick deployment of data governance and analytics frameworks and uses generative AI to augment technical metadata with additional context, labels, and description.
 

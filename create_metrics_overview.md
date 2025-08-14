@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: overview metrics, create metrics
 subcollection: watsonx-bi
@@ -61,7 +61,7 @@ You can add your business terms to the predefined business terms that are availa
 
 8. You are now on the **Metrics overview** page. You can now create metrics by [generating metrics automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} or [building them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external}. 
 
-   For more accurate responses in **Conversations**, you must create metrics. Whether you generate metrics or build them manually, ensure that meaningful names, descriptions, and identifiers are assigned to each column. You can do this in the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
+   For more accurate responses in **Conversations**, you must create metrics. Whether you generate metrics or build them manually, ensure that meaningful names, descriptions, and identifiers are assigned to each column. You can do this in the Advanced mode. For more information, see [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}.
    {: tip}
    
 After you finish creating metrics, you can navigate back to the **Metrics overview** page and do the following:

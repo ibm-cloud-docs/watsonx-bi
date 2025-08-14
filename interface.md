@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-11"
 
 keywords: interface, using watsonx BI
 subcollection: watsonx-bi
@@ -77,13 +77,16 @@ The **Data and Metrics** tab is the launching point for any task related to your
 
 - Access semantic data models 
 
+- Upload files 
 
+Upload file is available in watsonx BI as a Service only.
+{: note}
 
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 
 The scope of the metrics is defined in the semantic data model where you can use advanced modeling tools to add more context to your data, create calculations, and define relationships.
 
-
+You can also upload files on **Data and Metrics** to quickly jump into asking questions about the data in the files.
 
 ## Metrics catalog
 {: #metric_catalog}
