@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-28"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -22,6 +22,14 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
 
+
+## 27 August 2025
+{: #subcollection-aug2725}
+{: release-note}
+
+### New way to navigate to watsonx BI
+
+Watsonx BI is now part of a new experience called Business Intelligence. You can now launch watsonx BI by selecting Business Intelligence in the IBM Software Hub experience switcher menu. The Navigation Menu now displays menu options that are specific to watsonx BI.
 
 
 ## 30 June 2025
