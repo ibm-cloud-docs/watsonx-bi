@@ -13,23 +13,14 @@ content-type: tutorial
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Provisioning {{site.data.keyword.wxbia_short}}
+# Provisioning {{site.data.keyword.wxbia_short}} (Cloud account owners)
 {: #getting-started}
 {: toc-content-type="tutorial"}
 
-All users need to sign up for {{site.data.keyword.wxbia_full_notm}} in the IBM Cloud account. If you do not have an IBM Cloud account, you can create one here: [http://cloud.ibm.com/](http://cloud.ibm.com/){: external} {: #shortdesc}
-
-As an Administrator, Data analyst, or an Analytics consumer, you must be a member of your organization's IBM Cloud account before you can access your organization's watsonx BI account. 
-
-IBM Cloud account owners and account Administrators can invite users to join their organization's IBM Cloud account.
-
-
-## IBM Cloud account owners
-{: #account_owner}
-
 These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
 
-### Step 1: Provision {{site.data.keyword.wxbia_short}} in your Cloud account
+
+## Step 1: Provision {{site.data.keyword.wxbia_short}} in your Cloud account
 {: #step1}
 
 You can provision {{site.data.keyword.wxbia_short}} by creating an instance of the service in your IBM Cloud account.
@@ -44,7 +35,8 @@ You can provision {{site.data.keyword.wxbia_short}} by creating an instance of t
 
 The new service instance appears under **AI/Machine learning** in the **Resource list**. 
 
-### Step 2: Set up and initialize {{site.data.keyword.wxbia_short}}
+## Step 2: Set up and initialize {{site.data.keyword.wxbia_short}}
+
 {: #step2}
 
 As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. This step cannot be delegated to an Administrative user. 
@@ -58,53 +50,21 @@ As an IBM Cloud account owner, you must set up and initialize {{site.data.keywor
 
 4. (Optional) Choose a [sample](/docs/watsonx-bi?topic=watsonx-bi-using_samples){: external} to set up in your {{site.data.keyword.wxbia_short}} instance. 
 
-5. [Invite users](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external} to use your instance of {{site.data.keyword.wxbia_short}}. After the invited users join the account, you can: 
+5. [Invite users](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external} to use your instance of {{site.data.keyword.wxbia_short}}. You can then: 
 
-    a. add users to the watsonx BI community and assign relevant collaborator roles: Administrator, Data analyst, or Analytics consumer
+  a. [add users to the watsonx BI community](/docs/watsonx-bi?topic=watsonx-bi-roles){: external} and assign relevant roles (Administrator, Data analyst, or Analytics consumer)  
+  
+  b. [add users as collaborators to projects](/docs/watsonx-bi?topic=watsonx-bi-managing_projects){: external}. 
 
-    b. add users as collaborators to projects 
+  After an Administrator is added to the IBM Cloud account, they can also invite other users to the account.
+
+  You can create access groups to manage user access policies, roles in watsonx BI, and access to projects for multiple users at the same time. 
+  {: tip}
 
 During the instance setup, {{site.data.keyword.wxbia_short}} enables access delegation for the selected Cloud Object Storage instance. This grants any user of your account the permission to create their own projects and build their metrics.
-{: note}
+
 
 When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
-
-## Administrators, Data analysts, and Analytics consumers
-{: #users}
-
-Once the IBM Cloud account owner has set up {{site.data.keyword.wxbia_short}}, all other users that were invited by the account owner to their account, can now set up the service. 
-
-1. Click the **Join now** link in the invite. 
-
-2. You are asked to log in with your IBMid. IBMids are assigned to IBM Cloud account members. If you have never created an IBM Cloud account, you are asked to register an account. This is a one-time registration, after which you can be invited to any IBM Cloud account. 
-
-3. Confirm that your information is correct and click **Join account**. 
-
-  ![Join IBM Cloud screen](join_ibm_cloud.png)
-
-4. You are now on the home page of the IBM Cloud account that you were invited to and can see the Cloud account name in the header.
-
-  ![IBM Cloud account home page](user_cloud_account.png)
-
-5. You can now access watsonx BI through this URL: [https://dataplatform.cloud.ibm.com/wxbi/conversations](https://dataplatform.cloud.ibm.com/wxbi/conversations){: external}
-
-  When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
-  {: note}
-
-6. You are prompted to initialize setup. 
-
-![watsonx BI initialize setup](user_initialize_wxBI_setup.png)
-
-7. (Optional) Select a prebuilt sample that you want to install. A project for the selected sample is created during installation.
-
-  Data analysts and Analytics consumers - If you choose to skip installing samples, you won't be able to access them later. Samples are a great resource to explore prebuilt metrics and semantic data models. 
-  {: important}
-
-  ![Users get an option to install sample data](user_setup_sample.png)
-
-After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conversations** page. 
-
-![Conversations page in watsonx BI](user_conversation.png)
 
 
 ## Troubleshooting
@@ -119,8 +79,8 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
   | Scenario | Action  |
   |-------|-------------|
   | As a Cloud account owner, you do not have access to {{site.data.keyword.wxbia_short}} | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}. |
-  | You are part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before you can use {{site.data.keyword.wxbia_short}} (Steps 1 and 2 above). |
-  | You are part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but you do not have access| Administrator must give you access to {{site.data.keyword.wxbia_short}} |
+  | The user is a part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before users can use {{site.data.keyword.wxbia_short}} (Steps 1 and 2 above). |
+  | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but they do not have access| Administrator must give the user access to {{site.data.keyword.wxbia_short}} |
   | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}} (see Step 2). | 
   | {{site.data.keyword.wxbia_short}} has not been provisioned at all | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}.|
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
@@ -132,14 +92,16 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
 
    | Scenario | Action  |
    |-------|-------------|
-   | You are a part of a Cloud account with access to {{site.data.keyword.wxbia_short}}, but your access was removed | The Cloud account owner can assign access to you for {{site.data.keyword.wxbia_short}}.|
-   | You are a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before you can use it (see Step 2).|
-   |You are a part of multiple Cloud accounts and are trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
+   | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}}, but their access was removed | The Cloud account owner can assign access to the user for {{site.data.keyword.wxbia_short}}.|
+   | The user is a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before the user can use it (see Step 2).|
+   |The user is a part of multiple Cloud accounts and is trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 ## Next steps
 {: #next_provision}
 
 - [Adding users to the account and assigning roles](/docs/watsonx-bi?topic=watsonx-bi-add_users_account)
+
+- [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}
 
 - [Roles and permissions in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-roles)

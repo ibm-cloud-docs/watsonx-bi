@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-09"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.wxbia_full_notm}} is a powerful analytics tool that uses large language models (LLM) to run complex, multi-step BI queries on your data. While {{site.data.keyword.wxbia_short}} has contextual understanding of data and can quickly respond to your questions, the quality of data determines the quality of the LLM’s generated responses. {: #shortdesc}
 
-To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM. 
+To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM.
 
 The following factors are used by the LLM to understand questions and the context of your data
 when generating query statements:
@@ -31,9 +31,9 @@ when generating query statements:
 - Column data type, usage, aggregate and nullable
 - Sampled columns
 
-Here some things that you can do to prepare your data for use by AI. 
+Here some things that you can do to prepare your data for use by AI.
 
-## Add business terms 
+## Add business terms
 {: #tip_add_terms}
 
 Watsonx BI comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
@@ -43,12 +43,12 @@ If your organization's business terminology is different, consider adding busine
 ## Use unique names for data assets
 {: #tip_unique_names}
 
-To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics. 
+To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics.
 
 ## Each Asset and Column needs a display name and description
 {: #tip_display_name}
 
-Review the metadata enrichment results in the metric creation process to ensure each Asset and Column has a meaningful and accurate AI-generated Display name and Description. 
+Review the metadata enrichment results in the metric creation process to ensure each Asset and Column has a meaningful and accurate AI-generated Display name and Description.
 
 You can also access the metadata enrichment from the Project asset tab by selecting the relevant metadata enrichment asset.
 
@@ -70,7 +70,7 @@ Descriptions must be concise and reflect the purpose of the column. During query
 ### 1. Add clear Column Identifiers
 {: #tip_identifiers}
 
-To help the LLM understand the table schema correctly and easily, you need to ensure that the Column Identifiers are unique and clearly worded. These identifiers should be worded in a way that aligns with how users are likely to ask questions. 
+To help the LLM understand the table schema correctly and easily, you need to ensure that the Column Identifiers are unique and clearly worded. These identifiers should be worded in a way that aligns with how users are likely to ask questions.
 
 For example, if an asset is about product sales or revenue, column identifier “SALES_YEAR”/”SALES_DATE” would work better than “CURRENT_YEAR”/”CURRENT_DATE”, as it describes what the temporal columns represent.Similarly, if the asset is about sales target, use column identifiers such as “SALES_TARGET_YEAR“/”SALES_TARGET_DATE”.
 
@@ -165,7 +165,7 @@ Use column expressions for calculations or transformations that encapsulate comp
 
 You can create column expressions in the semantic data model. Select a column and in the column properties, click the **View or edit** link in the **Expression** field. Add the necessary logic for this column to the Expression editor.Here is an example of an expression for the “EXECUTIVE_INDICATOR” column, which is a binary “Y” or “N” value that determined by the corresponding value in the BAND column.
 
-![Creating a column expression](wxbi_tip_expression.png){: caption="The View or edit link displays in the Expression field" caption-side="bottom"}
+![Creating a column expression](images/wxbi_tip_expression.png){: caption="The View or edit link displays in the Expression field" caption-side="bottom"}
 
 Let’s say you have a "Status" column with multiple cell values like "Todo", "In progress", 'Reviewing", "Icebox" and "Done". Your organization defines an open state as a status that is not in “Done” or “Icebox”. You can create a calculation column called “Is_open” and create an expression that returns “Y/N” based on the value from “Status” column, making it easier for the LLM understand the logic.
 

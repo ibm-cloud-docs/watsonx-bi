@@ -25,6 +25,8 @@ Any of the IAM Platform roles of Viewer, Editor, and Administrator can be assign
 
 You have two options for assigning IAM roles. You can assign roles to individual users or you can create access groups to expedite role assignment.
 
+When you assign or update collaborator roles in {{site.data.keyword.wxbia_short}}, the related IAM Service role automatically gets assigned. 
+{: important}
 
 
 **Required roles for Analytics consumers**
@@ -44,15 +46,75 @@ You have two options for assigning IAM roles. You can assign roles to individual
 ## Working with access groups
 {: #access_grps}
 
+IAM access groups are created and managed entirely on IBM Cloud. 
+
 Access groups expedite role assignments by grouping permissions for large numbers of users. You create a group and assign policies and rules to the group. When you assign a user to an access group, their access rights are determined by the group policies. All members of an access group have the same access permissions, and all members are updated when the group is edited.
 
-Select **Configuration and settings > Access(IAM) > Access groups** to set up access groups for {{site.data.keyword.wxbia_short}}.
+### Creating an access group 
+{: #create_access_grps}
 
-You can also indicate the access group when you invite users to the account.
+To create an access group: 
+
+1. The following instructions describe how to create the Account-Administrator access group, one of the example groups described in the Using the example access groups topic.
+
+1. From {{site.data.keyword.wxbia_short}} as a Service, go to **Administration > Access (IAM)** and click the **IBM Cloud Manage Access (IAM)** link. 
+
+2. In the right-hand panel of your IBM Cloud account, go to **Manage access > Access groups** to see a list of available groups. All accounts have the default Public Access group, which contains all users and Service IDs in the account.
+
+3. Click **Create** to create a new access group. Enter the name and a description. Access group names must be unique. A description helps you remember the purpose of the access group.
+
+4. Create the group.
+
+5. Click **Access > Assign access** to add access policies to the group.
+
+  a. For Service, select watsonx BI and click **Next**.
+
+  b. For Resources, select **All resources** for the scope and click **Next**.
+
+  c. For **Roles and actions**, select the access that you want to assign to this group.
+  
+  e. Review the parameters, then click **Add**.
+  
+6. In the **Access summary** panel, click **Assign**.
+
+### Adding users to an access group
+{: #add_users_access_grps}
+
+To add users to an access group:
+
+1. From {{site.data.keyword.wxbia_short}} as a Service, go to **Administration > Access (IAM)** and click the **IBM Cloud Manage Access (IAM)** link. 
+
+2. In the right-hand panel of your IBM Cloud account, go to **Manage access > Access groups** to see a list of available groups. All accounts have the default Public Access group, which contains all users and Service IDs in the account.
+
+3. Select the access group that you want to populate with users.
+
+4. Checkmark one or more users to add as members of the access group and click **Add users**.
+
+After creating an IAM access group, a user group is also created in watsonx BI. User groups make it easier to manage a large number of users with similar access requirements when adding users to the watsonx BI community.
+
+You can assign Viewer, Editor or Admin roles to user groups when you add collaborators to projects and spaces.
+
+If a member of the group leaves, the IBM Cloud account administrator can remove the user from the group rather than looking at all of the assets the user has access to.
 
 ## Assigning roles individually
 {: #assign_individual}
 
-Roles can be assigned to individual users. Select **Configuration and settings > Access(IAM) > Users > Assign access** for each user.
+IAM Roles can be assigned to users individually. 
 
-You can also indicate the access policy when you invite users to the account.
+1. From {{site.data.keyword.wxbia_short}} as a Service, go to **Administration > Access (IAM)** and click the **IBM Cloud Manage Access (IAM)** link. 
+
+2. In the right-hand panel of your IBM Cloud account, go to **Users** to see a list of available users.
+
+3. Click the menu icon for the user that you want to assign access and click **Assign access**. 
+
+4. Select **Access policy**:
+
+  a. Under **Service**, enter **watsonx BI** in the search field and select it.
+
+  b. Under **Resources**, select **All resources**. 
+
+  c. Under **Roles and actions**, specify the IAM access that you want to assign to these individual users.
+
+  d. Review the selections and click **Add**.
+
+5. In the **Access summary** panel, click **Assign**. 

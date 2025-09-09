@@ -37,14 +37,15 @@ toc:
           topics: 
           - install_wxbi.md
           - topicgroup:
-              label: Setting up watsonx BI as a Service
+              label: Setting up watsonx BI as a Service 
               topics:
-              - quick_start.md 
+              - quick_start.md
+              - initialize_wxbi.md 
               - adding_users_cloud.md
+              - iam-access.md
               - plans.md
               - cos.md
-              - iam-access.md
-              - deprovisioning.md
+              - deprovisioning.md   
           - configuration_settings.md
           - roles_permissions.md
           - choose_llm.md
