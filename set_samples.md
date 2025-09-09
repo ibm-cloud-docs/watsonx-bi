@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-08-06"
+  years: 2025
+lastupdated: "2025-09-08"
 
 keywords:
 subcollection: watsonx-bi
@@ -41,13 +41,10 @@ These samples are a great way to explore:
 
 - How sample data was modeled and optimized for AI
 
-You'll be prompted to load a sample when you first setup {{site.data.keyword.wxbia_short}}. If you choose not to load sample data at the time of setup, you can load one later: 
+You'll be prompted to load a sample when you first setup {{site.data.keyword.wxbia_short}}. 
 
-1. Open the left navigation panel in {{site.data.keyword.wxbia_short}}. 
-
-2. Go to **Configuration and settings > Sample data**.
-
-3. Select the one you want to use.
+If you choose not to load sample data at the time of setup, you won't be able to access them later. Only Cloud account owners and Administrators can access sample data from **Configuration and settings** at any time. 
+{: note}
 
 During the sample setup, {{site.data.keyword.wxbia_short}} automatically creates a similarly-named project for the sample. 
 

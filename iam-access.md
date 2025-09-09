@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-09"
 
 keywords: roles, permissions, access, iam
 subcollection: watsonx-bi
@@ -25,8 +25,7 @@ Any of the IAM Platform roles of Viewer, Editor, and Administrator can be assign
 
 You have two options for assigning IAM roles. You can assign roles to individual users or you can create access groups to expedite role assignment.
 
-When you assign collaborator roles in {{site.data.keyword.wxbia_short}}, the related IAM Service role automatically gets assigned. 
-{: important}
+
 
 **Required roles for Analytics consumers**
 

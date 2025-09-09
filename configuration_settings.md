@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-08"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Managing configuration and settings
 {: #config_settings}
 
-You can access **Configuration and settings** from **Navigation menu > Administration** and from the left-hand side panel in {{site.data.keyword.wxbia_full_notm}} to manage access to your {{site.data.keyword.wxbia_short}} instance through Manage BI community, manage storage, and set up sample data from here. Depending on your role and permissions, you might be able to make other configuration changes. {: #shortdesc}
+IBM Cloud account owners and Administrators can access **Configuration and settings** from **Navigation Menu > Administration** and from the left-hand side panel in {{site.data.keyword.wxbia_full_notm}} to manage access to your {{site.data.keyword.wxbia_short}} instance through Manage BI community, manage storage, and set up sample data from here. Depending on your role and permissions, you might be able to make other configuration changes. {: #shortdesc}
 
 Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub. 
 {: note}
@@ -31,7 +31,7 @@ Use **Manage BI community** to add users or user groups that have been invited t
 
 You can explore {{site.data.keyword.wxbia_short}}'s features with a prebuilt sample. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. 
 
-Samle data is available in watsonx BI as a Service only.
+Sample data is available in watsonx BI as a Service only.
 {: note}
 
 ## Storage 
