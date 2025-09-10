@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-09-10"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -54,7 +54,7 @@ You can also access the metadata enrichment from the Project asset tab by select
 
 You can accept the AI-suggested name and description or click **Edit** to add your own.
 
-![Metadata enrichment review page](mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
+![Metadata enrichment review page](images/mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
 
 When you edit the Display name or Description in the metadata enrichment asset, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this, it is recommended to make your changes in the semantic data model instead (see #2 in the section below).
 {: important}
@@ -94,7 +94,7 @@ To change the column identifiers in a metric definition:
 
 Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
-![Column Identifer field in Properties](semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
+![Column Identifer field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
 
 You can also review and update the column identifiers in the metadata enrichment asset after enrichment completes. You can access the metadata enrichment asset on the **Projects asset** tab (**Home > Projects > View all projects**).
 
@@ -135,7 +135,7 @@ For example, for a numerical column called Revenue, the Usage should be Measure,
 
 Sometimes data like “unit_cost” or “unit_sale_price” is treated like a “Measure”. However, these are actually attributes of a product.
 
-![Check values in column properties](semantic_model_usage_agg_null_props.png){: caption="An open Properties panel displays the usage, aggregate, and null value fields." caption-side="bottom"}
+![Check values in column properties](images/semantic_model_usage_agg_null_props.png){: caption="An open Properties panel displays the usage, aggregate, and null value fields." caption-side="bottom"}
 
 
 ### 4. Remove unnecessary columns from the data
@@ -147,7 +147,7 @@ For example, if a metric definition contains both “COMPANY_KEY” and “COMPA
 
 If you have multiple language-specific versions of the same column, such as the “PRODUCT_TYPE_” columns in the example below, you can create a new unified “PRODUCT_TYPE” column with an expression that can automatically pick the appropriate language-specific version, and hide the other redundant “PRODUCT_TYPE_” columns.
 
-![Edit calculation to create a unified column](edit_calcs_create_column.png){: caption="A calculations displays in the Expression editor." caption-side="bottom"}
+![Edit calculation to create a unified column](images/edit_calcs_create_column.png){: caption="A calculations displays in the Expression editor." caption-side="bottom"}
 
 ### 5. Data quality matters
 {: #tip_quality}
@@ -169,7 +169,7 @@ You can create column expressions in the semantic data model. Select a column an
 
 Let’s say you have a "Status" column with multiple cell values like "Todo", "In progress", 'Reviewing", "Icebox" and "Done". Your organization defines an open state as a status that is not in “Done” or “Icebox”. You can create a calculation column called “Is_open” and create an expression that returns “Y/N” based on the value from “Status” column, making it easier for the LLM understand the logic.
 
-![Column expression](wxbi_column_expression.png){: caption="A column expression displays in the Expression editor" caption-side="bottom"}
+![Column expression](images/wxbi_column_expression.png){: caption="A column expression displays in the Expression editor" caption-side="bottom"}
 
 Give your expressions column identifiers that map to how your users will reference the data. For example, the "Is_open" expression we created, is a good name if this is how users refer to open or closed items. However, if users generally refer to items as active or inactive items then "Is_active" would be a better name.
 {: tip}
@@ -179,8 +179,8 @@ Give your expressions column identifiers that map to how your users will referen
 
 Use column expressions to filter out unnecessary data from the metric definition before exporting it to create or update a metric.
 
-![Filter applied to a table](semantic_model_filter.png){: caption="Semantic model panel shows a table with a filter applied to it." caption-side="bottom"}
+![Filter applied to a table](images/semantic_model_filter.png){: caption="Semantic model panel shows a table with a filter applied to it." caption-side="bottom"}
 
 For example, if a table includes product names in all languages and you only want the English names, you can add a filter to the table and apply it on the “product_language” column to filter out unnecessary values.
 
-![Applying filter through an expression](semantic_model_edit_filter.png){: caption="A filter displays in the Expression editor." caption-side="bottom"}
+![Applying filter through an expression](images/semantic_model_edit_filter.png){: caption="A filter displays in the Expression editor." caption-side="bottom"}

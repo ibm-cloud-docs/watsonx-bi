@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-10"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -45,7 +45,7 @@ You can add a connection or, if you previously connected to a database in the pr
 
 8. (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
 
-9. Click **Next** to move to the next step, which is [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich).  
+9. Click **Next** to move to the next step, which is [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.  
 
 ## Adding data from an existing connection 
 {: #existing}

@@ -139,7 +139,6 @@ toc:
       - create_metrics_keyconcepts.md
       - usecase_create_metrics.md
       - modeling_best_practices.md 
-      
   - navgroup:
       id: help
       topics:

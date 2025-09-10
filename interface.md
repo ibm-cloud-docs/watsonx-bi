@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-10"
 
 keywords: interface, using watsonx BI
 subcollection: watsonx-bi
@@ -29,7 +29,7 @@ The user interface of {{site.data.keyword.wxbia_short}} consists of the followin
 (3) Metrics catalog
 :   The **Metrics catalog** contains a collection of metrics that have been created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
 
-![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](wxbi_conversations.png){: caption="{{site.data.keyword.wxbia_short_cap}}'s **Conversations** page with the open navigation panel showing **Data and Metrics** and **Metrics catalog**." caption-side="bottom"}
+![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](images/wxbi_conversations.png){: caption="{{site.data.keyword.wxbia_short_cap}}'s **Conversations** page with the open navigation panel showing **Data and Metrics** and **Metrics catalog**." caption-side="bottom"}
 
 (4) Configuration and settings 
 :   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 

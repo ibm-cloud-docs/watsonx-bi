@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-10"
 
 keywords:
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ You can modify or delete relationships, or create new ones so that the semantic 
 
 The **Relationships** diagram provides a graphical view of table relationships in a semantic data model. The relationships are represented by solid lines between tables. You can use the diagram to examine, create, and edit the relationships.
 
-![A relationships diagram showing relationships bewteen tables](semantic_model_relationships.png){: caption="Relationships tab shows the relationships between tables." caption-side="bottom"}
+![A relationships diagram showing relationships bewteen tables](images/semantic_model_relationships.png){: caption="Relationships tab shows the relationships between tables." caption-side="bottom"}
 
 ## Automatic joins
 {: #auto_join}

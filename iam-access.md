@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-09-10"
 
 keywords: roles, permissions, access, iam
 subcollection: watsonx-bi
@@ -27,7 +27,6 @@ You have two options for assigning IAM roles. You can assign roles to individual
 
 When you assign or update collaborator roles in {{site.data.keyword.wxbia_short}}, the related IAM Service role automatically gets assigned. 
 {: important}
-
 
 **Required roles for Analytics consumers**
 

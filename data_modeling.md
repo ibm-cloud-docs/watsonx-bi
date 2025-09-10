@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-10"
 
 keywords: semantic, data model, data modeling
 subcollection: watsonx-bi
@@ -27,7 +27,7 @@ The semantic data model panel contains the data tree that shows metric definitio
 
 Here is an example of what a semantic data model panel might look like:
 
-![Semantic data model panel shows different types of data items](semantic_model_tree.png){: caption="A semantic data model panel depicting different items." caption-side="bottom"}
+![Semantic data model panel shows different types of data items](images/semantic_model_tree.png){: caption="A semantic data model panel depicting different items." caption-side="bottom"}
 
 1. Semantic data model name - This is the root node. 
 2. Metric 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-09-10"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -35,11 +35,11 @@ IBM Cloud account owners and account Administrators can invite users to join the
 
 3. Confirm that your information is correct and click **Join account**. 
 
-  ![Join IBM Cloud screen](join_ibm_cloud.png)
+  ![Join IBM Cloud screen](images/join_ibm_cloud.png)
 
 4. You are now on the home page of the IBM Cloud account that you were invited to and can see the Cloud account name in the header.
 
-  ![IBM Cloud account home page](user_cloud_account.png)
+  ![IBM Cloud account home page](images/user_cloud_account.png)
 
 5. You can now access watsonx BI through this URL: [https://dataplatform.cloud.ibm.com/wxbi/conversations](https://dataplatform.cloud.ibm.com/wxbi/conversations){: external}
 
@@ -48,18 +48,18 @@ IBM Cloud account owners and account Administrators can invite users to join the
 
 6. You are prompted to initialize setup. 
 
-![watsonx BI initialize setup](user_initialize_wxBI_setup.png)
+![watsonx BI initialize setup](images/user_initialize_wxBI_setup.png)
 
 7. (Optional) Select a prebuilt sample that you want to install. A project for the selected sample is created during installation.
 
   Data analysts and Analytics consumers - If you choose to skip installing samples, you won't be able to access them later. Samples are a great resource to explore prebuilt metrics and semantic data models. 
   {: important}
 
-  ![Users get an option to install sample data](user_setup_sample.png)
+  ![Users get an option to install sample data](images/user_setup_sample.png)
 
 After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conversations** page. If you were added as a collaborator to an existing project, you can start asking questions about the data in that project.
 
-![Conversations page in watsonx BI](user_conversation.png)
+![Conversations page in watsonx BI](images/user_conversation.png)
 
 ## Accessing watsonx BI after setup
 {: #access_after_setup}

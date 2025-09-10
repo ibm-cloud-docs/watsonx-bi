@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-09-10"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -16,6 +16,7 @@ content-type: tutorial
 # Provisioning {{site.data.keyword.wxbia_short}} (Cloud account owners)
 {: #getting-started}
 {: toc-content-type="tutorial"}
+
 
 These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
 
@@ -36,7 +37,6 @@ You can provision {{site.data.keyword.wxbia_short}} by creating an instance of t
 The new service instance appears under **AI/Machine learning** in the **Resource list**. 
 
 ## Step 2: Set up and initialize {{site.data.keyword.wxbia_short}}
-
 {: #step2}
 
 As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. This step cannot be delegated to an Administrative user. 
@@ -65,6 +65,7 @@ During the instance setup, {{site.data.keyword.wxbia_short}} enables access dele
 
 
 When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
+
 
 
 ## Troubleshooting

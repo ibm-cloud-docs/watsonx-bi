@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-09-10"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -59,13 +59,13 @@ Suggested questions are examples of questions that you can ask, which can genera
 
 You can access suggested questions in the expanded view of a metric in the **Key metrics** panel. These suggested questions can be used to get additional insight into the metric data of the selected visualization.
 
-![Suggested questions display in a metric](suggested_questions_metric.png){: caption="Suggested questions display in a Key metric." caption-side="bottom"}
+![Suggested questions display in a metric](images/suggested_questions_metric.png){: caption="Suggested questions display in a Key metric." caption-side="bottom"}
 
 Suggested questions might also display at various points in a conversation. The questions displayed are based on the assets in the conversation's current scope, and can be asked to generate further insight.
 
 When starting a new conversation, one additional question might be shown, "What data do I have available to me?". This question allows you to explore the data available to you. When you click the recommended question, {{site.data.keyword.wxbia_short}} responds back with a list of business terms or data assets for you to select from. At the end of the selection process, a list of suggested questions display that you can ask against the specific target asset.
 
-![Suggested questions display in a conversation](suggested_questions.png){: caption="Suggested questions display under a response in a conversation" caption-side="bottom"}
+![Suggested questions display in a conversation](images/suggested_questions.png){: caption="Suggested questions display under a response in a conversation" caption-side="bottom"}
 
 ## Getting insights for your data
 {: #insights}
@@ -89,5 +89,5 @@ You can get insights from your data in the following ways:
 
   Enter your question about a metric or other business data in the input box. If you're unsure of what to ask, click a suggested question. 
 
-  For more information about how to converse with {{site.data.keyword.wxbia_short}}, see [Asking questions in natural language](/docs/watsonx-bi?topic=watsonx-bi-ask).
+  For more information about how to converse with {{site.data.keyword.wxbia_short}}, see [Asking questions in natural language](/docs/watsonx-bi?topic=watsonx-bi-ask){: external}.
   
