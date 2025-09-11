@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-11"
 
 keywords: roles, permissions, access, iam
 subcollection: watsonx-bi
@@ -53,8 +53,6 @@ Access groups expedite role assignments by grouping permissions for large number
 {: #create_access_grps}
 
 To create an access group: 
-
-1. The following instructions describe how to create the Account-Administrator access group, one of the example groups described in the Using the example access groups topic.
 
 1. From {{site.data.keyword.wxbia_short}} as a Service, go to **Administration > Access (IAM)** and click the **IBM Cloud Manage Access (IAM)** link. 
 
