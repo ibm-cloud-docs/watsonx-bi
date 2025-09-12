@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-12"
 
 keywords: upload file, local file
 
@@ -20,6 +20,9 @@ Upload file is available in watsonx BI as a Service only.
 {: note}
 
 When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. Then, additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created by using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
+
+If the first 1000 rows are empty, these rows are treated as varchar or string columns in the query engine, even if numeric values exist in the subsequent rows. Empty rows might lead to errors when a query processes SUM on a varchar column. To avoid this issue, before you upload, sort the file so that the first 1000 rows are not empty and the data type can be correctly identified and treated.
+{: tip}
 
 You can find your uploaded files on **Data and Metrics > Data sources > Uploaded files** tab. They are also listed as data assets on the **Assets** page of your project.
 

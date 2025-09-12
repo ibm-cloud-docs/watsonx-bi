@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-12"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -33,12 +33,17 @@ when generating query statements:
 
 Here some things that you can do to prepare your data for use by AI.
 
+## Create a variety of metrics 
+{: #metric_variety}
+
+Define a variety of metrics and ground answers in these standardized metric definitions for accuracy and consistency. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata, that is used to define metrics, to answer your questions and provide insights.
+
 ## Add business terms
 {: #tip_add_terms}
 
 Watsonx BI comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
 
-If your organization's business terminology is different, consider adding business terms to describe the contents of your data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+If your organization's business terminology is different, **IBM Cloud account owners and Administrators** can consider adding business terms to provide additional context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
 
 ## Use unique names for data assets
 {: #tip_unique_names}
@@ -63,6 +68,7 @@ When the confidence score of an AI-suggested name or description does not exceed
 
 Descriptions must be concise and reflect the purpose of the column. During query generation in a conversation, the AI uses both the identifier, name, and description (potentially with sampled data) to select the best columns to answer the question. Avoid repetitive descriptions, where every description includes the same text, especially when the repeated content is how users will frequently ask questions.
 {: tip}
+
 
 ## Model data in the semantic data model to help query generation
 {: #tip_model}
@@ -98,10 +104,10 @@ Exporting the metric definition runs metadata enrichment again and updates the e
 
 You can also review and update the column identifiers in the metadata enrichment asset after enrichment completes. You can access the metadata enrichment asset on the **Projects asset** tab (**Home > Projects > View all projects**).
 
-### 2. Ordering of user-defined name and description
+### 2. Add a label and description
 {: #tip_desc}
 
-You can add a display name and description for a metric column in the semantic data model. The order of priority for the display name and description is the following:
+Make sure that you add a label and description for metric columns in the semantic data model. The order of priority for the label and description is the following:
 
 1. User-defined in the semantic data model
 
@@ -109,7 +115,27 @@ You can add a display name and description for a metric column in the semantic d
 
 3. AI-suggested or generated in the metadata enrichment asset
 
-To add a Display name and Description for a metric column in the semantic data model:
+Ensure that the label and description are worded based on your business context and how users will likely ask questions.
+{: tip}
+
+To write a strong description: 
+
+•	Include values in the description to specify time periods
+
+  For example: If months are represented as “Jan”, “Feb”, “Mar”, include that in the description.
+  “Month values are abbreviated as Jan, Feb, Mar...”
+
+•	If values follow a known standard, mention the standard name in the description
+
+  For example: “Country codes follow ISO 3166 standard” or “Currency codes use ISO 4217”
+
+•	Reflect user language preferences
+
+  For example: If there is a column called "manager”, but your business users use the word "boss" then reflect that in the description. 
+  
+  If you want AI to use "Cost of Goods Sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
+
+To add a label and description for a metric column in the semantic data model:
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
@@ -123,8 +149,7 @@ To add a Display name and Description for a metric column in the semantic data m
 
 6. Select the metric definition that you just made changes to and click **Export metric definition**.
 
-Ensure that the name and description are worded based on your business context and how users will likely ask questions. For example, if there is a column called "manager" but your business users use the word "boss" then reflect that in the description. In another example, if you want AI to use "Cost of Goods Sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
-{: tip}
+
 
 ### 3. Double check the “Usage”, “Aggregate” and “Nullable” fields for each column
 {: #tip_fields}

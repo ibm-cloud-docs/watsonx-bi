@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-12"
 
 keywords: adding users, BI community, members
 subcollection: watsonx-bi
@@ -69,7 +69,7 @@ Set up access groups to simplify user access policies, role assignment in watson
 
 The new users receive an email invitation to join the account. 
 
-If you invited users as part of an access group, you can immediately add the access group to teh watsonx BI community and to a project. If you invited users individually, you need to wait for the users to accept the invitation before you can add them to the watsonx BI community or to projects.
+If you invited users as part of an access group, you can immediately add the access group to the watsonx BI community and to a project. If you invited users individually, you need to wait for the users to accept the invitation before you can add them to the watsonx BI community or to projects.
 {: important}
 
 ## Adding users to the watsonx BI community
