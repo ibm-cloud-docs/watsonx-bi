@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-17"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ subcollection: watsonx-bi
 
 IBM watsonx BI uses metrics and the underlying enriched metadata that is used to create metrics to answer questions and provide insights. You can select and prepare data for conversations in the **Create metrics** workflow. {: #shortdesc}
 
-The **Create metrics** workflow is where you connect to a database, data undergoes metadata enrichment, you can generate metrics and visualizations automatically or build them manually, and model data to create joins, relationships, and calculations.  
+The **Create metrics** workflow is where you connect to or upload data, data undergoes metadata enrichment, you can then generate metrics and visualizations automatically or build them manually, and model data to create joins, relationships, and calculations.  
 
 While both Analytics consumers and Data analysts can create metrics, only Data analysts can specify access permissions, and publish metrics and their visualizations to the **Metrics catalog**. Data analysts can assign published metrics to users in an organization from the **Metrics catalog**. These assigned metrics display in the users' **Key metrics**.
 
@@ -29,13 +29,7 @@ As a Data analyst, here is an example of the steps you can follow to create metr
 ## Before you start
 {: #prereq_create_metrics_data_analyst}
 
-Before you create metrics, review the following resources:
-
-- Familiarize yourself with the [key concepts in creating metrics](/docs/watsonx-bi?topic=watsonx-bi-concepts){: external}
-
-- Consider adding your organization's [business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external} to watsonx BI. 
-
-   Business terms give watsonx BI context for your data and helps it to interpret your BI queries accurately. You can add your business terms to the predefined business terms that are already available in watsonx BI. 
+Before you create metrics, familiarize yourself with the [key concepts in creating metrics](/docs/watsonx-bi?topic=watsonx-bi-concepts){: external}.
 
 
 ## Step 1. Creating metrics
@@ -45,7 +39,7 @@ Before you create metrics, review the following resources:
 
 2. Click **Create metrics**. 
 
-3. A new semantic data model is automatically created for you. Enter a unique name for the semantic data model. This is where you will be able to model data later. 
+3. A new semantic data model is automatically created for you. Enter a unique name for the semantic data model. This is where you will model data later. 
 
 4. [Select the data](/docs/watsonx-bi?topic=watsonx-bi-select){: external} that you want to work with. 
 
@@ -77,7 +71,7 @@ Before you create metrics, review the following resources:
    Make sure that the labels and descriptions that are assigned to every column for all enriched data, are accurate and meaningful. AI uses labels and descriptions during conversations to find data to answer your questions. During enrichment, AI-generated labels and descriptions might have also been assigned to your data. You must accept or edit the AI-generated labels and descriptions in order to use them during the metric creation process.
    {: important}
 
-      Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
+   Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
 
 
 8. You are now on the **Metrics overview** page and can create metrics by:
@@ -88,7 +82,15 @@ Before you create metrics, review the following resources:
 
    - [Building them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external} 
 
-      You can build your own metrics in the semantic data model. To get started, click a measure and select **New > Metric definition**. After you are satisfied with metric, save the semantic data model and export the metric definition. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
+      You can build your own metrics in the semantic data model. To get started: 
+      
+      a. Click a measure and select **New > Metric definition**. 
+
+      b. Enter details to define the metric.
+      
+      c. Save the semantic data model.
+
+      d. Click the newly-created metric definition and export it. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
 
       Anytime you make a change to the metric definition, for the change to apply to the metric in the project, you must export the metric definiton to the project.
       {: tip}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-09-17"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -136,7 +136,5 @@ At any time, you can go to the project from **Navigation Menu > Projects > View 
 
 You can manage the semantic data model, create more metrics, and add visualizations to the metrics from the **Data and Metrics** tab. 
 
-Metrics created from an imported FM package cannot be published to the **Metrics catalog**. 
-{: note}
 
 For more information, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics).

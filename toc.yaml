@@ -135,12 +135,15 @@ toc:
   - navgroup:
       id: tutorial
       topics:
-      - interface.md 
-      - create_metrics_keyconcepts.md
-      - usecase_create_metrics.md
-      - modeling_best_practices.md 
-    
-
+       - interface.md 
+       - create_metrics_keyconcepts.md
+       - modeling_best_practices.md 
+       - topicgroup:
+          label: Quick start guides
+          topics:
+          - account_owner_setup.md
+          - nonadmin_join_account.md
+          - usecase_create_metrics.md 
   - navgroup:
       id: help
       topics:

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-11"
+lastupdated: "2025-09-16"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -13,13 +13,14 @@ content-type: tutorial
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Setting up {{site.data.keyword.wxbia_short}} as an Account owner or Administrator
+# Setting up {{site.data.keyword.wxbia_short}} as a Service for administrative users 
 {: #getting-started_cloud}
 {: toc-content-type="tutorial"}
 
 
-## Provisioning and initializing watsonx BI
+## Provisioning and initializing watsonx BI 
 {: #prov}
+[Cloud account owner]{: tag-red}
 
 These steps describe the typical tasks for an **IBM Cloud account owner** to provision and initialize the account for an organization:
 
@@ -38,6 +39,8 @@ You can provision {{site.data.keyword.wxbia_short}} by creating an instance of t
 
 The new service instance appears under **AI/Machine learning** in the **Resource list**. 
 
+![Resource list showing watsonx BI under AI/Maching learning](images/cloud_resource_list.png)
+
 ### Step 2: Set up and initialize {{site.data.keyword.wxbia_short}}
 {: #step2}
 
@@ -52,11 +55,13 @@ As an IBM Cloud account owner, you must set up and initialize {{site.data.keywor
 
 4. (Optional) Choose a [sample](/docs/watsonx-bi?topic=watsonx-bi-using_samples){: external} to set up in your {{site.data.keyword.wxbia_short}} instance. 
 
-5. [Invite users](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external} to use your instance of {{site.data.keyword.wxbia_short}}. You can then: 
+5. Select the large language model to use in conversations.
+
+6. [Invite users](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external} to use your instance of {{site.data.keyword.wxbia_short}}. You can then: 
 
   a. [add users to the watsonx BI community](/docs/watsonx-bi?topic=watsonx-bi-roles){: external} and assign relevant roles (Administrator, Data analyst, or Analytics consumer)  
   
-  b. [add users as collaborators to projects](/docs/watsonx-bi?topic=watsonx-bi-managing_projects){: external}. 
+  b. [add users as collaborators to projects](/docs/watsonx-bi?topic=watsonx-bi-managing_projects){: external}.   
 
 When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
 
@@ -90,8 +95,10 @@ When you use {{site.data.keyword.wxbia_short}}, make sure that the selected acco
    |The user is a part of multiple Cloud accounts and is trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
-## Adding users to the Cloud account 
+## Adding users to the watsonx BI account 
 {: #add_users_cloud_account}
+
+[Cloud account owner]{: tag-red} [Administrator]{: tag-red} 
 
 As a **Cloud account owner** or **Administrator**, you add the people in your organization who need access to {{site.data.keyword.wxbia_full}} to the IBM Cloud account and then assign them the appropriate roles for their tasks. 
 
@@ -106,7 +113,6 @@ There are two types of roles that are required for {{site.data.keyword.wxbia_sho
 - [IAM roles](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external} - provide Service and Platform level assignments, which determine access to service and platform resources and are set in the IBM Cloud account. 
 
 - [Collaborator roles](/docs/watsonx-bi?topic=watsonx-bi-roles){: external} - determine what the user can do in {{site.data.keyword.wxbia_short}}. 
-
 
 
 ### Inviting users to the IBM Cloud account 
@@ -175,4 +181,3 @@ If you invited users as part of an access group, you can immediately add the acc
 3. Select the individual users or access groups and assign the relevant collaborator role. 
 
 For more information about collaborator roles, see [Roles and permissions in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-roles){: external}.
-
