@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-17"
+lastupdated: "2025-09-19"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -36,6 +36,9 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
 {: #create_metrics_data_analyst}
 
 1. On the **Data and Metrics** tab, select an existing project or create a new one by clicking the '+' button next to the project list. 
+
+   If you are creating a new project, remember to provide a unique name for the project. 
+   {: tip}
 
 2. Click **Create metrics**. 
 

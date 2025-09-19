@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-08-07"
+  years: 2025
+lastupdated: "2025-09-19"
 
 keywords:
 subcollection: watsonx-bi
@@ -34,3 +34,14 @@ You can manage the project from **Navigation Menu > Projects > View all projects
 
 If your organization has given you access to sample data and you choose to install it, a project for the sample data is automatically created.
 {: note}
+
+## Project name requirements
+{: #project_name}
+
+Your project name must follow these requirements:
+
+- Must be unique in the account.
+- Must contain 1 - 255 characters.
+- Cannot contain these characters: % \
+- Cannot contain leading or trailing underscores (_).
+- Cannot contain leading or trailing spaces. Leading or trailing spaces are automatically truncated.

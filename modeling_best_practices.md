@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-09-19"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -37,6 +37,9 @@ Here some things that you can do to prepare your data for use by AI.
 {: #metric_variety}
 
 Define a variety of metrics and ground answers in these standardized metric definitions for accuracy and consistency. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata, that is used to define metrics, to answer your questions and provide insights.
+
+If you are creating a new project for your metrics, remember to provide a unique name for the project. 
+{: tip}
 
 ## Add business terms
 {: #tip_add_terms}
