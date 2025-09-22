@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-09-22"
 
 keywords:
 subcollection: watsonx-bi
@@ -36,7 +36,7 @@ If your organization has given you access to sample data and you choose to insta
 {: note}
 
 ## Project name requirements
-{: #project_name}
+{: #project_name} 
 
 Your project name must follow these requirements:
 
