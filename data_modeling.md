@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-24"
 
 keywords: semantic, data model, data modeling
 subcollection: watsonx-bi
@@ -25,7 +25,7 @@ You can enhance your semantic data model by creating relationships between data 
 
 The semantic data model panel contains the data tree that shows metric definitions, tables, columns, calculations, folders, and more. This is the main space for selecting and editing in the data model.
 
-Here is an example of what a semantic data model panel might look like:
+Here is an example of what a data tree might look like:
 
 ![Semantic data model panel shows different types of data items](images/semantic_model_tree.png){: caption="A semantic data model panel depicting different items." caption-side="bottom"}
 
@@ -44,7 +44,7 @@ Here is an example of what a semantic data model panel might look like:
 13. Folder
 14. Hidden folder
 
-Click the context menu icon for the semantic model, table, or column to view its modeling and editing context menu options. Here you can start creating metrics, joining tables, creating filters and calculations, or renaming and deleting items.
+Click the context menu icon for the semantic data model, table, or column to view its modeling and editing context menu options. Here you can start creating metrics, joining tables, creating filters and calculations, or renaming and deleting items.
 
 The list of items in the data tree can be long. To find the data faster, use the search box in the data tree. 
 
@@ -74,6 +74,29 @@ In the Diagram settings box, select the Cardinality check box to show the cardin
 {: #custom_tables}
 
 The Custom tables is the main space for creating, viewing, and managing custom tables in a semantic data model. This tab is displayed by default, even if the semantic data model doesn't contain any custom tables. To start creating a new table, click **Create custom table**. If the semantic data model already contains custom tables, the table names are listed when you click the tab.
+
+## Sources panel
+{: #sources_panel}
+
+The **Sources** panel shows the sources of data that the semantic data model contains. A copy of this data is available in the semantic data model.
+
+You can expand the source to view its tables and columns. Drag tables onto the semantic data model panel.
+
+From the source context menu, you can initiate actions such as relinking sources or enabling data caching.
+
+## Validation panel
+{: #validation_panel}
+
+To validate the semantic data model, click **Validate** from the semantic data model context menu.
+
+If errors or warnings are discovered, the failed or warning validation icon is displayed for tables, columns, expressions, or joins. Click these icons to view the validation messages. 
+
+## Expression editor
+{: #expression_editor_tool}
+
+The expression editor is an SQL editing tool that you can use to create or edit SQL-based tables, calculations, filters, or data groups.
+
+You can create expressions by typing the code or dragging items from the data tree. The validation and data preview capabilities help to quickly verify and troubleshoot the expressions. The code editing capabilities include: inserting comments, auto-complete function, pretty-print, high-contrast mode, and different font sizes. The information panel shows details and provides examples of supported functions that are used in the expressions.
 
 ## Related links
 {: #related_links_modeling}

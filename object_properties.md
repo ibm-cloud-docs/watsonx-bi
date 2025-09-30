@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-08"
+lastupdated: "2025-09-24"
 
 keywords:
 subcollection: watsonx-bi
@@ -103,13 +103,13 @@ The following properties are specified in the **Advanced** section on the **Prop
 Ensure each column has an identifier. Identifiers are one of the factors that are used by the AI to understand questions and the context of your data when generating query statements. 
 {: tip}
 
-  When changing this property, ensure that:
+When changing this property, ensure that:
     
-    - The first character is a letter or an underscore (_).
+- The first character is a letter or an underscore (_).
 
-    - The subsequent characters are letters, digits, or underscores (_), without spaces.
+- The subsequent characters are letters, digits, or underscores (_), without spaces.
 
-  On the source tables, you cannot change the column identifier because at least one instance of that identifier is needed as a reference to the data source. While tables capture this reference in the background, columns do not. If you want to change the identifier for a column, for example if you are trying to create a more cryptic identifier, the recommended approach is to make copies of the columns, hide the original columns, and rename the identifiers of the copies.
+On the source tables, you cannot change the column identifier because at least one instance of that identifier is needed as a reference to the data source. While tables capture this reference in the background, columns do not. If you want to change the identifier for a column, for example if you are trying to create a more cryptic identifier, the recommended approach is to make copies of the columns, hide the original columns, and rename the identifiers of the copies.
 
 - **Technical data type**: This property reflects how the column is defined in the database. For example, for a column with the **Data type** of Text, the **Technical data type** might be char(5), nvarchar(200), or varchar(10).
 

@@ -83,6 +83,7 @@ toc:
       - topicgroup:
           label: Creating metrics 
           topics:
+          - create_metrics_keyconcepts.md
           - create_metrics_overview.md
           - topicgroup:
               label: Selecting data 
@@ -95,6 +96,7 @@ toc:
               - enrich_data.md
               - review_enrichment.md
               - monitor_enrichment_job.md
+            #  - troubleshooting_enrichment.md
           - generate_metrics.md
           - advanced_mode.md
           - edit_metrics.md 
@@ -135,15 +137,18 @@ toc:
   - navgroup:
       id: tutorial
       topics:
-       - interface.md 
-       - create_metrics_keyconcepts.md
-       - modeling_best_practices.md 
-       - topicgroup:
+      - interface.md 
+      - topicgroup:
           label: Quick start guides
           topics:
           - account_owner_setup.md
           - nonadmin_join_account.md
           - usecase_create_metrics.md 
+      - topicgroup:
+          label: Best practices for working for AI 
+          topics:
+          - modeling_best_practices.md 
+          - teach_wxbi_business_language.md
   - navgroup:
       id: help
       topics:

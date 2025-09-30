@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-09-24"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -20,16 +20,7 @@ subcollection: watsonx-bi
 
 To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM.
 
-The following factors are used by the LLM to understand questions and the context of your data
-when generating query statements:
 
-- Asset name
-- Asset description
-- Column name (Id)
-- Column display name
-- Column description
-- Column data type, usage, aggregate and nullable
-- Sampled columns
 
 Here some things that you can do to prepare your data for use by AI.
 
@@ -53,7 +44,7 @@ If your organization's business terminology is different, **IBM Cloud account ow
 
 To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics.
 
-## Each Asset and Column needs a display name and description
+## Each asset and column needs a display name and description
 {: #tip_display_name}
 
 Review the metadata enrichment results in the metric creation process to ensure each Asset and Column has a meaningful and accurate AI-generated Display name and Description.
@@ -76,10 +67,10 @@ Descriptions must be concise and reflect the purpose of the column. During query
 ## Model data in the semantic data model to help query generation
 {: #tip_model}
 
-### 1. Add clear Column Identifiers
+### 1. Add clear column Identifiers
 {: #tip_identifiers}
 
-To help the LLM understand the table schema correctly and easily, you need to ensure that the Column Identifiers are unique and clearly worded. These identifiers should be worded in a way that aligns with how users are likely to ask questions.
+To help the LLM understand the table schema correctly and easily, you need to ensure that the column Identifiers are unique and clearly worded. These identifiers should be worded in a way that aligns with how users are likely to ask questions.
 
 For example, if an asset is about product sales or revenue, column identifier “SALES_YEAR”/”SALES_DATE” would work better than “CURRENT_YEAR”/”CURRENT_DATE”, as it describes what the temporal columns represent.Similarly, if the asset is about sales target, use column identifiers such as “SALES_TARGET_YEAR“/”SALES_TARGET_DATE”.
 
@@ -91,19 +82,19 @@ To change the column identifiers in a metric definition:
 
 2. Click **Advanced mode** on the **Metrics overview** page.
 
+  ![Navigating to advanced mode from Metrics overview](images/metrics_overview_adv_mode.png)
+
 3. Under the metric definition, select the column you want to add the identifier to.
 
 4. Open its **Properties** tab and scroll down to the **Advanced** section.
 
 5. Enter the **Identifier** value.
 
+  ![Column Identifer field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
+
 6. Under **Actions**, click **Save** to save the semantic data model.
 
-7. Select the metric definition that you just made changes to and click **Export metric definition**.
-
-Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
-
-![Column Identifer field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
+7. Select the metric definition that you just made changes to and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
 You can also review and update the column identifiers in the metadata enrichment asset after enrichment completes. You can access the metadata enrichment asset on the **Projects asset** tab (**Home > Projects > View all projects**).
 
@@ -153,7 +144,6 @@ To add a label and description for a metric column in the semantic data model:
 6. Select the metric definition that you just made changes to and click **Export metric definition**.
 
 
-
 ### 3. Double check the “Usage”, “Aggregate” and “Nullable” fields for each column
 {: #tip_fields}
 
@@ -165,8 +155,19 @@ Sometimes data like “unit_cost” or “unit_sale_price” is treated like a �
 
 ![Check values in column properties](images/semantic_model_usage_agg_null_props.png){: caption="An open Properties panel displays the usage, aggregate, and null value fields." caption-side="bottom"}
 
+### 4. Use instructions for semi-additive measure
+{: #tip_semiadditive} 
 
-### 4. Remove unnecessary columns from the data
+If you have a semi-additive measure in your data, such as headcount or inventory, which cannot always be aggregated, you can add instructions in the description directing AI to use the appropriate calculation based on the time dimension. 
+
+For example, you might have headcount data on a monthly basis but if you want the headcount for the year, you cannot add monthly headcount to get the yearly total. In this case, the value from the last month of the year would yield the correct yearly headcount. 
+
+You can include a description instructing the AI on how to calculate headcount for the year:
+
+*“Use this column for yearly headcount. The headcount for 2025 is the total headcount for December 2025.”*
+
+
+### 5. Remove unnecessary columns from the data
 {: #tip_remove}
 
 Remove columns from metric definitions that might not be useful in answering questions by deleting them or hiding them from the base table or metric definition.
@@ -177,7 +178,7 @@ If you have multiple language-specific versions of the same column, such as the 
 
 ![Edit calculation to create a unified column](images/edit_calcs_create_column.png){: caption="A calculations displays in the Expression editor." caption-side="bottom"}
 
-### 5. Data quality matters
+### 6. Data quality matters
 {: #tip_quality}
 
 Ensure that column values are correct and relevant.
@@ -186,7 +187,7 @@ Sampled column values are used by the LLM to construct well-formed filters. When
 
 For example, if a metric definition contains a “MONTH_NAME” column, the sampled values from that column should only contain valid month names.
 
-### 6. Using column expressions for abstracting complex logic
+### 7. Using column expressions for abstracting complex logic
 {: #tip_expressions}
 
 Use column expressions for calculations or transformations that encapsulate complex logic.
@@ -202,7 +203,7 @@ Let’s say you have a "Status" column with multiple cell values like "Todo", "I
 Give your expressions column identifiers that map to how your users will reference the data. For example, the "Is_open" expression we created, is a good name if this is how users refer to open or closed items. However, if users generally refer to items as active or inactive items then "Is_active" would be a better name.
 {: tip}
 
-### 7. Using column expressions to filter data
+### 8. Using column expressions to filter data
 {: #tip_exp_filter}
 
 Use column expressions to filter out unnecessary data from the metric definition before exporting it to create or update a metric.

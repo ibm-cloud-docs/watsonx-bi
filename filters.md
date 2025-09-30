@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2025-06-26"
+  years: 2025
+lastupdated: "2025-09-30"
 
 keywords:
 subcollection: watsonx-bi
@@ -90,7 +90,7 @@ When an embedded filter is applied to a metric definition, there are four **Usag
 
 - Design mode - If the query says that it is in design mode then the filter is applied.
 
-When the Design mode setting is toggled for the semantic data model, the design mode filters are executed in modelling. If Design mode is turned off, filters with a usage of design mode are ignored when a query is performed in modelling.
+When the Design mode setting is toggled for the semantic data model, the design mode filters are executed in modeling. If Design mode is turned off, filters with a usage of design mode are ignored when a query is performed in modeling.
 
 Filters that use Design mode are always executed in metadata enrichment and to generate suggested questions regardless of whether the semantic data model Design mode is on or off. Filters using Design mode are not used in conversations.
 {: note}
