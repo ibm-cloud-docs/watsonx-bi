@@ -36,8 +36,7 @@ Here some things that you can do to prepare your data for use by AI.
 ## Create a variety of metrics 
 {: #metric_variety}
 
-Define a variety of metrics and ground answers in these standardized metric definitions for accuracy and consistency. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata, that is used to define metrics, to answer your questions and provide insights.
-
+Define a variety of metrics and ground answers in these standardized metric definitions for accuracy and consistency. {{site.data.keyword.wxbia_full_notm}} uses metrics and the underlying enriched metadata, that is used to define metrics, to answer your questions and provide insights.
 
 
 ## Add business terms
@@ -75,18 +74,23 @@ Descriptions must be concise and reflect the purpose of the column. During query
 ## Model data in the semantic data model to help query generation
 {: #tip_model}
 
-### 1. Add clear column Identifiers
+### 1. Add clear column identifiers
 {: #tip_identifiers}
 
-To help the LLM understand the table schema correctly and easily, you need to ensure that the column identifiers are unique and clearly worded. Identifiers uniquely identify objects and are used to generate SQL queries in expressions. 
+To help the LLM understand the table schema correctly and easily, you need to ensure that the column identifiers are unique and clearly worded. 
+
+Identifiers identify objects and are used to generate SQL queries in expressions. 
 
 Column identifiers should be worded in a way that aligns with how users are likely to ask questions.
 
-For example, if an asset is about product sales or revenue, column identifier “SALES_YEAR”/”SALES_DATE” would work better than “CURRENT_YEAR”/”CURRENT_DATE”, as it describes what the temporal columns represent.Similarly, if the asset is about sales target, use column identifiers such as “SALES_TARGET_YEAR“/”SALES_TARGET_DATE”.
+For example, if an asset is about product sales or revenue, column identifier “SALES_YEAR”/”SALES_DATE” would work better than “CURRENT_YEAR”/”CURRENT_DATE”, as it describes what the temporal columns represent. Similarly, if the asset is about sales target, use column identifiers such as “SALES_TARGET_YEAR“/”SALES_TARGET_DATE”.
 
 On the other hand, when multiple fact metrics come into play (for example, revenue + planned revenue in a single metric definition with a shared time dimension), having more general temporal column identifiers might be beneficial.
 
-To change the column identifiers in a metric definition:
+#### Updating column identifiers
+{: #col_identifier}
+
+To change the column identifier in a metric definition:
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
@@ -100,7 +104,7 @@ To change the column identifiers in a metric definition:
 
 5. Enter the **Identifier** value. 
 
-  An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, digits, or underscores, without spaces.
+  An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, numbers, or underscores, without spaces.
   {: tip}
 
   ![Column Identifer field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
@@ -109,9 +113,7 @@ To change the column identifiers in a metric definition:
 
 7. Select the metric definition that you just made changes to and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
-You can also review and update the column identifiers in the metadata enrichment asset after enrichment completes. You can access the metadata enrichment asset on the **Projects asset** tab (**Home > Projects > View all projects**).
-
-### 2. Add a label and description
+### 2. Add column labels and descriptions
 {: #tip_desc}
 
 Make sure that you add a label and description for metric columns in the semantic data model. The order of priority for the label and description is the following:
@@ -122,27 +124,27 @@ Make sure that you add a label and description for metric columns in the semanti
 
 3. AI-suggested or generated in the metadata enrichment asset
 
+
+
+#### Writing a strong description 
+{: #strong_desc}
+
 Ensure that the label and description are worded based on your business context and how users will likely ask questions.
-{: tip}
 
-To write a strong description: 
+Include values in the description to specify time periods
+:   For example: If months are represented as “Jan”, “Feb”, “Mar”, include that in the description. *“Month values are abbreviated as Jan, Feb, Mar...”*
 
-•	Include values in the description to specify time periods
+If values follow a known standard, mention the standard name in the description
+:   For example: *“Country codes follow ISO 3166 standard”* or *“Currency codes use ISO 4217”*
 
-  For example: If months are represented as “Jan”, “Feb”, “Mar”, include that in the description.
-  “Month values are abbreviated as Jan, Feb, Mar...”
-
-•	If values follow a known standard, mention the standard name in the description
-
-  For example: “Country codes follow ISO 3166 standard” or “Currency codes use ISO 4217”
-
-•	Reflect user language preferences
-
-  For example: If there is a column called "manager”, but your business users use the word "boss" then reflect that in the description. 
+Reflect user language preferences
+:   For example: If there is a column called "manager”, but your business users use the word "boss" then reflect that in the description. 
   
-  If you want AI to use "Cost of Goods Sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
+:   If you want AI to use "Cost of goods sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
 
-To add a label and description for a metric column in the semantic data model:
+#### Adding column labels and descriptions in the semantic model
+{: #add_labels_desc_semantics}
+
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
@@ -162,11 +164,11 @@ To add a label and description for a metric column in the semantic data model:
 
 In the semantic data model, check the column properties to ensure that the **Usage**, **Aggregate**, and **Supports NULL values** fields are correct.
 
-  - Usage: This property applies to tables and controls how the query engine understands and processes the table, and its child objects, in a query. 
+- Usage: This property applies to tables and controls how the query engine understands and processes the table, and its child objects, in a query. 
 
-  - Aggregate: This property applies to columns, and defines the type of aggregation that is applied to a summary column.
+- Aggregate: This property applies to columns, and defines the type of aggregation that is applied to a summary column.
 
-  - Supports NULL values:  Specifies whether a column supports null values. By default, this property value is inherited from the source. You can change this value.
+- Supports NULL values:  Specifies whether a column supports null values. By default, this property value is inherited from the source. You can change this value.
 
 For example, for a numerical column called Revenue, the **Usage** field should be **Measure**, rather than **Attribute**. If the sum of the revenue is commonly used in a question, the default **Aggregate** should be **Total**, rather than **Average**.
 
