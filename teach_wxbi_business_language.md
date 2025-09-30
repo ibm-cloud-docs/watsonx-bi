@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-09-30"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -20,11 +20,11 @@ subcollection: watsonx-bi
 
 - Asset name
 - Asset description
-- Column name (Id)
-- Column display name
+- Column name 
 - Column description
-- Column data type, usage, aggregate and nullable
-- Sampled columns
+- Column identifier
+- Column data type, usage, aggregate, and nullable fields
+- Sampled columns 
 
 The quality of this data determines the quality of watsonx BI’s generated responses. 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-24"
+lastupdated: "2025-09-30"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -20,7 +20,16 @@ subcollection: watsonx-bi
 
 To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM.
 
+The following factors are used by the LLM to understand questions and the context of your data
+when generating query statements:
 
+- Asset name
+- Asset description
+- Column name 
+- Column description
+- Column identifier
+- Column data type, usage, aggregate, and nullable fields
+- Sampled columns 
 
 Here some things that you can do to prepare your data for use by AI.
 
@@ -29,15 +38,14 @@ Here some things that you can do to prepare your data for use by AI.
 
 Define a variety of metrics and ground answers in these standardized metric definitions for accuracy and consistency. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata, that is used to define metrics, to answer your questions and provide insights.
 
-If you are creating a new project for your metrics, remember to provide a unique name for the project. 
-{: tip}
+
 
 ## Add business terms
 {: #tip_add_terms}
 
 Watsonx BI comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
 
-If your organization's business terminology is different, **IBM Cloud account owners and Administrators** can consider adding business terms to provide additional context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+If your organization's business terminology is different, **IBM Cloud account owners** and **Administrators** can consider adding business terms to provide additional context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
 
 ## Use unique names for data assets
 {: #tip_unique_names}
@@ -70,7 +78,9 @@ Descriptions must be concise and reflect the purpose of the column. During query
 ### 1. Add clear column Identifiers
 {: #tip_identifiers}
 
-To help the LLM understand the table schema correctly and easily, you need to ensure that the column Identifiers are unique and clearly worded. These identifiers should be worded in a way that aligns with how users are likely to ask questions.
+To help the LLM understand the table schema correctly and easily, you need to ensure that the column identifiers are unique and clearly worded. Identifiers uniquely identify objects and are used to generate SQL queries in expressions. 
+
+Column identifiers should be worded in a way that aligns with how users are likely to ask questions.
 
 For example, if an asset is about product sales or revenue, column identifier “SALES_YEAR”/”SALES_DATE” would work better than “CURRENT_YEAR”/”CURRENT_DATE”, as it describes what the temporal columns represent.Similarly, if the asset is about sales target, use column identifiers such as “SALES_TARGET_YEAR“/”SALES_TARGET_DATE”.
 
@@ -88,7 +98,10 @@ To change the column identifiers in a metric definition:
 
 4. Open its **Properties** tab and scroll down to the **Advanced** section.
 
-5. Enter the **Identifier** value.
+5. Enter the **Identifier** value. 
+
+  An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, digits, or underscores, without spaces.
+  {: tip}
 
   ![Column Identifer field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
 
@@ -147,15 +160,21 @@ To add a label and description for a metric column in the semantic data model:
 ### 3. Double check the “Usage”, “Aggregate” and “Nullable” fields for each column
 {: #tip_fields}
 
-In the semantic data model, check the column properties to ensure that the Usage, Aggregate, and Supports NULL values fields are correct.
+In the semantic data model, check the column properties to ensure that the **Usage**, **Aggregate**, and **Supports NULL values** fields are correct.
 
-For example, for a numerical column called Revenue, the Usage should be Measure, rather than Attribute. If the sum of the revenue is commonly used in a question, the default Aggregate should be Total, rather than Average.
+  - Usage: This property applies to tables and controls how the query engine understands and processes the table, and its child objects, in a query. 
 
-Sometimes data like “unit_cost” or “unit_sale_price” is treated like a “Measure”. However, these are actually attributes of a product.
+  - Aggregate: This property applies to columns, and defines the type of aggregation that is applied to a summary column.
+
+  - Supports NULL values:  Specifies whether a column supports null values. By default, this property value is inherited from the source. You can change this value.
+
+For example, for a numerical column called Revenue, the **Usage** field should be **Measure**, rather than **Attribute**. If the sum of the revenue is commonly used in a question, the default **Aggregate** should be **Total**, rather than **Average**.
+
+Sometimes data like “unit_cost” or “unit_sale_price” is treated like a **Measure**. However, these are actually attributes of a product.
 
 ![Check values in column properties](images/semantic_model_usage_agg_null_props.png){: caption="An open Properties panel displays the usage, aggregate, and null value fields." caption-side="bottom"}
 
-### 4. Use instructions for semi-additive measure
+### 4. Use instructions for semi-additive measures
 {: #tip_semiadditive} 
 
 If you have a semi-additive measure in your data, such as headcount or inventory, which cannot always be aggregated, you can add instructions in the description directing AI to use the appropriate calculation based on the time dimension. 
