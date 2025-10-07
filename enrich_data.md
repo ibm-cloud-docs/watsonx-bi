@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-06"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -110,12 +110,7 @@ In {{site.data.keyword.wxbia_short}}, business term assignment uses the followin
 
 - Gen AI based term assignment: Domain-specific business terms are assigned and suggested by using IBM Slate 30m encoding model. The AI model takes into account names and descriptions of assets and columns, and semantically matches terms with that metadata. This means that terms can be assigned even if they aren't exact matches.
 
-####  Set relationships (applies to only data assets and not metrics) 
-{: #set_relationships}
 
-Uses profiling statistics and naming similarities to provide primary and foreign keys and suggest relationships between assets and columns.
-
-{{site.data.keyword.wxbia_short_cap}} also uses custom, random sampling of 10,000 rows per table for classification. During enrichment, the rows to be included are randomly selected. 
 
 ## Steps in metadata enrichment
 {: #enrich_steps}

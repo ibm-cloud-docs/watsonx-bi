@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-10-06"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Data analysts - Creating metrics for conversations 
+# Creating metrics for Data analysts
 {: #data_analysts_overview}
 
 IBM watsonx BI uses metrics and the underlying enriched metadata that is used to create metrics to answer questions and provide insights. You can select and prepare data for conversations in the **Create metrics** workflow. {: #shortdesc}
@@ -26,14 +26,14 @@ After metrics and any associated visualizations are published to the **Metrics c
 
 As a Data analyst, here is an example of the steps you can follow to create metrics, publish them, and assign them to users in your organization.
 
-## Before you start
+## Prerequisites
 {: #prereq_create_metrics_data_analyst}
 
 Before you create metrics, familiarize yourself with the [key concepts in creating metrics](/docs/watsonx-bi?topic=watsonx-bi-concepts){: external}.
 
 
-## Step 1. Creating metrics
-{: #create_metrics_data_analyst}
+## Step 1. Selecting data
+{: #select_data_metrics}
 
 1. On the **Data and Metrics** tab, select an existing project or create a new one by clicking the '+' button next to the project list. 
 
@@ -46,14 +46,15 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
 
 4. [Select the data](/docs/watsonx-bi?topic=watsonx-bi-select){: external} that you want to work with. 
 
-   a. New connection - You can connect to your remote data by creating a new connection. 
+   a. New connection - Connect to your remote data by creating and testing a new connection.
    
-   b. Existing datasource - You can connect to your remote data with an existing connection or choose an uploaded file. 
+   b. Existing data source - Connect to your remote data with an existing connection or choose an existing data asset such as an [uploaded file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}. 
 
-   After selecting the tables, review the selections and make sure only the tables that are necessary for the metrics that you are building are included. The next step is metadata enrichment and the time it takes to complete enrichment depends on the number and size of tables selected. 
-   {: tip}
 
-5. Click **Next** to continue.
+5. Click **Next** to continue to metadata enrichment.
+
+## Step 2: Metadata enrichment
+{: #enrich_metadata_metrics}
 
 6. Click **Run enrichment** to start the metadata enrichment process. 
 
@@ -63,25 +64,33 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
   
    No changes are made to your original data during metadata enrichment. 
 
-7. After enrichment completes, you can review the enrichment results and make necessary changes, or click **Next** to continue to the next step. 
+7. Review the results after metadata enrichment completes and make necessary changes to labels and descriptions, or accept the suggested ones. 
 
-   About reviewing enrichment results:
-
-   The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
+   The [enriched metadata results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically.  
 
    You don't need to re-run enrichment after making changes to the enrichment results. 
 
-   Make sure that the labels and descriptions that are assigned to every column for all enriched data, are accurate and meaningful. AI uses labels and descriptions during conversations to find data to answer your questions. During enrichment, AI-generated labels and descriptions might have also been assigned to your data. You must accept or edit the AI-generated labels and descriptions in order to use them during the metric creation process.
+   You **must** accept or edit the AI-generated labels and descriptions in order to use them during the metric creation process. 
+
+   Make sure that the labels and descriptions that are assigned to every column for all enriched data, are accurate and meaningful. AI uses labels and descriptions during conversations to find data to answer your questions. During metadata enrichment, AI-generated labels and descriptions might have also been assigned to your data. 
    {: important}
 
-   Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
+8. Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
 
+## Step 3: Creating metrics and data modeling
+{: #create_metrics_model}
 
-8. You are now on the **Metrics overview** page and can create metrics by:
+9. You are now on the **Metrics overview** page and can create metrics by:
 
    - [Generating them automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} 
 
-      AI automatically generates metrics based on your enriched data. The generate metrics process automatically creates metric definitions, enriches these definitions and, after you select the ones that you want to use, exports them to the project as metrics for use in conversations. 
+      AI automatically generates metrics based on your enriched data. The generate metrics process does the following automatically for you:
+      
+      - creates metric definitions
+
+      - enriches the newly-generated metric definitions 
+      
+      - exports the selected metric definitions to the project as metrics for use in conversations 
 
    - [Building them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external} 
 
@@ -93,12 +102,14 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
       
       c. Save the semantic data model.
 
-      d. Click the newly-created metric definition and export it. Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
+      d. Click the menu icon next to the newly-created metric definition and select **Export metric definition**. 
+      
+      Exporting a metric definition creates a metric or updates an existing one in the project and makes it available for use in conversations.
 
       Anytime you make a change to the metric definition, for the change to apply to the metric in the project, you must export the metric definiton to the project.
       {: tip}
    
-9. Navigate back to the **Metrics overview** page. You can see the metrics that you created and, if applicable, their enrichment status in the **Metrics overview** panel. 
+10. Navigate back to the **Metrics overview** page. You can see the metrics that you created and, if applicable, their enrichment status in the **Metrics overview** panel. 
 
    You can now do the following:
 
@@ -116,7 +127,7 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
    c. Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model
 
    
-   You can create new or modify existing relationships, calculations, metric definitions, and more. Learn how out to [optimize data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external} in the semantic model . 
+   You can create new or modify existing relationships, calculations, metric definitions, and more. Learn how out to [optimize data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external} in the semantic model. 
 
    d. [Add visualizations to metrics](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics){: external}  
    
@@ -133,7 +144,7 @@ Once the metrics are published to the **Metrics catalog**, Analytics consumers c
 If you want certain metrics to display in a user's **Key metrics**, you need to assign these to the user from the **Metrics catalog**.    
 
 
-## Step 2: Assigning metrics to users 
+## Step 4: Assigning metrics to users 
 {: #assign_metric_data_analyst}
 
 1. In the **Metrics catalog**, select the metric that you want to assign.
