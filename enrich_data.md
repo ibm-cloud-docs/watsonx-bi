@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-10"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -23,13 +23,13 @@ subcollection: watsonx-bi
 # Metadata enrichment
 {: #enrich}
 
-Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level. {: #shortdesc}
+Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level.  {: #shortdesc}
  
 Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. Enrichment adds additional instructions to your data, making it more insightful for the users. 
 
 Watsonx.data intelligence uses the pre-defined governance artifacts and the domain-specific glossary concepts that you upload to augment technical metadata with more descriptive and meaningful names. 
  
-Metadata enrichment also generates context-aware descriptions for tables and columns, which consider the surrounding columns and the context of the table.
+Metadata enrichment also generates context-aware descriptions for tables and columns, which consider the surrounding columns and the context of the table. 
 
 To ask questions about your data in {{site.data.keyword.wxbia_short}}, your data first needs to be enriched. You can enrich data during the [metric creation](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external} process. 
 
@@ -41,7 +41,7 @@ Metadata enrichment does not change your original data.
 
 Metadata enrichment occurs at two levels in {{site.data.keyword.wxbia_short}} the project and data asset levels. Any metrics that you build or generate are also enriched. 
 
-Metadata enrichment settings for all projects, data assets, and metrics in {{site.data.keyword.wxbia_short}} are configured by default, which helps help ensure consistent use of the enrichment options. 
+Metadata enrichment settings for all projects, data assets, and metrics in {{site.data.keyword.wxbia_short}} are configured by default, which help ensure consistent use of the enrichment options. 
 
 The categories in the governance framework that contain business terms, data classes, and classifications are applied to the data during enrichment.
 
@@ -96,19 +96,11 @@ You can also create custom abbreviations, by uploading CSV files or adding them 
 #### Assign terms and classifications
 {: #assigned_terms}
 
-This scope assigns and suggests business terms and classifcations for tables and columns. 
+This scope assigns and suggests business terms and classifications for tables and columns, which are used as a starting point to create the semantic data model. 
 
-Assigned and suggested business terms have a confidence score attached to them. Terms are assigned or suggested when the confidence level exceeds the minimum confidence level thresholds for a term to be assigned or suggested. The default setting for assignment threshold is 60% and suggestion threshold is 50%. 
+Assigned and suggested business terms have a confidence score attached to them. Terms are assigned or suggested when the confidence level exceeds the default minimum confidence level thresholds for a term to be assigned or suggested. The default setting for assignment threshold is 60% and suggestion threshold is 50%. 
 
-In {{site.data.keyword.wxbia_short}}, business term assignment uses the following methods:
 
-- Machine learning: A built-in supervised machine learning model is used to assign terms. By default, the built-in model is trained with assets from the project.
-
-- Data class-based assignments: Terms are assigned based on the data class assignment for a column. Appropriate linkage between data classes and terms is a prerequisite for quality results here.
-
-- Name matching: Terms are assigned based on the similarity between a term and the name of the asset or column.
-
-- Gen AI based term assignment: Domain-specific business terms are assigned and suggested by using IBM Slate 30m encoding model. The AI model takes into account names and descriptions of assets and columns, and semantically matches terms with that metadata. This means that terms can be assigned even if they aren't exact matches.
 
 
 

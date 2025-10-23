@@ -62,7 +62,7 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Projects - your workspaces
+          label: "Projects - your workspaces"
           topics:
           - projects.md
           - projects_manage.md
@@ -99,10 +99,11 @@ toc:
           - try.md
           - publish_metrics.md
       - topicgroup:
-          label: Data modeling in the advanced mode
+          label: Data modeling
           topics:
           - data_modeling.md
           - adding_new_column_modeling.md
+          - data_types.md
           - relationships.md
           - calculations.md
           - relinking_ref_tables.md
@@ -151,6 +152,11 @@ toc:
       - browser_support.md
       - faqs_new.md
       - get_help.md
+      - topicgroup:
+          id: troubleshooting
+          label: Troubleshooting
+          topics:
+          - troubleshoot_new_conversation.md
       - link:
           label: Getting started with IBM Cloud
           href: https://www.ibm.com/cloud/get-started

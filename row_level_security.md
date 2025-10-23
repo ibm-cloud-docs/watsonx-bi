@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-10"
 
 keywords: data security, row-level security
 subcollection: watsonx-bi
@@ -30,7 +30,7 @@ Let’s say, you need to secure data and dynamically filter it based on the user
 
 You can take the following steps to secure data:
  
-## 1. Determine the fields to use to secure data and map them
+## Step 1. Determine the fields to use to secure data and map them
 {: #determine_fields}
 
 To control access, you can limit the list of products that a given user can see based on the user’s email ID. You can create a mapping between the user emails and product ids.
@@ -43,7 +43,7 @@ To control access, you can limit the list of products that a given user can see 
 | user2@email.com | 104|
 {: caption="Table depicts mapping of user email to product ID" caption-side="bottom"}
 
-## 2. Apply an embedded filter to the table
+## Step 2. Apply an embedded filter to the table
 {: #apply_embedded_filter}
 
 You can apply an [embedded filter](/docs/watsonx-bi?topic=watsonx-bi-model_filters) at the table or metric level to enforce this security.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-06"
+lastupdated: "2025-10-10"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -40,6 +40,7 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
    If you are creating a new project, remember to provide a unique name for the project. 
    {: tip}
 
+   
 2. Click **Create metrics**. 
 
 3. A new semantic data model is automatically created for you. Enter a unique name for the semantic data model. This is where you will model data later. 
@@ -49,7 +50,6 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
    a. New connection - Connect to your remote data by creating and testing a new connection.
    
    b. Existing data source - Connect to your remote data with an existing connection or choose an existing data asset such as an [uploaded file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}. 
-
 
 5. Click **Next** to continue to metadata enrichment.
 
@@ -111,35 +111,34 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
    
 10. Navigate back to the **Metrics overview** page. You can see the metrics that you created and, if applicable, their enrichment status in the **Metrics overview** panel. 
 
-   You can now do the following:
+      You can now do the following:
 
-   This is an iterative process. You can explore, adjust, and revisit these steps as needed.
-   {: note}
+      This is an iterative process. You can explore, adjust, and revisit these steps as needed.
+      {: note}
 
-   a. [Try a metric in a conversation](/docs/watsonx-bi?topic=watsonx-bi-try_metrics){: external} 
+      a. [Try a metric in a conversation](/docs/watsonx-bi?topic=watsonx-bi-try_metrics){: external} 
    
-   Click a metric and select **Try metric** to ask questions against the metric. 
+      Click a metric and select **Try metric** to ask questions against the metric. 
 
-   b. [Edit metrics](/docs/watsonx-bi?topic=watsonx-bi-edit_metrics){: external} 
+      b. [Edit metrics](/docs/watsonx-bi?topic=watsonx-bi-edit_metrics){: external} 
    
-   You can modify a metric by editing its metric definition in the **Advanced mode**. If you tried a metric in a conversation and didn't get the expected responses, you can edit the metric definition and export it again for use. 
+      You can modify a metric by editing its metric definition in the **Advanced mode**. If you tried a metric in a conversation and didn't get the expected responses, you can edit the metric definition and export it again for use. 
 
-   c. Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model
+      c. Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model
 
+      You can create new or modify existing relationships, calculations, metric definitions, and more. Learn how out to [optimize data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external} in the semantic model. 
+
+      d. [Add visualizations to metrics](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics){: external}  
    
-   You can create new or modify existing relationships, calculations, metric definitions, and more. Learn how out to [optimize data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external} in the semantic model. 
-
-   d. [Add visualizations to metrics](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics){: external}  
+      You can generate visualizations for a metric and choose the ones that you want to work with. You can also build visualizations manually. 
    
-   You can generate visualizations for a metric and choose the ones that you want to work with. You can also build visualizations manually. 
-   
-   While visualizations are not mandatory, if you want a metric to display in a user's **Key metrics**, you need to create and associate a visualization to the metric. The visualization is what the user interacts with in the **Key metrics** panel.
+      While visualizations are not mandatory, if you want a metric to display in a user's **Key metrics**, you need to create and associate a visualization to the metric. The visualization is what the user interacts with in the **Key metrics** panel.
 
-   e. [Publish metrics and visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** 
+      e. [Publish metrics and visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** 
    
-   Select the metrics and associated visualizations that you want to publish to the **Metrics catalog** and specify access permissions.
+      Select the metrics and associated visualizations that you want to publish to the **Metrics catalog** and specify access permissions.
 
-Once the metrics are published to the **Metrics catalog**, Analytics consumers can start asking questions about this data.
+      After the metrics are published to the **Metrics catalog**, Analytics consumers can start asking questions about this data.
 
 If you want certain metrics to display in a user's **Key metrics**, you need to assign these to the user from the **Metrics catalog**.    
 
