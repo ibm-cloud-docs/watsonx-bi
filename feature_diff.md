@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-14"
+lastupdated: "2025-10-31"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -59,9 +59,7 @@ The key differences in the user interface of both deployments are:
 
 While the core functions in both deployments are effectively the same, the following features are not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub:
 
-- Choose your large language model (LLM)
-- Use of sample datasets
-- Upload file 
-- Import and export project
-- Use Framework Manager packages to integrate with Cognos Analytics 
+- Choose your large language model (LLM) does not support Meta Llama 4 and Granite combination
+- Use of Go Sales sample data
+- Upload local file
 - Provide feedback for generated responses in conversations

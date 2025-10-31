@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-10"
+lastupdated: "2025-10-31"
 
 keywords: upload file, local file
 
@@ -11,12 +11,33 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Validating data types before CASTING for improved query generation
+# Validating data types before casting
 {: #data_type_conversion}
 
-Whether you connect to remote data in watsonx BI or work with an uploaded file, you might need to convert or CAST column data from one type to another to ensure compatibility and improve query generation. {: #shortdesc}
+Whether you connect to remote data in watsonx BI or work with an uploaded file, you might need to convert the values in your data to a different data type using the CAST function. {: #shortdesc}
+
+If a value is stored in a character data type, the value has to be in specific formats for the CAST to be successful. Otherwise, the CAST function results in an error. 
 
 The question that arises is, how do you validate data types before you CAST them.
+
+## Expected data formats
+{: #expected_data_formats}
+
+- DATE YYYY-MM-DD   
+
+  Where YYYY is from 0001 to 9999, MM is from 01 to 12, DD is from 01 to the last day of the month
+
+- TIME HH:MI:SS[.fff]   
+
+  Where HH is from 00 to 23, MI is from 00 to 59, SS is from 00 to 59 and fraction seconds from 0  
+
+- TIMESTAMP YYYY-MM-DD HH:MI:SS[.fff] 
+
+  Where same requirements of DATE and TIME parts apply
+
+- NUMERIC 
+
+  Values must be INTEGERS (such as 0, 123), DECIMAL (0.0, 23.45), or DOUBLE (1.0E0) with an optional leading (+ or -) sign
 
 ## Examples of data type issues that can cause query failure
 {: #example_issues}
@@ -46,12 +67,36 @@ Your data has column values that include more than one data type:
 
 To remediate this issue, you need to convert or CAST all of these values to one data type. 
 
+
 ## Validating data types and casting conditionally
 {: #data_validation_casting}
 
-You can use an expression in watsonx BI's modelling interface that leverages REGEX to validate if a value matches the ISO SQL format. 
+Conditionally converting the values requires a test that attempts to determine if the string value is in an appropriate format or not. You can use an expression in watsonx BI's modelling interface that leverages regular expression (REGEX) to validate if a value matches the ISO SQL format. 
 
 You can then convert values that don't match the ISO SQL format. 
+
+### Validate NUMBER and CAST
+{: #validate_number}
+
+Numeric values can have complex formatting that includes currencies, percentage signs, units of measure and other local specific usage of separators.
+
+Use REGEX to check if a string matches the ISO SQL format before casting. 
+
+IS_A_NUMBER is an expression that returns N when the string does not follow ISO-SQL literal format for a numeric. 
+
+
+```
+case when 0 = occurrences_regex ( '^[+-]?\d*\.?\d+(?:[eE][+-]?\d+)?$', VAL ) then 'N' else 'Y' end
+
+```
+{: codeblock}
+
+You can conditionally convert the values that are not valid numbers to 0, for example, to represent an unknown number versus a null value. 
+
+```
+case when 'Y' = IS_A_NUMBER then CAST ( VAL, <numeric-type> ) else CAST ( NULL, <numeric-type> ) end
+```
+{: codeblock}
 
 
 ### Validate DATE and CAST
@@ -118,3 +163,29 @@ case when 'Y' = IS_A_DATE then CAST ( VAL, DATE ) else CAST ( NULL, DATE ) end
 {: codeblock}
 
 
+### Extracting a numeric value from a string
+{: #extract_numbers}
+
+Numeric values are more likely to include additional formatting including labels such as currencies or units of measure.
+
+The REGEX support in dynamic query includes SUBSTRING_REGEX. It does not, however, support the means to specify which subgroup in a REGEX to retrieve.
+
+The following example uses a less than obvious REGEX solution that does not use a subgroup.
+
+```
+substring_regex ( '(?<=[+-]?\s*)\d*\.?\d+(?:[eE][+-]?\d+)?(?=\s*(?:[A-Za-z]{2,4}|[^\w\s])?\b)', VAL  )
+```
+{: codeblock}
+
+
+| Row ID | RNUM | VAL | Extract_Numeric_Part|
+|-------|--------|------|-------------|
+| 1 | 1 | 123| 123 |
+| 2| 2| -456| 456|
+| 3 | 3 | $1.23| 1.23|
+| 4| 4| Plan missing | Null|
+|5 | 5| **00| 00|
+|6| 6| CDN 30| 30|
+
+
+This approach attempts to remove some of the text that precedes or follows a numeric value but does not consider cultural (locale) specific methods of representing decimal places and thousand separators.

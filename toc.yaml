@@ -46,7 +46,7 @@ toc:
           - roles_permissions.md
           - choose_llm.md
           - topicgroup:
-              label: Sample data in watsonx BI as a Service
+              label: Installing and using sample data
               topics:
               - set_samples.md
               - go_sales.md
@@ -79,7 +79,6 @@ toc:
       - topicgroup:
           label: Creating metrics
           topics:
-          - create_metrics_keyconcepts.md
           - create_metrics_overview.md
           - topicgroup:
               label: Selecting data
@@ -99,11 +98,13 @@ toc:
           - try.md
           - publish_metrics.md
       - topicgroup:
-          label: Data modeling
+          label: Data modelling
           topics:
           - data_modeling.md
-          - adding_new_column_modeling.md
-          - data_types.md
+          - topicgroup:
+              label: Column dependencies
+              topics:
+              - column_dependencies.md
           - relationships.md
           - calculations.md
           - relinking_ref_tables.md
@@ -111,6 +112,11 @@ toc:
           - hiding_objects.md
           - object_properties.md
           - row_level_security.md
+          - topicgroup:
+              label: Adding data to an existing semantic data model
+              topics:
+              - adding_new_column_modeling.md
+          - data_types.md
       - topicgroup:
           label: Using conversations to get insights
           topics:
@@ -141,6 +147,10 @@ toc:
           - account_owner_setup.md
           - nonadmin_join_account.md
           - usecase_create_metrics.md
+      - topicgroup:
+          label: Key concepts
+          topics:
+          - create_metrics_keyconcepts.md
       - topicgroup:
           label: Best practices for working with AI
           topics:

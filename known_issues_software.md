@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-10-31"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -16,11 +16,24 @@ subcollection: watsonx-bi
 # Known issues in {{site.data.keyword.wxbia_short}} on IBM Software Hub
 {: #known_issues_software}
 
-The following issues and limitations apply to {{site.data.keyword.wxbia_full}} on IBM Software Hub 5.2.0. {: shortdesc}
+The following issues and limitations apply to {{site.data.keyword.wxbia_full}} on IBM Software Hub 5.2.0 and later versions. {: shortdesc}
+
+
+
+- **Unable to upgrade watsonx BI service instances**
+  Applies to: 5.2.1
+  Fixed in: 5.2.2
+
+  You cannot update an existing watsonx BI service instance.
+
+  Workaround:
+
+  Instead, you must uninstall the watsonx BI operator and service instance, upgrade the IBM Software HUb instance and watsonx BI dependencies, then reinstall the watsonx BI operation and deploy a service instance. For more information, see [Preparing to upgrade to IBM Software Hub 5.2.1](https://www.ibm.com/docs/software-hub/5.2.x?topic=bi-preparing-upgrade-version-521) when watsonx BI is installed.
 
 - **Analytics consumers are unable to create metrics**
+  Applies to: 5.2.0 and later
   
-  Analytics consumers who use {{site.data.keyword.wxbia_short}} on IBM® Software Hub 5.2 are assigned the User role. The User role in IBM Software Hub has no permissions that are assigned to it. Analytics consumers who start the metric creation process will run into a metadata import error, which prevents them from creating metrics. 
+  Analytics consumers who use {{site.data.keyword.wxbia_short}} on IBM® Software Hub 5.2 are assigned the User role, which has no permissions. This causes a metadata import error during metric creation. 
   
   This issue does not impact Data analysts.
 
@@ -29,32 +42,40 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
   Data analysts can create and publish metrics and related visualizations to the **Metrics catalog**, and assign them to Analytics consumers.
 
 - **Certain predefined roles allow users to set up {{site.data.keyword.wxbia_short}} without being invited first**
+  Applies to: 5.2.0 and later
 
-  Any user that is added to IBM Software Hub and has direct access to the User, Data steward, or Administrator role can access {{site.data.keyword.wxbia_short}} and go through the setup experience without being invited to the {{site.data.keyword.wxbia_short}} community. Removing such a user from the {{site.data.keyword.wxbia_short}} community can also prevent them from accessing IBM Software Hub.
+  Users added to IBM Software Hub with direct access to the User, Data steward, or Administrator role can access {{site.data.keyword.wxbia_short}} and complete setup without being invited to the {{site.data.keyword.wxbia_short}} community. 
+  
+  Removing such users from the {{site.data.keyword.wxbia_short}} community might also prevent them from accessing IBM Software Hub.
+
 
   Workaround: 
 
-  Administrators must check to ensure that users are added to the {{site.data.keyword.wxbia_short}} community and that, when users are removed from the {{site.data.keyword.wxbia_short}} community, that they continue to have access to IBM Software Hub.
+  Administrators must verify that users are added to the {{site.data.keyword.wxbia_short}} community and ensure continued access to IBM Software Hub after removal.
 
 - **Home in the Navigation menu doesn't bring users back to Conversations**
+  Applies to: 5.2.0
+  Fixed in: 5.2.1
 
   The **Home** option in the **Navigation menu** doesn't bring users back to {{site.data.keyword.wxbia_short}} **Conversations**.
 
   Workaround:
 
-  Users can manually change the URL to redirect them back to the watsonx BI **Conversations** page. Change the URL by removing all content that appears in the URL after .com and replace it with wxbi/conversations.
+  Manually change the URL to redirect to the **Conversations** page by replacing everything after '.com' and replace it with 'wxbi/conversation'.
 
 - **Administrators can access all projects on Data and Metrics, regardless of permissions**
+  Applies to: 5.2.0 and later
 
-  Users with the Administrator role in watsonx BI can view all projects in the cluster on the **Data and Metrics** page, including those that they don't have access to. Administrators who try to create metrics in a project that they don't have access to will encounter an error.
+  Administrators in watsonx BI can view all projects in the cluster on the **Data and Metrics** page, including those that they don't have access to. Creating metrics in inaccessible projects results in an error.
 
   Workaround:
 
   Administrators can view the projects that they explicitly have access to under **Navigation menu > Projects**.  
 
 - **Help links are not working**
+  Applies to: 5.2.0 and later
 
-  The main **Help** link and the **Documentation** link in the **Navigation menu** do not take users to the product documentation.
+  The main **Help** link and the **Documentation** link in the **Navigation menu** do not lead to product documentation.
 
   Workaround:
   
@@ -66,25 +87,24 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 
 
 - **Unable to create new connections (intermittent issue)**
+  Applies to: 5.2.0 and later
+  Fixed in: 5.2.2
 
-  Users might encounter an error when they try to create a new connection during the **Create metrics** process. This is an intermittent issue and might occur when the session expires before the user clicks the **New connection** button on the **Connections** page.
+  Users might encounter an error when creating a new connection during the **Create metrics** process. This might happen when the session expires before the user clicks the **New connection** button on the **Connections** page.
 
   Workaround:
 
-  Users can reload the page and after logging in, will be redirected to the **Connections** page. They can then try to create a new connection again. If the issue persists, users can contact [IBM Support](https://www.ibm.com/mysupport/s/?language=en_US) for help.
+  Reload the page and log in again to be redirected to **Connections**. If the issue persists, users can contact [IBM Support](https://www.ibm.com/mysupport/s/?language=en_US) for help.
 
 - **User permission level misalignment**
-   
-  Users can be assigned editor-level permissions at the Platform level, while retaining read-only access within individual Projects. There is a known issue affecting user permission configurations across Platform and Project levels. This might lead to an unintended misalignment, where users invited to a Project with read-only permissions (Viewer role) can still modify project assets such as database connection details via Platform user interface.
+  Applies to: 5.2.0 and later
+
+  Users may have editor-level permissions at the Platform level but only read-only access in Projects. This misalignment allows users with Viewer role to modify project assets via the Platform user interface.
 
 
 ## Limitations
 {: #limitations}
 
-- **Importing and exporting project is not currently supported**
+- **Response feedback is not supported in watsonx BI on IBM Software Hub**
 
-At this time, users cannot import or export projects.
-
-- **Samples are not fully supported**
-
-The prebuilt sample data, Go sales and Customer experience, are not fully supported in this release and are not functional.
+This feedback feature is only available in watsonx BI as a Service.

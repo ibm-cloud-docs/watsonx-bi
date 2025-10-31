@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-10-31"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -25,9 +25,6 @@ subcollection: watsonx-bi
 {: #cognos}
 
 IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc}
-
-This feature is available in {{site.data.keyword.wxbia_short}} as a Service only. 
-{: note}
  
 {{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
 
@@ -135,6 +132,5 @@ At any time, you can go to the project from **Navigation Menu > Projects > View 
 6. Select the project that you imported metadata to from the list next to the input box and enter your question. 
 
 You can manage the semantic data model, create more metrics, and add visualizations to the metrics from the **Data and Metrics** tab. 
-
 
 For more information, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics).

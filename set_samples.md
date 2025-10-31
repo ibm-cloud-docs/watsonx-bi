@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-08"
+lastupdated: "2025-10-31"
 
 keywords:
 subcollection: watsonx-bi
@@ -26,12 +26,9 @@ subcollection: watsonx-bi
 
 You can choose one of the following prebuilt samples to familiarize yourself with {{site.data.keyword.wxbia_short}}. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. {: #shortdesc}
 
-Sample data sets are currently only supported in {{site.data.keyword.wxbia_short}} as a Service. 
-{: note}
+- [Cloud]{: tag-blue} [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales){: external}
 
-- [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales)
-
-- [Customer experience](/docs/watsonx-bi?topic=watsonx-bi-cust_exp) 
+- [Cloud]{: tag-blue}[Software]{: tag-blue} [Customer experience](/docs/watsonx-bi?topic=watsonx-bi-cust_exp){: external}
 
 These samples are a great way to explore: 
 

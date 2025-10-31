@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-10-31"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -10,38 +10,55 @@ subcollection: watsonx-bi
 
 ---
 
-{:codeblock: .codeblock}
-{:note: .note}
-{:pre: .pre}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:video: .video}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Choosing the large language model (LLM) 
 {: #choose_llm}
 
 At the time of setting up {{site.data.keyword.wxbia_full}}, Administrators can choose the large language model (LLM) that will be used in {{site.data.keyword.wxbia_short}} conversations for users in their organization. {: #shortdesc}
 
-The ability to choose the large language model is not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.x. Watsonx BI on Software Hub 5.2.x uses [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} to respond to your questions. 
+Administrators can also change the LLM at any time from the **Configuration and settings** page. 
+
+## Available LLMs
+{: #available_llms}
+
+As an Administrator, you can choose from the following LLMs:
+
+| LLM | Available in watsonx BI| 
+|-------|---------|
+|[OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external} and IBM Granite-3-8b-instruct| As a Service, Software Hub 5.2.2 and later versions|
+|[Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-3-8b-instruct | As a Service|
+|[IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} | As a Service, Software Hub 5.2.0 and later versions |
+
+Watsonx BI on Software Hub 5.2.1 and previous versions use IBM Granite-3-8b-instruct to respond to your questions. 
 {: note}
 
-As an Administrator, you can choose between the following:
+## How model selection affects conversations
+{: #model_selection}
 
-- A combination of [OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external} and IBM Granite-3-8b-instruct
+While watsonx BI utilizes large language models for various tasks, this feature specifically controls which LLMs are used for SQL generation. You can choose the LLM based on your specific requirements for SQL generation performance and accuracy.
 
-  Choose the OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct option for advanced, configurable reasoning in complex BI queries.
+* **IBM Granite-3-8b-instruct**
 
-- A combination of [Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-3-8b-instruct (Recommended)
+  When you select only the Granite model, it is used for all language model tasks, including SQL generation. 
+  
+  Choose Granite-3-8b-instruct to work with simple BI queries, such as basic data retrieval and summarization.
 
-  Choose the Meta Llama 4 and IBM Granite-3-8b-instruct option for complex, multi-step BI queries. 
+* **OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct**
 
-- [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external}
+  When you select the gpt-oss-120b and Granite combination, gpt-oss-120b is used specifically for SQL generation tasks, while Granite continues to be used for all other language model tasks.
 
-  Choose IBM Granite-3-8b-instruct to work with simple BI queries, such as basic data retrieval and summarization.
+  Choose this combination for advanced, configurable reasoning in complex BI queries.
+
+* **Meta Llama 4 and IBM Granite-3-8b-instruct**
+
+  When you select Meta Llama 4 and Granite, Meta Llama 4 is used specifically for SQL generation tasks, while Granite continues to be used for all other language model tasks.
+
+  Choose Meta Llama 4 and Granite for complex, multi-step BI queries. 
+
+
+
 
 ## Changing the large language model
 {: #change_llm}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-10-31"
 
 keywords:
 subcollection: watsonx-bi
@@ -21,6 +21,9 @@ A relationship joins logically related tables that you want to combine in a sing
 {{site.data.keyword.wxbia_full_notm}} automatically detects relationships between tables in a semantic data model by using the auto-join algorithm. 
 
 You can modify or delete relationships, or create new ones so that the semantic data model properly represents the logical structure of your business. Verify that the relationships that you require exist in the semantic data model, the cardinality is set correctly, and referential integrity is enforced.
+
+You cannot define relationships on metric definitions. Relationships can be defined only on the underlying base tables of a metric definition. 
+{: important}
 
 The **Relationships** diagram provides a graphical view of table relationships in a semantic data model. The relationships are represented by solid lines between tables. You can use the diagram to examine, create, and edit the relationships.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-28"
+lastupdated: "2025-10-31"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -22,6 +22,37 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
 
+## 30 October 2025
+{: #subcollection-oct3025}
+{: release-note}
+
+### Integrate with the IBM Cognos Analytics FM package
+
+You can now import metadata from relational FM packages into for use in conversations. By integrating Cognos Analytics with watsonx BI, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. 
+
+For more information, see [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}.
+
+### Import and export projects
+
+Get started quickly by importing projects to watsonx BI to create projects that already contain data and metrics. To import a project, you must have a local .zip file of a previously exported project.
+
+For more information, see [Importing a project](/docs/watsonx-bi?topic=watsonx-bi-import_project){: external}.
+
+### Use sample data to explore watsonx BI
+
+You can now use sample data in watsonx BI. Use the **Customer experience** sample data to explore the natural language interface, the types of questions you can ask, the structure of a metric definition, and the ways that sample data is modeled and optimized for AI.
+
+For more information, see [Installing samples in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-using_samples){: external}.
+
+### Choose the large language model (LLM)
+
+If you have the watsonx BI administrator role, you can now choose which LLM to use in your organization. You can choose from the following options:
+
+- A combination of the new OpenAI gpt-oss-120b model and IBM Granite-3-8b-instruct - Recommended for complex, multi-step queries
+
+- IBM Granite 3-8b-instruct - Recommended for working with simple queries, such as data retrieval and summarization
+
+For more information, see [Choosing the large language model (LLM)](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 
 ## 27 August 2025
 {: #subcollection-aug2725}

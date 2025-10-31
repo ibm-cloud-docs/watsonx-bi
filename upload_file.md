@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-10-31"
 
 keywords: upload file, local file
 
@@ -163,19 +163,7 @@ Supported column data formats include:
       Fractional seconds (ss in the pattern) can contain up to nine digits.
       {: note}
 
-- Time data types 
 
-    - HH:mm:ss
-
-    - HH:mm:ss aa
-    - HH:mm:ss.SS
-    - HH:mm
-    - h:m:s
-    - h:mm	
-    - h:mm aa 
-
-      Fractional seconds (ss in the pattern) can contain up to nine digits.
-      {: note}
 
 - Boolean data type with 'true' or 'false' values
 

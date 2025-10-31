@@ -41,7 +41,7 @@ At the time of setting up {{site.data.keyword.wxbia_short}} as a Service, Admini
 
 Administrators can also change the LLM from **Configuration and settings > Model settings**. 
 
-Administrators can select LLMs in {{site.data.keyword.wxbia_short}} as a Service only. The ability to choose the large language model is not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.x. Watsonx BI on Software Hub 5.2.x uses [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/latest?topic=models-granite-30-8b-instruct-model-card){: external} to respond to your questions.
+The ability to choose the large language model is not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.1 and prior versions. Watsonx BI on Software Hub 5.2.1 and previous versions use [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} to respond to your questions. 
 {: important}
 
 The following LLMs are available: 

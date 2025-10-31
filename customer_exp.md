@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-10-24"
 
 keywords: sample
 subcollection: watsonx-bi
@@ -26,9 +26,6 @@ subcollection: watsonx-bi
 
 The Customer experience sample data contains representative call center data from a fictional mobile phone service provider. {: #shortdesc}
 
-Sample data is available in watsonx BI as a Service only. 
-{: note}
-
 The Customer experience sample includes data for over 100 agents distributed among three call centers in the United States, and over 500,000 support calls for the years 2023, 2024, and 2025. 
 
 This sample data includes the following metrics: 
@@ -40,7 +37,7 @@ This sample data includes the following metrics:
 
 You can open the Customer experience semantic data model from the **Data and Metrics** tab. Make sure that you select the project that was created when the sample was first set up.
 
-For information about how to use the semantic data modeling interface, see [Data modeling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
+For information about how to use the semantic data modeling interface, see [Data modelling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
 
 ## Questions you can ask
 {: #cust_questions}
