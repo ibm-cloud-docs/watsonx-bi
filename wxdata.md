@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-11-07"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -45,6 +45,9 @@ You can add a connection from the **Data and Metrics** tab in {{site.data.keywor
 4. Enter the connection information for the connector you chose:
 
    **IBM watsonx.data Presto**
+
+   If you want to use this connector, set up service-to-service authorization between IBM watsonx.data intelligence and IBM watsonx.data. With this configuration you can run profiling, metadata enrichment jobs and more. For more information, see https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-s2s_auth.
+   {: important}
 
 
    | Field | Description |

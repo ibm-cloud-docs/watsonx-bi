@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-11-07"
 
 keywords: modeling, new column, add column
 subcollection: watsonx-bi
@@ -13,13 +13,13 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Adding a new column to the semantic data model
+# Adding a new column 
 {: #model_new_column}
 
 If new columns were added to the source database that you used to create metrics, you can add the new columns to the existing semantic data model without having to recreate the semantic model. {: #shortdesc}
 
 ## Step 1: Reimport metadata
-{: #reimport_metadata}
+{: #reimport_metadata_columns}
 
 1. Go to **Navigation Menu > Projects > View all projects** and select the project which has the semantic data model that you want to add the columns to. 
 
@@ -31,20 +31,20 @@ If new columns were added to the source database that you used to create metrics
 
 4. (Optional) Select the table where the new column was added. 
 
-5. Click **Reimport metadata**.
+5. Click **Reimport metadata** to refresh the schema and bring in the new column from the source.
 
-Use the **Reimport metadata** option to refresh the schema and bring in the new column from the source.
-
-![Reimporting metadata](images/reimport_metadata.png)
+  ![Reimporting metadata](images/reimport_metadata.png)
 
 ## Step 2: Re-run metadata enrichment
-{: #rerun_mde}
+{: #rerun_mde_columns}
 
 After metadata import completes, run metadata enrichment on the base data again.
 
 1.  Go back to the project view and under **Metadata enrichment**, select the metadata enrichment asset associated with the semantic data model. 
 
 2. Click **Enrich all assets** to re-run enrichment.
+
+  ![Enrich all assets again](images/edit_enrichment_rerun.png)
 
 ## Step 3: Add columns to the semantic data model
 {: #add_columns_model}

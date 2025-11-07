@@ -67,6 +67,7 @@ toc:
           - projects.md
           - projects_manage.md
           - import_export_project.md
+          - projects_delete.md
       - topicgroup:
           label: Preparing data for AI
           topics:
@@ -116,6 +117,7 @@ toc:
               label: Adding data to an existing semantic data model
               topics:
               - adding_new_column_modeling.md
+              - adding_new_tables_modeling.md
           - data_types.md
       - topicgroup:
           label: Using conversations to get insights
@@ -151,6 +153,7 @@ toc:
           label: Key concepts
           topics:
           - create_metrics_keyconcepts.md
+          - understanding_enrichment.md
       - topicgroup:
           label: Best practices for working with AI
           topics:

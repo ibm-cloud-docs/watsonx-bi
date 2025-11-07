@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-11-03"
 
 keywords: upload file, local file
 
@@ -185,12 +185,17 @@ Values representing dates and timestamps need to be in the following format:
 
 - Column names must be unique
 
-## Troubleshooting
+## Troubleshooting file upload errors
 {: #troubleshooting_upload}
 
-You might run into errors during the file upload process. Click the **View details** link under the error message for the file that you uploaded for more details. 
+You might run into errors during the file upload process. Click the **View details** link under the error message for more details. 
 
-Some errors can be avoided by revising the file and uploading again. Other errors might require you to contact IBM support for further assistance. 
+Some errors can be avoided by revising the file and uploading again. For example, file upload can fail if the file is blank or contains a blank worksheet. File enrichment might fail if it contains a value that doesn't match the data type in the rest of the file, an unsupported data type, or if the file contains one or more rows that have a different number of columns than expected.
+
+Other errors might require you to contact IBM support for further assistance. 
+
+### Common errors
+{: #common_upload_errors}
 
 - FLP_InvalidFileType = FLP-101 Invalid file type
 
@@ -216,12 +221,15 @@ Some errors can be avoided by revising the file and uploading again. Other error
 
   A row in the uploaded file has a value in the column that cannot be converted to a timestamp, correct the value or delete the row, and upload the file again. 
 
-- Metadata enrichment errors
+### Metadata enrichment errors 
+{: #mde_upload_errors}
 
   You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
   
   - there was an error in profiling data and {{site.data.keyword.wxbia_short}} couldn't retrieve data values to process the metadata enrichment
+
   - {{site.data.keyword.wxbia_short_cap}} was unable to retrieve data values to write and compute vectors to Cloud Object Storage
+
   - {{site.data.keyword.wxbia_short_cap}} was unable to write vectors to Cloud Object Storage
 
   If the file encounters metadata enrichment errors during upload:
@@ -232,4 +240,4 @@ Some errors can be avoided by revising the file and uploading again. Other error
 
   If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
 
-  Depending on the errors, you might need to fix the data in the file and try uploading it again. 
+  Depending on the errors, you might need to fix the data in the file and upload it again. 

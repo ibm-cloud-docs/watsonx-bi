@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-07"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -117,7 +117,7 @@ To change the column identifier in a metric definition:
 ### 2. Add column labels and descriptions
 {: #tip_desc}
 
-Make sure that you add a label and description for metric columns in the semantic data model. The order of priority for the label and description is the following:
+Make sure that you add a label and description for metric columns in the semantic data model. The order of priority for the label and description when used in the conversation is the following:
 
 1. User-defined in the semantic data model
 

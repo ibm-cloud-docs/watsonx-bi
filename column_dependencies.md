@@ -3,7 +3,7 @@ copyright:
   years: 2025
 lastupdated: "2025-10-31"
 
-keywords:
+keywords: column dependencies, columns, 
 subcollection: watsonx-bi
 
 
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Column dependencies 
+# Defining and creating column dependencies 
 {: #column_dependencies}
 
 
