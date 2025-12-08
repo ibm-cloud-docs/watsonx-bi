@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-01"
+lastupdated: "2025-12-08"
 
 keywords: Db2
 
@@ -26,6 +26,9 @@ IBM Db2 is a data source that contains relational data. {: #shortdesc}
 {: #create_db2}
 
 To create the connection, you need these connection details:
+
+For IBM Db2 on-premise connection, you might need to remove applied filters to see it in the list of supported connector types. Click the **Filter** icon and deselect **watsonx BI**.
+{: note}
 
 - Database
 - Username and password
