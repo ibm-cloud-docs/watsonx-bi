@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-11-26"
 
 keywords: calculations, modeling
 subcollection: watsonx-bi
@@ -53,14 +53,9 @@ The expression for these calculations is predefined, and you need to only select
 
   If your calculation is based on two columns, ensure that the order of columns is correct, and choose the required operator. If the order of columns is incorrect, click **Cancel**, and start the calculation again by selecting the columns in the proper order.
 
-5. (Optional) Select the **Calculate after aggregation** checkbox.
 
-  If you select this checkbox, the calculation is performed after the values are aggregated. When you leave this checkbox clear, the calculation is performed on the column values before they are aggregated. The calculation results might be different in each case. 
 
-  When editing a calculation, the **Calculate after aggregation** check box is available only when the calculation **Usage** property is set to **Measure**.
-  {: note}
-
-6. Click **OK** to finish the calculation, or click **Use calculation editor** to view the calculation expression, or to modify it.
+5. Click **OK** to finish the calculation, or click **Use calculation editor** to view the calculation expression, or to modify it.
 
 A calculation based on one column is created as an embedded calculation. The calculation is added at the top of the list of columns in the table. You can move it to a folder inside the same table.
 
@@ -98,11 +93,9 @@ Custom calculations can be based on one column or multiple columns from differen
 
 4. Click **Validate** to check if the expression is valid. The calculation will be created even if the expression is not valid, but it won't be usable.
 
-5. (Optional) Select the **Calculate after aggregation** checkbox.
 
-  When you leave this checkbox clear, the calculation is performed on the column values before they are aggregated. If you select this checkbox, the calculation is performed after the values are aggregated. The calculation results might be different in each case.
 
-6. Click **OK**.
+5. Click **OK**.
 
 A calculation based on one column is created as an embedded calculation. The calculation is added at the top of the list of columns in the table. You can move it to a folder inside the same table.
 

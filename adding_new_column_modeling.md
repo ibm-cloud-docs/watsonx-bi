@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-07"
+lastupdated: "2025-11-12"
 
 keywords: modeling, new column, add column
 subcollection: watsonx-bi
@@ -44,7 +44,7 @@ After metadata import completes, run metadata enrichment on the base data again.
 
 2. Click **Enrich all assets** to re-run enrichment.
 
-  ![Enrich all assets again](images/edit_enrichment_rerun.png)
+  ![Enrich all assets](images/edit_enrichment_rerun.png)
 
 ## Step 3: Add columns to the semantic data model
 {: #add_columns_model}

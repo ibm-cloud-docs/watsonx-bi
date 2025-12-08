@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-12-03"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -24,9 +24,9 @@ subcollection: watsonx-bi
 # IBM Cognos Analytics
 {: #cognos}
 
-IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc}
- 
-{{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
+IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc} 
+
+[Preview]{: tag-teal} {{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
 
 ## Prerequisites
 {: #prereq}

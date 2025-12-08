@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-12-08"
 
 keywords: business terms, glossary, 
 subcollection: watsonx-bi
@@ -14,7 +14,7 @@ subcollection: watsonx-bi
 # Business terms
 {: #business_terms}
 
-You can add business terms, that represent your organization's terminology, to the semantic layer in {{site.data.keyword.wxbia_full}}. {: #shortdesc}
+Administrators can add business terms, that represent your organization's terminology, to the semantic layer in {{site.data.keyword.wxbia_full}}. {: #shortdesc}
 
 Business terms are standardized definitions of business concepts so that your data is described in a uniform and easily understood way across your organization. 
 

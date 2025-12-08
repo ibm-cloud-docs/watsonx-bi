@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-11-26"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -48,9 +48,9 @@ The chat canvas is an active conversation and any question you enter in the inpu
 
 You can even set the scope of a conversation by selecting the data you want to ask about from the drop-down list next to the input box. By default, the scope of a conversation is set to **All data**. 
 
-Conversations are saved in the conversations panel. By default, conversations are saved with your first question as the title. You can right-click a conversation to rename or delete it. 
+Conversations are saved in the **Conversations** panel. By default, conversations are saved with your first question as the title. You can right-click a conversation to rename or delete it. You can also expand or collapse the panel.
 
-To go back to a conversation and continue questions on a specific topic, open the saved conversation from the conversations panel and enter your question.
+To go back to a conversation and continue questions on a specific topic, open the saved conversation from the conversations panel and enter your question.  
 
 ## Suggested questions
 {: #suggested}

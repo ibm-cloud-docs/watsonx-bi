@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-03"
+lastupdated: "2025-11-27"
 
 keywords: upload file, local file
 
@@ -61,8 +61,7 @@ When a file successfully uploads to a project, it is listed as a data asset in t
 
 You can use uploaded files as data sources in the [create metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics) flow and also define relationships between them for more complex, multi-step BI queries that might require data from two or more flat files. For more information, see [Data modeling {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data). 
 
-Metrics created from a local file (.csv, .xls, .xlsx, or .tsv) cannot be published to the **Metrics catalog**. 
-{: note}
+
 
 ## Managing uploaded files
 {: #manage_file}

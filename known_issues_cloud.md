@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-12"
+lastupdated: "2025-12-08"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -17,6 +17,20 @@ subcollection: watsonx-bi
 {: #known_issues_cloud}
 
 The following issues and limitations apply to {{site.data.keyword.wxbia_full}} as a Service.  {: shortdesc}
+
+- **IBM Db2 on-premise connection does not display in the watsonx BI supported connector list**
+
+  The IBM Db2 on-premise connector does not display in the watsonx BI supported connectors list when you try to add a new connection in the metric creation flow. 
+
+  Workaround:
+
+  On the **Add connection** page, which lists the supported connectors, click the **Filter** icon and deselect **watsonx BI**.
+
+  Clearing the filter shows connector types that are not supported in watsonx BI. Before adding new connections, ensure you filter the connector list to display only types supported by watsonx BI.
+  {: important}
+
+  ![Clearing the watsonx BI filter on the Add connection page](images/KI_db2_connector.png)
+
 
 - **Users encounter an error after launching the watsonx BI service from the IBM Cloud catalog**
   

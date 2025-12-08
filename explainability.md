@@ -25,11 +25,11 @@ Governed business data is data that has gone through different processes, polici
 
 To respond to your BI question, the LLM analyzes and helps interpret your input. It can then match the interpreted input to your business data (such as column names, measures, or filters) and generates a query to retrieve the matched information to respond to your input. 
 
-The LLM generates a text-based response, visualization, or both based on the matched information to respond to your question. You can see each of these steps under **Steps taken by AI**. 
+The LLM generates a text-based response, visualization, or both based on the matched information to respond to your question. You can see each of these steps under **AI steps**. 
 
 The LLM also monitors key metrics and helps to identify changes in the business data. When you click a metric in the **Key metrics** panel to open it, notice that the AI can summarize and help explain the identified changes in your metrics.
 
-The selected LLM name that was used to respond to your queries displays in the **AI** label and **Steps taken by AI** in conversations.
+The selected LLM name that was used to respond to your queries displays in the **AI** label and **AI steps** in conversations.
 
 {{site.data.keyword.wxbia_short_cap}} uses large language models (LLMs) that are hosted in IBM watsonx.ai and does not use your data to train the models.
 {: note}
@@ -54,4 +54,4 @@ The following LLMs are available:
 
 The LLM change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account that has access to {{site.data.keyword.wxbia_short}}.
 
-The updated LLM name appears in the AI icon and the query generation step under **Steps taken by AI** in **Conversations**.  
+The updated LLM name appears in the AI icon and the query generation step under **AI steps** in **Conversations**.  

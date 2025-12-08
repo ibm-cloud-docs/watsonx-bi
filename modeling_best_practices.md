@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-07"
+lastupdated: "2025-11-26"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -125,12 +125,13 @@ Make sure that you add a label and description for metric columns in the semanti
 
 3. AI-suggested or generated in the metadata enrichment asset
 
-
-
 #### Writing a strong description 
 {: #strong_desc}
 
 Ensure that the label and description are worded based on your business context and how users will likely ask questions.
+
+Descriptions need to be 512 characters or less to ensure a balance between accuracy and effectiveness.
+{: important}
 
 Include values in the description to specify time periods
 :   For example: If months are represented as “Jan”, “Feb”, “Mar”, include that in the description. *“Month values are abbreviated as Jan, Feb, Mar...”*
@@ -142,6 +143,10 @@ Reflect user language preferences
 :   For example: If there is a column called "manager”, but your business users use the word "boss" then reflect that in the description. 
   
 :   If you want AI to use "Cost of goods sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
+
+Include multiple examples to demonstrate use 
+: For example: If there is a column called "Year" and you want the LLM to refer to it when you ask it to look up sales for a specific year, specify that in the column description.  
+*"Use for queries such as "in the year 2011" or "in the year 2015".*
 
 #### Adding column labels and descriptions in the semantic model
 {: #add_labels_desc_semantics}

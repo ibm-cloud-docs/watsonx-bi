@@ -44,7 +44,10 @@ toc:
               - deprovisioning.md
           - configuration_settings.md
           - roles_permissions.md
-          - choose_llm.md
+          - topicgroup:
+              label: Model settings and advanced reasoning
+              topics:
+              - choose_llm.md
           - topicgroup:
               label: Installing and using sample data
               topics:
@@ -92,6 +95,7 @@ toc:
               - enrich_data.md
               - review_enrichment.md
               - monitor_enrichment_job.md
+              - troubleshooting_enrichment.md
           - generate_metrics.md
           - advanced_mode.md
           - edit_metrics.md
@@ -129,6 +133,7 @@ toc:
           - steps_ai.md
           - visualizations.md
           - feedback.md
+          - download_response.md
           - explainability.md
       - metrics_catalog.md
       - topicgroup:

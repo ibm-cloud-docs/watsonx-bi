@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-12-03"
 
 keywords:
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Generate metrics automatically 
 {: #generate_metrics}
 
-You can generate metrics automatically in the metric creation process. {: #shortdesc}
+[Preview]{: tag-teal} You can generate metrics automatically in the metric creation process. {: #shortdesc}
 
 When you generate metrics, {{site.data.keyword.wxbia_full_notm}} creates metric definitions and automatically exports them to the project for use in **Conversations**.
 

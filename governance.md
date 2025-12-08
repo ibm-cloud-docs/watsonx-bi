@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-12-08"
 
 keywords: governance, business terms
 subcollection: watsonx-bi
@@ -25,9 +25,9 @@ subcollection: watsonx-bi
 
 - Industry-specific Knowledge Accelerator
 
-You can build a more robust semantic layer by establishing your own business concepts in watsonx BI by implementing governance artifacts in [categories](/docs/watsonx-bi?topic=watsonx-bi-categories). Much like folders, categories organize governance artifacts in a hierarchical structure. 
+Administrators can build a more robust semantic layer by establishing the organization's own business concepts in watsonx BI through governance artifacts in [categories](/docs/watsonx-bi?topic=watsonx-bi-categories). Much like folders, categories organize governance artifacts in a hierarchical structure.  
 
-You can add the following governance artifacts in {{site.data.keyword.wxbia_short}}: 
+Administrators can add the following governance artifacts in {{site.data.keyword.wxbia_short}}: 
 
 - [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms)
 
