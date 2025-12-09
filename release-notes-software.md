@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-12-09"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -22,6 +22,9 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
 
+
+
+
 ## 30 October 2025
 {: #subcollection-oct3025}
 {: release-note}
@@ -29,6 +32,9 @@ Use these release notes to learn about the latest updates to watsonx BI that are
 ### Integrate with the IBM Cognos Analytics FM package
 
 You can now import metadata from relational FM packages into for use in conversations. By integrating Cognos Analytics with watsonx BI, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. 
+
+This feature is a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important}
 
 For more information, see [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}.
 

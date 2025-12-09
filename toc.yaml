@@ -31,7 +31,10 @@ toc:
       - topicgroup:
           label: Setting up watsonx BI
           topics:
-          - install_wxbi.md
+          - topicgroup:
+              label: Setting up watsonx BI on IBM Software Hub
+              topics:
+              - install_wxbi.md
           - topicgroup:
               label: Setting up watsonx BI as a Service
               topics:
@@ -133,7 +136,6 @@ toc:
           - steps_ai.md
           - visualizations.md
           - feedback.md
-          - download_response.md
           - explainability.md
       - metrics_catalog.md
       - topicgroup:

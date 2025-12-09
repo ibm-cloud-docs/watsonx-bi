@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-12-09"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -24,14 +24,14 @@ Review the roles and permissions that you need for working with {{site.data.keyw
 
 - Service roles:
 
-  - IAM roles, if you're using {{site.data.keyword.wxbia_short}} as a Service 
+  - IAM roles, if you're using [{{site.data.keyword.wxbia_short}} as a Service](#collab_roles) 
 
-  - Predefined roles, if you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub
+  - Predefined roles, if you're using [{{site.data.keyword.wxbia_short}} on IBM Software Hub](/docs/watsonx-bi?topic=watsonx-bi-roles-swh)
 
 ## Assigning collaborator roles
 {: #collab_roles}
 
-An Administrator can assign collaborator roles from the **Navigation Menu > Administration > Configurations and settings > Manage BI community** page.  These roles control access to the actions that can be taken in {{site.data.keyword.wxbia_short}}.
+An Administrator can assign collaborator roles from the **Navigation Menu > Administration > Configurations and settings > Manage BI community** page. These roles control access to the actions that can be taken in {{site.data.keyword.wxbia_short}}.
 
 - **Analytics consumers**: Analytics consumers can ask questions about their data and monitor metrics that were assigned to them. Analytics consumers can create metrics but cannot give access to metrics, publish metrics to the **Metrics catalog**, or edit published metrics.
 
@@ -39,7 +39,7 @@ An Administrator can assign collaborator roles from the **Navigation Menu > Admi
 
 - **Administrator**: Administrators can add users and assign roles and other configuration tasks. Administrator role includes permissions for Reader and Writer.
 
-To add members to the watsonx BI community and assign collabroator roles:
+To add members to the watsonx BI community and assign collaborator roles:
 
 1. Open the **Navigation menu** and go to **Administration > Configurations and settings > Manage BI community**.
 
@@ -58,7 +58,7 @@ The following table shows the actions that you can complete depending on your co
 Action |Administrator | Data analyst | Analytics consumer
 |---------------| -----|------|---------|
 |**{{site.data.keyword.wxbia_short}} setup**|
-|[Cloud]{: tag-blue} Change large language model | ✓ | x | x |
+|Change large language model | ✓ | x | x |
 |Add or delete user groups | ✓ | x | x |
 |Assign and modify roles | ✓ | x | x |
 |**Conversations** |

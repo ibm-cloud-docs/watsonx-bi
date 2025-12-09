@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-12-03"
+lastupdated: "2025-12-09"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -10,23 +10,19 @@ subcollection: watsonx-bi
 
 ---
 
-{:codeblock: .codeblock}
-{:note: .note}
-{:pre: .pre}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:video: .video}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # IBM Cognos Analytics
 {: #cognos}
 
-IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc} 
+[Preview]{: tag-teal} IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc} 
 
-[Preview]{: tag-teal} {{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector. 
+{{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector.  
+
+This feature is a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important}
+
 
 ## Prerequisites
 {: #prereq}
