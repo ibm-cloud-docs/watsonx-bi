@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-12-09"
+lastupdated: "2025-12-10"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -21,6 +21,24 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
+
+## 10 December 2025
+{: #subcollection-dec1225}
+{: release-note}
+
+### Chain of Thought reasoning
+{: #cot}
+
+Chain of Thought reasoning is now available with Meta Llama 4 and IBM Granite-3-8b-instruct. Available as a Technology Preview feature in watsonx BI as a Service, it delivers step-by-step reasoning for complex or multi-part questions, providing structured answers and visibility into how queries are built.
+
+Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important} 
+
+You can view reasoning steps, chosen data sources, intermediate calculations, and generated SQL, helping you understand the AI’s decision-making process.
+
+Administrators can choose Meta Llama 4 and IBM Granite-3-8b-instruct with Chain of Thought from **Configuration and settings > Model settings** page.
+
+For more information, see [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}. 
 
 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-12-09"
+lastupdated: "2025-12-10"
 
 keywords:
 subcollection: watsonx-bi
@@ -21,7 +21,7 @@ Complete the following steps to install {{site.data.keyword.wxbia_short}} on IBM
 
 If you are not an existing IBM Software Hub user, complete all of the following steps.
 
-If you are an existing IBM Software Hub user but a new watsonx BI user, skip to [Preparing to install {{site.data.keyword.wxbia_short}}](#preparebi)
+If you are an existing IBM Software Hub user but a new watsonx BI user, skip to [Preparing to install {{site.data.keyword.wxbia_short}}](#preparebi).
 
 1. [Prepare to install IBM Software Hub](#prepareswh)
 
@@ -37,7 +37,7 @@ If you are an existing IBM Software Hub user but a new watsonx BI user, skip to 
 
 {: prepareswh}
 
-Before you install IBM Software Hub, read the [Planning](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=planning){: external} documentation. Make sure that your software, hardware, and storage meet the requirements for both IBM Software Hub and watsonx BI.
+Before you install IBM Software Hub, read the [Planning](https://www.ibm.com/docs/en/software-hub/latest?topic=planning){: external} documentation. Make sure that your software, hardware, and storage meet the requirements for both IBM Software Hub and watsonx BI.
 
 ## Install IBM Software Hub
 
@@ -84,7 +84,7 @@ After you validate your {{site.data.keyword.wxbia_short}} installation, complete
 
 - [Complete the post-installation setup](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=pis-post-installation-setup-for-watsonx-bi){: external}
 
-- [Configure flat file service](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=pis-configuring-flat-file-service-for-watsonx-bi){: external}
+
 
 ## What to do next
 

@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "10 December 2025",
+        "title": "Chain of Thought reasoning available in watsonx BI as a Service"
+      },
+      {
         "date": "30 October 2025",
         "title": "Watsonx BI updated on IBM Software Hub 5.2.2"
       },

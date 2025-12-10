@@ -51,6 +51,7 @@ toc:
               label: Model settings and advanced reasoning
               topics:
               - choose_llm.md
+              - cot.md
           - topicgroup:
               label: Installing and using sample data
               topics:
