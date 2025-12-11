@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-12-11"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -20,8 +20,7 @@ The **Metrics catalog** is a centralized repository of published metrics, their 
 
 By publishing metrics to the **Metrics catalog**, Data analysts can manage and govern access of metrics without having to share the project in which the metrics were created.
 
-Metrics created from a local file (.csv, .xls, .xlsx, or .tsv) or from an imported FM package cannot be published to the **Metrics catalog**. 
-{: note}
+
 
 Analytics consumers can quickly see the metrics and visualizations that they have access to in the **Metrics catalog**. Analytics consumers can browse for metrics that interest them and pin them to their **Key metrics** or ask questions for a specific metric directly from the **Metrics catalog**.
 

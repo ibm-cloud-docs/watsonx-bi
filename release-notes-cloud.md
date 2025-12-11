@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-12-10"
+lastupdated: "2025-12-11"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -22,8 +22,8 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
 
-## 10 December 2025
-{: #subcollection-dec1225}
+## 3 December 2025
+{: #subcollection-dec325}
 {: release-note}
 
 ### Chain of Thought reasoning

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-11-27"
+lastupdated: "2025-12-11"
 
 keywords: upload file, local file
 
@@ -223,20 +223,20 @@ Other errors might require you to contact IBM support for further assistance.
 ### Metadata enrichment errors 
 {: #mde_upload_errors}
 
-  You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
+You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
   
-  - there was an error in profiling data and {{site.data.keyword.wxbia_short}} couldn't retrieve data values to process the metadata enrichment
+- there was an error in profiling data and {{site.data.keyword.wxbia_short}} couldn't retrieve data values to process the metadata enrichment
 
-  - {{site.data.keyword.wxbia_short_cap}} was unable to retrieve data values to write and compute vectors to Cloud Object Storage
+- {{site.data.keyword.wxbia_short_cap}} was unable to retrieve data values to write and compute vectors to Cloud Object Storage
 
-  - {{site.data.keyword.wxbia_short_cap}} was unable to write vectors to Cloud Object Storage
+- {{site.data.keyword.wxbia_short_cap}} was unable to write vectors to Cloud Object Storage
 
-  If the file encounters metadata enrichment errors during upload:
+If the file encounters metadata enrichment errors during upload:
   
-  1. Click the **Review** link to go to the metadata enrichment results.
+1. Click the **Review** link to go to the metadata enrichment results.
   
-  2. Click **Enrich all assets** at the top of the page to re-run enrichment. If there are errors in data profiling or other enrichment objectives, re-running enrichment might resolve the error. 
+2. Click **Enrich all assets** at the top of the page to re-run enrichment. If there are errors in data profiling or other enrichment objectives, re-running enrichment might resolve the error. 
 
-  If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
+If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
 
-  Depending on the errors, you might need to fix the data in the file and upload it again. 
+Depending on the errors, you might need to fix the data in the file and upload it again. 
