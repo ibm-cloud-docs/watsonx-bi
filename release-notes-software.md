@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-12-10"
+lastupdated: "2025-12-15"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -22,7 +22,22 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
 
+## 15 December 2025
+{: #subcollection-dec1525}
+{: release-note}
 
+### Manage new roles for watsonx BI users through IBM Software Hub Access control
+
+As a watsonx BI user, you can now use IBM Software Hub Access control to assign roles to your team that are specific to watsonx BI. You can assign the following roles to users or groups: Business Intelligence Administrator, Business Intelligence Analyst, or Business Intelligence Consumer.
+For more information, see [Roles and permissions for watsonx BI](https://www.ibm.com/docs/en/SSNFH6_5.3.x?topic=administering-roles-permissions){: external}.
+
+### Configure flat file service to upload files to watsonx BI
+
+You can configure flat file service to [upload files](/docs/watsonx-bi?topic=watsonx-bi-upload){: external} and use them as a source of data in **Conversations**. For more information, see [Configuring flat file service](https://www.ibm.com/docs/en/SSNFH6_5.3.x?topic=setup-configuring-flat-file-service){: external}.
+
+### Integrate with IBM watsonx.data™ Premium
+
+You can now easily access watsonx BI from a tile in watsonx.data Premium. By combining watsonx.data Premium and watsonx BI, you can use business intelligence tools to get deeper insights into your structured and unstructured data. For more information, see [IBM watsonx.data Premium](/docs/watsonx-bi?topic=watsonx-bi-wxdpremium){: external}.
 
 ## 30 October 2025
 {: #subcollection-oct3025}

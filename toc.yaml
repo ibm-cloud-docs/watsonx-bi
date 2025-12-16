@@ -35,6 +35,7 @@ toc:
               label: Setting up watsonx BI on IBM Software Hub
               topics:
               - install_wxbi.md
+              - roles_permissions_swh.md
           - topicgroup:
               label: Setting up watsonx BI as a Service
               topics:
@@ -42,11 +43,11 @@ toc:
               - initialize_wxbi.md
               - adding_users_cloud.md
               - iam-access.md
+              - roles_permissions.md
               - plans.md
               - cos.md
               - deprovisioning.md
           - configuration_settings.md
-          - roles_permissions.md
           - topicgroup:
               label: Model settings and advanced reasoning
               topics:
@@ -62,6 +63,7 @@ toc:
           label: Services and integrations
           topics:
           - wxdata.md
+          - wxdatapremium.md
           - cognos.md
           - supported_connectors.md
           - satellite_connector.md

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-31"
+lastupdated: "2025-12-16"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -61,5 +61,4 @@ While the core functions in both deployments are effectively the same, the follo
 
 - Choose your large language model (LLM) does not support Meta Llama 4 and Granite combination
 - Use of Go Sales sample data
-- Upload local file
 - Provide feedback for generated responses in conversations

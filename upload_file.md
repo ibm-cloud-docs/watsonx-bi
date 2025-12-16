@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-12-11"
+lastupdated: "2025-12-15"
 
 keywords: upload file, local file
 
@@ -15,9 +15,6 @@ subcollection: watsonx-bi
 {: #upload}
 
 You can upload supported file types to a project in {{site.data.keyword.wxbia_short}} and use it as a source of data to ask questions in **Conversations**. {: #shortdesc}
-
-Upload file is available in watsonx BI as a Service only.
-{: note}
 
 When you upload your file, the first 1000 rows of the file are scanned to determine metadata, such as column names and data types. Then, additional [enriched metadata](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} is created by using the data in the file. After enrichment is complete, you can start asking questions about the data in the file. 
 

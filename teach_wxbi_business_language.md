@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-30"
+lastupdated: "2025-12-15"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -101,7 +101,7 @@ To import business terms from a CSV file:
 
 Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. 
 
-Metadata enrichment takes place during the [metric creation process](docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}. Each asset and column undergoes metadata enrichment during which metadata is expanded, business terms and classifications are suggested and assigned, descriptions are generated, and more. 
+Metadata enrichment takes place during the [metric creation process](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}. Each asset and column undergoes metadata enrichment during which metadata is expanded, business terms and classifications are suggested and assigned, descriptions are generated, and more. 
 
 Metadata enrichment is used as a starting point to create and populate the semantic data model.
 {: important}

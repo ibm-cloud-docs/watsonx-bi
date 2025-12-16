@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-12-15"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -108,8 +108,9 @@ To resume work in watsonx BI after logging out:
 3. Log in with your IBMid. 
 
 ## Next steps
+{: #next-join}
 
-Familiarize yourself with [watsonx BI's user interface](docs/watsonx-bi?topic=watsonx-bi-user_interface){: external}. 
+Familiarize yourself with [watsonx BI's user interface](/docs/watsonx-bi?topic=watsonx-bi-user_interface){: external}. 
 
 If you're working with data (Data analyst), you can connect to a data source and start creating metrics. For more information, see [Creating metrics for conversations](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}. 
 

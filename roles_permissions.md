@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-12-09"
+lastupdated: "2025-12-15"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -70,7 +70,7 @@ Action |Administrator | Data analyst | Analytics consumer
 |Create projects | ✓ | ✓ | ✓ |
 |[Cloud]{: tag-blue} Import/export projects | ✓ | ✓ | ✓ |
 |Create metrics | ✓ | ✓ | ✓ |
-|[Cloud]{: tag-blue} Upload files | ✓ | ✓ | ✓ |
+|Upload files | ✓ | ✓ | ✓ |
 |Manage semantic data models | ✓ | ✓ | ✓ |
 |Publish metrics to Metrics catalog | ✓ | ✓ | x |
 |**Metrics catalog**|
