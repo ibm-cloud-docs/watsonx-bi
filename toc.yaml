@@ -1,0 +1,211 @@
+toc:
+  properties:
+    subcollection: watsonx-bi
+    path: watsonx-bi
+    href: /docs/watsonx-bi
+    service-name: watsonx-bi
+    audience: service
+    category: ai
+    label: watsonx BI
+    console-page: /catalog/services/watsonx-bi
+    product-page: https://www.ibm.com/products/watsonx-bi
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - topicgroup:
+          label: Overview
+          topics:
+          - topicgroup:
+              label: What's new
+              topics:
+              - release-notes-software.md
+              - release-notes-cloud.md
+          - about.md
+          - feature_diff.md
+          - topicgroup:
+              label: Known issues and limitations
+              topics:
+              - known_issues_software.md
+              - known_issues_cloud.md
+      - topicgroup:
+          label: Setting up watsonx BI
+          topics:
+          - topicgroup:
+              label: Setting up watsonx BI on IBM Software Hub
+              topics:
+              - install_wxbi.md
+              - roles_permissions_swh.md
+          - topicgroup:
+              label: Setting up watsonx BI as a Service
+              topics:
+              - quick_start.md
+              - initialize_wxbi.md
+              - adding_users_cloud.md
+              - iam-access.md
+              - roles_permissions.md
+              - plans.md
+              - cos.md
+              - deprovisioning.md
+          - configuration_settings.md
+          - topicgroup:
+              label: Model settings and advanced reasoning
+              topics:
+              - choose_llm.md
+              - cot.md
+          - topicgroup:
+              label: Installing and using sample data
+              topics:
+              - set_samples.md
+              - go_sales.md
+              - customer_exp.md
+      - topicgroup:
+          label: Services and integrations
+          topics:
+          - wxdata.md
+          - wxdatapremium.md
+          - cognos.md
+          - supported_connectors.md
+          - satellite_connector.md
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: "Projects - your workspaces"
+          topics:
+          - projects.md
+          - projects_manage.md
+          - import_export_project.md
+          - projects_delete.md
+      - topicgroup:
+          label: Preparing data for AI
+          topics:
+          - governance.md
+          - categories.md
+          - business_terms.md
+          - classifications.md
+          - data_classes.md
+          - reference_data.md
+      - topicgroup:
+          label: Creating metrics
+          topics:
+          - create_metrics_overview.md
+          - topicgroup:
+              label: Selecting data
+              topics:
+              - add_data.md
+              - upload_file.md
+          - topicgroup:
+              label: Enriching data with metadata
+              topics:
+              - enrich_data.md
+              - review_enrichment.md
+              - monitor_enrichment_job.md
+              - troubleshooting_enrichment.md
+          - generate_metrics.md
+          - advanced_mode.md
+          - edit_metrics.md
+          - adding_visualizations_metrics.md
+          - try.md
+          - publish_metrics.md
+      - topicgroup:
+          label: Data modelling
+          topics:
+          - data_modeling.md
+          - topicgroup:
+              label: Column dependencies
+              topics:
+              - column_dependencies.md
+          - relationships.md
+          - calculations.md
+          - relinking_ref_tables.md
+          - filters.md
+          - hiding_objects.md
+          - object_properties.md
+          - row_level_security.md
+          - topicgroup:
+              label: Adding data to an existing semantic data model
+              topics:
+              - adding_new_column_modeling.md
+              - adding_new_tables_modeling.md
+          - data_types.md
+      - topicgroup:
+          label: Using conversations to get insights
+          topics:
+          - gettingstarted_wxbia.md
+          - asking_questions.md
+          - llm_responses.md
+          - change_scope.md
+          - steps_ai.md
+          - visualizations.md
+          - feedback.md
+          - explainability.md
+      - metrics_catalog.md
+      - topicgroup:
+          label: Enhancing security
+          topics:
+          - data-security.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - at-events.md
+  - navgroup:
+      id: tutorial
+      topics:
+      - interface.md
+      - topicgroup:
+          label: Quick start guides
+          topics:
+          - account_owner_setup.md
+          - nonadmin_join_account.md
+          - usecase_create_metrics.md
+      - topicgroup:
+          label: Key concepts
+          topics:
+          - create_metrics_keyconcepts.md
+          - understanding_enrichment.md
+      - topicgroup:
+          label: Best practices for working with AI
+          topics:
+          - modeling_best_practices.md
+          - teach_wxbi_business_language.md
+  - navgroup:
+      id: help
+      topics:
+      - browser_support.md
+      - faqs_new.md
+      - get_help.md
+      - topicgroup:
+          id: troubleshooting
+          label: Troubleshooting
+          topics:
+          - troubleshoot_new_conversation.md
+      - link:
+          label: Getting started with IBM Cloud
+          href: https://www.ibm.com/cloud/get-started
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities.md
+      - ha-dr.md
+      - topicgroup:
+          label: Supported connectors
+          topics:
+          - amazon_redshift.md
+          - dremio.md
+          - google_bigquery.md
+          - db2.md
+          - informix.md
+          - netezza.md
+          - mariadb.md
+          - microsoft_azure.md
+          - microsoft_sql.md
+          - mysql.md
+          - oracle.md
+          - postgresql.md
+          - presto.md
+          - salesforce_api.md
+          - singlestore_db.md
+          - snowflake.md
+          - terradata.md
+      - glossary.md

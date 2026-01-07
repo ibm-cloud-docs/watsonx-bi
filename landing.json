@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "title": "IBM watsonx BI",
+  "introduction": "Learn how to use watsonx BI to get personalized insights from your business data.",
+  "product_page": "https://www.ibm.com/products/watsonx-bi",
+  "console_page": "/catalog/services/watsonx-bi",
+  "section_topics": {
+    "links": [
+      {
+        "title": "About watsonx BI",
+        "href": "/docs/watsonx-bi?topic=watsonx-bi-about"
+      },
+      {
+        "title": "About the user interface",
+        "href": "/docs/watsonx-bi?topic=watsonx-bi-user_interface"
+      },
+      {
+        "title": "Creating metrics in watsonx BI",
+        "href": "/docs/watsonx-bi?topic=watsonx-bi-overview_metrics"
+      },
+      {
+        "title": "Using conversations to get insights",
+        "href": "/docs/watsonx-bi?topic=watsonx-bi-conv_overview"
+      }
+    ]
+  },
+  "section_updates": {
+    "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
+    "tiles": [
+      {
+        "date": "3 December 2025",
+        "title": "Chain of Thought reasoning available in watsonx BI as a Service"
+      },
+      {
+        "date": "30 October 2025",
+        "title": "Watsonx BI updated on IBM Software Hub 5.2.2"
+      },
+      {
+        "date": "27 August 2025",
+        "title": "Watsonx BI updated on IBM Software Hub 5.2.1"
+      },
+      {
+        "date": "14 August 2025",
+        "title": "Introducing watsonx BI as a Service"
+      },
+      {
+        "date": "30 June 2025",
+        "title": "Introducing watsonx BI on IBM Software Hub 5.2.0"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "From questions to trusted insights",
+      "description": "See the insights consumption experience in watsonx BI",
+      "href": "https://community.ibm.com/community/user/blogs/rodrigo-de-andrade/2025/08/24/watsonx-bi-demo-from-questions-to-trusted-insights",
+      "type": "blog"
+    },
+    {
+      "title": "Data modelling in watsonx BI",
+      "description": "See how data analysts can enrich and model data",
+      "href": "https://community.ibm.com/community/user/blogs/rodrigo-de-andrade/2025/10/13/watsonx-bi-data-modeling-experience-demo",
+      "type": "blog",
+      "recommended": true
+    }
+  ]
+}
