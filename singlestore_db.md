@@ -4,7 +4,7 @@ copyright:
   years: 2025
 lastupdated: "2026-01-07"
 
-keywords: singlesourcedb
+keywords: singlestoredb
 
 subcollection: watsonx-bi
 
@@ -13,19 +13,19 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# SingleSourceDB connection 
-{: #singlesourcedb}
+# SingleStoreDB connection 
+{: #singlestoredb}
 
 SingleStoreDB is a fast, distributed, and highly scalable cloud-based SQL database. You can use SingleStoreDB to power real-time and data-intensive applications.{: #shortdesc}
 
 ## Supported versions (on-premise)
-{: #supp_singlesourcedb}
+{: #supp_singlestoredb}
 
 SingleStoreDB version 8.1 and 8.5.
 
 
 ## Create a connection to SingleSourceDB
-{: #create_singlesourcedb}
+{: #create_singlestoredb}
 
 To create the connection, you need these connection details:
 
@@ -35,4 +35,3 @@ To create the connection, you need these connection details:
 - Port number
 - Username and password
 - SSL certificate (if required by the database server)
-

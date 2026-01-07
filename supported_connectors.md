@@ -37,7 +37,7 @@ The following connectors are supported:
 - [PostgreSQL](/docs/watsonx-bi?topic=watsonx-bi-postgresql){: external}
 - [Presto](/docs/watsonx-bi?topic=watsonx-bi-presto){: external} 
 - [Salesforce API](/docs/watsonx-bi?topic=watsonx-bi-salesforce_api){: external} 
-- [SingleStore DB](/docs/watsonx-bi?topic=watsonx-bi-singlesourcedb){: external}
+- [SingleStore DB](/docs/watsonx-bi?topic=watsonx-bi-singlestoredb){: external}
 - [Snowflake](/docs/watsonx-bi?topic=watsonx-bi-snowflake){: external} 
 - [Terradata database](/docs/watsonx-bi?topic=watsonx-bi-terradata){: external} 
 
