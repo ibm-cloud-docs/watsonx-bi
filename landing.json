@@ -28,8 +28,12 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "15 January 2026",
+        "title": "IBM watsonx.data intelligence required for watsonx BI as a Service"
+      },
+      {
         "date": "3 December 2025",
-        "title": "Chain of Thought reasoning available in watsonx BI as a Service"
+        "title": "Watsonx BI as a Service updated to include Chain of thought reasoning and remote Model Context Protocol (MCP) server"
       },
       {
         "date": "30 October 2025",

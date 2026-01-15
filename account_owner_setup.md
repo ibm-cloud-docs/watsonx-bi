@@ -55,7 +55,7 @@ Watsonx BI requires an active watsonx.data intelligence plan to be provisioned i
 
 4. The new service instance appears under **Analytics** in the **Resource list**. 
 
-If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. Otherwise,you must wait 7 days before provisioning watsonx.data intelligence again, or contact Support for assistance with troubleshooting. 
+If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. 
 {: important}
 
 ## Step 3: Setting up and initializing {{site.data.keyword.wxbia_short}}

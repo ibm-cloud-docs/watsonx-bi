@@ -26,10 +26,10 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: #subcollection-jan1526}
 {: release-note}
 
-### IBM watsonx.data intelligence required for IBM watsonx BI
+### IBM watsonx.data intelligence required for watsonx BI as a Service
 {: #data_intelligence}
 
-IBM watsonx BI requires an IBM watsonx.data intelligence plan to be active in the IBM Cloud account. 
+IBM watsonx BI as a Service requires an IBM watsonx.data intelligence plan to be active in the IBM Cloud account. 
 
 As part of an initial, limited‑time introductory promotion, watsonx.data intelligence was included with watsonx BI; this promotion has since expired, and clients are now required to explicitly select and activate a watsonx.data intelligence plan. IBM Cloud accounts without an active watsonx.data intelligence plan will not be able to provision watsonx BI.
 
