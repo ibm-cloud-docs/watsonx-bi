@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-15"
 
 keywords: watsonx.data premium
 subcollection: watsonx-bi
@@ -34,7 +34,7 @@ To get familiar with watsonx BI, review these resources:
 
 You can use Business Intelligence tools directly in the watsonx perspective. 
 
-After you are assigned a BI community role, you can use the **Connect to data**, **Create metrics**, and **Chat with data** tiles on the watsonx.data Premium home page to access watsonx BI. To do this, on the watsonx.data hope page, select **Business intelligence** from the **Based on your interests** dropdown.
+After you are assigned a BI community role, you can use the **Connect to data**, **Create metrics**, and **Chat with data** tiles on the watsonx.data Premium home page to access watsonx BI. To do this, on the watsonx.data home page, select **Business intelligence** from the **Based on your interests** dropdown.
 
 From this page, you can: 
 

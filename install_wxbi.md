@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-15"
 
 keywords:
 subcollection: watsonx-bi
@@ -77,9 +77,9 @@ After all the prerequisites are met, [install {{site.data.keyword.wxbia_short}}]
 
 After you validate your {{site.data.keyword.wxbia_short}} installation, complete the following post-installation steps:
 
-- [Create a service instance](https://www.ibm.com/docs/en/software-hub/5.2.x?topic=pis-creating-service-instance-1){: external}
+- [Create a service instance](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=pis-creating-service-instance-1){: external}
 
-- [Complete the post-installation setup](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=pis-post-installation-setup-for-watsonx-bi){: external}
+- [Complete the post-installation setup](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=setup-post-installation-watsonx-bi){: external}
 
 
 
@@ -87,4 +87,3 @@ After you validate your {{site.data.keyword.wxbia_short}} installation, complete
 {: #install-next-steps}
 
 After IBM Software Hub and watsonx BI are both installed and set up, you are ready to begin using watsonx BI. To get started, [add users](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=administering-roles-permissions#wxbi_roles__title__4) see [Creating metrics for conversations](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}.
-
