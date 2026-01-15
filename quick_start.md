@@ -20,8 +20,8 @@ content-type: tutorial
 
 These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
 
-  IBM {site.data.keyword.wxbia_short} as a Service requires an active IBM watsonx.data intelligence plan in the Cloud account. See Step 2 for more information. 
-  {: important}
+IBM {{site.data.keyword.wxbia_short}} as a Service requires an active IBM watsonx.data intelligence plan in the Cloud account. See [Step 2](/docs/watsonx-bi?topic=watsonx-bi-getting-started#step2) for more information. 
+{: important}
 
 
 ## Step 1: Provision {{site.data.keyword.wxbia_short}} in your Cloud account
@@ -83,7 +83,6 @@ As an IBM Cloud account owner, you must set up and initialize {{site.data.keywor
   {: tip}
 
 During the instance setup, {{site.data.keyword.wxbia_short}} enables access delegation for the selected Cloud Object Storage instance. This grants any user of your account the permission to create their own projects and build their metrics.
-
 
 When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
 

@@ -35,7 +35,7 @@ As part of an initial, limited‑time introductory promotion, watsonx.data intel
 
 Cloud account owners must have an active watsonx.data intelligence plan or purchase a watsonx.data intelligence plan and activate it. Cloud account owners can choose from any watsonx.data intelligence plan, including Trial, Essentials, Standard, or Premium. 
 
-For existing watsonx BI users, the service checks whether a watsonx.data intelligence plan is available. If one is not found, users are guided to provision a plan or asked to contact the Cloud account owner for assistance before continuing to use watsonx BI.
+For existing watsonx BI users, the service checks whether a watsonx.data intelligence plan is available. If one is not found, users are guided to [provision a plan](/docs/watsonx-bi?topic=watsonx-bi-getting-started){: external} or asked to contact the Cloud account owner for assistance before continuing to use watsonx BI.
 
 To check if the Cloud account has an active watsonx.data intelligence plan:
 
