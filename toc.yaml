@@ -67,6 +67,7 @@ toc:
           - cognos.md
           - supported_connectors.md
           - satellite_connector.md
+          - mcp_wxo.md
   - navgroup:
       id: howto
       topics:

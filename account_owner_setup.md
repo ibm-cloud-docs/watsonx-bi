@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-01-15"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -19,6 +19,7 @@ content-type: tutorial
 
 These steps describe the typical tasks for an **IBM Cloud account owner** to provision and initialize the account for an organization:
 
+
 ## Step 1: Provisioning {{site.data.keyword.wxbia_short}} 
 {: #step1_provision}
 [Cloud account owner]{: tag-blue}
@@ -29,7 +30,7 @@ You can provision {{site.data.keyword.wxbia_short}} by creating an instance of t
 
 2. Click **Create resource**.
 
-![IBM Cloud account home page](images/cloud_home_create_resource.png)
+  ![IBM Cloud account home page](images/cloud_home_create_resource.png)
 
 3. Enter **{{site.data.keyword.wxbia_short}}** in the search field and select it from the catalog.
 
@@ -39,7 +40,25 @@ The new service instance appears under **AI/Machine learning** in the **Resource
 
 ![Resource list showing watsonx BI under AI/Maching learning](images/cloud_resource_list.png)
 
-## Step 2: Setting up and initializing {{site.data.keyword.wxbia_short}}
+
+## Step 2: Provisioning IBM watsonx.data intelligence
+{: #step2_provision_data_intelligence}
+[Cloud account owner]{: tag-blue}
+
+Watsonx BI requires an active watsonx.data intelligence plan to be provisioned in the IBM Cloud account.
+
+1. In the IBM Cloud account, click **Create resource**.
+
+2. Enter **watsonx.data intelligence** in the search field and select it from the catalog.
+
+3. Select a pricing plan, accept the license agreement checkbox, and click **Create**. 
+
+4. The new service instance appears under **Analytics** in the **Resource list**. 
+
+If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. Otherwise,you must wait 7 days before provisioning watsonx.data intelligence again, or contact Support for assistance with troubleshooting. 
+{: important}
+
+## Step 3: Setting up and initializing {{site.data.keyword.wxbia_short}}
 {: #step2_setup_initialize}
 [Cloud account owner]{: tag-blue}
 
@@ -64,7 +83,7 @@ As an IBM Cloud account owner, you must set up and initialize {{site.data.keywor
 
 When you use {{site.data.keyword.wxbia_short}}, make sure that the selected account in the account switcher in the header is the one that has access to {{site.data.keyword.wxbia_short}}. 
 
-## Step 3: Adding users to the watsonx BI account 
+## Step 4: Adding users to the watsonx BI account 
 {: #step3_add_users_cloud_account}
 [Cloud account owner]{: tag-blue} [Administrator]{: tag-blue}
 
@@ -85,7 +104,7 @@ This is a two-step process:
 Before you begin, set up access groups to simplify user access policies, role assignment in watsonx BI, and access to projects. For more information, see [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}. 
 {: tip}
 
-### Step 3a: Inviting users to the IBM Cloud account 
+### Step 4a: Inviting users to the IBM Cloud account 
 {: #invite_cloud_account}
 
 1. Go to **Navigation Menu > Administration > Configurations and settings > Access (IAM)** and click **Invite users with Access (IAM)**. 
@@ -131,7 +150,7 @@ The new users receive an email invitation to join the account.
 If you invited users as part of an access group, you can immediately add the access group to the watsonx BI community and to a project. If you invited users individually, you need to wait for the users to accept the invitation before you can add them to the watsonx BI community or to projects.
 {: important}
 
-### Step 3b: Adding users to the watsonx BI community
+### Step 4b: Adding users to the watsonx BI community
 {: #add_watsonxBI_community}
 
 1. In watsonx BI, go to the **Navigation Menu** and select **Administration > Configurations and settings > Manage BI community**.
@@ -171,4 +190,3 @@ For more information about collaborator roles, see [Roles and permissions in {{s
    | The user is a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before the user can use it (see Step 2).|
    |The user is a part of multiple Cloud accounts and is trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
-

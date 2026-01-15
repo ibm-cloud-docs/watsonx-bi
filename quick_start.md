@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-15"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -20,6 +20,9 @@ content-type: tutorial
 
 These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
 
+  IBM {site.data.keyword.wxbia_short} as a Service requires an active IBM watsonx.data intelligence plan in the Cloud account. See Step 2 for more information. 
+  {: important}
+
 
 ## Step 1: Provision {{site.data.keyword.wxbia_short}} in your Cloud account
 {: #step1}
@@ -34,10 +37,28 @@ You can provision {{site.data.keyword.wxbia_short}} by creating an instance of t
 
 4. Select a pricing plan, accept the license agreement checkbox, and click **Create**. 
 
-The new service instance appears under **AI/Machine learning** in the **Resource list**. 
+The new service instance appears under **AI/Machine learning** in the **Resource list**.
 
-## Step 2: Set up and initialize {{site.data.keyword.wxbia_short}}
+
+## Step 2: Provision IBM watsonx.data intelligence
 {: #step2}
+
+Watsonx BI requires an active watsonx.data intelligence plan to be provisioned in the IBM Cloud account.
+
+1. In the IBM Cloud account, click **Create resource**.
+
+2. Enter **watsonx.data intelligence** in the search field and select it from the catalog.
+
+3. Select a pricing plan, accept the license agreement checkbox, and click **Create**. 
+
+4. The new service instance appears under **Analytics** in the **Resource list**. 
+
+
+If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. Otherwise,you must wait 7 days before provisioning watsonx.data intelligence again, or contact Support for assistance with troubleshooting. 
+{: important}
+
+## Step 3: Set up and initialize {{site.data.keyword.wxbia_short}}
+{: #step3}
 
 As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. This step cannot be delegated to an Administrative user. 
 {: requirement}
@@ -106,4 +127,3 @@ When you use {{site.data.keyword.wxbia_short}}, make sure that the selected acco
 - [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}
 
 - [Roles and permissions in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-roles)
-
