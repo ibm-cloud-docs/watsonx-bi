@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-21"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -24,6 +24,7 @@ subcollection: watsonx-bi
 - Column description
 - Column identifier
 - Column data type, usage, aggregate, and nullable fields
+
 - Sampled columns 
 
 The quality of this data determines the quality of watsonx BI’s generated responses. 
@@ -236,8 +237,10 @@ Ensure that the name and description are worded based on your business context a
   
   If you want AI to use *"Cost of Goods Sold"* column to answer questions about *"Cost breakdown"*, then add that phrase to the description of the column. 
 
+
+
+
 ## Related links
 {: #related}
 
 - [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}
-

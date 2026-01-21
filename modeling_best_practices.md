@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-21"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -29,9 +29,11 @@ when generating query statements:
 - Column description
 - Column identifier
 - Column data type, usage, aggregate, and nullable fields
+
 - Sampled columns 
 
 Here some things that you can do to prepare your data for use by AI.
+
 
 ## Create a variety of metrics 
 {: #metric_variety}
@@ -40,17 +42,20 @@ Define a variety of metrics and ground answers in these standardized metric defi
 
 
 
+
 ## Add business terms
 {: #tip_add_terms}
 
-Watsonx BI comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
+{{site.data.keyword.wxbia_short_cap}} comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
 
 If your organization's business terminology is different, **IBM Cloud account owners** and **Administrators** can consider adding business terms to provide additional context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+
 
 ## Use unique names for data assets
 {: #tip_unique_names}
 
 To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics.
+
 
 ## Each asset and column needs a display name and description
 {: #tip_display_name}
@@ -63,7 +68,7 @@ You can accept the AI-suggested name and description or click **Edit** to add yo
 
 ![Metadata enrichment review page](images/mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
 
-When you edit the Display name or Description in the metadata enrichment asset, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this, it is recommended to make your changes in the semantic data model instead (see #2 in the section below).
+When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this, it is recommended to make your changes in the semantic data model instead (see #2 in the section below).
 {: important}
 
 When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the pencil icon next to the suggestion and provide a meaningful name or description for that asset or column.
@@ -72,7 +77,7 @@ Descriptions must be concise and reflect the purpose of the column. During query
 {: tip}
 
 
-## Model data in the semantic data model to help query generation
+## Model data in the semantic model to help query generation
 {: #tip_model}
 
 ### 1. Add clear column identifiers
@@ -144,13 +149,8 @@ Reflect user language preferences
   
 :   If you want AI to use "Cost of goods sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
 
-Include multiple examples to demonstrate use 
-: For example: If there is a column called "Year" and you want the LLM to refer to it when you ask it to look up sales for a specific year, specify that in the column description.  
-*"Use for queries such as "in the year 2011" or "in the year 2015".*
-
-#### Adding column labels and descriptions in the semantic model
+#### Adding column labels and descriptions in the semantic data model
 {: #add_labels_desc_semantics}
-
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
@@ -164,11 +164,10 @@ Include multiple examples to demonstrate use
 
 6. Select the metric definition that you just made changes to and click **Export metric definition**.
 
-
-### 3. Double check the “Usage”, “Aggregate” and “Nullable” fields for each column
+### 3. Review column “Usage”, “Aggregate” and “Nullable” fields 
 {: #tip_fields}
 
-In the semantic data model, check the column properties to ensure that the **Usage**, **Aggregate**, and **Supports NULL values** fields are correct.
+In the semantic data model, check the column properties to ensure that the **Usage**, **Aggregate**, and **Supports NULL values** fields for each column are correct.
 
 - Usage: This property applies to tables and controls how the query engine understands and processes the table, and its child objects, in a query. 
 
@@ -182,16 +181,6 @@ Sometimes data like “unit_cost” or “unit_sale_price” is treated like a *
 
 ![Check values in column properties](images/semantic_model_usage_agg_null_props.png){: caption="An open Properties panel displays the usage, aggregate, and null value fields." caption-side="bottom"}
 
-### 4. Use instructions for semi-additive measures
-{: #tip_semiadditive} 
-
-If you have a semi-additive measure in your data, such as headcount or inventory, which cannot always be aggregated, you can add instructions in the description directing AI to use the appropriate calculation based on the time dimension. 
-
-For example, you might have headcount data on a monthly basis but if you want the headcount for the year, you cannot add monthly headcount to get the yearly total. In this case, the value from the last month of the year would yield the correct yearly headcount. 
-
-You can include a description instructing the AI on how to calculate headcount for the year:
-
-*“Use this column for yearly headcount. The headcount for 2025 is the total headcount for December 2025.”*
 
 
 ### 5. Remove unnecessary columns from the data

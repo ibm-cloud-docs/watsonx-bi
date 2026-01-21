@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-15"
+lastupdated: "2026-01-21"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -21,6 +21,21 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: shortdesc}
+
+## 21 January 2026
+{: #subcollection-jan2226}
+{: release-note}
+
+### OpenAI gpt-oss-120b large language model now available as an independent model option
+
+The OpenAI gpt‑oss‑120b large language model (LLM) is now available as a standalone option in watsonx BI as a Service. Administrators can choose this LLM on the **Configuration and settings > Model settings**. 
+
+This LLM is used for SQL generation tasks as well as all other language‑model–driven functions within watsonx BI.
+
+Selecting this LLM provides advanced question interpretation, stronger semantic understanding, and higher accuracy across a wide range of queries.
+
+
+
 
 ## 15 January 2026
 {: #subcollection-jan1526}

@@ -15,44 +15,51 @@ subcollection: watsonx-bi
 # Use of AI in conversations 
 {: #explainability}
 
-The **AI** label in the user interface gives an overview of how AI works in **Conversations**. {{site.data.keyword.wxbia_full}} uses large language models (LLM) to answer your questions and provide recommendations, insights, and summaries for your governed business data. {: #shortdesc}
+The **AI** label in the user interface gives an overview of how AI works in **Conversations**. {{site.data.keyword.wxbia_full}} uses large language models (LLM) to answer your questions and provide recommendations, insights, and summaries for your business data. {: #shortdesc}
 
-Governed business data is data that has gone through different processes, policies, and standards to define the availability, quality, and security of the data. These processes and standards determine the intended use of the organization's data, data owners, and data security measures.
-{: note}
+Administrators can choose the LLM that is used in {{site.data.keyword.wxbia_short}} conversations for users in their organization and can update selection at any time from the **Configuration and settings > Model settings** page. 
 
 ## How AI generates responses 
 {: #ai_queries}
 
-To respond to your BI question, the LLM analyzes and helps interpret your input. It can then match the interpreted input to your business data (such as column names, measures, or filters) and generates a query to retrieve the matched information to respond to your input. 
+The selected LLM is used to respond to your BI questions.  It analyzes your input, along with the metrics and enriched metadata you have access to, to understand the underlying business logic. It then uses column titles, descriptions, sample values, SQL examples, and predefined instructions to identify the most relevant data. Based on this understanding, the LLM generates the appropriate query to retrieve the relevant information.
 
-The LLM generates a text-based response, visualization, or both based on the matched information to respond to your question. You can see each of these steps under **AI steps**. 
+Using the returned data, the LLM produces a text-based answer, a visualization, or both. You can view each step of this process in the **AI steps** by clicking **Show AI steps** in the response.
 
-The LLM also monitors key metrics and helps to identify changes in the business data. When you click a metric in the **Key metrics** panel to open it, notice that the AI can summarize and help explain the identified changes in your metrics.
+The LLM also evaluates key metrics and helps surface changes in your business data. When you select a metric from the **Key metrics** panel, the AI can summarize and explain what has changed and why it might be important.
 
-The selected LLM name that was used to respond to your queries displays in the **AI** label and **AI steps** in conversations.
+The name of the LLM used to generate each response appears in the **AI** label and within **AI steps** during conversations.
 
-{{site.data.keyword.wxbia_short_cap}} uses large language models (LLMs) that are hosted in IBM watsonx.ai and does not use your data to train the models.
+{{site.data.keyword.wxbia_short_cap}} uses LLMs that are hosted in IBM watsonx.ai and does not use your data to train the models.
 {: note}
 
-## Choosing the LLM
-{: #cyom}
 
-At the time of setting up {{site.data.keyword.wxbia_short}} as a Service, Administrators can choose the LLM that is used in conversations for users in their organization. 
+## Response generation process
+{: #response_process}
 
-Administrators can also change the LLM from **Configuration and settings > Model settings**. 
+1. Interpretation and analysis - {{site.data.keyword.wxbia_short}} interprets your question and analyzes its intent.
 
-The ability to choose the large language model is not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.1 and prior versions. Watsonx BI on Software Hub 5.2.1 and previous versions use [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} to respond to your questions. 
-{: important}
+2. Context rephrasing  -  {{site.data.keyword.wxbia_short}} might rephrase the question based on the historical context of previous questions.
 
-The following LLMs are available: 
+3. Key word extraction and identifing data source - {{site.data.keyword.wxbia_short}} pulls out key search terms from the question and identifies the data source that can answer the question.
 
-- Combination of [OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external} and IBM Granite-3-8b-instruct
+4. SQL generation - {{site.data.keyword.wxbia_short}} generates a query to retrieve the most useful and accurate answer by using the following inputs:
 
-- Combination of [Meta Llama 4](https://www.ibm.com/docs/watsonx/w-and-w/latest?topic=models-third-party-foundation#llama-4){: external} and IBM Granite-3-8b-instruct 
+ - The rephrased question and extracted key terms
 
-- [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/latest?topic=models-granite-30-8b-instruct-model-card){: external}
+ - Column labels, column descriptions, sample values in metrics, and enriched metadata
 
-The LLM change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account that has access to {{site.data.keyword.wxbia_short}}.
+ - Asset labels and asset descriptions
 
-The updated LLM name appears in the AI icon and the query generation step under **AI steps** in **Conversations**.  
+ - General instructions
 
+ - SQL examples
+
+5. Response generation - {{site.data.keyword.wxbia_short}} uses the queried data, the rephrased question, and final phrasing instructions to generate a text response, visualization, or both.
+
+For more information, see [Steps AI takes to respond](/docs/watsonx-bi?topic=watsonx-bi-steps_ai){: external}.
+
+## Related links
+{: #related_explainability}
+
+- [Selecting the large language model for your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}

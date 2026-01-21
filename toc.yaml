@@ -135,12 +135,11 @@ toc:
           topics:
           - gettingstarted_wxbia.md
           - asking_questions.md
-          - llm_responses.md
           - change_scope.md
-          - steps_ai.md
           - visualizations.md
           - feedback.md
           - explainability.md
+          - steps_ai.md
       - metrics_catalog.md
       - topicgroup:
           label: Enhancing security
