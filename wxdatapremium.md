@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-15"
+lastupdated: "2026-01-23"
 
 keywords: watsonx.data premium
 subcollection: watsonx-bi
@@ -177,7 +177,7 @@ You can also connect to data from watsonx.data and then create metrics in watson
 ## Chatting with data
 {: #chat_data_wxd}
 
-You can ask questions about data and metrics that you have access you have access to that have been enriched in {{site.data.keyword.wxbia_short}}.  
+You can ask questions about data and metrics that you have access to that have been enriched in {{site.data.keyword.wxbia_short}}.  
 
 1. On the watsonx.data home page, select your project and choose **Business intelligence** from the **Based on your interests** dropdown.
 

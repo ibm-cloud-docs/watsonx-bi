@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-19"
+lastupdated: "2026-02-03"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -76,13 +76,16 @@ While watsonx BI utilizes large language models for various tasks, this feature 
 
   Choose Meta Llama 4 and Granite for complex, multi-step BI queries. 
 
-* **Meta Llama 4 and IBM Granite-3-8b-instruct with Chain of Thought** [Preview]{: tag-teal}
+* **OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct with Chain of Thought** [Preview]{: tag-teal}
 
-  Chain of Thought with Meta Llama 4 and Granite provides reasoning behind each response by breaking down complex questions into smaller steps. 
+  Chain of Thought with OpenAI gpt-oss-120b and Granite provides reasoning behind each response by breaking down complex questions into smaller steps. 
   
-  Meta Llama 4 is used specifically for SQL generation tasks, while Granite is used for all other language model tasks.
+  OpenAI gpt-oss-120b is used specifically for SQL generation tasks, while Granite is used for all other language model tasks.
 
-  Choose Meta Llama 4 and Granite with Chain of Thought to view reasoning for complex, multi-part BI queries.
+  Choose gpt-oss-120b and Granite with Chain of Thought to view reasoning for complex, multi-part BI queries.
+  
+  Chain of Thought was previously supported by Meta Llama 4 and Granite. This option is being discontinued. Administrators must reselect Chain of Thought with the new gpt‑oss‑120b model in **Configuration and settings > Model settings** to continue receiving accurate and supported responses. Users who previously enabled Chain of Thought with the Llama model will continue to receive responses for now. However, once Llama is fully discontinued, answer accuracy might be impacted until the model selection is updated.
+  {: important}
 
   For more information, see [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-02-05"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -18,10 +18,12 @@ subcollection: watsonx-bi
 
 [Preview]{: tag-teal} IBM Cognos Analytics is a business intelligence platform that supports the entire analytics cycle. By integrating Cognos Analytics with {{site.data.keyword.wxbia_full_notm}}, the rich metadata from Cognos Analytics becomes accessible to AI, making it easier for you to get insights from your data. {: #shortdesc} 
 
-{{site.data.keyword.wxbia_full_notm}} and Cognos Analytics integration requires the IBM Cognos Analytics connector.  
-
 This feature is a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
 {: important}
+
+To use this integration, you need the IBM Cognos Analytics connector.
+
+Any business context that is defined in Cognos Analytics is automatically applied to your semantic data model in {{site.data.keyword.wxbia_short}}, along with all Cognos governance rules and permissions.
 
 
 ## Prerequisites
@@ -31,21 +33,23 @@ This feature is a Technology Preview feature. Technology Preview offers customer
 
 - A working Cognos Analytics environment
 
-- A Framework Manager package (also called FM package)
+- A Framework Manager package (FM package) 
 
 - For Cognos Analytics on Premises, you need to create and set up a [Satellite Connector](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
 
 ## Limitations
 {: #limitations_ca}
 
-- Only relational FM packages are supported
+- Only relational FM packages and data modules are supported
 - Dimensionally modelled (DMR) objects are not supported
-- Data modules, dynamic cubes, uploaded files, and OLAP sources (such as SAP) are not supported 
+- Data modules,  Dynamic cubes, uploaded files, and OLAP sources (such as SAP) are not supported 
+
 
 ## Supported versions
 {: #supported_version}
 
 IBM Cognos Analytics 11.2.4 and later
+
 
 ## Connecting to an FM package
 {: #connect_FM}
@@ -130,4 +134,3 @@ At any time, you can go to the project from **Navigation Menu > Projects > View 
 You can manage the semantic data model, create more metrics, and add visualizations to the metrics from the **Data and Metrics** tab. If you're a **Data analyst**, you can publish metrics and related visualizations to the **Metrics catalog** and assign them to Analytics consumers. 
 
 For more information, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics).
-

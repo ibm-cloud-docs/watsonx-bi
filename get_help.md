@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-28"
 
 keywords: help, support
 
@@ -32,6 +32,5 @@ If you still can't resolve the problem, you can open a support case if your serv
 
 - {{site.data.keyword.wxbia_short_cap}} as a Service - [IBM Cloud Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter)
 
-If you're opening a support case for an error in {{site.data.keyword.wxbia_short}}, remember to include the trace ID or error ID in the details. 
+If you're opening a support case for an error in {{site.data.keyword.wxbia_short}}, remember to include the Support ID or error ID in the details. 
 {: important}
-

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-29"
 
 keywords:
 subcollection: watsonx-bi
@@ -27,7 +27,10 @@ To generate metrics automatically, follow the steps listed in [Overview of creat
 
 When you get to the **Metrics overview** page:
 
-1. Click **Generate metrics**.  
+1. Click **Generate metrics**. 
+
+   You can generate metrics here only when the semantic data model has no existing metrics.  To add more metrics, use **Advanced mode**.
+   {: note}
 
 2. Select the metrics that you want to use. You can click the menu for a metric to view its details first. 
 
@@ -74,4 +77,3 @@ You can only generate metrics once from the **Metrics overview** page. To genera
    - Publish the metrics and related visualizations to the **Metrics catalog** (Data analysts only)
 
 6. Go to **Navigation menu > Home > Conversations** to ask questions about your data.
-

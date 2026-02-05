@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-03"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -16,9 +16,16 @@ subcollection: watsonx-bi
 # Chain of Thought reasoning
 {: #choose_llm}
 
-[Preview]{: tag-teal} Chain of Thought reasoning is a different approach to generating answers that is available with the Meta Llama 4 and IBM Granite-3-8b-instruct option. With Chain of Thought reasoning, watsonx BI generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
+[Preview]{: tag-teal} Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b and IBM Granite-3-8b-instruct option. With Chain of Thought reasoning, watsonx BI generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
+
 
 This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}} as a Service. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important}
+
+## Why use Chain of Thought
+{: #why_cot}
+
+Chain of Thought was previously supported in watsonx BI by Meta Llama 4 and Granite. This option is being discontinued. Administrators must reselect Chain of Thought with the new gpt‑oss‑120b model in **Configuration and settings > Model settings** to continue receiving accurate and supported responses. 
 {: important}
 
 Chain of Thought's structured answers, which reflect the AI’s reasoning path, are helpful when you want to see how watsonx BI built the query or queries that were necessary to answer your question. 

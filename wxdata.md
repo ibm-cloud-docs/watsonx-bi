@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-28"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # IBM watsonx.data
 {: #wxd}
 
-IBM watsonx.data is a governed data lakehouse optimized for data and AI workloads. Integrating {{site.data.keyword.wxbia_full_notm}} with watsonx.data brings the ability for any type of data (structured, semi-structured, and unstructured) to be directly accessible for AI and business intelligence, making it easier for data scientists and data analysts to use the data. {: #shortdesc}
+IBM watsonx.data is a governed data lakehouse optimized for data and AI workloads. Integrating {{site.data.keyword.wxbia_full_notm}} with watsonx.data lets you access structured, semi-structured, and unstructured data for AI and business intelligence, simplifying its use for data scientists and data analysts. {: #shortdesc}
 
 {{site.data.keyword.wxbia_short_cap}} and watsonx.data integration support the following connectors:
 
@@ -34,9 +34,9 @@ IBM watsonx.data is a governed data lakehouse optimized for data and AI workload
 ## Connecting to watsonx.data from {{site.data.keyword.wxbia_short}}
 {: #connect_wxd}
 
-You can add a connection from the **Data and Metrics** tab in {{site.data.keyword.wxbia_short}} when you create metrics.
+You can add a connection from the **Data and Metrics** in {{site.data.keyword.wxbia_short}} when you create metrics.
 
-1. On the **Data and Metrics** tab, click **Create metrics** and give your semantic data model a name.
+1. On the **Data and Metrics**, click **Create metrics** and give your semantic data model a name.
 
 2. On the **Add data** page, click **New connection**. 
 
@@ -55,7 +55,7 @@ You can add a connection from the **Data and Metrics** tab in {{site.data.keywor
    | Name | Enter the name of the connection. |
    | Description | Enter a connection description. |
    | Select the environment | Do not select the checkbox. |
-   | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the Hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
+   | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
    | Instance ID | Enter the instance ID. You can get the instance ID from the {{site.data.keyword.lakehouse_short}} instance home page (information icon). |
    | Instance name | Enter the {{site.data.keyword.lakehouse_short}} instance name. |
@@ -77,7 +77,7 @@ You can add a connection from the **Data and Metrics** tab in {{site.data.keywor
    | Name | Enter the name of the connection. |
    | Description | Enter a connection description. |
    | Select the environment | Do not select the checkbox. |
-   | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the Hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
+   | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
    | Username | Enter your username (`ibmlhapikey_<EMAIL_ID>`). |
    | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key){: external}. |

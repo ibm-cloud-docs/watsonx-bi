@@ -28,6 +28,14 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "5 February 2026",
+        "title": "Watsonx BI as a Service updated with new features and enhancements"
+      },
+      {
+        "date": "21 January 2026",
+        "title": "OpenAI gpt-oss-120b now available as an independent model option in watsonx BI as a Service"
+      },
+      {
         "date": "15 January 2026",
         "title": "IBM watsonx.data intelligence required for watsonx BI as a Service"
       },
@@ -42,14 +50,6 @@
       {
         "date": "27 August 2025",
         "title": "Watsonx BI updated on IBM Software Hub 5.2.1"
-      },
-      {
-        "date": "14 August 2025",
-        "title": "Introducing watsonx BI as a Service"
-      },
-      {
-        "date": "30 June 2025",
-        "title": "Introducing watsonx BI on IBM Software Hub 5.2.0"
       }
     ]
   },

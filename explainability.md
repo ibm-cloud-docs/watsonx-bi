@@ -45,15 +45,15 @@ The name of the LLM used to generate each response appears in the **AI** label a
 
 4. SQL generation - {{site.data.keyword.wxbia_short}} generates a query to retrieve the most useful and accurate answer by using the following inputs:
 
- - The rephrased question and extracted key terms
+   - The rephrased question and extracted key terms
 
- - Column labels, column descriptions, sample values in metrics, and enriched metadata
+   - Column labels, column descriptions, sample values in metrics, and enriched metadata
+   
+   - Asset labels and asset descriptions
 
- - Asset labels and asset descriptions
+   - General instructions
 
- - General instructions
-
- - SQL examples
+   - SQL examples
 
 5. Response generation - {{site.data.keyword.wxbia_short}} uses the queried data, the rephrased question, and final phrasing instructions to generate a text response, visualization, or both.
 

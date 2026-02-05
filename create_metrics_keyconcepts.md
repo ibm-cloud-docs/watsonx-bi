@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-05"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi
@@ -62,11 +62,12 @@ In {{site.data.keyword.wxbia_short}}, you work with assets in a project. You can
 
 | Asset | Asset type |Description |
 |-------|---------|--------------|
-| Data asset | Data | Represents data that is accessed through a connection to a remote data source. Examples include Table, Metric definitions, Uploaded file, and Card. |
+| Data asset | Data | Represents data that is accessed through a connection to a remote data source. Examples include Table, Metric, and Uploaded file. |
 | Semantic data model | Data| Contains the structure of data through its relationships and calculations.Metrics are defined in semantic data models.|
 | Connection| Data access| Contains the information to connect to a data source.|
 | Metdata import| Data access | Imports asset metadata from a connection. |
 | Metadata enrichment | Metadata enrichment| Enriches imported asset metadata.|
+| Visualizations | Visualizations | A chart that visually represents a metric.
 | Job| Job| Contains information about how to run the asset, including the environment definition, schedule, and notification options|
 {: caption="Assets in {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 

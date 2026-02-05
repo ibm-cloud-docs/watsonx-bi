@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-01-28"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ The following connectors are supported:
 - [Amazon Redshift](/docs/watsonx-bi?topic=watsonx-bi-amazon_redshift){: external}
 - [Dremio](/docs/watsonx-bi?topic=watsonx-bi-dremio){: external}
 - [Google BigQuery](/docs/watsonx-bi?topic=watsonx-bi-google_big_query){: external}
-- [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} 
+- [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} [Preview]{: tag-teal} 
 - [IBM Db2](/docs/watsonx-bi?topic=watsonx-bi-db2){: external}
 - [IBM Informix](/docs/watsonx-bi?topic=watsonx-bi-informix){: external}
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 

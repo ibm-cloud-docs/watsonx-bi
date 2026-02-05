@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-05"
 
 keywords: semantic, data model, data modeling
 subcollection: watsonx-bi
@@ -80,9 +80,11 @@ The Custom tables is the main space for creating, viewing, and managing custom t
 
 The **Sources** panel shows the sources of data that the semantic data model contains. A copy of this data is available in the semantic data model.
 
+Except for FM packages, you can expand the specific source to view its tables and columns. Drag tables onto the data model panel or onto the diagram to add them to the data model.
+
 You can expand the source to view its tables and columns. Drag tables onto the semantic data model panel.
 
-From the source context menu, you can initiate actions such as relinking sources or enabling data caching.
+From the source context menu, you can initiate actions such as relinking sources.
 
 ## Validation panel
 {: #validation_panel}

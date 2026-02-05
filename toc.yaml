@@ -3,7 +3,7 @@ toc:
     subcollection: watsonx-bi
     path: watsonx-bi
     href: /docs/watsonx-bi
-    service-name: watsonx-bi
+    service-name: watsonx-intelligence
     audience: service
     category: ai
     label: watsonx BI
@@ -19,15 +19,15 @@ toc:
           - topicgroup:
               label: What's new
               topics:
-              - release-notes-software.md
               - release-notes-cloud.md
+              - release-notes-software.md
           - about.md
           - feature_diff.md
           - topicgroup:
               label: Known issues and limitations
               topics:
-              - known_issues_software.md
               - known_issues_cloud.md
+              - known_issues_software.md
       - topicgroup:
           label: Setting up watsonx BI
           topics:
@@ -121,9 +121,10 @@ toc:
           - calculations.md
           - relinking_ref_tables.md
           - filters.md
+          - user_filters.md
           - hiding_objects.md
           - object_properties.md
-          - row_level_security.md
+          - ai_instructions.md
           - topicgroup:
               label: Adding data to an existing semantic data model
               topics:
@@ -136,8 +137,13 @@ toc:
           - gettingstarted_wxbia.md
           - asking_questions.md
           - change_scope.md
-          - visualizations.md
+          - topicgroup:
+              label: Visualizations
+              topics:
+              - visualizations.md
+              - visualization_types.md
           - feedback.md
+          - download_response.md
           - explainability.md
           - steps_ai.md
       - metrics_catalog.md

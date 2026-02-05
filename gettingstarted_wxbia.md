@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-03"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -46,7 +46,7 @@ You can start a conversation with {{site.data.keyword.wxbia_short}} by:
 
 The chat canvas is an active conversation and any question you enter in the input box continues the conversation. To start a new conversation about a different data topic, click **New conversation**.
 
-You can even set the scope of a conversation by selecting the data you want to ask about from the drop-down list next to the input box. By default, the scope of a conversation is set to **All data**. 
+You can even set the scope of a conversation by selecting the data you want to ask about from the list in the input box. By default, the scope of a conversation is set to **All data**. 
 
 Conversations are saved in the **Conversations** panel. By default, conversations are saved with your first question as the title. You can right-click a conversation to rename or delete it. You can also expand or collapse the panel.
 
