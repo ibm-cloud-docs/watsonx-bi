@@ -32,17 +32,13 @@ User filters let you control which users or user groups can view specific data w
 
 Users will only see values calculated from the rows that they are allowed to view.
 
-If a user belongs to a user group that has multiple filters, all conditions must be true at the same time. This means the user will only see data that satisfies all filters in that group. For example:
+If a user belongs to a user group that has multiple filters, all conditions must be true at the same time. This means the user will only see data that satisfies all filters in that group. 
 
-  A group has filters for *year = 2013* **and** *year IN (2012, 2013)*.
-  Only rows where **year = 2013** meet both conditions.
+For example, if a group has filters for *year = 2013* **and** *year IN (2012, 2013)*. The user will see only those rows where **year = 2013** as it meets both conditions.
 
-If a user belongs to multiple user groups, they can see any data allowed by **any** of the groups they belong to.Watsonx BI combines filters from different groups using **OR logic**. For example:
+If a user belongs to multiple user groups, they can see data allowed by **any** of the groups they belong to.Watsonx BI combines filters from different groups using **OR logic**. 
 
-  User group A allows *year = 2013*
-  User group B allows *year IN (2012, 2013)*
-
-A user in both groups will see rows for **2012 and 2013** because the filters are combined using OR.
+For example, if User group A allows *year = 2013* and User group B allows *year IN (2012, 2013)*, a user in both groups will see rows for **2012 and 2013** because the filters are combined using OR.
 
 
 ## Limitations

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-03"
+lastupdated: "2026-02-05"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -42,7 +42,7 @@ As an Administrator, you can choose from the following LLMs:
 |[OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external} and IBM Granite-3-8b-instruct| As a Service, Software Hub 5.2.2 and later versions|
 |OpenAI gpt-oss-120b| As a Service|
 |[Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-3-8b-instruct | As a Service|
-|Meta Llama 4 and IBM Granite-3-8b-instruct with [Chain of Thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)| As a Service|
+|OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct with [Chain of Thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)[Preview]{: tag-teal}| As a Service|
 
 Watsonx BI on Software Hub 5.2.1 and previous versions use IBM Granite-3-8b-instruct to respond to your questions. 
 {: note}
