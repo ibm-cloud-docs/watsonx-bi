@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-02-05"
+lastupdated: "2026-02-06"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -11,6 +11,9 @@ subcollection: watsonx-bi
 content-type: release-note
 
 ---
+
+
+
 
 
 
@@ -55,13 +58,6 @@ Provide custom instructions and context to guide AI behavior
 
 :   For more information, see [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.
 
-User filters for row-level security
-
-:   User filters are now available to help protect sensitive data in metrics. Administrators and Data analysts can define conditions on a metric definition in the semantic data model to ensure that users see only the data they have permissions to access.
-
-:   When a user views a metric, the values are calculated only from the rows they’re allowed to see, based on the filters applied.
-
-:   For more information, see [Manage access to data with User filters](/docs/watsonx-bi?topic=watsonx-bi-user_filters){: external}.
 
 Download responses and related data from a conversation
 
@@ -97,8 +93,6 @@ Conversation scope list improved with descriptions
 Improved look and feel of the welcome message
 
 :   The welcome message in **Conversations** now has an improved look and feel. You can still click any of the suggested questions to start exploring your data, just like before.
-
-
 
 
 ## 21 January 2026

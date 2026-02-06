@@ -121,7 +121,6 @@ toc:
           - calculations.md
           - relinking_ref_tables.md
           - filters.md
-          - user_filters.md
           - hiding_objects.md
           - object_properties.md
           - ai_instructions.md

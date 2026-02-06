@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-01-29"
+lastupdated: "2026-02-06"
 
 keywords: ai instructions, business logic, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -84,6 +84,7 @@ When users reference a fiscal year (for example, FY2023), interpret it as April 
 ```
 {: codeblock}
 
+
 ### Monthly headcount metric
 {: #monthly_headcount}
 
@@ -108,6 +109,27 @@ For data/time based analysis, use date_hired if the question is related to new e
 ````
 {: codeblock}
 
+### Filtering
+{: #ai_filtering}
+
+````
+Include only **Active (A)** employees with **Agreement Code in {XX, ZZ}**; exclude **YY** unless explicitly requested.  
+Contractors are not present in the dataset.
+Apply **no org filters** when users reference *Organization* without an organizational qualifier.  
+For **Job Profile Name** and **Primary Job Role**, exclude **null** values from results and groupings.  
+For **Separation** analysis, use only employees with **Status = N** and **non-null** separation fields.  
+Do not infer **Region** or **Geography** when explicit fields are present; match directly.
+````
+{: codeblock}
+
+### Geography and region
+
+```
+Geography values: **EMEA, Americas, APAC, Japan**.  
+Region values: **Canada, LA, US, GCG, Italy, DACH, MEA, UKI, ASEAN, Korea, NCEE, SPGI, France, AU/NZ, ISA, Japan**.
+```
+{: codeblock}
+
 ### Use instructions for semi-additive measures
 {: #semi-additive}
 
@@ -118,8 +140,13 @@ For example, you might have headcount data on a monthly basis but if you want th
 You can include a description instructing the AI on how to calculate headcount for the year.
 
 ```
-Use this employee_num for yearly headcount. The headcount for 2025 is the total headcount for December 2025.
-```
+Quarterly rollup: **use last month of quarter (Mar/Jun/Sep/Dec)**.
+Yearly rollup: **use last month of year (Dec)**.
+If user asks for **"Q3 headcount" with NO year specified**:
+ -  *sum(Employee_Count) where extract(year from month_end_date) = extract(year from current_date) and extract(quarter from month_end_date) = 3*
+- If user asks for **"2024 headcount"**:
+  - *sum(Employee_Count) where extract(year from month_end_date) = 2024 and extract(month from month_end_date) = 12*
+  ```
 {: codeblock}
 
 ## Adding or modifying AI instructions
