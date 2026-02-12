@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-10"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -62,3 +62,5 @@ While the core functions in both deployments are effectively the same, the follo
 - Choose your large language model (LLM) does not support Meta Llama 4 and Granite combination
 - Use of Go Sales sample data
 - Provide feedback for generated responses in conversations
+
+In IBM Software Hub versions 5.3 and higher, {{site.data.keyword.wxbia_short}} can be accessed from IBM watsonx.data Premium. This feature is not available in {{site.data.keyword.wxbia_short}} as a Service.

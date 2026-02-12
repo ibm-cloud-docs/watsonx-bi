@@ -1,7 +1,7 @@
 ---
 copyright: 
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-09"
 
 keywords: glossary
 subcollection: watsonx-bi
@@ -118,10 +118,10 @@ See [metadata enrichment](#x5000025).
 ## F
 {: #glossf}
 
-### fact
+### fact table
 {: #x5000012}
 
-See [measure](#x50000015}).
+A fact table stores measures, which are quantifiable performance indicators that help assess how well a business is operating. Examples of such measures include Revenue, Revenue per Employee, and Profit Margin Percentage. 
 
 ### foundation model
 {: #x10298171}
@@ -188,7 +188,7 @@ A language model with many parameters, trained on a large quantity of text.
 ### measure
 {: #x50000015}
 
-A performance indicator that is quantifiable and used to determine how well a business is operating. For example, measures can be Revenue, Revenue/Employee, and Profit Margin percent.
+A performance indicator that is quantifiable and used to determine how well a business is operating. For example, measures can be Revenue, Revenue per Employee, and Profit Margin percent. These values are typically numeric, additive, and used in calculations or aggregations.
 
 ### metadata enrichment
 {: #x50000025}

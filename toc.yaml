@@ -119,6 +119,7 @@ toc:
               - column_dependencies.md
           - relationships.md
           - calculations.md
+          - multifact-metrics.md
           - relinking_ref_tables.md
           - filters.md
           - hiding_objects.md
@@ -136,11 +137,7 @@ toc:
           - gettingstarted_wxbia.md
           - asking_questions.md
           - change_scope.md
-          - topicgroup:
-              label: Visualizations
-              topics:
-              - visualizations.md
-              - visualization_types.md
+          - visualizations.md
           - feedback.md
           - download_response.md
           - explainability.md

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-02-11"
 
 keywords: build metrics, building, manual, metric definitions
 subcollection: watsonx-bi
@@ -38,7 +38,7 @@ Follow these steps when you get to the **Metrics overview** page.
 
 4. Right-click on one of your selections and select **New > Metric definition**.  
 
-5. Enter a name for the metric definition and add optional details such as a description, screen tip, and comments to easily find the metric definition. 
+5. Enter a name for the metric definition and add optional details such as a description, screen tip, and comments to easily find the metric definition. You can also add custom guidance that explains your business logic, rules, and interpretation in the **AI instructions and context** field. This helps AI understand questions more effectively and generate accurate SQL during analysis.
 
    Ensure that the metric definition has a unique name. 
    {: important}
@@ -71,4 +71,3 @@ Follow these steps when you get to the **Metrics overview** page.
     c. (Data analysts only) [Publish metrics and visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** and assign them to Analytics consumers. 
 
 13. From the **Navigation menu**, go to **Home > Conversations** to ask questions about your data.
-

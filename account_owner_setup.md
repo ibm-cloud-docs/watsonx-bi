@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-01-15"
+lastupdated: "2026-02-09"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -49,11 +49,13 @@ Watsonx BI requires an active watsonx.data intelligence plan to be provisioned i
 
 1. In the IBM Cloud account, click **Create resource**.
 
-2. Enter **watsonx.data intelligence** in the search field and select it from the catalog.
+1. Enter **watsonx.data intelligence** in the search field and select it from the catalog.
 
-3. Select a pricing plan, accept the license agreement checkbox, and click **Create**. 
+1. Select **Dallas (us-south)** as the location and choose a pricing plan. 
 
-4. The new service instance appears under **Analytics** in the **Resource list**. 
+1. Accept the license agreement in the **Summary** panel and click **Create**. 
+
+The new service instance appears under **Analytics** in the **Resource list**. 
 
 If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. 
 {: important}
@@ -101,7 +103,7 @@ This is a two-step process:
 
   This step allows invited users to use watsonx BI based on their role. During this step, you will assign collaborator roles. [Collaborator roles](/docs/watsonx-bi?topic=watsonx-bi-roles){: external} determine what the user can do in {{site.data.keyword.wxbia_short}}. 
 
-Before you begin, set up access groups to simplify user access policies, role assignment in watsonx BI, and access to projects. For more information, see [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}. 
+Before you begin, set up access groups to simplify user access policies, role assignment in watsonx BI, and access to projects. For more information, see [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}. You need to assign the default Resource group at least a **Viewer** role for users to be able to access dataplatform.
 {: tip}
 
 ### Step 4a: Inviting users to the IBM Cloud account 

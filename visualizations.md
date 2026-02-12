@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-03"
+lastupdated: "2026-02-11"
 
 keywords: generating visualizations, conversations
 subcollection: watsonx-bi
@@ -162,7 +162,7 @@ Depending on the visualization you're working with, you can also ask AI to:
     - Change the element color to green.
     
 ## Supported visualizations
-{: #chart_types}
+{: #supp_chart_types}
 
 Here are some of the visualization types that you might see under **Change chart**. Each visualization has its own strengths and displays data differently. 
 

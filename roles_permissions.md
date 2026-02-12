@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-06"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -28,6 +28,7 @@ Review the roles and permissions that you need for working with {{site.data.keyw
 
   - Predefined roles, if you're using [{{site.data.keyword.wxbia_short}} on IBM Software Hub](/docs/watsonx-bi?topic=watsonx-bi-roles-swh)
 
+
 ## Assigning collaborator roles
 {: #collab_roles}
 
@@ -47,13 +48,16 @@ To add members to the watsonx BI community and assign collaborator roles:
 
 3. Select the individual users or access groups and assign the relevant collaborator role. 
 
+You need to assign the default **Resource group** at least a **Viewer** role for users to be able to access dataplatform.
+{: note}
+
 
 
 
 
 The following table shows the actions that you can complete depending on your collaborator role.
 
-
+ 
 
 Action |Administrator | Data analyst | Analytics consumer
 |---------------| -----|------|---------|
@@ -66,10 +70,11 @@ Action |Administrator | Data analyst | Analytics consumer
 |View key metrics| ✓ | ✓ | ✓ |
 |Open metric card | ✓ | ✓ | ✓ | 
 |Pin metric from chat | ✓ | ✓ | ✓ |
+|Download responses|All components| All components| Text, visualizations, and tabular data|
 |**Data and Metrics**|
 |Create projects | ✓ | ✓ | ✓ |
 |[Cloud]{: tag-blue} Import/export projects | ✓ | ✓ | ✓ |
-|Create metrics | ✓ | ✓ | ✓ |
+|Create metrics | ✓ | ✓ | ✓ | 
 |Upload files | ✓ | ✓ | ✓ |
 |Manage semantic data models | ✓ | ✓ | ✓ |
 |Publish metrics to Metrics catalog | ✓ | ✓ | x |
@@ -78,4 +83,3 @@ Action |Administrator | Data analyst | Analytics consumer
 |Assign metrics to users | ✓ | ✓ | x |
 |Pin metric to Key metrics from Metrics catalog | ✓ | ✓ | ✓ |
 {: caption="Permissions by role for {{site.data.keyword.wxbia_short}} features" caption-side="bottom"}
-

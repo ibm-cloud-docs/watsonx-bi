@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-28"
+lastupdated: "2026-02-06"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -93,9 +93,6 @@ For example, if an asset is about product sales or revenue, column identifier �
 
 On the other hand, when multiple fact metrics come into play (for example, revenue + planned revenue in a single metric definition with a shared time dimension), having more general temporal column identifiers might be beneficial.
 
-#### Updating column identifiers
-{: #col_identifier}
-
 To change the column identifier in a metric definition:
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
@@ -119,6 +116,7 @@ To change the column identifier in a metric definition:
 
 7. Select the metric definition that you just made changes to and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
+
 ### 2. Add column labels and descriptions
 {: #tip_desc}
 
@@ -129,9 +127,6 @@ Make sure that you add a label and description for metric columns in the semanti
 2. User-defined in the metadata enrichment asset
 
 3. AI-suggested or generated in the metadata enrichment asset
-
-#### Writing a strong description 
-{: #strong_desc}
 
 Ensure that the label and description are worded based on your business context and how users will likely ask questions.
 
@@ -149,8 +144,7 @@ Reflect user language preferences
   
 :   If you want AI to use "Cost of goods sold" column to answer questions about "Cost breakdown", then add that phrase to the description of the column.
 
-#### Adding column labels and descriptions in the semantic data model
-{: #add_labels_desc_semantics}
+To add column labels and descriptions in the semantic data model, follow these steps:
 
 1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
 
@@ -200,12 +194,10 @@ To add or modify instructions for a metric:
 
 This field supports plain text and a maximum of 10,000 characters. You can also add your instructions in Markdown though plain text is preferred for clarity. 
 
-#### How AI instructions are used
+#### How AI instructions are used 
 {: #use_instructions}
 
-The instructions that you provide, apply to only the metric where the instructions are defined. 
-
-Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
+The instructions that you provide, apply to only the metric where the instructions are defined. Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
 
 - Your dataset uses business‑specific terminology that differs from column names
 
@@ -235,13 +227,13 @@ The instructions that you provide in watsonx BI are for AI systems, not humans. 
 |Avoid conflicting rules|Ensure the instructions do not contradict each other. Review them together for alignment.|
 |Don’t assume prior knowledge and define all required formulas and logic explicitly| Use: “Calculate margin as (Total Gross Profit / Total Revenue) × 100.”<br><br> Avoid: “Use the standard margin calculation.” |
 {: caption="Best practices for writing AI instructions"}
-  
+
 
 #### Examples of AI instructions
 {: #examples_ai_instructions}
 
-**Calendar or season logic**
 
+**Calendar or season logic**
 ```
 Treat “current year” as the latest CalendarYear available in the data.
 
@@ -256,7 +248,6 @@ Use these definitions when users reference seasons.
 {: codeblock} 
 
 **Fiscal year interpretation**
-
 ```
 The fiscal year starts in April and ends in March of the following calendar year.
 When users reference a fiscal year (for example, FY2023), interpret it as April 2022–March 2023.
@@ -285,7 +276,6 @@ For data/time based analysis, use date_hired if the question is related to new e
 {: codeblock}
 
 **Use instructions for semi-additive measures**
-
 If you have a semi-additive measure in your data, such as headcount or inventory, which cannot always be aggregated, you can add these to **AI instructions and context** field to use the appropriate calculation based on the time dimension. 
 
 For example, you might have headcount data on a monthly basis but if you want the headcount for the year, you cannot add monthly headcount to get the yearly total. In this case, the value from the last month of the year would yield the correct yearly headcount. 
@@ -296,6 +286,9 @@ You can include a description instructing the AI on how to calculate headcount f
 Use this employee_num for yearly headcount. The headcount for 2025 is the total headcount for December 2025.
 ```
 {: codeblock}
+
+For more examples, see [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.
+
 
 ### 5. Remove unnecessary columns from the data
 {: #tip_remove}
@@ -308,16 +301,18 @@ If you have multiple language-specific versions of the same column, such as the 
 
 ![Edit calculation to create a unified column](images/edit_calcs_create_column.png){: caption="A calculations displays in the Expression editor." caption-side="bottom"}
 
-### 6. Data quality matters
+
+### 6. Ensure data quality 
 {: #tip_quality}
 
 Ensure that column values are correct and relevant.
 
-Sampled column values are used by the LLM to construct well-formed filters. When you ask a question, watsonx BI’s NER step extracts filter values from the question, converts them into embeddings, and compares the filter embeddings with the columns’ sampled embeddings that are stored in Cloud Object Storage. The matched sampled columns feed in to the prompt to help the LLM craft appropriate filter expressions, which are used in the WHERE clause of the final query statement.
+Sampled column values are used by the LLM to construct well-formed filters. When you ask a question, watsonx BI’s NER step extracts filter values from the question, converts them into embeddings, and compares the filter embeddings with the columns’ sampled embeddings that are stored in Cloud Object Storage (COS). The matched sampled columns feed in to the prompt to help the LLM craft appropriate filter expressions, which are used in the WHERE clause of the final query statement.
 
 For example, if a metric definition contains a “MONTH_NAME” column, the sampled values from that column should only contain valid month names.
 
-### 7. Using column expressions for abstracting complex logic
+
+### 7. Use column expressions for abstracting complex logic
 {: #tip_expressions}
 
 Use column expressions for calculations or transformations that encapsulate complex logic.
@@ -333,7 +328,8 @@ Let’s say you have a "Status" column with multiple cell values like "Todo", "I
 Give your expressions column identifiers that map to how your users will reference the data. For example, the "Is_open" expression we created, is a good name if this is how users refer to open or closed items. However, if users generally refer to items as active or inactive items then "Is_active" would be a better name.
 {: tip}
 
-### 8. Using column expressions to filter data
+
+### 8. Use column expressions to filter data
 {: #tip_exp_filter}
 
 Use column expressions to filter out unnecessary data from the metric definition before exporting it to create or update a metric.

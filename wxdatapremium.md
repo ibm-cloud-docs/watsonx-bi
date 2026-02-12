@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-23"
+lastupdated: "2026-02-10"
 
 keywords: watsonx.data premium
 subcollection: watsonx-bi
@@ -16,17 +16,24 @@ subcollection: watsonx-bi
 
 IBM watsonx.data Premium is an open, hybrid, and governed lakehouse optimized for AI and analytics, which combines data from multiple sources. By integrating {{site.data.keyword.wxbia_short}} with watsonx.data Premium, you can use natural language to analyze your data from watsonx.data Premium to get actionable, easy to understand insights. {: #shortdesc}
 
+This feature is available in IBM Software Hub versions 5.3 and higher. 
+{: note}
+
 ## Prerequisites
 {: #wxdpremium_prerequisites}
 
 - A working {{site.data.keyword.wxbia_short}} environment on IBM Software Hub 5.3
+
 - A working watsonx.data Premium environment
+
 - A [role in your BI community](/docs/watsonx-bi?topic=watsonx-bi-roles-swh){: external}
 
 To get familiar with watsonx BI, review these resources:
 
 - [About watsonx BI's user interface](/docs/watsonx-bi?topic=watsonx-bi-user_interface){: external}
+
 - [Key concepts in creating metrics](/docs/watsonx-bi?topic=watsonx-bi-concepts){: external}
+
 - [An overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}
 
 ## Accessing {{site.data.keyword.wxbia_short}} from watsonx.data Premium

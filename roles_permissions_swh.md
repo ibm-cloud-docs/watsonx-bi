@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-12"
 
 keywords: roles, permissions, software hub
 subcollection: watsonx-bi
@@ -13,7 +13,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 # Roles and permissions for {{site.data.keyword.wxbia_short}} on IBM Software Hub
-{: roles-swh}
+{: #roles-swh}
 
 As a {{site.data.keyword.wxbia_short}} user in IBM Software Hub, you have different permissions based on your assigned role. 
 {: #shortdesc}
@@ -95,4 +95,3 @@ Use only the existing roles in the BI community. Do not create any new roles for
 1. In the **Business Intelligence** perspective, click the **Settings > Configuration and settings** to open the **Manage BI community** tab.
 
 1. Click the name of the user whose role you want to change and assign the new role.
-

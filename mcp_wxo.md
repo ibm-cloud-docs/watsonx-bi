@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-29"
+lastupdated: "2026-02-09"
 
 keywords: mcp, model context protocol, watsonx Orchestrate
 subcollection: watsonx-bi
@@ -58,10 +58,14 @@ Before you use the remote MCP server, make sure that you have the following:
 - AI agent framework that supports the MCP protocol
 
 - A working environment of watsonx BI with:
-   - At least one project 
-   - Enriched data assets  
-   - AI model - Meta Llama 4 and IBM Granite-3-8b-instruct with [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external} 
 
+   - At least one project 
+
+   - Enriched data assets  
+
+   - AI model - Any large language model (LLM) with [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external} 
+
+   
 
 ## Connecting to the remote MCP Server
 {: #connect_mcp}
@@ -101,11 +105,14 @@ npx -y mcp-remote https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp --header x-
 The watsonx BI remote MCP server integrates with IBM watsonx Orchestrate. For more information, see the following: 
 
 -	[MCP servers in IBM watsonx Orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=tools-mcp-servers){: external}
+
 -	[Importing tools from an MCP server in watsonx Orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=servers-importing-tools-from-mcp-server#import-tools-MCP-server){: external}
 
 ## Limitations of remote MCP Server
 {: #limitations_mcp}
 
 -	Supports business intelligence queries only; asset overview questions are not supported
+
 -	Responses are textual and include tabular data only
+
 -	Visualizations are not supported
