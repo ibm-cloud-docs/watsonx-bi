@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, "2026"
+lastupdated: "2026-02-24"
 
 keywords: categories
 subcollection: watsonx-bi
@@ -92,3 +92,4 @@ When you create a primary category, it has these users by default:
 
 You can add or remove collaborators in the **About this category** pane or on the **Access control** tab.
 
+For more information about adding and removing collaborators, see [Managing access to a collaborator](/docs/watsonx-bi?topic=category-collab){: external}.

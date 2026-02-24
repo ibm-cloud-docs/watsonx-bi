@@ -82,7 +82,11 @@ toc:
           label: Preparing data for AI
           topics:
           - governance.md
-          - categories.md
+          - topicgroup:
+              label: Categories
+              topics:
+              - categories.md
+              - managing_category_collab.md
           - business_terms.md
           - classifications.md
           - data_classes.md
@@ -182,6 +186,7 @@ toc:
           label: Troubleshooting
           topics:
           - troubleshoot_new_conversation.md
+          - troubleshoot_import_export.md
       - link:
           label: Getting started with IBM Cloud
           href: https://www.ibm.com/cloud/get-started
@@ -190,6 +195,7 @@ toc:
       topics:
       - responsibilities.md
       - ha-dr.md
+      - import_export_reference.md
       - topicgroup:
           label: Supported connectors
           topics:
