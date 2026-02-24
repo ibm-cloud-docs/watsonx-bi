@@ -1,7 +1,8 @@
+
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-02-20"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -120,4 +121,3 @@ You can customize the existing governance framework in {{site.data.keyword.wxbia
 - **Classifications** - [Classifications](/docs/watsonx-bi?topic=watsonx-bi-classifications) describe specific characteristics of the meaning of data. Predefined classifications describe the sensitivity of the data. You can create classifications to describe other characteristics of data or other governance items. 
 
 - **Reference data sets** - [Reference data sets](/docs/watsonx-bi?topic=watsonx-bi-reference_data) define standard values for specific types of data to classify data and measure consistency.They act as lookup tables that map codes and values. You can include a reference data set in the definition of a data class as part of the data matching criteria. 
-

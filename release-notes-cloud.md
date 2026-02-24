@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-02-06"
+  years: 2025, 2026
+lastupdated: "2026-02-23"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -11,6 +11,7 @@ subcollection: watsonx-bi
 content-type: release-note
 
 ---
+
 
 
 

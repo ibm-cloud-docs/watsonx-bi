@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-09"
+lastupdated: "2026-02-20"
 
 keywords: mcp, model context protocol, watsonx Orchestrate
 subcollection: watsonx-bi
@@ -74,6 +74,13 @@ Use the following **endpoint** to connect your AI agent to the watsonx BI remote
 
 [https://dataplatform.cloud.ibm.com/wxbi/v1/mcp](https://dataplatform.cloud.ibm.com/wxbi/v1/mcp){: external}
 
+You can also use: 
+
+[https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp](https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp) {: external}
+
+
+### Example install command
+
 You can use the following **install command** to quickly connect to the remote MCP server:
 
 ```
@@ -82,7 +89,8 @@ npx -y mcp-remote https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp --header x-
 ``` 
 {: codeblock}
 
-### Example install command
+Or use this command:
+
 ```
 "wxbi-mcp-server": {
    "command": "npx",
@@ -98,6 +106,7 @@ npx -y mcp-remote https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp --header x-
 }
 ```
 {: codeblock}
+
 
 ## Integrating with IBM watsonx Orchestrate
 {: #integration_orchestrate}

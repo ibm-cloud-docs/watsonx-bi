@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-13"
 
 keywords: edit metric
 subcollection: watsonx-bi
@@ -21,7 +21,7 @@ subcollection: watsonx-bi
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
 
-# Edit metrics
+# Editing metrics
 {: #edit_metrics}
 
 You can edit existing metrics in the **Advanced mode**. You cannot edit measures or add measures to the metric definition of an existing metric. You need to create a new metric to add more measures or change measures. {: #shortdesc}
@@ -38,4 +38,4 @@ Open your semantic data model from the **Data and Metrics** tab and then follow 
 
 6. Click the menu icon next to the metric that you edited and select **Export metric definition** to export the changes to the project. 
 
-The edited metric definition exports to the project and you can now start asking questions about the metric. 
+The edited metric definition exports to the project and updates the existing metric. 
