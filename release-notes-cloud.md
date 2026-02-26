@@ -54,7 +54,7 @@ Cognos Analytics data modules now supported as a data source and improved connec
 
 :   In addition, sync behavior has been improved to help semantic data models stay aligned with source changes. Updates to FM packages are applied automatically, while data modules prompt you to resync whenever changes are detected in the underlying source.
 
-For more information, refer to [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}. 
+:   For more information, refer to [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}. 
 
 :    Integration with Cognos Analytics, is a Technology Preview feature in watsonx BI. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
 {: important} 
