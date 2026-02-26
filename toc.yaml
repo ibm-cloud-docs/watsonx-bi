@@ -64,7 +64,7 @@ toc:
           topics:
           - wxdata.md
           - wxdatapremium.md
-          - cognos.md
+          - cognos_new.md
           - supported_connectors.md
           - satellite_connector.md
           - mcp_wxo.md

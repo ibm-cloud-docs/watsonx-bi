@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-24"
+lastupdated: "2026-02-26"
 
 keywords: import project, export project
 subcollection: watsonx-bi
@@ -90,9 +90,10 @@ Jobs cannot be imported.
 
 An asset is an item that contains information about data, other valuable information, or code that works with data. Assets in projects include data assets, semantic data models, visualizations, and others.
 
-For more information, see [Assets](/docs/watsonx-bi?topic=concepts){: external}.
+For more information, see [Assets](/docs/watsonx-bi?topic=watsonx-bi-concepts#assets_types){: external}.
 
 ## Exported file contents
+{: #export_file_contents}
 
 When you export a project as a .zip file, it contains the following items:
 
@@ -159,6 +160,7 @@ Each asset type JSON file contains:
 Assets core asset types, business intelligence asset types, extended asset types, and advanced asset types.
 
 Core asset types are the foundation of projects, which include the essential components that are required for data connectivity, modeling, and processing. Core assets types provide the structural backbone that enables all other {{site.data.keyword.wxbia_short}} functions. Core asset types include:
+
 - Database connection definitions.
 - Data asset schema with fields, relationships, and localization.
 - Semantic data model schema with BI-specific fields. 
@@ -169,6 +171,7 @@ Core asset types are the foundation of projects, which include the essential com
 - Job execution schema. 
 
 Business intelligence asset types are designed for interactive analytics, conversational AI, and visualization capabilities within {{site.data.keyword.wxbia_short}}. Business intelligence asset types enable users to ask natural language questions, generate insights, create visualizations, and maintain context across analytical sessions, forming the user-facing intelligence layer of the platform. Business intelligence asset types include:
+
 - Business intelligence question schema. 
 - Vector store schema. 
 - Business intelligence visualization schema. 
@@ -176,6 +179,7 @@ Business intelligence asset types are designed for interactive analytics, conver
 - Conversation schema. 
 
 Extended asset types provide advanced data governance, profiling, and analytical capabilities that enhance the core {{site.data.keyword.wxbia_short}} functions. Extended asset types are useful for data quality initiatives, deeper analytical exploration, and better understanding of data characteristics and relationships. Extended asset types include:
+
 - A term assignment schema. 
 - An assignment profile schema. 
 - A bivariate analysis schema. 
@@ -185,25 +189,10 @@ Extended asset types provide advanced data governance, profiling, and analytical
 - A column metadata schema. 
 
 Advanced asset types extend {{site.data.keyword.wxbia_short}} capabilities by integrating with broader IBM components and aiding in complex data science and engineering workflows. Advanced assets types help you build data and AI pipelines, integrate with enterprise data platforms, and are used in advanced use cases that require machine learning, custom scripting, or complex data transformations. Advanced asset types include: 
+
 - IBM Watson machine-learning assets, such as models, deployments, experiments, and pipelines.
 - Data integration assets, such as flows, jobs, and components.
 - Logical and physical model assets.
 - Notebook and script assets.
 - Document and library assets.
 - Environment and specification assets.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

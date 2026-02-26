@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "26 February 2026",
+        "title": "IBM Cognos Analytics data modules and row-level security through User filters now supported"
+      },
+      {
         "date": "5 February 2026",
         "title": "Watsonx BI as a Service updated with new features and enhancements"
       },

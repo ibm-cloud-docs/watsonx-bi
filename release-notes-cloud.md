@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-23"
+lastupdated: "2026-02-26"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -16,15 +16,57 @@ content-type: release-note
 
 
 
-
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Release notes for {{site.data.keyword.wxbia_short}} as a Service (on IBM Cloud)
 {: #my-service-relnotes_saas}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
-{: shortdesc}
+{: #shortdesc}
+
+
+## 26 February 2026
+{: #subcollection-feb2626}
+{: release-note}
+
+Apply user filters for row-level security
+
+:   User filters are now available to help protect sensitive data in metrics. Administrators and Data analysts can define conditions on a metric definition in the semantic data model to ensure that users see only the data they have permissions to access.
+
+:   When a user views a metric, the values are calculated only from the rows they’re allowed to see, based on the filters applied.
+
+:   For more information, see [Manage access to data with User filters](/docs/watsonx-bi?topic=watsonx-bi-user_filters){: external}.
+
+
+Cognos Analytics data modules now supported as a data source and improved connection process
+
+:   You can now use Cognos Analytics data modules as a data source in {{site.data.keyword.wxbia_short}}. This enhancement expands support beyond Framework Manager (FM) packages and lets you create and semantic data models metrics using your existing data modules. 
+
+:   Data modules that use uploaded files and database tables as data source are supported. Data modules that use FM packages as a source are not supported.
+
+:   The experience for connecting to Cognos Analytics and importing a package has also been improved. You can now:
+
+:   - Create and test a Cognos Analytics connection directly during data selection
+
+:   - Choose either an FM package or a data module from your Cognos environment
+
+:   - Automatically populate your semantic data model with Cognos metadata and governance rules
+
+:   In addition, sync behavior has been improved to help semantic data models stay aligned with source changes. Updates to FM packages are applied automatically, while data modules prompt you to resync whenever changes are detected in the underlying source.
+
+For more information, refer to [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}. 
+
+:    Integration with Cognos Analytics, is a Technology Preview feature in watsonx BI. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important} 
+
+Improvements to Conversation history
+
+:   You can now delete multiple conversations at once using the new **Toggle selection mode** button in the **Conversations** panel.
+
+:   To multi‑select conversations, expand the panel, select **Toggle selection mode**, choose the conversations you want to remove, and delete them in one action.
+
+:   A new search feature also lets you quickly find conversations. Simply type a keyword into the search box to locate conversations with that keyword in the title.
+
 
 ## 5 February 2026
 {: #subcollection-feb526}

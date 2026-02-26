@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-02-25"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ You can add a connection or, if you previously connected to a database in the pr
 
 1. Click **Create metrics** on the **Data and Metrics** tab and enter a name for the new semantic data model.
 
-2. On the **Select data** page, select **New connection**. 
+2. On the **Select data** page, select **Create a new connection**. 
 
 3. Select the data source type and connector that you want to use. 
 
@@ -43,7 +43,9 @@ You can add a connection or, if you previously connected to a database in the pr
 
 7. Select the schema and data tables that you want to use and click **Add**.
 
-8. (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
+8. Review the selected data. 
+
+   (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
 
 9. Click **Next** to move to the next step, which is [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.  
 
@@ -52,15 +54,23 @@ You can add a connection or, if you previously connected to a database in the pr
 
 1. Click **Create metrics** on the **Data and Metrics** tab and enter a name for the new semantic data model. 
 
-2. Select **Existing connection** on the **Select data** page. 
+2. Select **Use an existing data source** on the **Select data** page. 
 
 3. Select the database connection name.
 
 4. Select the schema and data tables that you want to use and click **Add**.
 
-5. (Optional) Add more data through a new or existing connection from the **Select data** list. 
+5. Review the selected data. 
+
+   (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
 
 6. Click **Next** to move to the next step, which is metadata enrichment.
+
+## Using an IBM Cognos Analytics data source
+{: #use_ca_source}
+
+You can use a Framework Manager package (FM package) or a Data module from IBM Cognos Analytics as a data source in watsonx BI, without having to recreate existing data models.  For more information, see [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}. 
+
 
 ## Supported connectors
 {: #supported_connectors}
@@ -70,7 +80,7 @@ The following data sources are supported.
 - [Amazon Redshift](/docs/watsonx-bi?topic=watsonx-bi-amazon_redshift){: external}
 - [Dremio](/docs/watsonx-bi?topic=watsonx-bi-dremio){: external}
 - [Google BigQuery](/docs/watsonx-bi?topic=watsonx-bi-google_big_query){: external}
-- [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} 
+- [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} [Preview]{: tag-teal} 
 - [IBM Db2](/docs/watsonx-bi?topic=watsonx-bi-db2){: external}
 - [IBM Informix](/docs/watsonx-bi?topic=watsonx-bi-informix){: external}
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 

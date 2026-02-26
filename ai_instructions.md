@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-06"
+lastupdated: "2026-02-26"
 
 keywords: ai instructions, business logic, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -50,7 +50,7 @@ The instructions that you provide in watsonx BI are for AI systems, not humans. 
 | Best practice | Details |
 |-------|-------------|
 |Enter context-specific instructions only|Enter instructions or helpful context directly into the field without an introduction. <br> <br> Avoid: "Follow these rules" or "These are instructions you must follow for every question." | 
-|Define the exact behavior and avoid vague directions| To reference columns, remember to use the column identifier. <br><br> Use: “Always include retailer_city and retailer_type_en.” <br><br>Avoid: “Include relevant columns”|
+|Define the exact behavior and avoid vague directions| **Tip: To reference columns, remember to use the column identifier.** <br><br> Use: “Always include retailer_city and retailer_type_en.” <br><br>Avoid: “Include relevant columns”|
 |Use consistent terminology|For example, if you choose a term such as “current,” use it consistently throughout the instructions.|
 |Avoid conflicting rules|Ensure the instructions do not contradict each other. Review them together for alignment.|
 |Don’t assume prior knowledge and define all required formulas and logic explicitly| Use: “Calculate margin as (Total Gross Profit / Total Revenue) × 100.”<br><br> Avoid: “Use the standard margin calculation.” |
@@ -80,6 +80,7 @@ Use these definitions when users reference seasons.
 
 ```
 The fiscal year starts in April and ends in March of the following calendar year.
+
 When users reference a fiscal year (for example, FY2023), interpret it as April 2022–March 2023.
 ```
 {: codeblock}
@@ -105,7 +106,9 @@ AND EXTRACT(year FROM month_end_date) = 2025
 ### Date and time-based filtering
 {: #date_filtering}
 ````
-For data/time based analysis, use date_hired if the question is related to new employees or promotions. Use termination date for attrition related questions.
+For data/time based analysis, use date_hired if the question is related to new employees or promotions. 
+
+Use termination date for attrition related questions.
 ````
 {: codeblock}
 
@@ -114,10 +117,14 @@ For data/time based analysis, use date_hired if the question is related to new e
 
 ````
 Include only **Active (A)** employees with **Agreement Code in {XX, ZZ}**; exclude **YY** unless explicitly requested.  
+
 Contractors are not present in the dataset.
 Apply **no org filters** when users reference *Organization* without an organizational qualifier.  
+
 For **Job Profile Name** and **Primary Job Role**, exclude **null** values from results and groupings.  
+
 For **Separation** analysis, use only employees with **Status = N** and **non-null** separation fields.  
+
 Do not infer **Region** or **Geography** when explicit fields are present; match directly.
 ````
 {: codeblock}
@@ -125,7 +132,8 @@ Do not infer **Region** or **Geography** when explicit fields are present; match
 ### Geography and region
 
 ```
-Geography values: **EMEA, Americas, APAC, Japan**.  
+Geography values: **EMEA, Americas, APAC, Japan**.
+
 Region values: **Canada, LA, US, GCG, Italy, DACH, MEA, UKI, ASEAN, Korea, NCEE, SPGI, France, AU/NZ, ISA, Japan**.
 ```
 {: codeblock}

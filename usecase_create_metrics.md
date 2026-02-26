@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-25"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -47,11 +47,16 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
 
 4. [Select the data](/docs/watsonx-bi?topic=watsonx-bi-select){: external} that you want to work with. 
 
-   a. New connection - Connect to your remote data by creating and testing a new connection.
+   a. Create a new connection - Connect to your remote data by creating and testing a new connection.
    
-   b. Existing data source - Connect to your remote data with an existing connection or choose an existing data asset such as an [uploaded file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}. 
+   b. Use an existing data source - Connect to your remote data with an existing connection or choose an existing data asset such as an [uploaded file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}. 
+
+   c. Use an [IBM Cognos Analytics data source](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} - Connect to your Cognos Analytics environment and import an FM package or Data module to work with.
 
 5. Click **Next** to continue to metadata enrichment.
+
+   If you are using a Cognos Analytics data source, metadata enrichment is skipped. You are taken instead directly to [Step 3: Creating metrics and data modeling](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview#create_metrics_model).
+   {: note}
 
 ## Step 2: Metadata enrichment
 {: #enrich_metadata_metrics}
@@ -77,7 +82,7 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
 
 8. Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
 
-## Step 3: Creating metrics and data modeling
+## Step 3: Creating metrics and data modelling
 {: #create_metrics_model}
 
 9. You are now on the **Metrics overview** page and can create metrics by:
@@ -154,4 +159,3 @@ If you want certain metrics to display in a user's **Key metrics**, you need to 
 
   To add new users and groups, click **Add members**.
   {: note}
-

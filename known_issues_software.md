@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-26"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -206,7 +206,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
  Due to the introduction of new roles in IBM Software Hub Version 5.3.0, the roles of User, Data Steward, and Administrator no longer apply to watsonx BI users. If you had any of these roles, you might lose access to your watsonx BI community.
 
  Workaround: 
- A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](www.ibm.com/docs/en/SSNFH6_5.3.x?topic=setup-post-installation-watsonx-bi).
+ A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=upgrading-post-upgrade-setup).
 
 **Analytics consumers are unable to create metrics**
   
@@ -283,4 +283,3 @@ This feedback feature is only available in watsonx BI as a Service.
 **All watsonx.data Premium assets must go through the watsonx.data metric creation flow**
 
 Metadata enrichment in watsonx.data Premium does not prepare assets for use in watsonx BI. To use watsonx.data Premium assets in watsonx BI, you must go through the watsonx BI metric creation flow. If you import a project from the watsonx.data experience, any metrics in this project cannot be used with Business Intelligence tools.
-
