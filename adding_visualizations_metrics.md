@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-26"
+lastupdated: "2026-03-05"
 
 keywords: adding visualizations, visualizations, metrics
 subcollection: watsonx-bi
@@ -72,7 +72,7 @@ Box plot
 
 Bubble
 
-:   Use a bubble visualization to show relationships among columns that contain numeric values, such as revenue and profit. A bubble visualization uses data points and bubbles to plot measures anywhere along a scale. One measure is plotted along each axis. The size of the bubble represents a third measure. Use bubble visualizations to represent financial data or any data where measure values are related.
+:   Use a bubble visualization to show relationships among columns that contain numeric values, such as revenue and profit. A bubble visualization uses data points and bubbles to plot measures anywhere along a scale. One measure is plotted along each axis. The area of the bubble represents a third measure. Use bubble visualizations to represent financial data or any data where measure values are related.
 
 Bullet
 
@@ -88,7 +88,7 @@ Crosstab
 
 Driver analysis
 
-:   A driver analysis visualization shows you the key drivers, or predictors, for a target. The closer the driver is to the right, the stronger that driver is.
+:   A driver analysis visualization shows you the key drivers, or predictors, for a target. 
 
 Dual axis line
 
@@ -128,11 +128,11 @@ Network
 
 Packed bubble
 
-:   Packed bubble visualizations display data in a cluster of circles. A packed bubble visualization uses sizable plotted points, also known as bubbles, to show the relationship between two data sets. The size of the bubble corresponds to the value or proportion of data. There is no positional axis and the bubbles are arranged in a random cluster. Packed bubble visualizations help convey data that contains many groups and categories.
+:   Packed bubble visualizations display data in a cluster of circles. A packed bubble visualization uses sizable plotted points, also known as bubbles, to show the relationship between two data sets. The bubble’s area reflects the value or proportion of the data.There is no positional axis and the bubbles are arranged in a random cluster. Packed bubble visualizations help convey data that contains many groups and categories.
 
 Pie
 
-:   Pie visualizations highlight proportions. Each slice shows the relative relationship of each part to the whole. The bigger the size of a slice, the higher the percentage of the whole it represents. Pie charts are suitable to use with both nominal and categorical data sets.
+:   Pie visualizations highlight proportions. Each slice shows the relative relationship of each part to the whole. A slice that takes up more of the chart corresponds to a higher share of the total. Pie charts are suitable to use with both nominal and categorical data sets.
 
 Point
 
@@ -144,7 +144,7 @@ Radar
 
 Radial
 
-:   In a radial visualization, each bar appears in a circle with longer bars that represent larger values. Each bar starts at 12 noon and goes in a clockwise direction for positive values and counterclockwise for negative values. Radial visualizations, also known as dial charts or speedometer charts, show information as reading on a dial. The radial visualization is valid only with one category.
+:  In a radial visualization, each bar appears along a circle, with longer bars representing higher values. Each bar starts at 12 noon and goes in a clockwise direction for positive values and counterclockwise for negative values. Radial visualizations, also known as dial charts or speedometer charts, show information as reading on a dial. The radial visualization is valid only with one category.
 
 Scatter
 
@@ -172,7 +172,7 @@ Table
 
 Tree map
 
-:   Use a tree map visualization to identify patterns and exceptions in a complex data asset. Treemaps show relationships among large numbers of components by using size and color coding in a set of nested rectangles.
+:   Use a treemap visualization to identify patterns and exceptions in a complex data asset. Treemaps show relationships among many components by using the area of each rectangle and color coding within a nested layout.
 
 Word cloud
 

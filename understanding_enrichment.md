@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords: key concepts, understanding metadata enrichment, semantics
 subcollection: watsonx-bi
@@ -66,7 +66,7 @@ During this process, watsonx BI uses AI to automatically assign business terms, 
 
 Once enrichment completes, you can review, accept, or edit the AI-generated suggestions before they’re applied to the semantic data model.
 
-You need to accept or edit AI-generated suggestions before they can be used in the semantic data model. If watsonx BI has more than 80% confidence that an AI-generated description is correct, it uses the description in the conversation automatically, even without explicit user approval. If the confidence score is below 80%, watsonx BI ignores the AI description and relies on existing metadata instead. 
+You need to accept or edit AI-generated suggestions before they can be used in the semantic data model. If watsonx BI has more than 80% confidence that an AI-generated description is correct, it uses the description in the conversation automatically, even without explicit user approval. If the confidence score is less than 80%, watsonx BI ignores the AI description and relies on existing metadata instead. 
 {: note}
 
 Since these enriched base assets serve as the foundation for the semantic data model and any metrics derived from it, it is worth dedicating time reviewing the metadata enrichment results to ensure that the following metadata is accurate and meaningful: 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-26"
+lastupdated: "2026-03-05"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Chain of Thought reasoning
 {: #choose_llm}
 
-[Preview]{: tag-teal} Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b  option. With Chain of Thought reasoning, watsonx BI generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
+[Preview]{: tag-teal} Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b option. With Chain of Thought reasoning, {{site.data.keyword.wxbia_short}} generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
 
 
 This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}} as a Service. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
@@ -43,7 +43,7 @@ Chain of Thought reasoning ensures that the LLM interprets the relationships, or
 ## How Chain of Thought works
 {: #reasoning}
 
-When a response is generating in watsonx BI, you can view the reasoning steps that are in progress. You can also click **Reasoning...** to view more details about how Chain of Thought is deriving the answer. 
+When a response is generating in {{site.data.keyword.wxbia_short}}, you can view the reasoning steps that are in progress. You can also click **Reasoning...** to view more details about how Chain of Thought is deriving the answer. 
 
 After the response is generated, you can view the reasoning steps and explanation by clicking **Show AI steps**. 
 
@@ -63,11 +63,11 @@ Reasoning steps and explanation can include:
 
 - Live data for the query, which allows you to see the same logic replayed on the current data state. This means that the live data might differ from the original data used if the underlying data has changed.
 
-A key differentiator with Chain of Thought is that the steps needed to answer a question might vary. You will see only those steps that were required to answer the question and you might see the same step more than once if watsonx BI determines that it needs to re-evaluate a previous choice. 
+A key differentiator with Chain of Thought is that the steps needed to answer a question might vary. You will see only those steps that were required to answer the question and you might see the same step more than once if {{site.data.keyword.wxbia_short}} determines that it needs to re-evaluate a previous choice. 
 
 Additionally, Chain of Thought can also reuse information from a previous question.
 
-With Chain of Thought, watsonx BI also determines the best way to present the results as a visualization, a text response, or both.
+With Chain of Thought, {{site.data.keyword.wxbia_short}} also determines the best way to present the results as a visualization, a text response, or both.
 
 ### Disambiguating filter names and values
 {: #disambiguating_cot}
@@ -76,15 +76,15 @@ Sometimes a question can be ambiguous, meaning more than one column could match 
 
 In these cases, you can check which column the AI selected in the reasoning steps. If the choice isn’t what you intended, ask the AI to reconsider. For example, if you ask, *How many units were sold in 2025?* and the AI uses SALE_DATE, you can correct it by saying:
 
-- *What about by payment date?*
+- What about by payment date?
 
-- *Use payment date instead of sale date*
+- Use payment date instead of sale date
 
-- *I mean payment date, not sale date*
+- I mean payment date, not sale date
 
 You can also include more context in your original question:
 
-- *How many units were paid for in 2025?*
+- How many units were paid for in 2025?
 
 ### Current response behaviour
 {: #limitations_cot}
@@ -99,4 +99,4 @@ Chain of Thought introduces advanced reasoning capabilities, and its responses m
 
 - Visualization titles -  Titles are generated automatically as part of AI reasoning. 
 
-- Data availability question - When you ask “What data do I have available to me?”, Chain of Thought provides a more detailed response. It provides a list of metrics and tables in the project, along with descriptions for each to help you understand your data context.
+- Data availability question - When you ask *What data do I have available to me?*, Chain of Thought provides a more detailed response. It provides a list of metrics and tables in the project, along with descriptions for each to help you understand your data context.

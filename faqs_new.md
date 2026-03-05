@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
-keywords:
+keywords: FAQs
 
 subcollection: watsonx-bi
 
@@ -46,13 +46,13 @@ Any metrics that you have access to are also available in the **Metrics catalog*
 {: #faq_train_model}
 {: faq}
 
-No. {{site.data.keyword.wxbia_short_cap}} uses large language models (LLM) that are hosted in watsonx.ai to answer questions.
+No. {{site.data.keyword.wxbia_short_cap}} uses AI foundation models or large language models (LLMs) that are hosted in watsonx.ai to answer questions.
 
 ## Can I ask more than one question in one go?
 {: #faq_multiple_questions}
 {: faq}
 
-No, you can ask one only question at a time. However, {{site.data.keyword.wxbia_short}} helps ensure contextual continuity in conversations so you don't have to provide context each time you ask a question. 
+No, you can ask one only question at a time. However, {{site.data.keyword.wxbia_short}} can help ensure contextual continuity in conversations so you do not need to provide context each time you ask a question. 
 
 ## How can I save the charts that are shown in a response?
 {: #faq_save_chart}
@@ -71,4 +71,3 @@ To find your IBM Cloud account owner:
 1. From the **Navigation Menu**, choose **Administration > Access (IAM)**.
 2. From the avatar menu, make sure you're in the right account, or switch accounts, if necessary.
 3. Click **Users**, and find the username with the word **owner** next to it.
-

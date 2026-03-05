@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: sample, questions to ask,
 subcollection: watsonx-bi
@@ -57,7 +57,7 @@ Based on the data in the sample, here are some questions you can ask:
 
 - Can you provide the cost of goods sold by product line?
 
-- What was the average unit price for the 'Camping Equipment' product line in 2021?
+- What was the average unit price for the Camping Equipment product line in 2021?
 
 - What is the total quantity sold using the Online - Retailer order method type?
 
@@ -69,7 +69,7 @@ Based on the data in the sample, here are some questions you can ask:
 
 - Which retailer country had the highest average gross profit?
 
-- How many units of the 'Insect Bite Relief' product were sold in 2021?
+- How many units of the Insect Bite Relief product were sold in 2021?
 
 - What is the planned revenue versus actual revenue for each year?
 

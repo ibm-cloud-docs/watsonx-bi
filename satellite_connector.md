@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords: cognos analytics, cognos, FM
 subcollection: watsonx-bi
@@ -16,26 +16,28 @@ subcollection: watsonx-bi
 # Connecting to on-premises resources with Satellite Connector
 {: #satellite}
 
-You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect {{site.data.keyword.wxbia_short}} as a Service to an on-premises resource. A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premises resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. {: shortdesc}
+You need a [Satellite Connector](https://cloud.ibm.com/docs/satellite){: external} to securely connect {{site.data.keyword.wxbia_short}} as a Service to an on-premises resource. {: #shortdesc}
+
+A Satellite Connector is a deployment model that enables only the secure communications from IBM Cloud to on-premises resources with a light-weight container that is deployed on your container platform hosts, such as Docker hosts. 
 
 ## Prerequisites
 {: #prereq_satellite}
 
 - You must have Administrator access to the Satellite service in IAM access policies (assigned in **Access (IAM) > Users**):
 
-   - Service: Satellite
+  - Service: Satellite
 
-   - Roles and actions: 
+  - Roles and actions: 
 
-      - Satellite Cluster Creator 
-      - Satellite Link Administrator
-      - Satellite Link Source Access Controller
+    - Satellite Cluster Creator 
+    - Satellite Link Administrator
+    - Satellite Link Source Access Controller
 
 - You must be assigned to a user group. The user group name is required to create a Satellite Connector (Resource group field).
 
 - You need to ensure that your environment meets the [minimum requirements](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui#min-requirements){: external} to run the Satellite Connector agent.
 
-### 1. Create a Satellite Connector
+### Step 1: Create a Satellite Connector
 {: #_step1_create_satellite_conn} 
 
 Creating a Satellite Connector is the first step in establishing a connection.
@@ -54,15 +56,15 @@ Creating a Satellite Connector is the first step in establishing a connection.
 
 8. In the **Summary** panel, review your order details, and then click **Create connector**. {: #create-connector-steps}
 
-   You might see an error after creating the connector. You can ignore this error and proceed.
-   {: note}
+  You might see an error after you create the connector. You can ignore this error and proceed.
+  {: note}
 
 Under the list of Connectors, you can see the connector that you created. You might need to click **Refresh** to update the list of connectors
 
-### 2. Create user endpoint
+### Step 2: Create user endpoint
 {: #step2_user__endpoint}
 
-After creating a connector, you must set up an agent.
+After you create a connector, you must set up an agent.
 
 1. Click the connector that you created. 
 
@@ -74,11 +76,11 @@ After creating a connector, you must set up an agent.
 
 5. Enter the following **Resource details** and click **Next**:
 
-      - A name for the endpoint
+   - A name for the endpoint
 
-      - Destination FQDN or IP - enter **w.ibm.com** in this field.
+   - Destination FQDN or IP - enter **w.ibm.com** in this field.
 
-      - Destination port - enter **443** in this field,
+   - Destination port - enter **443** in this field,
 
 6. On the **Protocol** tab, enter **TLS** in the **Source protocol** field and click **Next**.
 
@@ -88,10 +90,10 @@ After creating a connector, you must set up an agent.
 
    This endpoint address is the cloud endpoint to access the on-premises service (such as Cognos Analytics) and is required later. 
 
-### 3. Create a service ID
+### Step 3: Create a service ID
 {: #step3_serviceID}
 
-1. Navigate to Access (IAM) from your Cloud account or from the Navigation menu in {{site.data.keyword.wxbia_short}}. 
+1. Go to to Access (IAM) from your Cloud account or from the Navigation menu in {{site.data.keyword.wxbia_short}}. 
 
 2. Under **Service IDs**, click **Create service ID**.
 
@@ -107,7 +109,7 @@ After creating a connector, you must set up an agent.
 
 6. Download the API key file for use later. This API key is used by the Connector agent.
 
-### 4. Install agent
+### Step 4: Install agent
 {: #step4_inst_agent}
 
 Each Satellite Connector needs at least one agent running on the remote location to establish a secure connection to a data source. You can install the agent as a Docker image.
@@ -118,7 +120,7 @@ You need to ensure that your machine has docker that is installed or snap instal
 
    curl -fsSL https://clis.cloud.ibm.com/install/linux | sh    
 
-2. After installing the ibmcloud CLI, use the following plug-ins:
+2. After you install the ibmcloud CLI, use the following plug-ins:
 
    ```
    ibmcloud plugin install ks
@@ -191,7 +193,7 @@ You need to ensure that your machine has docker that is installed or snap instal
 
 8. Pull the latest version of the published image. 
 
-   docker pull icr.io/ibm/satellite-connector/satellite-connector-agent:latest
+   dockers pull icr.io/ibm/satellite-connector/satellite-connector-agent:latest
 
 9. Run the agent image by viewing the available versions of the agent image: 
 
@@ -223,7 +225,7 @@ You need to ensure that your machine has docker that is installed or snap instal
       {: codeblock}
    
 
-### 5. Verify agent running state
+### Step 5: Verify agent running state
 {: #step5r_veryify_agent}
 
 1. Go to [Satellite - IBM Cloud](https://cloud.ibm.com/satellite/overview){: external} and click **Connectors**. 
@@ -234,20 +236,19 @@ You need to ensure that your machine has docker that is installed or snap instal
 
 3. Go to **User endpoints** to check the endpoint details.
 
-You can also verify through the https://cloud.ibm.com/shell console. Enter: 
+   You can also verify through the https://cloud.ibm.com/shell console. Enter: 
 
-```
-curl https://c-01.private.us-south.link.satellite.cloud.ibm.com:34115/epm/app-dev/bi/v1/disp
-```
-{: codeblock}
+   ```
+   curl https://c-01.private.us-south.link.satellite.cloud.ibm.com:34115/epm/app-dev/bi/v1/disp
+   ```
+   {: codeblock}
 
 If you're connecting to Cognos Analytics on Premises and the response contains **developer.cognos.com**, it indicates that the request to the private endpoint reached your {{site.data.keyword.wxbia_short}} account.
- {: tip}
+{: tip}
 
-### 6. Invite users to your project
+### Step 6: Invite users to your project
 {: #step6_invite}
 
-You can now invite other users to your project. All users in the project can then [create a connection to Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} to import their FM packages. 
+You can now invite other users to your project. All users in the project can then [create a connection to Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} to import their FM packages and data modules. 
 
 For more information, see [Adding collaborators to a project](/docs/watsonx-bi?topic=watsonx-bi-managing_projects){: external}.
-

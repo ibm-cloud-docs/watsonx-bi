@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-26"
+lastupdated: "2026-03-05"
 
 keywords: ai instructions, business logic, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -49,11 +49,11 @@ The instructions that you provide in watsonx BI are for AI systems, not humans. 
 
 | Best practice | Details |
 |-------|-------------|
-|Enter context-specific instructions only|Enter instructions or helpful context directly into the field without an introduction. <br> <br> Avoid: "Follow these rules" or "These are instructions you must follow for every question." | 
-|Define the exact behavior and avoid vague directions| **Tip: To reference columns, remember to use the column identifier.** <br><br> Use: “Always include retailer_city and retailer_type_en.” <br><br>Avoid: “Include relevant columns”|
-|Use consistent terminology|For example, if you choose a term such as “current,” use it consistently throughout the instructions.|
+|Enter context-specific instructions only|Enter instructions or helpful context directly into the field without an introduction. <br> <br> Avoid: *Follow these rules* or *These are instructions you must follow for every question*. | 
+|Define the exact behavior and avoid vague directions| **Tip: To reference columns, remember to use the column identifier.** <br><br> Use: *Always include retailer_city and retailer_type_en*. <br><br>Avoid: *Include relevant columns*.|
+|Use consistent terminology|For example, if you choose a term such as *current*, use it consistently throughout the instructions.|
 |Avoid conflicting rules|Ensure the instructions do not contradict each other. Review them together for alignment.|
-|Don’t assume prior knowledge and define all required formulas and logic explicitly| Use: “Calculate margin as (Total Gross Profit / Total Revenue) × 100.”<br><br> Avoid: “Use the standard margin calculation.” |
+|Don’t assume prior knowledge and define all required formulas and logic explicitly| Use: *Calculate margin as (Total Gross Profit / Total Revenue) × 100*.<br><br> Avoid: *Use the standard margin calculation*. |
 {: caption="Best practices for writing AI instructions"}
   
 ## Examples of AI instructions

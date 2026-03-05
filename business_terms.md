@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2026
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: business terms, glossary, 
 subcollection: watsonx-bi
@@ -30,7 +30,9 @@ You can use business terms to:
 
 - Define relationships with other terms
 
-For example, suppose your company has data that includes personal identification numbers from people in many different countries. The columns that contain personal identification numbers are named with abbreviations of the country-specific terms, for example: "SSN" for US Social Security Numbers, "SIN" for Canadian Social Insurance Numbers, "UID" for Indian Unique Identification Numbers, and so on. You can create a business term named "Personal identification number" and assign it to all of the columns that contain personal identification numbers, to show that the "SSN", "SIN", and "UID" columns contain the same type of information and what that information means. 
+For example, suppose your company has data that includes personal identification numbers from people in many different countries. The columns that contain personal identification numbers are named with abbreviations of the country-specific terms, for example: *SSN* for US Social Security Numbers, *SIN* for Canadian Social Insurance Numbers, *UID* for Indian Unique Identification Numbers, and so on. 
+
+You can create a business term named *Personal identification number* and assign it to all of the columns that contain personal identification numbers, to show that the *SSN*, *SIN*, and *UID* columns contain the same type of information and explains what that information means.
 
 ## Predefined business terms or glossary in {{site.data.keyword.wxbia_short}} 
 {: #predefined_terms}

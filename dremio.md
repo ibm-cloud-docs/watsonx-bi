@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords: dremio
 
@@ -38,6 +38,7 @@ To create the connection, you need these connection details:
   - To connect to Dremio Software, you can use a username and password or you can use a Personal Access Token for authentication. To use a Personal Access Token, select **Port is SSL-enabled** and enter the Personal Access Token. To generate a Personal Access Token, see the instructions [Personal Access Tokens for Dremio Software](https://docs.dremio.com/current/security/authentication/personal-access-tokens/){: external}.
 
 - SSL certificate:
+
   - Select **Port is SSL-enabled** to connect to Dremio Cloud.
 
   - Select **Port is SSL-enabled** and enter an SSL certificate if you want to connect to Dremio Software with SSL.

@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
-keywords:
+keywords: filters, filtering, modelling
 subcollection: watsonx-bi
 
 
@@ -36,7 +36,7 @@ There are two types of filters in semantic data models:
 ## Embedded filters
 {: #embedded}
 
-You can create embedded filters to customize the data that is used in a metric definition. For example, you can filter out data that is irrelevant for certain geographies, time periods, product lines, and so on.
+You can create embedded filters to customize the data that is used in a metric definition. For example, you can filter out data that is irrelevant for certain geographies, time periods, product lines, and more.
 
 Embedded filters can be created for a single column, or for multiple columns in a table. They are defined in a query subject and always apply to the query subject.
 
@@ -47,9 +47,9 @@ Embedded filters can be created for a single column, or for multiple columns in 
 
 - To create a filter for a single column in the table, from the column menu, click **Filter**.
 
-- To create filters for multiple columns in a table, from the table context menu, click **Manage filters**. On the **Filters** tab, select the column for which you want to create the filter, and click **Add a filter**.
+- To create filters for multiple columns in a table, from the table menu, click **Manage filters**. On the **Filters** tab, select the column for which you want to create the filter, and click **Add a filter**.
 
-   The option via expression editor allows you to create a filter by using the expression editor. Specify the filter name, type its expression, and click **OK**. Next, you can either continue adding filters by using this option, or proceed to step 2.
+   This option in the expression editor allows you to create a filter by using the expression editor. Specify the filter name, type its expression, and click **OK**. Next, you can either continue adding filters by using this option, or proceed to step 2.
 
 2. Specify the filter values. The options to select values depend on the column data type.
 
@@ -80,7 +80,7 @@ Semantic data models have a setting that is called **Design mode**, which you ca
 
 Embedded filters have a property that is called **Usage**, which ties into the **Design mode** property for semantic data models. 
 
-When an embedded filter is applied to a metric definition, there are four **Usage** values, which you can use to control when the filter is applied.
+When an embedded filter is applied to a metric definition, you can use the **Usage** values to control when the filter is applied.
 
 - Enabled - The filter is always applied.
 
@@ -90,9 +90,9 @@ When an embedded filter is applied to a metric definition, there are four **Usag
 
 - Design mode - If the query says that it is in design mode then the filter is applied.
 
-When the Design mode setting is toggled for the semantic data model, the design mode filters are executed in modeling. If Design mode is turned off, filters with a usage of design mode are ignored when a query is performed in modeling.
+When the Design mode setting is toggled for the semantic data model, the design mode filters are run in modeling. If Design mode is turned off, filters with a usage of design mode are ignored when a query is performed in modeling.
 
-Filters that use Design mode are always executed in metadata enrichment and to generate suggested questions regardless of whether the semantic data model Design mode is on or off. Filters using Design mode are not used in conversations.
+Filters that use Design mode are always run in metadata enrichment and to generate suggested questions regardless of whether the semantic data model Design mode is on or off. Filters that use Design mode are not used in conversations.
 {: note}
 
 ### Managing embedded filters
@@ -100,7 +100,7 @@ Filters that use Design mode are always executed in metadata enrichment and to g
 
 To edit or remove a filter on a single column or a table: 
 
-1. From the column or table context menu, click **Properties**. 
+1. From the column or table menu, click **Properties**. 
 
 2. On the **Filters** tab, click the filter name to expand the section.
 
@@ -109,7 +109,7 @@ To edit or remove a filter on a single column or a table:
 ## Selectable filters
 {: #selectable}
 
-Selectable filters are pre-defined, optional filters. They exist as distinct objects and only apply to a query if they have been added to the query.
+Selectable filters are pre-defined, optional filters. They exist as distinct objects and apply to a query only if they were added to the query.
 
 The filters suggest possible options to filter data in the semantic data model, but you can also view unfiltered data.
 
@@ -120,15 +120,15 @@ Selectable filters can be created inside a table or outside a table (at the root
 
 1. Open a semantic data model and decide what type of a selectable filter you want to create.
 
-- To create a filter inside a table, from the table context menu, click **Filter**.
+- To create a filter inside a table, from the table menu, click **Filter**.
 
    The Filter option is also available for a folder inside the table, and for the table in the diagram.
 
-- To create a filter outside a table, from the semantic data model context menu, click **Filter**.
+- To create a filter outside a table, from the semantic data model menu, click **Filter**.
    
-    The Filter option is also available for a folder at the root of the semantic data model.
+    The **Filter** option is also available for a folder at the root of the semantic data model.
 
-    The expression editor displays.
+    The expression editor opens.
 
 2. Type the filter name.
 
@@ -138,13 +138,11 @@ Selectable filters can be created inside a table or outside a table (at the root
 
 The filter is added as a stand-alone entry in the semantic model panel with the filter icon before the filter name. 
 
-Filters created at the folder-level are added to the applicable folder.
+Filters that are created at the folder-level are added to the applicable folder.
 
 ### Managing selectable filters
 {: #manage_selectable}
 
-To edit the filter, from the filter context menu, click **Edit filter**. 
+To edit the filter, from the filter menu, click **Edit filter**. 
 
-To remove the filter, from the filter context menu, click **Remove**.
-
-
+To remove the filter, from the filter menu, click **Remove**.

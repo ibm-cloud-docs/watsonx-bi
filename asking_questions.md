@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2026
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: asking questions
 subcollection: watsonx-bi
@@ -25,11 +25,15 @@ When it is unable to interpret your question correctly or your question is ambig
 
 For example, the following input might return a single number or the total number for each city.
 
-> How many units were sold in Tokyo and Beijing?
+```
+How many units were sold in Tokyo and Beijing?
+```
 
 You can clarify your intention by asking: 
   
-> How many units were sold in Tokyo and Beijing by city?
+```
+How many units were sold in Tokyo and Beijing by city?
+```
 
 Before you start conversing with {{site.data.keyword.wxbia_short}}, you can provide context for your business data by [adding business terms or glossaries](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}. Use business terms to define specific terms like "S&S" and "TAM" and codifying that metadata into the semantic layer and the underlying definition of a metric.
 
@@ -65,7 +69,17 @@ Diagnostic questions can help you determine the reason behind changes in your da
 
 {{site.data.keyword.wxbia_short_cap}} understands most synonymous terms and phrases. For example, depending on your metric, the terms sales, revenue, and profit, might resolve to the same information. 
 
-Synonymous terms also apply to many filters and aggregations. You can ask for "top 3 products", "best products", and "products with the most sales". You can also spell out words or use symbols when applicable. For example, "show sales greater than $1000", "show sales > 1k", or "show sales more than 1,000".
+Synonymous terms also apply to many filters and aggregations. For example, you can ask for: 
+
+- top 3 products
+- best products
+- products with the most sales 
+
+You can also spell out words or use symbols when applicable. For example, you can ask:
+
+- show sales greater than $1000 
+- show sales > 1k 
+- show sales more than 1,000
 
 ## Aggregating data
 {: #aggregating}
@@ -115,7 +129,11 @@ You can ask {{site.data.keyword.wxbia_short}} to filter by using words and assoc
 
 - What are the top 5 states by average inventory, excluding California.
 
-While {{site.data.keyword.wxbia_short}} has a good understanding of common concepts, like country, region and city names, the ability to answer questions depends on your data. For example, when your data includes the product sales per country, asking "How do sales compare in Asia vs the Americas" might not return expected results if the data does not identify which countries are in each region. If such questions are common, consider adjusting your metric to include a region column.
+While {{site.data.keyword.wxbia_short}} has a good understanding of common concepts, like country, region and city names, the ability to answer questions depends on your data.
+
+For example, when your data includes the product sales per country, asking, *How do sales compare in Asia vs the Americas* might not return expected results if the data does not identify which countries are in each region. 
+
+If such questions are common, consider adjusting your metric to include a region column.
 
 ## Follow-up questions
 {: #followup}
@@ -129,4 +147,3 @@ After you ask a question, you can follow-up with other questions or clarificatio
 3. Break down the sales by product brand.
 
 How you word your question determines whether it is a continuation of the previous question or a separate request. If {{site.data.keyword.wxbia_short}} is unable to determine that on its own, starting a new conversation clears the context.
-

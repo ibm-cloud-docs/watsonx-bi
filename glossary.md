@@ -1,7 +1,7 @@
 ---
 copyright: 
-  years: 2025
-lastupdated: "2026-02-09"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: glossary
 subcollection: watsonx-bi
@@ -15,8 +15,7 @@ subcollection: watsonx-bi
 # Glossary terms for watsonx BI
 {: #glossary}
 
-This glossary provides terms and definitions for watsonx BI.
-{: shortdesc}
+This glossary provides terms and definitions for watsonx BI.{: #shortdesc}
 
 The following cross-references are used in this glossary:
 
@@ -126,7 +125,7 @@ A fact table stores measures, which are quantifiable performance indicators that
 ### foundation model
 {: #x10298171}
 
-An AI model that can be adapted to a wide range of downstream tasks. Foundation models are typically large-scale generative models that are trained on unlabeled data using self-supervision. As large scale models, foundation models can include billions of parameters.
+An AI model that can be adapted to a wide range of downstream tasks. Foundation models are typically large-scale generative models that are trained on unlabeled data using self-supervision. 
 
 ## G
 {: #glossg}
@@ -180,7 +179,7 @@ Metrics that display in the Key metrics panel in watsonx BI, which include:
 ### large language model (LLM)
 {: #x10298052}
 
-A language model with many parameters, trained on a large quantity of text.
+A language model with many parameters, trained on a sizeable quantity of text.
 
 ## M
 {: #glossm}

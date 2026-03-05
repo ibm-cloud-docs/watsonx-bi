@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-15"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
-keywords:
+keywords: install watsonx BI, software hub
 subcollection: watsonx-bi
 
 
@@ -57,13 +57,13 @@ Before you install watsonx BI, make sure that all prerequisites are met. The pre
 
 - Installing the IBM Software Hub control plane
 
-- Preparing your private container registry
+- Preparing your private Container Registry
 
 - Installing GPU operators
 
 - Installing Red Hat OpenShift AI
 
-- Installing the required prerequisite services and models
+- Installing the prerequisite services and models
 
 For more information, see [Before you begin installing watsonx BI](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=bi-installing#wxbi-install__title__3){: external}.
 

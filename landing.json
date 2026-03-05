@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
     "tiles": [
       {
+        "date": "5 March 2026",
+        "title": "IBM Granite 3 AI model is being discontinued and replaced with IBM Granite 4 model"
+      },
+      {
         "date": "26 February 2026",
         "title": "IBM Cognos Analytics data modules and row-level security through User filters now supported"
       },
@@ -50,10 +54,6 @@
       {
         "date": "30 October 2025",
         "title": "Watsonx BI updated on IBM Software Hub 5.2.2"
-      },
-      {
-        "date": "27 August 2025",
-        "title": "Watsonx BI updated on IBM Software Hub 5.2.1"
       }
     ]
   },

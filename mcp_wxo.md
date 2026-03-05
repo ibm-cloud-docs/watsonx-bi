@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-20"
+lastupdated: "2026-03-05"
 
 keywords: mcp, model context protocol, watsonx Orchestrate
 subcollection: watsonx-bi
@@ -22,13 +22,13 @@ A remote MCP server is hosted on IBM infrastructure and accessed over a network,
 
 Key features:
 
-- **Access to the watsonx BI semantic layer**
+Access to the watsonx BI semantic layer
 
-  Access data grounded in the watsonx BI semantic layer and governed metric definitions.
+:   Access data grounded in the watsonx BI semantic layer and governed metric definitions.
 
-- **Natural language interface**
+Natural language interface
 
-  Query data in watsonx BI using natural language and receive responses with tabular data (data rectangle).
+:   Query data in watsonx BI using natural language and receive responses with tabular data (data rectangle).
 
 
 ## Capabilities 
@@ -36,13 +36,13 @@ Key features:
 
 The remote MCP server exposes one static tool:
 
-**Tool name**: QUERY_DATA
+- Tool name: QUERY_DATA
 
-**Description**: Search for data and insights from your enterprise data warehouse
+- Description: Search for data and insights from your enterprise data warehouse
 
-**Requires**: Question in natural language used as an input to the QUERY_DATA tool
+- Requires: Question in natural language used as an input to the QUERY_DATA tool
 
-**Provides**: Description, data, and SQL
+- Provides: Description, data, and SQL
 
 
 ## Prerequisites
@@ -72,14 +72,11 @@ Before you use the remote MCP server, make sure that you have the following:
 
 Use the following **endpoint** to connect your AI agent to the watsonx BI remote MCP server:
 
-[https://dataplatform.cloud.ibm.com/wxbi/v1/mcp](https://dataplatform.cloud.ibm.com/wxbi/v1/mcp){: external}
-
-You can also use: 
-
 [https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp](https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp) {: external}
 
 
 ### Example install command
+{: #example_install_cmd}
 
 You can use the following **install command** to quickly connect to the remote MCP server:
 
@@ -97,15 +94,66 @@ Or use this command:
    "args": [
     "-y",
     "mcp-remote",
-    "https://dataplatform.cloud.ibm.com/wxbi/v1/mcp",
+    "https://api.dataplatform.cloud.ibm.com/wxbi/v1/mcp",
     "--header",
     "x-api-key:<user-iam-account-api-key>",     
     "--header",
-    "asset-id-list:<asset_id>@<project_id>@project_id,<asset_id_1>@<project_id_1>@project_id"
+    "asset-id-list:<asset_id_1>@<project_id_1>@project_id,<asset_id_2>@<project_id_2>@project_id"
    ]
 }
 ```
 {: codeblock}
+
+#### Headers (Optional)
+{: #headers}
+
+You can scope the wxBI MCP Server to specific assets by adding additional headers:
+
+- `project-id-list` to scope to a list of data-platform project ids. (ex: project-id-list:<project_id1>,<project_id2>)
+
+- `catalog-id-list` to scope to a catalog id (ex: catalog-id-list:<catalog_id1>)
+
+- `asset-id-list` to scope to a list of ThreePartIds of data assets (ex:`asset-Id-list`:<asset_id1>@<project_id1>@project_id,<asset_id2>@<project_id1>@project_id,<asset_id2>@<catalog_id1>@catalog_id)
+
+#### Header priority 
+{: #header_priority}
+
+:   Priority 1: `asset-id-list` (cannot coexist with `project-id-list` or `catalog-id-list`)
+
+:   Priority 2: `project-id-list` and `catalog-id-list` (can be used together)
+
+#### How to get the project and asset id
+{: #project_asset_id}
+
+To get the project id: 
+
+1. Select **View all projects** from **Navigation Menu > Projects**.
+
+2. Select the project and go to the **Manage** tab. 
+
+3. Copy the **Project ID** from the **Details** section. 
+
+   ![Project ID field under the Details section on the Manage tab in project view](images/projects_projectID.png)
+
+
+To get the asset id for a data asset:
+
+1. Select **View all projects** from **Navigation Menu > Projects**.
+
+1. Select the project that contains the data asset and go to the **Assets** tab. 
+
+1. Select the data asset to open **Preview asset**.
+
+1. Copy the portion of the URL that displays after `/data-assets/`.  
+
+   For example, in the following URL:
+
+   https://dataplatform.cloud.ibm.com/projects/0a296520-3129-4526-9bff-d13830e50b5b/data-assets/4570c0bb-a414-4e97-b2fd-25b533e4ceed/preview 
+
+   the asset ID is: 
+   
+   `4570c0bb-a414-4e97-b2fd-25b533e4ceed`
+
 
 
 ## Integrating with IBM watsonx Orchestrate

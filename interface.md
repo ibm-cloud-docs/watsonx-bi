@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: interface, using watsonx BI
 subcollection: watsonx-bi
@@ -19,32 +19,35 @@ subcollection: watsonx-bi
 The user interface of {{site.data.keyword.wxbia_short}} consists of the following main areas. {: #shortdesc}
 
 (1) Conversations
+
 :   This is where you can ask questions about your data to get insights and monitor metrics that matter to you. 
 
-:   When you login to {{site.data.keyword.wxbia_short}}, you automatically start off on the **Conversations** page. 
+:   When you log in to {{site.data.keyword.wxbia_short}}, you automatically start off on the **Conversations** page. 
 
 (2) Data and Metrics
+
 :   You can create new projects, create metrics, upload files, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
 
 (3) Metrics catalog
-:   The **Metrics catalog** contains a collection of metrics that have been created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
+
+:   The **Metrics catalog** contains a collection of metrics that were created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
 
 ![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](images/wxbi_conversations.png){: caption="{{site.data.keyword.wxbia_short_cap}}'s **Conversations** page with the open navigation panel showing **Data and Metrics** and **Metrics catalog**." caption-side="bottom"}
 
-(4) Configuration and settings 
+(4) Configuration and settings
+
 :   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 
 
-  Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.
-  {: note}
+:   Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.{: note}
 
 (5) Navigation Menu
+
 :   Use this menu to access the platform features such as your projects, governance artifacts, administrative settings, and more. To come back to the **Conversations** page, click **Home** in the **Navigation Menu**.
 
 (6) Global navigation bar 
 :   The global navigation bar gives you quick access to the product tours, product documentation, notifications, account switcher, and your profile.  
 
-  Product tours are currently not avaialble in {{site.data.keyword.wxbia_short}} on IBM Software Hub.
-  {: note}
+:   Product tours are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.{: note}
   
 Let's take a closer look at the following main components.
 
@@ -56,7 +59,7 @@ When you log in to {{site.data.keyword.wxbia_short}}, you are on the **Conversat
 The **Conversations** page has the following areas:
 
 Key metrics  
-:   Your metrics, which are created for you by your organization and any metrics that you pin, appear here. Each visualization is a visual representation of a metric defined from your business data. 
+:   Your metrics, which are created for you by your organization and any metrics that you pin, appear here. Each visualization is a visual representation of a metric that is defined from your business data. 
 
 Chat canvas
 :   The chat canvas is where you enter your question in natural language and see the generated response. Think of the canvas as an active question-and-answer session. Select the scope of the conversation in the input box, type your question, and press Enter.
@@ -67,7 +70,7 @@ Conversations panel
 ## Data and Metrics 
 {: #data_metrics}
 
-The **Data and Metrics** tab is the launching point for any task related to your data. Here, you can:
+The **Data and Metrics** tab is the launching point for any task that is related to your data. Here, you can:
 
 - Select or create a new project
 
@@ -93,7 +96,7 @@ You can also upload files on **Data and Metrics** to quickly jump into asking qu
 
 Data analysts can create and publish metrics and related visualizations to the **Metrics catalog**. They can then assign these to other users in the organization. 
 
-Assigned metrics display in the **Key metrics** panel on the **Conversations** page.
+Assigned metrics are displayed in the **Key metrics** panel on the **Conversations** page.
 
 As an Analytics consumer, you can browse the **Metrics catalog** and pin metrics that are of interest to you. Pinned metrics appear in the **Key metrics** panel on the **Conversations** page. 
 

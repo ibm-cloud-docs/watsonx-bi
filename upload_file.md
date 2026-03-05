@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords: upload file, local file
 
@@ -37,7 +37,7 @@ All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored 
 
    Progress messages appear at different stages of the upload:
 
-    - Preparing -  In this stage, {{site.data.keyword.wxbia_short}} prepares the data in the file for metadata enrichment. 
+    - Preparing - In this stage, {{site.data.keyword.wxbia_short}} prepares the data in the file for metadata enrichment. 
 
     - Enriching - The data in the file then undergoes [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich), which adds business context metadata to your data to prepare it for conversations. 
 
@@ -63,16 +63,15 @@ You can use uploaded files as data sources in the [create metrics](/docs/watsonx
 ## Managing uploaded files
 {: #manage_file}
 
-**Replacing an uploaded file**
+Replacing an uploaded file
 
-You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM {{site.data.keyword.wxbia_short}} prompts you to specify whether you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
+:   You can update the contents of an uploaded file by adding a file with the same name and format to the project. IBM {{site.data.keyword.wxbia_short}} prompts you to specify whether you want to overwrite the existing file or create a new asset. In both cases, the data in the file undergoes metadata enrichment. 
 
-**Deleting an uploaded file**
+Deleting an uploaded file
 
-To delete an uploaded file, click the **Delete** option from the menu next to the uploaded file name. 
+:   To delete an uploaded file, click the **Delete** option from the menu next to the uploaded file name. 
 
-Deleting a file removes it from the project permanently. This action might impact semantic data models that were created with references to the deleted file.
-{: important}
+:   Deleting a file removes it from the project permanently. This action might impact semantic data models that were created with references to the deleted file.{: important}
 
 ## Supported file types 
 {: #supported_file}
@@ -237,4 +236,3 @@ If the file encounters metadata enrichment errors during upload:
 If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
 
 Depending on the errors, you might need to fix the data in the file and upload it again. 
-

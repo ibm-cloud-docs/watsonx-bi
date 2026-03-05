@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-29"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
-keywords:
+keywords: generate metrics, auto-generate metrics, automatic metrics
 subcollection: watsonx-bi
 
 

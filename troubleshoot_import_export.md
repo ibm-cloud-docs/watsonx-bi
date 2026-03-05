@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-24"
+lastupdated: "2026-03-05"
 
 keywords: troubleshoot, project import, project export
 subcollection: watsonx-bi
@@ -29,19 +29,22 @@ Use these solutions to help resolves problems that you might encounter when you 
 {: #shortdesc}
 
 ## Export issues
-{: #export}
+{: #export_issues}
 
 The following issues might occur when you export a project.
 
 ### Export fails due to project size
+{: #export_project_size}
 
 If the error message **Project too large** displays, your project exceeds the 500 MB size limit. To reduce project size:
+
 - Remove unused data assets.
 - Delete old BI visualizations.
 - Clear job run history (if applicable).
 - Remove term assignment models if not needed.
 
 ### Export fails due to inclusion of uploaded files
+{: #export_project_uploaded_files}
 
 Uploaded files cannot be imported. If your project export fails and the project includes uploaded files, complete the following steps:
 
@@ -51,11 +54,12 @@ Uploaded files cannot be imported. If your project export fails and the project 
 4. After import, reupload the files manually.
 
 ## Import issues
-{: #import}
+{: #import_issues}
 
 The following issues might occur when you import a project.
 
 ### Import fails with validation error
+{: #import_project_validation}
 
 If your import fails with a validation error, the ZIP file might be corrupted or contain unsupported content. Before you import the project again:
 - Verify that the .zip file is not corrupted.
@@ -64,14 +68,16 @@ If your import fails with a validation error, the ZIP file might be corrupted or
 - Verify that the .zip file contains required files: `project.json` and `assetrelationships.json`.
 
 ### Metrics don't appear after import
+{: #import_projects_metrics}
 
-SMetrics can take several minutes to initialize. If your metrics don't appear after import:
+Metrics can take several minutes to initialize. If your metrics don't appear after import:
 - Wait 5-10 minutes and refresh the page.
 - Check that data models are properly linked to metadata imports.
 - Verify that metadata enrichment areas are configured.
 - Make sure that connection credentials are entered for all data sources.
 
 ### Connection credentials not working
+{: #import_connection_credentials}
 
 If connection credentials aren't working after you import a project, you might need to reenter your credentials.
 - For personal connections, credentials must always be reentered after import.
@@ -80,6 +86,7 @@ If connection credentials aren't working after you import a project, you might n
 - Verify that your user account has proper permissions on the data source.
 
 ### Relationships between assets are broken
+{: #import_assets_relationships}
 
 Relationships should be automatically reconstructed. If relationships between your assets are broken after import:
 - Verify that all required assets were included in the export.
@@ -88,24 +95,27 @@ Relationships should be automatically reconstructed. If relationships between yo
 - Contact support if relationships are consistently not reconstructed.
 
 ### Performance considerations
+{: #import_performance}
 
-If you import projects that are larger than 100 MB or have many relationships, the import operation might take longer than expected. 
+If you import projects that are more than 100 MB or have many relationships, the import operation might take longer than expected. 
 
 #### Large projects (>100 MB)
+{: #import_project_size}
 - Import might take 10-15 minutes.
 - Metrics initialization might take up to 30 minutes.
 - Consider importing during off-peak hours.
 
 #### Projects with many relationships
+{: #import_project_relationships}
 - Relationship reconstruction adds processing time.
 - Allow extra time for semantic data models with complex dependencies.
 - Monitor the import progress indicator.
 
 ## Further help
+{: #import_project_help}
 
 If you continue to experience issues:
 1. Check the export or import logs for specific error messages.
 2. Verify that your user role has sufficient permissions.
 3. Make sure that your {{site.data.keyword.wxbia_short}} instance is up to date.
 4. Contact IBM Support with the project name, error messages, and export or import timestamps.
-

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-26"
+lastupdated: "2026-03-05"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -24,6 +24,17 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+## 5 March 2026
+{: #subcollection-mar0526}
+{: release-note}
+
+IBM Granite 4 model now available in watsonx BI as a Service
+
+:   IBM Granite 3 models are being discontinued and replaced with [IBM Granite 4](https://www.ibm.com/docs/en/watsonx/w-and-w/latest?topic=models-foundation#granite-4){: external} in watsonx BI as a Service. 
+
+:   You do not need to take any action. This upgrade is seamless and does not affect your watsonx BI experience. 
+
+:   For more information, see [Selecting the large language model for your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}. 
 
 ## 26 February 2026
 {: #subcollection-feb2626}
@@ -208,22 +219,12 @@ Introducing {{site.data.keyword.wxbia_short}} as a Service on IBM Cloud
 
 :   Use {{site.data.keyword.wxbia_short}} to:
 
-:    **Get faster insights**
+:   - Get faster insights - Ask questions using natural language and receive answers through a simple, intuitive interface.
 
-:    Ask questions using natural language and receive answers through a simple, intuitive interface.
+:   - Understand data more deeply - Uncover trends, understand causes, predict future outcomes, and gain actionable strategies.
 
-:    **Understand data more deeply**
+:   - Act with greater confidence - Governed data and artificial intelligence (AI) help ensure trusted models, transparency for all AI workflows (powered by IBM watsonx™), and security with insights that derive from a single source of truth through a centralized **Metrics catalog**. 
 
-:    Uncover trends, understand causes, predict future outcomes, and gain actionable strategies.
+:   - Perform advanced data visualization interaction - Customize the look and feel of data visualizations with conversational and graphical interactions.
 
-:    **Act with greater confidence**
-
-:    Governed data and artificial intelligence (AI) help ensure trusted models, transparency for all AI workflows (powered by IBM watsonx™), and security with insights that derive from a single source of truth through a centralized **Metrics catalog**. 
-
-:    **Perform advanced data visualization interaction**
-
-:    Customize the look and feel of data visualizations with conversational and graphical interactions.
-
-:    **Semantic automation**
-
-:    Automate data profiling, business term matching, and data modeling.
+:   - Semantic automation - Automate data profiling, business term matching, and data modeling.

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2026
-lastupdated: "2026-02-03"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 keywords: conversation, scope
 subcollection: watsonx-bi
 
@@ -21,25 +21,29 @@ You can change the scope of a conversation by selecting the data you want to ask
 
 You can set the scope of a conversation to:
 
-- **All data**  
+All data 
 
-  Includes data assets, including metrics and uploaded files, in all of the projects that you have access to.
+:   Includes data assets, including metrics and uploaded files, in all of the projects that you have access to.
 
-- **Mandatory metrics** 
+Mandatory metrics
 
-  These are the metrics that were created for you by your organization and which appear in the **Key metrics** panel.
+:   These are the metrics that were created for you by your organization and which appear in the **Key metrics** panel.
 
-- **A specific project** 
+A specific project
 
-  You can choose from projects that you created or those that you have access to.
+:   You can choose from projects that you created or those that you have access to.
 
--  **An uploaded file** - You can choose a file that you've uploaded and which has gone through metadata enrichment. 
+An uploaded file
 
-- **A metric from the Metrics catalog** 
+:   You can choose a file that you've uploaded and which has gone through metadata enrichment. 
 
-  When you choose to ask a question against a single metric from the **Metrics catalog**, you're automatically taken to **Conversations** with the scope set to the metric you selected.
+Metric from the Metrics catalog
 
-- **Sample data** - If you installed sample data at the time of setup, you can ask set the scope of the conversation to just the sample data set. You can install sample data at any time from **Configuration and settings**. 
+:   When you choose to ask a question against a single metric from the **Metrics catalog**, you're automatically taken to **Conversations** with the scope set to the metric you selected.
+
+Sample data
+
+:   If you installed sample data at the time of setup, you can ask set the scope of the conversation to just the sample data set. You can install sample data at any time from **Configuration and settings**. 
 
 ## Selecting scope 
 {: #scope_change}

@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2024
+  years: 2025, 2026
 lastupdated: "2024-04-26"
 
-keywords:
+keywords: explainable AI, explainability, using AI
 subcollection: watsonx-bi
 
 
@@ -26,7 +26,7 @@ The selected LLM is used to respond to your BI questions.  It analyzes your inpu
 
 Using the returned data, the LLM produces a text-based answer, a visualization, or both. You can view each step of this process in the **AI steps** by clicking **Show AI steps** in the response.
 
-The LLM also evaluates key metrics and helps surface changes in your business data. When you select a metric from the **Key metrics** panel, the AI can summarize and explain what has changed and why it might be important.
+The LLM also evaluates key metrics and helps surface changes in your business data. When you select a metric from the **Key metrics** panel, the AI can summarize and explain what changed and why it might be important.
 
 The name of the LLM used to generate each response appears in the **AI** label and within **AI steps** during conversations.
 
@@ -41,7 +41,7 @@ The name of the LLM used to generate each response appears in the **AI** label a
 
 2. Context rephrasing  -  {{site.data.keyword.wxbia_short}} might rephrase the question based on the historical context of previous questions.
 
-3. Key word extraction and identifing data source - {{site.data.keyword.wxbia_short}} pulls out key search terms from the question and identifies the data source that can answer the question.
+3. Keyword extraction and identifying data source - {{site.data.keyword.wxbia_short}} pulls out key search terms from the question and identifies the data source that can answer the question.
 
 4. SQL generation - {{site.data.keyword.wxbia_short}} generates a query to retrieve the most useful and accurate answer by using the following inputs:
 

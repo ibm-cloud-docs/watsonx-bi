@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-21"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ subcollection: watsonx-bi
 - Column description
 - Column identifier
 - Column data type, usage, aggregate, and nullable fields
-
+- AI instructions and context
 - Sampled columns 
 
 The quality of this data determines the quality of watsonx BI’s generated responses. 
@@ -40,7 +40,7 @@ You can improve the quality of watsonx BI’s answers and teach it your business
 Let’s explore each one in detail.
 
 
-## 1. Adding your business glossary in watsonx BI 
+## Adding your business glossary in watsonx BI 
 {: #add_glossary}
 
 Watsonx BI comes with predefined business terms, which **Cloud account owners** and **Administrators** can find under **Navigation Menu > Governance > Business terms**.
@@ -51,7 +51,7 @@ As a Cloud account owner or Administrator, you can add your organization’s bus
 
 These predefined business terms and any glossary concepts that you upload are one of the components that are used during metadata enrichment to augment technical metadata with more descriptive and meaningful names.
 
-Consider adding your organization’s business glossary right after you setup and initialize watsonx BI so that watsonx BI can use these terms when the source data undergoes metadata enrichment.
+Consider adding your organization’s business glossary immediately after you setup and initialize watsonx BI so that watsonx BI can use these terms when the source data undergoes metadata enrichment.
 {: tip}
 
 ### Steps to add new business terms
@@ -95,7 +95,7 @@ To import business terms from a CSV file:
 4.	Click **Publish**.
 
 
-## 2. Providing accurate display names and descriptions in metadata enrichment
+## Providing accurate display names and descriptions in metadata enrichment
 {: #add_display_name}
 
 [Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} in watsonx BI uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level.
@@ -133,7 +133,7 @@ To accept the suggested and assigned details for assets or columns:
 ![Columns tab review showing the suggestions that can be accepted](images/column_review.png)
 
 
-## 3. Adding context in the semantic data model to help query generation 
+## Adding context in the semantic data model to help query generation 
 {: #add_context_semantic_model}
 
 After metadata enrichment in watsonx BI, a semantic data model is created automatically that defines relationships between entities (e.g., customers, products, sales) in a way that reflects real-world business logic rather than physical database joins. 
@@ -233,14 +233,40 @@ Ensure that the name and description are worded based on your business context a
 
 - Reflect user language preferences
 
-  For example: If there is a column called *"manager”*, but your business users use the word *"boss"*, then reflect that in the description. 
+  For example: If there is a column called *manager*, but your business users use the word *boss*, then reflect that in the description. 
   
-  If you want AI to use *"Cost of Goods Sold"* column to answer questions about *"Cost breakdown"*, then add that phrase to the description of the column. 
+  If you want AI to use *Cost of Goods Sold* column to answer questions about *Cost breakdown*, then add that phrase to the description of the column. 
 
+### Adding instructions and context for AI
+{: #add_instructions_context_teach}
 
+Use the **AI instructions and context** field in the semantic data model to provide instructions and context that the LLM follows when it interprets and answers questions about a specific metric. This field helps standardize complex business logic and reduce ambiguity.
+
+The **AI instructions and context** field supports plain text and a maximum of 10,000 characters. You can also add your instructions in Markdown though plain text is preferred for clarity. 
+
+The instructions that you provide, apply to only the metric where the instructions are defined. 
+{: note}
+
+Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
+
+- Your dataset uses business‑specific terminology that differs from column names
+
+- You use standard calculation methods or rules, such as weighted averages or variance formulas
+
+- Certain columns must always appear together for context
+
+- You rely on default filters or display preferences
+
+- You need to enforce organizational reporting standards, such as fiscal or seasonal time logic
+
+When you ask a question about a metric that has instructions, {{site.data.keyword.wxbia_short}} notifies the LLM that the metric has custom rules and applies the rules during interpretation. Watsonx BI produces an SQL that aligns with expected patterns and validated behaviors.
+
+For more information, see [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.
 
 
 ## Related links
 {: #related}
 
 - [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}
+
+- [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.

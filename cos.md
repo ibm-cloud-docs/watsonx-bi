@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords: cloud object storage
 subcollection: watsonx-bi
@@ -15,7 +15,7 @@ subcollection: watsonx-bi
 # IBM Cloud Object Storage 
 {: #cos}
 
-IBM Cloud® Object Storage is a highly available, durable, and secure platform for storing unstructured data. Object storage is the most efficient way to store PDFs, media files, database backups, disk images, or even large structured datasets. {: #shortdesc}
+IBM Cloud® Object Storage is a highly available, durable, and secure platform for storing unstructured data. Object storage is the most efficient way to store PDFs, media files, database backups, disk images, or even complex structured datasets. {: #shortdesc}
 
 The files that are uploaded into IBM Cloud Object Storage are called **objects**. They are organized into **buckets** that serve as containers for objects, and which can be configured independently from one another in terms of locations, resiliency, billing rates, security, and object lifecycle. 
 
@@ -60,4 +60,3 @@ For more information, see [Getting started with IBM Cloud Object Storage](/docs/
 You can administer the Cloud Object Storage from the **Resource list > Storage** page in the IBM Cloud account.  
 
 You can upload and download assets, manage buckets, and configure credentials, and other security settings for the Cloud Object Storage instance.
-

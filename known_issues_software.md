@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-02-26"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -22,18 +22,17 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 ## Connector filters
 {: ki_connector}
 
-**IBM Db2 connector doesn't appear when the watsonx BI filter is applied**
+IBM Db2 connector doesn't appear when the watsonx BI filter is applied
  
- Applies to: 5.3.0
+:   Applies to: 5.3.0
 
- When you are in the **Add connection** flow and have the watsonx BI filter applied, the IBM Db2 connector doesn't appear in the list of Db2 connectors.
+:   When you are in the **Add connection** flow and have the watsonx BI filter applied, the IBM Db2 connector doesn't appear in the list of Db2 connectors.
 
- Workaround:
+:   Workaround:
 
- Clear the filters and then select the watsonx BI connector.
+:   Clear the filters and then select the watsonx BI connector.
 
- When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.
- {: note}
+:   When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.{: note}
 
 **The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors**
 
@@ -251,19 +250,19 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 ## Links to documentation
 {: #ki_docs}
 
-**Help links are not working**
+Help links are not working
 
- Applies to: 5.2.0 and later
+:   Applies to: 5.2.0 and later
 
- The main **Help** link and the **Documentation** link in the **Navigation menu** do not lead to product documentation.
+:   The main **Help** link and the **Documentation** link in the **Navigation menu** do not lead to product documentation.
 
- Workaround:
+:   Workaround: 
+
+:   Users can get product help through the following links
+
+:   - [Product documentation](https://cloud.ibm.com/docs/watsonx-bi) in IBM Cloud Docs
   
- Users can get product help through:
-
- - [Product documentation](https://cloud.ibm.com/docs/watsonx-bi) in IBM Cloud Docs
-  
- - Documentation for [{{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2](https://www.ibm.com/docs/software-hub/5.2.x?topic=services-watsonx-bi)
+:   - Documentation for [{{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2](https://www.ibm.com/docs/software-hub/5.2.x?topic=services-watsonx-bi)
 
 
 
@@ -276,10 +275,12 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 ## Limitations
 {: #limitations}
 
-**Response feedback is not supported in watsonx BI on IBM Software Hub**
+Response feedback is not supported in watsonx BI on IBM Software Hub
 
-This feedback feature is only available in watsonx BI as a Service.
+:   This feedback feature is only available in watsonx BI as a Service.
 
-**All watsonx.data Premium assets must go through the watsonx.data metric creation flow**
+All watsonx.data Premium assets must go through the watsonx.data metric creation flow
 
-Metadata enrichment in watsonx.data Premium does not prepare assets for use in watsonx BI. To use watsonx.data Premium assets in watsonx BI, you must go through the watsonx BI metric creation flow. If you import a project from the watsonx.data experience, any metrics in this project cannot be used with Business Intelligence tools.
+:   Metadata enrichment in watsonx.data Premium does not prepare assets for use in watsonx BI. To use watsonx.data Premium assets in watsonx BI, you must go through the watsonx BI metric creation flow. 
+
+:  If you import a project from the watsonx.data experience, any metrics in this project cannot be used with Business Intelligence tools.

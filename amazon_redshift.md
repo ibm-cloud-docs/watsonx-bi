@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: amazon redshift
 
@@ -14,7 +14,7 @@ subcollection: watsonx-bi
 # Amazon Redshift
 {: #amazon_redshift}
 
-Amazon Redshift is a data warehouse product that forms part of the larger cloud-computing platform Amazon Web Services (AWS). {: #shortdesc}
+Amazon Redshift is a data warehouse product that is part of the cloud-computing platform Amazon Web Services (AWS). {: #shortdesc}
 
 ## Create a connection to Amazon Redshift
 {: #create_amazon_redshift}

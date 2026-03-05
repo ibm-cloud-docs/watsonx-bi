@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-11"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: generating visualizations, conversations
 subcollection: watsonx-bi
@@ -43,88 +43,101 @@ You can even change a visualization property after the visualization generates b
 
 Properties that you can change with natural language:
 
-- **Change chart title**
+Change chart title
 
-  Example inputs: 
+: Example inputs: 
 
-  - Show top selling products for 2025 and set the chart title to "Top sellers". 
-  - Change the chart title to "Top selling products".
+:  - Show top selling products for 2025 and set the chart title to *Top sellers*. 
 
-- **Set background color**
+:  - Change the chart title to *Top selling products*.
 
-  By default the background color for all visualizations is White. 
+Set background color
 
-  Example inputs:
+:   By default the background color for all visualizations is White. 
 
-  - Show product line and revenue and set the background color to green
-  - Change the background color to green.
+:   Example inputs:
 
-- **Set border color**
+:   - Show product line and revenue and set the background color to green
 
-  The default border color in visualizations is transparent. 
+:   - Change the background color to green.
 
-  Example inputs:
+Set border color
 
-  - Set the chart border color as blue.
+:   The default border color in visualizations is transparent. 
 
-- **Show or hide legend**
+:   Example inputs:
 
-  By default, the legend is shown in visualizations.
+:   - Set the chart border color as blue.
 
-  Example inputs:
+Show or hide legend
 
-  - Hide the legend in the chart.
-  - Show the legend in the chart.
+:   By default, the legend is shown in visualizations.
+
+:   Example inputs:
+
+:   - Hide the legend in the chart.
+
+:   - Show the legend in the chart.
 
 Depending on the visualization you're working with, you can also ask AI to:
 
-- **Show or hide axis labels**
+Show or hide axis labels
 
-  Labels provide context for the data in the visualization. By default, labels are always shown on both axes. 
+:   Labels provide context for the data in the visualization. By default, labels are always shown on both axes. 
   
-  Example inputs:
+:   Example inputs:
 
-  - Hide the labels in the x-axis.
-  - Hide the xAxis labels.
+:   - Hide the labels in the x-axis.
 
-- **Show or hide axis title**
+:   - Hide the xAxis labels.
 
-  The title of both axes in a visualization is shown by default. You can ask the AI to hide the title for one or both axes.
+Show or hide axis title
 
-  Example inputs: 
+:   The title of both axes in a visualization is shown by default. You can ask the AI to hide the title for one or both axes.
 
-  - Hide xAxis title. 
-  - Hide x-axis title.
-  - Hide the title for both axes. 
+:   Example inputs: 
 
-- **Show or hide gridlines**
+:   - Hide xAxis title. 
 
-  You can ask the AI to hide gridlines for one or both axes. By default, the visualization always shows gridlines. 
+:   - Hide x-axis title.
 
-  Example inputs:
+:   - Hide the title for both axes. 
 
-  - Hide gridlines in the chart.
-  - Don't show gridlines.
+Show or hide gridlines
 
-- **Show tick marks**
+:   You can ask the AI to hide gridlines for one or both axes. By default, the visualization always shows gridlines. 
 
-  Tick marks are small lines on the axes, which indicate the measurement scale or intervals. By default, tick marks are shown in visualizations.
+:   Example inputs:
 
-  Example inputs:
+:   - Hide gridlines in the chart.
 
-  - Hide tick marks on the x-axis.
-  - Add tick marks to the y-axis.
-  - Show product line with revenue and hide the tick marks on the x-axis.
+:   - Don't show gridlines.
 
-- **Adjust label font size** 
+Show tick marks
+
+:   Tick marks are small lines on the axes, which indicate the measurement scale or intervals. By default, tick marks are shown in visualizations.
+
+:   Example inputs:
+
+:   - Hide tick marks on the x-axis.
+
+:   - Add tick marks to the y-axis.
+
+:   - Show product line with revenue and hide the tick marks on the x-axis.
+
+Adjust label font size
   
-    You can adjust the label font size in visualizations. The values for font size are:
+:   You can adjust the label font size in visualizations. The values for font size are:
     
-    - xsmall
-    - small
-    - medium
-    - large
-    - xlarge
+:   - xsmall
+
+:   - small
+
+:   - medium
+
+:   - large
+
+:   - xlarge
     
     By default, the font size is set to medium. 
 
@@ -133,33 +146,39 @@ Depending on the visualization you're working with, you can also ask AI to:
     - Use xlarge as the label size for xAxis.
     - Change the label size to small.
 
-- **Bar width**
+Bar width
 
-  For charts with bars, you can set the bar width. The values for bar width are: 
+:   For charts with bars, you can set the bar width. The values for bar width are: 
   
-    - xsmall
-    - small
-    - medium
-    - large
-    - xlarge
+:   - xsmall
+
+:   - small
+
+:   - medium
+
+:   - large
+
+:   - xlarge
   
-  By default, bar width is set to medium. 
+:   By default, bar width is set to medium. 
 
-  Example inputs:
+:   Example inputs:
 
-  - Change the bars to small size.
-  - Make the bars small.
+:   - Change the bars to small size.
+
+:   - Make the bars small.
   
-- **Change element color**
+Change element color
 
-    Elements represent the data values in the charts. For example, lines in a line chart and bars in a bar chart are elements. 
+:   Elements represent the data values in the charts. For example, lines in a line chart and bars in a bar chart are elements. 
 
-    By default, the elements in visualizations are set to blue color. 
+:   By default, the elements in visualizations are set to blue color. 
 
-    Example inputs:
+:   Example inputs:
 
-    - Set the element color to pink.
-    - Change the element color to green.
+:   - Set the element color to pink.
+
+:   - Change the element color to green.
     
 ## Supported visualizations
 {: #supp_chart_types}
@@ -171,7 +190,7 @@ Here are some of the visualization types that you might see under **Change chart
 
 An area chart emphasizes the magnitude of change over time.
 
-Area charts are like line charts, but the areas below the lines are filled with colors or patterns. An area chart stacks the results for each column or item and the total of all results is easily seen.
+Area charts are like line charts, but the areas under the lines are filled with colors or patterns. An area chart stacks the results for each column or item and the total of all results is easily seen.
 
 For example, an area visualization is excellent for looking at revenue over time across several products.
 
@@ -189,11 +208,11 @@ Box plot visualizations are used to identify outliers and compare distributions.
 
 A box plot can show the median, quartiles, outlier, and extreme values for a variable. The inter-quartile range is the difference between the 75th and 25th percentiles and corresponds to the length of the box. The middle line is the 50th percentile.
 
-Above and under each box, whiskers give additional information about the spread of the data.
+Over and under each box, whiskers give additional information about the spread of the data.
 
-Far out values are represent by adding "o" signs beyond the whiskers.
+Far out values are represent by adding *o* signs beyond the whiskers.
 
-The mean score in a box plot is presented by a "+" sign.
+The mean score in a box plot is presented by a *+* sign.
 
 ### Column
 {: #chart_column}
@@ -229,14 +248,14 @@ List visualizations create an overview of data in a hierarchical way. You can us
 
 Packed bubble visualizations display data in a cluster of circles.
 
-A packed bubble visualization uses sizable plotted points, also known as bubbles, to show the relationship between two data sets. The size of the bubble corresponds to the value or proportion of data. There is no positional axis and the bubbles are arranged in a random cluster.
+A packed bubble visualization uses sizable plotted points, also known as bubbles, to show the relationship between two data sets. The area of the bubble corresponds to the value or proportion of data. There is no positional axis and the bubbles are arranged in a random cluster.
 
-Packed bubble visualizations help convey data that contains many groups and categories. Most often, the bubbles are arranged in a hierarchical order, with larger bubbles placed at the center and smaller bubbles place along the outside.
+Packed bubble visualizations help convey data that contains many groups and categories. Most often, the bubbles are arranged in a hierarchical order, with biggest bubbles placed at the center and smaller bubbles place along the outside.
 
 ### Pie
 {: #chart_pie}
 
-Pie visualizations highlight proportions. Each slice shows the relative relationship of each part to the whole. The larger the size of a slice, the higher the percentage of the whole it represents. Pie charts are suitable to use with both nominal and categorical data sets.
+Pie visualizations highlight proportions. Each slice shows the relative relationship of each part to the whole. The greater the size of a slice, the higher the percentage of the whole it represents. Pie charts are suitable to use with both nominal and categorical data sets.
 
 ### Point
 {: #chart_point}

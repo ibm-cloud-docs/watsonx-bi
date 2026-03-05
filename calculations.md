@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2026
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: calculations, modeling
 subcollection: watsonx-bi
@@ -57,9 +57,9 @@ The expression for these calculations is predefined, and you need to only select
 
 5. Click **OK** to finish the calculation, or click **Use calculation editor** to view the calculation expression, or to modify it.
 
-A calculation based on one column is created as an embedded calculation. The calculation is added at the top of the list of columns in the table. You can move it to a folder inside the same table.
+A calculation based on one column is created as an embedded calculation. The calculation is added at the beginning of the column list in the table. You can move it to a folder inside the same table.
 
-A calculation based on two columns can be created as an embedded or stand-alone calculation. If the columns are from the same table, an embedded calculation is created and added at the top of the list of columns in the table. If the columns are from different tables, a stand-alone calculation is created and added at the top of the semantic data model tree, outside of any table. You can move this calculation to a semantic model folder.
+A calculation based on two columns can be created as an embedded or stand-alone calculation. If the columns are from the same table, an embedded calculation is created and placed at the beginning of that table’s column list. If the columns are from different tables, a stand-alone calculation is created and added at the highest level of the semantic data model tree, outside any table. You can move this calculation to a semantic model folder.
 
 ## Creating custom calculations
 {: #custom_calculations}
@@ -97,6 +97,6 @@ Custom calculations can be based on one column or multiple columns from differen
 
 5. Click **OK**.
 
-A calculation based on one column is created as an embedded calculation. The calculation is added at the top of the list of columns in the table. You can move it to a folder inside the same table.
+A calculation based on one column is created as an embedded calculation. The calculation is added at the beginning of the list of columns in the table. You can move it to a folder inside the same table.
 
-A calculation based on two columns can be created as an embedded or stand-alone calculation. If the columns are from the same table, an embedded calculation is created and added at the top of the list of columns in the table. If the columns are from different tables, a stand-alone calculation is created and added at the top of the semantic data model tree, outside of any table. You can move this calculation to a semantic model folder.
+A calculation based on two columns can be created as an embedded or stand-alone calculation. If the columns are from the same table, an embedded calculation is created and added at the beginning of the list of columns in the table. If the columns are from different tables, a stand-alone calculation is created and added at the highest level of the semantic data model tree, outside any table. You can move this calculation to a semantic model folder.

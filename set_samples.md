@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-05"
 
 keywords:
 subcollection: watsonx-bi
@@ -24,7 +24,7 @@ subcollection: watsonx-bi
 # Installing samples in {{site.data.keyword.wxbia_short}}
 {: #using_samples}
 
-You can choose one of the following prebuilt samples to familiarize yourself with {{site.data.keyword.wxbia_short}}. Each sample is optimized for AI and comes with prebuilt metrics that you can use right away to ask questions in **Conversations**. {: #shortdesc}
+You can choose one of the following prebuilt samples to familiarize yourself with {{site.data.keyword.wxbia_short}}. Each sample is optimized for AI and comes with prebuilt metrics that you can use immediately to ask questions in **Conversations**. {: #shortdesc}
 
 - [Cloud]{: tag-blue} [Go sales](/docs/watsonx-bi?topic=watsonx-bi-go_sales){: external}
 
@@ -54,14 +54,14 @@ After the sample setup is complete, you can navigate to:
 
 - **Data and Metrics** to view the associated semantic data model and metric definitions
 
-**Samples in Conversations**
+### Samples in Conversations
 {: #sample_conv}
 
 When you're in **Conversations**, you can set the scope of the conversation to just the sample project, that was created at the time of setup, and ask questions about the data in the sample. You can do this by selecting the sample project name from the list next to the input box and entering your question. 
 
 The conversation will remain scoped to the sample data until you change it from the input box list. 
 
-**Samples in Data and Metrics**
+### Samples in Data and Metrics
 {: #sample_data_metrics}
 
 The **Data and Metrics** tab is where you can create metrics, access semantic data models, and upload files. 

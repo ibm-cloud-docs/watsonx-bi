@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
-keywords:
+keywords: hiding objects, modeling
 subcollection: watsonx-bi
 
 
@@ -20,7 +20,7 @@ You can hide items in the semantic data model panel  to provide an uncluttered v
 
 When you hide columns that are referenced in a calculation, the data tree shows only the calculation column, but not the referenced columns. 
 
-When you hide the identifier columns that are used as keys for joins, the keys are not exposed, but the joins are functional in the modeling interface.
+When you hide the identifier columns that are used as keys for joins, the keys do not display, but the joins are functional in the modeling interface.
 
 The following read-only items can't be hidden by default:
 
@@ -45,4 +45,4 @@ The following read-only items can't be hidden by default:
 
 2. Save the semantic data model.
 
-The labels on the hidden items are grayed out in the semantic data model panel and in the diagram. Also, on the **General** tab of the item's properties, the **Hide from users** property is selected. 
+The labels on the hidden items are unavailable in the semantic data model panel and in the diagram. Also, on the **General** tab of the item's properties, the **Hide from users** property is selected. 

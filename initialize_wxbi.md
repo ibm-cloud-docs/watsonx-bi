@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-05"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -20,7 +20,7 @@ content-type: tutorial
 All users need an IBMid to access watsonx BI. IBMids are assigned to IBM Cloud account members. 
 {: #shortdesc}
 
-If you have never created an IBM Cloud account, you will be asked to register an account when you first join your organization's IBM Cloud account. This is a one-time registration, after which you can be invited to any IBM Cloud account. You can also create an IBM Cloud account here: [http://cloud.ibm.com/](http://cloud.ibm.com/){: external} 
+If you do not have an IBM Cloud account, you are asked to register an account when you first join your organization's IBM Cloud account. This is a one-time registration after which you can be invited to any IBM Cloud account. You can also create an IBM Cloud account here: [http://cloud.ibm.com/](http://cloud.ibm.com/){: external} 
 
 As an Administrator, Data analyst, or an Analytics consumer, you must be a member of your organization's IBM Cloud account before you can access your organization's watsonx BI account.
 
@@ -29,9 +29,9 @@ As an Administrator, Data analyst, or an Analytics consumer, you must be a membe
 
 IBM Cloud account owners and account Administrators can invite users to join their organization's IBM Cloud account.
 
-1. Click the **Join now** link in the invite. 
+1. Click **Join now** in the invite. 
 
-2. You are asked to log in with your IBMid. IBMids are assigned to IBM Cloud account members. If you have never created an IBM Cloud account, you are asked to register an account. This is a one-time registration, after which you can be invited to any IBM Cloud account. 
+2. You are asked to log in with your IBMid. IBMids are assigned to IBM Cloud account members. If you do not have an IBM Cloud account, you are asked to register an account. This is a one-time registration, after which you can be invited to any IBM Cloud account. 
 
 3. Confirm that your information is correct and click **Join account**. 
 
@@ -48,23 +48,23 @@ IBM Cloud account owners and account Administrators can invite users to join the
 
 6. You are prompted to initialize setup. 
 
-![watsonx BI initialize setup](images/user_initialize_wxBI_setup.png)
+![watsonx BI initializes setup](images/user_initialize_wxBI_setup.png)
 
 7. (Optional) Select a prebuilt sample that you want to install. A project for the selected sample is created during installation.
 
-  Data analysts and Analytics consumers - If you choose to skip installing samples, you won't be able to access them later. Samples are a great resource to explore prebuilt metrics and semantic data models. 
+  Data analysts and Analytics consumers - If you choose to skip installing samples, you cannot access them later. Samples are a great resource to explore prebuilt metrics and semantic data models. 
   {: important}
 
   ![Users get an option to install sample data](images/user_setup_sample.png)
 
-After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conversations** page. If you were added as a collaborator to an existing project, you can start asking questions about the data in that project.
+After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conversations** page. If you are a collaborator in an existing project, you can start asking questions about the data in that project.
 
 ![Conversations page in watsonx BI](images/user_conversation.png)
 
 ## Accessing watsonx BI after setup
 {: #access_after_setup}
 
-To resume work in watsonx BI after logging out:
+To resume work in watsonx BI after you log out:
 
 1. Go to [https://dataplatform.cloud.ibm.com/wxbi/conversations](https://dataplatform.cloud.ibm.com/wxbi/conversations){: external}.
 
@@ -76,7 +76,7 @@ To resume work in watsonx BI after logging out:
 ## Troubleshooting 
 {: #troubleshooting_setup}
 
- Here's a look at how to troubleshoot errors that you might encounter as you set up {{site.data.keyword.wxbia_short}}:
+ Here is a look at how to troubleshoot errors that you might encounter as you set up {{site.data.keyword.wxbia_short}}:
 
 - **Error: You don't have access to {{site.data.keyword.wxbia_short}}. Contact your administrator to request access.**
 
@@ -90,7 +90,7 @@ To resume work in watsonx BI after logging out:
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 
-- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise select the right one from the account list in the header.**
+- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise, select the right one from the account list in the header.**
 
   You might see this error if: 
 
