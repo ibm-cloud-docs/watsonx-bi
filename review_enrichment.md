@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-10"
 
 keywords: review mde, review metadata enrichment, review enrichment
 subcollection: watsonx-bi
@@ -54,15 +54,15 @@ You can go to the columns of an asset by clicking the asset name or **View colum
 
 Access an asset's enrichment details by clicking the asset name or by clicking **View asset details** in the context menu. On the **Details** tab in the side panel, you can find the following information:
 
-- **Display name**
+Display name
 
-  The **Display name** initially contains an alternative name for the data asset that was found through fuzzy matching. Fuzzy matching expands the source name based on a predefined glossary to provide a name that is easy to understand. 
+:   The **Display name** initially contains an alternative name for the data asset that was found through fuzzy matching. Fuzzy matching expands the source name based on a predefined glossary to provide a name that is easy to understand. 
 
-  The expanded name might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the display name.
+:   The expanded name might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the display name.
 
-- **Description**
+Description
 
-  This section contains an AI-generated description, which might already be assigned because the confidence was high enough. Otherwise, it is a suggestion that you can accept. At any time, you can edit the description.
+:   This section contains an AI-generated description, which might already be assigned because the confidence was high enough. Otherwise, it is a suggestion that you can accept. At any time, you can edit the description.
 
 
 
@@ -91,16 +91,12 @@ The **Columns** tab is empty until enrichment runs at least once.
 
 Access the column's enrichment details by clicking the column name or by clicking **View column details** from its context menu. On the **Details** tab in the side panel, you can find this information:
 
-- **Display name**
+Display name
 
-  Based on the default enrichment objectives, which include **Expand metadata**, the **Display name** initially contains an alternative name for the column that was found through fuzzy matching. Fuzzy matching expands the source name based on a predefined glossary to provide a name that is easy to understand. The expanded name might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the display name.
+:   Based on the default enrichment objectives, which include **Expand metadata**, the **Display name** initially contains an alternative name for the column that was found through fuzzy matching. Fuzzy matching expands the source name based on a predefined glossary to provide a name that is easy to understand. 
 
-- **Description**
+:   The expanded name might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the display name.
 
-  This section can contain an AI-generated description for the column, based on the **Expand metadata** enrichment objective. This description might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the description.
+Description
 
-
-
-
-
-
+:   This section can contain an AI-generated description for the column, based on the **Expand metadata** enrichment objective. The description might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the description.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-10"
 
 keywords: troubleshoot, project import, project export
 subcollection: watsonx-bi
@@ -99,7 +99,7 @@ Relationships should be automatically reconstructed. If relationships between yo
 
 If you import projects that are more than 100 MB or have many relationships, the import operation might take longer than expected. 
 
-#### Large projects (>100 MB)
+#### Projects >100 MB
 {: #import_project_size}
 - Import might take 10-15 minutes.
 - Metrics initialization might take up to 30 minutes.

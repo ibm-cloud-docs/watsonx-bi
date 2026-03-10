@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-10"
 
 keywords: generating visualizations, conversations
 subcollection: watsonx-bi
@@ -39,7 +39,7 @@ You can customize certain properties of a visualization, conversationally.
 
 For example, when you ask AI to generate a visualization, you can enter an input like "Show product line with revenue and set the chart title as *My new visualization*."
 
-You can even change a visualization property after the visualization generates by asking AI to implement the change you want to make. For example, "Hide the yAxis gridline" hides the gridline that is on the y-axis of the chart.
+You can even change a visualization property after the visualization generates by asking AI to implement the change you want to make. For example, *Hide the yAxis gridline* hides the gridline that is on the y-axis of the chart.
 
 Properties that you can change with natural language:
 
@@ -139,12 +139,13 @@ Adjust label font size
 
 :   - xlarge
     
-    By default, the font size is set to medium. 
+  By default, the font size is set to medium. 
 
-    Example inputs:
+  Example inputs:
 
-    - Use xlarge as the label size for xAxis.
-    - Change the label size to small.
+  - Use xlarge as the label size for xAxis.
+  
+  - Change the label size to small.
 
 Bar width
 

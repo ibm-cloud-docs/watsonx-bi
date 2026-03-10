@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-03-05"
+  years: 2025, 2026
+lastupdated: "2026-03-10"
 
 keywords: dremio
 
@@ -27,7 +27,7 @@ Dremio 25
 
 To create the connection, you need these connection details:
 
-- Hostname or IP address: You can create a Dremio Cloud instance only in the European Union (EU) or the United States (US). Use "data.eu.dremio.cloud" for the EU and use "data.dremio.cloud" for the US. Dremio Software can be hosted anywhere.
+- Hostname or IP address: You can create a Dremio Cloud instance only in the European Union (EU) or the United States (US). Use **data.eu.dremio.cloud** for the EU and use **data.dremio.cloud** for the US. Dremio Software can be hosted anywhere.
 
 - Port number: The default port for Dremio Cloud instances is 443 and for Dremio Software it is 32010.
 
@@ -46,9 +46,11 @@ To create the connection, you need these connection details:
 ## Dremio setup
 {: #setup_dremio}
 
-Dremio can be set up in various deployments, see [Dremio Cluster Deployment](https://docs.dremio.com/25.x/get-started/cluster-deployments/). To set up Dremio Cloud, see [Dremio Cloud](https://docs.dremio.com/cloud/).
+Dremio can be set up in various deployments, see [Dremio Cluster Deployment](https://docs.dremio.com/25.x/get-started/cluster-deployments/). 
 
-## Restriction
+To set up Dremio Cloud, see [Dremio Cloud](https://docs.dremio.com/cloud/).
+
+## Limitations
 {: #restriction_dremio}
 
 You can use this connection only for reading data. You cannot write data or export data with this connection.

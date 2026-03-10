@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-10"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -55,7 +55,7 @@ Define a variety of metrics and ground answers in these standardized metric defi
 
 {{site.data.keyword.wxbia_short_cap}} comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
 
-If your organization's business terminology is different, **IBM Cloud account owners** and **Administrators** can consider adding business terms to provide extra context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
+If your organization's business terminology is different, **IBM Cloud account owners** and **Administrators** can consider adding business terms to provide more context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
 
 
 ## Use unique names for data assets

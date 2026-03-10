@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2036
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-10"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -72,7 +72,12 @@ You can access suggested questions in the expanded view of a metric in the **Key
 
 Suggested questions might also display at various points in a conversation. The questions that are displayed are based on the assets in the conversation's current scope, and can be asked to generate further insight.
 
-When you start a new conversation, one extra question might be shown, "What data do I have available to me?". This question allows you to explore the data available to you. When you click the recommended question, {{site.data.keyword.wxbia_short}} responds back with a list of business terms or data assets for you to select from. At the end of the selection process, a list of suggested questions display that you can ask against the specific target asset.
+When you start a new conversation, you might be shown, <q>What data do I have available to me?</q>. 
+
+This question allows you to explore the data available to you.
+
+When you select the recommended question, {{site.data.keyword.wxbia_short}} responds back with a list of business terms or data assets for you to select from. At the end of the selection process, a list of suggested questions display that you can ask against the specific target asset.
+
 
 ![Suggested questions display in a conversation](images/suggested_questions.png){: caption="Suggested questions display under a response in a conversation" caption-side="bottom"}
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-25"
+lastupdated: "2026-03-10"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -98,7 +98,30 @@ Some restrictions to keep in mind:
 
    - Aggregate: Set to "Calculated"
 
- These calculations cannot be previewed in the grid view or during profiling operations. However, they still compute correctly when used in visualizations and conversation experiences.
+   These calculations cannot be previewed in the grid view or during profiling operations. However, they still compute correctly when used in visualizations and conversation experiences.
+
+### Use design mode filters to reduce sampling for enrichment
+{: #design_mode_filters}
+
+You can add an embedded filter to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. A **Design mode** filter narrows the data used during enrichment when you export a metric definition.
+
+Watsonx BI profiles your data to build enriched metric definitions. Profiling can fail when the sampling set is large. To avoid failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
+
+When you add an embedded filter to a metric definition, choose one of the following **Usage** values to control when the filter is applied:
+
+- Enabled - The filter is always applied.
+
+- Disabled - The filter is not applied.
+
+- Default - The filter is applied, unless the incoming query contains a filter that references the same columns (query items).
+
+- Design mode - The filter is applied only when the query indicates that it’s in design mode.
+
+Filters that use **Design mode** always run during metadata enrichment and during suggested question generation. These filters are not used in conversations.
+{: note}
+
+Semantic data models also include a **Design mode** setting in the **Properties** tab. This setting controls which filters the system applies during modeling queries and is enabled by default. When Design mode is on, filters with a Usage of Design mode run during modeling.
+
 
 ## Syncing the semantic data model
 {: #sync_cognos_data}
@@ -122,7 +145,7 @@ If a metric definition references a table that was removed from the data module,
 
 For the best results in conversations, create metrics based on your Cognos data source. 
 
-To create metrics automatically, click **Generate metrics** on the **Metrics overview** page. The time it takes to generate metrics depends on the size and complexity of your data. 
+To create metrics automatically, click **Generate metrics** on the **Metrics overview** page. The time it takes to generate metrics depends on the amount and complexity of your data. 
 
 You can also generate metrics or build them manually in the semantic data model by using the **Advanced mode**. This option lets you choose the measures and tables that you want to use to create metrics, giving you more control on the metrics that you want to include in the semantic data model. 
 

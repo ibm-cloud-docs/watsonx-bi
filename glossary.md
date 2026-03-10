@@ -1,7 +1,7 @@
 ---
 copyright: 
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-10"
 
 keywords: glossary
 subcollection: watsonx-bi
@@ -53,7 +53,7 @@ An asset is an item that contains information about data, other valuable informa
 ### attribute
 {: #x50000040}
 
-An attribute is a characteristic that describes data and is used to organize, categorize, and filter data. For example, in a Product table, attributes might include properties such as Color or Size. In relational databases, attributes correspond to columns in a table.
+An attribute is a characteristic that describes data and is used to organize, categorize, and filter data. For example, in a Product table, attributes might include properties such as Color or Weight. In relational databases, attributes correspond to columns in a table.
 
 ## B
 {: #glossb}
