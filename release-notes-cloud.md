@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-12"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +23,10 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+
+
+
 
 ## 5 March 2026
 {: #subcollection-mar0526}

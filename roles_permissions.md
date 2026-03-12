@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-06"
+lastupdated: "2026-03-12"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -65,6 +65,8 @@ Action |Administrator | Data analyst | Analytics consumer
 |Change large language model | ✓ | x | x |
 |Add or delete user groups | ✓ | x | x |
 |Assign and modify roles | ✓ | x | x |
+|**Governance**|
+|Manage artifacts such as business terms and classifications | ✓ | x | x |
 |**Conversations** |
 |View, create, and delete chats| ✓ | ✓ | ✓ |
 |View key metrics| ✓ | ✓ | ✓ |
@@ -73,7 +75,7 @@ Action |Administrator | Data analyst | Analytics consumer
 |Download responses|All components| All components| Text, visualizations, and tabular data|
 |**Data and Metrics**|
 |Create projects | ✓ | ✓ | ✓ |
-|[Cloud]{: tag-blue} Import/export projects | ✓ | ✓ | ✓ |
+|Import/export projects | ✓ | ✓ | ✓ |
 |Create metrics | ✓ | ✓ | ✓ | 
 |Upload files | ✓ | ✓ | ✓ |
 |Manage semantic data models | ✓ | ✓ | ✓ |

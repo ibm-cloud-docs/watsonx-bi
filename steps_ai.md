@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2026-01-19"
+lastupdated: "2026-03-12"
 
 keywords:
 subcollection: watsonx-bi
@@ -75,7 +75,7 @@ You can review the generated query in this step to verify its accuracy.
 You can also view the specific measures and columns that were identified and used to generate the query for your question.
 
 ### Using other measures and columns
-{: #change_measure_colmn}
+{: #change_measure_column}
 
 When AI finds additional measures and columns that might help answer your question, an **Edit** icon is available next to **Data referenced**. Click this icon to explore other angles of your data.
 
@@ -103,3 +103,6 @@ To avoid getting unexpected results, select measures and columns that align with
 {: #resp_gen}
 
 Based on the generated query, the AI produces a natural‑language response, which can appear as text, a visualization, or both.
+
+## Troubleshooting
+{: #ai_steps_troubleshoot}

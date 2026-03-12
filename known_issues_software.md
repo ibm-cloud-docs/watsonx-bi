@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-12"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -32,9 +32,10 @@ IBM Db2 connector doesn't appear when the watsonx BI filter is applied
 
 :   Clear the filters and then select the watsonx BI connector.
 
-:   When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.{: note}
+:   When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.
+{: note}
 
-The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors*
+The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors
 
 :   Applies to: 5.3.0
 
@@ -47,7 +48,7 @@ The Connect to data option in the watsonx.data™ experience does not filter for
 ## Metric generation
 {: #ki_metric_generation}
 
-Metadata enrichment failure during metric generation for export
+Metadata enrichment failure during metric generation for export.
   
 :   Applies to: 5.3.0
 

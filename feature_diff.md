@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-12"
 
 keywords: about watsonx BI, features
 subcollection: watsonx-bi
@@ -59,8 +59,23 @@ Perspective switcher
 
 While the core functions in both deployments are effectively the same, the following features are not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub:
 
-- Choose your large language model (LLM) feature does not support Meta Llama 4 and Granite combination
+- Choose your large language model (LLM) feature 
+does not support Meta Llama 4 and Granite combination. Granite 4 models are also not supported.
+
+- Chain of Thought reasoning 
+
 - Use of Go Sales sample data
+
 - Provide feedback for generated responses in conversations
+
+- Feature to download response components
+
+- Cognos Analytics support for data modules
+
+- User filters for row-level security
+
+- Expand and collapse Conversations panel 
+
+- Options to manage conversations in bulk
 
 In IBM Software Hub versions 5.3 and higher, {{site.data.keyword.wxbia_short}} can be accessed from IBM watsonx.data Premium. This feature is not available in {{site.data.keyword.wxbia_short}} as a Service.

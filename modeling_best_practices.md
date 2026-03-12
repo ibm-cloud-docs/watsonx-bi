@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-12"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -239,10 +239,10 @@ The instructions that you provide in watsonx BI are for AI systems, not humans. 
 #### Examples of AI instructions
 {: #examples_ai_instructions}
 
-
-**Calendar or season logic**
+##### Calendar or season logic
+{: #calendar_logic_example}
 ```
-Treat “current year” as the latest CalendarYear available in the data.
+Treat "current year" as the latest CalendarYear available in the data.
 
 Interpret seasons as:
 Winter = December, January, February
@@ -254,14 +254,16 @@ Use these definitions when users reference seasons.
 ```
 {: codeblock} 
 
-**Fiscal year interpretation**
+Fiscal year interpretation
+{: #fiscal_year_example}
 ```
 The fiscal year starts in April and ends in March of the following calendar year.
 When users reference a fiscal year (for example, FY2023), interpret it as April 2022–March 2023.
 ```
 {: codeblock}
 
-**Monthly headcount metric**
+Monthly headcount metric
+{: #monthly_headcount_example}
 ```
 This table contains monthly headcount. Treat each month independently.
 
@@ -276,24 +278,6 @@ AND EXTRACT(year FROM month_end_date) = 2025
 ```
 {: codeblock}
 
-**Date and time-based filtering**
-````
-For data/time based analysis, use date_hired if the question is related to new employees or promotions. Use termination date for attrition related questions.
-````
-{: codeblock}
-
-**Use instructions for semi-additive measures**
-
-If you have a semi-additive measure in your data, such as headcount or inventory, which cannot always be aggregated, you can add these to **AI instructions and context** field to use the appropriate calculation based on the time dimension. 
-
-For example, you might have headcount data on a monthly basis but if you want the headcount for the year, you cannot add monthly headcount to get the yearly total. In this case, the value from the last month of the year would yield the correct yearly headcount. 
-
-You can include a description instructing the AI on how to calculate headcount for the year.
-
-```
-Use this employee_num for yearly headcount. The headcount for 2025 is the total headcount for December 2025.
-```
-{: codeblock}
 
 For more examples, see [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.
 

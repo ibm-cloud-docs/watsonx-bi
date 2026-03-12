@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-12"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -84,7 +84,7 @@ The **Metrics overview** page is your workspace for creating metrics, visualizin
 ## Semantic data model characteristics when using a Cognos data source
 {: #using_cognos_data}
 
-The semantic data model structure mirrors Cognos Analytic's data module architecture. Any business context that is defined in Cognos Analytics is automatically applied to your semantic data model in {{site.data.keyword.wxbia_short}}, along with all Cognos governance rules and permissions. 
+The semantic data model structure mirrors the Cognos Analytics data module architecture. Any business context that is defined in Cognos Analytics is automatically applied to your semantic data model in {{site.data.keyword.wxbia_short}}, along with all Cognos governance rules and permissions. 
 
 Some restrictions to keep in mind:
 
@@ -100,12 +100,16 @@ Some restrictions to keep in mind:
 
    These calculations cannot be previewed in the grid view or during profiling operations. However, they still compute correctly when used in visualizations and conversation experiences.
 
-### Use design mode filters to reduce sampling for enrichment
+### Use design mode filters to reduce sampling for metric enrichment
 {: #design_mode_filters}
 
-You can add an embedded filter to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. A **Design mode** filter narrows the data used during enrichment when you export a metric definition.
+You can [add an embedded filter](/docs/watsonx-bi?topic=watsonx-bi-model_filters#create_embedded){: external} to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. This approach is especially useful when the FM package or data module is large and complex.
 
-Watsonx BI profiles your data to build enriched metric definitions. Profiling can fail when the sampling set is large. To avoid failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
+Embedded filters let you control which data is used in a metric definition. For example, you can exclude data that’s irrelevant for specific geographies, time periods, product lines, and other dimensions.
+
+A filter with a **Design mode** usage narrows the data used during enrichment when you export a metric definition. 
+
+During the export of metric definitions, watsonx BI profiles your data to build enriched metrics. Profiling can fail when the sampling set is large. To reduce the risk of failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
 
 When you add an embedded filter to a metric definition, choose one of the following **Usage** values to control when the filter is applied:
 

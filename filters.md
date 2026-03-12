@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-12"
 
 keywords: filters, filtering, modelling
 subcollection: watsonx-bi
@@ -76,11 +76,9 @@ The filter icon on a table indicates that the table contains at least one embedd
 ### Embedded filters in a complex query
 {: #complex_query}
 
-Semantic data models have a setting that is called **Design mode**, which you can access in the **Properties** tab. The **Design mode** controls which filters are applied during queries. This setting is enabled by default.
+Semantic data models include a **Design mode** setting, which you can access in the **Properties** tab. **Design mode** controls which filters the system applies during queries. This setting is enabled by default.
 
-Embedded filters have a property that is called **Usage**, which ties into the **Design mode** property for semantic data models. 
-
-When an embedded filter is applied to a metric definition, you can use the **Usage** values to control when the filter is applied.
+Embedded filters include a **Usage** property, which works together with the semantic data model’s **Design mode**. When you add an embedded filter to a metric definition, you can choose one of four **Usage** values to control when the filter is applied:
 
 - Enabled - The filter is always applied.
 
@@ -88,12 +86,14 @@ When an embedded filter is applied to a metric definition, you can use the **Usa
 
 - Default - The filter is applied, unless the incoming query contains a filter that references the same columns (query items).
 
-- Design mode - If the query says that it is in design mode then the filter is applied.
+- Design mode - The filter is applied only when the query indicates that it’s in design mode.
 
-When the Design mode setting is toggled for the semantic data model, the design mode filters are run in modeling. If Design mode is turned off, filters with a usage of design mode are ignored when a query is performed in modeling.
+When you toggle Design mode for the semantic data model, filters with a **Usage** of **Design mode** run during modeling. If **Design mode** is turned off, those filters are ignored during modeling queries.
 
-Filters that use Design mode are always run in metadata enrichment and to generate suggested questions regardless of whether the semantic data model Design mode is on or off. Filters that use Design mode are not used in conversations.
+Filters that use **Design mode** always run during metadata enrichment and during suggested question generation, regardless of the semantic data model’s Design mode setting. These filters are not used in conversations.
 {: note}
+
+
 
 ### Managing embedded filters
 {: #manage_embedded}
