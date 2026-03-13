@@ -141,6 +141,7 @@ toc:
           topics:
           - gettingstarted_wxbia.md
           - asking_questions.md
+          - multimetric_queries.md
           - change_scope.md
           - visualizations.md
           - feedback.md

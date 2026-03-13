@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-12"
+lastupdated: "2026-03-13"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -25,7 +25,25 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: #shortdesc}
 
 
+## 13 March 2026
+{: #subcollection-mar1326}
+{: release-note}
 
+Multi‑asset queries now supported
+
+:   You can now ask natural‑language questions that use multiple data assets in a single query. In earlier versions, watsonx BI selected one best‑fit asset to answer a question. With multi‑asset queries, watsonx BI can retrieve data from one asset, use that result to build a new query, and return a combined answer. This approach supports multi‑step questions such as comparisons and rank‑based filters.
+
+:  For example, you can ask:
+
+:   - For the product with the most revenue, how many returns did it have?
+
+:   - What is the return count for the top 10 SKUs by revenue in 2025?
+
+:   Watsonx BI automatically determines which assets are required, issues independent queries, and generates a combined answer.
+
+:   The multi-asset query capability works when Chain of Thought is enabled in watsonx BI and all referenced assets are stored in the same container, such as a project or catalog.
+
+:   For more information, see [Asking questions across multiple data assets](/docs/watsonx-bi?topic=watsonx-bi-multiasset_queries).
 
 
 ## 5 March 2026
