@@ -25,8 +25,16 @@
     ]
   },
   "section_updates": {
-    "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes",
+    "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
+      {
+        "date": "18 March 2026",
+        "title": "IBM watsonx BI as a Service updated with new features and enhancements"
+      },
+      {
+        "date": "13 March 2026",
+        "title": "Multi‑asset queries now supported"
+      },
       {
         "date": "5 March 2026",
         "title": "IBM Granite 3 AI model is being discontinued and replaced with IBM Granite 4 model"
@@ -46,14 +54,6 @@
       {
         "date": "15 January 2026",
         "title": "IBM watsonx.data intelligence required for watsonx BI as a Service"
-      },
-      {
-        "date": "3 December 2025",
-        "title": "Watsonx BI as a Service updated to include Chain of thought reasoning and remote Model Context Protocol (MCP) server"
-      },
-      {
-        "date": "30 October 2025",
-        "title": "Watsonx BI updated on IBM Software Hub 5.2.2"
       }
     ]
   },

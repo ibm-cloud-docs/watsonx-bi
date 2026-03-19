@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-15"
+lastupdated: "2026-03-19"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -13,16 +13,20 @@ content-type: tutorial
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Provisioning {{site.data.keyword.wxbia_short}} (Cloud account owners)
+# Provisioning {{site.data.keyword.wxbia_short}} (Cloud account owners and administrators)
 {: #getting-started}
 {: toc-content-type="tutorial"}
 
 
-These steps describe the typical tasks for an IBM Cloud account owner to set up the account for an organization:
+These steps describe the typical tasks for an IBM Cloud account owner to provision and set up the account for an organization:
 
 IBM {{site.data.keyword.wxbia_short}} as a Service requires an active IBM watsonx.data intelligence plan in the Cloud account. See [Step 2](/docs/watsonx-bi?topic=watsonx-bi-getting-started#step2) for more information. 
 {: important}
 
+## Before you begin
+{: #prerequisite_configuration}
+
+IBM Cloud account owners can grant an Administrator the ability to provision and set up a watsonx BI instance without their involvement. For more information, see [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
 
 ## Step 1: Provision {{site.data.keyword.wxbia_short}} in your Cloud account
 {: #step1}
@@ -47,12 +51,11 @@ Watsonx BI requires an active watsonx.data intelligence plan to be provisioned i
 
 1. In the IBM Cloud account, click **Create resource**.
 
-2. Enter **watsonx.data intelligence** in the search field and select it from the catalog.
+2. Enter **watsonx.data intelligence** in the search field and select it from the catalog. It must be provisioned in the same region as watsonx BI.
 
 3. Select a pricing plan, accept the license agreement checkbox, and click **Create**. 
 
 4. The new service instance appears under **Analytics** in the **Resource list**. 
-
 
 If watsonx.data intelligence is disabled or removed from the Cloud account, you might be able to restore it through [reclamation](/docs/account?topic=account-resource-reclamation&interface=cli){: external}. 
 {: important}
@@ -60,7 +63,7 @@ If watsonx.data intelligence is disabled or removed from the Cloud account, you 
 ## Step 3: Set up and initialize {{site.data.keyword.wxbia_short}}
 {: #step3}
 
-As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. This step cannot be delegated to an Administrative user. 
+As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. You can delegate this task to an Administrator. For more information, [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
 {: requirement}
 
 1. From the **Resource list**, select and launch the {{site.data.keyword.wxbia_short}} instance. 
@@ -102,7 +105,7 @@ When you use {{site.data.keyword.wxbia_short}}, make sure that the selected acco
   | As a Cloud account owner, you do not have access to {{site.data.keyword.wxbia_short}} | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}. |
   | The user is a part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before users can use {{site.data.keyword.wxbia_short}} (Steps 1 and 2 above). |
   | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but they do not have access| Administrator must give the user access to {{site.data.keyword.wxbia_short}} |
-  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}} (see Step 2). | 
+  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}} (see Step 2). | 
   | {{site.data.keyword.wxbia_short}} has not been provisioned at all | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}.|
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
@@ -114,7 +117,7 @@ When you use {{site.data.keyword.wxbia_short}}, make sure that the selected acco
    | Scenario | Action  |
    |-------|-------------|
    | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}}, but their access was removed | The Cloud account owner can assign access to the user for {{site.data.keyword.wxbia_short}}.|
-   | The user is a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before the user can use it (see Step 2).|
+   | The user is a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before the user can use it (see Step 2).|
    |The user is a part of multiple Cloud accounts and is trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-19"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -70,7 +70,7 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
   |-------|-------------|
   | You are part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before you can use {{site.data.keyword.wxbia_short}}. |
   | You are part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but you do not have access| Administrator must give you access to {{site.data.keyword.wxbia_short}} |
-  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}}. | 
+  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}}. | 
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 
@@ -81,7 +81,7 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
    | Scenario | Action  |
    |-------|-------------|
    | You are a part of a Cloud account with access to {{site.data.keyword.wxbia_short}}, but your access was removed | The Cloud account owner can assign access to you for {{site.data.keyword.wxbia_short}}.|
-   | You are a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before you can use it.|
+   | You are a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before you can use it.|
    |You are a part of multiple Cloud accounts and are trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
@@ -115,4 +115,3 @@ Familiarize yourself with [watsonx BI's user interface](/docs/watsonx-bi?topic=w
 If you're working with data (Data analyst), you can connect to a data source and start creating metrics. For more information, see [Creating metrics for conversations](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}. 
 
 If you want to ask questions about your data, start a conversation. For more information, see [An overview of conversations](/docs/watsonx-bi?topic=watsonx-bi-conv_overview){: external} and [Asking questions in natural language](/docs/watsonx-bi?topic=watsonx-bi-ask){: external}. 
-

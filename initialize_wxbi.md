@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-19"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -86,7 +86,7 @@ To resume work in watsonx BI after you log out:
   |-------|-------------|
   | You are part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before you can use {{site.data.keyword.wxbia_short}}. |
   | You are part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but you do not have access| Administrator must give you access to {{site.data.keyword.wxbia_short}} |
-  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}}. | 
+  | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}}. | 
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 
@@ -97,7 +97,7 @@ To resume work in watsonx BI after you log out:
    | Scenario | Action  |
    |-------|-------------|
    | You are a part of a Cloud account with access to {{site.data.keyword.wxbia_short}}, but your access was removed | The Cloud account owner can assign access to you for {{site.data.keyword.wxbia_short}}.|
-   | You are a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner must set up {{site.data.keyword.wxbia_short}} before you can use it.|
+   | You are a part of the Cloud account with access to {{site.data.keyword.wxbia_short}} but {{site.data.keyword.wxbia_short}} has not been set up on the account| The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before you can use it.|
    |You are a part of multiple Cloud accounts and are trying to use {{site.data.keyword.wxbia_short}} with an account that doesn't have access | Select the right account in the account switcher that has access to {{site.data.keyword.wxbia_short}} and try again.
    {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
@@ -108,7 +108,7 @@ To find your Cloud account owner:
 
 1. From the **Navigation Menu**, choose **Administration > Access (IAM)**.
 2. From the avatar menu, make sure you're in the right account, or switch accounts, if necessary.
-3. Click **Users**, and find the username with the word **owner** next to it.
+3. Click **Users**, and find the username with the word **owner** or next to it.
 
 
 ## Next steps

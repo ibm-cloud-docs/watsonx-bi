@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-19"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -13,16 +13,20 @@ content-type: tutorial
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Setting up {{site.data.keyword.wxbia_short}} as a Service for administrative users 
+# Setting up {{site.data.keyword.wxbia_short}} as a Service (Administrative users)
 {: #getting-started_cloud}
 {: toc-content-type="tutorial"}
 
 These steps describe the typical tasks for an **IBM Cloud account owner** to provision and initialize the account for an organization:
 
+## Before you begin
+{: prereq_configuration}
+
+IBM Cloud account owners can grant an administrator the ability to provision and set up a watsonx BI instance without their involvement. For more information, see [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
 
 ## Step 1: Provisioning {{site.data.keyword.wxbia_short}} 
 {: #step1_provision}
-[Cloud account owner]{: tag-blue}
+[Cloud account owner]{: tag-blue}[Administrator]{: tag-blue}
 
 You can provision {{site.data.keyword.wxbia_short}} by creating an instance of the service in the IBM Cloud account.
 
@@ -62,9 +66,9 @@ If watsonx.data intelligence is disabled or removed from the Cloud account, you 
 
 ## Step 3: Setting up and initializing {{site.data.keyword.wxbia_short}}
 {: #step2_setup_initialize}
-[Cloud account owner]{: tag-blue}
+[Cloud account owner]{: tag-blue}[Administrator]{: tag-blue}
 
-As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. This step cannot be delegated to an Administrative user. 
+As an IBM Cloud account owner, you must set up and initialize {{site.data.keyword.wxbia_short}} before other users that you invite to your Cloud account can use {{site.data.keyword.wxbia_short}}. You can delegate this task to an Administrator. For more information, see [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
 {: requirement}
 
 1. From the **Resource list**, select and launch the {{site.data.keyword.wxbia_short}} instance. 

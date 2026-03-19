@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-13"
+lastupdated: "2026-03-19"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +23,27 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 18 March 2026
+{: #subcollection-mar1826}
+{: release-note}
+
+Administrators can now set up watsonx BI 
+
+:   Administrators can now provision and set up watsonx BI.
+
+:   IBM Cloud account owners can assign the minimum set of IBM Cloud access policies that allow Administrators to initialize and configure watsonx BI for the account. This enhancement gives account owners and Administrators more flexibility and helps teams onboard users faster.
+
+:   For more information, see [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
+
+
+Support for currency and percentage formatting in conversations
+
+:   Watsonx BI can now apply **Currency** and **Percent** formatting from the semantic data model to conversational responses. 
+
+:   When you define format types for metric columns in a semantic data model, generated responses in **Conversations** display values with the correct currency symbol or percent sign, decimal places, and thousands separators. This update improves readability and reduces ambiguity in responses that include monetary or ratio-based values.
+
+:   For more information, see [Formatting data](/docs/watsonx-bi?topic=watsonx-bi-format_data){: external}.
 
 
 ## 13 March 2026

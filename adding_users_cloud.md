@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-03-19"
 
 keywords: adding users, BI community, members
 subcollection: watsonx-bi
@@ -15,12 +15,14 @@ subcollection: watsonx-bi
 # Adding users to the Cloud account 
 {: #add_users_account}
 
-As a Cloud account owner or Administrator, you add the people in your organization who need access to {{site.data.keyword.wxbia_full}} to the IBM Cloud account and then assign them the appropriate roles for their tasks. {: #shortdesc}
+As a Cloud account owner or Administrator, you add people in your organization who need access to {{site.data.keyword.wxbia_full}} to the IBM Cloud account and assign them the roles they need for their tasks. {: #shortdesc}
 
 This is a two-step process:
 
 1. Add administrative and non-administrative users to the IBM Cloud account so that they can access the account in general. During this step, you can set up access groups to simplify permissions and role assignment, and assign IAM roles to the users. 
 
+   Depending on the permissions assigned to an administrator, they might also be able to **provision and set up** watsonx BI for the Cloud account. For more information, see [Enabling administrators to set up watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-assign_admins){: external}.
+  
 2. Add users to the BI community in watsonx BI so that the invited users can use watsonx BI based on their role. During this step, you will assign collaborator roles. 
 
 There are two types of roles that are required for {{site.data.keyword.wxbia_short}}: 

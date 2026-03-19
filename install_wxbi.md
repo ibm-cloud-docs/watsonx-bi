@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-19"
 
 keywords: install watsonx BI, software hub
 subcollection: watsonx-bi
@@ -81,7 +81,7 @@ After you validate your {{site.data.keyword.wxbia_short}} installation, complete
 
 - [Complete the post-installation setup](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=setup-post-installation-watsonx-bi){: external}
 
-
+- [Configure flat file service](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=pis-configuring-flat-file-service-for-watsonx-bi){: external}
 
 ## What to do next
 {: #install-next-steps}

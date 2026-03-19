@@ -42,6 +42,7 @@ toc:
               - quick_start.md
               - initialize_wxbi.md
               - adding_users_cloud.md
+              - enable_admins_configuration.md
               - iam-access.md
               - roles_permissions.md
               - plans.md
@@ -136,6 +137,7 @@ toc:
               - adding_new_column_modeling.md
               - adding_new_tables_modeling.md
           - data_types.md
+          - format_data.md
       - topicgroup:
           label: Using conversations to get insights
           topics:
