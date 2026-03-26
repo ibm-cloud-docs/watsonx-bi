@@ -12,7 +12,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 # IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}} 
-{: #data_intelligence}
+{: #data_intelligence_plans}
 
 IBM watsonx.data intelligence is required to use watsonx BI. {: #shortdesc}
 

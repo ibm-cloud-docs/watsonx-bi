@@ -48,7 +48,7 @@ Improved experience when watsonx.data intelligence Capacity Unit Hour (CUH) limi
 
 :    If response accuracy is critical during periods of high CUH usage, Administrators and Cloud account owners can upgrade the watsonx.data intelligence plan. 
 
-:   For more information, see [IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}}](/docs/watsonx-bi?topic=watsonx-bi-data_intelligence){: external}.
+:   For more information, see [IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}}](/docs/watsonx-bi?topic=watsonx-bi-data_intelligence_plans){: external}.
 
 Microsoft Azure Databricks available as a connector
 
