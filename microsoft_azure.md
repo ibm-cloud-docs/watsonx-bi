@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-25"
 
 keywords: Microsoft Azure SQL Database
 
@@ -14,7 +14,7 @@ subcollection: watsonx-bi
 # Microsoft Azure SQL Database
 {: #microsoft_azure_sql}
 
-Microsoft Azure SQL Database is a managed cloud database that is provided as part of Microsoft Azure.
+Microsoft Azure SQL Database is a managed cloud database that is provided as part of Microsoft Azure. {: #shortdesc}
 
 
 ## Create a connection to Microsoft Azure SQL Database

@@ -46,6 +46,7 @@ toc:
               - iam-access.md
               - roles_permissions.md
               - plans.md
+              - data-intelligence-plans.md
               - cos.md
               - deprovisioning.md
           - configuration_settings.md
@@ -63,7 +64,6 @@ toc:
       - topicgroup:
           label: Services and integrations
           topics:
-          - wxdata.md
           - wxdatapremium.md
           - cognos_new.md
           - supported_connectors.md
@@ -206,7 +206,10 @@ toc:
           - amazon_redshift.md
           - dremio.md
           - google_bigquery.md
+          - azure_databricks.md
           - db2.md
+          - db2_z.md
+          - db2_warehouse.md
           - informix.md
           - netezza.md
           - mariadb.md
@@ -220,4 +223,5 @@ toc:
           - singlestore_db.md
           - snowflake.md
           - terradata.md
+          - wxdata.md
       - glossary.md

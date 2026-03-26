@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-19"
+lastupdated: "2026-03-25"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -145,7 +145,7 @@ Before you begin, set up access groups to simplify user access policies, role as
     |Analytics consumer| Reader|       |
     |Data analyst| Writer | Viewer  |
     |Administrator| Administrator | Manager | 
-    {: caption="IAM Access roles mapping by {{site.data.keyword.wxbia_short}} user type " caption-side="bottom"}
+    {: caption="IAM Access roles mapping by {{site.data.keyword.wxbia_short}} user type" caption-side="bottom"}
     
   d. Review the selections and click **Add**.
 

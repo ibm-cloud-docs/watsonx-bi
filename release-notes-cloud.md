@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-19"
+lastupdated: "2026-03-26"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +23,38 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 26 March 2026
+{: #subcollection-mar2626}
+{: release-note}
+
+Improved experience when watsonx.data intelligence Capacity Unit Hour (CUH) limit is reached
+
+:   This release improves the watsonx BI experience when your watsonx.data intelligence Capacity Unit Hour (CUH) limit is reached. 
+
+:   Previously, when CUH were exhausted, metadata import and enrichment errors blocked progress, preventing you from continuing work. Administrators had to upgrade the watsonx.data intelligence plan at the Cloud account level to unblock users.
+
+:   With this update, your work continues without interruption, even when metadata import and metadata enrichment jobs cannot run due to insufficient CUH. Watsonx BI continues to return results. However, response accuracy might be impacted because enriched business context is missing.
+
+:   When the CUH limit is reached, you can still:
+
+:   - Create and manage metrics
+
+:   - Work with semantic data models
+
+:   - Analyze existing data sources
+
+:   However, uploading new files is not supported after the CUH limit is reached. Any file you try to upload fails due to an enrichment error. Files that were uploaded and enriched before the CUH limit was reached remain available and usable.
+
+:    If response accuracy is critical during periods of high CUH usage, Administrators and Cloud account owners can upgrade the watsonx.data intelligence plan. 
+
+:   For more information, see [IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}}](/docs/watsonx-bi?topic=watsonx-bi-data_intelligence){: external}.
+
+Microsoft Azure Databricks available as a connector
+
+:   You can now connect to data in Microsoft Azure Databricks to create metrics and ask questions in watsonx BI.
+
+:   For more information, see [Microsoft Azure Databricks connection](/docs/watsonx-bi?topic=watsonx-bi-azure_databricks){: external}.
 
 ## 18 March 2026
 {: #subcollection-mar1826}
@@ -196,7 +228,7 @@ Improved look and feel of the welcome message
 {: #subcollection-jan2226}
 {: release-note}
 
-OpenAI gpt-oss-120b large language model now available as an independent model option
+OpenAI gpt-oss-120b now available as an independent model option
 
 :   The OpenAI gpt‑oss‑120b large language model (LLM) is now available as a stand-alone option in watsonx BI as a Service. Administrators can choose this LLM on the **Configuration and settings > Model settings**. 
 

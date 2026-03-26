@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-25"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -15,12 +15,8 @@ subcollection: watsonx-bi
 
 # Chain of Thought reasoning
 {: #choose_llm}
-
-[Preview]{: tag-teal} Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b option. With Chain of Thought reasoning, {{site.data.keyword.wxbia_short}} generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
-
-
-This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}} as a Service. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
-{: important}
+ 
+Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b option. With Chain of Thought reasoning, {{site.data.keyword.wxbia_short}} generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
 
 ## Why use Chain of Thought
 {: #why_cot}
@@ -93,7 +89,7 @@ Chain of Thought introduces advanced reasoning capabilities, and its responses m
 
 - Insights with visualizations - Chain of Thought does not generate insights alongside charts.
 
-- Chart customization - You cannot request a particular type of chart or customize chart attributes through conversation.
+- Chart customization - You cannot customize chart attributes through conversation but you can ask for a chart type. For example, you can ask watsonx BI to *Create a bar chart with the sales trend for this year*.
 
 - Response presentation - The way responses display can vary based on the AI’s reasoning. For example, the AI determines whether to include a chart, which chart type best answers your question, and how the accompanying text is structured.
 

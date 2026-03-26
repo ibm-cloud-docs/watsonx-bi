@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-25"
 
 keywords: postgresql
 
@@ -21,15 +21,8 @@ PostgreSQL is an open source and customizable object-relational database.{: #sho
 ## Supported versions 
 {: #supp_postgresql}
 
-- PostgreSQL 17.0 and later
-- PostgreSQL 16.0 and later
-- PostgreSQL 15.0 and later
-- PostgreSQL 14.0 and later
-- PostgreSQL 13.0 and later
-- PostgreSQL 12.0 and later
-- PostgreSQL 11.0 and later
-- PostgreSQL 10.1 and later
-- PostgreSQL 9.6 and later
+- PostgreSQL 13, 14, 15, 16, 17 and 18.
+
 
 ## Create a connection to PostgreSQL
 {: #create_postgresql}
@@ -53,4 +46,3 @@ Select Server proxy to access the PostgreSQL data source through a server proxy.
 - The Proxy username and Proxy password fields are optional.
 
 For **Private connectivity**, to connect to a database that is not externalized to the internet (for example, behind a firewall), you must set up a [secure connection](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
-

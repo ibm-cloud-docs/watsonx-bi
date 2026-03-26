@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-25"
 
 keywords: mcp, model context protocol, watsonx Orchestrate
 subcollection: watsonx-bi
@@ -28,7 +28,7 @@ Access to the watsonx BI semantic layer
 
 Natural language interface
 
-:   Query data in watsonx BI using natural language and receive responses with tabular data (data rectangle).
+:   Query data in watsonx BI using natural language and receive responses with tabular data.
 
 
 ## Capabilities 

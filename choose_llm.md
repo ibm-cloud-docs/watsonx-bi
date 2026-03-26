@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-25"
 
 keywords: choose llm, large language model, foundation model, AI model
 subcollection: watsonx-bi
@@ -13,10 +13,10 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Selecting the large language model for your account
+# Selecting the large language model (LLM) for your account
 {: #choose_llm_account}
 
-At the time of setting up {{site.data.keyword.wxbia_full}}, Administrators can choose the large language model (LLM) or foundation model that will be used in {{site.data.keyword.wxbia_short}} conversations for users in their organization. {: #shortdesc}
+At the time of setting up {{site.data.keyword.wxbia_full}}, Administrators can choose the LLM or foundation model to be used in {{site.data.keyword.wxbia_short}} conversations for users in their organization. {: #shortdesc}
 
 Administrators can update this selection at any time from the **Configuration and settings > Model settings** page. 
 
@@ -31,7 +31,7 @@ The name of the model used to generate each response appears in the **AI** label
 {{site.data.keyword.wxbia_short_cap}} uses models that are hosted in IBM watsonx.ai and does not use your data to train the models.
 {: note}
 
-## Supported large language models
+## Supported LLMs
 {: #available_llms}
 
 As an Administrator, you can choose from the following models:
@@ -44,7 +44,8 @@ As an Administrator, you can choose from the following models:
 |OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct| Software Hub 5.2.2 and later versions|
 |OpenAI gpt-oss-120b and IBM Granite-4-h-small| As a Service|
 |[Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-4-h-small | As a Service|
-|OpenAI gpt-oss-120b with [Chain of Thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)[Preview]{: tag-teal}| As a Service|
+|OpenAI gpt-oss-120b with [Chain of Thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)| As a Service|
+{: caption="Supported LLMs" caption-side="bottom"}
 
 
 ## How model selection affects conversations
@@ -89,7 +90,6 @@ Meta Llama 4 and IBM Granite-4-h-small
 :   Choose Meta Llama 4 and Granite for complex, multi-step BI queries. 
 
 OpenAI gpt-oss-120b with Chain of Thought 
-[Preview]{: tag-teal}
 
 :   Chain of Thought with OpenAI gpt-oss-120b and Granite provides reasoning behind each response by breaking down complex questions into smaller steps. 
   

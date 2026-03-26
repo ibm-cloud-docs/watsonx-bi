@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-25"
 
 keywords: MariaDB
 
@@ -23,7 +23,7 @@ MariaDB is an open source relational database. You can use the MariaDB connectio
 
 - MariaDB server: 10.5.5
 
-- Microsoft Azure Database for MariaDB: 10.3
+- Amazon RDS for MariaDB
 
 ## Create a connection to MariaDB
 {: #create_mariadb}

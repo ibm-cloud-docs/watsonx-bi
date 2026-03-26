@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-25"
 
 keywords: generating visualizations, conversations
 subcollection: watsonx-bi
@@ -115,7 +115,7 @@ Show or hide gridlines
 
 Show tick marks
 
-:   Tick marks are small lines on the axes, which indicate the measurement scale or intervals. By default, tick marks are shown in visualizations.
+:   Tick marks are short lines on the axes, which indicate the measurement scale or intervals. By default, tick marks are shown in visualizations.
 
 :   Example inputs:
 
@@ -144,7 +144,7 @@ Adjust label font size
   Example inputs:
 
   - Use xlarge as the label size for xAxis.
-  
+
   - Change the label size to small.
 
 Bar width
@@ -251,8 +251,8 @@ Packed bubble visualizations display data in a cluster of circles.
 
 A packed bubble visualization uses sizable plotted points, also known as bubbles, to show the relationship between two data sets. The area of the bubble corresponds to the value or proportion of data. There is no positional axis and the bubbles are arranged in a random cluster.
 
-Packed bubble visualizations help convey data that contains many groups and categories. Most often, the bubbles are arranged in a hierarchical order, with biggest bubbles placed at the center and smaller bubbles place along the outside.
-
+Packed bubble visualizations help convey data that includes many groups and categories. The bubbles are typically arranged in a hierarchical order, with primary bubbles placed at the center and secondary bubbles arranged around the outside.
+ 
 ### Pie
 {: #chart_pie}
 

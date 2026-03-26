@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-25"
 
 keywords: troubleshoot, project import, project export
 subcollection: watsonx-bi
@@ -33,10 +33,10 @@ Use these solutions to help resolves problems that you might encounter when you 
 
 The following issues might occur when you export a project.
 
-### Export fails due to project size
+### Export fails due to project capacity limits
 {: #export_project_size}
 
-If the error message **Project too large** displays, your project exceeds the 500 MB size limit. To reduce project size:
+If the error message **Project too large** displays, your project exceeds the 500 MB limit. To lower the amount of data in the project:
 
 - Remove unused data assets.
 - Delete old BI visualizations.

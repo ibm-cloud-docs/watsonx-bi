@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-19"
+lastupdated: "2026-03-25"
 
 keywords: adding users, BI community, members, administrators
 subcollection: watsonx-bi
@@ -30,6 +30,8 @@ The following table lists the minimum access policies required for administrator
 |Resource group only | All resource groups in the account| Administrator|
 |Cloud Object Storage| All | Manager, Administrator|
 |watsonx BI| All | Manager|
+{: caption="Minimum access policies for administrators" caption-side="bottom"}
+
 
 This capability gives account owners and Administrators the flexibility to initialize and configure watsonx BI so other users in the account can onboard quickly.
 
@@ -44,4 +46,3 @@ For information about provisioning and setting up watsonx BI, see [Provisioning 
 - [Adding users to the Cloud account](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external}
 
 - [Managing IAM access for watsonx BI as a Service](/docs/watsonx-bi?topic=watsonx-bi-managing_iam){: external}
-

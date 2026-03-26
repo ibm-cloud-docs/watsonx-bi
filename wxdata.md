@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-25"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -69,9 +69,10 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
     | Engine's port | Enter the engine port number available with the engine hostname. |
     {: caption="New connection with IBM watsonx.data Presto" caption-side="bottom"}
 
-<br>
+
 
   - **Presto**
+
 
     | Field | Description |
     |-------|-------------|
@@ -91,4 +92,4 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
 
 You can now select data from the newly created connection to watsonx.data and continue with the create metrics flow. 
 
-For more information about creating metrics, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics). 
+For more information about creating metrics, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}. 

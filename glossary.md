@@ -1,7 +1,7 @@
 ---
 copyright: 
   years: 2025, 2026
-lastupdated: "2026-03-10"
+lastupdated: "2026-03-25"
 
 keywords: glossary
 subcollection: watsonx-bi
@@ -125,7 +125,7 @@ A fact table stores measures, which are quantifiable performance indicators that
 ### foundation model
 {: #x10298171}
 
-An AI model that can be adapted to a wide range of downstream tasks. Foundation models are typically large-scale generative models that are trained on unlabeled data using self-supervision. 
+An AI model that can be adapted to a wide range of downstream tasks. Foundation models are typically generative models that are trained on unlabeled data using self-supervision. 
 
 ## G
 {: #glossg}

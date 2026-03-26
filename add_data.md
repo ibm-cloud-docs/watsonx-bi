@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-25"
+lastupdated: "2026-03-26"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -15,56 +15,64 @@ subcollection: watsonx-bi
 # Add data through a connection
 {: #select}
 
-To select the data you want to use to create metrics, you need to add the data to the semantic data model by creating a database connection. {: #shortdesc}
+To select the data you want to use to create metrics, you need to create a connection to the data source in the project. {: #shortdesc}
 
 You can add a connection or, if you previously connected to a database in the project, use an existing connection to select data.  
+
 
 ## Adding data from a new connection 
 {: #add}
 
-1. Click **Create metrics** on the **Data and Metrics** tab and enter a name for the new semantic data model.
+1. Select an existing project on the **Data and Metrics** tab or [create a new project](docs/watsonx-bi?topic=watsonx-bi-projects_wxbi){: external}.
 
-2. On the **Select data** page, select **Create a new connection**. 
-
-3. Select the data source type and connector that you want to use. 
-
-   Click the **Filter** icon and select **watsonx BI** to view a list of compatible data sources. 
+   IBM watsonx BI does not support platform or shared connections. This means, you cannot use connections that are created at the platform level and stored in the Platform assets catalog. You need to create data source connections within each watsonx BI project instead. 
    {: note}
 
-4. Enter the required details for the connection. Typically, you need to provide information like the hostname, port number, username, and password.  
+1. Click **Create metrics** and enter a name for the new semantic data model.
 
-5. If prompted, specify whether you want to use personal or shared credentials. You cannot change this option after you create the connection. The account owner sets the credential type for the connection. The default setting is Shared.
+1. On the **Select data** page, select **Create a new connection**. 
+
+1. Select the data source type and connector that you want to use. 
+
+   The list of connectors is already filtered to show supported connectors in watsonx BI. 
+   {: note}
+
+1. Enter the required details for the connection. Typically, you need to provide information like the hostname, port number, username, and password.  
+
+1. If prompted, specify whether you want to use personal or shared credentials. You cannot change this option after you create the connection. The account owner sets the credential type for the connection. The default setting is Shared.
 
    - Personal: With personal credentials, each user must specify their own credentials to access the connection. Each user's credentials are saved but are not shared with any other users. Use personal credentials instead of shared credentials to protect credentials. For example, if you use personal credentials and another user changes the connection properties (such as the hostname or port number), the credentials are invalidated to prevent malicious redirection.
 
    - Shared: With shared credentials, all users access the connection with the credentials that you provide. Shared credentials might be retrieved by a user who has access to the connection asset. Because the credentials are shared, it is difficult to audit access to the connection to identify the source of data loss, or identify the source of a security breach.
 
-6. Click **Test connection** and if the test succeeds, click **Create**.
+1. Click **Test connection** and if the test succeeds, click **Create**.
 
-7. Select the schema and data tables that you want to use and click **Add**.
+1. Select the schema and data tables that you want to use and click **Add**.
 
-8. Review the selected data. 
+1. Review the selected data. 
 
    (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
 
-9. Click **Next** to move to the next step, which is [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.  
+When you are ready, click **Next** to proceed to [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.  
 
 ## Adding data from an existing connection 
 {: #existing}
 
-1. Click **Create metrics** on the **Data and Metrics** tab and enter a name for the new semantic data model. 
+1. Select an existing project on the **Data and Metrics** tab or click the '+' icon next to the project switcher to create a new project.
 
-2. Select **Use an existing data source** on the **Select data** page. 
+1. Click **Create metrics** and enter a name for the new semantic data model.
 
-3. Select the database connection name.
+1. Select **Use an existing data source** on the **Select data** page. 
 
-4. Select the schema and data tables that you want to use and click **Add**.
+1. Select the database connection name.
 
-5. Review the selected data. 
+1. Select the schema and data tables that you want to use and click **Add**.
+
+1. Review the selected data. 
 
    (Optional) You can add more data through a new or existing connection from the **Select data** drop-down. 
 
-6. Click **Next** to move to the next step, which is metadata enrichment.
+When you are ready, click **Next** to proceed to [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.  
 
 ## Using an IBM Cognos Analytics data source
 {: #use_ca_source}
@@ -82,11 +90,14 @@ The following data sources are supported.
 - [Google BigQuery](/docs/watsonx-bi?topic=watsonx-bi-google_big_query){: external}
 - [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} [Preview]{: tag-teal} 
 - [IBM Db2](/docs/watsonx-bi?topic=watsonx-bi-db2){: external}
+- [IBM Db2 for z/OS](/docs/watsonx-bi?topic=watsonx-bi-db2_zos){: external} 
+- [IBM Db2 Warehouse](/docs/watsonx-bi?topic=watsonx-bi-db2_warehouse){: external}
 - [IBM Informix](/docs/watsonx-bi?topic=watsonx-bi-informix){: external}
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 
 - [IBM watsonx.data](/docs/watsonx-bi?topic=watsonx-bi-wxd){: external} 
 - [MariaDB](/docs/watsonx-bi?topic=watsonx-bi-mariadb){: external} 
 - [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure_sql){: external} 
+- [Microsoft Azure Databricks](/docs/watsonx-bi?topic=watsonx-bi-azure_databricks){: external} [Cloud]{: tag-blue} 
 - [Microsoft SQL Server](/docs/watsonx-bi?topic=watsonx-bi-microsoft_sql){: external} 
 - [MySQL](/docs/watsonx-bi?topic=watsonx-bi-mysql){: external}
 - [Oracle Database](/docs/watsonx-bi?topic=watsonx-bi-oracle){: external} 

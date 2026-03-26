@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-12"
+lastupdated: "2026-03-25"
 
 keywords: cognos analytics, cognos, FM package
 subcollection: watsonx-bi
@@ -103,13 +103,13 @@ Some restrictions to keep in mind:
 ### Use design mode filters to reduce sampling for metric enrichment
 {: #design_mode_filters}
 
-You can [add an embedded filter](/docs/watsonx-bi?topic=watsonx-bi-model_filters#create_embedded){: external} to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. This approach is especially useful when the FM package or data module is large and complex.
+You can [add an embedded filter](/docs/watsonx-bi?topic=watsonx-bi-model_filters#create_embedded){: external} to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. This approach is especially useful when working with highly complex FM packages or data modules.
 
 Embedded filters let you control which data is used in a metric definition. For example, you can exclude data that’s irrelevant for specific geographies, time periods, product lines, and other dimensions.
 
 A filter with a **Design mode** usage narrows the data used during enrichment when you export a metric definition. 
 
-During the export of metric definitions, watsonx BI profiles your data to build enriched metrics. Profiling can fail when the sampling set is large. To reduce the risk of failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
+During the export of metric definitions, watsonx BI profiles your data to build enriched metrics. Profiling can fail when the sampling set includes a high volume of data. To reduce the risk of failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
 
 When you add an embedded filter to a metric definition, choose one of the following **Usage** values to control when the filter is applied:
 

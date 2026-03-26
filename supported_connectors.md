@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-28"
+  years: 2025, 2026
+lastupdated: "2026-03-26"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -13,10 +13,15 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Supported connectors in {{site.data.keyword.wxbia_short}}
+# Other supported connectors in {{site.data.keyword.wxbia_short}}
 {: #supported_connectors_wxbi}
 
-You can select the data you want to use to create metrics by creating or using an existing database connection. {: #shortdesc}
+You can add connections to a broad array of data sources in projects. You can use a connection to connect to your remote data source and select the data that you want to use to create metrics. {: #shortdesc}
+
+From a project, you must create a connection to a data source before you can read data from it. 
+
+IBM watsonx BI does not support platform or shared connections. This means, you cannot use connections that are created at the platform level and stored in the Platform assets catalog. You need to create data source connections within each watsonx BI project instead. You can create or select existing projects on the **Data and Metrics** tab.
+{: note}
 
 The following connectors are supported:
 
@@ -26,11 +31,14 @@ The following connectors are supported:
 - [Google BigQuery](/docs/watsonx-bi?topic=watsonx-bi-google_big_query){: external}
 - [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external} [Preview]{: tag-teal} 
 - [IBM Db2](/docs/watsonx-bi?topic=watsonx-bi-db2){: external}
+- [IBM Db2 for z/OS](/docs/watsonx-bi?topic=watsonx-bi-db2_zos){: external} 
+- [IBM Db2 Warehouse](/docs/watsonx-bi?topic=watsonx-bi-db2_warehouse){: external}
 - [IBM Informix](/docs/watsonx-bi?topic=watsonx-bi-informix){: external}
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 
 - [IBM watsonx.data](/docs/watsonx-bi?topic=watsonx-bi-wxd){: external} 
 - [MariaDB](/docs/watsonx-bi?topic=watsonx-bi-mariadb){: external} 
 - [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure_sql){: external} 
+- [Microsoft Azure Databricks](/docs/watsonx-bi?topic=watsonx-bi-azure_databricks){: external} [Cloud]{: tag-blue} 
 - [Microsoft SQL Server](/docs/watsonx-bi?topic=watsonx-bi-microsoft_sql){: external} 
 - [MySQL](/docs/watsonx-bi?topic=watsonx-bi-mysql){: external}
 - [Oracle Database](/docs/watsonx-bi?topic=watsonx-bi-oracle){: external} 

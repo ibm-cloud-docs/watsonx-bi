@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-24"
+  years: 2025, 2026
+lastupdated: "2026-03-25"
 
 keywords: import project,copy project
 subcollection: watsonx-bi
@@ -38,7 +38,7 @@ You need a local .zip file of a previously exported project to import it. Import
 
 Other requirements include:
 
-- Project size must be less than 500 MB
+- Project must be less than the 500 MB limit
 - You must have at least the Editor role in the project
 - The project must contain the minimum viable components
 
