@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-26"
+lastupdated: "2026-03-27"
 
 keywords: Databricks
 
@@ -17,6 +17,7 @@ subcollection: watsonx-bi
 Databricks is a big data analytics tool based on Apache Spark. {: #shortdesc}
 
 ## Supported versions
+{: #supp_version_azure_databricks}
 
 Databricks SQL engine version 4.0.0. For compatibility, use JDBC driver version 2.6.25 or later.
 
@@ -45,6 +46,9 @@ Enter these connection details and select an authentication method.
 - Port number 
 
 - HTTP path: Path of the endpoint for which the server is configured in HTTP transport mode.
+
+- Keepalive interval: Interval in seconds between keepalive validation queries. Set to a value greater than 0 to enable keepalive.
+
 
 
 ### Credentials

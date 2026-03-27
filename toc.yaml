@@ -46,7 +46,6 @@ toc:
               - iam-access.md
               - roles_permissions.md
               - plans.md
-              - data-intelligence-plans.md
               - cos.md
               - deprovisioning.md
           - configuration_settings.md
