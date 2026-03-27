@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-03-27"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -20,7 +20,99 @@ content-type: release-note
 {: #my-service-relnotes}
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
-{: shortdesc}
+{: #shortdesc}
+
+## 25 March 2026
+{: #subcollection-mar2526}
+{: release-note}
+
+The following new features and fixes are included in watsonx BI on IBM Software Hub 5.3.1 patch 1.
+
+For more information about patches on IBM Software hub, see [Available patches on IBM Software Hub Version 5.3.1](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=overview-available-patches-software-hub-version-531){: external}
+
+**Security issues fixed in this patch**
+
+This patch addresses the following Common Vulnerabilities and Exposures (CVE):
+
+CVE-2026-25896
+
+CVE-2025-15467
+
+**New features in this patch**
+
+This patch includes the following new features:
+
+**OpenAI gpt-oss-120b large language model now available for all language-model-driven functions**
+
+:   The OpenAI gpt-oss-120b large language model (LLM) is now available for SQL generation tasks and all other language‑model–driven functions within watsonx BI. If you are an Administrator, you can choose this LLM by going to **Configuration and settings > Model settings**.
+
+:   The OpenAI gpt-oss-120b model provides advanced question interpretation, stronger semantic understanding, and higher accuracy across a wide range of queries.
+
+:   For more information about the OpenAI gpt-oss-120b model, see [Configuring additional models in watsonx BI](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=administering-configuring-additional-models){: external}.
+
+**Conversation scopes now have descriptions**
+
+:   The conversation scope list next to the input box in **Conversations** now includes descriptions (if applicable) for each item, such as projects, the **Metrics catalog**, and any files that you have uploaded.
+
+:   You can now also open and preview any of these items in a new tab directly from the conversation scope, such as:
+
+:  - Launching a project opens the data platform project view, including its assets.
+
+:  - Launching an uploaded file opens the file view in a new tab for quick review.
+
+:   These enhancements make it easier to choose the data that you want to focus your conversation on.
+
+**Download responses and related data from a conversation**
+:   You can now download responses and their associated components from a conversation, making it easy to save and share insights. Available download options include:
+
+:  - Text response – The generated answer in .txt format
+
+:  - Visualizations – Charts downloaded in .png format.
+
+:  - Tabular data – Data tables downloaded in .csv format.
+
+:  - Diagnostic information – Details such as AI steps, generated SQL, and response ID in .json format (available to Data analysts only).
+
+:   For more information, see [Downloading responses and data from a conversation](/docs/watsonx-bi?topic=watsonx-bi-download_response){: external}.
+
+**Provide custom instructions and context to guide AI behavior**
+
+:   A new **AI instructions and context** field is available in the modelling experience, which you can use to add business logic and rules that the large language model (LLM) follows when interpreting and generating responses that are related to a metric. Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
+
+:  - Your dataset uses business‑specific terminology that differs from column names
+
+:  - You use standard calculation methods or rules, such as weighted averages or variance formulas
+
+:  - Certain columns must always appear together for context
+
+:  - You rely on default filters or display preferences
+
+:  - You need to enforce organizational reporting standards, such as fiscal or seasonal time logic
+
+:   For more information, see [Adding instructions and context for AI](/docs/watsonx-bi?topic=watsonx-bi-instructions_ai){: external}.
+
+
+**Cognos Analytics data modules now supported as a data source and improved connection process**
+
+:   You can now use Cognos Analytics data modules as a data source in watsonx BI. With this enhancement, you can create semantic data models metrics by using your existing data modules. You can use data modules that use uploaded files and database tables as data source. You cannot use data modules that use FM packages as a source.
+
+:   The experience for connecting to Cognos Analytics and importing a package is also improved. You can now:
+
+:   - Create and test a Cognos Analytics connection directly during data selection
+
+:   - Choose either an FM package or a data module from your Cognos environment
+
+:   - Automatically populate your semantic data model with Cognos metadata and governance rules
+
+:   In addition, improved sync behavior helps semantic data models stay aligned with source changes. Updates to FM packages are applied automatically, while data modules prompt you to resync whenever changes are detected in the underlying source.
+
+:   For more information, refer to [IBM Cognos® Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}.
+
+**Apply user filters for row-level security**
+
+:   User filters are now available to help protect sensitive data in metrics. Administrators and Data analysts can define conditions on a metric definition in the semantic data model to ensure that users see only the data they have permissions to access. When a user views a metric, the values are calculated only from the rows they’re allowed to see, based on the filters applied.
+
+:   For more information, see [Manage data access with User filters](/docs/watsonx-bi?topic=watsonx-bi-user_filters){: external}.
 
 ## 15 December 2025
 {: #subcollection-dec1525}

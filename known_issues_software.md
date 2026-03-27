@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-12"
+lastupdated: "2026-03-27"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -24,7 +24,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 
 IBM Db2 connector doesn't appear when the watsonx BI filter is applied
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   When you are in the **Add connection** flow and have the watsonx BI filter applied, the IBM Db2 connector doesn't appear in the list of Db2 connectors.
 
@@ -37,7 +37,7 @@ IBM Db2 connector doesn't appear when the watsonx BI filter is applied
 
 The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors
 
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   If you click **Connect to data** in the watsonx.data experience, you can see connection types that you cannot use with watsonx BI assets.
 
@@ -52,11 +52,15 @@ Metadata enrichment failure during metric generation for export.
   
 :   Applies to: 5.3.0
 
+:   Fixed in: 5.3.1
+
 :   When you open a semantic model that was created during a previous metadata import step and try to export a metric definition from this model, the metadata enrichment job fails during the profiling step.
 
 Connections created outside of the Business Intelligence experience are unusable in metric generation
   
 :   Applies to: 5.3.0
+
+:   Fixed in: 5.3.1
 
 :   When you try generating metrics from connections and projects that were created outside of the Business Intelligence experience, metric generation fails.
 
@@ -69,13 +73,15 @@ Connections created outside of the Business Intelligence experience are unusable
 
 Technical issue when asking questions against visualization in Key metrics
   
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   After you pin a visualization to **Key metrics**, if you try to ask a question against the visualization, you might get the following response due to a technical issue: *Sorry, I encountered a technical issue on our end and can't answer your question. Try rephrasing your question or ask a different question.*
 
 Intermittent datasource loading issue on visualization tiles
   
 :   Applies to: 5.3.0
+
+:   Fixed in: 5.3.1
 
 :   After you build and publish a custom visualization, a *Failed to load datasource* error message might display in the **Metrics catalog**.
 
@@ -85,7 +91,7 @@ Intermittent datasource loading issue on visualization tiles
 
 Five minute wait before visualizations appear in the Metrics catalog
 
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   After you publish visualizations, you might need to wait approximately 5 minutes before you can see them in the **Metrics catalog**.
 
@@ -94,13 +100,13 @@ Five minute wait before visualizations appear in the Metrics catalog
 
 Metrics from imported assets cannot be used
 
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
   
 :   If you import a project from the watsonx.data experience, the metrics in this project cannot be used with Business Intelligence tools.
 
 Database connection error on imported projects
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   If you import a project, then switch to another account without logging in to the second account, you cannot update the credentials for the project.
   
@@ -113,7 +119,9 @@ Database connection error on imported projects
 
 View all catalogs option is missing from the Navigation Menu
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 - 5.3.1
+
+:   Fixed in: 5.3.1 patch 1
 
 :   When you click the **Navigation Menu** while you are in the watsonx.data experience, the **View all catalogs** option is not shown under the **Catalogs** dropdown.
 
@@ -122,19 +130,19 @@ View all catalogs option is missing from the Navigation Menu
 
 Experience is not perserved during certain navigation
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   Certain actions that you perform in the watsonx.data experience redirect you to the same page in the Business Intelligence experience. There is no immediate impact to being in a different experience, but you might encounter issues when performing other actions, such as rendering visualizations. The actions include:
 
-:   - Viewing imported projects
+:   - Viewing imported projects **Fixed in: 5.3.1**
 
 :   - Clicking notifications
 
 :   - Previewing assets
 
-:   - Navigating to the **Metrics overview** page
+:   - Navigating to the **Metrics overview** page **Fixed in: 5.3.1**
 
-:   - Clicking **Home** in the **Metadata enrichment** view
+:   - Clicking **Home** in the **Metadata enrichment** view **Fixed in: 5.3.1**
 
 :   Workaround:
 
@@ -150,7 +158,7 @@ Some tasks fail in projects that are created outside of the Business Intelligenc
 
 :   - Metric creation
 
-:   - Metric publishing
+:   - Metric publishing **Fixed in: 5.3.1**
  
 :   Workaround:
 
@@ -164,6 +172,8 @@ Some tasks fail in projects that are created outside of the Business Intelligenc
 Semantic data model creation fails in shared projects for everyone besides the Administrative user
  
 :   Applies to: 5.3.0
+
+:   Fixed in: 5.3.1
  
 :   If a project is shared with a user who has the project permission of Editor, and the Editor tries to create a semantic data model, the creation fails.
 
@@ -176,7 +186,7 @@ Semantic data model creation fails in shared projects for everyone besides the A
 
 Deleted files continue to display in the user interface
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   If you delete files that were uploaded and enriched, then reload the **Data and Metrics** page, the files still display after they were deleted.
 
@@ -186,7 +196,7 @@ Deleted files continue to display in the user interface
 
 Overwrite file option appears when you reupload deleted files
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   If you delete a set of files and later re-upload these same files, you get the option to overwrite the files, even though these files no longer exist in the platform assets page.
 
@@ -195,7 +205,7 @@ Overwrite file option appears when you reupload deleted files
 
 False error message during batch file upload
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   When you upload 10 files at one time, the displayed status shows that the upload job failed, even if it the job actually succeeded.
 
@@ -208,7 +218,7 @@ False error message during batch file upload
 
 Loss of user permission**
  
-:   Applies to: 5.3.0
+:   Applies to: 5.3.0 and later
 
 :   Due to the introduction of new roles in IBM Software Hub Version 5.3.0, the roles of User, Data Steward, and Administrator no longer apply to watsonx BI users. If you had any of these roles, you might lose access to your watsonx BI community.
 
