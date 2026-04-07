@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-04-01"
 
 keywords: Db2 warehouse
 
@@ -59,9 +59,8 @@ If you select **Personal**, you have two choices:
 
 You can use an API key to authenticate to Db2 Warehouse in IBM Cloud.
 
-First add the user ID as an IAM user or as a service ID. For instructions, see the Console user experience section of the [Identity and access management (IAM) on IBM Cloud](docs/Db2whc?topic=Db2whc-iam#console-ux){: external} topic.
+First add the user ID as an IAM user or as a service ID. For instructions, see the Console user experience section of the [Identity and access management (IAM) on IBM Cloud](/docs/Db2whc?topic=Db2whc-iam#console-ux){: external} topic.
 
 If users want to authenticate with Db2 Warehouse with an IAM API key, the administrator of the Db2 Warehouse instance can add the IAM users by using the User management console, and then the users can each create an API key for themselves by using the IAM access management console.
 
 For Private connectivity, to connect to a database that is not externalized to the internet (for example, behind a firewall), you must set up a [secure connection](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
-

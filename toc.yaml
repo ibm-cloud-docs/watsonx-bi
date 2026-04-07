@@ -205,6 +205,7 @@ toc:
           - amazon_redshift.md
           - dremio.md
           - google_bigquery.md
+          - aws_databricks.md
           - azure_databricks.md
           - db2.md
           - db2_z.md

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-27"
+lastupdated: "2026-04-01"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -24,10 +24,21 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+## 2 April 2026
+{: #subcollection-apr0226}
+{: release-note}
+
+
+AWS Databricks available as a connector
+
+:   You can now connect to data in AWS Databricks to create metrics and ask questions in watsonx BI.
+
+:   For more information, see [AWS Databricks connection](/docs/watsonx-bi?topic=watsonx-bi-aws_databricks){: external}.
+
+
 ## 26 March 2026
 {: #subcollection-mar2626}
 {: release-note}
-
 
 
 Microsoft Azure Databricks available as a connector
