@@ -28,6 +28,14 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "11 April 2026",
+        "title": "Fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 2"
+      },
+      {
+        "date": "3 April 2026",
+        "title": "AWS Databricks available as a connector in watsonx BI as a Service"
+      },
+      {
         "date": "26 March 2026",
         "title": "Microsoft Azure Databricks available as a connector in watsonx BI as a Service"
       },
@@ -50,10 +58,6 @@
       {
         "date": "26 February 2026",
         "title": "IBM Cognos Analytics data modules and row-level security through User filters now supported"
-      },
-      {
-        "date": "5 February 2026",
-        "title": "Watsonx BI as a Service updated with new features and enhancements"
       }
     ]
   },

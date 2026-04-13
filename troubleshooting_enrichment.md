@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-04-13"
 
 keywords: monitor enrichment, enrichment error, enrichment warnings
 subcollection: watsonx-bi
@@ -43,7 +43,7 @@ If you are unable to resolve warnings and need to proceed with creating metrics 
 ## Common metadata enrichment errors and warnings
 {: #common_mde_messages}
 
-| **Message** | **Impact** | **Recommended action** |
+| **Message** | **Impact** | **Action** |
 |-------------|-----------|--------------------------|
 | Unable to retrieve data values to process enriched metadata. | Metadata enrichment could not be completed because data values were not retrieved. | You need to resolve this error before proceeding. Click **Try again** to re-run enrichment. |
 | Unable to retrieve data values to compute and write vectors to Cloud Object Storage. | Enrichment completed with a warning that data values could not be retrieved to compute and write vectors to Cloud Object Storage. This issue will impact accuracy for filter search.| Click **More details** and re-run enrichment.|

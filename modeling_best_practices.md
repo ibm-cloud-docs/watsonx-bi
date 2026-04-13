@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-12"
+lastupdated: "2026-04-13"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -75,7 +75,7 @@ You can accept the AI-suggested name and description or click **Edit** to add yo
 
 ![Metadata enrichment review page](images/mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
 
-When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is re-run or if a metric definition is deleted or edited. To avoid this, it is recommended to [make your changes in the semantic data model](/docs/watsonx-bi?topic=watsonx-bi-best_practices#tip_desc) instead.
+When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is re-run or if a metric definition is deleted or edited. To avoid this, [make your changes in the semantic data model](/docs/watsonx-bi?topic=watsonx-bi-best_practices#tip_desc) instead.
 {: important}
 
 When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the pencil icon next to the suggestion and provide a meaningful name or description for that asset or column.
@@ -110,14 +110,10 @@ To change the column identifier in a metric definition:
 
 3. Under the metric definition, select the column that you want to add the identifier to.
 
-4. Open its **Properties** tab and scroll down to the **Advanced** section.
-
-5. Enter the **Identifier** value. 
+4. Open its **Properties** tab, scroll to the **Identifier** field and enter the value. 
 
    An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, numbers, or underscores, without spaces.
-  {: tip}
-
-   ![Column Identifier field in Properties](images/semantic_model_column_identifier.png){: caption="A Properties panel displays the Column identifier field." caption-side="bottom"}
+   {: tip}
 
 6. Under **Actions**, click **Save** to save the semantic data model.
 

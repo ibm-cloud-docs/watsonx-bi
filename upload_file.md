@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-05"
+  years: 2025, 2026
+lastupdated: "2026-04-13"
 
 keywords: upload file, local file
 
@@ -71,7 +71,8 @@ Deleting an uploaded file
 
 :   To delete an uploaded file, click the **Delete** option from the menu next to the uploaded file name. 
 
-:   Deleting a file removes it from the project permanently. This action might impact semantic data models that were created with references to the deleted file.{: important}
+:   Deleting a file removes it from the project permanently. This action might impact semantic data models that were created with references to the deleted file.
+
 
 ## Supported file types 
 {: #supported_file}
@@ -89,13 +90,7 @@ The following delimiter-separated value files are supported:
 
 The first row in the file needs to include the column names for each column in the data. All rows, including the header, need to use the same delimiter: comma or tab.
 
-Column names in delimiter-separated value files must be unique.
-
-Example of a CSV file: 
-
-    Country,City
-    Canada,Ottawa
-    United Kingdom,London 
+Column names in delimiter-separated value files must be unique. 
 
 ### Microsoft Excel files (xls and .xlsx)
 {: #excel}
@@ -140,7 +135,6 @@ Supported column data formats include:
 - Date data types
 
     - YYYY-MM-DD
-
     - YYYY/MM/DD
     - DD-MM-YYYY 
     - DD/MM/YYYY
