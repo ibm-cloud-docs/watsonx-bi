@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-04-13"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -157,7 +157,7 @@ If you invited users as part of an access group, you can immediately add the acc
 {: important}
 
 ### Step 4b: Adding users to the watsonx BI community
-{: #add_watsonxBI_community}
+{: #add_watsonxBI_community}  
 
 1. In watsonx BI, go to the **Navigation Menu** and select **Administration > Configurations and settings > Manage BI community**.
 

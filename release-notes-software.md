@@ -22,7 +22,7 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
-## 8 April 2026
+## 11 April 2026
 {: #subcollection-apr0826}
 {: release-note}
 
