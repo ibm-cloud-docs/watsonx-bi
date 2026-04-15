@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-05"
+lastupdated: "2026-04-15"
 
 keywords: cloud object storage
 subcollection: watsonx-bi
@@ -52,7 +52,7 @@ To provision an instance of IBM Cloud Object Storage:
 
 You can now select this Cloud object storage instance when you provision {{site.data.keyword.wxbia_short}}. 
 
-For more information, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage){: external}.
+For more information, see [Getting started with IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage){: external}.
 
 ## Managing Cloud Object Storage 
 {: #manage_cos}

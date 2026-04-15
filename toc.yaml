@@ -190,6 +190,7 @@ toc:
           topics:
           - troubleshoot_new_conversation.md
           - troubleshoot_import_export.md
+          - troubleshoot_cell_limit_exceeded.md
       - link:
           label: Getting started with IBM Cloud
           href: https://www.ibm.com/cloud/get-started
