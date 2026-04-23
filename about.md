@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-04-20"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -34,7 +34,8 @@ Personalized metrics
 
 Semantic automation
 
-:   Automate data profiling, business term matching, and data modeling.
+:   Automate data profiling, business term matching, and data modelling.
+
 
 ## Availability
 {: #availability}
@@ -69,7 +70,7 @@ Semantic automation
 
 For more information about the service platform and its capabilities, see:
 
-- [Overview of IBM Software Hub](https://www.ibm.com/docs/en/software-hub/5.2.x?topic=overview)
+- [Overview of IBM Software Hub](https://www.ibm.com/docs/en/software-hub/5.2.x?topic=overview){: external}
 
 - [Documentation for Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wxbi&audience=wdp){: external}
 

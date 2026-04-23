@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-04-23"
 
 keywords: choose llm, large language model, foundation model, AI model
 subcollection: watsonx-bi
@@ -96,9 +96,6 @@ OpenAI gpt-oss-120b with Chain of Thought
 :   OpenAI gpt-oss-120b is used for SQL generation tasks and all other language model tasks.
 
 :   Choose gpt-oss-120b with Chain of Thought to view reasoning for complex, multi-part BI queries.
-  
-:   Chain of Thought was previously supported by Meta Llama 4 and Granite. This option is being discontinued. Administrators must reselect Chain of Thought with the new gpt‑oss‑120b model in **Configuration and settings > Model settings** to continue receiving accurate and supported responses. Users who previously enabled Chain of Thought with the Llama model will continue to receive responses for now. However, after Llama is fully discontinued, answer accuracy might be impacted until the model selection is updated.
-{: important}
 
 :   For more information, see [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 

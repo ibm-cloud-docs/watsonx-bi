@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-20"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -18,26 +18,55 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.wxbia_full_notm}} is a powerful analytics tool that uses large language models (LLMs) to run complex, multi-step BI queries on your data. While {{site.data.keyword.wxbia_short}} has contextual understanding of data and can quickly respond to your questions, the quality of data determines the quality of the generated responses. {: #shortdesc}
 
+## What LLM uses to understand your data and questions
+{: #context}
+
 To enhance the quality of the generated query and the final answer, it is important to provide clear and comprehensive context to the LLM.
 
 The following factors are used by the LLM to understand questions and the context of your data
 when it generates query statements:
 
-- Asset name
+1. Column semantics 
 
-- Asset description
+  - Descriptive names and business definitions 
 
-- Column name 
+  - Data types and expected value ranges 
+  
+  - Sample values for disambiguation 
 
-- Column description
+2. Relationship intelligence 
 
-- Column identifier
+  - Join paths between tables 
+  
+  - Cardinality and referential integrity 
 
-- Column data type, usage, aggregate, and nullable fields
+  - Conditional join logic 
 
-- AI instructions and context for metric 
+3. Calculation logic 
 
-- Sampled columns 
+  - Metric formulas and dependencies 
+
+  - Aggregation rules (SUM, AVG, COUNT DISTINCT)
+
+  - Time-based calculations and period comparisons 
+ 
+4. Operational Semantics 
+
+  - Default filters and scoping rules 
+
+  - Required column combinations 
+
+  - Business-specific terminology mappings 
+
+
+5. AI instructions 
+
+  - Custom guidance for ambiguous scenarios 
+  
+  - Organizational reporting standards 
+  
+  - Domain-specific interpretation rules 
+
 
 Here are some things that you can do to prepare your data for use by AI.
 
@@ -131,7 +160,7 @@ Make sure that you add a label and description for metric columns in the semanti
 
 3. AI-suggested or generated in the metadata enrichment asset
 
-Make sure that the label and description are worded based on your business context and how users ask questions.
+Write the label and description using your business context and the language your users use when they ask questions.
 
 Descriptions need to be 512 characters or less to help ensure a balance between accuracy and effectiveness.
 {: important}
@@ -150,17 +179,17 @@ Reflect user language preferences
 
 To add column labels and descriptions in the semantic data model, follow these steps:
 
-1. On the **Data and Metrics** tab, open the semantic data model that has the metric definition you want to edit.
+1. Open the semantic data model that contains the metric definition from the **Data and Metrics** tab.
 
 2. Click the **Advanced mode**.
 
-3. Under the metric definition, select the column that you want to add a display name and description to.
+3. Under the metric definition, select the column.
 
-4. Open its **Properties** tab and enter the name in the **Label** field and description in the **Description** field.
+4. On the **Properties** tab enter the label and description.
 
 5. Under **Actions**, click **Save** to save the semantic data model.
 
-6. Select the metric definition that you just changed and click **Export metric definition**.
+6. Select the updated metric definition and click **Export metric definition**.
 
 ### Review column “Usage”, “Aggregate” and “Nullable” fields 
 {: #tip_fields}

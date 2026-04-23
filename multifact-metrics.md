@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-02-09"
+lastupdated: "2026-04-23"
 
 keywords: multi-fact metrics, multiple tables, calculate after aggregate
 subcollection: watsonx-bi
@@ -26,6 +26,9 @@ Before you create a multi-fact metric or multi-fact calculation, ensure that:
 - You have at least two fact tables in your semantic data model
 
 - Measures are already defined in each fact table that you want to use
+
+When you query metrics that come from different facts, watsonx BI does not join them on shared dimensions. You can ask questions on shared dimensions through calculations created for cross-metric queries.
+{: note}
 
 ## Step 1: Create a metric definition from multiple fact tables
 {: #create_multi_fact} 

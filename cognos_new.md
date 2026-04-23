@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-04-20"
 
-keywords: cognos analytics, cognos, FM package
+keywords: cognos analytics, cognos, FM package, data modules
 subcollection: watsonx-bi
 
 
@@ -22,6 +22,7 @@ This feature is a Technology Preview feature. Technology Preview offers customer
 {: important}
 
 To use this integration, you need the IBM Cognos Analytics connector.
+
 
 ## Prerequisites
 {: #prereq}
@@ -196,3 +197,16 @@ After you finish creating metrics, you can navigate back to the **Metrics overvi
 You can also go to the **Conversations** page to start asking questions about your data.
 
 For more information, see [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics).
+
+## FAQs
+{: #ca_faqs}
+
+### Can I connect to Cognos Analytics on premises? 
+
+Yes. For Cognos Analytics on Premises, you need to first create and set up a [Satellite Connector](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
+
+### Are watsonx BI and the Cognos Analytics assistant the same?
+
+No. The Cognos Analytics assistant uses rule‑based logic and predefined templates. This approach requires you to explicitly select data sources and follow structured prompts. On the other hand, {{site.data.keyword.wxbia_short}} uses large language models to interpret user intent dynamically. It automatically selects relevant data sources and adapts responses without rigid templates.
+
+Watsonx BI and Cognos Analytics are complementary. Business users explore and analyze data with {{site.data.keyword.wxbia_short}}. They rely on Cognos Analytics for governed reports and enterprise‑defined business metrics.

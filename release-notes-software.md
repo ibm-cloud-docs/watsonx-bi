@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-04-13"
+lastupdated: "2026-04-23"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -21,6 +21,20 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 22 April 2026
+{: #subcollection-apr2226}
+{: release-note}
+
+The following fixes are included in watsonx BI on IBM Software Hub 5.3.1 patch 3.
+
+**Security issues fixed in this patch**
+
+This patch addresses the following Common Vulnerabilities and Exposures (CVE):
+
+CVE-2026-4867, CVE-2026-22695, CVE-2026-22801, CVE-2026-25646, CVE-2026-33036, CVE-2026-33151, CVE-2026-33671, CVE-2026-33672, CVE-2026-33750, CVE-2026-33891, 
+
+CVE-2026-33894, CVE-2026-33895, CVE-2026-33896
 
 ## 11 April 2026
 {: #subcollection-apr0826}
