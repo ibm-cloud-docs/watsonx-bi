@@ -32,7 +32,7 @@ Improved experience when watsonx.data intelligence Capacity Unit Hour (CUH) limi
 
 :   This release improves the watsonx BI experience when your watsonx.data intelligence Capacity Unit Hour (CUH) limit is reached. 
 
-:   Previously, when CUH were exhausted, metadata import and enrichment errors blocked progress, preventing you from continuing work. Administrators had to upgrade the watsonx.data intelligence plan at the Cloud account level to unblock users.
+:   Previously, when CUH was exhausted, metadata import and enrichment errors blocked progress, preventing you from continuing work. Administrators had to upgrade the watsonx.data intelligence plan at the Cloud account level to unblock users.
 
 :   With this update, your work continues without interruption, even when metadata import and metadata enrichment jobs cannot run due to insufficient CUH. Watsonx BI continues to return results. However, response accuracy might be impacted because enriched business context is missing.
 
@@ -42,7 +42,9 @@ Improved experience when watsonx.data intelligence Capacity Unit Hour (CUH) limi
 
 :   - Work with semantic data models
 
-:   - Analyze existing data sources, including updloaded files
+:   - Analyze existing data sources
+
+:   - Ask questions against uploaded files
 
 :    If response accuracy is critical during periods of high CUH usage, Administrators and Cloud account owners can upgrade the watsonx.data intelligence plan. 
 

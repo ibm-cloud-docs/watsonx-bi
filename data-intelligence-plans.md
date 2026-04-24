@@ -11,14 +11,14 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}} 
+# IBM watsonx.data intelligence required for {{site.data.keyword.wxbia_short}}  
 {: #data_intelligence_plans}
 
-IBM watsonx.data intelligence is required to use watsonx BI. {: #shortdesc}
+IBM watsonx.data intelligence is required to use {{site.data.keyword.wxbia_full_notm}}. {: #shortdesc}
 
-Watsonx.data intelligence provides the data preparation and governance capabilities that watsonx BI relies on. These capabilities help ensure that data is well understood, consistently defined, and accurately interpreted.
+Watsonx.data intelligence provides the data preparation and governance capabilities that {{site.data.keyword.wxbia_short}} relies on. These capabilities help ensure that data is understood, consistently defined, and accurately interpreted.
 
-## How watsonx.data intelligence is used with watsonx BI
+## How watsonx.data intelligence is used with {{site.data.keyword.wxbia_short}} 
 {: #di_required}
 
 Watsonx.data intelligence supports watsonx BI in the following ways:
@@ -45,18 +45,19 @@ As an Administrator or Cloud account owner, when you provision watsonx.data inte
 - Standard
 - Premium 
 
-Each plan has a specific amount of compute usage that is measured in Capacity Unit Hours (CUH). The CUH is consumed when you run metadata import and metadata enrichment jobs. 
+Each plan has a specific amount of compute usage that is measured in Capacity Unit Hours (CUH). The CUH is used when you run metadata import and metadata enrichment jobs. 
 
 ### What happens when CUH is exhausted
 {: #cuh_limit}
 
-If you run out of CUH, watsonx BI continues to functionW, but metadata enrichment is limited.
+If you run out of CUH, watsonx BI continues to function, but metadata enrichment is limited.
 
 You can still:
 
 - Create metrics
 - Work with semantic data models
 - Analyze existing enriched data 
+- Use a data source, such as an uploaded file, that is not enriched
 
 However, jobs that depend on metadata enrichment cannot run without available CUH, including:
 
@@ -72,7 +73,7 @@ The impact of insufficient CUH depends on the workload:
  
 Database through connection
 
-:   If metadata enrichment of source data through a connection is skipped because of insufficient CUH, you can still create metrics manually. You can also update the semantic data model manually to add required business context. 
+:   If metadata enrichment of source data through a connection is skipped because of insufficient CUH, you can still create metrics manually. You can also update the semantic data model manually to add the required business context. 
 
 :   For more information, see [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){:external} and [Teaching watsonx BI your business language](/docs/watsonx-bi?topic=watsonx-bi-teach_wxbi#add_context_semantic_model){: external}. 
 
@@ -83,9 +84,7 @@ Metric definitions
 
 Uploaded files
 
-:   When you reach your CUH limit, you cannot upload new files to ask questions against them. Any file that you try to upload after reaching the CUH limit fails due to an enrichment error. 
-
-:   Files that were uploaded and enriched before you reached the CUH limit remain available. You can continue to ask questions against those files.
+:   When you upload a file, if metadata enrichment is skipped due to insufficient CUH, you can still ask questions against the file or use it as a source to create metrics manually. 
 
 In scenarios where enrichment does not occur, response accuracy might be impacted if you use a data source or a metric that lacks enriched metadata.
 
@@ -103,4 +102,3 @@ If CUH limits are affecting metadata import or enrichment, Administrators or the
 3. Select watsonx.data intelligence from **AI/Machine learning**. 
 
 4. Go to the **Plans** tab and select the new plan and click **Upgrade**.
-
