@@ -28,6 +28,14 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "23 April 2026",
+        "title": "Improved handling of CUH limit in watsonx BI as a Service"
+      },
+      {
+        "date": "22 April 2026",
+        "title": "Fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 3"
+      },
+      {
         "date": "11 April 2026",
         "title": "Fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 2"
       },
@@ -46,14 +54,6 @@
       {
         "date": "18 March 2026",
         "title": "IBM watsonx BI as a Service updated with new features and enhancements"
-      },
-      {
-        "date": "13 March 2026",
-        "title": "Multi‑asset queries now supported"
-      },
-      {
-        "date": "5 March 2026",
-        "title": "IBM Granite 3 AI model is being discontinued and replaced with IBM Granite 4 model"
       }
     ]
   },

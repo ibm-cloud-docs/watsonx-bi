@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-15"
+lastupdated: "2026-04-24"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +23,30 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 23 April 2026
+{: #subcollection-apr2326}
+{: release-note}
+
+Improved experience when watsonx.data intelligence Capacity Unit Hour (CUH) limit is reached
+
+:   This release improves the watsonx BI experience when your watsonx.data intelligence Capacity Unit Hour (CUH) limit is reached. 
+
+:   Previously, when CUH were exhausted, metadata import and enrichment errors blocked progress, preventing you from continuing work. Administrators had to upgrade the watsonx.data intelligence plan at the Cloud account level to unblock users.
+
+:   With this update, your work continues without interruption, even when metadata import and metadata enrichment jobs cannot run due to insufficient CUH. Watsonx BI continues to return results. However, response accuracy might be impacted because enriched business context is missing.
+
+:   When the CUH limit is reached, you can still:
+
+:   - Create and manage metrics
+
+:   - Work with semantic data models
+
+:   - Analyze existing data sources, including updloaded files
+
+:    If response accuracy is critical during periods of high CUH usage, Administrators and Cloud account owners can upgrade the watsonx.data intelligence plan. 
+
+:   For more information, see [IBM watsonx.data intelligence requirement for {{site.data.keyword.wxbia_full_notm}}](/docs/watsonx-bi?topic=watsonx-bi-data_intelligence_plans){: external}.
 
 ## 3 April 2026
 {: #subcollection-apr0226}
