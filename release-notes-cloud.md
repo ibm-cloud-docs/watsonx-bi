@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-24"
+lastupdated: "2026-04-29"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +23,18 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 29 April 2026
+{: #subcollection-apr2926}
+{: release-note}
+
+Improvements to the AI steps panel (Chain of Thought only)
+
+:   The [AI steps](/docs/watsonx-bi?topic=watsonx-bi-steps_ai){: external} panel now offers improved usability and clarity when you use the Chain of Thought reasoning option.
+
+:   The panel now displays a rephrased version of your question at the top of the screen. This update helps clarify how the AI interpreted the query.
+
+:   The **Details** view, typically found in step 3, now includes a simple explanation of what each query step does, along with the values used in the query and the columns returned. From the **Data** view, you can now download intermediate results for a step as a CSV file.
 
 ## 23 April 2026
 {: #subcollection-apr2326}

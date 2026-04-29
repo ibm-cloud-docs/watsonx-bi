@@ -17,7 +17,7 @@ subcollection: watsonx-bi
 
 The **AI** label in the user interface gives an overview of how AI works in **Conversations**. {{site.data.keyword.wxbia_full}} uses large language models (LLM) to answer your questions and provide recommendations, insights, and summaries for your business data. {: #shortdesc}
 
-Administrators can choose the LLM that is used in {{site.data.keyword.wxbia_short}} conversations for users in their organization and can update selection at any time from the **Configuration and settings > Model settings** page. 
+Administrators can choose the LLM that is used in {{site.data.keyword.wxbia_short}} conversations for users in their organization and can update the selection at any time from the **Configuration and settings > Model settings** page. 
 
 ## How AI generates responses 
 {: #ai_queries}
