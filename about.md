@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-20"
+lastupdated: "2026-05-14"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -34,7 +34,7 @@ Personalized metrics
 
 Semantic automation
 
-:   Automate data profiling, business term matching, and data modelling.
+:   Automate data profiling, business term matching, and data modeling.
 
 
 ## Availability

@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
-keywords: modeling, new tables, add tables, modelling
+keywords: modeling, new tables, add tables, modeling
 subcollection: watsonx-bi
 
 

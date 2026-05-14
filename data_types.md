@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: upload file, local file
 
@@ -71,7 +71,7 @@ To remediate this issue, you need to convert or CAST all of these values to one 
 ## Validating data types and casting conditionally
 {: #data_validation_casting}
 
-Conditionally converting the values requires a test that attempts to determine if the string value is in an appropriate format or not. You can use an expression in watsonx BI's modelling interface that leverages regular expression (REGEX) to validate if a value matches the ISO SQL format. 
+Conditionally converting the values requires a test that attempts to determine if the string value is in an appropriate format or not. You can use an expression in the watsonx BI modeling interface that leverages regular expression (REGEX) to validate if a value matches the ISO SQL format. 
 
 You can then convert values that don't match the ISO SQL format. 
 
@@ -189,4 +189,3 @@ substring_regex ( '(?<=[+-]?\s*)\d*\.?\d+(?:[eE][+-]?\d+)?(?=\s*(?:[A-Za-z]{2,4}
 
 
 This approach attempts to remove some of the text that precedes or follows a numeric value but does not consider cultural (locale) specific methods of representing decimal places and thousand separators.
-

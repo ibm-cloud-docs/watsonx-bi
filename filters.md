@@ -3,7 +3,7 @@ copyright:
   years: 2025, 2026
 lastupdated: "2026-05-14"
 
-keywords: filters, filtering, modelling
+keywords: filters, filtering, modeling
 subcollection: watsonx-bi
 
 

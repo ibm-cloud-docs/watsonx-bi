@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: sample
 subcollection: watsonx-bi
@@ -37,7 +37,7 @@ This sample data includes the following metrics:
 
 You can open the Customer experience semantic data model from the **Data and Metrics** tab. Make sure that you select the project that was created when the sample was first set up.
 
-For information about how to use the semantic data modeling interface, see [Data modelling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
+For information about how to use the semantic data modeling interface, see [Data modeling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
 
 ## Questions you can ask
 {: #cust_questions}

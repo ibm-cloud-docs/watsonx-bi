@@ -115,7 +115,7 @@ toc:
           - try.md
           - publish_metrics.md
       - topicgroup:
-          label: Data modelling
+          label: Data modeling
           topics:
           - data_modeling.md
           - topicgroup:

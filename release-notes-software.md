@@ -109,7 +109,7 @@ This patch includes the following new features:
 
 **Provide custom instructions and context to guide AI behavior**
 
-:   A new **AI instructions and context** field is available in the modelling experience, which you can use to add business logic and rules that the large language model (LLM) follows when interpreting and generating responses that are related to a metric. Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
+:   A new **AI instructions and context** field is available in the modeling experience, which you can use to add business logic and rules that the large language model (LLM) follows when interpreting and generating responses that are related to a metric. Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
 
 :  - Your dataset uses business‑specific terminology that differs from column names
 

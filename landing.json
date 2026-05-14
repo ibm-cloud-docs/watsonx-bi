@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "14 May 2026",
+        "title": "Update to supported large language models in watsonx BI as a Service"
+      },
+      {
         "date": "23 April 2026",
         "title": "Improved handling of CUH limit in watsonx BI as a Service"
       },
@@ -50,10 +54,6 @@
       {
         "date": "25 March 2026",
         "title": "New features and fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 1"
-      },
-      {
-        "date": "18 March 2026",
-        "title": "IBM watsonx BI as a Service updated with new features and enhancements"
       }
     ]
   },
@@ -65,7 +65,7 @@
       "type": "blog"
     },
     {
-      "title": "Data modelling in watsonx BI",
+      "title": "Data modeling in watsonx BI",
       "description": "See how data analysts can enrich and model data",
       "href": "https://community.ibm.com/community/user/blogs/rodrigo-de-andrade/2025/10/13/watsonx-bi-data-modeling-experience-demo",
       "type": "blog",

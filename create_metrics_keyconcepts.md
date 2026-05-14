@@ -51,7 +51,7 @@ You can now:
 
 -  Create metrics on the **Metrics** tab
 
-   This action starts the metric creation flow. In this process, you can add the data that you want to ask about and prepare it for use in conversations through metadata enrichment and data modelling in the semantic data model. 
+   This action starts the metric creation flow. In this process, you can add the data that you want to ask about and prepare it for use in conversations through metadata enrichment and data modeling in the semantic data model. 
 
 - Upload a data file on the **Data sources** tab
 
@@ -106,7 +106,7 @@ At any time, you can access the semantic data model from the **Data and Metrics*
 
 Data then goes through metadata enrichment, which allows business context to be added to the data. After metadata enrichment is complete, you can use the enriched data to automatically generate metrics or build them manually. 
 
-You can use the **Advanced mode** after metadata enrichment to open the semantic data model and use modelling tools to create relationships and calculations, define filters, and more. For more information, see [Data modeling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
+You can use the **Advanced mode** after metadata enrichment to open the semantic data model and use modeling tools to create relationships and calculations, define filters, and more. For more information, see [Data modeling in {{site.data.keyword.wxbia_short}}](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
 
 ## Related links
 {: #related}

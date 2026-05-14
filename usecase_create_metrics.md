@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-25"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: overview metrics, create metrics, tutorial
 subcollection: watsonx-bi
@@ -82,7 +82,7 @@ Before you create metrics, familiarize yourself with the [key concepts in creati
 
 8. Close the tab after reviewing the results and return to the watsonx BI enrichment page and click **Next** to continue. 
 
-## Step 3: Creating metrics and data modelling
+## Step 3: Creating metrics and data modeling
 {: #create_metrics_model}
 
 9. You are now on the **Metrics overview** page and can create metrics by:
