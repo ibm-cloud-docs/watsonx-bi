@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -37,13 +37,12 @@ Samples are not supported in {{site.data.keyword.wxbia_short}} on IBM Software H
 ## Model settings
 {: #model_settings_tab}
 
-During the initial setup of {{site.data.keyword.wxbia_short}}, administrative users select the large language model (LLM) that is used in conversations for all users in the account. 
+{{site.data.keyword.wxbia_short}} uses a large language model (LLM) to power conversations and generate insights for all users in the account.
 
-They can also change the LLM from the **Model settings** tab under **Configuration and settings**. When the LLM selection changes, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account that has access to {{site.data.keyword.wxbia_short}}.
+Administrative users can view the model configuration from the **Model settings** tab under **Configuration and settings**. The model that is used depends on your deployment type and version.
 
-The ability to choose the LLM is not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2.x. Watsonx BI on Software Hub 5.2.x uses [IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} to respond to questions. 
+In {{site.data.keyword.wxbia_short}} as a Service, the model is OpenAI gpt-oss-120b with Chain of thought (CoT) reasoning. In {{site.data.keyword.wxbia_short}} on IBM Software Hub, the available model depends on your version. For more information about models, see [Understanding the large language model (LLM) in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}.
 {: note}
-
 
 ## Storage 
 {: #storage}

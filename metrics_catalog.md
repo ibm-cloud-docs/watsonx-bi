@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -69,4 +69,4 @@ All users can ask questions against a specific metric directly from the **Metric
 
 2. Click **Ask a question**. 
 
-The **Conversations** page opens with a new conversation. You notice that the welcome message and the dropdown next to the input box display the name of the metric that you had selected. This means that any question that you now ask about will be scoped to the selected metric. 
+The **Conversations** page opens with a new conversation. The welcome message and the dropdown next to the input box display the name of the metric that you selected. Any question that you ask now is scoped to the selected metric. 

@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
-keywords: sample, questions to ask,
+keywords: sample, questions to ask, go sales
 subcollection: watsonx-bi
 
 
@@ -34,10 +34,10 @@ You can open the Go sales semantic data model from the **Data and Metrics** tab.
 
 For information about how to use the semantic data modeling interface, see [Data modeling in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external}.
 
-## Questions you can ask
+## Sample questions you can ask
 {: #go_sales_questions}
 
-Based on the data in the sample, here are some questions you can ask:
+Based on the data in the sample, here are some questions that you can ask:
 
 - What was the total revenue for each year?
 
@@ -53,7 +53,7 @@ Based on the data in the sample, here are some questions you can ask:
 
 - Which product had the highest gross profit in 2021?
 
-- Compare average unit sale price between different retailer states.
+- Compare the average unit sale price between different retailer states.
 
 - Can you provide the cost of goods sold by product line?
 

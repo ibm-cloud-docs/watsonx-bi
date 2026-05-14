@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -16,17 +16,26 @@ subcollection: watsonx-bi
 # Known issues in {{site.data.keyword.wxbia_short}} as a Service 
 {: #known_issues_cloud}
 
-The following issues and limitations apply to {{site.data.keyword.wxbia_full}} as a Service.  {: shortdesc}
+The following issues and limitations apply to {{site.data.keyword.wxbia_full}} as a Service.  {: #shortdesc}
+
+- **Microsoft Azure Synapse Analytics is listed as a supported connector**
+
+  The Microsoft Azure Synapse Analytics connector appears in the watsonx BI supported connector list, even though it is not currently supported.
+
+  Workaround:
+ 
+  Use another supported connector to connect to your data. 
+
 
 - **IBM Db2 on-premise connection does not display in the watsonx BI supported connector list**
 
-  The IBM Db2 on-premise connector does not display in the watsonx BI supported connectors list when you try to add a new connection in the metric creation flow. 
+  The IBM Db2 on-premise connector does not display in the watsonx BI supported connectors list when you try to add a connection in the metric creation flow. 
 
   Workaround:
 
   On the **Add connection** page, which lists the supported connectors, click the **Filter** icon and deselect **watsonx BI**.
 
-  Clearing the filter shows connector types that are not supported in watsonx BI. Before adding new connections, ensure you filter the connector list to display only types supported by watsonx BI.
+  Clearing the filter shows connector types that are not supported in watsonx BI. Before you add connections, make sure that you filter the connector list to display only types supported by watsonx BI.
   {: important}
 
   ![Clearing the watsonx BI filter on the Add connection page](images/KI_db2_connector.png)
@@ -48,11 +57,11 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 
 - **Continous loading state displays in Advanced mode after selecting a metric definition**
 
-  You might encounter this issue if you  open a semantic data model from an imported project, and select a metric definitino in the **Advanced mode**. 
+  You might encounter this issue if you open a semantic data model from an imported project, and select a metric definition in the **Advanced mode**. 
 
   Workaround:
 
-  You can refresh the page and click the **Grid** tab in the semantic data model before selecting a metric definition.
+  You can refresh the page and click the **Grid** tab in the semantic data model before you select a metric definition.
 
 - **Transferring an IBM Cloud account that you own requires you to manually add the new owner as an Administrator**
 
@@ -64,7 +73,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 
   -  watsonx BI community on **Configurations and settings > Manage BI community**
 
-  - Metrics catalog on the platform. To do this, go to the **Metrics catalog** in watsonx BI and go to the address bar to modify the URL. Replace the "wxbi/metrics-catalogs" in the URL to "data/catalogs" and press Enter. The URL will look like: "dataplatform.cloud.ibm.com/data/catalogs/..."
+  - Metrics catalog on the platform. To do this, go to the **Metrics catalog** in watsonx BI and go to the address bar to modify the URL. Replace the "wxbi/metrics-catalogs" in the URL to "data/catalogs" and press Enter. The URL looks like: "dataplatform.cloud.ibm.com/data/catalogs/..."
   
     In the **Metrics Catalog**, go to **Access control**. Set the role of the new account owner to **Admin**.
 
@@ -83,7 +92,5 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 {: #limitations_cloud}
 
 - Import and export project does not support local files (.csv, .xls, .xlsx, or .tsv)
-
-- Metrics created from a local file (.csv, .xls, .xlsx, or .tsv) cannot be published to the **Metrics catalog**. 
 
 - Metrics and visualizations that are created from an imported Cognos Analytics Framework Manager package cannot be published to the **Metrics catalog**.

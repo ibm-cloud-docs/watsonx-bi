@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-19"
+lastupdated: "2026-05-08"
 
 keywords: adding users, BI community, members
 subcollection: watsonx-bi
@@ -51,13 +51,13 @@ Set up access groups to simplify user access policies, role assignment in watson
 
 3. Choose how you want to assign access. If you have created an access group with predefined access policies, select **Access groups**. Otherwise, select **Access policy**. 
 
-  If you selected [Access groups](/docs/account?topic=account-access-management-overview#access-groups-iam){: external}, follow these steps to invite members of an access group to the watsonx BI account. 
+  If you selected [Access groups](/docs/iam?topic=iam-access-management-overview#access-groups-iam){: external}, follow these steps to invite members of an access group to the watsonx BI account. 
 
   a. Select one or more access groups and click **Add** to add the users to the selection.
 
   b. Click **Invite** under **Access summary**. 
 
-  If you selected [Access policy](/docs/account?topic=account-access-management-overview#access-policies-concept){: external}, follow these steps to invite users to the watsonx BI account.
+  If you selected [Access policy](/docs/iam?topic=iam-access-management-overview#access-policies-concept){: external}, follow these steps to invite users to the watsonx BI account.
 
   a. Under **Service**, enter **watsonx BI** in the search field and select it.
 

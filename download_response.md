@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-18"
+lastupdated: "2026-05-14"
 keywords: download, download response, share resposne
 subcollection: watsonx-bi
 
@@ -23,7 +23,7 @@ You can download the following components of a generated response:
 | **Content type**      | **Definition** | **File format** |
 |------------------------|-----------------|-----------------|
 | **Text response**      | The text answer that is generated in response to your question. Only the text answer is downloaded. Visualizations that are generated with the response and insights are not included. | `.txt` |
-| **Visualizations**      | The chart generated to answer your question. If you're using Chain of Thought reasoning, multiple visualizations might be generated to answer your question, which you can download at the same time. Insights are not included. |`.png` |
+| **Visualizations**      | The chart generated to answer your question. If you're using chain of thought (CoT) reasoning, multiple visualizations might be generated to answer your question, which you can download at the same time. Insights are not included. |`.png` |
 | **Tabular data**       | Tabular data is the data table that is used by the large language model to generate the response. |`.csv` |
 | **Diagnostic information**   | Diagnostic information includes details such as the steps the AI took to respond, associated SQL, and the response ID (or Support ID). Only Data analysts and administrative users can download diagnostic information. 
 | `.json` |

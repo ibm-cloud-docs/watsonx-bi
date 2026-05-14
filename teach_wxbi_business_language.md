@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Teaching watsonx BI your business language
 {: #teach_wxbi}
 
-{{site.data.keyword.wxbia_full_notm}} uses the following to understand questions and the context of your data when generating query statements to respond:
+{{site.data.keyword.wxbia_full_notm}} uses the following to understand questions and the context of your data when it generates query statements to respond:
 
 - Asset name
 - Asset description
@@ -27,13 +27,13 @@ subcollection: watsonx-bi
 - AI instructions and context
 - Sampled columns 
 
-The quality of this data determines the quality of watsonx BI’s generated responses. 
+The quality of this data determines the quality of the generated responses. 
 
 You can improve the quality of watsonx BI’s answers and teach it your business language with the following three methods: 
 
 1. Adding your business glossary to watsonx BI’s business terms 
 
-2. Ensuring each asset and column has a descriptive, meaningful, and accurate display name and description in the metadata enrichment
+2. Making sure each asset and column has a descriptive, meaningful, and accurate display name and description in the metadata enrichment
 
 3. Adding context in the semantic data model to help query generation 
 
@@ -51,7 +51,7 @@ As a Cloud account owner or Administrator, you can add your organization’s bus
 
 These predefined business terms and any glossary concepts that you upload are one of the components that are used during metadata enrichment to augment technical metadata with more descriptive and meaningful names.
 
-Consider adding your organization’s business glossary immediately after you setup and initialize watsonx BI so that watsonx BI can use these terms when the source data undergoes metadata enrichment.
+Consider adding your organization’s business glossary immediately after you set up and initialize watsonx BI so that watsonx BI can use these terms when the source data undergoes metadata enrichment.
 {: tip}
 
 ### Steps to add new business terms
@@ -59,10 +59,10 @@ Consider adding your organization’s business glossary immediately after you se
 
 You can add business terms one by one or upload a CSV file. 
 
-In order for watsonx BI to use the business terms that you’ve added, the source data has to undergo metadata enrichment. 
+In order for watsonx BI to use the business terms that you added, the source data must undergo metadata enrichment. 
 {: important}
 
-To add a new business term:
+To add a business term:
 
 1.	Go to **Navigation Menu > Governance > Business terms**.
 
@@ -86,7 +86,7 @@ To add a new business term:
 
 To import business terms from a CSV file:
 
-1.	Go to **Navigation Menu > Governance > Business terms**, click **Add business term** and select **Import from file**.
+1.	Go to **Navigation Menu > Governance > Business terms**, click **Add business term**, and select **Import from file**.
 
 2.	Upload the file and choose a method for merging imported and existing artifacts.
 
@@ -113,13 +113,13 @@ After metadata enrichment completes, click **Review enriched data** to review th
 
 When you open the enrichment results, you can view the enriched data at both the asset level and column level. Here, you need to:
 
-1. Review the enrichment results to ensure each asset and column has a meaningful display name and description. 
+1. Review the enrichment results to ensure that each asset and column has a meaningful display name and description. 
 
 2. Accept the AI-suggested name and description or click **Edit** to add your own. 
 
   A name or description might already be assigned because the confidence was high enough or it is a suggestion that you can accept. 
 
-If you edit the **Display name** or **Description** in the metadata enrichment, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this, make your changes and add context in the semantic data model instead (see subsequent section).
+If you edit the **Display name** or **Description** in the metadata enrichment, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this issue, make your changes and add context in the semantic data model instead (see subsequent section).
 {: important}
 
 
@@ -130,7 +130,7 @@ To accept the suggested and assigned details for assets or columns:
 
 2.	Click **More** and choose the type of suggestion that you want to accept.
 
-![Columns tab review showing the suggestions that can be accepted](images/column_review.png)
+![Columns tab review shows the suggestions that can be accepted](images/column_review.png)
 
 
 ## Adding context in the semantic data model to help query generation 
@@ -147,7 +147,7 @@ To further augment watsonx BI’s understanding of your data and business langua
 
 To help the watsonx BI understand the table schema correctly and easily, ensure that each column has an **Identifier** in the semantic data model.
 
-These identifiers should be unique, clear, and worded in a way that aligns with how users are likely to ask questions.
+These identifiers must be unique, clear, and worded in a way that aligns with how users are likely to ask questions.
 
 For example, if an asset is about:
 
@@ -165,7 +165,7 @@ To add an identifier to a metric definition:
 
   ![Navigating to advanced mode from Metrics overview](images/metrics_overview_adv_mode.png)
 
-3. Under the metric definition, select the column you want to add the identifier to.
+3. Under the metric definition, select the column that you want to add the identifier to.
 
 4. Open its **Properties** tab and scroll down to the **Advanced** section.
 
@@ -175,7 +175,7 @@ To add an identifier to a metric definition:
 
 6. Under **Actions**, click **Save** to save the semantic data model.
 
-7. Select the metric definition that you just made changes to and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
+7. Select the metric definition that you just changed and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
   ![Exporting metric definition](images/export_metric_definition.png)
 
@@ -185,11 +185,11 @@ To add an identifier to a metric definition:
 
 You can add a label and description to a metric column in the semantic data model to help watsonx BI understand how users refer to data in natural language.
 
-The order in which watsonx BI uses the display name and description to retrieve data is the following:
+The order in which watsonx BI uses the display name and description to retrieve data is as follows:
 
-1. User-defined in the semantic data model
+1. User defined in the semantic data model
 
-2. User-defined in the metadata enrichment asset
+2. User defined in the metadata enrichment asset
 
 3. AI-suggested or generated in the metadata enrichment asset
 
@@ -202,13 +202,13 @@ To add a label and description to a metric column in the semantic data model:
 
   ![Navigating to advanced mode](images/metrics_overview_adv_mode.png)
 
-3. Under the metric definition, select the column you want to add a display name and description to.
+3. Under the metric definition, select the column that you want to add a display name and description to.
 
 4. Open its **Properties** tab and enter a name in the **Label** field and description in the **Description** field. 
 
 5. Under **Actions**, click **Save** to save the semantic data model.
 
-6. Select the metric definition that you just made changes to and click **Export metric definition**.
+6. Select the metric definition that you just changed and click **Export metric definition**.
 
   ![Exporting a metric definition](images/export_metric_definition.png)
 
@@ -220,7 +220,7 @@ This is an iterative process. If the responses aren’t as expected, revisit the
 #### Creating strong descriptions
 {: #write_desc}
 
-Ensure that the name and description are worded based on your business context and how users will likely ask questions. For example:
+Ensure that the name and description are worded based on your business context and how users ask questions. For example:
 
 - Include values in the description to specify time periods
 
@@ -233,7 +233,7 @@ Ensure that the name and description are worded based on your business context a
 
 - Reflect user language preferences
 
-  For example: If there is a column called *manager*, but your business users use the word *boss*, then reflect that in the description. 
+  For example: If there is a column that is called *manager*, but your business users use the word *boss*, then reflect that in the description. 
   
   If you want AI to use *Cost of Goods Sold* column to answer questions about *Cost breakdown*, then add that phrase to the description of the column. 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: Presto
 
@@ -30,7 +30,7 @@ To create the connection, you need these connection details:
 
 - Hostname or IP address
 - Port 
-- Username and password, required if you connect to Presto with SSL enabled
+- Username and password, which is required if you connect to Presto with SSL enabled
 - SSL certificate, if required by the database server
 
 ## Connecting to IBM watsonx.data Presto connection

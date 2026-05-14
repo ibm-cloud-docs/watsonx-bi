@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-12"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: roles, permissions, software hub
 subcollection: watsonx-bi
@@ -15,8 +15,7 @@ subcollection: watsonx-bi
 # Roles and permissions for {{site.data.keyword.wxbia_short}} on IBM Software Hub
 {: #roles-swh}
 
-As a {{site.data.keyword.wxbia_short}} user in IBM Software Hub, you have different permissions based on your assigned role. 
-{: #shortdesc}
+As a {{site.data.keyword.wxbia_short}} user in IBM Software Hub, you have different permissions based on your assigned role. {: #shortdesc}
 
 ## {{site.data.keyword.wxbia_short}} roles
 
@@ -63,7 +62,7 @@ The following table shows permission based on assigned role.
 
 ## Assigning user roles in {{site.data.keyword.wxbia_short}} on IBM Software Hub
 
-You must have the **Business Intelligence Administrator** role to assign roles to other users. You can assign roles when you add a new user or assign different roles to an existing user. 
+You must have the **Business Intelligence Administrator** role to assign roles to other users. You can assign roles when you add a user or assign different roles to an existing user. 
 
 When you assign a role to a user in the BI community, the user's role is automatically updated to include the equivalent role at the platform level. For example, if you assign a user the role of **Analytics consumer**, in IBM Software Hub, they receive the role of **Business Intelligence Analyst**.
 

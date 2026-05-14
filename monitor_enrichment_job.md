@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: monitor enrichment, enrichment error, job, log
 subcollection: watsonx-bi
@@ -23,12 +23,12 @@ To view details of a metadata enrichment job that is running during the metric c
 
 2. Select the metadata enrichment job that you want to review.
 
-3. The **Job details** page, shows the number of completed and failed runs, and the configured job schedule.
+3. The **Job details** page shows the number of completed and failed runs, and the configured job schedule.
 
 4. Select a particular run and review the run details. The following run details are provided for a job run:
 
    - The job run status
-   - The duration, start and end times
+   - The duration, start, and end times
    - Who started the run
    - A link to the associated job
    - A link to the associated metadata enrichment
@@ -38,12 +38,12 @@ Here, you can also pause and resume the job run.
 
 Depending on job type, more information about the actual run is provided on the **Run metrics** and **Log** tabs.
 
-You can also access the details for the most recent metadata enrichment job run from the metadata enrichment asset. You can click the **View metrics** link in the **Job details** section in the information panel or the **Details of job run** link in the asset details panel.
+You can also access the details for the most recent metadata enrichment job that is run from the metadata enrichment asset. You can click the **View metrics** link in the **Job details** section in the information panel or the **Details of job run** link in the asset details panel.
 
 ## Understanding the run details
 {: #understanding_run}
 
-On the **Run metrics** tab in the job run details, you can monitor the progress of an active run of the metadata enrichment job or check the status information for a completed job run.
+On the **Run metrics** tab in the job run details, you can monitor the progress of an active run or check the status information for a completed job run.
 
 The **Summary** section shows the overall progress of the enrichment:
 
@@ -74,7 +74,7 @@ For canceled enrichments, the details reflect the enrichment status at the point
 ## Understanding the job run log
 {: #understand_run_log}
 
-Logs are provided for all types of metadata enrichment jobs. To view the log for a job run, switch to the **Log** tab on the **Job run details** page. The log shows the job type, the job run ID, and details depending on the enrichment tasks.
+Logs are provided for all types of metadata enrichment jobs. To view the log for a job run, switch to the **Log** tab on the **Job run details** page. The log shows the job type, the job run ID, and the details depending on the enrichment tasks.
 
 -  The entry **Full metadata enrichment job run** or **Delta metadata enrichment job run** indicates a basic metadata enrichment job that is run with the configured enrichment options. 
 

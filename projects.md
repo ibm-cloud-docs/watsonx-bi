@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-13"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords:
 subcollection: watsonx-bi
@@ -18,16 +18,16 @@ subcollection: watsonx-bi
 
 A project is a collaborative workspace where you work with data and other assets to accomplish a particular goal, such as creating metrics. {: #shortdesc}
 
-Any data you want to work with and want to ask about, first needs to be added to a project through a connection or by uploading data files. You can see a list of projects you have access to under **Navigation menu > Projects > View all projects**. 
+Any data that you want to work with and want to ask about, first needs to be added to a project through a connection or by uploading data files. You can see a list of projects you have access to under **Navigation menu > Projects > View all projects**. 
 
 You can choose an existing project to work in or create a new project from the **Data and Metrics** tab. 
 
-Create one project when you are working toward one defined business goal and using the same data sources and collaborators. Create multiple projects when your workstreams support different goals, require different collaborators or permissions, or need data isolation. For example, if you are exploring data for a single initiative such as sales forecasting, churn analysis, or inventory optimization, a single project keeps related assets together and might be easier to manage.
+Create one project when you are working towards one defined business goal and that uses the same data sources and collaborators. Create multiple projects when your workstreams support different goals, require different collaborators or permissions, or need data isolation. For example, if you are exploring data for a single initiative such as sales forecasting, churn analysis, or inventory optimization, a single project keeps related assets together and might be easier to manage.
 {: tip}
 
 To create a project:
 
-1. On the **Data and Metrics** tab, click **Create project**, if you're creating a project for the very first time. Otherwise, click the '+' button next to the project list. 
+1. On the **Data and Metrics** tab, click **Create project**, if you're creating a project for the first time. Otherwise, click the '+' button next to the project list. 
 
 2. Enter a name for your project. 
 
@@ -35,7 +35,7 @@ The new project is automatically configured for {{site.data.keyword.wxbia_short}
 
 You can manage the project from **Navigation Menu > Projects > View all projects**. 
 
-If your organization has given you access to sample data and you choose to install it, a project for the sample data is automatically created.
+If your organization gave you access to sample data and you choose to install it, a project for the sample data is automatically created.
 {: note}
 
 ## Project name requirements

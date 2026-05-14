@@ -1,7 +1,7 @@
 ---
 copyright: 
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-05-14"
 
 keywords: glossary
 subcollection: watsonx-bi
@@ -43,7 +43,7 @@ See [artificial intelligence](#x3448902).
 ### artificial intelligence (AI)
 {: #x3448902}
 
-The capability to acquire, process, create and apply knowledge in the form of a model to make predictions, recommendations or decisions.
+The capability to acquire, process, create and apply knowledge in the form of a model to make predictions, recommendations, or decisions.
 
 ### asset
 {: #x2172042}
@@ -69,7 +69,7 @@ A governance artifact that helps implement a common enterprise vocabulary to des
 ### calculated member
 {: #x5000010}
 
-A member of a dimension whose measure values are not stored but are calculated at run time using an expression.
+A member of a dimension whose measure values are not stored but are calculated at run time by using an expression.
 
 ### cardinality
 {: #x5000009}
@@ -94,7 +94,7 @@ A type of data access asset that contains information to connect to a data sourc
 ### data asset
 {: #x5000022}
 
-Represents data that is accessed through a connection to a remote data source . 
+Represents data that is accessed through a connection to a remote data source. 
 
 ### data classes
 {: #x5000023}
@@ -133,7 +133,7 @@ An AI model that can be adapted to a wide range of downstream tasks. Foundation 
 ### generative AI (gen AI)
 {: #x10298036}
 
-A class of AI algorithms that can produce various types of content including text, source code, imagery, audio, and synthetic data.
+A class of AI algorithms that can produce various types of content such as text, source code, imagery, audio, and synthetic data.
 
 ### governance artifacts
 {: #x5000033}
@@ -159,7 +159,7 @@ An entity that consists of resources that are reserved for a particular applicat
 ### job
 {: #x2007884}
 
-A group of executable tasks and operations that can be run as a batch. As a result, a historical record of the actions performed is created.
+A group of executable tasks and operations that can be run as a batch. As a result, a historical record of the actions that are performed is created.
 
 ## K
 {: #glossk}
@@ -179,7 +179,7 @@ Metrics that display in the Key metrics panel in watsonx BI, which include:
 ### large language model (LLM)
 {: #x10298052}
 
-A language model with many parameters, trained on a sizeable quantity of text.
+A language model with many parameters, which are trained on a sizeable quantity of text.
 
 ## M
 {: #glossm}

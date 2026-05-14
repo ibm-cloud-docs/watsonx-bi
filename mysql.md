@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: MySQL
 
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # MySQL
 {: #mysql}
 
-MySQL is an open-source relational database management system.{: #shortdesc}
+MySQL is an open source relational database management system.{: #shortdesc}
 
 
 ## Supported versions
@@ -45,4 +45,3 @@ Select **Server proxy** to access the MySQL data source through a server proxy. 
 - The Proxy username and Proxy password fields are optional.
 
 For **Private connectivity**, to connect to a database that is not externalized to the internet (for example, behind a firewall), you must set up a [secure connection](/docs/watsonx-bi?topic=watsonx-bi-satellite){: external}.
-

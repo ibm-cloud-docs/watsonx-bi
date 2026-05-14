@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-23"
+lastupdated: "2026-05-14"
 
 keywords: choose llm, large language model, foundation model, AI model
 subcollection: watsonx-bi
@@ -13,14 +13,17 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Selecting the large language model (LLM) for your account
+# Understanding the large language model in your account
 {: #choose_llm_account}
 
-At the time of setting up {{site.data.keyword.wxbia_full}}, Administrators can choose the LLM or foundation model to be used in {{site.data.keyword.wxbia_short}} conversations for users in their organization. {: #shortdesc}
+{{site.data.keyword.wxbia_full}} uses a large language model (LLM) or foundation model to power conversations and generate insights from your business data. {: #shortdesc}
 
-Administrators can update this selection at any time from the **Configuration and settings > Model settings** page. 
+Administrators can view the model configuration on the **Configuration and settings > Model settings** page.
 
-The selected LLM is used to respond to your BI questions.  It analyzes your input, identifies the key intent, and aligns it with your business data (such as column names, measures, or filters). Based on this understanding, the model generates the appropriate query to retrieve the relevant information.
+In watsonx BI as a Service, the model is OpenAI gpt-oss-120b with [Chain of thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm). In Software Hub, the available model depends on your version and administrators can select a model at any time on the **Configuration and settings > Model settings** page.
+{: note}
+
+The LLM responds to your BI questions by analyzing your input, identifying intent, and aligning it with your business data (such as column names, measures, or filters). It then generates the appropriate query to retrieve relevant information.
 
 Using the returned data, the LLM produces a text-based answer, a visualization, or both. You can view each step of this process in the **AI steps** by clicking **Show AI steps** in the response.
 
@@ -34,76 +37,42 @@ The name of the model used to generate each response appears in the **AI** label
 ## Supported LLMs
 {: #available_llms}
 
-As an Administrator, you can choose from the following models:
-
 | LLMs | Available in {{site.data.keyword.wxbia_short}}| 
 |-------|---------|
 |[IBM Granite-3-8b-instruct](https://www.ibm.com/docs/watsonx/w-and-w/2.2.0?topic=models-granite-30-8b-instruct-model-card){: external} | Software Hub 5.2.0 and later versions |
-|[IBM Granite-4-h-small](https://www.ibm.com/docs/en/watsonx/w-and-w/latest?topic=models-foundation#granite-4){: external} | As a Service|
-|[OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external}| As a Service|
-|OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct| Software Hub 5.2.2 and later versions|
-|OpenAI gpt-oss-120b and IBM Granite-4-h-small| As a Service|
-|[Meta Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/){: external} and IBM Granite-4-h-small | As a Service|
-|OpenAI gpt-oss-120b with [Chain of Thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)| As a Service|
+|[OpenAI gpt-oss-120b](https://www.ibm.com/docs/en/watsonx/saas?topic=models-third-party-foundation#gpt-oss){: external} and IBM Granite-3-8b-instruct| Software Hub 5.2.2 and later versions|
+|OpenAI gpt-oss-120b with [Chain of thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm)| As a Service|
 {: caption="Supported LLMs" caption-side="bottom"}
 
 
-## How model selection affects conversations
+## How the model affects conversations 
 {: #model_selection}
 
-While {{site.data.keyword.wxbia_short}} uses LLMs for various tasks, this feature specifically controls which models are used for SQL generation. You can choose the model based on your specific requirements for SQL generation performance and accuracy.
+While {{site.data.keyword.wxbia_short}} uses LLMs for various tasks, this feature specifically controls which models are used for SQL generation. The following table lists the supported LLMs and their capabilities.
 
-IBM Granite-3-8b-instruct
-
-:   Supported in IBM Software Hub only.
-    {: note} 
+IBM Granite-3-8b-instruct [Software]{: tag-blue} 
 
 :   When you select the Granite model, it is used for all language model tasks, including SQL generation. 
   
-:   Choose Granite-3-8b-instruct to work with simple BI queries, such as basic data retrieval and summarization.
+:   Use Granite-3-8b-instruct to work with simple BI queries, such as basic data retrieval and summarization.
 
-IBM Granite-4-h-small 
-
-:   When you select only the Granite model, it is used for all language model tasks, including SQL generation. 
-
-:   Granite 4 offers better instruction handling and tool use, making it well-suited for enterprise tasks.
-
-OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct
-
-:   Supported in IBM Software Hub only.
-    {: note} 
+OpenAI gpt-oss-120b and IBM Granite-3-8b-instruct [Software]{: tag-blue} 
 
 :   When you select the gpt-oss-120b and Granite combination, gpt-oss-120b is used specifically for SQL generation tasks, while Granite continues to be used for all other language model tasks.
 
-:   Choose this combination for advanced, configurable reasoning in complex BI queries.
+:   Use this combination for advanced, configurable reasoning in complex BI queries.
 
-OpenAI gpt-oss-120b
+OpenAI gpt-oss-120b with Chain of thought [Cloud]{: tag-blue}  
 
-:   The gpt-oss-120b is used for SQL generation tasks and for all other language model tasks.
+:   Chain of thought (CoT) with OpenAI gpt-oss-120b provides reasoning behind each response by breaking down complex questions into smaller steps. In this combination, OpenAI gpt-oss-120b is used for SQL generation tasks and all other language model tasks.
 
-:   Choose this option for advanced question interpretation and higher accuracy.
-
-Meta Llama 4 and IBM Granite-4-h-small 
-
-:   When you select Meta Llama 4 and Granite, Meta Llama 4 is used specifically for SQL generation tasks, while Granite continues to be used for all other language model tasks.
-
-:   Choose Meta Llama 4 and Granite for complex, multi-step BI queries. 
-
-OpenAI gpt-oss-120b with Chain of Thought 
-
-:   Chain of Thought with OpenAI gpt-oss-120b and Granite provides reasoning behind each response by breaking down complex questions into smaller steps. 
-  
-:   OpenAI gpt-oss-120b is used for SQL generation tasks and all other language model tasks.
-
-:   Choose gpt-oss-120b with Chain of Thought to view reasoning for complex, multi-part BI queries.
-
-:   For more information, see [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
+:   For more information, see [Chain of thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 
 
 ## Changing the LLM 
 {: #change_llm}
 
-As an Administrator, you can change the LLM from **Navigation menu > Configuration and settings**. 
+As an Administrator, you can change the LLM in watsonx BI on Software Hub from **Navigation menu > Configuration and settings**.
 
 When you change the model, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account that has access to {{site.data.keyword.wxbia_short}}.
 

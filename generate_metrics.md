@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
 keywords: generate metrics, auto-generate metrics, automatic metrics
 subcollection: watsonx-bi
@@ -23,23 +23,23 @@ When you generate metrics, {{site.data.keyword.wxbia_full_notm}} creates metric 
 This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}} as a Service. 
 {: note}
 
-To generate metrics automatically, follow the steps listed in [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}. 
+To generate metrics automatically, follow the steps that are listed in [Overview of creating metrics](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external}. 
 
 When you get to the **Metrics overview** page:
 
 1. Click **Generate metrics**. 
 
-   You can generate metrics here only when the semantic data model has no existing metrics.  To add more metrics, use **Advanced mode**.
+   You can generate metrics here only when the semantic data model has no existing metrics. To add more metrics, use **Advanced mode**.
    {: note}
 
 2. Select the metrics that you want to use. You can click the menu for a metric to view its details first. 
 
 3. Click the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data) to review the semantic data model.  
 
-   Ensure that meaningful names, descriptions, and identifiers are assigned to each column. These fields help AI find and retrieve data when answering your questions. 
+   Make sure that meaningful names, descriptions, and identifiers are assigned to each column. These fields help AI find and retrieve data when it answers your questions. 
    {: tip}
 
-4. If you made changes to the semantic data model, click **Save** to save your changes. If you edited a metric definition, click the menu icon for the metric and select **Export metric definition**. 
+4. If you changed the semantic data model, click **Save** to save your changes. If you edited a metric definition, click the menu icon for the metric and select **Export metric definition**. 
 
    Exporting a metric definition automatically enriches the metric definition, creates a metric or updates an existing one, and makes the metric available for use in conversations. 
 
@@ -47,7 +47,7 @@ When you get to the **Metrics overview** page:
 
    - [Add visualizations](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics) to one or more of these metrics. 
     
-   - [Try a selected metric](/docs/watsonx-bi?topic=watsonx-bi-try_metrics) in a conversation to ensure it can answer questions about your data. You can go back to the **Advanced mode** to adjust its metric definition, if necessary. 
+   - [Try a selected metric](/docs/watsonx-bi?topic=watsonx-bi-try_metrics) in a conversation to ensure that it can answer questions about your data. You can go back to the **Advanced mode** to adjust its metric definition, if necessary. 
     
    - (Data analysts only) [Publish metrics and related visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** and assign them to Analytics consumers. 
 
@@ -56,13 +56,13 @@ When you get to the **Metrics overview** page:
 ## Generating metrics in Advanced mode
 {: #generate_metrics_advanced}
 
-You can only generate metrics once from the **Metrics overview** page. To generate more metrics: 
+You can generate metrics only once from the **Metrics overview** page. To generate more metrics: 
 
 1. Go to the **Advanced mode**. 
 
-2. Select the measures you want to use, right-click and select **Generate metric definitions**. 
+2. Select the measures that you want to use, right-click, and select **Generate metric definitions**. 
 
-   New metric definitions are generated and display in the semantic data model. 
+   New metric definitions are generated and displayed in the semantic data model. 
 
 3. Save the semantic data model. 
 

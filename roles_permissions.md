@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-12"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: roles, permissions, access
 subcollection: watsonx-bi
@@ -48,7 +48,7 @@ To add members to the watsonx BI community and assign collaborator roles:
 
 3. Select the individual users or access groups and assign the relevant collaborator role. 
 
-You need to assign the default **Resource group** at least a **Viewer** role for users to be able to access dataplatform.
+You need to assign the default **Resource group** at least a **Viewer** role for users to be able to access data platform.
 {: note}
 
 
@@ -62,7 +62,7 @@ The following table shows the actions that you can complete depending on your co
 Action |Administrator | Data analyst | Analytics consumer
 |---------------| -----|------|---------|
 |**{{site.data.keyword.wxbia_short}} setup**|
-|Change large language model | ✓ | x | x |
+|Select large language model | ✓ | x | x |
 |Add or delete user groups | ✓ | x | x |
 |Assign and modify roles | ✓ | x | x |
 |**Governance**|

@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-05"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
-keywords: cognos analytics, cognos, FM
+keywords: satellite connector, firewall, connecting to on-premises
 subcollection: watsonx-bi
 
 
@@ -35,7 +35,7 @@ A Satellite Connector is a deployment model that enables only the secure communi
 
 - You must be assigned to a user group. The user group name is required to create a Satellite Connector (Resource group field).
 
-- You need to ensure that your environment meets the [minimum requirements](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui#min-requirements){: external} to run the Satellite Connector agent.
+- Make sure that your environment meets the [minimum requirements](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui#min-requirements){: external} to run the Satellite Connector agent.
 
 ### Step 1: Create a Satellite Connector
 {: #_step1_create_satellite_conn} 
@@ -93,7 +93,7 @@ After you create a connector, you must set up an agent.
 ### Step 3: Create a service ID
 {: #step3_serviceID}
 
-1. Go to to Access (IAM) from your Cloud account or from the Navigation menu in {{site.data.keyword.wxbia_short}}. 
+1. Go to Access (IAM) from your Cloud account or from the Navigation menu in {{site.data.keyword.wxbia_short}}. 
 
 2. Under **Service IDs**, click **Create service ID**.
 
@@ -112,13 +112,13 @@ After you create a connector, you must set up an agent.
 ### Step 4: Install agent
 {: #step4_inst_agent}
 
-Each Satellite Connector needs at least one agent running on the remote location to establish a secure connection to a data source. You can install the agent as a Docker image.
+Each Satellite Connector needs at least one agent that is running on the remote location to establish a secure connection to a data source. You can install the agent as a Docker image.
 
-You need to ensure that your machine has docker that is installed or snap install docker.
+Make sure that your machine has docker or snap install docker.
 
 1. Run the installation command to install ibmcloud CLI. 
 
-   curl -fsSL https://clis.cloud.ibm.com/install/linux | sh    
+   Curl -fsSL https://clis.cloud.ibm.com/install/linux | sh    
 
 2. After you install the ibmcloud CLI, use the following plug-ins:
 
@@ -172,7 +172,7 @@ You need to ensure that your machine has docker that is installed or snap instal
 
       | Parameter | Required | Description
       |-------|-------------|---------|
-      |SATELLITE_CONNECTOR_IAM_APIKEY| Y | Your service id API key. For security purposes, the API key is stored in a file named apikey. Set this parameter to the location of the apikey file. For example, SATELLITE_CONNECTOR_IAM_APIKEY=/agent-env-files/apikey|
+      |SATELLITE_CONNECTOR_IAM_APIKEY| Y | Your service ID API key. For security purposes, the API key is stored in a file named apikey. Set this parameter to the location of the apikey file. For example, SATELLITE_CONNECTOR_IAM_APIKEY=/agent-env-files/apikey|
       |SATELLITE_CONNECTOR_ID | Y | The ID of the Satellite Connector that the agent is bound to. | 
       |SATELLITE_CONNECTOR_TAGS| N | A string that identifies your agent. This string can be any value that you find useful. |
       |SATELLITE_CONNECTOR_REGION	| Y | Specifies the region for the nearest Satellite Connector data center. For {{site.data.keyword.wxbia_short}}, the valid SATELLITE_CONNECTOR_REGION value is: us-south Dallas, TX, USA |

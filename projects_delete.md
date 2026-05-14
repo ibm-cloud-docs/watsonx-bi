@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: delete project, deleting a project, projects
 subcollection: watsonx-bi
@@ -13,10 +13,10 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Deleting or leaving a project
+# Deleting or exiting a project
 {: #delete_or_leave_projects}
 
-You can delete or leave a watsonx BI project from within the project or the **Projects** page. However, to delete a project, you must have the Admin role for that project. {: #shortdesc}
+You can delete or exit a watsonx BI project from within the project or the **Projects** page. However, to delete a project, you must have the Admin role for that project. {: #shortdesc}
 
 ## Deleting a project 
 {: #delete_project}
@@ -25,9 +25,9 @@ To delete a project from the **Projects** page:
 
 1. From the **Navigation Menu**, go to **Projects > View all projects**. 
 
-  On the **Projects** page, you should see a list of all active projects.
+  On the **Projects** page, you can see a list of all active projects.
 
-2. Find the project you want to delete and in the menu next to the project name, select **Delete**. 
+2. Find the project that you want to delete and in the menu next to the project name, select **Delete**. 
   
   To delete multiple projects, select the projects and click **Delete** in the toolbar. 
 
@@ -43,26 +43,26 @@ To delete a project from within the project:
 
 4. Confirm the deletion when prompted. You might be required to enter the project name to confirm. 
 
-Deleting a project is a permanent action. The project becomes unavailable for all collaborators, and its contents and underlying storage are permanently deleted. Data in a remote data source  accessed through a connection is not affected, but the connection asset within the project is removed.
+Deleting a project is a permanent action. The project becomes unavailable for all collaborators, and its contents and underlying storage are permanently deleted. Data in a remote data source that is accessed through a connection is not affected, but the connection asset within the project is removed.
 {: important}
 
 
-## Leaving a project 
+## Exiting a project 
 {: #leaving_projects}
 
-To leave a project from the **Projects** page: 
+To exit a project from the **Projects** page: 
 
 1. From the **Navigation Menu**, go to **Projects > View all projects**. 
 
-  On the **Projects** page, you should see a list of all active projects.
+  On the **Projects** page, you can see a list of all active projects.
 
-2. Find the project you want to leave and in the menu next to the project name, select **Leave**. 
+2. Find the project that you want to exit from and in the menu next to the project name, select **Leave**. 
   
   To leave multiple projects, select the projects and click **Leave** in the toolbar. 
 
 3. Confirm that you want to leave the project when prompted. 
 
-To leave a project from within the project: 
+To exit a project from within the project: 
 
 1. Open the project from **Navigation Menu > Projects > View all projects**. 
 
@@ -74,4 +74,3 @@ To leave a project from within the project:
 
 If you leave the project, you can no longer access anything in it. To rejoin a project, you need to contact the project's Admin.
 {: important}
-

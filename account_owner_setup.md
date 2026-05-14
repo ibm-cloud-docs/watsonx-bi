@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-05-14"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -79,8 +79,6 @@ As an IBM Cloud account owner, you must set up and initialize {{site.data.keywor
 
 4. (Optional) Choose a [sample](/docs/watsonx-bi?topic=watsonx-bi-using_samples){: external} to set up in your {{site.data.keyword.wxbia_short}} instance. 
 
-5. Select the large language model to use in conversations.
-
 6. [Invite users](/docs/watsonx-bi?topic=watsonx-bi-add_users_account){: external} to use your instance of {{site.data.keyword.wxbia_short}} (see Step 3). You can then: 
 
   a. [Add users to the watsonx BI community](/docs/watsonx-bi?topic=watsonx-bi-roles){: external} and assign relevant roles (Administrator, Data analyst, or Analytics consumer)  
@@ -124,13 +122,13 @@ Before you begin, set up access groups to simplify user access policies, role as
 
 3. Choose how you want to assign access. If you created an access group with predefined access policies, select **Access groups**. Otherwise, select the **Access policy**. 
 
-  If you selected [Access groups](/docs/account?topic=account-access-management-overview#access-groups-iam){: external}, follow these steps to invite members of an access group to the watsonx BI account. 
+  If you selected [Access groups](/docs/iam?topic=iam-access-management-overview#access-groups-iam){: external}, follow these steps to invite members of an access group to the watsonx BI account. 
 
     a. Select one or more access groups and click **Add** to add the users to the selection.
 
     b. Click **Invite** under **Access summary**. 
 
-  If you selected [Access policy](/docs/account?topic=account-access-management-overview#access-policies-concept){: external}, follow these steps to invite users to the watsonx BI account.
+  If you selected [Access policy](/docs/iam?topic=iam-access-management-overview#access-policies-concept){: external}, follow these steps to invite users to the watsonx BI account.
 
     a. Under **Service**, enter **watsonx BI** in the search field and select it.
 
@@ -140,10 +138,10 @@ Before you begin, set up access groups to simplify user access policies, role as
   
     The following are the required IAM roles for each collaborator role in watsonx BI:
 
-    | watsonx BI user | IAM Service role  | IAM Plaform role|
+    | watsonx BI user | IAM Service role  | IAM Platform role|
     |-------|-------------|---------------|
-    |Analytics consumer| Reader|       |
-    |Data analyst| Writer | Viewer  |
+    |Analytics consumer| Reader|  Viewer     |
+    |Data analyst| Writer | Editor  |
     |Administrator| Administrator | Manager | 
     {: caption="IAM Access roles mapping by {{site.data.keyword.wxbia_short}} user type" caption-side="bottom"}
     

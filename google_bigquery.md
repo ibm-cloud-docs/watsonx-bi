@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: Google BigQuery
 
@@ -102,7 +102,7 @@ For more information, see [Authenticate a workload using the REST API](https://c
 
 Select **Server proxy** to access the Google BigQuery data source through an HTTPS proxy server. Depending on its setup, a proxy server can provide load balancing, increased security, and privacy. The proxy server settings are independent of the authentication credentials and the personal or shared credentials selection.
 
-- Proxy host: The hostname or IP addess of the HTTPS proxy server. For example, proxy.example.com or 192.0.2.0.
+- Proxy host: The hostname or IP address of the HTTPS proxy server. For example, proxy.example.com or 192.0.2.0.
 
 - Proxy port: The port number to connect to the HTTPS proxy server. For example, 8080 or 8443.
 - Proxy username and Proxy password.
@@ -114,7 +114,7 @@ Select **Server proxy** to access the Google BigQuery data source through an HTT
 
 - Output JSON string format: JSON string format for output values that are complex data types (for example, nested or repeated).
 
-  - Pretty: Values are formatted before sending them to output. Use this option to visually read a few rows.
+  - Pretty: Values are formatted before you send them to output. Use this option to visually read a few rows.
   - Raw: (Default) No formatting. Use this option for the best performance.
   
 - Metadata discovery: The setting determines whether comments on columns (remarks) and aliases for schema objects such as tables or views (synonyms) are retrieved when assets are added by using this 
@@ -143,4 +143,3 @@ Use one of three ways to gain these permissions:
 {: caption="Predefined roles - Google BigQuery" caption-side="bottom"}
 
 For more information about permissions and roles in Google BigQuery, see [Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
-

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi
@@ -26,7 +26,7 @@ Metrics are  calculations that are used to measure and monitor key areas of a bu
 
 In {{site.data.keyword.wxbia_short}}, metrics are assets that are stored in projects but defined in semantic data models through metric definitions. A metric definition contains measures and related attributes. After you create a metric definition, you must export it from the semantic data model into a project before it can be used in **Conversations**.
 
-### Who can create metrics?
+### Who can create metrics
 {: #metrics_role}
 
 Metrics can be created by both the Analytics consumers and Data analysts. 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-04-23"
+lastupdated: "2026-05-14"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -160,7 +160,7 @@ Configure flat file service to upload files to watsonx BI
 
 :   You can configure flat file service to [upload files](/docs/watsonx-bi?topic=watsonx-bi-upload){: external} and use them as a source of data in **Conversations**. 
 
-:   For more information, see [Configuring flat file service](https://www.ibm.com/docs/en/SSNFH6_5.3.x?topic=setup-configuring-flat-file-service){: external}.
+:   For more information, see [Configuring flat file service](https://www.ibm.com/docs/en/software-hub/5.3.x?topic=administering-configuring-flat-file-service){: external}.
 
 Integrate with IBM watsonx.data™ Premium
 
@@ -201,7 +201,7 @@ Choose the large language model (LLM)
 
 :   - IBM Granite 3-8b-instruct - Recommended for working with simple queries, such as data retrieval and summarization
 
-:   For more information, see [Choosing the large language model (LLM)](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
+:   For more information, see [Understanding the large language model in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 
 ## 27 August 2025
 {: #subcollection-aug2725}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: salesforce api
 
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Salesforce.com connection 
 {: #salesforce_api}
 
-Salesforce.com is a cloud-based software company which provides customer relationship management (CRM). The Salesforce.com connection supports the standard SQL query language to select, insert, update, and delete data from Salesforce.com products and other supported products that use the Salesforce API. {: #shortdesc}
+Salesforce.com is a cloud-based software company, which provides customer relationship management (CRM). The Salesforce.com connection supports the standard SQL query language to select, insert, update, and delete data from Salesforce.com products and other supported products that use the Salesforce API. {: #shortdesc}
 
 ## Supported versions 
 {: #supp_salesforce_api}
@@ -47,9 +47,9 @@ To create the connection, you need these connection details:
 ## Restriction
 {: #restriction_salesforce_api}
 
-You can only use this connection for source data. You cannot write to data or export data with this connection.
+You can use this connection for source data only. You cannot write to data or export data with this connection.
 
-## Known issue
+## Known issues
 {: #knownissue_salesforce_api}
 
 The following objects in the SFORCE schema are not supported: 

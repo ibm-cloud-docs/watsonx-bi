@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-23"
+lastupdated: "2026-05-14"
 
 keywords: multi-fact metrics, multiple tables, calculate after aggregate
 subcollection: watsonx-bi
@@ -16,24 +16,24 @@ subcollection: watsonx-bi
 # Creating calculations for cross-metric queries
 {: #multi_fact_metrics}
 
-You can create calculations that help answer questions spanning multiple metrics. These calculations are based on a multi‑fact metric, which combines measures from different fact tables. Multi‑fact metrics are especially useful when you need to compare or analyze data across fact tables that share common dimensions. {: #shortdesc}
+You can create calculations that help answer questions that span multiple metrics. These calculations are based on a multi‑fact metric, which combines measures from different fact tables. Multi‑fact metrics are especially useful when you need to compare or analyze data across fact tables that share common dimensions. {: #shortdesc}
 
 ## Before you begin
 {: #prereq_multi_fact}
 
-Before you create a multi-fact metric or multi-fact calculation, ensure that:
+Before you create a multi-fact metric or multi-fact calculation, make sure that:
 
 - You have at least two fact tables in your semantic data model
 
 - Measures are already defined in each fact table that you want to use
 
-When you query metrics that come from different facts, watsonx BI does not join them on shared dimensions. You can ask questions on shared dimensions through calculations created for cross-metric queries.
+When you query metrics that come from different facts, watsonx BI does not join them on shared dimensions. You can ask questions on shared dimensions through calculations that are created for cross-metric queries.
 {: note}
 
 ## Step 1: Create a metric definition from multiple fact tables
 {: #create_multi_fact} 
 
-To create a calculation which spans multiple metrics, you must first define a metric which contains measures from the multiple fact tables.
+To create a calculation that spans multiple metrics, you must first define a metric which contains measures from the multiple fact tables.
 
 1. Open the semantic data model that you want to create the metric in from **Data and Metrics**. 
 
@@ -48,9 +48,9 @@ To create a calculation which spans multiple metrics, you must first define a me
 
 ## Step 2: Create a calculation from mult-fact metric definition 
 
-1. Select the metric definition you just created and from the context menu, choose **New > Calculation**.
+1. Select the metric definition that you just created and from the context menu, choose **New > Calculation**.
 
-1. Define your calculation using the measures within the metric definition. For example,
+1. Define your calculation by using the measures within the metric definition. For example,
 `Sales_Target - Sales_Total`.
 
 1. Select **Calculate after aggregation**.
@@ -78,7 +78,7 @@ Consider a scenario where you have:
 
 To create a `Variance from plan` calculation that shows the percentage of actual sales compared to target:
 
-1. Create a metric definition using measures `Sale_Total` and `Sales_Target` measures from the **Sales** and **Sales Target** tables. 
+1. Create a metric definition by using measures `Sale_Total` and `Sales_Target` measures from the **Sales** and **Sales Target** tables. 
 
 1. Select the metric definition in the semantic model and create a calculation named `Variance from plan`. Use the expression:
 
@@ -89,11 +89,11 @@ To create a `Variance from plan` calculation that shows the percentage of actual
 
 1. Select **Calculate after aggregation** and click **OK**.
 
-   This metric will calculate the variance by first aggregating the sales totals and targets separately, then performing the division and multiplication to get the percentage variance.
+   This metric calculates the variance by first aggregating the sales totals and targets separately, then performing the division and multiplication to get the percentage variance.
 
 1. Save the semantic data model and export the metric definition to the project.
 
-When you ask a question in a conversation that uses this metric, {{site.data.keyword.wxbia_short}} uses the calculation you created and aggregates the expression according to the context of your question.
+When you ask a question in a conversation that uses this metric, {{site.data.keyword.wxbia_short}} uses the calculation that you created and aggregates the expression according to the context of your question.
 
 ## Related links
 {: #related_multi_fact}

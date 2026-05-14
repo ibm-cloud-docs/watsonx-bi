@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: snowflake
 subcollection: watsonx-bi
@@ -19,7 +19,7 @@ Snowflake is a cloud-based data storage and analytics service.{: #shortdesc}
 ## Create a connection to Snowflake
 {: #create_snowflake}
 
-You can create a connection to Snowflake using two methods:
+You can create a connection to Snowflake by using two methods:
 
 ### Common connectivity
 {: #connectivity_snowflake}
@@ -30,7 +30,7 @@ To create the connection, you need the following connection details:
 - Database name
 - Role: The default access control role to use in the Snowflake session
 - Warehouse: The virtual warehouse
-- Okta URL endpoint: If your company uses native Okta SSO authentication, enter the Okta URL endpoint for your Okta account. 
+- Okta URL endpoint: If your company uses Okta SSO authentication, enter the Okta URL endpoint for your Okta account. 
 
   Example: https://<okta_account_name>.okta.com
 

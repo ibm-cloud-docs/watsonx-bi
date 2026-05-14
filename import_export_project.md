@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-25"
+lastupdated: "2026-05-14"
 
 keywords: import project,copy project
 subcollection: watsonx-bi
@@ -43,6 +43,7 @@ Other requirements include:
 - The project must contain the minimum viable components
 
 ### Preparing a project for export
+{: #prepare_proj_export}
 
 Before you export a project, verify that your project contains:
 
@@ -108,6 +109,7 @@ Immediately after you import your project:
 4. Confirm that semantic data models are available.
 
 ### Delayed verification
+{: #delay_verification}
 
 Some components might take a few minutes to fully initialize:
 
@@ -116,6 +118,7 @@ Some components might take a few minutes to fully initialize:
 - Enrichment data
 
 ### Relationship verification
+{: #relationship_verification}
 
 The import process automatically reconstructs all relationships between assets:
 
@@ -148,6 +151,7 @@ To enter credentials for a personal connection:
 Your credentials are stored securely and associated with your user account only.
 
 ### Updating connection credentials
+{: #update_credentials}
 
 If you need to update credentials for any connection after import:
 

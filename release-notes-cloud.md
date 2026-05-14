@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-29"
+lastupdated: "2026-05-14"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -24,13 +24,24 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+## 14 May 2026
+{: #subcollection-may1426}
+{: release-note}
+
+Update to supported large language models in watsonx BI
+
+:   IBM is updating the supported large language model (LLM) options used for natural language conversations and analytics in watsonx BI. OpenAI gpt-oss-120b with chain of thought (CoT) reasoning is now the only supported model. All other LLM options are deprecated. 
+
+:   No action is required from users using watsonx BI as a Service. Your watsonx BI instance continues to work as expected using the supported model.
+
+
 ## 29 April 2026
 {: #subcollection-apr2926}
 {: release-note}
 
-Improvements to the AI steps panel (Chain of Thought only)
+Improvements to the AI steps panel (chain of thought only)
 
-:   The [AI steps](/docs/watsonx-bi?topic=watsonx-bi-steps_ai){: external} panel now offers improved usability and clarity when you use the Chain of Thought reasoning option.
+:   The [AI steps](/docs/watsonx-bi?topic=watsonx-bi-steps_ai){: external} panel now offers improved usability and clarity when you use the chain of thought (CoT) reasoning option.
 
 :   The panel now displays a rephrased version of your question at the top of the screen. This update helps clarify how the AI interpreted the query.
 
@@ -123,7 +134,7 @@ Multi‑asset queries now supported
 
 :   Watsonx BI automatically determines which assets are required, issues independent queries, and generates a combined answer.
 
-:   The multi-asset query capability works when Chain of Thought is enabled in watsonx BI and all referenced assets are stored in the same container, such as a project or catalog.
+:   The multi-asset query capability works when chain of thought (CoT) is enabled in watsonx BI and all referenced assets are stored in the same container, such as a project or catalog.
 
 :   For more information, see [Asking questions across multiple data assets](/docs/watsonx-bi?topic=watsonx-bi-multiasset_queries).
 
@@ -138,7 +149,7 @@ IBM Granite 4 model now available in watsonx BI as a Service
 
 :   You do not need to take any action. This upgrade is seamless and does not affect your watsonx BI experience. 
 
-:   For more information, see [Selecting the large language model for your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}. 
+:   For more information, see [Understanding the large language model in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}. 
 
 ## 26 February 2026
 {: #subcollection-feb2626}
@@ -188,19 +199,19 @@ Improvements to Conversation history
 {: release-note}
 
 
-Model update for Chain of Thought reasoning
+Model update for chain of thought (CoT) reasoning
 
-:   Chain of Thought reasoning will now use **OpenAI gpt‑oss‑120b** instead of **Meta Llama 4** large language model (LLM). This update ensures improved quality and consistency in Chain of Thought reasoning.
+:   Chain of thought (CoT) reasoning will now use **OpenAI gpt‑oss‑120b** instead of **Meta Llama 4** large language model (LLM). This update ensures improved quality and consistency in CoT reasoning.
 
-:   Administrators must reselect Chain of Thought with the new gpt‑oss‑120b model in **Configuration and settings > Model settings** to continue receiving accurate and supported responses.
+:   Administrators must reselect CoT with the new gpt‑oss‑120b model in **Configuration and settings > Model settings** to continue receiving accurate and supported responses.
 
-:   Users who previously enabled Chain of Thought with the Llama model continue to receive responses for now. However, after Llama is fully discontinued, answer accuracy might be impacted until the model selection is updated.
+:   Users who previously enabled CoT with the Llama model continue to receive responses for now. However, after Llama is fully discontinued, answer accuracy might be impacted until the model selection is updated.
 
-:   If Administrators do not switch to Chain of Thought with GPT, users will automatically be moved to an LLM that does not support Chain of Thought when the current model is discontinued.
+:   If Administrators do not switch to CoT with GPT, users will automatically be moved to an LLM that does not support CoT when the current model is discontinued.
 
 Provide custom instructions and context to guide AI behavior
 
-:   A new **AI instructions and context** field is available in the modelling experience, which allows you to add business logic and rules that the large language model (LLM) follows when interpreting and generating responses that are related to a metric. 
+:   A new **AI instructions and context** field is available in the modeling experience, which allows you to add business logic and rules that the large language model (LLM) follows when interpreting and generating responses that are related to a metric. 
 
 :   Use AI instructions in scenarios where consistent interpretation depends on rules, such as when:
 
@@ -291,18 +302,18 @@ IBM watsonx.data intelligence is required for watsonx BI as a Service
 {: #subcollection-dec325}
 {: release-note}
 
-Chain of Thought reasoning
+Chain of thought reasoning
 
-:   Chain of Thought reasoning is now available with Meta Llama 4 and IBM Granite-3-8b-instruct. Available as a Technology Preview feature in watsonx BI as a Service, it delivers step-by-step reasoning for complex or multi-part questions, providing structured answers and visibility into how queries are built.
+:   Chain of thought (CoT) reasoning is now available with Meta Llama 4 and IBM Granite-3-8b-instruct. Available as a Technology Preview feature in watsonx BI as a Service, it delivers step-by-step reasoning for complex or multi-part questions, providing structured answers and visibility into how queries are built.
 
 :   Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
 {: important} 
 
 :   You can view reasoning steps, chosen data sources, intermediate calculations, and generated SQL, helping you understand the AI’s decision-making process.
 
-:   Administrators can choose Meta Llama 4 and IBM Granite-3-8b-instruct with Chain of Thought from **Configuration and settings > Model settings** page.
+:   Administrators can choose Meta Llama 4 and IBM Granite-3-8b-instruct with chain of thought from **Configuration and settings > Model settings** page.
 
-:   For more information, see [Chain of Thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}. 
+:   For more information, see [Chain of thought reasoning](/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}. 
 
 IBM watsonx BI remote Model Context Protocol (MCP) server now available for queries
 

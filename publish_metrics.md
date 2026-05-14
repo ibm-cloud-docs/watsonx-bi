@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: publish metrics
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Publish metrics and visualizations (Data analysts only)
 {: #publish_metrics}
 
-As a Data analyst, you can publish metrics to the **Metrics catalog** and specify access permissions. Analytics consumers  can access metrics, which they have permissions to view without having to access the full project. {: #shortdesc}
+As a Data analyst, you can publish metrics to the **Metrics catalog** and specify access permissions. Analytics consumers can access metrics, which they have permissions to view without having to access the full project. {: #shortdesc}
 
 1. From the **Data and Metrics** tab, open the semantic model with the metrics that you want to publish.
 

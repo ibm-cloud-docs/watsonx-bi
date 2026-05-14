@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-05-14"
 
 keywords: hiding objects, modeling
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Hiding items
 {: #model_hiding_items}
 
-You can hide items in the semantic data model panel  to provide an uncluttered view of metadata. {: #shortdesc}
+You can hide items in the semantic data model panel to provide an uncluttered view of metadata. {: #shortdesc}
 
 When you hide columns that are referenced in a calculation, the data tree shows only the calculation column, but not the referenced columns. 
 
@@ -26,7 +26,7 @@ The following read-only items can't be hidden by default:
 
 * Packages 
 
-  To work around this issue, create a folder in the semantic data model panel, and move your package with all its content into that folder. Then, hide the folder.
+  To work around this issue, create a folder in the semantic data model panel, and move your package with all its content into that folder. Then hide the folder.
 
 * Tables that are linked to the source semantic data model
   

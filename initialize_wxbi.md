@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-19"
+lastupdated: "2026-05-14"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -31,7 +31,7 @@ IBM Cloud account owners and account Administrators can invite users to join the
 
 1. Click **Join now** in the invite. 
 
-2. You are asked to log in with your IBMid. IBMids are assigned to IBM Cloud account members. If you do not have an IBM Cloud account, you are asked to register an account. This is a one-time registration, after which you can be invited to any IBM Cloud account. 
+2. You are asked to log in with your IBMid. IBMids are assigned to IBM Cloud account members. If you do not have an IBM Cloud account, you are asked to register an account. This is a one-time registration after which you can be invited to any IBM Cloud account. 
 
 3. Confirm that your information is correct and click **Join account**. 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: governance, business terms
 subcollection: watsonx-bi
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.wxbia_full_notm}} comes with a predefined governance framework that helps apply business meaning to your data through governance artifacts. This framework along with the metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the **semantic layer** that helps activate information for AI. {: #shortdesc}
 
-[Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich) takes place when you upload files or create metrics in a project. During metadata enrichment, {{site.data.keyword.wxbia_short}} uses IBM watsonx.data intelligence's capability to match technical metadata with predefined business concepts. Technical metadata is augmented with more descriptive and meaningful names, drawing from the predefined and your domain-specific business concepts.
+[Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} takes place when you upload files or create metrics in a project. During metadata enrichment, {{site.data.keyword.wxbia_short}} uses IBM watsonx.data intelligence's capability to match technical metadata with predefined business concepts. Technical metadata is augmented with more descriptive and meaningful names, drawing from the predefined and your domain-specific business concepts.
 {: note}
 
 {{site.data.keyword.wxbia_short_cap}} includes:
@@ -44,5 +44,3 @@ Administrators can add the following governance artifacts in {{site.data.keyword
 - [Reference data](/docs/watsonx-bi?topic=watsonx-bi-reference_data)
 
   Reference data sets define standard values for specific types of data to classify data and measure consistency.
-
-

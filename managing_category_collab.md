@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-24"
+lastupdated: "2026-05-14"
 
 keywords: categories, category permissions
 subcollection: watsonx-bi
@@ -64,7 +64,7 @@ You can't modify or delete predefined category roles.
 
 You can assign one role or multiple roles to a collaborator. For example, if you want one person to both create artifacts and review them, you must assign that collaborator the roles of **Editor** and **Reviewer**.
 
-The more roles that you assign to each collaborator, the longer categories take to load. For best results, assign each collaborator the role with the most permissions that they need in the highest level category that they belong to.
+The more roles that you assign to each collaborator, the longer the categories take to load. For best results, assign each collaborator the role with the most permissions that they need in the highest level category that they belong to.
 
 To add collaborators to a category:
 
@@ -97,8 +97,3 @@ You can remove collaborators from the category where they were added. You can’
 To remove a collaborator from a category, click the trash icon next to the collaborator name. The collaborator is removed from the category and all its subcategories where they have the same role. The collaborator is not removed from any subcategories where the collaborator is assigned a different role.
 
 For example, you might have one collaborator who is a **Viewer** in a category and one of its subcategories, but an **Editor** in a second subcategory. If you delete the collaborator from the category, the collaborator is deleted from the category and subcategory where they are a **Viewer**. However, the collaborator remains in the subcategory where they are an **Editor**.
-
-
-
-
-

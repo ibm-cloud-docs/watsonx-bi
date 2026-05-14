@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-04-20"
+lastupdated: "2026-05-14"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -96,7 +96,7 @@ To avoid ambiguity and confusion, use unique and descriptive names for data asse
 ## Each asset and column needs a display name and description
 {: #tip_display_name}
 
-Review the metadata enrichment results in the metric creation process to ensure that each Asset and Column has a meaningful and accurate AI-generated Display name and Description.
+Review the metadata enrichment results in the metric creation process to help ensure that each Asset and Column has a meaningful and accurate AI-generated Display name and Description.
 
 You can also access the metadata enrichment from the Project asset tab by selecting the relevant metadata enrichment asset.
 
@@ -104,7 +104,7 @@ You can accept the AI-suggested name and description or click **Edit** to add yo
 
 ![Metadata enrichment review page](images/mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
 
-When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is re-run or if a metric definition is deleted or edited. To avoid this, [make your changes in the semantic data model](/docs/watsonx-bi?topic=watsonx-bi-best_practices#tip_desc) instead.
+When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is rerun or if a metric definition is deleted or edited. To avoid this issue, [make your changes in the semantic data model](/docs/watsonx-bi?topic=watsonx-bi-best_practices#tip_desc) instead.
 {: important}
 
 When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the pencil icon next to the suggestion and provide a meaningful name or description for that asset or column.
@@ -139,14 +139,14 @@ To change the column identifier in a metric definition:
 
 3. Under the metric definition, select the column that you want to add the identifier to.
 
-4. Open its **Properties** tab, scroll to the **Identifier** field and enter the value. 
+4. Open its **Properties** tab, scroll to the **Identifier** field, and enter the value. 
 
    An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, numbers, or underscores, without spaces.
    {: tip}
 
 6. Under **Actions**, click **Save** to save the semantic data model.
 
-7. Select the metric definition that you just changed and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
+7. Select the metric definition that you changed and click **Export metric definition**. Exporting the metric definition runs metadata enrichment again and updates the existing metric, making it available for use in conversations.
 
 
 ### Add column labels and descriptions
@@ -160,7 +160,7 @@ Make sure that you add a label and description for metric columns in the semanti
 
 3. AI-suggested or generated in the metadata enrichment asset
 
-Write the label and description using your business context and the language your users use when they ask questions.
+Write the label and description that uses your business context and the language that your users use when they ask questions.
 
 Descriptions need to be 512 characters or less to help ensure a balance between accuracy and effectiveness.
 {: important}
@@ -185,7 +185,7 @@ To add column labels and descriptions in the semantic data model, follow these s
 
 3. Under the metric definition, select the column.
 
-4. On the **Properties** tab enter the label and description.
+4. On the **Properties** tab, enter the label and description.
 
 5. Under **Actions**, click **Save** to save the semantic data model.
 

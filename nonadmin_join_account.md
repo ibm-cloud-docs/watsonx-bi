@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-19"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -21,7 +21,7 @@ As an Administrator, Data analyst, or an Analytics consumer, you must be a membe
 
 IBM Cloud account owners and account Administrators can invite Analytics consumers to join their organization's IBM Cloud account.{: #shortdesc}
 
-If you have never created an IBM Cloud account, you will be asked to register an account when you first join your organization's IBM Cloud account. This is a one-time registration, after which you can be invited to any IBM Cloud account. You can also create an IBM Cloud account here: [http://cloud.ibm.com/](http://cloud.ibm.com/){: external} 
+If you have never created an IBM Cloud account, you are asked to register an account when you first join your organization's IBM Cloud account. This is a one-time registration after which you can be invited to any IBM Cloud account. You can also create an IBM Cloud account here: [http://cloud.ibm.com/](http://cloud.ibm.com/){: external} 
 
 1. Click the **Join now** link in the email invite to join your organization's IBM Cloud account.
 
@@ -33,7 +33,7 @@ If you have never created an IBM Cloud account, you will be asked to register an
 
   ![Join IBM Cloud screen](images/join_ibm_cloud.png)
 
-4. You are redirected to the home page of the IBM Cloud account that you were invited to. The Cloud account name displays in the header.
+4. You are redirected to the home page of the IBM Cloud account that you were invited to. The Cloud account name is displayed in the header.
 
   ![IBM Cloud account home page](images/user_cloud_account.png)
 
@@ -44,12 +44,9 @@ If you have never created an IBM Cloud account, you will be asked to register an
 
 6. Initialize setup of watsonx BI.
 
-![watsonx BI initialize setup](images/user_initialize_wxBI_setup.png)
+![watsonx BI initializes setup](images/user_initialize_wxBI_setup.png)
 
 7. (Optional) Select a prebuilt sample that you want to install. A project for the selected sample is created during installation.
-
-  Data analysts and Analytics consumers - Samples are a great resource to explore prebuilt metrics and semantic data models. If you choose to skip installing samples, you won't be able to access them later. 
-  {: important}
 
   ![Users get an option to install sample data](images/user_setup_sample.png)
 
@@ -57,10 +54,10 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
 
 ![Conversations page in watsonx BI](images/user_conversation.png)
 
-## Troubleshooting 
+## Troubleshooting setup
 {: #troubleshooting_setup}
 
- Here's a look at how to troubleshoot errors that you might encounter as you set up {{site.data.keyword.wxbia_short}}:
+ Here is a look at how to troubleshoot errors that you might encounter as you set up {{site.data.keyword.wxbia_short}}:
 
 - **Error: You don't have access to {{site.data.keyword.wxbia_short}}. Contact your administrator to request access.**
 
@@ -74,7 +71,7 @@ After watsonx BI's setup is complete, you are redirected to watsonx BI's **Conve
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 
-- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise select the right one from the account list in the header.**
+- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise, select the right one from the account list in the header.**
 
   You might see this error if: 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-10"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: review mde, review metadata enrichment, review enrichment
 subcollection: watsonx-bi
@@ -14,7 +14,7 @@ subcollection: watsonx-bi
 # Reviewing metadata enrichment for watsonx BI
 {: #review}
 
-After metadata enrichment completes, you can review the enrichment results to make sure the metadata applied is meaningful and accurate. {: #shortdesc}
+After metadata enrichment completes, you can review the enrichment results to make sure the metadata that is applied is meaningful and accurate. {: #shortdesc}
 
 When you open the enrichment results, you can view the enriched data at both the asset level and column level. A side panel also provides a summary of relevant information about the metadata enrichment.
 

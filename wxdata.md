@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-03-25"
+lastupdated: "2026-05-08"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -61,7 +61,7 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
     | Instance name | Enter the {{site.data.keyword.lakehouse_short}} instance name. |
     | CRN | Enter the Cloud Resource Name. You can get the CRN from the {{site.data.keyword.lakehouse_short}} instance home page (information icon). |
     | Username | Enter your username (`ibmlhapikey_<EMAIL_ID>`). |
-    | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key){: external}. |
+    | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key){: external}. |
     | SSL is enabled | Select the checkbox. |
     | SSL Certificate | Download the certificate from the watsonx.data console by using a web browser and paste in this field. |
     | Engine's hostname or IP address | Enter the engine hostname available in the {{site.data.keyword.lakehouse_short}} console without port number and `:`. |
@@ -82,7 +82,7 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
     | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
     | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
     | Username | Enter your username (`ibmlhapikey_<EMAIL_ID>`). |
-    | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key){: external}. |
+    | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key){: external}. |
     | SSL is enabled | Select the checkbox. |
     | SSL Certificate | Download the certificate from the watsonx.data console by using a web browser and paste in this field. |
     {: caption="New connection with Presto" caption-side="bottom"}

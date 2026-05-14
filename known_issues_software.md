@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-27"
+lastupdated: "2026-05-14"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -56,7 +56,7 @@ Metadata enrichment failure during metric generation for export.
 
 :   When you open a semantic model that was created during a previous metadata import step and try to export a metric definition from this model, the metadata enrichment job fails during the profiling step.
 
-Connections created outside of the Business Intelligence experience are unusable in metric generation
+Connections that are created outside of the Business Intelligence experience are unusable in metric generation
   
 :   Applies to: 5.3.0
 
@@ -77,13 +77,13 @@ Technical issue when asking questions against visualization in Key metrics
 
 :   After you pin a visualization to **Key metrics**, if you try to ask a question against the visualization, you might get the following response due to a technical issue: *Sorry, I encountered a technical issue on our end and can't answer your question. Try rephrasing your question or ask a different question.*
 
-Intermittent datasource loading issue on visualization tiles
+Intermittent data source loading issue on visualization tiles
   
 :   Applies to: 5.3.0
 
 :   Fixed in: 5.3.1
 
-:   After you build and publish a custom visualization, a *Failed to load datasource* error message might display in the **Metrics catalog**.
+:   After you build and publish a custom visualization, a *Failed to load data source* error message might display in the **Metrics catalog**.
 
 :   Workaround:
 
@@ -128,7 +128,7 @@ View all catalogs option is missing from the Navigation Menu
 ## Experience issues
 {: #ki_experience}
 
-Experience is not perserved during certain navigation
+Experience is not preserved during certain navigation
  
 :   Applies to: 5.3.0 and later
 
@@ -152,7 +152,7 @@ Some tasks fail in projects that are created outside of the Business Intelligenc
  
 :   Applies to: 5.3.0
 
-:   If you try complete certain tasks for projects created outside of the Business Intelligence experience, these tasks fail. These tasks include:
+:   If you try to complete certain tasks for projects that are created outside of the Business Intelligence experience, these tasks fail. These tasks include:
  
 :   - Metadata enrichment
 
@@ -207,7 +207,7 @@ False error message during batch file upload
  
 :   Applies to: 5.3.0 and later
 
-:   When you upload 10 files at one time, the displayed status shows that the upload job failed, even if it the job actually succeeded.
+:   When you upload 10 files at one time, the displayed status shows that the upload job failed, even if the job succeeded.
 
 :   Workaround:
 
@@ -264,7 +264,7 @@ User permission level misalignment
 
 :   Applies to: 5.2.0 and later
 
-:   Users may have editor-level permissions at the Platform level but only read-only access in Projects. This misalignment allows users with Viewer role to modify project assets via the Platform user interface.
+:   Users might have editor-level permissions at the Platform level but only read-only access in Projects. This misalignment allows users with Viewer role to modify project assets via the Platform user interface.
 
 ## Links to documentation
 {: #ki_docs}

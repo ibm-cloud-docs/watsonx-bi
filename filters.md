@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-05-14"
 
 keywords: filters, filtering, modelling
 subcollection: watsonx-bi
@@ -36,7 +36,7 @@ There are two types of filters in semantic data models:
 ## Embedded filters
 {: #embedded}
 
-You can create embedded filters to customize the data that is used in a metric definition. For example, you can filter out data that is irrelevant for certain geographies, time periods, product lines, and more.
+You can create embedded filters to customize the data that is used in a metric definition. For example, you can filter out data that is irrelevant for certain locations, time periods, product lines, and more.
 
 Embedded filters can be created for a single column, or for multiple columns in a table. They are defined in a query subject and always apply to the query subject.
 
@@ -76,11 +76,11 @@ The filter icon on a table indicates that the table contains at least one embedd
 ### Embedded filters in a complex query
 {: #complex_query}
 
-Semantic data models include a **Design mode** setting, which you can access in the **Properties** tab. **Design mode** controls which filters the system applies during queries. This setting is enabled by default.
+Semantic data models include a **Design mode** setting, which you can access in the **Properties** tab. **Design mode** controls, which filters the system applies during queries. This setting is enabled by default.
 
-You can add an embedded filter to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. For example, you can exclude data that is irrelevant for specific geographies, time periods, product lines, and other dimensions. This approach is especially useful when working with highly complex data packages.
+You can add an embedded filter to a metric definition and set it to **Design mode** to reduce sampling during the definition enrichment. For example, you can exclude data that is irrelevant for specific locations, time periods, product lines, and other dimensions. This approach is especially useful when working with highly complex data packages.
 
-During the export of metric definitions, watsonx BI profiles your data to build enriched metrics. Profiling can fail when the sampling set includes a high volume of data. To reduce the risk of failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps ensure that enrichment completes successfully and quickly.
+During the export of metric definitions, watsonx BI profiles your data to build enriched metrics. Profiling can fail when the sampling set includes a high volume of data. To reduce the risk of failures, use a **Design mode** filter to limit the data. For example, you can apply a **Design mode** filter to limit the data to a single year or a specific country. Using this filter helps can ensure that enrichment completes successfully and quickly.
 
 When you add an embedded filter to a metric definition, choose one of the following **Usage** values to control when the filter is applied:
 
@@ -95,7 +95,7 @@ When you add an embedded filter to a metric definition, choose one of the follow
 Filters that use **Design mode** always run during metadata enrichment and during suggested question generation. These filters are not used in conversations.
 {: note}
 
-Semantic data models also include a **Design mode** setting in the **Properties** tab. This setting controls which filters the system applies during modeling queries and is enabled by default. When Design mode is on, filters with a Usage of Design mode run during modeling.
+Semantic data models also include a **Design mode** setting in the **Properties** tab. This setting controls, which filters the system applies during modeling queries and is enabled by default. When Design mode is on, filters with a Usage of Design mode run during modeling.
 
 
 

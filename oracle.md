@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
-keywords:
+keywords: oracle
 
 subcollection: watsonx-bi
 
@@ -42,7 +42,8 @@ To create the connection, you need these connection details:
 
 - Metadata discovery: The setting determines whether comments on columns (remarks) and aliases for schema objects such as tables or views (synonyms) are retrieved when assets are added by using this connection.
 
-- Select **Use proxy server** to access the Oracle data source through a server proxy. Depending on its setup, a server proxy can provide load balancing, increased security, and privacy. The server proxy settings are independent of the authentication credentials and the personal or shared credentials selection. The server proxy settings cannot be stored in a vault. You will need:
+- Select **Use proxy server** to access the Oracle data source through a server proxy. Depending on its setup, a server proxy can provide load balancing, increased security, and privacy. The server proxy settings are independent of the authentication credentials and the personal or shared credentials selection. The server proxy settings cannot be stored in a vault. You need:
+
   -  Proxy hostname or IP address: The proxy URL. For example, https://proxy.example.com.
   -  Server proxy port: The port number to connect to the proxy server. For example, 8080 or 8443.
   -  The Proxy username and Proxy password fields are optional.

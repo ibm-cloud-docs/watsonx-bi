@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-04-21"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: choose llm, large language model
 subcollection: watsonx-bi
@@ -13,19 +13,20 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Chain of Thought reasoning
+# Chain of thought reasoning
 {: #choose_llm}
- 
-Chain of Thought reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b option. With Chain of Thought reasoning, {{site.data.keyword.wxbia_short}} generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
 
-## Why use Chain of Thought
+ 
+Chain of thought (CoT) reasoning is a different approach to generating answers that is available with the OpenAI gpt‑oss‑120b option. With CoT, {{site.data.keyword.wxbia_short}} generates more thoughtful responses with step-by-step reasoning, which allows it to handle complex and more nuanced questions that are beyond simple queries. {: #shortdesc} 
+
+## Why use CoT
 {: #why_cot}
 
  
 
-Chain of Thought's structured answers, which reflect the AI’s reasoning path, are helpful when you want to see how watsonx BI built the query or queries that were necessary to answer your question. 
+CoT's structured answers, which reflect the AI’s reasoning path, are helpful when you want to see how watsonx BI built the query or queries that were necessary to answer your question. 
 
-Another advantage of using Chain of Thought is that it can answer complex or multi-part questions that might require multiple queries or visualizations. An example of a multi-part query that benefits from Chain of Thought reasoning is *Show me how many units of the Extreme brand were sold in Canada by product, and identify which countries sold more units*.
+Another advantage of using CoT is that it can answer complex or multi-part questions that might require multiple queries or visualizations. An example of a multi-part query that benefits from CoT reasoning is *Show me how many units of the Extreme brand were sold in Canada by product, and identify which countries sold more units*.
 
 This question spans multiple dimensions and regions and cannot be answered in a single chart. Instead, it requires two distinct visualizations: 
 
@@ -33,12 +34,12 @@ This question spans multiple dimensions and regions and cannot be answered in a 
 
 - A comparison of units sold by country
 
-Chain of Thought reasoning ensures that the LLM interprets the relationships, organizes the data accurately, and presents the results in a coherent, structured way.
+CoT reasoning ensures that the LLM interprets the relationships, organizes the data accurately, and presents the results in a coherent, structured way.
 
-## How Chain of Thought works
+## How CoT works
 {: #reasoning}
 
-When a response is generating in {{site.data.keyword.wxbia_short}}, you can view the reasoning steps that are in progress. You can also click **Reasoning...** to view more details about how Chain of Thought is deriving the answer. 
+When a response is generating in {{site.data.keyword.wxbia_short}}, you can view the reasoning steps that are in progress. You can also click **Reasoning...** to view more details about how chain of thought is deriving the answer. 
 
 After the response is generated, you can view the reasoning steps and explanation by clicking **Show AI steps**. 
 
@@ -58,11 +59,11 @@ Reasoning steps and explanation can include:
 
 - Live data for the query, which allows you to see the same logic replayed on the current data state. This means that the live data might differ from the original data used if the underlying data has changed.
 
-A key differentiator with Chain of Thought is that the steps needed to answer a question might vary. You will see only those steps that were required to answer the question and you might see the same step more than once if {{site.data.keyword.wxbia_short}} determines that it needs to re-evaluate a previous choice. 
+A key differentiator with CoT is that the steps needed to answer a question might vary. You see only those steps that were required to answer the question and you might see the same step more than once if {{site.data.keyword.wxbia_short}} determines that it needs to re-evaluate a previous choice. 
 
-Additionally, Chain of Thought can also reuse information from a previous question.
+Additionally, CoT can also reuse information from a previous question.
 
-With Chain of Thought, {{site.data.keyword.wxbia_short}} also determines the best way to present the results as a visualization, a text response, or both.
+With CoT, {{site.data.keyword.wxbia_short}} also determines the best way to present the results as a visualization, a text response, or both.
 
 ### Disambiguating filter names and values
 {: #disambiguating_cot}
@@ -84,9 +85,9 @@ You can also include more context in your original question:
 ### Current response behaviour
 {: #limitations_cot}
 
-Chain of Thought introduces advanced reasoning capabilities, and its responses might differ from those of other LLMs in the following ways:
+CoT introduces advanced reasoning capabilities, and its responses might differ from those of other LLMs in the following ways:
 
-- Insights with visualizations - Chain of Thought does not generate insights alongside charts.
+- Insights with visualizations - CoT does not generate insights alongside charts.
 
 - Chart customization - You cannot customize chart attributes through conversation but you can ask for a chart type. For example, you can ask watsonx BI to *Create a bar chart with the sales trend for this year*.
 
@@ -94,4 +95,4 @@ Chain of Thought introduces advanced reasoning capabilities, and its responses m
 
 - Visualization titles -  Titles are generated automatically as part of AI reasoning. 
 
-- Data availability question - When you ask *What data do I have available to me?*, Chain of Thought provides a more detailed response. It provides a list of metrics and tables in the project, along with descriptions for each to help you understand your data context.
+- Data availability question - When you ask *What data do I have available to me?*, CoT provides a more detailed response. It provides a list of metrics and tables in the project, along with descriptions for each to help you understand your data context.

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-04-13"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: monitor enrichment, enrichment error, enrichment warnings
 subcollection: watsonx-bi
@@ -17,9 +17,9 @@ subcollection: watsonx-bi
 
 
 
-When creating metrics, you might encounter metadata enrichment (MDE) errors or warnings. These indicate that the enrichment process was incomplete or encountered issues. {: #shortdesc}
+When you create metrics, you might encounter metadata enrichment errors or warnings. These indicate that the enrichment process was incomplete or encountered issues. {: #shortdesc}
 
-- Errors must be resolved by re-running enrichment
+- Errors must be resolved by rerunning enrichment
 
 - Warnings can be ignored but doing so might reduce query accuracy
 
@@ -34,19 +34,20 @@ Ignoring enrichment warnings can lead to:
 
   For example, asking for “americas” when the column contains “North America” and “South America” might return no results unless vectors suggest the correct values.
 
-- Case and format mismatches - If your data uses specific formats, queries using other variations might fail.
+- Case and format mismatches - If your data uses specific formats, queries that use other variations might fail.
 
   For example, asking for "surgeries" when the data contains the term "SURGERY" might not return any results. 
 
-If you are unable to resolve warnings and need to proceed with creating metrics or asking questions about your data, you can improve accuracy by adding descriptive column metadata with example values or format details in the semantic data model. The LLM uses this as context when generating queries.
+To improve query accuracy when warnings remain unresolved, add descriptive column metadata to the semantic data model. Include example values or format details. The LLM uses this metadata as context when it generates queries.
+
 
 ## Common metadata enrichment errors and warnings
 {: #common_mde_messages}
 
 | **Message** | **Impact** | **Action** |
 |-------------|-----------|--------------------------|
-| Unable to retrieve data values to process enriched metadata. | Metadata enrichment could not be completed because data values were not retrieved. | You need to resolve this error before proceeding. Click **Try again** to re-run enrichment. |
-| Unable to retrieve data values to compute and write vectors to Cloud Object Storage. | Enrichment completed with a warning that data values could not be retrieved to compute and write vectors to Cloud Object Storage. This issue will impact accuracy for filter search.| Click **More details** and re-run enrichment.|
-| Unable to compute and write vectors to Cloud Object Storage. | Enrichment completed with a warning that vectors could not be computed and stored to Cloud Object Storage.  This issue will impact accuracy for filter search. |Click **More details** and re-run enrichment. |
-| Unable to write vectors to Cloud Object Storage. | Enrichment completed with a warning that Vectors were computed but not saved. This issue will impact accuracy for filter search. | Click **More details** and re-run enrichment. |
-| Unable to compute and write some vectors to Cloud Object Storage. | Enrichment completed with a warning that only some vectors were computed and written to Cloud Object Storage. This issue might impact acccuracy for filter search. | Click **More details** and re-run the step. |
+| Unable to retrieve data values to process enriched metadata. | Metadata enrichment could not be completed because data values were not retrieved. | You need to resolve this error before proceeding. Click **Try again** to rerun enrichment. |
+| Unable to retrieve data values to compute and write vectors to Cloud Object Storage. | Enrichment completed with a warning that data values could not be retrieved to compute and write vectors to Cloud Object Storage. This issue impacts accuracy for filter search.| Click **More details** and rerun enrichment.|
+| Unable to compute and write vectors to Cloud Object Storage. | Enrichment completed with a warning that vectors could not be computed and stored to Cloud Object Storage.  This issue impacts accuracy for filter search. |Click **More details** and rerun enrichment. |
+| Unable to write vectors to Cloud Object Storage. | Enrichment completed with a warning that Vectors were computed but not saved. This issue impacts accuracy for filter search. | Click **More details** and rerun enrichment. |
+| Unable to compute and write some vectors to Cloud Object Storage. | Enrichment completed with a warning that only some vectors were computed and written to Cloud Object Storage. This issue might impact accuracy for filter search. | Click **More details** and rerun the step. |

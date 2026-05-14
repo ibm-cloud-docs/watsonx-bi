@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-04-13"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords:
 subcollection: watsonx-bi
@@ -28,7 +28,7 @@ You can view and modify the following properties on the **General** tab of the *
 
 - **Label**: Specifies the item's name that is displayed in the user interface. This property applies to all items. You can't change the label for members. To change the label for a semantic data model, use the **Save as** option. 
 
-Ensure each asset and column has a unique label or a name. Labels are one of the factors that are used by the AI to understand questions and the context of your data when generating query statements. 
+Ensure that each asset and column has a unique label or a name. Labels are one of the factors that are used by the AI to understand questions and the context of your data when it generates query statements. 
 {: tip}
 
 - **Hide from users**: Use this property to hide items, such as tables, columns, packages, or folders, in a semantic data model. The hidden items are grayed out in the modeling interface. 
@@ -43,7 +43,7 @@ Ensure each asset and column has a unique label or a name. Labels are one of the
 
   The following Usage types are supported:
 
-    - **Identifier**: Represents a column that is used to group or summarize data in a Measure column with which it has a relationship. It can also represent an an index, date, or time column type. For example, Invoice number, or Invoice date.
+    - **Identifier**: Represents a column that is used to group or summarize data in a Measure column with which it has a relationship. It can also represent an index, date, or time column type. For example, Invoice number, or Invoice date.
 
     - **Measure**: Represents a column that contains numeric data that can be grouped or summarized, such as Product Cost.
 
@@ -87,9 +87,9 @@ Ensure each asset and column has a unique label or a name. Labels are one of the
 
 - **Members display limit** - This semantic data model property is used to specify the maximum number of members to load in the data tree nodes for each fetch request.
 
-- **Description** - Use this property to specify information about the semantic data model, table, column, or folder. The description is used by AI to retrieve data when answering questions in **Conversations**. 
+- **Description** - Use this property to specify information about the semantic data model, table, column, or folder. The description is used by AI to retrieve data when it answers questions in **Conversations**. 
 
-- **Comments**: Use this property to specify optional information about the semantic data model, table, column, or folder. Applies to all items in the semantic data model. The comment is available only within the semantic data model environment.
+- **Comments**: Use this property to specify optional information about the semantic data model, table, column, or folder. The comments apply to all items in the semantic data model. The comment is available only within the semantic data model environment.
 
 - **Screen tip**: Use this property to specify an optional short description of the table or column. Applies to all items in the semantic data model. The screen tip appears when you pause your pointer over the table or column name in the modeling environment.
 
@@ -98,9 +98,9 @@ Ensure each asset and column has a unique label or a name. Labels are one of the
 
 The following properties are specified in the **Advanced** section on the **Properties > General** tab:
 
-- **Identifier**: This property uniquely identifies objects. It is used, either by itself or in conjunction with parent object identifiers, to generate SQL queries in expressions. The property is created automatically for a semantic data model and all its objects. For tables and columns, the property value is inherited from the data source. The property can be modified for all objects except for folders and the semantic data model itself. To change the semantic data model identifier, save it under a different name.   
+- **Identifier**: This property uniquely identifies objects. It is used, either by itself or with parent object identifiers, to generate SQL queries in expressions. The property is created automatically for a semantic data model and all its objects. For tables and columns, the property value is inherited from the data source. The property can be modified for all objects except for folders and the semantic data model itself. To change the semantic data model identifier, save it under a different name.   
 
-Ensure each column has an identifier. Identifiers are one of the factors that are used by the AI to understand questions and the context of your data when generating query statements. 
+Ensure that each column has an identifier. Identifiers are one of the factors that are used by the AI to understand questions and the context of your data when it generates query statements. 
 {: tip}
 
 When changing this property, ensure that:
@@ -113,15 +113,15 @@ On the source tables, you cannot change the column identifier because at least o
 
 - **Technical data type**: This property reflects how the column is defined in the database. For example, for a column with the **Data type** of Text, the **Technical data type** might be char(5), nvarchar(200), or varchar(10).
 
-- **Usage**: This property applies to tables. It controls how the query engine should understand and process the table, and its child objects, in a query. The **Usage** property has the following settings:
+- **Usage**: This property applies to tables. It controls how the query engine understands and processes the table, and its child objects, in a query. The **Usage** property has the following settings:
 
     - **Automatic**: This setting informs the query engine that the table is an ordinary table, and requires no special processing. This is the default setting.
 
-    - **Bridge**: The bridge table is used to remove the many-to-many relationships between tables by setting the many side of the relationship to the bridge table. By default, the query engine understands tables that are at the many end of relationships to be fact tables. The bridge table is not a fact table. So for the query engine to understand the role of the table and properly generate the query, the bridge table **Usage** property must be set to **Bridge**.
+    - **Bridge**: The bridge table is used to remove the many-to-many relationships between tables by setting the many sides of the relationship to the bridge table. By default, the query engine understands tables that are at the many end of relationships to be fact tables. The bridge table is not a fact table. So for the query engine to understand the role of the table and properly generate the query, the bridge table **Usage** property must be set to **Bridge**.
 
         The bridge table can be defined either in the database or in the semantic data model. However, it is preferable to create bridge tables in the database.
 
-    - **Summary**: This setting summarizes the values in the table. When the table is used in a report or dashboard, the data retrieved from the table is already summarized, columns with the **Usage** property set to **Measure** are aggregated, and all other columns are used as grouping columns.
+    - **Summary**: This setting summarizes the values in the table. When the table is used in a report or dashboard, the data that is retrieved from the table is already summarized, columns with the **Usage** property set to **Measure** are aggregated, and all other columns are used as grouping columns.
 
         Summary tables, such as unions, joined views, excepts, intersects, and SQL-based tables can be modeled in reports and semantic data models. It is more efficient to model these tables in the semantic data model. The tables are modeled once, there is only one possible point of failure, and the generated numbers are consistent.
 
@@ -133,4 +133,4 @@ On the source tables, you cannot change the column identifier because at least o
 
 - **Supports NULL values**: Specifies whether a column supports null values. By default, this property value is inherited from the source. You can change this value.
 
-- **User max suggested questions**: Use this property to specify the number of suggested questions that you want to generate when you export a metric definition. The default value is 10 and the maximum is 100. Suggested questions might  display at various points in a conversation. The questions displayed are based on the assets in the conversation's current scope, and can be asked to generate further insight.
+- **User max suggested questions**: Use this property to specify the number of suggested questions that you want to generate when you export a metric definition. The default value is 10 and the maximum is 100. Suggested questions might display at various points in a conversation. The questions that are displayed are based on the assets in the conversation's current scope, and can be asked to generate further insight.

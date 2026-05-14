@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-19"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: quick start, provision, setup
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ content-type: tutorial
 {: toc-content-type="tutorial"}
 
 
-These steps describe the typical tasks for an IBM Cloud account owner to provision and set up the account for an organization:
+These steps describe the typical tasks for an IBM Cloud account owner to provision and set up the account for an organization. {: #shortdesc}
 
 IBM {{site.data.keyword.wxbia_short}} as a Service requires an active IBM watsonx.data intelligence plan in the Cloud account. See [Step 2](/docs/watsonx-bi?topic=watsonx-bi-getting-started#step2) for more information. 
 {: important}
@@ -33,7 +33,7 @@ IBM Cloud account owners can grant an Administrator the ability to provision and
 
 You can provision {{site.data.keyword.wxbia_short}} by creating an instance of the service in your IBM Cloud account.
 
-1. Log into your IBM Cloud account. 
+1. Log in to your IBM Cloud account. 
 
 2. Click **Create resource**.
 
@@ -103,14 +103,14 @@ When you use {{site.data.keyword.wxbia_short}}, make sure that the selected acco
   | Scenario | Action  |
   |-------|-------------|
   | As a Cloud account owner, you do not have access to {{site.data.keyword.wxbia_short}} | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}. |
-  | The user is a part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before users can use {{site.data.keyword.wxbia_short}} (Steps 1 and 2 above). |
-  | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but they do not have access| Administrator must give the user access to {{site.data.keyword.wxbia_short}} |
+  | The user is a part of a Cloud account that does not have access to {{site.data.keyword.wxbia_short}} | The Cloud account owner must provision an instance of {{site.data.keyword.wxbia_short}} in the account and set it up before users can use {{site.data.keyword.wxbia_short}} (Steps 1 and 2). |
+  | The user is a part of a Cloud account with access to {{site.data.keyword.wxbia_short}} but they do not have access| The administrator must give the user access to {{site.data.keyword.wxbia_short}} |
   | {{site.data.keyword.wxbia_short}} is provisioned but not set up in the Cloud account | The Cloud account owner or Administrator must set up {{site.data.keyword.wxbia_short}} before users in the account can use {{site.data.keyword.wxbia_short}} (see Step 2). | 
-  | {{site.data.keyword.wxbia_short}} has not been provisioned at all | Follow Steps 1 and 2 above to provision an instance and set up {{site.data.keyword.wxbia_short}}.|
+  | {{site.data.keyword.wxbia_short}} has not been provisioned at all | Follow Steps 1 and 2 to provision an instance and set up {{site.data.keyword.wxbia_short}}.|
   {: caption="Access errors when setting up {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
 
 
-- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise select the right one from the account list in the header.**
+- **Error: Unable to connect to {{site.data.keyword.wxbia_short}} with the current account [account name]. If this is the one you want to work with, please contact your administrator. Otherwise, select the right one from the account list in the header.**
 
   You or a user you invited to the Cloud account might see this error if: 
 

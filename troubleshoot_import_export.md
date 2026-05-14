@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-03-25"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: troubleshoot, project import, project export
 subcollection: watsonx-bi
@@ -36,7 +36,7 @@ The following issues might occur when you export a project.
 ### Export fails due to project capacity limits
 {: #export_project_size}
 
-If the error message **Project too large** displays, your project exceeds the 500 MB limit. To lower the amount of data in the project:
+If the error message **Project too large** displays, your project exceeds the 500 MB limit. To reduce the amount of data in the project:
 
 - Remove unused data assets.
 - Delete old BI visualizations.
@@ -61,11 +61,11 @@ The following issues might occur when you import a project.
 ### Import fails with validation error
 {: #import_project_validation}
 
-If your import fails with a validation error, the ZIP file might be corrupted or contain unsupported content. Before you import the project again:
-- Verify that the .zip file is not corrupted.
+If your import fails with a validation error, the .zip file might be corrupted or contain unsupported content. Before you import the project again:
+- Verify that the compressed file is not corrupted.
 - Make sure that no uploaded files are present in the `/assets/` directory.
-- Check that the .zip file was exported from a compatible version of watsonx BI.
-- Verify that the .zip file contains required files: `project.json` and `assetrelationships.json`.
+- Check that the compressed file was exported from a compatible version of watsonx BI.
+- Verify that the compressed file contains the required files: `project.json` and `assetrelationships.json`.
 
 ### Metrics don't appear after import
 {: #import_projects_metrics}
@@ -88,7 +88,7 @@ If connection credentials aren't working after you import a project, you might n
 ### Relationships between assets are broken
 {: #import_assets_relationships}
 
-Relationships should be automatically reconstructed. If relationships between your assets are broken after import:
+Relationships are automatically reconstructed. If relationships between your assets are broken after import:
 - Verify that all required assets were included in the export.
 - Check that connection credentials are properly configured.
 - Review the `assetrelationships.json` file in the .zip to confirm relationships were exported.
@@ -114,7 +114,7 @@ If you import projects that are more than 100 MB or have many relationships, the
 ## Further help
 {: #import_project_help}
 
-If you continue to experience issues:
+If you continue to experience these issues:
 1. Check the export or import logs for specific error messages.
 2. Verify that your user role has sufficient permissions.
 3. Make sure that your {{site.data.keyword.wxbia_short}} instance is up to date.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-18"
+lastupdated: "2026-05-14"
 
 keywords: format data, currency, percentage
 
@@ -14,7 +14,7 @@ subcollection: watsonx-bi
 # Formatting data 
 {: #format_data}
 
-You can choose a format type, such as Percent or Currency, for metric columns in the semantic data model. When you set format types in the semantic model, watsonx BI will reflect those formats in the generated conversational responses.{: #shortdesc}
+You can choose a format type, such as Percent or Currency, for metric columns in the semantic data model. When you set format types in the semantic model, watsonx BI reflects those formats in the generated conversational responses.{: #shortdesc}
 
 Insights, such as those generated with visualizations, do not support formatting.
 {: note}
@@ -33,7 +33,7 @@ Currency
 
 :   - Number of decimal places - Specifies the number of digits to be displayed to the right of the decimal point. 
 
-:   - Use thousands separator - Specifies whether the grouping delimiter will be applied as defined by the Group Size property. The default value is inherited from the user's content language.
+:   - Use thousands separator - Specifies whether the grouping delimiter applies as defined by the Group Size property. The default value is inherited from the user's content language.
 
 
 :   Example: $12,000,000.00 with 2 decimals and thousands separator
@@ -43,7 +43,7 @@ Percent
 
 :   The Percent format type is supported but additional options are not supported.
 
-:   Ensure that the original data is in a ratio form. Applying the Percent format type multiplies values by 100 and adds a percent sign. If your data is already scaled and multiplied by 100, don’t assign the Percent format type. Doing so might result in inaccurate values for that column.
+:   Make sure that the original data is in a ratio form. Applying the Percent format type multiplies values by 100 and adds a percent sign. If your data is already scaled and multiplied by 100, don’t assign the Percent format type. Doing so might result in inaccurate values for that column.
 
 ## Applying formats
 {: #applying_format}
@@ -66,14 +66,12 @@ After the metric definition enriches successfully, you can ask a question in **C
 ## Formatting for calculated columns
 {: #format_calculated_columns}
 
-Watsonx BI supports formatting for calculated columns, which are computed on the fly. Formatting for these columns follows these rules:
+Watsonx BI supports formatting for calculated columns, which are computed in real time. Formatting for these columns follows these rules:
 
 - Supported types: Currency and Percent
 
 - Inference: An LLM infers the appropriate format based on the calculation.
 
-- Conflicts: If the calculation mixes incompatible formats (for example, multiple different currencies), watsonx BI will not apply formatting to avoid incorrect results.
+- Conflicts: If the calculation mixes incompatible formats (for example, multiple different currencies), watsonx BI does not apply formatting to avoid incorrect results.
 
 - Best practice: Keep calculations semantically meaningful and consistent in units. If you mix currencies, convert to a single currency before or within your calculation.
-
-

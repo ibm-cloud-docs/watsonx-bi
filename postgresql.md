@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-03-25"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: postgresql
 
@@ -27,7 +27,7 @@ PostgreSQL is an open source and customizable object-relational database.{: #sho
 ## Create a connection to PostgreSQL
 {: #create_postgresql}
 
-If you have set up an integrated cloud service, select the service instance to automatically fill in the fields in the connection form. Confirm that all the fields are complete.
+If you have set up an integrated cloud service, select the service instance to automatically complete the fields in the connection form. Confirm that all the fields are complete.
 
 To create the connection, you need these connection details:
 
@@ -38,7 +38,7 @@ To create the connection, you need these connection details:
 - Username and password
 - SSL certificate (if required by the database server)
 
-Select Server proxy to access the PostgreSQL data source through a server proxy. Depending on its setup, a server proxy can provide load balancing, increased security, and privacy. The server proxy settings are independent of the authentication credentials and the personal or shared credentials selection. The server proxy settings cannot be stored in a vault.
+Select **Server proxy** to access the PostgreSQL data source through a server proxy. Depending on its setup, a server proxy can provide load balancing, increased security, and privacy. The server proxy settings are independent of the authentication credentials and the personal or shared credentials selection. The server proxy settings cannot be stored in a vault.
 
 - Proxy hostname or IP address: The proxy URL. For example, https://proxy.example.com.
 

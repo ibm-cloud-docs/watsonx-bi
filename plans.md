@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2026
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-14"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -25,23 +25,23 @@ As an IBM Cloud account owner or administrator, you can choose from these {{site
 
 **Premium:**
 	
-{{site.data.keyword.wxbia_short_cap}} as a Service Premium Instance is a cloud-based business intelligence solution. This pay-per-use service includes 5 active users and includes 1000 Records/Assets per month.
+{{site.data.keyword.wxbia_short_cap}} as a Service Premium Instance is a cloud-based business intelligence solution. This pay-per-use service includes 5 active users and includes 1000 Records or Assets per month.
 
 Assets are determined based on the artifacts in the business glossary and the number of selected assets in the projects and catalogs.
 
 **Trial:**
 
-Try {{site.data.keyword.wxbia_short}}'s Premium features for 30 days for free before you buy the Add-on for Cognos Analytics or Premium plan. You can provision a free Cloud Object Storage (bucket) for basic data storage. Data and assets are stored to the COS bucket even after the trial period ends. Trial plan services are deleted after 30 days of inactivity.
+Try {{site.data.keyword.wxbia_short}}'s Premium features for 30 days at no cost before you buy the Add-on for Cognos Analytics or Premium plan. You can provision a free Cloud Object Storage (COS) bucket for basic data storage. Data and assets are stored to the COS bucket even after the trial period ends. Trial plan services are deleted after 30 days of inactivity.
 
 
 **Add-on for Cognos Analytics:**
 
 {{site.data.keyword.wxbia_short_cap}} as a Service Add-on for Cognos Analytics offers a cloud-based business intelligence solution. 
-This pay-per-use service includes 5 active users and includes 1000 Records/Assets per month.
+This pay-per-use service includes 5 active users and includes 1000 Records or Assets per month.
 
 Assets are determined based on the artifacts in the business glossary and the number of selected assets in the projects and catalogs.
 
-In addition to the entitlements required for the Offering, Licensee must also be entitlement to one of the following Named Programs:
+In addition to the entitlements required for the Offering, Licensee must also be entitled to one of the following Named Programs:
 
 - IBM Cognos Analytics
 - Business Analytics Enterprise

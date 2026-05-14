@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-01-07"
+lastupdated: "2026-05-14"
 
 keywords: try metrics
 subcollection: watsonx-bi
@@ -15,7 +15,7 @@ subcollection: watsonx-bi
 # Try metrics 
 {: #try_metrics}
 
-You can try asking questions about a metric that you generated automatically or built manually to ensure it can answer questions about your data. 
+You can try asking questions about a metric that you generated automatically or built manually to ensure that it can answer questions about your data. 
 
 1. On the **Metrics overview** page, click the context menu for a metric. 
 

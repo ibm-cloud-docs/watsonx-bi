@@ -17,18 +17,18 @@ subcollection: watsonx-bi
 
 The **AI** label in the user interface gives an overview of how AI works in **Conversations**. {{site.data.keyword.wxbia_full}} uses large language models (LLM) to answer your questions and provide recommendations, insights, and summaries for your business data. {: #shortdesc}
 
-Administrators can choose the LLM that is used in {{site.data.keyword.wxbia_short}} conversations for users in their organization and can update the selection at any time from the **Configuration and settings > Model settings** page. 
+In watsonx BI as a Service, the model is OpenAI gpt-oss-120b with [chain of thought](/docs/watsonx-bi?topic=watsonx-bi-choose_llm). In Software Hub, the available model depends on your version and administrators can select a model at any time on the **Configuration and settings > Model settings** page.
 
 ## How AI generates responses 
 {: #ai_queries}
 
-The selected LLM is used to respond to your BI questions.  It analyzes your input, along with the metrics and enriched metadata you have access to, to understand the underlying business logic. It then uses column titles, descriptions, sample values, SQL examples, and predefined instructions to identify the most relevant data. Based on this understanding, the LLM generates the appropriate query to retrieve the relevant information.
+The LLM is used to respond to your BI questions.  It analyzes your input, along with the metrics and enriched metadata you have access to, to understand the underlying business logic. It then uses column titles, descriptions, sample values, SQL examples, and predefined instructions to identify the most relevant data. Based on this understanding, the LLM generates the appropriate query to retrieve the relevant information.
 
 Using the returned data, the LLM produces a text-based answer, a visualization, or both. You can view each step of this process in the **AI steps** by clicking **Show AI steps** in the response.
 
 The LLM also evaluates key metrics and helps surface changes in your business data. When you select a metric from the **Key metrics** panel, the AI can summarize and explain what changed and why it might be important.
 
-The name of the LLM used to generate each response appears in the **AI** label and within **AI steps** during conversations.
+The name of the LLM that was used to generate each response appears in the **AI steps** during conversations.
 
 {{site.data.keyword.wxbia_short_cap}} uses LLMs that are hosted in IBM watsonx.ai and does not use your data to train the models.
 {: note}
@@ -62,4 +62,4 @@ For more information, see [Steps AI takes to respond](/docs/watsonx-bi?topic=wat
 ## Related links
 {: #related_explainability}
 
-- [Selecting the large language model for your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}
+- [Understanding the large language model in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}

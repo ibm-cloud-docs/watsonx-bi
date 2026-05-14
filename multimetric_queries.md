@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-12"
+lastupdated: "2026-05-14"
 
 keywords: multi-fact metrics, multiple tables, calculate after aggregate
 subcollection: watsonx-bi
@@ -37,14 +37,14 @@ When you submit a question, such as the example provided, watsonx BI:
 
 5. Generates an answer with a visualization and an explanation of which assets and models were used.
 
-The data assets and SQL that are used to answer the question display in the **AI steps** panel. 
+The data assets and SQL that are used to answer the question are displayed in the **AI steps** panel. 
 
 ## Prerequisites 
 {: #prereq_multiasset}
 
 Multi‑asset queries require:
 
-- Chain of Thought model to be enabled.
+- Chain of thought (CoT) model to be enabled.
 
 - All referenced assets to exist in the same container, such as a project or catalog.
 
@@ -55,7 +55,7 @@ Multi‑asset queries work well when you want to:
 
 - Display independent visualizations, such as *Show the top 5 products by revenue and top 5 by returns*.
 
-- Filter using one asset while displaying another, such as *For the product with the most revenue, how many returns did it have?*.
+- Filter by using one asset while displaying another, such as *For the product with the most revenue, how many returns did it have?*.
 
 ## Limitations
 {: #multiasset_limitations}
@@ -64,7 +64,7 @@ With the multi-asset query capability, the large language model (LLM) has the op
 
 Instead, watsonx BI builds independent queries against different assets and lets the LLM use the results of one query to build the next query.
 
-However, a maximum of 10 filter values is currently supported per filter. When a question requires more than 10 filter values, watsonx BI cannot apply a single filter across multiple data assets. Instead, it runs separate queries for each asset and displays the results together.
+However, a maximum of 10 filter values is supported per filter. When a question requires more than 10 filter values, watsonx BI cannot apply a single filter across multiple data assets. Instead, it runs separate queries for each asset and displays the results together.
 
 
 ## Example questions

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-13"
+lastupdated: "2026-05-14"
 
 keywords: upload file, local file
 
@@ -21,7 +21,7 @@ When you upload your file, the first 1000 rows of the file are scanned to determ
 If the first 1000 rows are empty, these rows are treated as varchar or string columns in the query engine, even if numeric values exist in the subsequent rows. Empty rows might lead to errors when a query processes SUM on a varchar column. To avoid this issue, before you upload, sort the file so that the first 1000 rows are not empty and the data type can be correctly identified and treated.
 {: tip}
 
-You can find your uploaded files on **Data and Metrics > Data sources > Uploaded files** tab. They are also listed as data assets on the **Assets** page of your project.
+You can find your uploaded files on the **Data and Metrics > Data sources > Uploaded files** tab. They are also listed as data assets on the **Assets** page of your project.
 
 All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored in the Cloud Object Storage bucket that is associated with your project.
 {: note}
@@ -49,7 +49,7 @@ All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored 
 
     Any changes that you make to the enrichment results save automatically.
 
-   If the uploaded file has more than 10,000 rows, click **Review > Columns > Select a column**. Check the **Statistics** section in the **Details** panel to ensure that data sampling captured the distinct values. If certain columns are fewer than expected, click **Edit enrichment** and change **Sample size** to **Percentage**. Enter **10** in the **Percent of the data set** field and enter **10000** in the **Maximum number of rows** field. Click **Enrich all assets** to re-run enrichment.
+   If the uploaded file has more than 10,000 rows, click **Review > Columns > Select a column**. Check the **Statistics** section in the **Details** panel to help ensure that data sampling captured the distinct values. If certain columns are fewer than expected, click **Edit enrichment** and change **Sample size** to **Percentage**. Enter **10** in the **Percent of the data set** field and enter **10000** in the **Maximum number of rows** field. Click **Enrich all assets** to rerun enrichment.
    {: important}
 
 5. (Optional) Click **Ask a question** to ask questions about the data in the uploaded file.
@@ -179,7 +179,8 @@ Values representing dates and timestamps need to be in the following format:
 
 You might run into errors during the file upload process. Click the **View details** link under the error message for more details. 
 
-Some errors can be avoided by revising the file and uploading again. For example, file upload can fail if the file is blank or contains a blank worksheet. File enrichment might fail if it contains a value that doesn't match the data type in the rest of the file, an unsupported data type, or if the file contains one or more rows that have a different number of columns than expected.
+Some errors can be avoided by revising the file and uploading again. For example, file upload can fail if the file is blank or contains a blank worksheet. File enrichment fails if the file contains a value that doesn't match the data type in the rest of the file, an unsupported data type, or rows with a different number of columns than expected.
+
 
 Other errors might require you to contact IBM support for further assistance. 
 
@@ -196,9 +197,9 @@ Other errors might require you to contact IBM support for further assistance.
 
 - FLP_ParquetUnsupportedType = FLP-106 Error writing parquet data for file ''{0}''. Unsupported type: ''{1}''.
 
-  A column in the file has data type that is not a character, numeric, temporal, or Boolean data type, remove the column from the file and upload it again.
+  A column in the file has a data type that is not a character, numeric, temporal, or Boolean data type, remove the column from the file and upload it again.
 
-- FLP_DBUnsupportedTypes = FLP-107 The following data types detected in file ''{0}'' for the given columns are not supported: ''{1}''.
+- FLP_DBUnsupportedTypes = FLP-107 The following data types detected in file ''{0}'' for the columns are not supported: ''{1}''.
 
   A column in the file has a data type that is not a character, numeric, temporal, or boolean data type, remove the column from the file and upload it again.
 
@@ -215,7 +216,7 @@ Other errors might require you to contact IBM support for further assistance.
 
 You might encounter metadata enrichment errors if there is an issue with the data or if an error occurred in an enrichment objective. Examples:
   
-- there was an error in profiling data and {{site.data.keyword.wxbia_short}} couldn't retrieve data values to process the metadata enrichment
+- there was an error in profiling data and {{site.data.keyword.wxbia_short}} was not able to retrieve data values to process the metadata enrichment
 
 - {{site.data.keyword.wxbia_short_cap}} was unable to retrieve data values to write and compute vectors to Cloud Object Storage
 
@@ -225,7 +226,7 @@ If the file encounters metadata enrichment errors during upload:
   
 1. Click the **Review** link to go to the metadata enrichment results.
   
-2. Click **Enrich all assets** at the top of the page to re-run enrichment. If there are errors in data profiling or other enrichment objectives, re-running enrichment might resolve the error. 
+2. Click **Enrich all assets** to re-run enrichment. If there are errors in data profiling or other enrichment objectives, rerunning enrichment might resolve the error. 
 
 If the errors persist, click the **View metrics** link in the **About this enrichment** panel to see the enrichment objectives that failed. You can also go to the **Log** tab to view more details. 
 
