@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-05-28"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -23,12 +23,12 @@ subcollection: watsonx-bi
 # Metadata enrichment
 {: #enrich}
 
-Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level.  {: #shortdesc}
+Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level. {: #shortdesc}
  
-Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. Enrichment adds additional instructions to your data, making it more insightful for the users. 
+Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. Enrichment adds additional instructions to your data, making it more insightful for the users.
 
-Watsonx.data intelligence uses the pre-defined governance artifacts and the domain-specific glossary concepts that you upload to augment technical metadata with more descriptive and meaningful names. 
- 
+IBM watsonx.data intelligence uses the pre-defined governance artifacts and the domain-specific glossary concepts that you upload to augment technical metadata with more descriptive and meaningful names.
+
 Metadata enrichment also generates context-aware descriptions for tables and columns, which consider the surrounding columns and the context of the table. 
 
 To ask questions about your data in {{site.data.keyword.wxbia_short}}, your data first needs to be enriched. You can enrich data during the [metric creation](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external} process. 
@@ -41,18 +41,22 @@ Metadata enrichment does not change your original data.
 
 Metadata enrichment occurs at two levels in {{site.data.keyword.wxbia_short}} the project and data asset levels. Any metrics that you build or generate are also enriched. 
 
-Metadata enrichment settings for all projects, data assets, and metrics in {{site.data.keyword.wxbia_short}} are configured by default, which help ensure consistent use of the enrichment options. 
+Metadata enrichment settings for all projects, data assets, and metrics in watsonx BI are configured by default, which help ensure consistent use of the enrichment options.
 
 The categories in the governance framework that contain business terms, data classes, and classifications are applied to the data during enrichment.
+
+
+
+
 
 ### Enrichment settings for projects
 {: #mde_projects}
 
-Thresholds are automatically configured in {{site.data.keyword.wxbia_short}} for the following settings. You don't need to change these settings to run enrichment. 
+Thresholds are automatically configured in {{site.data.keyword.wxbia_short}} for the following settings. You don't need to change these settings to run either type of metadata enrichment. 
 
-- Profiling and primary key analysis
+- Profiling data
 
-- Expand metadata
+- Expanding metadata
 
 - Term and classification assignment
 
@@ -67,6 +71,7 @@ Thresholds are automatically configured in {{site.data.keyword.wxbia_short}} for
 You can view the default settings on the project **Manage > Tools > Metadata enrichment** page.
 
 For more information, see [Metadata enrichment default settings](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/enrichment-settings.html?context=df&audience=wdp). 
+
 
 ### Enrichment objectives for data assets and metrics
 {: #mde_assets}
@@ -129,4 +134,4 @@ The following steps take place during metadata enrichment:
 
    During this step, {{site.data.keyword.wxbia_short}} generates and stores vector embeddings for sample values captured during enrichment. These sample values are then used for search and matching filter values in conversations.
    
-For more information, refer to the watsonx.data intelligence documentation on [enriching data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/metadata-enrichment.html?context=df&audience=wdp).
+For more information, refer to the watsonx.data intelligence documentation on [enriching data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/metadata-enrichment.html?context=df&audience=wdp). 

@@ -2,7 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+
+lastupdated: "2026-05-15"
+
 
 keywords: known issues, limitations, watsonx BI
 
@@ -93,4 +95,3 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 
 - Import and export project does not support local files (.csv, .xls, .xlsx, or .tsv)
 
-- Metrics and visualizations that are created from an imported Cognos Analytics Framework Manager package cannot be published to the **Metrics catalog**.

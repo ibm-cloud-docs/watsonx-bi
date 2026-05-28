@@ -118,10 +118,7 @@ toc:
           label: Data modeling
           topics:
           - data_modeling.md
-          - topicgroup:
-              label: Column dependencies
-              topics:
-              - column_dependencies.md
+          - column_dependencies.md
           - relationships.md
           - calculations.md
           - multifact-metrics.md

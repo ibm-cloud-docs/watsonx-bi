@@ -2,7 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+
+lastupdated: "2026-05-28"
+
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,6 +25,27 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+
+
+
+## 28 May 2026
+{: #subcollection-may2826}
+{: release-note}
+
+Improved metric generation with question–SQL pairing
+
+:  You can now generate metrics by providing a business question and its corresponding SQL query. This update replaces the earlier approach, which relied on enriched data and the semantic data model to derive metrics.
+
+:  Pairing a question with SQL anchors metric generation in a real business scenario. The SQL defines the exact logic, while the question captures the analytical intent. Together, they reduce ambiguity and improve metric accuracy and relevance.
+
+:  In addition, watsonx BI extracts relationships, calculations, and structure directly from the SQL. This reduces the need for manual modeling and helps data analysts generate metrics faster without using advanced modeling techniques.
+
+:  For more information, refer to [Generating metrics automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external}. 
+
+:  This is a Technology Preview feature in watsonx BI. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important} 
+
 
 ## 14 May 2026
 {: #subcollection-may1426}
