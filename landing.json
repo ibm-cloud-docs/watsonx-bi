@@ -28,7 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
-
+        "date": "4 June 2026",
+        "title": "Improved response handling for no data and no asset scenarios"
+      },
+      {
         "date": "28 May 2026",
         "title": "Improved metric generation with question–SQL pairing in watsonx BI as a Service"
       },
@@ -51,10 +54,6 @@
       {
         "date": "3 April 2026",
         "title": "AWS Databricks available as a connector in watsonx BI as a Service"
-      },
-      {
-        "date": "26 March 2026",
-        "title": "Microsoft Azure Databricks available as a connector in watsonx BI as a Service"
       }
     ]
   },

@@ -1,27 +1,17 @@
 ---
 copyright:
   years: 2025, 2026
+lastupdated: "2026-06-04"
 
-lastupdated: "2026-05-28"
-
-
-keywords: feedback
+keywords: feedback, feedback center, response like, response dislike
 subcollection: watsonx-bi
 
 
 
 ---
 
-{:codeblock: .codeblock}
-{:note: .note}
-{:pre: .pre}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:video: .video}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Response feedback
 {: #feedback}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-06-04"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi
@@ -22,9 +22,26 @@ Before you start creating metrics, it helps to understand a few foundational con
 ## Metrics
 {: #about_metrics}
 
-Metrics are  calculations that are used to measure and monitor key areas of a business. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata that is used to define metrics, to answer your questions and provide insights.
+Metrics are calculations that are used to measure and monitor key areas of a business. {{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata that is used to define metrics, to answer your questions and provide insights.
 
-In {{site.data.keyword.wxbia_short}}, metrics are assets that are stored in projects but defined in semantic data models through metric definitions. A metric definition contains measures and related attributes. After you create a metric definition, you must export it from the semantic data model into a project before it can be used in **Conversations**.
+Metrics are stored in projects as assets but defined in the semantic data model through metric definitions.
+
+In {{site.data.keyword.wxbia_short}}, a **metric definition** encapsulates all the context needed for a specific business domain. It includes:
+
+- Measures: Quantitative values (revenue, count, duration)
+- Attributes: Dimensional context (product, region, time)
+- Calculations: Derived metrics and KPIs
+- Relationships: Join logic between data sources
+- AI Instructions: Custom guidance for interpretation
+
+Example: Sales metrics
+
+  - Measures: revenue, cost_of_goods_sold, profit_margin
+  - Attributes: product_category, sales_region, sale_date
+  - Calculations: profit = revenue - cost_of_goods_sold
+  - AI Instructions: "Revenue always refers to net revenue after returns. Use fiscal calendar for time periods."
+
+After you create a metric definition, you must export it from the semantic data model into a project before it can be used in **Conversations** as a metric.
 
 ### Who can create metrics
 {: #metrics_role}
@@ -80,9 +97,9 @@ In {{site.data.keyword.wxbia_short}}, you work with assets in a project. You can
 ## Metadata enrichment
 {: #metadata_enrichment}
 
-{{site.data.keyword.wxbia_short_cap}} uses the IBM watsonx.data intelligence for metadata import and enrichment. 
 
-After you select data during the metric creation flow, watsonx BI enriches it with business context such as business terms, descriptions, and inferred relationships.
+
+After you select data during the metric creation flow, the data is enriched with business context such as business terms, descriptions, and inferred relationships.
 
 This enrichment process adds a semantic layer that helps AI understand context, making your data easier to use when it generates answers or metrics.
 

@@ -2,9 +2,7 @@
 
 copyright:
   years: 2025, 2026
-
-lastupdated: "2026-05-28"
-
+lastupdated: "2026-06-04"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -28,6 +26,27 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 
 
+
+
+## 4 June 2026
+{: #subcollection-jun0426}
+{: release-note}
+
+Improved response handling for no data and no asset scenarios
+
+:  This release improves how watsonx BI responds when a question cannot produce a meaningful result when no data is returned or no supporting data asset exists. These updates help users better understand data availability.
+
+:  **No data**
+
+:  When a query generates a valid SQL but returns **no results**, watsonx BI now analyzes column metadata to provide helpful context about available data. 
+
+:  For example, the question, *What was our revenue in 2020?* now returns,*There’s no data available for 2020. Data is available for 2021–2024.*
+
+:  **No asset**
+
+:  When no SQL can be generated because the **required data does not exist**, watsonx BI now specifies which part of the question cannot be answered. It can also suggest a relevant alternative question or exploration path, helping users move forward without needing to contact support. 
+
+:  For example, the question, *How many returns were made at the Phoenix call center?* now returns a clear, informative response instead of an error, *I'm sorry but the data you're looking at doesn't contain any information about product returns <....>. Would you like to explore how many total calls were handled at the Phoneix call center during a specific time period?*. You can reply *Yes* to run the suggested question.
 
 ## 28 May 2026
 {: #subcollection-may2826}
