@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-04"
+lastupdated: "2026-06-12"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -26,6 +26,18 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 
 
+
+## 12 June 2026
+{: #subcollection-jun1226}
+{: release-note}
+
+Data analysts can review feedback to improve responses
+
+:  You can now provide feedback on responses in **Conversations**, and Data analysts can review and act on that feedback at the project level. Previously, users could only submit feedback. 
+
+:  This update introduces a structured feedback loop that helps teams improve data quality, metrics, and AI responses over time.
+
+:  For more information, refer to [Response feedback](/docs/watsonx-bi?topic=watsonx-bi-feedback){: external}. 
 
 
 ## 4 June 2026

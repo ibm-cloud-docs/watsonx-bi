@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-06-12"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -61,7 +61,7 @@ An instance of storage is required to store the following:
 
 - Conversations
 
-If you are using {{site.data.keyword.wxbia_short}} as a Service, you can use an existing instance or provision a new instance of IBM Cloud Object Storage in IBM Cloud. For more information, see [IBM Cloud Object Storage](/docs/watsonx-bi?topic=watsonx-bi-cos){: external}. 
+If you are using {{site.data.keyword.wxbia_short}} as a Service, you can use an existing instance or provision a new instance of IBM Cloud Object Storage in IBM Cloud. For more information, see [IBM Cloud Object Storage](/docs/watsonx-bi?topic=watsonx-bi-cloud-object-storage){: external}. 
 
 If you're using {{site.data.keyword.wxbia_short}} on IBM Software Hub, see [Storage considerations](https://www.ibm.com/docs/en/software-hub/latest?topic=planning-storage-considerations).
 
