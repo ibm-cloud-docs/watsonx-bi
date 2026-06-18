@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-12"
+lastupdated: "2026-06-18"
 
 keywords: about watsonx BI, features
 subcollection: watsonx-bi
@@ -50,7 +50,7 @@ Help icon
 
 Perspective switcher
 
-:   {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub has its own perspective called Business Intelligence. A perspective switcher in the header of the software allows you to toggle between different experiences. This switcher is useful if your environment includes multiple solutions on IBM Software Hub.
+:   {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub has its own experience called Business Intelligence. An experience switcher in the header of the software allows you to toggle between different experiences. This switcher is useful if your environment includes multiple solutions on IBM Software Hub.
 
 :   This user interface component is not available in {{site.data.keyword.wxbia_short}} as a Service. 
 
@@ -58,8 +58,6 @@ Perspective switcher
 {: #feature_differences}
 
 While the core functions in both deployments are effectively the same, the following features are not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub:
-
-- Chain of thought (CoT) reasoning 
 
 - Use of Go Sales sample data
 

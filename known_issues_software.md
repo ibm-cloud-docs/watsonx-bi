@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-06-18"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -19,287 +19,231 @@ subcollection: watsonx-bi
 The following issues and limitations apply to {{site.data.keyword.wxbia_full}} on IBM Software Hub 5.2.0 and later versions. {: #shortdesc}
 
 
+## Metadata enrichment
+{: #ki_mde}
+
+- **Metadata enrichment information appears at the wrong step**
+
+  Applies to: 5.4.0
+
+  Information about how long metadata enrichment takes appears at the **Select data** step, instead of the **Enrich metadata** step. No metadata enrichment occurs at the point where you select data.
+
 ## Connector filters
 {: #ki_connector}
 
-IBM Db2 connector doesn't appear when the watsonx BI filter is applied
+- **IBM Db2 connector doesn't appear when the watsonx BI filter is applied**
  
-:   Applies to: 5.3.0 and later
+  Applies to: 5.3.0 and later
 
-:   When you are in the **Add connection** flow and have the watsonx BI filter applied, the IBM Db2 connector doesn't appear in the list of Db2 connectors.
+  When you are in the **Add connection** flow and have the watsonx BI filter applied, the IBM Db2 connector doesn't appear in the list of Db2 connectors.
 
-:   Workaround:
+  Workaround:
 
-:   Clear the filters and then select the watsonx BI connector.
+  Clear the filters and then select the watsonx BI connector.
 
-:   When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.
+  When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.
 {: note}
 
-The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors
+- **The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors**
 
-:   Applies to: 5.3.0 and later
+  Fixed in: 5.4.0
 
-:   If you click **Connect to data** in the watsonx.data experience, you can see connection types that you cannot use with watsonx BI assets.
+  If you click **Connect to data** in the watsonx.data experience, you can see connection types that you cannot use with watsonx BI assets.
 
-:   Workaround:
+  Workaround:
 
-:   Create connections in the Business Intelligence experience.
+  Create connections in the Business Intelligence experience.
 
 ## Metric generation
 {: #ki_metric_generation}
 
-Metadata enrichment failure during metric generation for export.
+- **Connections created outside of the Business Intelligence experience are unusable in metric generation**
   
-:   Applies to: 5.3.0
+  Fixed in: 5.4.0
 
-:   Fixed in: 5.3.1
+  When you try generating metrics from connections and projects that were created outside of the Business Intelligence experience, metric generation fails.
 
-:   When you open a semantic model that was created during a previous metadata import step and try to export a metric definition from this model, the metadata enrichment job fails during the profiling step.
+  Workaround: 
 
-Connections that are created outside of the Business Intelligence experience are unusable in metric generation
-  
-:   Applies to: 5.3.0
+  Delete the connection and recreate it by using either the Create metric or the Connect to data tab in the Business intelligence dropdown in watsonx.data.
 
-:   Fixed in: 5.3.1
+## Conversations
+{: #ki_conversations}
 
-:   When you try generating metrics from connections and projects that were created outside of the Business Intelligence experience, metric generation fails.
+- **Missing AI reasoning and completion messages in conversations**
 
-:   Workaround: 
+  Applies to: 5.4.0
 
-:   Delete the connection and recreate it by using either the Create metric or the Connect to data tabs in the Business intelligence dropdown in watsonx.data.
+  When you send multiple messages in an agentic conversation flow, some AI response messages might not appear in the conversation. Specifically, AI reasoning steps and completion messages might be missing, even though the initial message appears correctly. This issue occurs when the system cannot acquire the necessary lock to cache conversation messages.
+
+- **False error message**
+
+  After you generate metrics and close the **Try in conversation** window, an error message that states **Failed to delete the conversation** might appear.
 
 ## Visualizations
 {: #ki_visualizations}
 
-Technical issue when asking questions against visualization in Key metrics
-  
-:   Applies to: 5.3.0 and later
+- **Five minute wait before visualizations appear in the Metrics catalog**
 
-:   After you pin a visualization to **Key metrics**, if you try to ask a question against the visualization, you might get the following response due to a technical issue: *Sorry, I encountered a technical issue on our end and can't answer your question. Try rephrasing your question or ask a different question.*
+  Fixed in: 5.4.0
 
-Intermittent data source loading issue on visualization tiles
-  
-:   Applies to: 5.3.0
+  After you publish visualizations, you must wait approximately 5 minutes before you can see them in the **Metrics catalog**.
 
-:   Fixed in: 5.3.1
+- **Visualizations unable to load after pinning**
 
-:   After you build and publish a custom visualization, a *Failed to load data source* error message might display in the **Metrics catalog**.
+  Applies to: 5.4.0
 
-:   Workaround:
-
-:   The issue typically resolves itself after some time. Wait until your visualization appears in the **Metrics catalog**, then try to view the visualization tiles.
-
-Five minute wait before visualizations appear in the Metrics catalog
-
-:   Applies to: 5.3.0 and later
-
-:   After you publish visualizations, you might need to wait approximately 5 minutes before you can see them in the **Metrics catalog**.
+  When you pin a visualization from the metrics catalog, the visualization may fail to load.
 
 ## Imported projects
 {: #ki_imported_projects}
 
-Metrics from imported assets cannot be used
+- **Visualizations not loading after project import**
 
-:   Applies to: 5.3.0 and later
-  
-:   If you import a project from the watsonx.data experience, the metrics in this project cannot be used with Business Intelligence tools.
+  Applies to: 5.4.0
 
-Database connection error on imported projects
+  When you import a project that had existing visualizations, the visualizations don't load properly.
+
+- **Metrics from imported assets cannot be used**
+
+  Applies to: 5.3.0 - 5.3.1
+
+  Fixed in: 5.4.0
+
+  If you import a project from the watsonx.data experience, the metrics in this project cannot be used with Business Intelligence tools.
+
+- **Database connection error on imported projects**
  
-:   Applies to: 5.3.0 and later
+  Applies to: 5.3.0 and later
 
-:   If you import a project, then switch to another account without logging in to the second account, you cannot update the credentials for the project.
+  If you import a project, then switch to another account without logging in to the second account, you cannot update the credentials for the project.
   
-:   Workaround: 
+  Workaround: 
 
-:   As the user who imported the project, you must enter your personal database credentials before you can share the project with other collaborators.
-
-## Navigation menu
-{: #ki_nav_menu}
-
-View all catalogs option is missing from the Navigation Menu
- 
-:   Applies to: 5.3.0 - 5.3.1
-
-:   Fixed in: 5.3.1 patch 1
-
-:   When you click the **Navigation Menu** while you are in the watsonx.data experience, the **View all catalogs** option is not shown under the **Catalogs** dropdown.
+  As the user who imported the project, you must enter your personal database credentials before you can share the project with other collaborators.
 
 ## Experience issues
 {: #ki_experience}
 
-Experience is not preserved during certain navigation
+- **Some actions redirect you to the Business Intelligence experience**
+
+  Applies to: 5.4.0
+
+  Certain actions that you perform in the watsonx.data experience redirect you to the same page in the Business Intelligence experience. There is no immediate impact to being in a different experience, but you might encounter issues when performing other actions, such as rendering visualizations. The actions include:
+
+    - Clicking notifications
+
+    - Previewing assets **Fixed in: 5.4.0**
+
+  Workaround:
+
+  Manually switch back to the watsonx.data experience by using the 9-dot switcher.
+
+- **Some tasks fail in projects that are created outside of the Business Intelligence experience**
  
-:   Applies to: 5.3.0 and later
+  Applies to: 5.3.0 and later
 
-:   Certain actions that you perform in the watsonx.data experience redirect you to the same page in the Business Intelligence experience. There is no immediate impact to being in a different experience, but you might encounter issues when performing other actions, such as rendering visualizations. The actions include:
+  If you try to complete certain tasks for projects that are created outside of the Business Intelligence experience, these tasks fail. These tasks include:
 
-:   - Viewing imported projects **Fixed in: 5.3.1**
+   - Metadata enrichment
 
-:   - Clicking notifications
+   - Metric creation
 
-:   - Previewing assets
+  Workaround:
 
-:   - Navigating to the **Metrics overview** page **Fixed in: 5.3.1**
-
-:   - Clicking **Home** in the **Metadata enrichment** view **Fixed in: 5.3.1**
-
-:   Workaround:
-
-:   Manually switch back to the watsonx.data experience by using the 9-dot switcher.
-
-Some tasks fail in projects that are created outside of the Business Intelligence experience
- 
-:   Applies to: 5.3.0
-
-:   If you try to complete certain tasks for projects that are created outside of the Business Intelligence experience, these tasks fail. These tasks include:
- 
-:   - Metadata enrichment
-
-:   - Metric creation
-
-:   - Metric publishing **Fixed in: 5.3.1**
- 
-:   Workaround:
-
-:   Create metrics only in the **Data and Metrics** page. You can access this page by clicking **Create metrics** in watsonx.data when the **Business intelligence** dropdown is selected.
-
-
-
-## Semantic data model creation
-{: #ki_semantic_model}
-
-Semantic data model creation fails in shared projects for everyone besides the Administrative user
- 
-:   Applies to: 5.3.0
-
-:   Fixed in: 5.3.1
- 
-:   If a project is shared with a user who has the project permission of Editor, and the Editor tries to create a semantic data model, the creation fails.
-
-:   Workaround: 
-
-:   As the Administrative user, you must create the semantic data model in your projects. Click **Create metrics** to create a semantic data model.
+  Create metrics only in the **Data and Metrics** page. You can access this page by clicking **Create metrics** in watsonx.data when the **Business intelligence** dropdown is selected.
 
 ## Deleted files
 {: #ki_deleted_files}
 
-Deleted files continue to display in the user interface
- 
-:   Applies to: 5.3.0 and later
+- **Deleted files continue to display in the user interface**
 
-:   If you delete files that were uploaded and enriched, then reload the **Data and Metrics** page, the files still display after they were deleted.
+  Applies to: 5.3.0 and later
 
-:   Workaround: 
+  If you delete files that were uploaded and enriched, then reload the **Data and Metrics** page, the deleted files are still displayed.
 
-:   Wait approximately 15 minutes after you delete the files, then refresh the **Data and Metrics** page. The files no longer display. 
+  Workaround:
 
-Overwrite file option appears when you reupload deleted files
- 
-:   Applies to: 5.3.0 and later
+  Approximately 15 minutes after you delete the files, refresh the **Data and Metrics** page. The files no longer display.
 
-:   If you delete a set of files and later re-upload these same files, you get the option to overwrite the files, even though these files no longer exist in the platform assets page.
+- **Overwrite file option appears when you reupload deleted files**
+
+  Applies to: 5.3.0 and later
+
+  If you delete a set of files and later reupload these same files, you have the option to overwrite the files, even though these files no longer exist in the platform assets page.
 
 ## File upload
 {: #ki_file_upload}
 
-False error message during batch file upload
- 
-:   Applies to: 5.3.0 and later
+- **False error message during batch file upload**
 
-:   When you upload 10 files at one time, the displayed status shows that the upload job failed, even if the job succeeded.
+  Applies to: 5.3.0 and later
 
-:   Workaround:
+  When you upload 10 files at one time, the displayed status shows that the upload job failed, even if the job succeeded.
 
-:   To see whether the enrichment job succeeded or failed, view the enrichment job run metrics.
+  Workaround:
+
+  To see whether the enrichment job succeeded or failed, view the enrichment job run metrics.
 
 ## Roles and permissions
 {: #ki_roles}
 
-Loss of user permission**
- 
-:   Applies to: 5.3.0 and later
+- **Changing multiple users' roles at one time fails if search bar isn't clear**
 
-:   Due to the introduction of new roles in IBM Software Hub Version 5.3.0, the roles of User, Data Steward, and Administrator no longer apply to watsonx BI users. If you had any of these roles, you might lose access to your watsonx BI community.
+  Applies to: 5.4.0
 
-:   Workaround: 
+  When you search for multiple users and try to change their roles at the same time, without clearing the search bar, the page loads indefinitely and the user roles remain unchanged.
 
-:   A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=upgrading-post-upgrade-setup).
+  Workaround:
 
-Analytics consumers are unable to create metrics
-  
-:   Applies to: 5.2.0 - 5.2.2; Fixed: 5.3.0
-  
-:   Analytics consumers who use {{site.data.keyword.wxbia_short}} on IBM® Software Hub 5.2 are assigned the User role, which has no permissions. This causes a metadata import error during metric creation. 
-  
-:   This issue does not impact Data analysts.
+  If you want to change the roles of multiple users at one time, select the users whose roles you want to change, clear the search bar, and then select the users' new roles.
 
-:   Workaround:
-  
-:   Data analysts can create and publish metrics and related visualizations to the **Metrics catalog**, and assign them to Analytics consumers.
+- **Loss of user permission**
 
-Certain predefined roles allow users to set up {{site.data.keyword.wxbia_short}} without being invited first
+  Applies to: 5.3.0 and later
 
-:   Applies to: 5.2.0 - 5.2.2; Fixed: 5.3.0
+  Due to the introduction of new roles in IBM Software Hub Version 5.3.0, the roles of User, Data Steward, and Administrator no longer apply to watsonx BI users. If you had any of these roles, you might lose access to your watsonx BI community.
 
-:   Users added to IBM Software Hub with direct access to the User, Data steward, or Administrator role can access {{site.data.keyword.wxbia_short}} and complete setup without being invited to the {{site.data.keyword.wxbia_short}} community. 
-  
-:   Removing such users from the {{site.data.keyword.wxbia_short}} community might also prevent them from accessing IBM Software Hub.
+  Workaround:
 
-:   Workaround: 
+  A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=upgrading-post-upgrade-setup).
 
-:   Administrators must verify that users are added to the {{site.data.keyword.wxbia_short}} community and ensure continued access to IBM Software Hub after removal.
+- **User permission level misalignment**
 
-Administrators can access all projects on Data and Metrics, regardless of permissions
-  
-:   Applies to: 5.2.0 - 5.2.2; Fixed: 5.3.0
+  Applies to: 5.2.0 and later
 
-:   Administrators in watsonx BI can view all projects in the cluster on the **Data and Metrics** page, including those that they don't have access to. Creating metrics in inaccessible projects results in an error.
-
-:   Workaround:
-
-:   Administrators can view the projects that they explicitly have access to under **Navigation menu > Projects**.  
-
-User permission level misalignment
-
-:   Applies to: 5.2.0 and later
-
-:   Users might have editor-level permissions at the Platform level but only read-only access in Projects. This misalignment allows users with Viewer role to modify project assets via the Platform user interface.
+  Users can be assigned editor-level permissions at the Platform level, while retaining read-only access within individual Projects. There is a known issue affecting user permission configurations across Platform and Project levels. This might lead to an unintended misalignment, where users invited to a Project with read-only permissions (Viewer role) can still modify project assets such as database connection details via Platform user interface.
 
 ## Links to documentation
 {: #ki_docs}
 
-Help links are not working
+- **Help links are not working**
 
-:   Applies to: 5.2.0 and later
+  Applies to: 5.2.0 and later
 
-:   The main **Help** link and the **Documentation** link in the **Navigation menu** do not lead to product documentation.
+  The main **Help** link and the **Documentation** link in the **Navigation menu** do not lead to product documentation.
 
-:   Workaround: 
+  Workaround:
 
-:   Users can get product help through the following links
+  Users can get product help through the following links
 
-:   - [Product documentation](https://cloud.ibm.com/docs/watsonx-bi) in IBM Cloud Docs
+   - [Product documentation](https://cloud.ibm.com/docs/watsonx-bi) in IBM Cloud Docs
   
-:   - Documentation for [{{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2](https://www.ibm.com/docs/software-hub/5.2.x?topic=services-watsonx-bi)
+   - Documentation for [{{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2](https://www.ibm.com/docs/software-hub/5.2.x?topic=services-watsonx-bi)
+   - [Installing watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=services-installing-watsonx-bi)
 
-
-
-
-
-
-
+   - [watsonx BI product documentation](https://cloud.ibm.com/docs/watsonx-bi)
 
 
 ## Limitations
 {: #current_limitations}
 
-Response feedback is not supported in watsonx BI on IBM Software Hub
+- **Response feedback is not supported in watsonx BI on IBM Software Hub**
 
-:   This feedback feature is only available in watsonx BI as a Service.
+  This feedback feature is only available in watsonx BI as a Service.
 
-All watsonx.data Premium assets must go through the watsonx.data metric creation flow
+- **All watsonx.data Premium assets must go through the watsonx.data metric creation flow**
 
-:   Metadata enrichment in watsonx.data Premium does not prepare assets for use in watsonx BI. To use watsonx.data Premium assets in watsonx BI, you must go through the watsonx BI metric creation flow. 
+  Metadata enrichment in watsonx.data Premium does not prepare assets for use in watsonx BI. To use watsonx.data Premium assets in watsonx BI, you must go through the watsonx BI metric creation flow. 
 
-:  If you import a project from the watsonx.data experience, any metrics in this project cannot be used with Business Intelligence tools.
+  If you import a project from the watsonx.data experience, any metrics in this project cannot be used with Business Intelligence tools.

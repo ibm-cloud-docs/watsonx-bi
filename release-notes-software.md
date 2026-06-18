@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-05-14"
+lastupdated: "2026-06-18"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -21,6 +21,44 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 17 June 2026
+{: #subcollection-jun1726}
+{: release-note}
+
+**AWS Databricks connector**
+
+: You can now connect to data in AWS Databricks to create metrics and ask questions in watsonx BI.
+
+: For more information, see [AWS Databricks connection](https://cloud.ibm.com/docs/watsonx-bi?topic=watsonx-bi-aws_databricks){: external}.
+
+**Microsoft Azure Databricks connnector**
+
+: You can now connect to data in Microsoft Azure Databricks to create metrics and ask questions in watsonx BI.
+
+: For more information, see [Microsoft Azure Databricks connection](https://cloud.ibm.com/docs/watsonx-bi?topic=watsonx-bi-azure_databricks){: external}.
+
+**Ask questions that use multiple assets**
+
+: You can now ask natural‑language questions that use multiple data assets in a single query. In earlier versions, watsonx BI selected one best‑fit asset to answer a question. With multi‑asset queries, watsonx BI can retrieve data from one asset, use that result to build a new query, and return a combined answer. With this approach, you can ask multi‑step questions such as questions about comparisons and rank‑based filters.
+
+: For example, you can ask:
+
+  - For the product with the most revenue, how many returns did it have?
+
+  - What is the return count for the top 10 SKUs by revenue in 2025?
+
+: Watsonx BI automatically determines which assets are required, issues independent queries, and generates a combined answer. The multi-asset query capability works when chain-of-thought reasoning is enabled in watsonx BI and all referenced assets are stored in the same container, such as a project or catalog. 
+
+: For more information, see [Asking questions across multiple data assets](https://cloud.ibm.com/docs/watsonx-bi?topic=watsonx-bi-multiasset_queries){: external}.
+
+**Chain of thought reasoning**
+
+: Chain of thought (CoT) reasoning is now available with OpenAI gpt-oss-120b. When you enable CoT, you can see step-by-step reasoning for complex or multi-part questions. which provides structured answers and visibility into how queries are built. Reasoning might include chosen data sources, intermediate calculations, and generated SQL.
+
+: Administrators can choose OpenAI gpt-oss-120b with CoT from the **Configuration and settings > Model settings** page.
+
+: For more information, see [Chain of thought reasoning](https://cloud.ibm.com/docs/watsonx-bi?topic=watsonx-bi-choose_llm){: external}.
 
 ## 22 April 2026
 {: #subcollection-apr2226}
