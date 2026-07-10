@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-07-10"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -42,7 +42,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
   Clear the filters and then select the watsonx BI connector.
 
   When you clear the filter, you see other connectors that are available on IBM® Software Hub, including those that you cannot use with watsonx BI.
-{: note}
+  {: note}
 
 - **The Connect to data option in the watsonx.data™ experience does not filter for watsonx BI connectors**
 
@@ -206,7 +206,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 
   Workaround:
 
-  A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=upgrading-post-upgrade-setup).
+  A user with the role of Business Intelligence Administrator must add users by completing the [Post-upgrade setup for watsonx BI](https://www.ibm.com/docs/en/software-hub/5.4.x?topic=upgrading-post-upgrade-setup).
 
 - **User permission level misalignment**
 
@@ -230,7 +230,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
    - [Product documentation](https://cloud.ibm.com/docs/watsonx-bi) in IBM Cloud Docs
   
    - Documentation for [{{site.data.keyword.wxbia_short}} on IBM Software Hub 5.2](https://www.ibm.com/docs/software-hub/5.2.x?topic=services-watsonx-bi)
-   - [Installing watsonx BI](https://www.ibm.com/docs/software-hub/latest?topic=services-installing-watsonx-bi)
+   - [Installing watsonx BI](https://www.ibm.com/docs/en/software-hub/5.4.x?topic=bi-installing)
 
    - [watsonx BI product documentation](https://cloud.ibm.com/docs/watsonx-bi)
 

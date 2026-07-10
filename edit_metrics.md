@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-02-13"
+  years: 2025, 2026
+lastupdated: "2026-07-10"
 
 keywords: edit metric
 subcollection: watsonx-bi
@@ -10,16 +10,8 @@ subcollection: watsonx-bi
 
 ---
 
-{:codeblock: .codeblock}
-{:note: .note}
-{:pre: .pre}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:video: .video}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Editing metrics
 {: #edit_metrics}

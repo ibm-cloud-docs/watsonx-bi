@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: modeling, new tables, add tables, modeling
 subcollection: watsonx-bi
@@ -52,6 +52,9 @@ In the following steps, you will:
 9. Click **Reimport metadata** to refresh the schema and bring in the new tables from the source.
 
 After metadata import completes successfully, you can see the new data assets on the **Projects > Assets** tab. 
+
+If you use watsonx BI enrichment to enrich data, skip to Step 3. Watsonx BI automatically re-runs enrichment after you reimport metadata. 
+{: important}
 
 ## Step 2: Re-run metadata enrichment on the new tables
 {: #rerun_mde_table}

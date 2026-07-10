@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: choose llm, large language model, foundation model, AI model
 subcollection: watsonx-bi
@@ -72,9 +72,9 @@ OpenAI gpt-oss-120b with Chain of thought [Cloud]{: tag-blue}
 ## Changing the LLM 
 {: #change_llm}
 
-As an Administrator, you can change the LLM in watsonx BI on Software Hub from **Navigation menu > Configuration and settings**.
+As an Administrator, you can change the LLM in watsonx BI on IBM Software Hub from **Navigation menu > Configuration and settings**.
 
-When you change the model, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account that has access to {{site.data.keyword.wxbia_short}}.
+When you change the model, the change applies at the account level and to new conversations or queries. This means that the change applies to everyone that is a part of the account with access to {{site.data.keyword.wxbia_short}}.
 
 Users can see the updated LLM name in the AI icon in **Conversations**. Additionally, users can see the model that is being used in the query generation step under **AI steps** when they ask their next question or start a new conversation.
 

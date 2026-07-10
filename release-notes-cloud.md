@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-12"
+lastupdated: "2026-07-10"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -25,6 +25,43 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: #shortdesc}
 
 
+## 9 July 2026
+{: #subcollection-jul0926}
+{: release-note}
+
+
+Availability of native metadata enrichment in watsonx BI
+
+:  Watsonx BI as a Service now includes built-in metadata enrichment. The new watsonx BI native enrichment service uses generative AI to automatically add business context, semantic meaning, and descriptions to your data. Enriched metadata improves data discovery and helps deliver more accurate results. 
+
+:  This capability removes dependency on IBM watsonx.data intelligence for metadata enrichment.
+
+:  If your Cloud account includes an instance of watsonx.data intelligence, watsonx.data intelligence is used as the default enrichment provider. However, Administrators can choose between **watsonx BI enrichment** and **watsonx.data intelligence enrichment** for users in the account. 
+
+:  - IBM watsonx BI enrichment - A native, AI-powered enrichment service that requires minimal setup and does not depend on governance artifacts such as business terms and categories.
+
+:  - IBM watsonx.data intelligence enrichment – Governance-focused enrichment that supports classification, business terms, categories, and data classes.
+
+:  For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.
+
+IBM watsonx.data intelligence is now optional for watsonx BI as a Service
+
+:  IBM watsonx.data intelligence is now optional for watsonx BI. Previously, watsonx.data intelligence was a required dependency for metadata enrichment. 
+
+:  Watsonx BI no longer requires IBM watsonx.data intelligence to enrich metadata. Watsonx BI as a Service now includes built-in metadata enrichment that uses generative AI to automatically generate business context, semantic meaning, and descriptions for your data.
+
+:  If you have an instance of watsonx.data intelligence in your Cloud account, watsonx.data intelligence is used as the default enrichment provider. Administrators can also choose between **watsonx BI enrichment** and **watsonx.data intelligence enrichment** from **Configurations and settings**.  
+
+:  IBM watsonx.data intelligence continues to be required for watsonx BI deployments on IBM Software Hub.
+
+:  For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.
+
+
+Microsoft Azure Synapse Analytics available as a connector
+
+:   You can now connect to data in Microsoft Azure Synapse Analytics to create metrics and ask questions in watsonx BI.
+
+:   For more information, see [Microsoft Azure Synapse Analytics connection](/docs/watsonx-bi?topic=watsonx-bi-azure_synapse){: external}. 
 
 
 ## 12 June 2026
@@ -58,7 +95,7 @@ Improved response handling for no data and no asset scenarios
 
 :  When no SQL can be generated because the **required data does not exist**, watsonx BI now specifies which part of the question cannot be answered. It can also suggest a relevant alternative question or exploration path, helping users move forward without needing to contact support. 
 
-:  For example, the question, *How many returns were made at the Phoenix call center?* now returns a clear, informative response instead of an error, *I'm sorry but the data you're looking at doesn't contain any information about product returns <....>. Would you like to explore how many total calls were handled at the Phoneix call center during a specific time period?*. You can reply *Yes* to run the suggested question.
+:  For example, the question, *How many returns were made at the Phoenix call center?* now returns a clear, informative response instead of an error, *I'm sorry but the data you're looking at doesn't contain any information about product returns. Would you like to explore how many total calls were handled at the Phoneix call center during a specific time period?*. You can reply *Yes* to run the suggested question.
 
 ## 28 May 2026
 {: #subcollection-may2826}

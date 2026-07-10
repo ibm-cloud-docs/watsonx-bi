@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-06-23"
 
 keywords: try metrics
 subcollection: watsonx-bi
@@ -12,7 +12,7 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Try metrics 
+# Trying metrics in a conversation
 {: #try_metrics}
 
 You can try asking questions about a metric that you generated automatically or built manually to ensure that it can answer questions about your data. 

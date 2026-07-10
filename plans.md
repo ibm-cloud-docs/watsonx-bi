@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -11,8 +11,9 @@ subcollection: watsonx-bi
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.wxbia_full_notm}} service plans
+# {{site.data.keyword.wxbia_full_notm}} service plans 
 {: #plans}
+
 
 When you provision {{site.data.keyword.wxbia_short}}, you can choose between the Trial, Add-on for Cognos Analytics, or the Premium plan. {: #shortdesc}
 
@@ -37,11 +38,12 @@ Try {{site.data.keyword.wxbia_short}}'s Premium features for 30 days at no cost 
 **Add-on for Cognos Analytics:**
 
 {{site.data.keyword.wxbia_short_cap}} as a Service Add-on for Cognos Analytics offers a cloud-based business intelligence solution. 
+
 This pay-per-use service includes 5 active users and includes 1000 Records or Assets per month.
 
 Assets are determined based on the artifacts in the business glossary and the number of selected assets in the projects and catalogs.
 
-In addition to the entitlements required for the Offering, Licensee must also be entitled to one of the following Named Programs:
+In addition to the entitlements required for the offering, Licensee must also be entitled to one of the following named programs:
 
 - IBM Cognos Analytics
 - Business Analytics Enterprise

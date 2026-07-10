@@ -2,9 +2,7 @@
 
 copyright:
   years: 2025, 2026
-
-lastupdated: "2026-05-15"
-
+lastupdated: "2026-07-10"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -20,14 +18,13 @@ subcollection: watsonx-bi
 
 The following issues and limitations apply to {{site.data.keyword.wxbia_full}} as a Service.  {: #shortdesc}
 
-- **Microsoft Azure Synapse Analytics is listed as a supported connector**
+**Relationships are not automatically generated in the semantic model when using Microsoft Azure Synapse as a connector**
 
-  The Microsoft Azure Synapse Analytics connector appears in the watsonx BI supported connector list, even though it is not currently supported.
+  Relationships are not generated automatically in the semantic data model after enrichment when you use Microsoft Azure Synapse as a connector to connect to data. This seems to happen when there is incorrect usage for a foreign key candidate column. 
 
   Workaround:
  
-  Use another supported connector to connect to your data. 
-
+  You can set relationships manually in the **Advanced mode**. For more information, refer to [Relationships](/docs/watsonx-bi?topic=watsonx-bi-relationships#create_rel_manual){: external}. 
 
 - **IBM Db2 on-premise connection does not display in the watsonx BI supported connector list**
 
@@ -94,4 +91,3 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} a
 {: #limitations_cloud}
 
 - Import and export project does not support local files (.csv, .xls, .xlsx, or .tsv)
-

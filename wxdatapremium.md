@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-02-10"
+lastupdated: "2026-07-10"
 
 keywords: watsonx.data premium
 subcollection: watsonx-bi
@@ -88,10 +88,6 @@ To create metrics within the Business Intelligence context, follow these steps:
 1. Metadata enrichment runs automatically.
 
   Metadata enrichment is a critical step in {{site.data.keyword.wxbia_short}}, which uses AI to transform raw data into a semantically rich dataset by adding business terms and descriptions. These enriched assets form the semantic data model, providing the business context that drives insights across {{site.data.keyword.wxbia_short}}.
- 
-1. [Review metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external} to ensure that the metadata applied is meaningful and accurate. Enrichment results open in a new tab. Changes save automatically.
-
-1. Return to the **Metadata enrichment** page in watsonx BI and click **Next**. 
 
 1. On the **Metrics overview** page, you can create metrics by:
 
@@ -148,7 +144,7 @@ You can also connect to data from watsonx.data and then create metrics in watson
 
 1. Select the tables and click **Next**.
 
-1. Metadata enrichment runs automatically. [Review metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external} to ensure that the metadata applied is meaningful and accurate. 
+1. Metadata enrichment runs automatically. 
 
 1. Return to the **Metadata enrichment** page in watsonx BI and click **Next**. 
 

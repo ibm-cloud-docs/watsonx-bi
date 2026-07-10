@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: review mde, review metadata enrichment, review enrichment
 subcollection: watsonx-bi
@@ -11,16 +11,43 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Reviewing metadata enrichment for watsonx BI
+# Reviewing metadata enrichment 
 {: #review}
 
-After metadata enrichment completes, you can review the enrichment results to make sure the metadata that is applied is meaningful and accurate. {: #shortdesc}
+You can review enrichment results to make sure the metadata that is applied is meaningful and accurate.  {: #shortdesc}
+
+You can review enrichment, if you use:
+
+- Watsonx.data intelligence for enrichment in watsonx BI as a Service
+
+- Watsonx BI on IBM Software Hub
+
+## Accessing the review enrichment page
+{: #access_review}
+
+You can open the **Review enriched data** page from the:
+
+1. Metadata enrichment page during metric creation 
+
+  This option is available only while you are still in the metadata enrichment workflow. After you move forward to the **Metrics overview** page, you can no longer access the review page from here.
+
+2. Project view 
+
+  a. Go to **Navigation menu > View all projects**.
+
+  b. Select the project that contains the enriched asset. 
+  
+  c. Open the **Assets** page and locate the Metadata enrichment asset.
+
+If you are using watsonx BI enrichment in watsonx BI as a Service, a page to review enrichment results is not currently available.
+{: important}
+
+## About the review enrichment page
+{: #about_review}
 
 When you open the enrichment results, you can view the enriched data at both the asset level and column level. A side panel also provides a summary of relevant information about the metadata enrichment.
 
 The following indicators are used in the results tables and the details panels:
-
-
 
 - A purple square for automatically assigned display names and for AI-generated descriptions that were automatically assigned
 
@@ -38,8 +65,6 @@ By default, all of the information is shown on the tab but you can customize the
 {: tip}
 
 - Asset name (for relational data, also the table type is shown)
-
-
 
 - Display name - You can edit the names and accept suggested names.
 

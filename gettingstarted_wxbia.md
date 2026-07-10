@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025, 2036
-lastupdated: "2026-03-10"
+  years: 2025, 2026
+lastupdated: "2026-07-10"
 
 keywords: conversations, getting started
 subcollection: watsonx-bi
@@ -23,7 +23,7 @@ The **Conversations** page is where you can ask questions to get deeper insights
 
 {{site.data.keyword.wxbia_full_notm}} keeps an eye on the data that matters to you. 
 
-Metrics that are based on your business role and assigned to you by your organization are called **Mandatory metrics**. These metrics, along with any metrics that you pin from your conversations, display under **Key metrics** in the **Conversations** tab. 
+Metrics are based on your business role and are assigned to you by your organization. These metrics, along with any metrics that you pin from your conversations, display under **Key metrics** in the **Conversations** tab. 
 
 A metric in the **Key metrics** panel is a visual representation of a metric and displays how the data is trending. You can see which metrics have changed and by how much at a glance. 
 
@@ -31,7 +31,7 @@ The **Key metrics** panel is scrollable and can be resized, making it easy to vi
 
 Select a metric to view more details about your data. 
 
-You can interact with a metric visualization to see data points and values. If{{site.data.keyword.wxbia_short}} recognizes that there are other chart types that might be relevant for your data, the **Options** icon in the visualization is enabled. You can click **Options** to select a different chart type.
+You can interact with a metric visualization to see data points and values. If {{site.data.keyword.wxbia_short}} recognizes that there are other chart types that might be relevant for your data, the **Options** icon in the visualization is enabled. You can click **Options** to select a different chart type.
 
 Click **Ask a question** to ask questions about the metric or changes in the data. If you’re unsure about what to ask, click a suggested question. 
 

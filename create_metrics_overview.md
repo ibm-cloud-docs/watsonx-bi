@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-28"
+lastupdated: "2026-07-10"
 
 keywords: overview metrics, create metrics
 subcollection: watsonx-bi
@@ -41,7 +41,9 @@ The process to create metrics is the same for both Analytics consumers and Data 
     
    No changes are made to your original data during enrichment. 
 
-6. You can review the enriched data and make necessary changes. The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
+6. If your account is using watsonx.data intelligence for metadata enrichment, an option to review the enriched data is available on the **Metadata enrichment** page. You can review the results and make necessary changes. The option to review enrichment does not display if you are using watsonx BI enrichment.
+
+   The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
 
    You don't need to re-run enrichment after making changes to the enrichment results. 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -29,89 +29,31 @@ subcollection: watsonx-bi
 
 The quality of this data determines the quality of the generated responses. 
 
-You can improve the quality of watsonx BI’s answers and teach it your business language with the following three methods: 
-
-1. Adding your business glossary to watsonx BI’s business terms 
-
-2. Making sure each asset and column has a descriptive, meaningful, and accurate display name and description in the metadata enrichment
-
-3. Adding context in the semantic data model to help query generation 
-
-Let’s explore each one in detail.
+You can improve the quality of watsonx BI’s answers and teach it your business language by making sure each asset and column has a descriptive, meaningful, and accurate display name and description. You can also add context in the semantic data model to help query generation.
 
 
-## Adding your business glossary in watsonx BI 
-{: #add_glossary}
 
-Watsonx BI comes with predefined business terms, which **Cloud account owners** and **Administrators** can find under **Navigation Menu > Governance > Business terms**.
 
-As a Cloud account owner or Administrator, you can add your organization’s business glossary to the existing business terms in watsonx BI. 
-
-![Business terms page](images/business_terms.png)
-
-These predefined business terms and any glossary concepts that you upload are one of the components that are used during metadata enrichment to augment technical metadata with more descriptive and meaningful names.
-
-Consider adding your organization’s business glossary immediately after you set up and initialize watsonx BI so that watsonx BI can use these terms when the source data undergoes metadata enrichment.
-{: tip}
-
-### Steps to add new business terms
-{: #steps_business_terms}
-
-You can add business terms one by one or upload a CSV file. 
-
-In order for watsonx BI to use the business terms that you added, the source data must undergo metadata enrichment. 
-{: important}
-
-To add a business term:
-
-1.	Go to **Navigation Menu > Governance > Business terms**.
-
-  ![Business terms in Navigation Menu](images/business_terms_nav.png)
-
-2.  Click **Add business term** and select **New business term**.
-
-  ![Adding a business term](images/business_term_page_add.png)
-
-3.	Enter the business term and related details. Ensure that **Business Analytics** is selected in the **Primary category** field.
-
- ![Business term definition and details](images/business_term_modal.png)
-
-4.	Click **Save as draft**. 
-
-5.	(Optional) On the **Overview** tab, you can add synonyms and define relationships with other business terms.
-
-  ![Additional business term details on the Overview tab](images/business_term_details.png)
-
-6.	Click **Publish**.
-
-To import business terms from a CSV file:
-
-1.	Go to **Navigation Menu > Governance > Business terms**, click **Add business term**, and select **Import from file**.
-
-2.	Upload the file and choose a method for merging imported and existing artifacts.
-
-3.	On the **Task inbox** page, review the imported business terms.
-
-4.	Click **Publish**.
 
 
 ## Providing accurate display names and descriptions in metadata enrichment
 {: #add_display_name}
 
-[Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} in watsonx BI uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level.
+[Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} in watsonx BI uses generative AI to understand your data on a deeper level. Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. 
 
-Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. 
+You can review the metadata enrichment results and make necessary changes to display names and descriptions if you use: 
 
-Metadata enrichment takes place during the [metric creation process](/docs/watsonx-bi?topic=watsonx-bi-data_analysts_overview){: external}. Each asset and column undergoes metadata enrichment during which metadata is expanded, business terms and classifications are suggested and assigned, descriptions are generated, and more. 
+- {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
+- Watsonx.data intelligence in watsonx BI as a Service for metadata enrichment 
 
-Metadata enrichment is used as a starting point to create and populate the semantic data model.
+A similar review page is not available in watsonx BI as a Service if you use using watsonx BI's native enrichment.
 {: important}
 
-After metadata enrichment completes, click **Review enriched data** to review the enrichment results: 
+The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
 
 ![Review enriched data](images/enrich_data.png)
 
-When you open the enrichment results, you can view the enriched data at both the asset level and column level. Here, you need to:
+Here, you need to:
 
 1. Review the enrichment results to ensure that each asset and column has a meaningful display name and description. 
 
@@ -123,14 +65,6 @@ If you edit the **Display name** or **Description** in the metadata enrichment, 
 {: important}
 
 
-
-To accept the suggested and assigned details for assets or columns: 
-
-1.	Go to the **Assets** or **Columns** tab and select one or more items. To select all assets or columns, click the checkbox next to **Name**.
-
-2.	Click **More** and choose the type of suggestion that you want to accept.
-
-![Columns tab review shows the suggestions that can be accepted](images/column_review.png)
 
 
 ## Adding context in the semantic data model to help query generation 

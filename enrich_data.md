@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-28"
+lastupdated: "2026-07-10"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -9,129 +9,149 @@ subcollection: watsonx-bi
 
 ---
 
-{:codeblock: .codeblock}
-{:note: .note}
-{:pre: .pre}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:video: .video}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Metadata enrichment
+
+# Enriching data in watsonx BI
 {: #enrich}
 
-Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI with IBM watsonx.data intelligence to understand your data on a deeper level. {: #shortdesc}
+Metadata enrichment in {{site.data.keyword.wxbia_full}} uses generative AI to automatically add business context, descriptions, and semantic meaning to your data. Enriched metadata helps you understand, discover, and query data more effectively.{: #shortdesc}
  
-Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. Enrichment adds additional instructions to your data, making it more insightful for the users.
+Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of business context and instructions to the data, making it more insightful for users. It also generates context-aware descriptions for tables and columns, which consider the surrounding columns and the context of the table. 
 
-IBM watsonx.data intelligence uses the pre-defined governance artifacts and the domain-specific glossary concepts that you upload to augment technical metadata with more descriptive and meaningful names.
+Before you can ask questions about your data, the data must undergo metadata enrichment. Watsonx BI uses the following enriched metadata to answer questions. 
 
-Metadata enrichment also generates context-aware descriptions for tables and columns, which consider the surrounding columns and the context of the table. 
+- Asset name 
+- Asset description 
+- Column name 
+- Column description 
+- Column identifier 
+- Column data type, usage, aggregate, and nullable fields 
+- Sampled columns 
 
-To ask questions about your data in {{site.data.keyword.wxbia_short}}, your data first needs to be enriched. You can enrich data during the [metric creation](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external} process. 
+While most of these might already be available in your data, asset and column names and descriptions are generated during the metadata enrichment process. For example, a column name might be abbreviated in your data. Enrichment can improve this by generating a meaningful name and description.
 
-Metadata enrichment does not change your original data. 
+ Before enrichment | After enrichment|
+ |-------|-------------|
+ |Column name: cust_id <br><br>Description: none | Column name: Customer ID <br><br>Description: Unique identifier for each customer in the CRM system|
+ {: caption="Enrichment example" caption-side="bottom"}
+
+Watsonx BI automatically enriches your data during the [metric creation](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external} process. Metadata enrichment does not change your original data. 
 {: note}
 
-## Metadata enrichment scope
-{: #enrich_settings}
+## Supported metadata enrichment providers
+{: #supported_mde_providers}
 
-Metadata enrichment occurs at two levels in {{site.data.keyword.wxbia_short}} the project and data asset levels. Any metrics that you build or generate are also enriched. 
+Administrators can select between the following metadata enrichment providers in watsonx BI. The selection applies to all users in the account.
 
-Metadata enrichment settings for all projects, data assets, and metrics in watsonx BI are configured by default, which help ensure consistent use of the enrichment options.
+IBM watsonx BI enrichment
 
-The categories in the governance framework that contain business terms, data classes, and classifications are applied to the data during enrichment.
+:   - Available in {{site.data.keyword.wxbia_short}} as a Service only
+  
+:   - Runs natively in {{site.data.keyword.wxbia_short}} 
 
+:   - Optimized for faster discovery, enhanced semantic understanding, and accurate question answering
 
+:   - Faster enrichment through sampling-based analysis
+  
+:   - Foundation for automatic metric generation
+  
+:   - Uses generative AI to add business context directly (no dependency on governance artifacts such as categories and business terms)
 
+:  Use watsonx BI enrichment when you need fast setup, minimal configuration, and AI-driven insights without governance dependencies.
 
+When watsonx BI enrichment is selected, governance artifacts such as categories and business terms are not applied during enrichment. Watsonx BI enrichment uses generative AI to enrich metadata and add business context directly, simplifying the process without relying on governance artifacts.
+  
 
-### Enrichment settings for projects
-{: #mde_projects}
+IBM watsonx.data intelligence enrichment
 
-Thresholds are automatically configured in {{site.data.keyword.wxbia_short}} for the following settings. You don't need to change these settings to run either type of metadata enrichment. 
+:   - Available in watsonx BI as a Service and watsonx BI on IBM Software Hub
 
-- Profiling data
+:   - Requires watsonx.data intelligence 
 
-- Expanding metadata
+:   - Provides governance, profiling, and classification
 
-- Term and classification assignment
+:   - Uses custom-defined governance artifacts such as business terms, categories, and data classes
 
-- Advanced profiling settings
+:   - Used by default if you have watsonx.data intelligence provisioned in your account 
 
-- Basic quality analysis
+:  Use watsonx.data intelligence enrichment when you need enterprise data governance and classification, and deep profiling through full data analysis, which can take longer.
 
-- Data quality output
+:  For more information, refer to watsonx.data intelligence documentation on [enriching data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/metadata-enrichment.html?context=df&audience=wdp).
 
-- Key relationships
+When watsonx.data intelligence is not available in the IBM Cloud account, watsonx BI will use its built-in enrichment for metadata enrichment. Enrichment provides governance, profiling, and classification capabilities. When watsonx.data intelligence enrichment is selected, governance artifacts such as categories and business terms are used to augment technical metadata with descriptive and meaningful names. 
 
-You can view the default settings on the project **Manage > Tools > Metadata enrichment** page.
+### Comparing enrichment capabilities
+{: #diff_enrichment}
 
-For more information, see [Metadata enrichment default settings](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/enrichment-settings.html?context=df&audience=wdp). 
+The following table compares the enrichment capability of both enrichment providers.
 
+| Capability | watsonx.data intelligence |  watsonx BI |
+|-------|-------------|-----------------------|
+| Profiling and sampling data | Creates a full data profile by querying data. Performs basic analysis such as row count, null count, and unique values. |Samples data and performs basic analysis such as row count, null count, and unique values.|
+| Statistical analysis | Includes advanced univariate and bivariate statistics in addition to basic profiling.| Includes univariate and bivariate statistics.|
+| Generating names and descriptions| Generates context-aware names and descriptions for columns and tables.|  Generates context-aware names and descriptions for columns and tables.|
+|Metadata classification| Performs data class analysis, including governed data classes and BI-supplied classes such as temporal and geographic.| Performs its own data analysis focused on temporal and geographic classification.|
+| Vector embeddings | Generates vector embeddings from data and metadata to improve question answering and data discovery.| Generates vector embeddings from data and metadata to improve question answering and data discovery.|
+| Indexing data | Adds data to global search to make it discoverable across the platform.| Adds data to global search to make it discoverable across the platform.| 
+{: caption="Comparing metadata enrichment" caption-side="bottom"}
 
-### Enrichment objectives for data assets and metrics
-{: #mde_assets}
+### Choosing an enrichment provider
+{: #choose_mde}
 
-The default metadata enrichment objectives for data assets and metrics include:
+As an administrator, you can select the enrichment provider from the **Configuration and settings** page based your organization's requirements. 
 
-#### Profile data
-{: #profile}
+You might not need to choose an enrichment provider. If watsonx.data intelligence is not available in your environment, watsonx BI enrichment is used automatically.
+{: note}
 
-Profiling data provides basic statistics about the asset content, assigns and suggests data classes, and suggests primary keys. This type of profiling makes some approximations for certain metrics like frequency distribution and uniqueness. 
+To select the provider:
 
-Data classes describe the contents of the data in the column. For example, city, account number, or credit card number are data classes. Data classes can be used to mask data with data protection rules or to restrict access to data assets with policies. In addition, they can contribute to term assignments if a corresponding data class to business term link exists.
+1. Go to **Configuration and settings > AI configuration**.
 
-The confidence score for a data class to be assigned or suggested must at least equal the default threshold that is set in {{site.data.keyword.wxbia_short}}.
+1. Select the enrichment provider. 
 
-Single-column primary keys are suggested based on profiling statistics. If primary key and foreign key constraints are already defined in your data and this information is included in the metadata import, these keys are automatically assigned.
+After you select an option, future enrichments for all users in the account run with the selected provider. 
 
-#### Expand metadata
-{: #expand}
+Changing the enrichment selection affects future enrichments only. Existing enriched assets do not need to be enriched again.
+{: note}
 
-Expanding metadata semantically enriches the asset and column metadata with fuzzy matching and generative AI. The names that exist in the source are expanded based on the collected metadata and a predefined glossary by using fuzzy matching. 
+## Limitations
+{: #limitations_mde}
 
-Generative AI provides descriptions based on the expanded names, surrounding columns, and the context of the data assets. AI-generated descriptions help to understand the content especially when column or data asset descriptions are missing in the data source. The assignment and suggestion thresholds are defined in the default enrichment settings.
-      
-You can also create custom abbreviations, by uploading CSV files or adding them manually when you create business terms, to extend the business vocabulary used in **Expand metadata**. 
+**User interface differences**
 
-#### Assign terms and classifications
-{: #assigned_terms}
+- User interface differences in watsonx BI enrichment:
 
-This scope assigns and suggests business terms and classifications for tables and columns, which are used as a starting point to create the semantic data model. 
+  - No page to review the enrichment results or view the progress of the enrichment job.
 
-Assigned and suggested business terms have a confidence score attached to them. Terms are assigned or suggested when the confidence level exceeds the default minimum confidence level thresholds for a term to be assigned or suggested. The default setting for assignment threshold is 60% and suggestion threshold is 50%. 
+  - Watsonx BI enrichment does not create a metadata enrichment asset. This means that you cannot access watsonx BI enrichment results or the asset.
 
+**Switching from watsonx.data intelligence to watsonx BI enrichment**
 
+- Using enriched assets after deprovisioning watsonx.data intelligence
 
+  When watsonx.data intelligence is deprovisioned, you cannot run enrichment again on previously enriched assets with it. You can continue to use those assets or re-enrich them with watsonx BI enrichment.
 
+- Using imported projects 
 
-## Steps in metadata enrichment
-{: #enrich_steps}
+  Imported projects that were enriched with watsonx.data intelligence are not compatible with environments that use the built-in watsonx BI enrichment. If your account now uses watsonx BI enrichment, assets enriched with watsonx.data intelligence are no longer supported. To continue using these assets, you must use watsonx.data intelligence for enrichment.
 
-The following steps take place during metadata enrichment:
+- Using samples 
 
-1. Metadata import 
+  If you have samples that were installed prior to using watsonx BI enrichment, and you make changes to the semantic data model or metrics in the samples, you need to re-export metrics to use them in conversations.
 
-   Metadata is imported from the data tables that you added to the semantic data model and metadata import (MDI) assets are created.
+**Re-enriching data using watsonx BI enrichment**
 
-2. Metadata enrichment 
+If you are using watsonx BI enrichment, to re-run enrichment, you have to manually re-import metadata. 
 
-   During metadata enrichment, a Metadata enrichment (MDE) asset is created based on the following default objective:  
+1. Go to **Navigation Menu > Projects > View all** projects and open the project with the data that needs to be re-enriched.
 
-   - Profiling of data 
+1. Go to the **Assets** tab and under **Data access**, click **Metadata import**.
 
-   - Assigning business terms and classifications 
+1. Open the metadata import asset associated with the semantic data model and click **Reimport metadata**.
 
-   - Expanding metadata 
+After metadata import is complete, enrichment starts automatically.
 
-   - Creating relationships between tables 
+**Updating a semantic data model after switching to watsonx BI enrichment**
 
-3. Processing of metadata enrichment 
-
-   During this step, {{site.data.keyword.wxbia_short}} generates and stores vector embeddings for sample values captured during enrichment. These sample values are then used for search and matching filter values in conversations.
-   
-For more information, refer to the watsonx.data intelligence documentation on [enriching data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/metadata-enrichment.html?context=df&audience=wdp). 
+To update a semantic data model with new tables or columns when using watsonx BI enrichment, you need to reimport metadata. For more information, see [Adding data to an existing semantic data model](/docs/watsonx-bi?group=adding-data-to-an-existing-semantic-data-model){: external}.

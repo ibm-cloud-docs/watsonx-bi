@@ -46,7 +46,6 @@ toc:
               - iam-access.md
               - roles_permissions.md
               - plans.md
-              - data-intelligence-plans.md
               - cos.md
               - deprovisioning.md
           - configuration_settings.md
@@ -80,21 +79,9 @@ toc:
           - import_export_project.md
           - projects_delete.md
       - topicgroup:
-          label: Preparing data for AI
-          topics:
-          - governance.md
-          - topicgroup:
-              label: Categories
-              topics:
-              - categories.md
-              - managing_category_collab.md
-          - business_terms.md
-          - classifications.md
-          - data_classes.md
-          - reference_data.md
-      - topicgroup:
           label: Creating metrics
           topics:
+          - create_metrics_keyconcepts.md
           - create_metrics_overview.md
           - topicgroup:
               label: Selecting data
@@ -104,7 +91,10 @@ toc:
           - topicgroup:
               label: Enriching data with metadata
               topics:
+              - understanding_enrichment.md
               - enrich_data.md
+              - mde_scope.md
+              - di_governance.md
               - review_enrichment.md
               - monitor_enrichment_job.md
               - troubleshooting_enrichment.md
@@ -167,11 +157,6 @@ toc:
           - nonadmin_join_account.md
           - usecase_create_metrics.md
       - topicgroup:
-          label: Key concepts
-          topics:
-          - create_metrics_keyconcepts.md
-          - understanding_enrichment.md
-      - topicgroup:
           label: Best practices for working with AI
           topics:
           - modeling_best_practices.md
@@ -206,6 +191,7 @@ toc:
           - google_bigquery.md
           - aws_databricks.md
           - azure_databricks.md
+          - azure_synapse.md
           - db2.md
           - db2_z.md
           - db2_warehouse.md

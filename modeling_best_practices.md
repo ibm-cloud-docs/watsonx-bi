@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-05-14"
+  years: 2025, 2026
+lastupdated: "2026-07-10"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -50,14 +50,13 @@ when it generates query statements:
 
   - Time-based calculations and period comparisons 
  
-4. Operational Semantics 
+4. Operational semantics 
 
   - Default filters and scoping rules 
 
   - Required column combinations 
 
   - Business-specific terminology mappings 
-
 
 5. AI instructions 
 
@@ -79,24 +78,21 @@ Define a variety of metrics and ground answers in these standardized metric defi
 
 
 
-## Add business terms
-{: #tip_add_terms}
-
-{{site.data.keyword.wxbia_short_cap}} comes with predefined business terms. These business terms act as metadata to enrich data assets so that AI can better understand your data and provide accurate responses to your questions.
-
-If your organization's business terminology is different, **IBM Cloud account owners** and **Administrators** can consider adding business terms to provide more context to watsonx BI about their organization's data. For more information, see [Business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}.
-
-
 ## Use unique names for data assets
 {: #tip_unique_names}
 
 To avoid ambiguity and confusion, use unique and descriptive names for data assets, including metrics.
 
-
 ## Each asset and column needs a display name and description
 {: #tip_display_name}
 
-Review the metadata enrichment results in the metric creation process to help ensure that each Asset and Column has a meaningful and accurate AI-generated Display name and Description.
+You can review the metadata enrichment results and make necessary changes to display names and descriptions if: 
+
+- You use {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
+- You use watsonx.data intelligence in watsonx BI as a Service for metadata enrichment 
+
+A similar review page is not available in watsonx BI as a Service if you use using watsonx BI's native enrichment.
+{: important}
 
 You can also access the metadata enrichment from the Project asset tab by selecting the relevant metadata enrichment asset.
 
@@ -110,8 +106,7 @@ When you edit the **Display name** or **Description** in the metadata enrichment
 When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the pencil icon next to the suggestion and provide a meaningful name or description for that asset or column.
 
 Descriptions must be concise and reflect the purpose of the column. During query generation in a conversation, the AI uses both the identifier, name, and description (potentially with sampled data) to select the best columns to answer the question. Avoid repetitive descriptions, where every description includes the same text, especially when the repeated content is how users frequently ask questions.
-{: tip}
-
+{: tip} 
 
 ## Model data in the semantic model to help query generation
 {: #tip_model}
@@ -119,7 +114,7 @@ Descriptions must be concise and reflect the purpose of the column. During query
 ### Add clear column identifiers
 {: #tip_identifiers}
 
-To help the LLM understand the table schema correctly and easily, you need to ensure that the column identifiers are unique and clearly worded. 
+To help the LLM understand the table schema correctly and easily, make sure that the column identifiers are unique and clearly worded. 
 
 Identifiers identify objects and are used to generate SQL queries in expressions. 
 
@@ -139,7 +134,7 @@ To change the column identifier in a metric definition:
 
 3. Under the metric definition, select the column that you want to add the identifier to.
 
-4. Open its **Properties** tab, scroll to the **Identifier** field, and enter the value. 
+4. Open its **Properties** tab and enter the value in the **Identifier** field, 
 
    An identifier's first character must be a letter or an underscore. Subsequent characters can be letters, numbers, or underscores, without spaces.
    {: tip}
@@ -152,7 +147,7 @@ To change the column identifier in a metric definition:
 ### Add column labels and descriptions
 {: #tip_desc}
 
-Make sure that you add a label and description for metric columns in the semantic data model. The order of priority for the label and description when used in the conversation is as follows:
+Make sure that a meaningful label and description is available for metric columns in the semantic data model. The order of priority for the label and description when used in a conversation is as follows:
 
 1. User defined in the semantic data model
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-07-10"
 
 keywords: interface, using watsonx BI
 subcollection: watsonx-bi
@@ -32,11 +32,12 @@ The user interface of {{site.data.keyword.wxbia_short}} consists of the followin
 
 :   The **Metrics catalog** contains a collection of metrics that were created for you by a Data analyst. You can view metrics and their related visualizations here and pin the ones that interest you to your **Key metrics** area in Conversations. 
 
-![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](images/wxbi_conversations.png){: caption="{{site.data.keyword.wxbia_short_cap}}'s **Conversations** page with the open navigation panel showing **Data and Metrics** and **Metrics catalog**." caption-side="bottom"}
+![{{site.data.keyword.wxbia_short_cap}}'s user interface showing Conversations](images/wxbi_conversations.png)
+{: caption = "{{site.data.keyword.wxbia_short_cap}}'s Conversations page with the open navigation panel" caption-side = "bottom"}
 
 (4) Configuration and settings
 
-:   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 
+:   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, choose an enrichment provider, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 
 
 :   Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.{: note}
 
@@ -81,9 +82,6 @@ The **Data and Metrics** tab is the launching point for any task that is related
 - Access semantic data models 
 
 - Upload files 
-
-Upload file is available in watsonx BI as a Service only.
-{: note}
 
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 

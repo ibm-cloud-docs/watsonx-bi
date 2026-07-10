@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-04"
+lastupdated: "2026-07-10"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi
@@ -89,7 +89,7 @@ In {{site.data.keyword.wxbia_short}}, you work with assets in a project. You can
 | Semantic data model | Data| Contains the structure of data through its relationships and calculations. Metrics are defined in semantic data models.|
 | Connection| Data access| Contains the information to connect to a data source.|
 | Metdata import| Data access | Imports asset metadata from a connection. |
-| Metadata enrichment | Metadata enrichment| Enriches imported asset metadata.|
+| Metadata enrichment | Metadata enrichment| Enriches imported asset metadata. Only available if you use watsonx.data intelligence for enrichment.|
 | Visualizations | Visualizations | A chart that visually represents a metric.
 | Job| Job| Contains information about how to run the asset, including the environment definition, schedule, and notification options|
 {: caption="Assets in {{site.data.keyword.wxbia_short}}" caption-side="bottom"}
@@ -97,11 +97,9 @@ In {{site.data.keyword.wxbia_short}}, you work with assets in a project. You can
 ## Metadata enrichment
 {: #metadata_enrichment}
 
+After you select data during the metric creation flow, the data is automatically enriched with business context such as names, descriptions, and inferred relationships. Metadata enrichcment adds a semantic layer that helps AI understand context and query data more effectively.
 
-
-After you select data during the metric creation flow, the data is enriched with business context such as business terms, descriptions, and inferred relationships.
-
-This enrichment process adds a semantic layer that helps AI understand context, making your data easier to use when it generates answers or metrics.
+For more information, see [Understanding metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-concepts_enrichment){: external}.
 
 ## Semantic data model
 {: #semantic_model}

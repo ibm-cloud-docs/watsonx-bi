@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-05-14"
+  years: 2025, 2026
+lastupdated: "2026-07-10"
 
 keywords: monitor enrichment, enrichment error, job, log
 subcollection: watsonx-bi
@@ -12,27 +12,50 @@ subcollection: watsonx-bi
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Monitoring enrichment jobs
+# Monitoring enrichment jobs 
 {: #monitor_enrichment}
 
-You can check the details for any metadata enrichment runs or monitor an active job run by viewing the run metrics. {: #shortdesc}
+You can check the details for any metadata enrichment run or monitor an active job. {: #shortdesc}
 
-To view details of a metadata enrichment job that is running during the metric creation process:
+You can view enrichment job details, if you are using:
 
-1. Click the **View metadata import and enrichment jobs** button. A **Jobs** page opens in a new tab.
+- Watsonx.data intelligence for enrichment in watsonx BI as a Service
 
-2. Select the metadata enrichment job that you want to review.
+- Watsonx BI on IBM Software Hub 
 
-3. The **Job details** page shows the number of completed and failed runs, and the configured job schedule.
+If you use watsonx BI enrichment, a similar page to view metadata import and enrichment job details is not currently available.
+{: important} 
 
-4. Select a particular run and review the run details. The following run details are provided for a job run:
+## Accessing the enrichment job page
+{: #access_review}
 
-   - The job run status
-   - The duration, start, and end times
-   - Who started the run
-   - A link to the associated job
-   - A link to the associated metadata enrichment
-   - Basic information about the enrichment settings such as the selected enrichment options, number of categories to use for data class, term, and classification assignment, sampling method used, and algorithms that are used for term analysis and assignment
+You can view metadata import and enrichment jobs from the:
+
+1. Metadata enrichment page during metric creation 
+
+  Click the **View metadata import and enrichment jobs** button. A **Jobs** page opens in a new tab.
+
+  This option is available only while you are still in the metadata enrichment workflow. After you move forward to the **Metrics overview** step, you can no longer access the jobs page from here.
+
+2. Project view 
+
+  a. Go to **Navigation menu > View all projects**.
+
+  b. Select the project that contains the enriched asset. 
+  
+  c. Open the **Jobs** page and select the metadata enrichment job that you want to review.
+
+  d. Select a particular run and review the run details. 
+
+
+The following run details are provided for a job run:
+
+- The job run status
+- The duration, start, and end times
+- Who started the run
+- A link to the associated job
+- A link to the associated metadata enrichment
+- Basic information about the enrichment settings such as the selected enrichment options, number of categories to use for data class, term, and classification assignment, sampling method used, and algorithms that are used for term analysis and assignment
 
 Here, you can also pause and resume the job run. 
 
@@ -45,7 +68,7 @@ You can also access the details for the most recent metadata enrichment job that
 
 On the **Run metrics** tab in the job run details, you can monitor the progress of an active run or check the status information for a completed job run.
 
-The **Summary** section shows the overall progress of the enrichment:
+The **Summary** section shows the overall progress of the enrichment.
 
 - The total number of assets that were enriched.
 

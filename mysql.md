@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
-keywords: MySQL
+keywords: MySQL, connection, connector, create connection
 
 subcollection: watsonx-bi
 

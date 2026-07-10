@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-04-01"
+lastupdated: "2026-07-10"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -97,9 +97,10 @@ The following data sources are supported.
 - [IBM Netezza Performance Server](/docs/watsonx-bi?topic=watsonx-bi-netezza){: external} 
 - [IBM watsonx.data](/docs/watsonx-bi?topic=watsonx-bi-wxd){: external} 
 - [MariaDB](/docs/watsonx-bi?topic=watsonx-bi-mariadb){: external} 
-- [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure_sql){: external} 
 - [Microsoft Azure Databricks](/docs/watsonx-bi?topic=watsonx-bi-azure_databricks){: external} [Cloud]{: tag-blue} 
+- [Microsoft Azure SQL Database](/docs/watsonx-bi?topic=watsonx-bi-microsoft_azure_sql){: external} 
 - [Microsoft SQL Server](/docs/watsonx-bi?topic=watsonx-bi-microsoft_sql){: external} 
+- [Microsoft Azure Synapse Analytics](/docs/watsonx-bi?topic=watsonx-bi-azure_synapse){: external} [Cloud]{: tag-blue}  
 - [MySQL](/docs/watsonx-bi?topic=watsonx-bi-mysql){: external}
 - [Oracle Database](/docs/watsonx-bi?topic=watsonx-bi-oracle){: external} 
 - [PostgreSQL](/docs/watsonx-bi?topic=watsonx-bi-postgresql){: external}
@@ -114,7 +115,7 @@ For more information, see [Connectors](https://dataplatform.cloud.ibm.com/docs/c
 ## Next steps
 {: #next}
 
-- [Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} 
+- [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} 
 
 - [Generate metrics automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} 
 

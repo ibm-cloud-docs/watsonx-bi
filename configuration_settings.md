@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-12"
+lastupdated: "2026-07-10"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -18,7 +18,7 @@ subcollection: watsonx-bi
 
 [Cloud account owners]{: tag-blue} [Account administrators]{: tag-blue}
 
-Administrative users can access **Configuration and settings** from **Navigation Menu > Administration** to manage access to the {{site.data.keyword.wxbia_short}} instance. You can also  manage the BI community and storage, and set up sample data from here. Depending on your role and permissions, you might be able to make other configuration changes. {: #shortdesc}
+Administrative users can access **Configuration and settings** from **Navigation Menu > Administration** to manage access to the {{site.data.keyword.wxbia_short}} instance. You can also manage the BI community and storage, and set up sample data from here. Depending on your role and permissions, you might be able to make other configuration changes. {: #shortdesc}
 
 
 ## Manage BI community
@@ -34,15 +34,20 @@ You can explore {{site.data.keyword.wxbia_short}}'s features with a prebuilt sam
 Samples are not supported in {{site.data.keyword.wxbia_short}} on IBM Software Hub. 
 {: note}
 
-## Model settings
+## Model settings or AI configuration
 {: #model_settings_tab}
 
-{{site.data.keyword.wxbia_short}} uses a large language model (LLM) to power conversations and generate insights for all users in the account.
+{{site.data.keyword.wxbia_short}} uses a large language model (LLM) to power conversations and generate insights for all users in the account. 
 
-Administrative users can view the model configuration from the **Model settings** tab under **Configuration and settings**. The model that is used depends on your deployment type and version.
+Administrative users can view the model configuration on the **Configuration and settings > Model settings** page if you use watsonx BI on IBM Software Hub. If you use watsonx BI as a Service, Administrators can view the model configuration on the **Configuration and settings > AI configuration** page. 
+
+The model that is used depends on your deployment type and version.
 
 In {{site.data.keyword.wxbia_short}} as a Service, the model is OpenAI gpt-oss-120b with Chain of thought (CoT) reasoning. In {{site.data.keyword.wxbia_short}} on IBM Software Hub, the available model depends on your version. For more information about models, see [Understanding the large language model (LLM) in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}.
 {: note}
+
+Administrative users can also choose the metadata enrichment provider on this page. For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.
+
 
 ## Storage 
 {: #storage}

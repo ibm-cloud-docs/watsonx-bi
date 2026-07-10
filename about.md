@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: about watsonx BI
 subcollection: watsonx-bi
@@ -40,13 +40,11 @@ Semantic automation
 ## Availability
 {: #availability}
 
-{{site.data.keyword.wxbia_full_notm}} is available:
+{{site.data.keyword.wxbia_full_notm}} is available as a Service and software deployment. 
 
-- As a service on IBM Cloud
+- As a service on IBM Cloud in the Dallas (us-south) regional data center
 
-- As software that can be installed from IBM Software Hub
-
-{{site.data.keyword.wxbia_short_cap}} is available in the Dallas (us-south) regional data center.
+- As software that can be installed from IBM Software Hub version 5.2 and higher
 
 ## Relationship between services
 {: #relationship_services}
@@ -54,9 +52,9 @@ Semantic automation
 ### Cloud Service Solutions platform
 {: #service_platform}
 
-{{site.data.keyword.wxbia_full_notm}} uses the cloud service platform, which lets you connect to your data, govern it, find it, and use it for analysis.
+{{site.data.keyword.wxbia_full_notm}} uses the cloud service platform, which lets you connect to your data and use it for analysis.
 
- The platform provides the following core functionality:
+The platform provides the following core functionality:
 
 - Security, compliance, and isolation
 - Compute resources for running workloads
@@ -74,12 +72,14 @@ For more information about the service platform and its capabilities, see:
 
 - [Documentation for Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wxbi&audience=wdp){: external}
 
-{{site.data.keyword.wxbia_full_notm}} also uses IBM watsonx.data intelligence, a core service on the platform, for metadata import and metadata enrichment. IBM watsonx.data intelligence provides ready-to-use vocabularies that facilitate quick deployment of data governance and analytics frameworks and uses generative AI to augment technical metadata with more context, labels, and description.
+{{site.data.keyword.wxbia_full_notm}} on IBM Software Hub also uses IBM watsonx.data intelligence, a core platform service, to import and enrich metadata in watsonx BI. 
+
+IBM watsonx.data intelligence provides ready-to-use vocabularies that help you quickly deploy data governance and analytics frameworks. It also uses generative AI to enhance technical metadata with additional context, labels, and descriptions.
 
 ### Service platform features
 {: #service_platform_features}
 
-You can access the following platform and IBM watsonx.data intelligence features from the **Navigation Menu** in {{site.data.keyword.wxbia_short}}.
+You can access the following platform features from the **Navigation Menu** in {{site.data.keyword.wxbia_short}}.
 
 #### Projects
 {: #projects_service}
@@ -105,21 +105,25 @@ As an Analytics consumer, you can browse the **Metrics catalog** to view the met
 
 You can also add metrics to your **Key metrics** panel from the **Metrics catalog** to monitor changes in your data.
 
-#### Semantic layer and governance
+#### Governance
 {: #governance_features}
 
-{{site.data.keyword.wxbia_short_cap}} comes with a predefined governance framework to help you get started on your data analysis journey. This predefined governance framework applies business context to your data through governance artifacts. 
+You can use the watsonx.data intelligence governance framework to apply business context to your data during metadata enrichment if:
 
-The governance framework along with metadata enrichment, which automatically analyzes and enhances technical metadata with more context, labels or descriptions, creates the semantic layer that helps activate information for AI.
+- You use {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
+- You have an instance of watsonx.data intelligence provisioned in your IBM Cloud account
+
+Watsonx.data intelligence is optional on watsonx BI as a Service and is not required for metadata enrichment. Watsonx BI has its own native enrichment, which does not rely on goverance to add business context to data.
+{: note}
 
 You can customize the existing governance framework in {{site.data.keyword.wxbia_short}} to meet your business context needs by implementing the following governance artifacts.
 
-- **Categories** - Use [categories](/docs/watsonx-bi?topic=watsonx-bi-categories) to organize governance artifacts in a hierarchical structure similar to folders. You can use category roles to define ownership of artifacts, control their authoring, and restrict their visibility.
+- **Categories** - Use categories to organize governance artifacts in a hierarchical structure similar to folders. You can use category roles to define ownership of artifacts, control their authoring, and restrict their visibility.
 
-- **Business terms** - Use [business terms](/docs/watsonx-bi?topic=watsonx-bi-business_terms) to implement a common enterprise vocabulary to describe the meaning of data. You create business terms to help ensure clarity and compatibility among departments, projects, or products. Business terms are the core of your governance framework and typically form the bulk of your governance artifacts.
+- **Business terms** - Use business terms to implement a common enterprise vocabulary to describe the meaning of data. You create business terms to help ensure clarity and compatibility among departments, projects, or products. Business terms are the core of your governance framework and typically form the bulk of your governance artifacts.
 
-- **Data classes** - [Data classes](/docs/watsonx-bi?topic=watsonx-bi-data_classes) classify data based on the structure, format, and range of values of the data. You can create relationships with business terms to link data format with business meaning.
+- **Data classes** - Data classes classify data based on the structure, format, and range of values of the data. You can create relationships with business terms to link data format with business meaning.
 
-- **Classifications** - [Classifications](/docs/watsonx-bi?topic=watsonx-bi-classifications) describe specific characteristics of the meaning of data. Predefined classifications describe the sensitivity of the data. You can create classifications to describe other characteristics of data or other governance items.
+- **Classifications** - Classifications describe specific characteristics of the meaning of data. Predefined classifications describe the sensitivity of the data. You can create classifications to describe other characteristics of data or other governance items.
 
-- **Reference data sets** - [Reference data sets](/docs/watsonx-bi?topic=watsonx-bi-reference_data) define standard values for specific types of data to classify data and measure consistency. They act as lookup tables that map codes and values. You can include a reference data set in the definition of a data class as part of the data matching criteria.
+- **Reference data sets** - Reference data sets define standard values for specific types of data to classify data and measure consistency. They act as lookup tables that map codes and values. You can include a reference data set in the definition of a data class as part of the data matching criteria.

@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-07-10"
 
-keywords: modeling, new column, add column
+keywords: modelling, new column, add column, adding new column to semantic data model
 subcollection: watsonx-bi
 
 
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Adding a new column 
 {: #model_new_column}
 
-If new columns were added to the source database that you used to create metrics, you can add the new columns to the existing semantic data model without having to recreate the semantic model. {: #shortdesc}
+If new columns were added to the source data that was used to create metrics, you can add these new columns to the existing semantic data model without having to recreate the semantic model. {: #shortdesc}
 
 ## Step 1: Reimport metadata
 {: #reimport_metadata_columns}
@@ -34,6 +34,9 @@ If new columns were added to the source database that you used to create metrics
 5. Click **Reimport metadata** to refresh the schema and bring in the new column from the source.
 
   ![Reimporting metadata](images/reimport_metadata.png)
+
+If you use watsonx BI enrichment to enrich data, skip to Step 3. Watsonx BI automatically re-runs enrichment after you reimport metadata. 
+{: important}
 
 ## Step 2: Re-run metadata enrichment
 {: #rerun_mde_columns}

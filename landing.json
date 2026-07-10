@@ -28,6 +28,14 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "9 July 2026",
+        "title": "Watsonx BI as a Service introduces native metadata enrichment, making IBM watsonx.data intelligence optional"
+      },
+      {
+        "date": "17 June 2026",
+        "title": "Updates are available in watsonx BI on IBM Software Hub 5.4.0"
+      },
+      {
         "date": "12 June 2026",
         "title": "Data analysts can now review feedback to improve responses"
       },
@@ -46,14 +54,6 @@
       {
         "date": "23 April 2026",
         "title": "Improved handling of CUH limit in watsonx BI as a Service"
-      },
-      {
-        "date": "22 April 2026",
-        "title": "Fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 3"
-      },
-      {
-        "date": "11 April 2026",
-        "title": "Fixes are available in watsonx BI on IBM Software Hub 5.3.1 patch 2"
       }
     ]
   },

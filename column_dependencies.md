@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-01-07"
+lastupdated: "2026-07-10"
 
 keywords: column dependencies, columns, 
 subcollection: watsonx-bi
@@ -42,7 +42,7 @@ The column dependency groups are related to each other in a hierarchy group in a
   
   Save the semantic data model after you make changes.
 
-3. From the table context (right-click) menu, select **Specify column dependencies**.
+3. From the table context menu, select **Specify column dependencies**.
 
   The **Column dependencies** view opens.
 
@@ -61,7 +61,7 @@ The column dependency groups are related to each other in a hierarchy group in a
 
 7. Verify, and if needed, modify the column dependency settings. For more information, see Configuring column dependencies.
 
-8. Save the semantid data model.
+8. Save the semantic data model.
 
 ## Configuring column dependencies
 {: #configure_column_dependencies}

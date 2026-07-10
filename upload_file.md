@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-07-10"
 
 keywords: upload file, local file
 
@@ -44,6 +44,9 @@ All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored 
     - Ready - Metadata enrichment completes successfully.
 
 4. Click the **Review** link to [review the enrichment results](/docs/watsonx-bi?topic=watsonx-bi-review). 
+   
+   This link is available if you are using watsonx.data intelligence for metadata enrichment or you are using watsonx BI on Software Hub.
+   {: note}
   
     Metadata enrichment adds business context to your data in the form of business terms, labels, and descriptions. Check to make sure that these additions are accurate and meaningful.
 

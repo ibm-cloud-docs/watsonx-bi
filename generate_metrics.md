@@ -1,9 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-
-lastupdated: "2026-05-28"
-
+lastupdated: "2026-06-22"
 
 keywords: generate metrics, auto-generate metrics, automatic metrics
 subcollection: watsonx-bi
@@ -141,6 +139,7 @@ When you generate metrics in watsonx BI on IBM Software Hub, it creates metric d
 1. Click **Next** to go to the **Metrics overview** page, then click **Generate metrics**. 
 
    You can generate metrics here only when the semantic data model has no existing metrics. To add more metrics, use the **Advanced mode**.
+   {: note}
 
 1. Select the metrics that you want to use. You can preview details before selecting. 
 
@@ -160,7 +159,7 @@ When you generate metrics in watsonx BI on IBM Software Hub, it creates metric d
    - [Add visualizations](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics) to one or more of these metrics. 
     
    - [Try a selected metric](/docs/watsonx-bi?topic=watsonx-bi-try_metrics) in a conversation to ensure that it can answer questions about your data. You can go back to the **Advanced mode** to adjust its metric definition, if necessary.  
-   
+    
    - (Data analysts only) [Publish metrics and related visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** and assign them to Analytics consumers. 
 
 You can go back to the **Converations** page to ask questions about your data.
