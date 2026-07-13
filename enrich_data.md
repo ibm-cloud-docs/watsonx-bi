@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-13"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -44,6 +44,9 @@ Watsonx BI automatically enriches your data during the [metric creation](/docs/w
 
 Administrators can select between the following metadata enrichment providers in watsonx BI. The selection applies to all users in the account.
 
+In watsonx BI as a Service, metadata enrichment is provided by watsonx.data intelligence when it is provisioned in the IBM Cloud account. Otherwise, watsonx BI uses its built-in metadata enrichment capability. You can switch the enrichment provider only when both watsonx.data intelligence and the built-in enrichment capability are available.
+{: important}
+
 IBM watsonx BI enrichment
 
 :   - Available in {{site.data.keyword.wxbia_short}} as a Service only
@@ -79,7 +82,6 @@ IBM watsonx.data intelligence enrichment
 
 :  For more information, refer to watsonx.data intelligence documentation on [enriching data](https://dataplatform.cloud.ibm.com/docs/content/wsj/governance/metadata-enrichment.html?context=df&audience=wdp).
 
-When watsonx.data intelligence is not available in the IBM Cloud account, watsonx BI will use its built-in enrichment for metadata enrichment. Enrichment provides governance, profiling, and classification capabilities. When watsonx.data intelligence enrichment is selected, governance artifacts such as categories and business terms are used to augment technical metadata with descriptive and meaningful names. 
 
 ### Comparing enrichment capabilities
 {: #diff_enrichment}
@@ -99,9 +101,9 @@ The following table compares the enrichment capability of both enrichment provid
 ### Choosing an enrichment provider
 {: #choose_mde}
 
-As an administrator, you can select the enrichment provider from the **Configuration and settings** page based your organization's requirements. 
+As an Administrator, you can select the enrichment provider from the **Configuration and settings** page based your organization's requirements. 
 
-You might not need to choose an enrichment provider. If watsonx.data intelligence is not available in your environment, watsonx BI enrichment is used automatically.
+You can switch the metadata enrichment provider only when watsonx.data intelligence is provisioned in the IBM Cloud account. If it isn't provisioned, watsonx BI automatically uses its built-in metadata enrichment capability.
 {: note}
 
 To select the provider:
