@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "16 July 2026",
+        "title": "TIME data type supported in uploaded files"
+      },
+      {
         "date": "9 July 2026",
         "title": "Watsonx BI as a Service introduces native metadata enrichment, making IBM watsonx.data intelligence optional"
       },
@@ -50,10 +54,6 @@
       {
         "date": "14 May 2026",
         "title": "Update to supported large language models in watsonx BI as a Service"
-      },
-      {
-        "date": "23 April 2026",
-        "title": "Improved handling of CUH limit in watsonx BI as a Service"
       }
     ]
   },

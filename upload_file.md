@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-17"
 
 keywords: upload file, local file
 
@@ -128,6 +128,7 @@ You can upload an Excel file, which has two or more tabs but the asset preview d
 
 - You can upload only 10 files at a time.
 
+
 ## Supported data formats
 {: #supp_data_formats}
 
@@ -147,7 +148,6 @@ Supported column data formats include:
 - Timestamp data types 
 
     - YYYY-MM-DD HH:mm:ss
-
     - YYYY-MM-DD HH:mm:ss.SS
     - YYYY-MM-DDTHH:mm:ss
     - YYYY-MM-DDTHH:mm:ss.SS
@@ -155,6 +155,18 @@ Supported column data formats include:
       Fractional seconds (ss in the pattern) can contain up to nine digits.
       {: note}
 
+- Time data types  
+
+   - HH:mm:ss
+   - HH:mm:ss aa
+   - HH:mm:ss.SS
+   - HH:mm
+   - h:m:s
+   - h:mm	
+   - h:mm aa 
+
+      Fractional seconds (ss in the pattern) can contain up to nine digits.
+      {: note}
 
 
 - Boolean data type with 'true' or 'false' values
@@ -183,7 +195,6 @@ Values representing dates and timestamps need to be in the following format:
 You might run into errors during the file upload process. Click the **View details** link under the error message for more details. 
 
 Some errors can be avoided by revising the file and uploading again. For example, file upload can fail if the file is blank or contains a blank worksheet. File enrichment fails if the file contains a value that doesn't match the data type in the rest of the file, an unsupported data type, or rows with a different number of columns than expected.
-
 
 Other errors might require you to contact IBM support for further assistance. 
 

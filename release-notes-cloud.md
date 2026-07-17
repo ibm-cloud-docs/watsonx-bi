@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-17"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -24,6 +24,13 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+## 16 July 2026
+{: #subcollection-jul1626}
+{: release-note}
+
+TIME data type supported in uploaded files
+
+:  The TIME data type is now a supported column data format in uploaded files. For more information, see [Uploading a file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}.
 
 ## 9 July 2026
 {: #subcollection-jul0926}
