@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-06-18"
+lastupdated: "2026-07-17"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -21,6 +21,14 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 15 July 2026
+{: #subcollection-jul1526}
+{: release-note}
+
+Watsonx BI on IBM Software Hub 5.3.1 patch 9 includes fixed for the following issues: 
+
+- watsonx BI sanity test fails due to a failure of one container to pull its image.
 
 ## 17 June 2026
 {: #subcollection-jun1726}
