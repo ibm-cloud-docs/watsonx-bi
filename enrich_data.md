@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-07-31"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi

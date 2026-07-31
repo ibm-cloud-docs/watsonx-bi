@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-31"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -67,5 +67,3 @@ The following steps take place during metadata enrichment:
     :  - Creating relationships between tables 
 
     :  - Processing of metadata enrichment to generate and store vector embeddings and index data
-
-

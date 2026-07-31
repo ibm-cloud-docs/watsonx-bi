@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-31"
 
 keywords: key concepts, create metrics
 subcollection: watsonx-bi

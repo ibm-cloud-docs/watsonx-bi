@@ -94,9 +94,7 @@ toc:
               - understanding_enrichment.md
               - enrich_data.md
               - mde_scope.md
-              - di_governance.md
-              - review_enrichment.md
-              - monitor_enrichment_job.md
+              - rerun_enrichment.md
               - troubleshooting_enrichment.md
           - generate_metrics.md
           - advanced_mode.md
