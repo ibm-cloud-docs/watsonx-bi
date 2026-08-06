@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-06"
 
 keywords: add data, connectors, connection
 subcollection: watsonx-bi
@@ -19,6 +19,7 @@ To select the data you want to use to create metrics, you need to create a conne
 
 You can add a connection or, if you previously connected to a database in the project, use an existing connection to select data.  
 
+You can add data sources through the **Create metrics** flow as described in this topic, or you can use the **Data sources** tab to view, manage, and organize your data sources before creating metrics. For more information on managing existing data sources, see [Managing data sources](/docs/watsonx-bi?topic=watsonx-bi-manage_data_sources){: external}.
 
 ## Adding data from a new connection 
 {: #add}
@@ -28,7 +29,7 @@ You can add a connection or, if you previously connected to a database in the pr
    IBM watsonx BI does not support platform or shared connections. This means, you cannot use connections that are created at the platform level and stored in the Platform assets catalog. You need to create data source connections within each watsonx BI project instead. 
    {: note}
 
-1. Click **Create metrics** and enter a name for the new semantic data model.
+1. On the **Data and Metrics > Metrics** page, click **Create metrics** and enter a name for the new semantic data model.
 
 1. On the **Select data** page, select **Create a new connection**. 
 
@@ -60,7 +61,7 @@ When you are ready, click **Next** to proceed to [metadata enrichment](/docs/wat
 
 1. Select an existing project on the **Data and Metrics** tab or click the '+' icon next to the project switcher to create a new project.
 
-1. Click **Create metrics** and enter a name for the new semantic data model.
+1. On the **Data and Metrics > Metrics** page, click **Create metrics** and enter a name for the new semantic data model.
 
 1. Select **Use an existing data source** on the **Select data** page. 
 
@@ -111,6 +112,20 @@ The following data sources are supported.
 - [Terradata database](/docs/watsonx-bi?topic=watsonx-bi-terradata){: external} 
 
 For more information, see [Connectors](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/conn_types.html?context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=cpdaas&context=analytics&context=cpdaas&context=analytics&context=analytics&context=analytics&context=analytics&context=analytics&context=analytics&context=cpdaas&context=analytics&context=analytics&context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=analytics&context=cpdaas&context=analytics&context=cpdaas&context=cpdaas&context=analytics&context=analytics&context=analytics&context=dph&context=analytics&context=cpdaas&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp&audience=wdp){: external}.
+
+## Managing your data sources
+{: #manage}
+
+After you add data sources through a connection, you can manage them from the **Data sources** tab in **Data and Metrics**. From this tab, you can:
+
+- Re-import data to refresh from the original source
+- Re-enrich data to update metadata enrichment results
+- Preview data before using it in metrics
+- Delete data sources that you no longer need
+- Ask questions directly against a data source
+
+For detailed information on managing data sources, see [Managing data sources](/docs/watsonx-bi?topic=watsonx-bi-manage_data_sources){: external}.
+
 
 ## Next steps
 {: #next}

@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "6 August 2026",
+        "title": "AI language settings, centralized data source management, and enrichment updates in watsonx BI as a Service"
+      },
+      {
         "date": "5 August 2026",
         "title": "Updates are available in watsonx BI on IBM Software Hub 5.4.4"
       },
@@ -50,10 +54,6 @@
       {
         "date": "4 June 2026",
         "title": "Improved response handling for no data and no asset scenarios"
-      },
-      {
-        "date": "28 May 2026",
-        "title": "Improved metric generation with question–SQL pairing in watsonx BI as a Service"
       }
     ]
   },

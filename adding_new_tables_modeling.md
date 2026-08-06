@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-06"
 
 keywords: modeling, new tables, add tables, modeling
 subcollection: watsonx-bi
@@ -75,7 +75,7 @@ After metadata import completes, run metadata enrichment on the base data again.
 
 7. Click **Next** to continue to the **Review** page and then click **Save**. 
 
-8. Click **Enrich all assets** to re-run enrichment.
+8. Click **Start full enrichment** to re-run enrichment.
 
 
 ## Step 3: Add tables to the semantic data model

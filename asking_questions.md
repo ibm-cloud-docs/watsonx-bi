@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
+lastupdated: "2026-08-06"
 
 keywords: asking questions
 subcollection: watsonx-bi
@@ -60,9 +60,24 @@ Use descriptive questions to explore your data. These questions are typically th
 
 Diagnostic questions can help you determine the reason behind changes in your data. For example:
 
-- Is there a correlation between product size and revenue?
-
 - What is driving revenue?
+
+- Why did sales drop in Canada vs Mexico?
+
+- Why did we miss the forecast?
+
+- Why did delivery delays increase from Q1 2024 to Q2 2024?
+
+Using advanced diagnostic analysis and reasoning, watsonx BI identifies the key drivers behind metric fluctuations, helping you move from insight to investigation faster. 
+
+Watsonx BI performs a multi-step analysis to identify the most likely drivers behind the change by:
+
+- Validating the trend and analyzing key dimensions and drivers, such as carriers, weather conditions, and service levels, to identify the strongest contributors.
+
+- Performing targeted comparisons across time periods to quantify the impact of each contributing factor.
+
+- Summarizing the findings by highlighting the top contributor, explaining the reasoning behind the analysis, and suggesting areas for further investigation.
+
 
 ## Synonymous terms
 {: #synonymous}

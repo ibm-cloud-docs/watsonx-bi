@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-17"
+lastupdated: "2026-08-06"
 
 keywords: upload file, local file
 
@@ -29,9 +29,9 @@ All uploaded files in {{site.data.keyword.wxbia_short}} as a Service are stored 
 ## Uploading a file
 {: #steps_upload}
 
-1. Click the upload icon in the input box on **Conversations** or go to **Data and metrics > Data sources > Uploaded files**. 
+1. Click the upload icon in the input box on **Conversations** or go to **Data and metrics > Data sources > Uploaded files**. If you are using watsonx BI as a Service, you can upload a file from **Data and metrics > Data sources**.
 
-2. On **Data and Metrics**, select the project that you want to upload the files to. 
+2. Select the project that you want to upload the files to. 
 
 3. Browse for the files on your local drive, and select one or more files to upload. You can also drop files into the drop zone. 
 

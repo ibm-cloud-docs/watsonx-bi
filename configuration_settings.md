@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-06"
 
 keywords: configuration and settings
 subcollection: watsonx-bi
@@ -46,7 +46,10 @@ The model that is used depends on your deployment type and version.
 In {{site.data.keyword.wxbia_short}} as a Service, the model is OpenAI gpt-oss-120b with Chain of thought (CoT) reasoning. In {{site.data.keyword.wxbia_short}} on IBM Software Hub, the available model depends on your version. For more information about models, see [Understanding the large language model (LLM) in your account](/docs/watsonx-bi?topic=watsonx-bi-choose_llm_account){: external}.
 {: note}
 
-Administrative users can also choose the metadata enrichment provider on this page. For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.
+Administrative users can choose the metadata enrichment provider on this page. For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}.
+
+In watsonx BI as a Service, Administrative users can also select the language for AI-generated responses for all users in the account. For more information, see [Language settings for AI responses](/docs/watsonx-bi?topic=watsonx-bi-language_settings){: external}.
+
 
 
 ## Storage 

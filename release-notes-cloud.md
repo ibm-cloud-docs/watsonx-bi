@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-17"
+lastupdated: "2026-08-06"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -15,7 +15,6 @@ content-type: release-note
 
 
 
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Release notes for {{site.data.keyword.wxbia_short}} as a Service (on IBM Cloud)
@@ -23,6 +22,72 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 6 August 2026
+{: #subcollection-Aug0626}
+{: release-note}
+
+
+Configure AI response language for your organization
+
+:   Administrators can now configure the language used for AI-generated responses in watsonx BI. In addition to English, AI responses can be generated in Spanish and Japanese across the entire account. 
+
+:  Support for Japanese-language AI responses is currently available as a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important}
+
+:   The language setting applies to AI-generated content including:
+
+:   - SQL step titles
+:   - AI-generated reasoning steps
+:   - Final answer summaries
+:   - Suggested questions
+:   - Metadata enrichment for new assets
+
+:   The selected language is applied account-wide and takes effect immediately for all users. User interface language settings are not affected and continue to follow each user's browser locale.
+
+:   Administrators can configure this setting during initial setup or from Configurations and settings > AI configuration. For more information, see [Language settings for AI responses](/docs/watsonx-bi?topic=watsonx-bi-language_settings){: external}.
+
+Manage project data sources from a single location
+
+:   The Data sources tab under Data and Metrics was redesigned to make it easier to manage project data from a single location. The enhanced experience provides greater visibility into your data sources and metadata enrichment status.
+
+:   With the updated Data sources page, you can now:
+
+:   - View all project data sources and their enrichment status in one place
+:   - Re-import data sources to refresh them with the latest source data
+:   - Re-enrich data sources to update business context metadata or retry enrichment when needed
+:   - Preview data source contents before using them in metrics or conversations
+:   - Ask questions directly against a data source for faster analysis
+:   - Delete data sources that are no longer needed
+
+:   For more information, see [Managing data sources](/docs/watsonx-bi?topic=watsonx-bi-manage_data_sources){: external}. 
+
+Embedding model update and required re-enrichment
+
+:   On August 8, IBM will deprecate the embedding model currently used for language processing in watsonx BI. To support this transition, watsonx BI has updated all existing customers to a new multilingual embedding model. 
+
+:   **Administrators** must re-enrich existing data assets to maintain full functionality for filter-based search and related semantic features.
+
+:   For instructions, see [Re-running metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-rerun_enrichment){: external} in the product documentation. 
+
+
+## 30 July 2026
+{: #subcollection-jul3026}
+{: release-note}
+
+Improved diagnostic analytics in watsonx BI
+
+:   IBM watsonx BI now helps you understand why a metric changed, not just what changed. Using advanced diagnostic analysis and reasoning, watsonx BI identifies the key drivers behind metric fluctuations, helping you move from insight to investigation faster.
+
+:   When you ask a diagnostic question such as, Why did delivery delays increase from Q1 2024 to Q2 2024?, watsonx BI performs a multi-step analysis to identify the most likely drivers behind the change by:
+
+:   - Validating the trend and analyzing key dimensions and drivers, such as carriers, weather conditions, and service levels, to identify the strongest contributors.
+:   - Performing targeted comparisons across time periods to quantify the impact of each contributing factor.
+:   - Summarizing the findings by highlighting the top contributor, explaining the reasoning behind the analysis, and suggesting areas for further investigation.
+
+:   A **How we analyzed this** section in the response and AI steps panel provides transparency into every step of the diagnostic process. You can review how the analysis was performed, understand the reasoning behind the results, and build confidence in the conclusions.
+
+:   This diagnostic analysis pattern works across any metric defined in watsonx BI. 
 
 ## 16 July 2026
 {: #subcollection-jul1626}

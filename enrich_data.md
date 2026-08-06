@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-08-06"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -36,7 +36,7 @@ While most of these might already be available in your data, asset and column na
  |Column name: cust_id <br><br>Description: none | Column name: Customer ID <br><br>Description: Unique identifier for each customer in the CRM system|
  {: caption="Enrichment example" caption-side="bottom"}
 
-Watsonx BI automatically enriches your data during the [metric creation](/docs/watsonx-bi?topic=watsonx-bi-overview_metrics){: external} process. Metadata enrichment does not change your original data. 
+Watsonx BI automatically enriches after you select your data from a connection or when you upload a file. Metadata enrichment does not change your original data. 
 {: note}
 
 ## Supported metadata enrichment providers
@@ -140,7 +140,11 @@ Changing the enrichment selection affects future enrichments only. Existing enri
 
 **Re-enriching data using watsonx BI enrichment**
 
-If you are using watsonx BI enrichment, to re-run enrichment, you have to manually re-import metadata. 
+If you are using watsonx BI enrichment, to re-run enrichment, you have to manually import metadata again. 
+
+You can reimport metadata directly from the **Data sources** page in watsonx BI. Enrichment runs automatically after metadata import completes. This option provides a faster way to manage enrichment without navigating to project view.
+
+You can also reimport metadata from the project view:
 
 1. Go to **Navigation Menu > Projects > View all** projects and open the project with the data that needs to be re-enriched.
 

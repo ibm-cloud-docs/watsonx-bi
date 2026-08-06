@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-06"
 
 keywords: interface, using watsonx BI
 subcollection: watsonx-bi
@@ -26,7 +26,9 @@ The user interface of {{site.data.keyword.wxbia_short}} consists of the followin
 
 (2) Data and Metrics
 
-:   You can create new projects, create metrics, upload files, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
+:   You can create new projects, manage data sources, create metrics, upload files, and access semantic data models that contain metrics from the **Data and Metrics** tab. Think of **Data and Metrics** as the starting point to prepare your data for conversations. 
+
+:   You can also view the enrichment status of a data source, re-import metadata, and re-enrich metadata on the **Data and Metrics > Data sources** page in watsonx BI as a Service. [Cloud]{: tag-blue}
 
 (3) Metrics catalog
 
@@ -37,9 +39,8 @@ The user interface of {{site.data.keyword.wxbia_short}} consists of the followin
 
 (4) Configuration and settings
 
-:   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, choose an enrichment provider, and set up samples from here. Depending on your role and permissions, you might be able to make other configuration changes. 
+:   You can manage access to your {{site.data.keyword.wxbia_short}} instance, manage storage, choose an enrichment provider, set up samples from here, and select the language for AI-generated responses. Depending on your role and permissions, you might be able to make other configuration changes. 
 
-:   Samples are currently not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub.{: note}
 
 (5) Navigation Menu
 
@@ -75,7 +76,7 @@ The **Data and Metrics** tab is the launching point for any task that is related
 
 - Select or create a new project
 
-- Create metrics
+- Create metrics 
 
 - View metrics and visualizations that you created 
 
@@ -83,11 +84,13 @@ The **Data and Metrics** tab is the launching point for any task that is related
 
 - Upload files 
 
+- Add and manage data sources (watsonx BI as a Service only) [Cloud]{: tag-blue}
+
+- View enrichment status, re-import metadata, and re-enrich metadata (watsonx BI as a Service only) [Cloud]{: tag-blue}
+
 Creating metrics starts the data connection, preparation, and ingestion flow where the data undergoes metadata enrichment to prepare it for use in conversations. 
 
 The scope of the metrics is defined in the semantic data model where you can use advanced modeling tools to add more context to your data, create calculations, and define relationships.
-
-You can also upload files on **Data and Metrics** to quickly jump into asking questions about the data in the files.
 
 ## Metrics catalog
 {: #metric_catalog}

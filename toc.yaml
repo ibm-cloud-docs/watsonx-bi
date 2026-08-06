@@ -54,6 +54,7 @@ toc:
               topics:
               - choose_llm.md
               - cot.md
+              - language_settings.md
           - topicgroup:
               label: Installing and using sample data
               topics:
@@ -88,6 +89,7 @@ toc:
               topics:
               - add_data.md
               - upload_file.md
+              - manage_datasources.md
           - topicgroup:
               label: Enriching data with metadata
               topics:
@@ -96,7 +98,6 @@ toc:
               - mde_scope.md
               - rerun_enrichment.md
               - review_enrichment.md
-              - monitor_enrichment_job.md
               - troubleshooting_enrichment.md
           - generate_metrics.md
           - advanced_mode.md
