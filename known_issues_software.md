@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-05"
 
 keywords: known issues, limitations, watsonx BI
 
@@ -21,6 +21,7 @@ The following issues and limitations apply to {{site.data.keyword.wxbia_full}} o
 
 ## Metadata enrichment
 {: #ki_mde}
+
 
 - **Metadata enrichment information appears at the wrong step**
 

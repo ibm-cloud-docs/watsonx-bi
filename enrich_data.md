@@ -48,8 +48,6 @@ In watsonx BI as a Service, metadata enrichment is provided by watsonx.data inte
 {: important}
 
 IBM watsonx BI enrichment
-
-:   - Available in {{site.data.keyword.wxbia_short}} as a Service only
   
 :   - Runs natively in {{site.data.keyword.wxbia_short}} 
 
@@ -67,8 +65,6 @@ When watsonx BI enrichment is selected, governance artifacts such as categories 
   
 
 IBM watsonx.data intelligence enrichment
-
-:   - Available in watsonx BI as a Service and watsonx BI on IBM Software Hub
 
 :   - Requires watsonx.data intelligence 
 

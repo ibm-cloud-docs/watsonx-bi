@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-07-17"
+lastupdated: "2026-08-06"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -22,13 +22,72 @@ content-type: release-note
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+
+## 5 August 2026
+{: #subcollection-aug0526}
+{: release-note}
+
+
+The following fixes and new features are included in IBM Software Hub 5.4 patch 4.
+
+
+**Security issues fixed in this patch**
+
+This patch addresses the following Common Vulnerabilities and Exposures (CVE):
+
+CVE-2026-5038, CVE-2026-5078, CVE-2026-5079, CVE-2026-6733, CVE-2026-8723, CVE-2026-9679, CVE-2026-11525, CVE-2026-12143, CVE-2026-12151,   
+
+CVE-2026-33244, CVE-2026-33245, CVE-2026-34077, CVE-2026-40181, CVE-2026-41693, CVE-2026-42211, CVE-2026-42264, CVE-2026-42342, CVE-2026-44486, 
+
+CVE-2026-44487, CVE-2026-44488, CVE-2026-44489, CVE-2026-44490, CVE-2026-44492, CVE-2026-44494, CVE-2026-44496, CVE-2026-44665, CVE-2026-53550
+
+**New features in this patch**
+
+This patch includes the following new features:
+
+
+**Availability of native metadata enrichment in watsonx BI**
+
+:   Watsonx BI now includes built-in metadata enrichment. The new watsonx BI native enrichment service uses generative AI to automatically add business context, semantic meaning, and descriptions to your data. Enriched metadata improves data discovery and helps deliver more accurate results.
+
+:   This capability removes dependency on IBM watsonx.data intelligence for metadata enrichment.
+
+:   For more information, see [Enriching data in watsonx BI](enrich_data.html).
+
+
+**Improved metric generation with question–SQL pairing**
+
+:   You can now generate metrics by providing a business question and its corresponding SQL query. This update replaces the earlier approach, which relied on enriched data and the semantic data model to derive metrics.
+
+:   Pairing a question with SQL anchors metric generation in a real business scenario. The SQL defines the exact logic, while the question captures the analytical intent. Together, they reduce ambiguity and improve metric accuracy and relevance.
+
+:   In addition, watsonx BI extracts relationships, calculations, and structure directly from the SQL. This reduces the need for manual modeling and helps data analysts generate metrics faster without using advanced modeling techniques.
+
+:   For more information, refer to [Generating metrics automatically](create_metrics_new.html).
+
+**Use new sample data to explore watsonx BI**
+
+:   You can now use Go sales sample data in watsonx BI to explore the natural language interface, the types of questions you can ask, the structure of a metric definition, and the ways that sample data is modeled and optimized for AI.
+
+:   For more information, see [Go sales sample data](go_sales.html).
+
+**Deprecated features in this patch**
+
+This patch deprecates the following features:
+
+- You can no longer use watsonx.data intelligence to enrich metadata.
+
+
 ## 15 July 2026
 {: #subcollection-jul1526}
 {: release-note}
 
-Watsonx BI on IBM Software Hub 5.3.1 patch 9 includes fixed for the following issues: 
+Watsonx BI on IBM Software Hub 5.3.1 patch 9 includes fixes for the following issues: 
 
-- watsonx BI sanity test fails due to a failure of one container to pull its image.
+
+- Fixed an image pull issue for customers who pull images from a private container registry.
+
+
 
 ## 17 June 2026
 {: #subcollection-jun1726}

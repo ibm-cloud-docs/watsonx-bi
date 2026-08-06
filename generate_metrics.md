@@ -24,18 +24,11 @@ This feature is a Technology Preview feature in {{site.data.keyword.wxbia_short}
 ## Overview
 {: #overview_generate_metrics}
 
-Watsonx BI analyzes your data and semantic data model to create metrics that reflect real business logic. The generation experience differs depending on your environment:
+Watsonx BI analyzes your data and semantic data model to create metrics that reflect real business logic.
 
-- Watsonx BI as a Service: Generate metrics by providing a business question and a SQL query
 
-- Watsonx BI on Software Hub: Generate metrics from the enriched metadata in the semantic data model
 
-In both environments, you can use the **Advanced mode** to refine metrics and create more. 
-
-## Generating metrics in watsonx BI as a Service
-{: #question_sql}
-
-In watsonx BI as a Service, you can generate metrics automatically by providing a business question that needs to be answered and the corresponding SQL query. 
+You can generate metrics automatically by providing a business question that needs to be answered and the corresponding SQL query. 
 
 Providing a question and SQL pair anchors metric generation in a real business scenario, which improves both accuracy and relevance. The SQL defines the exact logic used to answer the question, while the question captures the analytical intent. Together, they remove ambiguity in how metrics are created.
 
@@ -44,6 +37,9 @@ This approach to generating metrics allows Data analysts to generate metrics wit
 By validating the SQL against the data, watsonx BI ensures that generated metrics align with the actual data structure and values. This validation reduces errors and increases trust in metric outputs. 
 
 Watsonx BI also identifies additional relevant columns and relationships that can strengthen the answer. As a result, generated metrics are more complete, context-aware, and better suited for answering questions in conversations.
+
+## Steps to generate metrics
+{: #question_sql}
 
 To generate metrics automatically using this approach, follow these steps.
 
@@ -117,57 +113,12 @@ You can use the **Advanced mode** to view the system-generated SQL with the corr
 
 This option displays a simple `SELECT` statement that includes the table and column identifiers in the correct format. You can use this SQL as a reference when building your question–SQL pair. This method is especially useful for uploaded files.
 
-## Generating metrics in watsonx BI on IBM Software Hub
-{: #metrics_swh}
 
-When you generate metrics in watsonx BI on IBM Software Hub, it creates metric definitions and automatically exports them to the project for use in **Conversations**.
-
-1. On the **Data and Metrics** tab, select a project or create a new one by clicking the '+' button next to the project list. 
-
-1. Click **Create metrics**. 
-
-1. Enter a unique name for the semantic data model. 
-
-1. On the **Select data** page, [select your data](/docs/watsonx-bi?topic=watsonx-bi-select){: external}. 
-
-1. Click **Next** to continue to **Metadata enrichment**. 
-
-   During [metadata data enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external}, business context-based metadata is added to your data to prepare it for use in conversations and metrics. 
-    
-   No changes are made to your original data during enrichment. 
-
-1. Click **Next** to go to the **Metrics overview** page, then click **Generate metrics**. 
-
-   You can generate metrics here only when the semantic data model has no existing metrics. To add more metrics, use the **Advanced mode**.
-   {: note}
-
-1. Select the metrics that you want to use. You can preview details before selecting. 
-
-1. Open the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to review the semantic data model.  
-
-   Make sure that meaningful names, descriptions, and identifiers are assigned to each column. These fields help AI find and retrieve data when it answers your questions. 
-   {: tip}
-
-1. Save any changes made to the semantic data model.
-
-1. If you edited a metric definition, click the menu icon for the metric definition and select **Export metric definition**. 
-
-   Exporting a metric definition automatically enriches the metric definition, creates a metric or updates an existing one, and makes the metric available for use in conversations. 
-
-1. (Optional) Go back to the **Metrics overview** page and: 
-
-   - [Add visualizations](/docs/watsonx-bi?topic=watsonx-bi-add_viz_metrics) to one or more of these metrics. 
-    
-   - [Try a selected metric](/docs/watsonx-bi?topic=watsonx-bi-try_metrics) in a conversation to ensure that it can answer questions about your data. You can go back to the **Advanced mode** to adjust its metric definition, if necessary.  
-    
-   - (Data analysts only) [Publish metrics and related visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** and assign them to Analytics consumers. 
-
-You can go back to the **Converations** page to ask questions about your data.
 
 ## Generating metrics in Advanced mode
 {: #metrics_advanced}
 
-In both environments, you can generate additional metrics after the initial generation by using the **Advanced mode**.
+You can generate additional metrics after the initial generation by using the **Advanced mode**.
 
 1. Open the **Advanced mode** from the **Metrics overview** page.
 

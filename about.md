@@ -72,9 +72,8 @@ For more information about the service platform and its capabilities, see:
 
 - [Documentation for Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wxbi&audience=wdp){: external}
 
-{{site.data.keyword.wxbia_full_notm}} on IBM Software Hub also uses IBM watsonx.data intelligence, a core platform service, to import and enrich metadata in watsonx BI. 
 
-IBM watsonx.data intelligence provides ready-to-use vocabularies that help you quickly deploy data governance and analytics frameworks. It also uses generative AI to enhance technical metadata with additional context, labels, and descriptions.
+
 
 ### Service platform features
 {: #service_platform_features}
@@ -108,22 +107,6 @@ You can also add metrics to your **Key metrics** panel from the **Metrics catalo
 #### Governance
 {: #governance_features}
 
-You can use the watsonx.data intelligence governance framework to apply business context to your data during metadata enrichment if:
+IBM watsonx.data intelligence provides ready-to-use vocabularies that help you quickly deploy data governance and analytics frameworks. It also uses generative AI to enhance technical metadata with additional context, labels, and descriptions. 
 
-- You use {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
-- You have an instance of watsonx.data intelligence provisioned in your IBM Cloud account
-
-Watsonx.data intelligence is optional on watsonx BI as a Service and is not required for metadata enrichment. Watsonx BI has its own native enrichment, which does not rely on goverance to add business context to data.
-{: note}
-
-You can customize the existing governance framework in {{site.data.keyword.wxbia_short}} to meet your business context needs by implementing the following governance artifacts.
-
-- **Categories** - Use categories to organize governance artifacts in a hierarchical structure similar to folders. You can use category roles to define ownership of artifacts, control their authoring, and restrict their visibility.
-
-- **Business terms** - Use business terms to implement a common enterprise vocabulary to describe the meaning of data. You create business terms to help ensure clarity and compatibility among departments, projects, or products. Business terms are the core of your governance framework and typically form the bulk of your governance artifacts.
-
-- **Data classes** - Data classes classify data based on the structure, format, and range of values of the data. You can create relationships with business terms to link data format with business meaning.
-
-- **Classifications** - Classifications describe specific characteristics of the meaning of data. Predefined classifications describe the sensitivity of the data. You can create classifications to describe other characteristics of data or other governance items.
-
-- **Reference data sets** - Reference data sets define standard values for specific types of data to classify data and measure consistency. They act as lookup tables that map codes and values. You can include a reference data set in the definition of a data class as part of the data matching criteria.
+If you have an instance of watsonx.data intelligence provisioned in your IBM Cloud account or installed along with watsonx BI in IBM Software Hub, you can use this governance framework to apply business context to your data.

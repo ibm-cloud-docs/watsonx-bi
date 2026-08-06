@@ -48,8 +48,6 @@ The following steps take place during metadata enrichment:
 
      :  - Expanding metadata and generating names and descriptions
 
-     :  - Expanding metadata 
-
      :  - Creating relationships between tables 
 
      :  - Processing of metadata enrichment to generate and store vector embeddings and index data

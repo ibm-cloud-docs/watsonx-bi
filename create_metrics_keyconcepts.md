@@ -112,7 +112,7 @@ In {{site.data.keyword.wxbia_short}}, a semantic data model is a type of asset w
 
 - You enrich and model data (relationships, filters, calculations)
 
-- You prepare data that will later be exported to a project for use in Conversations
+- You prepare data that will later be exported to a project for use in conversations
 
 When you start creating metrics, a new semantic data model is automatically created for you. You can then select existing project data or add new data through a connection. 
 

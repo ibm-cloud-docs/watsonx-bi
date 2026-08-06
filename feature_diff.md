@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-08-06"
 
 keywords: about watsonx BI, features
 subcollection: watsonx-bi
@@ -58,8 +58,6 @@ Perspective switcher
 {: #feature_differences}
 
 While the core functions in both deployments are effectively the same, the following features are not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub:
-
-- Use of Go Sales sample data
 
 - Provide feedback for generated responses in conversations
 

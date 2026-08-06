@@ -18,9 +18,9 @@ subcollection: watsonx-bi
 
 The following issues and limitations apply to {{site.data.keyword.wxbia_full}} as a Service.  {: #shortdesc}
 
-**Relationships are not automatically generated in the semantic model when using Microsoft Azure Synapse as a connector**
+**- **Relationships are not automatically generated in the semantic data model**
 
-  Relationships are not generated automatically in the semantic data model after enrichment when you use Microsoft Azure Synapse as a connector to connect to data. This seems to happen when there is incorrect usage for a foreign key candidate column. 
+  In some scenarios, relationships might not be generated automatically during enrichment. This can occur when required relationship metadata is unavailable or cannot be reliably be inferred from the underlying data.
 
   Workaround:
  
