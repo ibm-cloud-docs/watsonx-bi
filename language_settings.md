@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-08-28"
 
 keywords: language settings, spanish, AI responses
 subcollection: watsonx-bi
@@ -18,12 +18,7 @@ subcollection: watsonx-bi
 
 As an Administrator, you can set the language in which watsonx BI generates AI responses for all users in your account. The language setting applies only to AI-generated content. The language in which the user interface displays is determined by each user's browser locale and is not affected by this setting.  {: #shortdesc}
 
-Spanish and Japanese are currently supported as alternative AI response languages.
-
-Support for AI-generated responses in Japanese is a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
-{: important}
-
-By default, watsonx BI generates AI responses in English. You can change the language so that AI-generated output is returned in Spanish or Japanese. The selected language applies account-wide, and all users receive AI-generated responses in that language.
+By default, watsonx BI generates AI responses in English. If you choose a different language, the selection applies account-wide, and all users receive AI-generated responses in that language.
 
 The language setting controls all AI-generated text output including:
 
@@ -32,6 +27,23 @@ The language setting controls all AI-generated text output including:
 - Final answer summaries
 - Suggested questions
 - Metdata enrichment for new assets
+
+## Supported languages
+{: #support_language}
+
+English is the default language for AI-generated responses. The following languages are also supported:
+
+- Spanish 
+- German
+- French 
+- Italian 
+- Japanese 
+- Korean 
+- Portuguese (Brazil)
+- Chinese (Simplified and Traditional)
+
+Support for AI-generated responses in all languages except for **English** and **Spanish** is currently available as a Technology Preview feature. Technology Preview offers customers early access to product features, allowing them to explore functionality and share feedback during development. These features are provided for evaluation purposes and might not be fully functional or complete.
+{: important}
 
 ## Limitations and considerations
 {: #language_limitations}

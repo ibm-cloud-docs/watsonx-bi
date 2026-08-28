@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-08-28"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -22,6 +22,17 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 28 August 2026
+{: #subcollection-Aug2726}
+{: release-note}
+
+Additional languages supported for AI-generated responses
+
+:   AI-generated responses are now available in German, French, Italian, Korean, Portuguese (Brazil), and Chinese (Simplified and Traditional). Japanese remains available as a Technology Preview feature, alongside the newly added languages. English and Spanish continue to be fully supported.
+
+:   For more information, see [Language settings for AI responses](/docs/watsonx-bi?topic=watsonx-bi-language_settings){: external}.
+
 
 ## 6 August 2026
 {: #subcollection-Aug0626}

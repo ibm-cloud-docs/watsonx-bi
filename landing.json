@@ -28,6 +28,10 @@
     "view_more": "/docs/watsonx-bi?topic=watsonx-bi-my-service-relnotes_saas",
     "tiles": [
       {
+        "date": "28 August 2026",
+        "title": "Additional languages supported for AI-generated responses"
+      },
+      {
         "date": "6 August 2026",
         "title": "AI language settings, centralized data source management, and enrichment updates in watsonx BI as a Service"
       },
@@ -50,10 +54,6 @@
       {
         "date": "12 June 2026",
         "title": "Data analysts can now review feedback to improve responses"
-      },
-      {
-        "date": "4 June 2026",
-        "title": "Improved response handling for no data and no asset scenarios"
       }
     ]
   },
