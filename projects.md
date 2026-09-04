@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-14"
+lastupdated: "2026-09-04"
 
 keywords:
 subcollection: watsonx-bi
@@ -20,7 +20,7 @@ A project is a collaborative workspace where you work with data and other assets
 
 Any data that you want to work with and want to ask about, first needs to be added to a project through a connection or by uploading data files. You can see a list of projects you have access to under **Navigation menu > Projects > View all projects**. 
 
-You can choose an existing project to work in or create a new project from the **Data and Metrics** tab. 
+You can choose an existing project to work in or create a new project only from the **Data and Metrics** tab. 
 
 Create one project when you are working towards one defined business goal and that uses the same data sources and collaborators. Create multiple projects when your workstreams support different goals, require different collaborators or permissions, or need data isolation. For example, if you are exploring data for a single initiative such as sales forecasting, churn analysis, or inventory optimization, a single project keeps related assets together and might be easier to manage.
 {: tip}

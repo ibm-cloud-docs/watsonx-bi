@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-09-04"
 
 keywords: asking questions
 subcollection: watsonx-bi
@@ -31,11 +31,10 @@ How many units were sold in Tokyo and Beijing?
 
 You can clarify your intention by asking: 
   
-```
+``` 
 How many units were sold in Tokyo and Beijing by city?
 ```
 
-Before you start conversing with {{site.data.keyword.wxbia_short}}, you can provide context for your business data by [adding business terms or glossaries](/docs/watsonx-bi?topic=watsonx-bi-business_terms){: external}. Use business terms to define specific terms like "S&S" and "TAM" and codifying that metadata into the semantic layer and the underlying definition of a metric.
 
 ## Types of questions you can ask
 {: #type_questions}

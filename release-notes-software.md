@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2026-08-06"
+lastupdated: "2026-09-04"
 
 keywords: watsonx BI, release notes, what's new
 
@@ -21,6 +21,46 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to watsonx BI that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+## 2 September 2026
+{: #subcollection-sep0226}
+{: release-note}
+
+The following fixes and new features are included in IBM Software Hub 5.4 patch 6.
+
+**Security issues fixed in this patch**
+
+This patch addresses the following Common Vulnerabilities and Exposures (CVE):
+
+2026: CVE-2026-11525, CVE-2026-12143, CVE-2026-12151, CVE-2026-12590, CVE-2026-15195, CVE-2026-33532, CVE-2026-41907, CVE-2026-48801, CVE-2026-49356, 
+
+CVE-2026-53550, CVE-2026-53655, CVE-2026-54285, CVE-2026-55602, CVE-2026-59869, CVE-2026-59871, CVE-2026-59873, CVE-2026-59874, CVE-2026-59875, 
+
+CVE-2026-59879, CVE-2026-59880, CVE-2026-59887, CVE-2026-62389, CVE-2026-6733, CVE-2026-9679
+
+**Defects fixed in this patch**
+
+This patch includes fixes for the following issues:
+
+**Service shutdown fails**
+
+:   **Issue**: When you try to shut down watsonx BI, the shutdown operation fails.
+
+:   **Resolution**: You can successfully shut down watsonx BI.
+
+**New features in this patch**
+
+This patch includes the following new features:
+
+**Upload flat files without extra configuration steps**
+
+:   You can now upload flat files directly in watsonx BI without any additional configuration. Previously, uploading flat files required configuring a separate data store, which added setup time and complexity.
+
+**Deprecated features in this patch**
+
+This patch deprecates the following features:
+
+- You can no longer use watsonx.data to configure flat file service.
 
 
 ## 5 August 2026
@@ -52,7 +92,7 @@ This patch includes the following new features:
 
 :   This capability removes dependency on IBM watsonx.data intelligence for metadata enrichment.
 
-:   For more information, see [Enriching data in watsonx BI](enrich_data.html).
+:   For more information, see [Enriching data in watsonx BI](/docs/watsonx-bi?topic=watsonx-bi-enrich).
 
 
 **Improved metric generation with question–SQL pairing**
@@ -63,13 +103,13 @@ This patch includes the following new features:
 
 :   In addition, watsonx BI extracts relationships, calculations, and structure directly from the SQL. This reduces the need for manual modeling and helps data analysts generate metrics faster without using advanced modeling techniques.
 
-:   For more information, refer to [Generating metrics automatically](create_metrics_new.html).
+:   For more information, refer to [Generating metrics automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics).
 
 **Use new sample data to explore watsonx BI**
 
 :   You can now use Go sales sample data in watsonx BI to explore the natural language interface, the types of questions you can ask, the structure of a metric definition, and the ways that sample data is modeled and optimized for AI.
 
-:   For more information, see [Go sales sample data](go_sales.html).
+:   For more information, see [Go sales sample data](/docs/watsonx-bi?topic=watsonx-bi-go_sales).
 
 **Deprecated features in this patch**
 
