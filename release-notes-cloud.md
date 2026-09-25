@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-02"
+lastupdated: "2026-09-24"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -22,6 +22,20 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
+
+
+
+
+## 24 September 2026
+{: #subcollection-Sep2426}
+{: release-note} 
+
+Metadata enrichment review is now available from Data sources 
+
+:   You can now review and approve metadata enrichment results from **Data and Metrics > Data sources** in watsonx BI as a Service. Open a data source to view enrichment details, review AI-generated metadata, edit metadata values, approve metadata for use in conversations, and understand how metadata behaves during re-enrichment. 
+
+For more information, see [Reviewing metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external}.
+
 
 ## 28 August 2026
 {: #subcollection-Aug2726}

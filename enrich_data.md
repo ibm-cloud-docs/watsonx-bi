@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-09-24"
 
 keywords: enrichment, metadata enrichment, enrich, semantics
 subcollection: watsonx-bi
@@ -116,13 +116,7 @@ Changing the enrichment selection affects future enrichments only. Existing enri
 ## Limitations
 {: #limitations_mde}
 
-**User interface differences**
 
-- User interface differences in watsonx BI enrichment:
-
-  - No page to review the enrichment results or view the progress of the enrichment job.
-
-  - Watsonx BI enrichment does not create a metadata enrichment asset. This means that you cannot access watsonx BI enrichment results or the asset.
 
 **Switching from watsonx.data intelligence to watsonx BI enrichment**
 
@@ -138,21 +132,7 @@ Changing the enrichment selection affects future enrichments only. Existing enri
 
   If you have samples that were installed prior to using watsonx BI enrichment, and you make changes to the semantic data model or metrics in the samples, you need to re-export metrics to use them in conversations.
 
-**Re-enriching data using watsonx BI enrichment**
 
-If you are using watsonx BI enrichment, to re-run enrichment, you have to manually import metadata again. 
-
-You can reimport metadata directly from the **Data sources** page in watsonx BI. Enrichment runs automatically after metadata import completes. This option provides a faster way to manage enrichment without navigating to project view.
-
-You can also reimport metadata from the project view:
-
-1. Go to **Navigation Menu > Projects > View all** projects and open the project with the data that needs to be re-enriched.
-
-1. Go to the **Assets** tab and under **Data access**, click **Metadata import**.
-
-1. Open the metadata import asset associated with the semantic data model and click **Reimport metadata**.
-
-After metadata import is complete, enrichment starts automatically.
 
 **Updating a semantic data model after switching to watsonx BI enrichment**
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-09-24"
 
 keywords: about watsonx BI, features
 subcollection: watsonx-bi
@@ -60,5 +60,6 @@ Perspective switcher
 While the core functions in both deployments are effectively the same, the following features are not available in {{site.data.keyword.wxbia_short}} on IBM Software Hub:
 
 - Provide feedback for generated responses in conversations
+- Manage data sources and metadata enrichment form the **Data sources** tab under **Data and Metrics**
 
 In IBM Software Hub versions 5.3 and higher, {{site.data.keyword.wxbia_short}} can be accessed from IBM watsonx.data Premium. This feature is not available in {{site.data.keyword.wxbia_short}} as a Service.

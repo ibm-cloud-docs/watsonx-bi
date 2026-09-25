@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-09-24"
 
 keywords: review mde, review metadata enrichment, review enrichment
 subcollection: watsonx-bi
@@ -14,36 +14,110 @@ subcollection: watsonx-bi
 # Reviewing metadata enrichment 
 {: #review}
 
-You can review enrichment results to make sure the metadata that is applied is meaningful and accurate.  {: #shortdesc}
+Review enrichment results to ensure that the metadata applied to your data is accurate and meaningful. Metadata enrichment generates business context that helps watsonx BI understand your data and return more accurate responses in conversations. {: #shortdesc}
 
-You can review enrichment, if you use:
-
-- Watsonx.data intelligence for enrichment in watsonx BI as a Service
-
-- Watsonx BI on IBM Software Hub
-
-## Accessing the review enrichment page
+## Accessing enrichment results
 {: #access_review}
 
-You can open the **Review enriched data** page from the:
+The location where you review enrichment results depends on your deployment.    
 
-1. Metadata enrichment page during metric creation 
+### watsonx BI as a Service
+{: #wxbi_enrich}
+
+Review enrichment results from the **Data sources** tab.
+
+1. Go to **Data and Metrics > Data sources**.
+1. Locate the data source that you want to review.
+1. Click the data source to view details or from the menu, click **View details**.
+
+The data source details page displays enrichment status and column-level metadata generated during enrichment.
+
+### watsonx BI on IBM Software Hub
+{: #wxbi_onprem_enrich}
+
+You can open the **Review enriched data** page from the following locations:
+
+-  Metadata enrichment page during metric creation 
 
   This option is available only while you are still in the metadata enrichment workflow. After you move forward to the **Metrics overview** page, you can no longer access the review page from here.
 
-2. Project view 
+- Project view 
 
-  a. Go to **Navigation menu > View all projects**.
+  1. Go to **Navigation menu > View all projects**.
 
-  b. Select the project that contains the enriched asset. 
+  1. Select the project that contains the enriched asset. 
   
-  c. Open the **Assets** page and locate the Metadata enrichment asset.
+  1. Open the **Assets** page and locate the metadata enrichment asset.
 
-If you are using watsonx BI enrichment in watsonx BI as a Service, a page to review enrichment results is not currently available.
-{: important}
+## Reviewing enrichment in watsonx BI as a Service
+{: #about_review_saas}
 
-## About the review enrichment page
-{: #about_review}
+After enrichment completes, open the data source details page to review the generated metadata before it is used in conversations.
+
+The Column enrichment section shows:
+
+- Enrichment status
+- Metadata source indicators
+- Column-level metadata
+- Approval status
+
+Expand **Review and approve enrichment** to view the meaning of each metadata indicator. Each metadata value displays a status that identifies its source and behavior during re-enrichment.
+
+User-set
+
+:   Metadata that you added or modified. User-set metadata:
+
+:   - Is always used in conversations.
+:   - Isn't overwritten during re-enrichment.
+
+AI-suggested
+
+:   Metadata generated automatically during enrichment. AI-suggested metadata:
+
+:   - Is used in conversations.
+:   - Can be updated during re-enrichment unless it is approved or manually updated.
+
+Not set
+
+:   No metadata is available for the field. Add metadata to provide additional business context for the data.
+
+### Reviewing column metadata
+{: #review_column_saas}
+
+Review the metadata generated for each column and confirm that it accurately reflects your business terminology.
+
+You might see the following metadata:
+
+| Metadata     | Description                                                      |
+| ------------ | ---------------------------------------------------------------- |
+| Display name | A business-friendly name for the column.                         |
+| Description  | A description of the column's business meaning.                  |
+| Represents   | The type of business concept represented by the column. For example, a date, time, or a geographic location. |
+| Usage        | Defines how a column is used in analysis. A column can be categorized as an attribute for describing and grouping data, a measure for calculations and metrics, or an identifier for uniquely identifying and linking records.   |
+| Aggregation  | Defines how values in the column are summarized in analysis. Examples include Sum, Average, and Count. Aggregation helps ensure that metrics and query results are calculated correctly. |
+
+
+### Approving metadata
+{: #approve_metadata_saas}
+
+Review AI-generated metadata before approving it for use in conversations.
+
+1. Open the data source details page.
+
+1. In the Column enrichment section, review the generated metadata.
+
+1. Approve metadata by using one of the following methods:
+
+   - To approve a single metadata value, click **Approve** next to the value.
+
+   - To approve multiple rows, select the rows and click **Approve**.
+
+After metadata is approved, the approved values are used in conversations. Re-enrichment doesn't overwrite approved metadata.
+
+To modify metadata before approval, click the **Edit** icon next to the value, update the field, and then click **Approve**.
+
+## Reviewing enrichment in watsonx BI as a Software
+{: #about_review_onprem}
 
 When you open the enrichment results, you can view the enriched data at both the asset level and column level. A side panel also provides a summary of relevant information about the metadata enrichment.
 
@@ -56,7 +130,7 @@ The following indicators are used in the results tables and the details panels:
 - An AI label for AI-suggested descriptions 
 
 
-## Reviewing enrichment at the asset level
+### Reviewing enrichment at the asset level
 {: #rev_asset}
 
 On the **Assets** tab, review the following information that is used by watsonx BI for each data asset. 
@@ -91,7 +165,7 @@ Description
 
 
 
-## Reviewing results at the column level
+### Reviewing results at the column level
 {: #rev_column}
 
 On the **Columns** tab, review the following information for each column in a data asset:
@@ -125,12 +199,3 @@ Display name
 Description
 
 :   This section can contain an AI-generated description for the column, based on the **Expand metadata** enrichment objective. The description might already be assigned because the confidence was high enough or it is a suggestion that you can accept. At any time, you can edit the description.
-
-
-
-
-
-
-
-
-

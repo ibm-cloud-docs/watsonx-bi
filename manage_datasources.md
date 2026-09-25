@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-09-24"
 
 keywords: data sources, manage data sources, data source management
 
@@ -15,7 +15,7 @@ subcollection: watsonx-bi
 {: #manage_data_sources}
 [Cloud]{: tag-blue}
 
-You can use the **Data sources** tab under **Data and Metrics** to add, view, and manage the data sources used for your metrics and analysis. {: #shortdesc}
+You can use the **Data sources** tab under **Data and Metrics** to add, view, and manage the data sources used for your metrics and analysis. The **Data sources** tab also shows enrichment status and provides tools to review and approve metadata generated during enrichment. {: #shortdesc}
 
 The **Data sources** tab displays information about each data source such as:
 
@@ -25,7 +25,7 @@ The **Data sources** tab displays information about each data source such as:
   - Data connection
 - Enrichment status
 
-Depending on the data source type, you can also reimport metadata to refresh the data source and re-run metadata enrichment from this page. 
+Depending on the data source type, you can preview data, re-run enrichment, re-import metadata, review enrichment details, or delete the data source.
 
 ## Adding a data source
 {: #add_ds}
@@ -57,6 +57,7 @@ Open the context menu for a data source by clicking the options icon (three dots
 | **Re-import** | Refresh the data source with the latest data from the source. This is useful when the underlying data has changed and you want to update your local copy. |
 | **Re-enrich** | Run [metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} again for the data source. This is useful if you want to update the business context metadata or if enrichment previously encountered errors.|
 | **Preview** | Preview the contents of the data source to view a sample of the data and verify its contents before using it in metrics or conversations.|
+| **View details** | Open the data source details page to review enrichment information and metadata.|
 | **Delete** | Remove the data source from the project. This action might impact semantic data models or metrics that reference the deleted data source. |
 | **Ask a question** | Ask a question directly against a data source to start analyzing the data immediately without creating a metric first.|
 {: caption="Data source management options" caption-side="bottom"}
