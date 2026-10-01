@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-10-01"
 
-keywords: modelling, new column, add column, adding new column to semantic data model
+keywords: modeling, new column, add column, adding new column to semantic data model
 subcollection: watsonx-bi
 
 
@@ -16,7 +16,7 @@ subcollection: watsonx-bi
 # Adding a new column 
 {: #model_new_column}
 
-If new columns were added to the source data that was used to create metrics, you can add these new columns to the existing semantic data model without having to recreate the semantic model. {: #shortdesc}
+If new columns were added to the source data that was used to create metrics, you can add these columns to the existing semantic data model without re-creating the semantic model. {: #shortdesc}
 
 ## Step 1: Refresh metadata
 {: #reimport_metadata_columns}
@@ -36,7 +36,7 @@ Use the method that applies to your deployment.
 
 If the data source uses watsonx BI enrichment, metadata enrichment starts automatically after the metadata import completes.
 
-If the data source uses watsonx.data intelligence enrichment, continue to Step 2 to re-run metadata enrichment.
+If the data source uses watsonx.data intelligence enrichment, continue to Step 2 to rerun metadata enrichment.
 
 ### IBM Software Hub
 {: #swh_reimport}
@@ -59,7 +59,7 @@ If you use watsonx BI enrichment, metadata enrichment starts automatically after
 {: important}
 
 
-## Step 2: Re-run metadata enrichment
+## Step 2: Rerun metadata enrichment
 {: #rerun_mde_columns}
 
 Complete this step only if your data source uses watsonx.data intelligence enrichment.
@@ -84,7 +84,7 @@ Complete this step only if your data source uses watsonx.data intelligence enric
 
 1. Select the metadata enrichment asset associated with the semantic data model.
 
-1. Click **Start full enrichment** to re-run metadata enrichment.
+1. Click **Start full enrichment** to rerun metadata enrichment.
 
 
 ## Step 3: Add columns to the semantic data model

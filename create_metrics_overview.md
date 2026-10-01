@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-01"
 
 keywords: overview metrics, create metrics
 subcollection: watsonx-bi
@@ -16,11 +16,11 @@ subcollection: watsonx-bi
 # An overview of creating metrics
 {: #overview_metrics}
 
-{{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata that is used to create metrics, to answer your questions and provide insights. Metrics are calculations that are used to measure and monitor key areas of a business.{: #shortdesc}
+{{site.data.keyword.wxbia_full}} uses metrics and the underlying enriched metadata to answer your questions and provide insights. Metrics are calculations that are used to measure and monitor key areas of a business.{: #shortdesc}
 
 If you're an Analytics consumer, you can create metrics for yourself or a Data analyst can create them for you.
 
-The process to create metrics is the same for both Analytics consumers and Data analysts, except that Data analysts can publish the metrics that they've created to the Metrics catalog, govern access to metrics, and assign them to other users in the organization.
+The process to create metrics is the same for both Analytics consumers and Data analysts, except that Data analysts can publish the metrics that they created to the **Metrics catalog**, govern access to metrics, and assign them to other users in the organization.
 
  
 
@@ -45,19 +45,19 @@ The process to create metrics is the same for both Analytics consumers and Data 
 
    The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
 
-   You don't need to re-run enrichment after making changes to the enrichment results. 
+   You don't need to rerun enrichment after changing the enrichment results. 
 
-   Make sure that the labels and descriptions that are assigned to every column for all enriched data, are accurate and meaningful. AI uses labels and descriptions during conversations to find data to answer your questions. During enrichment, AI-generated labels and descriptions might have also been assigned to your data. You must accept or edit the AI-generated labels and descriptions in order to use them during the metric creation process.
+   Make sure that the labels and descriptions that are assigned to every column for all enriched data, are accurate and meaningful. AI uses labels and descriptions during conversations to find data to answer your questions. During enrichment, AI-generated labels and descriptions might also be assigned to your data. You must accept or edit the AI-generated labels and descriptions to use them during the metric creation process.
    {: important}
 
-7. Close the tab after reviewing the results and return to the {{site.data.keyword.wxbia_short}} enrichment page and click **Next** to continue. 
+7. Close the tab after your review the results and return to the {{site.data.keyword.wxbia_short}} enrichment page and click **Next** to continue. 
 
 8. You are now on the **Metrics overview** page. You can now [generate metrics automatically](/docs/watsonx-bi?topic=watsonx-bi-generate_metrics){: external} or [build them manually](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode){: external}. 
 
-   For more accurate responses in **Conversations**, you must create metrics. Whether you generate metrics or build them manually, ensure that meaningful names, descriptions, and identifiers are assigned to each column. You can do this in the Advanced mode. For more information, see [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}.
+   For more accurate responses in **Conversations**, you must create metrics. Whether you generate metrics or build them manually, ensure that meaningful names, descriptions, and identifiers are assigned to each column. You can add this information in the **Advanced mode**. For more information, see [Optimizing data for AI](/docs/watsonx-bi?topic=watsonx-bi-best_practices){: external}.
    {: tip}
    
-After you finish creating metrics, you can navigate back to the **Metrics overview** page and do the following:
+After you finish creating metrics, you can go back to the **Metrics overview** page and do the following:
     
 - [Edit metrics](/docs/watsonx-bi?topic=watsonx-bi-edit_metrics){: external}
 
@@ -65,7 +65,7 @@ After you finish creating metrics, you can navigate back to the **Metrics overvi
 
 - [Try a metric in a conversation](/docs/watsonx-bi?topic=watsonx-bi-try_metrics){: external}
 
-- Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to make changes to the semantic data model (such as create new relationships, calculations, and more)
+- Use the [Advanced mode](/docs/watsonx-bi?topic=watsonx-bi-advanced_mode_model_data){: external} to change the semantic data model (such as create new relationships, calculations, and more)
 
 - [Publish metrics and visualizations](/docs/watsonx-bi?topic=watsonx-bi-publish_metrics){: external} to the **Metrics catalog** and specify access permissions (Data analysts only)
     

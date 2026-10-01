@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-10-01"
 
 keywords: modeling, new tables, add tables, modeling
 subcollection: watsonx-bi
@@ -16,20 +16,20 @@ subcollection: watsonx-bi
 # Adding a new table 
 {: #model_new_table}
 
-If new tables were added to the source database that you used to create metrics, you can add these tables to the existing semantic data model without having to recreate the semantic model. {: #shortdesc}
+If new tables were added to the source database that you used to create metrics, you can add these tables to the existing semantic data model without re-creating the semantic model. {: #shortdesc}
 
 In the following steps, you will:
 
 1. Update the metadata import job and reimport metadata to refresh asset information.
 
-2. Update the metadata enrichment job and re-run enrichment to apply enrichment to the new tables.
+2. Update the metadata enrichment job and rerun enrichment to apply enrichment to the new tables.
 
 3. Add the enriched tables to the semantic data model.
 
 ## Step 1: Edit the metadata import job to reimport metadata with new tables
 {: #reimport_metadata_table}
 
-1. Go to **Navigation Menu > Projects > View all projects** and select the project which has the semantic data model that you want to add the tables to. 
+1. Go to **Navigation Menu > Projects > View all projects** and select the project, which has the semantic data model that you want to add the tables to. 
 
 2. Go to the **Assets** tab and under **Data access**, click **Metadata import**. 
 
@@ -41,7 +41,7 @@ In the following steps, you will:
 
 5. Edit the **Source and scope**.
 
-6. Go to **Scope**, click **Edit** and click **Select assets**.
+6. Go to **Scope**, click **Edit**, and click **Select assets**.
 
   ![Edit the scope of metadata import](images/mdi_edit_scope.png)
 
@@ -53,15 +53,15 @@ In the following steps, you will:
 
 After metadata import completes successfully, you can see the new data assets on the **Projects > Assets** tab. 
 
-If you use watsonx BI enrichment to enrich data, skip to Step 3. Watsonx BI automatically re-runs enrichment after you reimport metadata. 
+If you use watsonx BI enrichment to enrich data, skip to Step 3. Watsonx BI automatically reruns enrichment after you reimport metadata. 
 {: important}
 
-## Step 2: Re-run metadata enrichment on the new tables
+## Step 2: Rerun metadata enrichment on the new tables
 {: #rerun_mde_table}
 
 After metadata import completes, run metadata enrichment on the base data again.
 
-1.  Go back to the project view and under **Assets**, select the metadata enrichment asset associated with the semantic data model. 
+1.  Go back to the project view and under **Assets**, select the metadata enrichment asset that is associated with the semantic data model. 
 
 2. Click **Edit enrichment**.
 
@@ -75,7 +75,7 @@ After metadata import completes, run metadata enrichment on the base data again.
 
 7. Click **Next** to continue to the **Review** page and then click **Save**. 
 
-8. Click **Start full enrichment** to re-run enrichment.
+8. Click **Start full enrichment** to rerun enrichment.
 
 
 ## Step 3: Add tables to the semantic data model

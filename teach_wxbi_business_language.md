@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-10-01"
 
 keywords: teach watsonx bi, best practices, tips
 subcollection: watsonx-bi
@@ -33,37 +33,18 @@ You can improve the quality of watsonx BI’s answers and teach it your business
 
 
 
-
-
-
 ## Providing accurate display names and descriptions in metadata enrichment
 {: #add_display_name}
 
 [Metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-enrich){: external} in watsonx BI uses generative AI to understand your data on a deeper level. Traditional or simple data might lack clear meaning or context. Metadata enrichment uses AI to analyze the data and adds a semantic layer of well-defined business context such as business terms, descriptions, and categories to the data. 
 
-You can review the metadata enrichment results and make necessary changes to display names and descriptions if you use: 
-
-- {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
-- Watsonx.data intelligence in watsonx BI as a Service for metadata enrichment 
-
-A similar review page is not available in watsonx BI as a Service if you use using watsonx BI's native enrichment.
-{: important}
-
 The [enriched data results](/docs/watsonx-bi?topic=watsonx-bi-review){: external} open in a separate tab and any changes you make save automatically to the semantic data model. 
-
-![Review enriched data](images/enrich_data.png)
-
-Here, you need to:
 
 1. Review the enrichment results to ensure that each asset and column has a meaningful display name and description. 
 
-2. Accept the AI-suggested name and description or click **Edit** to add your own. 
+2. Approve the AI-suggested name and description or click **Edit** to add your own. 
 
   A name or description might already be assigned because the confidence was high enough or it is a suggestion that you can accept. 
-
-If you edit the **Display name** or **Description** in the metadata enrichment, the updates might get overwritten if enrichment is run again or if a metric definition is deleted or edited and exported. To avoid this issue, make your changes and add context in the semantic data model instead (see subsequent section).
-{: important}
-
 
 
 
@@ -123,9 +104,9 @@ The order in which watsonx BI uses the display name and description to retrieve 
 
 1. User defined in the semantic data model
 
-2. User defined in the metadata enrichment asset
+2. User set in the metadata enrichment 
 
-3. AI-suggested or generated in the metadata enrichment asset
+3. AI-suggested or generated in the metadata enrichment 
 
 
 To add a label and description to a metric column in the semantic data model:

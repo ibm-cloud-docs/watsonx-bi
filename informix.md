@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2026-01-07"
+  years: 2025, 2026
+lastupdated: "2026-10-01"
 
 keywords: informix
 
@@ -43,8 +43,4 @@ On-prem Informix database servers: For **Private connectivity**, to connect to a
 ## Informix setup
 {: #setup_informix}
 
-To set up Informix, see these topics:
-
-- Informix on-prem: [Creating a database server after installation](https://www.ibm.com/docs/SSGU8G_14.1.0/com.ibm.inst.doc/ids_inst_023.htm)
-
-- Informix on Cloud: [IBM Informix](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-informix_database)
+To set up Informix on-prem, see [Creating a database server after installation](https://www.ibm.com/docs/SSGU8G_14.1.0/com.ibm.inst.doc/ids_inst_023.htm).

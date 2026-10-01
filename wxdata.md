@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-05-08"
+  years: 2025, 2026
+lastupdated: "2026-10-01"
 
 keywords: watsonx.data
 subcollection: watsonx-bi
@@ -46,7 +46,7 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
 
   - **IBM watsonx.data Presto**
 
-    To use this connector, you need to set up service-to-service authorization between IBM watsonx.data intelligence and IBM watsonx.data. This configuration allows watsonx BI to run profiling and metadata enrichment jobs. For more information, see [Service to service authorization](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-s2s_auth).
+    To use this connector, you need to set up service-to-service authorization between IBM watsonx.data intelligence and IBM watsonx.data. This configuration allows watsonx BI to run profiling and metadata enrichment jobs. For more information, see [Service to service authorization](https://www.ibm.com/docs/en/watsonxdata/saas?topic=catalog-service-service-authorization).
     {: important}
 
 
@@ -56,7 +56,7 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
     | Description | Enter a connection description. |
     | Select the environment | Do not select the checkbox. |
     | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
-    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
+    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://www.ibm.com/docs/en/watsonxdata/saas?topic=data-getting-connection-information){: external}. |
     | Instance ID | Enter the instance ID. You can get the instance ID from the {{site.data.keyword.lakehouse_short}} instance home page (information icon). |
     | Instance name | Enter the {{site.data.keyword.lakehouse_short}} instance name. |
     | CRN | Enter the Cloud Resource Name. You can get the CRN from the {{site.data.keyword.lakehouse_short}} instance home page (information icon). |
@@ -80,7 +80,7 @@ You can add a connection from the **Data and Metrics** in {{site.data.keyword.wx
     | Description | Enter a connection description. |
     | Select the environment | Do not select the  checkbox. |
     | Hostname or IP address | Enter the {{site.data.keyword.lakehouse_short}} instance URL. For information about retrieving the hostname, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
-    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-get_connection){: external}. |
+    | Port | Enter the port number. For information about retrieving the Port, see [Getting connection information](https://www.ibm.com/docs/en/watsonxdata/saas?topic=data-getting-connection-information){: external}. |
     | Username | Enter your username (`ibmlhapikey_<EMAIL_ID>`). |
     | Password | Enter your password or IAM API key. To create an API key, see [Creating an API key](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key){: external}. |
     | SSL is enabled | Select the checkbox. |

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-10-01"
 
 keywords: best practices, tips for watasonx BI, optimizing data
 subcollection: watsonx-bi
@@ -86,27 +86,14 @@ To avoid ambiguity and confusion, use unique and descriptive names for data asse
 ## Each asset and column needs a display name and description
 {: #tip_display_name}
 
-You can review the metadata enrichment results and make necessary changes to display names and descriptions if: 
+You can review the metadata enrichment results and make necessary changes to display names and descriptions. Approve the AI-suggested name and description or click **Edit** to add your own.
 
-- You use {{site.data.keyword.wxbia_short_cap}} on IBM Software Hub 
-- You use watsonx.data intelligence in watsonx BI as a Service for metadata enrichment 
-
-A similar review page is not available in watsonx BI as a Service if you use using watsonx BI's native enrichment.
-{: important}
-
-You can also access the metadata enrichment from the Project asset tab by selecting the relevant metadata enrichment asset.
-
-You can accept the AI-suggested name and description or click **Edit** to add your own.
-
-![Metadata enrichment review page](images/mde_review.png){: caption="Metadata enrichment review page displays the AI generated terms and assignments." caption-side="bottom"}
-
-When you edit the **Display name** or **Description** in the metadata enrichment asset, the updates might get overwritten if enrichment is rerun or if a metric definition is deleted or edited. To avoid this issue, [make your changes in the semantic data model](/docs/watsonx-bi?topic=watsonx-bi-best_practices#tip_desc) instead.
-{: important}
-
-When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the pencil icon next to the suggestion and provide a meaningful name or description for that asset or column.
+When the confidence score of an AI-suggested name or description does not exceed the minimum threshold, the corresponding cell is blank. In that case, click the **Edit** icon next to the suggestion and provide a meaningful name or description for that asset or column.
 
 Descriptions must be concise and reflect the purpose of the column. During query generation in a conversation, the AI uses both the identifier, name, and description (potentially with sampled data) to select the best columns to answer the question. Avoid repetitive descriptions, where every description includes the same text, especially when the repeated content is how users frequently ask questions.
 {: tip} 
+
+For more information, see [Reviewing metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external}.
 
 ## Model data in the semantic model to help query generation
 {: #tip_model}
@@ -151,7 +138,7 @@ Make sure that a meaningful label and description is available for metric column
 
 1. User defined in the semantic data model
 
-2. User defined in the metadata enrichment asset
+2. User set in the metadata enrichment asset
 
 3. AI-suggested or generated in the metadata enrichment asset
 

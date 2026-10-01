@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-10-01"
 
 keywords: asking questions
 subcollection: watsonx-bi
@@ -85,32 +85,32 @@ Watsonx BI performs a multi-step analysis to identify the most likely drivers be
 
 Synonymous terms also apply to many filters and aggregations. For example, you can ask for: 
 
-- top 3 products
-- best products
-- products with the most sales 
+- Top 3 products
+- Best products
+- Products with the most sales 
 
 You can also spell out words or use symbols when applicable. For example, you can ask:
 
-- show sales greater than $1000 
-- show sales > 1k 
-- show sales more than 1,000
+- Show sales greater than $1000 
+- Show sales > 1k 
+- Show sales more than 1,000
 
 ## Aggregating data
 {: #aggregating}
 
 Applying aggregations can add focus and create more compelling results and visualizations. You can use any aggregations that {{site.data.keyword.wxbia_short}} supports, including:
 
-- total
+- Total
 
-- average
+- Average
 
-- maximum
+- Maximum
 
-- minimum
+- Minimum
 
-- count
+- Count
 
-- unique or distinct
+- Unique or distinct
 
 {{site.data.keyword.wxbia_short_cap}} infers aggregation by using natural language:
 
@@ -124,7 +124,9 @@ A metric might identify a default aggregation value for a column, for example, b
 
 - What is the weight per product? - This input uses the AI model's aggregation of AVERAGE to give the average weight for each product because the question doesn't explicitly identify how to aggregate the data.
 
-- What is the total weight per product? - This input overrides the AI model's aggregation and uses SUM. When you ask for highest, lowest, least or most, the AI model might interpret your question as the maximum or minimum value rather than aggregating all values before it identifies which total is highest or lowest. You can clarify your intent by including "total" in the question:
+- What is the total weight per product? - This input overrides the AI model's aggregation and uses SUM. 
+
+When you ask for highest, lowest, least or most, the AI model might interpret your question as the maximum or minimum value rather than aggregating all values before it identifies which total is highest or lowest. You can clarify your intent by including "total" in the question:
 
 - Which product has the highest total revenue?
 
@@ -145,14 +147,14 @@ You can ask {{site.data.keyword.wxbia_short}} to filter by using words and assoc
 
 While {{site.data.keyword.wxbia_short}} has a good understanding of common concepts, like country, region and city names, the ability to answer questions depends on your data.
 
-For example, when your data includes the product sales per country, asking, *How do sales compare in Asia vs the Americas* might not return expected results if the data does not identify which countries are in each region. 
+For example, when your data includes the product sales per country, asking *How do sales compare in Asia vs the Americas* might not return expected results if the data does not identify which countries are in each region. 
 
 If such questions are common, consider adjusting your metric to include a region column.
 
 ## Follow-up questions
 {: #followup}
 
-After you ask a question, you can follow-up with other questions or clarification. {{site.data.keyword.wxbia_short_cap}} interprets your question in the context of the previous question asked. For example:
+After you ask a question, you can follow up with other questions or clarification. {{site.data.keyword.wxbia_short_cap}} interprets your question in the context of the previous question asked. For example:
 
 1. What is the total revenue for products sold in Canada?
 
