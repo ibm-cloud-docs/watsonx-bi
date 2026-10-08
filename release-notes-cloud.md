@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-24"
+lastupdated: "2026-10-08"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -23,7 +23,24 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.wxbia_full}} that are grouped by date. Release notes are available for a minimum of three years.
 {: #shortdesc}
 
+## 8 October 2026
+{: #subcollection-Oct0826}
+{: release-note} 
 
+Evaluate the accuracy of your data and metrics with evaluations
+
+:   You can now create and run evaluations to verify that business questions can be answered accurately by using your semantic data model and metrics. 
+
+:   An evaluation consists of one or more business questions, each paired with a validated SQL query that serves as the reference answer. When you run an evaluation, watsonx BI generates answers based on the available semantic model and metrics, then compares those answers with the results returned by the reference SQL queries.
+
+:   You can:
+
+:   - Create and manage a repository of reusable business questions.
+:   - Validate SQL queries before using them in evaluations.
+:   - Group multiple business questions into an evaluation and run them together.
+:   - Review evaluation results to identify opportunities to improve accuracy.
+
+:   For more information, see [Evaluating data and metrics accuracy](/docs/watsonx-bi?topic=watsonx-bi-evaluations){: external}. 
 
 
 ## 24 September 2026
