@@ -1,8 +1,8 @@
 ---
 copyright:
   years: 2025, 2026
-lastupdated: "2026-03-05"
-keywords: conversation, scope
+lastupdated: "2026-10-29"
+keywords: conversation, scope, chat, topic, data source
 subcollection: watsonx-bi
 
 
@@ -15,52 +15,58 @@ subcollection: watsonx-bi
 # Changing the scope of the conversation
 {: #scope}
 
-You can change the scope of a conversation by selecting the data you want to ask about from the list in the input box and entering your question. {: #shortdesc}
+You can change the scope of a conversation by selecting the data that you want to ask about from the list in the input box and entering your question. {: #shortdesc}
 
-{{site.data.keyword.wxbia_full_notm}} uses the selected scope to answer your questions and provide insights. This feature allows you to narrow down the focus of the conversation to selective data sources. 
+{{site.data.keyword.wxbia_full_notm}} uses the selected scope to answer your questions and provide insights. This feature allows you to narrow the focus of the conversation to specific data sources.
 
 You can set the scope of a conversation to:
 
-All data 
 
-:   Includes data assets, including metrics and uploaded files, in all of the projects that you have access to.
 
-Mandatory metrics
+Metrics catalog
 
-:   These are the metrics that were created for you by your organization and which appear in the **Key metrics** panel.
+:   The **Metrics catalog** is a centralized repository of published metrics that you can access. If you are a Data analyst, metrics that you publish appear here. The conversation scope is set to **Metrics catalog** by default.
 
 A specific project
 
-:   You can choose from projects that you created or those that you have access to.
-
-An uploaded file
-
-:   You can choose a file that you've uploaded and which has gone through metadata enrichment. 
-
-Metric from the Metrics catalog
-
-:   When you choose to ask a question against a single metric from the **Metrics catalog**, you're automatically taken to **Conversations** with the scope set to the metric you selected.
+:   You can choose from projects that you created or projects that you have access to.
 
 Sample data
 
-:   If you installed sample data at the time of setup, you can ask set the scope of the conversation to just the sample data set. You can install sample data at any time from **Configuration and settings**. 
+:   If you installed sample data during setup, you can set the scope of the conversation to the sample data set. You can install sample data at any time from **Configuration and settings**. 
 
-## Selecting scope 
+You can also ask questions about an uploaded file or a metric from the **Metrics catalog**. These options don't appear in the scope list by default. 
+
+- To start a conversation about a specific uploaded file, select **Ask a question** for the file from **Data and Metrics > Data sources**. The file must be successfully enriched before it is available for conversation. 
+
+- To start a conversation about a specific metric, select **Ask a question** for the metric from **Metrics catalog**.
+
+In either case, a new conversation opens with the selected file or metric set as the current scope. After the conversation opens, the scope list also includes Metrics catalog, Sample data (if installed), and any projects that you have access to, allowing you to change the scope of subsequent questions as needed.
+
+
+## Selecting a scope 
 {: #scope_change}
 
 Where applicable, items in the scope list include descriptions to help you understand the context of each item at a glance. 
 
-You can also open any item in a new tab to preview the data before continuing your conversation. For example:
+You can also open items directly from the scope list in a new tab to preview them before continuing your conversation. For example:
 
-- Launching a project opens the data platform project view, including its assets.
+- Opening a project opens the data platform project view, including its assets.
 
-- Launching an uploaded file opens the file view in a new tab for quick review.
+- Opening Metrics catalog opens displays your metrics in a new tab.
 
-By default, the conversation scope is set to **All data**. To change the scope, select an item from the list in the input box. When you choose a specific item, the **All data** option is automatically disabled.
+By default, the conversation scope is set to **Metrics catalog**. To change the scope, select an item from the list in the input box. Only **one** selection can be active at a time.
 
-You can focus your conversation on either **All data** or a single item; only one selection can be active at a time.
+When you change the scope and ask your question, the conversation canvas displays the scope change. The selected scope remains until you change it again.
 
-When you change the scope and ask your question, a message displays in the conversation canvas to confirm the change in the scope. The selected scope remains until you change it again.
-
-Scope change only applies to new questions that you ask. The scope of a previous or a saved conversation doesn't change when you change the scope in the input box.
+A scope change applies only to new questions. The scope of a previous or saved conversation doesn't change when you change the scope in the input box.
 {: note}
+
+## Limitations
+{: #limitations_scope}
+
+- If no published metrics are available, only one suggested question is displayed in the conversation.
+
+- Uploaded files must be successfully enriched before they're available for conversation through Ask a question.
+
+- Uploaded files and metrics can be selected as a conversation scope only when you start a conversation by using **Ask a question** from the corresponding file or metric.

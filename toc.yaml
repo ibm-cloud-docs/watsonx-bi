@@ -105,7 +105,6 @@ toc:
           - adding_visualizations_metrics.md
           - try.md
           - publish_metrics.md
-          - evaluations.md
       - topicgroup:
           label: Data modeling
           topics:

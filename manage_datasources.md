@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2026
-lastupdated: "2026-09-24"
+lastupdated: "2026-10-29"
 
 keywords: data sources, manage data sources, data source management
 
@@ -37,8 +37,8 @@ Depending on the data source type, you can preview data, re-run enrichment, re-i
    - **[Add data from connection](/docs/watsonx-bi?topic=watsonx-bi-select){: external}**: Import data from an available connection to your database or data warehouse.
    - **[Upload file](/docs/watsonx-bi?topic=watsonx-bi-upload){: external}**: Add data from a local file.
 
-   You cannot connect to Cognos Analytics data sources from the **Data sources** tab. To use a Cognos Analytics data source, go to the **Metrics** tab and click **Create metrics**. For more information, see [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}.{: important}
-
+  You cannot connect to Cognos Analytics data sources from the **Data sources** tab. To use a Cognos Analytics data source, go to the **Metrics** tab and click **Create metrics**. For more information, see [IBM Cognos Analytics](/docs/watsonx-bi?topic=watsonx-bi-cognos){: external}.
+  {: important}
 
 3. Select and add your data source.
 

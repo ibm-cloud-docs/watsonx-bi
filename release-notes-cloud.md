@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-29"
 
 keywords: watsonx BI, release notes, what's new, watsonx BI as a Service
 
@@ -25,6 +25,13 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 
 
+## 29 October 2026
+{: #subcollection-Oct2926}
+{: release-note}
+
+Removal of the all data conversation scope
+
+:   The **All data** option was removed from conversation scope in watsonx BI. You now need to select a specific scope, such as the **Metrics catalog**, a project, or sample data, when asking questions. This change provides more targeted context for conversations and helps ensure responses are grounded in the selected data source.
 
 ## 24 September 2026
 {: #subcollection-Sep2426}
@@ -34,7 +41,7 @@ Metadata enrichment review is now available from Data sources
 
 :   You can now review and approve metadata enrichment results from **Data and Metrics > Data sources** in watsonx BI as a Service. Open a data source to view enrichment details, review AI-generated metadata, edit metadata values, approve metadata for use in conversations, and understand how metadata behaves during re-enrichment. 
 
-For more information, see [Reviewing metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external}.
+:   For more information, see [Reviewing metadata enrichment](/docs/watsonx-bi?topic=watsonx-bi-review){: external}.
 
 
 ## 28 August 2026
