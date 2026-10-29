@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2026-05-14"
+  years: 2025, 2026
+lastupdated: "2026-10-29"
 
 keywords: mcp, model context protocol, watsonx Orchestrate
 subcollection: watsonx-bi
@@ -118,9 +118,9 @@ You can scope the wxBI MCP Server to specific assets by adding additional header
 #### Header priority 
 {: #header_priority}
 
-:   Priority 1: `asset-id-list` (cannot coexist with `project-id-list` or `catalog-id-list`)
+1. `asset-id-list` (cannot coexist with `project-id-list` or `catalog-id-list`)
 
-:   Priority 2: `project-id-list` and `catalog-id-list` (can be used together)
+2. `project-id-list` and `catalog-id-list` (can be used together)
 
 #### How to get the project and asset id
 {: #project_asset_id}
